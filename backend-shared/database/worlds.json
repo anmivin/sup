@@ -1,0 +1,1698 @@
+[
+  {
+    "key": "world_001_willowcreek",
+    "ru_name": "Виллоу Крик",
+    "en_name": "Willow Creek",
+    "ru_description": "Покрытый буйной растительностью район с плантациями и заболоченными равнинами является родиной фермеров-аристократов, южного дворянства и жителей болот. Виллоу Крик сочетает богатые традиции, элегантный вкус и настоящее радушное гостеприимство.",
+    "en_description": "Willow Creek is a lush bayou of rolling hills intertwined with marshy riverways. It's home to long-standing reputations and simple lifestyles full of coastal hospitality. Convenient with town comforts, lively neighbors, and a grandeur of property possibilities, Willow Creek is the idyllic place to settle down and settle in.",
+    "icon": "WillowCreek.png",
+    "filled_map": "WillowCreekFilled",
+    "empty_map": "WillowCreekEmpty",
+    "neighborhoods": [
+      {
+        "key": "neighborhood_001",
+        "ru_name": "Кортьярд Лейн",
+        "en_name": "Courtyard Lane",
+        "ru_description": "Кортьярд Лейн предлагает доступные дома для преуспевающих карьеристов. Классические домики, узкие двойные дома и более просторные дома к вашим услугам.",
+        "en_description": "Courtyard Lane offers affordable homes for the upwardly mobile set. Classic styling mingles with larger shotguns and more expansive homes.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_001",
+            "ru_name": "Брук Бунгало",
+            "en_name": "Brook Bungalow",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 91121,
+            "price_empty": 4000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [1408, 388],
+              "top_right": [1560, 412],
+              "bottom_right": [1495, 482],
+              "bottom_left": [1335, 455]
+            }
+          },
+          {
+            "key": "lot_002",
+            "ru_name": "Риверсайд Руст",
+            "en_name": "Riverside Roost",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 39694,
+            "price_empty": 2500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1288, 490],
+              "top_right": [1395, 510],
+              "bottom_right": [1334, 570],
+              "bottom_left": [1224, 548]
+            }
+          },
+          {
+            "key": "lot_003",
+            "ru_name": "Риндл Роуз",
+            "en_name": "Rindle Rose",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 34858,
+            "price_empty": 2000,
+            "size": [20, 15],
+            "coordinates": {
+              "top_left": [1552, 538],
+              "top_right": [1636, 553],
+              "bottom_right": [1604, 596],
+              "bottom_left": [1516, 580]
+            }
+          },
+          {
+            "key": "lot_004",
+            "ru_name": "Пик Харс",
+            "en_name": "Pique Hearth",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 126635,
+            "price_empty": 2500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1421, 516],
+              "top_right": [1532, 535],
+              "bottom_right": [1478, 596],
+              "bottom_left": [1374, 575]
+            }
+          },
+          {
+            "key": "lot_005",
+            "ru_name": "Поттерс Сплей",
+            "en_name": "Potters Splay",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2500,
+            "price_empty": 2500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1606, 440],
+              "top_right": [1714, 457],
+              "bottom_right": [1670, 512],
+              "bottom_left": [1560, 494]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_002",
+        "ru_name": "Кродад-Корнер",
+        "en_name": "Crawdad Quarter",
+        "ru_description": "Кродад-Квортер находится в самом сердце Виллоу Крик. В этом районе есть всё, чем славится городок, — от парков до ночных клубов.",
+        "en_description": "Crawdad Quarter is the heart of Willow Creek. All of the towns liveliness, from parks to nightlife, can be found in this neighborhood.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_006",
+            "ru_name": "Муниципальный музей",
+            "en_name": "Municipal Muses Museum",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 122663,
+            "price_empty": 4000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [363, 661],
+              "top_right": [543, 730],
+              "bottom_right": [395, 802],
+              "bottom_left": [213, 727]
+            }
+          },
+          {
+            "key": "lot_007",
+            "ru_name": "Синий бархат",
+            "en_name": "The Blue Velvet Nightclub",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 92538,
+            "price_empty": 4000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [565, 736],
+              "top_right": [663, 773],
+              "bottom_right": [518, 848],
+              "bottom_left": [420, 808]
+            }
+          },
+          {
+            "key": "lot_008",
+            "ru_name": "Подвигаемся",
+            "en_name": "Movers & Shakers Gym",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 84663,
+            "price_empty": 4000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [687, 780],
+              "top_right": [790, 820],
+              "bottom_right": [648, 899],
+              "bottom_left": [542, 857]
+            }
+          },
+          {
+            "key": "lot_009",
+            "ru_name": "Хранилище Виллоу Крик",
+            "en_name": "Willow Creek Archive Library",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 102990,
+            "price_empty": 4000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [822, 829],
+              "top_right": [932, 869],
+              "bottom_right": [792, 954],
+              "bottom_left": [679, 909]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_003",
+        "ru_name": "Пендула Вью",
+        "en_name": "Pendula View",
+        "ru_description": "Исторический район Виллоу Крик, Гардэн Комьюнити, может похвастаться большими особняками и состоянием персонажей, живущих в этих особняках.",
+        "en_description": "This historical section of Willow Creek, the Garden Community boasts large mansions and the cache that comes with living in them.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_010",
+            "ru_name": "Хэллоу Слаф",
+            "en_name": "Hallow Slough",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 5500,
+            "price_empty": 5500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [928, 337],
+              "top_right": [1012, 322],
+              "bottom_right": [1090, 364],
+              "bottom_left": [1002, 380]
+            }
+          },
+          {
+            "key": "lot_011",
+            "ru_name": "Амбридж Мэнор",
+            "en_name": "Umbrage Manor",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 157532,
+            "price_empty": 6500,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [676, 364],
+              "top_right": [811, 340],
+              "bottom_right": [906, 400],
+              "bottom_left": [766, 427]
+            }
+          },
+          {
+            "key": "lot_012",
+            "ru_name": "Паркшор",
+            "en_name": "Parkshore",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 101309,
+            "price_empty": 5500,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [818, 452],
+              "top_right": [961, 424],
+              "bottom_right": [1072, 492],
+              "bottom_left": [925, 524]
+            }
+          },
+          {
+            "key": "lot_013",
+            "ru_name": "Офелия Вилла",
+            "en_name": "Ophelia Villa",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 248236,
+            "price_empty": 5500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1030, 410],
+              "top_right": [1120, 393],
+              "bottom_right": [1204, 440],
+              "bottom_left": [1114, 460]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_004",
+        "ru_name": "Сейдж Истейтс",
+        "en_name": "Sage Estates",
+        "ru_description": "Один из самых популярных районов Виллоу Крик, Сейдж Истейтс, представляет собой вереницу просторных особняков, окружённых буйной растительностью, и самое лучшее высшее общество в округе.",
+        "en_description": "Willow Creek's most desirable area, Sage Estates features large, sprawling estates, lush landscaping, and the best high society as to offer.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_014",
+            "ru_name": "Оукенстед",
+            "en_name": "Rio Verde",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 230228,
+            "price_empty": 10000,
+            "size": [50, 50],
+            "coordinates": {
+              "top_left": [334, 454],
+              "top_right": [582, 404],
+              "bottom_right": [706, 485],
+              "bottom_left": [447, 542]
+            }
+          },
+          {
+            "key": "lot_015",
+            "ru_name": "Сайприс Террас",
+            "en_name": "Cypress Terrace",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 244327,
+            "price_empty": 8500,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [214, 383],
+              "top_right": [346, 349],
+              "bottom_right": [460, 400],
+              "bottom_left": [324, 437]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_005",
+        "ru_name": "Фаундри Коув",
+        "en_name": "Foundry Cove",
+        "ru_description": "Расположенный в южной части Виллоу Крик район Фаундри Коув имеет характерные участки и характерных персонажей. Жителям района нравятся скромные домики с находящимся неподалеку ручьем и опрятной железной дорогой.",
+        "en_description": "Located in southern Willow Creek Foundry Cove has lots of character (and its share of characters). Residents enjoy modest homes with a canal nearby for fishing, and a charming, active railroad.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_016",
+            "ru_name": "Баргайн Бенд",
+            "en_name": "Bargain Bend",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2000,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1361, 812],
+              "top_right": [1540, 880],
+              "bottom_right": [1456, 932],
+              "bottom_left": [1277, 860]
+            }
+          },
+          {
+            "key": "lot_017",
+            "ru_name": "Гарден Эссенс",
+            "en_name": "Garden Essence",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 61684,
+            "price_empty": 2000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [1480, 695],
+              "top_right": [1708, 775],
+              "bottom_right": [1596, 845],
+              "bottom_left": [1364, 758]
+            }
+          },
+          {
+            "key": "lot_018",
+            "ru_name": "Дэйзи Ховел",
+            "en_name": "Daisy Hovel",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 15747,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1330, 646],
+              "top_right": [1434, 682],
+              "bottom_right": [1320, 744],
+              "bottom_left": [1216, 706]
+            }
+          },
+          {
+            "key": "lot_019",
+            "ru_name": "Крик Кабана",
+            "en_name": "Crick Cabana",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 13268,
+            "price_empty": 1500,
+            "size": [20, 15],
+            "coordinates": {
+              "top_left": [1027, 691],
+              "top_right": [1090, 662],
+              "bottom_right": [1186, 700],
+              "bottom_left": [1123, 730]
+            }
+          },
+          {
+            "key": "lot_020",
+            "ru_name": "Стримлет Сингл",
+            "en_name": "Streamlet Single",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 15271,
+            "price_empty": 1500,
+            "size": [20, 15],
+            "coordinates": {
+              "top_left": [1201, 752],
+              "top_right": [1279, 784],
+              "bottom_right": [1188, 829],
+              "bottom_left": [1111, 795]
+            }
+          }
+        ]
+      }
+    ],
+    "just_lots": [
+      {
+        "key": "lot_021",
+        "ru_name": "Парк «Цветущая магнолия»",
+        "en_name": "Magnolia Blossom Park",
+        "filled_img": "",
+        "empty_img": "",
+        "price_filled": 69642,
+        "price_empty": 25000,
+        "size": [50, 50],
+        "coordinates": {
+          "top_left": [741, 529],
+          "top_right": [957, 605],
+          "bottom_right": [739, 703],
+          "bottom_left": [522, 616]
+        }
+      }
+    ]
+  },
+  {
+    "key": "world_002_oasissprings",
+    "ru_name": "Оазис Спрингс",
+    "en_name": "Oasis Springs",
+    "ru_description": "Оазис в строгой красоте западного декора. Красочное пристанище эклектичной культуры, окружённое высоченными пальмами и невероятно буйной растительностью. Оазис Спрингс предоставит тень любому путешественнику, кто его найдёт.",
+    "en_description": "An oasis nestled in the austere beauty of the western desert, this haven of eclectic culture is fringed by countless soaring palms, and lent vibrant color through impossibly lush landscaping. Oasis Springs offers relaxing retreats from the sun to any traveler who discovers it.",
+    "icon": "OasisSprings.png",
+    "filled_map": "OasisSpringsFilled",
+    "empty_map": "OasisSpringsEmpty",
+    "neighborhoods": [
+      {
+        "key": "neighborhood_006",
+        "ru_name": "Бедрок Стрейт",
+        "en_name": "Courtyard Lane",
+        "ru_description": "Жители этого безвкусного городка с гордостью демонстрируют своих садовых гномов и рекламные баннеры. Ну, кому не понравится каждое утро здороваться с бронтозавром Барри?",
+        "en_description": "Residents of this delightfully kitschy neighborhood take pride in their billboards and lawn gnomes. And who wouldn't love getting to say hello to Barry the Brontosaurus every morning?",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_023",
+            "ru_name": "Нукстоун",
+            "en_name": "Nookstone",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 12959,
+            "price_empty": 1500,
+            "size": [20, 15],
+            "coordinates": {
+              "top_left": [1338, 607],
+              "top_right": [1420, 594],
+              "bottom_right": [1477, 641],
+              "bottom_left": [1393, 653]
+            }
+          },
+          {
+            "key": "lot_024",
+            "ru_name": "Пеббл Берроу",
+            "en_name": "Pebble Burrow",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 1500,
+            "price_empty": 1500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1440, 589],
+              "top_right": [1536, 568],
+              "bottom_right": [1648, 634],
+              "bottom_left": [1545, 656]
+            }
+          },
+          {
+            "key": "lot_025",
+            "ru_name": "Слипшод Мескит",
+            "en_name": "Slipshod Mesquite",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 23703,
+            "price_empty": 2000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [1334, 479],
+              "top_right": [1429, 436],
+              "bottom_right": [1614, 488],
+              "bottom_left": [1522, 536]
+            }
+          },
+          {
+            "key": "lot_026",
+            "ru_name": "Сэндтрэп Флэт",
+            "en_name": "Sandtrap Flat",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 15230,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1207, 510],
+              "top_right": [1316, 502],
+              "bottom_right": [1363, 567],
+              "bottom_left": [1247, 575]
+            }
+          },
+          {
+            "key": "lot_027",
+            "ru_name": "Эгейви Эбоуд",
+            "en_name": "Agave Abode",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 17568,
+            "price_empty": 1500,
+            "size": [20, 15],
+            "coordinates": {
+              "top_left": [1556, 562],
+              "top_right": [1613, 541],
+              "bottom_right": [1705, 575],
+              "bottom_left": [1649, 598]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_007",
+        "ru_name": "Дезертвью",
+        "en_name": "Parched Prospect",
+        "ru_description": "Типичный пустынный городок с перекати-поле и кактусами до самого горизонта!",
+        "en_description": "This neighborhood is your quintessiential desert-living experience with bustling tumbleweeds and cacti as far as the eye can see!",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_028",
+            "ru_name": "Виста Куори",
+            "en_name": "Vista Quarry",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 44368,
+            "price_empty": 3500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [961, 698],
+              "top_right": [1089, 688],
+              "bottom_right": [1133, 773],
+              "bottom_left": [998, 785]
+            }
+          },
+          {
+            "key": "lot_029",
+            "ru_name": "Дасти Тёрф",
+            "en_name": "Dusty Turf",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 3500,
+            "price_empty": 3500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1175, 827],
+              "top_right": [1290, 796],
+              "bottom_right": [1417, 881],
+              "bottom_left": [1298, 916]
+            }
+          },
+          {
+            "key": "lot_030",
+            "ru_name": "Какти Каса",
+            "en_name": "Cacti Casa",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 73146,
+            "price_empty": 3500,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [1350, 781],
+              "top_right": [1566, 724],
+              "bottom_right": [1699, 801],
+              "bottom_left": [1475, 866]
+            }
+          },
+          {
+            "key": "lot_031",
+            "ru_name": "Раффиа Куинта",
+            "en_name": "Raffia Quinta",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 37562,
+            "price_empty": 3500,
+            "size": [20, 15],
+            "coordinates": {
+              "top_left": [1035, 845],
+              "top_right": [1138, 832],
+              "bottom_right": [1182, 898],
+              "bottom_left": [1076, 912]
+            }
+          },
+          {
+            "key": "lot_032",
+            "ru_name": "Спрингскейп",
+            "en_name": "Springscape",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 63488,
+            "price_empty": 3500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1110, 686],
+              "top_right": [1218, 661],
+              "bottom_right": [1324, 734],
+              "bottom_left": [1211, 761]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_008",
+        "ru_name": "Скайуорд Палмс",
+        "en_name": "Skyward Palms",
+        "ru_description": "Резиденты этого закрытого элитного района имеют все преимущества жизни в пустыне и километры газонов со свежайшей травой.",
+        "en_description": "This upscale gated community offers its residents all the warm, wild benefits of living in the desert along with the luxury of endless green grass.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_033",
+            "ru_name": "Гранада Плейс",
+            "en_name": "Granada Place",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 114595,
+            "price_empty": 5500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [343, 448],
+              "top_right": [416, 473],
+              "bottom_right": [288, 521],
+              "bottom_left": [214, 494]
+            }
+          },
+          {
+            "key": "lot_034",
+            "ru_name": "Рио Верде",
+            "en_name": "Rio Verde",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 172947,
+            "price_empty": 6500,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [578, 442],
+              "top_right": [796, 440],
+              "bottom_right": [793, 500],
+              "bottom_left": [564, 502]
+            }
+          },
+          {
+            "key": "lot_035",
+            "ru_name": "Эрид Ридж",
+            "en_name": "Arid Ridge",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 91121,
+            "price_empty": 5500,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [340, 367],
+              "top_right": [489, 348],
+              "bottom_right": [546, 412],
+              "bottom_left": [390, 434]
+            }
+          },
+          {
+            "key": "lot_036",
+            "ru_name": "Салтри Спрингсайд",
+            "en_name": "Sultry Springside",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 146345,
+            "price_empty": 5500,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [453, 491],
+              "top_right": [536, 515],
+              "bottom_right": [417, 571],
+              "bottom_left": [333, 544]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_009",
+        "ru_name": "Эквизишен Бьют",
+        "en_name": "Acquisition Butte",
+        "ru_description": "Жители Эквизишен Бьют готовы выложить кругленькую сумму за прекрасный вид на скалы и чарующие звуки тишины.",
+        "en_description": "Residents of Acquisition Butte are paying premium for the gorgeous, rocky overlook and the sweet sound of solitude.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_037",
+            "ru_name": "Аффлуиста Мэншн",
+            "en_name": "Affluista Mansion",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 221264,
+            "price_empty": 10000,
+            "size": [50, 50],
+            "coordinates": {
+              "top_left": [1080, 343],
+              "top_right": [1303, 390],
+              "bottom_right": [1174, 469],
+              "bottom_left": [944, 416]
+            }
+          },
+          {
+            "key": "lot_038",
+            "ru_name": "Юма Хайтс",
+            "en_name": "Yuma Heights",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 311508,
+            "price_empty": 8500,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [728, 347],
+              "top_right": [822, 310],
+              "bottom_right": [977, 349],
+              "bottom_left": [882, 390]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_010",
+        "ru_name": "Мираж-Каньон",
+        "en_name": "Mirage Canyon",
+        "ru_description": "Мираж-Каньон — настоящий оазис в Оазис Спрингс. Утомлённые жарой и жаждой путники всегда могут насладиться красивым водопадом во время заслуженного отдыха в тени.",
+        "en_description": "Mirage Canyon is Oasis Spring's true oasis. Parched visitors passing through can always delight in seeing the gorgeous rushing waterfall and a well-appreciated pitstop.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_039",
+            "ru_name": "Будущее в прошлом",
+            "en_name": "The Futures Past",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 90036,
+            "price_empty": 4000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [309, 649],
+              "top_right": [421, 667],
+              "bottom_right": [330, 746],
+              "bottom_left": [210, 727]
+            }
+          },
+          {
+            "key": "lot_040",
+            "ru_name": "Клуб «Солнечная вспышка»",
+            "en_name": "The Solar Flare",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 59015,
+            "price_empty": 4000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [449, 673],
+              "top_right": [561, 694],
+              "bottom_right": [463, 773],
+              "bottom_left": [346, 750]
+            }
+          },
+          {
+            "key": "lot_041",
+            "ru_name": "Сожжём лишнее",
+            "en_name": "Burners & Builders",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 93083,
+            "price_empty": 4000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [697, 706],
+              "top_right": [825, 769],
+              "bottom_right": [609, 857],
+              "bottom_left": [483, 787]
+            }
+          },
+          {
+            "key": "lot_042",
+            "ru_name": "Рэттлснейк Джус",
+            "en_name": "Rattlesnake Juice",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 80662,
+            "price_empty": 4000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [817, 820],
+              "top_right": [910, 868],
+              "bottom_right": [741, 941],
+              "bottom_left": [649, 887]
+            }
+          }
+        ]
+      }
+    ],
+    "just_lots": [
+      {
+        "key": "lot_043",
+        "ru_name": "Парк «Пустынные цветы»",
+        "en_name": "Desert Bloom Park",
+        "filled_img": "",
+        "empty_img": "",
+        "price_filled": 102086,
+        "price_empty": 25000,
+        "size": [50, 50],
+        "coordinates": {
+          "top_left": [757, 559],
+          "top_right": [965, 483],
+          "bottom_right": [1175, 559],
+          "bottom_left": [966, 646]
+        }
+      }
+    ]
+  },
+  {
+    "key": "world_003_newcrest",
+    "ru_name": "Ньюкрест",
+    "en_name": "Newcrest",
+    "ru_description": "Пусть безграничные просторы вас не смущают. Оглянитесь, восхититесь прелестным видом и исследуйте все возможности. Уже догадались? Это целый новый мир, и он принадлежит вам! Чего же вы ждёте?",
+    "en_description": "Don't let the abundance of space fool you. Take a look around, admire the wonderful scenery, and explore the endless possibilities. Do you see it? This is your whole new world! What are you waiting for?",
+    "icon": "Newcrest.png",
+    "filled_map": "",
+    "empty_map": "NewcrestEmpty",
+    "neighborhoods": [
+      {
+        "key": "neighborhood_011",
+        "ru_name": "Бриджвью",
+        "en_name": "Bridgeview",
+        "ru_description": "В этом семейном городке вы найдете прекрасную зону для пикников и захватывающий дух городской пейзаж",
+        "en_description": "This family-friendly neighborhood has a lovely picnic area and a striking city skyline backdrop.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_045",
+            "ru_name": "Комфи Кабби",
+            "en_name": "Comfy Cubby",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 1500,
+            "price_empty": 1500,
+            "size": [20, 15],
+            "coordinates": {
+              "top_left": [1234, 198],
+              "top_right": [1299, 216],
+              "bottom_right": [1272, 238],
+              "bottom_left": [1207, 219]
+            }
+          },
+          {
+            "key": "lot_046",
+            "ru_name": "Оук Альков",
+            "en_name": "Oak Alcove",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 1500,
+            "price_empty": 1500,
+            "size": [20, 15],
+            "coordinates": {
+              "top_left": [1200, 225],
+              "top_right": [1266, 244],
+              "bottom_right": [1238, 266],
+              "bottom_left": [1172, 247]
+            }
+          },
+          {
+            "key": "lot_047",
+            "ru_name": "Ферн Парк",
+            "en_name": "Fern Park",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2000,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1036, 232],
+              "top_right": [1100, 252],
+              "bottom_right": [1042, 300],
+              "bottom_left": [976, 278]
+            }
+          },
+          {
+            "key": "lot_048",
+            "ru_name": "Бич Байуэй",
+            "en_name": "Beech Byway",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2000,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1150, 265],
+              "top_right": [1218, 286],
+              "bottom_right": [1162, 334],
+              "bottom_left": [1093, 314]
+            }
+          },
+          {
+            "key": "lot_049",
+            "ru_name": "Мидтаун Мэдоу",
+            "en_name": "Midtown Meadows",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 3000,
+            "price_empty": 3000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [1279, 282],
+              "top_right": [1384, 312],
+              "bottom_right": [1314, 379],
+              "bottom_left": [1205, 347]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_012",
+        "ru_name": "Риджлайн-Драйв",
+        "en_name": "Ridgeline Drive",
+        "ru_description": "Популярный для жизни район в предместье Ньюкреста также славится своими многочисленными тропами для прогулок",
+        "en_description": "This busy strip of real estate lining the streets of the Newcrest suburbs boasts ample hiking trails",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_050",
+            "ru_name": "Сэнди Ран",
+            "en_name": "Sandy Run",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2500,
+            "price_empty": 2500,
+            "size": [40, 20],
+            "coordinates": {
+              "top_left": [1468, 528],
+              "top_right": [1629, 582],
+              "bottom_right": [1592, 625],
+              "bottom_left": [1427, 568]
+            }
+          },
+          {
+            "key": "lot_051",
+            "ru_name": "Кукаут Лукаут",
+            "en_name": "Cookout Lookout",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2000,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1416, 579],
+              "top_right": [1539, 622],
+              "bottom_right": [1499, 665],
+              "bottom_left": [1375, 622]
+            }
+          },
+          {
+            "key": "lot_052",
+            "ru_name": "Цивик Клиффс",
+            "en_name": "Civic Cliffs",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2000,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1362, 635],
+              "top_right": [1487, 679],
+              "bottom_right": [1444, 725],
+              "bottom_left": [1318, 679]
+            }
+          },
+          {
+            "key": "lot_053",
+            "ru_name": "Хилсайд Хайлендс",
+            "en_name": "Hillside Highlands",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2000,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1303, 693],
+              "top_right": [1431, 739],
+              "bottom_right": [1386, 788],
+              "bottom_left": [1256, 739]
+            }
+          },
+          {
+            "key": "lot_054",
+            "ru_name": "Оптимистик Аутлук",
+            "en_name": "Optimist's Outlook",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 3000,
+            "price_empty": 3000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [1231, 765],
+              "top_right": [1406, 832],
+              "bottom_right": [1335, 913],
+              "bottom_left": [1155, 841]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_013",
+        "ru_name": "Лама-Лагун",
+        "en_name": "Llama Lagoon",
+        "ru_description": "Городок с набережной у озера и общественными игровыми площадками является самим олицетворением космополитического строя",
+        "en_description": "With lakeside walkways and public playground equipment, this neighborhood's just the right amount of cosmopolitan.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_055",
+            "ru_name": "Эсфальт Эбодз",
+            "en_name": "Asphalt Abodes",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2000,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [727, 504],
+              "top_right": [835, 543],
+              "bottom_right": [785, 584],
+              "bottom_left": [676, 544]
+            }
+          },
+          {
+            "key": "lot_056",
+            "ru_name": "Эварис Эйкрз",
+            "en_name": "Avarice Acres",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 3000,
+            "price_empty": 3000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [606, 556],
+              "top_right": [752, 610],
+              "bottom_right": [669, 677],
+              "bottom_left": [521, 619]
+            }
+          },
+          {
+            "key": "lot_057",
+            "ru_name": "Тренквил Крессент",
+            "en_name": "Tranquil Crescent",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 2500,
+            "price_empty": 2500,
+            "size": [30, 30],
+            "coordinates": {
+              "top_left": [809, 633],
+              "top_right": [926, 676],
+              "bottom_right": [847, 748],
+              "bottom_left": [728, 701]
+            }
+          },
+          {
+            "key": "lot_058",
+            "ru_name": "Твин Оракл Поинт",
+            "en_name": "Twin Oracle Point",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 8500,
+            "price_empty": 8500,
+            "size": [50, 40],
+            "coordinates": {
+              "top_left": [471, 651],
+              "top_right": [657, 726],
+              "bottom_right": [534, 826],
+              "bottom_left": [344, 744]
+            }
+          },
+          {
+            "key": "lot_059",
+            "ru_name": "Рипплинг Флэтс",
+            "en_name": "Rippling Flats",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 3000,
+            "price_empty": 3000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [683, 737],
+              "top_right": [802, 784],
+              "bottom_right": [683, 891],
+              "bottom_left": [563, 838]
+            }
+          }
+        ]
+      }
+    ],
+    "just_lots": []
+  },
+  {
+    "key": "world_004_magnoliapromenade",
+    "ru_name": "Магнолия Променейд",
+    "en_name": "Magnolia Promenade",
+    "ru_description": "Добро пожаловать в мир, в котором потрясающая природа соседствует с городской жизнью! Магнолия Променейд дарит вам фантастические виды и первоклассные магазины как для покупателей, так и для предпринимателей.",
+    "en_description": "Welcome to a world in which beautiful scenery meets metropolitan life! Magnolia Promenade offers fantastic views and a top of the line shopping experience for customers and entrepreneurs alike.",
+    "icon": "MagnoliaPromenade.png",
+    "filled_map": "MagnoliaPromenadeFilled",
+    "empty_map": "MagnoliaPromenadeEmpty",
+    "neighborhoods": [],
+    "just_lots": [
+      {
+        "key": "lot_060",
+        "ru_name": "Торговый центр «Ремесленник»",
+        "en_name": "Paddywack's Emporium",
+        "filled_img": "",
+        "empty_img": "",
+        "price_filled": 71170,
+        "price_empty": 2000,
+        "size": [20, 20],
+        "coordinates": {
+          "top_left": [792, 589],
+          "top_right": [925, 625],
+          "bottom_right": [830, 683],
+          "bottom_left": [694, 644]
+        }
+      },
+      {
+        "key": "lot_061",
+        "ru_name": "Ателье «Феоры и кеды»",
+        "en_name": "JF&S Clothiers",
+
+        "filled_img": "",
+        "empty_img": "",
+        "price_filled": 116833,
+        "price_empty": 2500,
+        "size": [20, 20],
+        "coordinates": {
+          "top_left": [1003, 642],
+          "top_right": [1146, 681],
+          "bottom_right": [1055, 743],
+          "bottom_left": [908, 701]
+        }
+      },
+      {
+        "key": "lot_062",
+        "ru_name": "Знаменитое имение",
+        "en_name": "Preeminent Domain",
+
+        "filled_img": "",
+        "empty_img": "",
+        "price_filled": 3000,
+        "price_empty": 3000,
+        "size": [30, 20],
+        "coordinates": {
+          "top_left": [851, 430],
+          "top_right": [970, 459],
+          "bottom_right": [844, 529],
+          "bottom_left": [721, 496]
+        }
+      },
+      {
+        "key": "lot_063",
+        "ru_name": "Рейд",
+        "en_name": "The Roadstead",
+
+        "filled_img": "",
+        "empty_img": "",
+        "price_filled": 124905,
+        "price_empty": 8000,
+        "size": [40, 30],
+        "coordinates": {
+          "top_left": [1078, 484],
+          "top_right": [1343, 547],
+          "bottom_right": [1230, 626],
+          "bottom_left": [953, 556]
+        }
+      }
+    ]
+  },
+  {
+    "key": "world_005_windenburg",
+    "ru_name": "Винденбург",
+    "en_name": "Windenburg",
+    "ru_description": "Вдохните полной грудью и насладитесь горным воздухом. На этой зелёной обширной территории есть всё: покрытая буйной растительностью сельская местность, безмятежные каменистые утёсы и причудливая деревушка с руинами старого мира, что уютно примостились у современного делового района на побережье.",
+    "en_description": "Take ye olde deep breath and enjoy the mountain air. This green, expansive playground has got it all; lush countryside, serene and rocky cliffs, a quaint village with remnants of the old world all nestled around the modern shore side business center.",
+    "icon": "Windenburg.png",
+    "filled_map": "",
+    "empty_map": "",
+    "neighborhoods": [
+      {
+        "key": "neighborhood_015",
+        "ru_name": "Олдплатц",
+        "en_name": "Olde Platz",
+        "ru_description": "В районе Олдплатц недостаток зелени компенсируется прекрасной булыжной мостовой. Живите, работайте и отдыхайте в историческом, культурном и самом старом районе Винденбурга.",
+        "en_description": "What Olde Platz lacks in greenery it makes up for in charming cobblestone. Live, work and play in the rich, cultural history of the oldest part of Windenburg.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_064",
+            "ru_name": "Хозяйская площадь",
+            "en_name": "Proprietor's Square",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 13609,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1232, 481],
+              "top_right": [1318, 468],
+              "bottom_right": [1348, 488],
+              "bottom_left": [1262, 504]
+            }
+          },
+          {
+            "key": "lot_065",
+            "ru_name": "Хавишам Хаус",
+            "en_name": "Havisham House",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 16788,
+            "price_empty": 1500,
+            "size": [20, 20],
+            "coordinates": {
+              "top_left": [1120, 510],
+              "top_right": [1184, 505],
+              "bottom_right": [1197, 530],
+              "bottom_left": [1130, 534]
+            }
+          },
+          {
+            "key": "lot_066",
+            "ru_name": "Фабрика",
+            "en_name": "Factory One",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 114772,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1234, 576],
+              "top_right": [1336, 570],
+              "bottom_right": [1353, 596],
+              "bottom_left": [1249, 602]
+            }
+          },
+          {
+            "key": "lot_067",
+            "ru_name": "Ватерлок Редут",
+            "en_name": "Waterlock Redoubt",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 57211,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1461, 556],
+              "top_right": [1530, 555],
+              "bottom_right": [1550, 596],
+              "bottom_left": [1480, 597]
+            }
+          },
+          {
+            "key": "lot_068",
+            "ru_name": "Квад Мэнор",
+            "en_name": "Quad Manor",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 115279,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1335, 447],
+              "top_right": [1397, 442],
+              "bottom_right": [1422, 476],
+              "bottom_left": [1358, 481]
+            }
+          },
+          {
+            "key": "lot_069",
+            "ru_name": "Нарвал Армс",
+            "en_name": "The Narwhal Arms",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 62675,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1369, 412],
+              "top_right": [1462, 411],
+              "bottom_right": [1474, 433],
+              "bottom_left": [1378, 434]
+            }
+          },
+          {
+            "key": "lot_070",
+            "ru_name": "Кофейня «Южная площадь»",
+            "en_name": "South Square Coffee",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 59136,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1483, 441],
+              "top_right": [1545, 438],
+              "bottom_right": [1574, 472],
+              "bottom_left": [1509, 475]
+            }
+          },
+          {
+            "key": "lot_071",
+            "ru_name": "Гостиничный двор",
+            "en_name": "Old Quarter Inn",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 62456,
+            "price_empty": 1500,
+            "size": [20, 20],
+            "coordinates": {
+              "top_left": [1616, 552],
+              "top_right": [1682, 547],
+              "bottom_right": [1706, 574],
+              "bottom_left": [1638, 577]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_016",
+        "ru_name": "Центр «Люкке»",
+        "en_name": "Lykke Centre",
+        "ru_description": "В современном и ослепительном центре «Люкке» процветают новые коммерческие предприятия Винденбурга.",
+        "en_description": "Fresh, new, and arrestingly shiny, Lykke Centre is where new commerical enterprise in Windenburg thrives.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_072",
+            "ru_name": "Bathe de Rill",
+            "en_name": "Бат-де-Риль",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 148409,
+            "price_empty": 3000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [1095, 730],
+              "top_right": [1250, 730],
+              "bottom_right": [1261, 783],
+              "bottom_left": [1099, 783]
+            }
+          },
+          {
+            "key": "lot_073",
+            "ru_name": "Хэр-сквэйр",
+            "en_name": "Hare Square",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 45631,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1344, 678],
+              "top_right": [1418, 690],
+              "bottom_right": [1388, 734],
+              "bottom_left": [1314, 722]
+            }
+          },
+          {
+            "key": "lot_074",
+            "ru_name": "Хэр-н-Хеджхог",
+            "en_name": "Hare and Hedgehog",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 73000,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1464, 735],
+              "top_right": [1528, 720],
+              "bottom_right": [1598, 766],
+              "bottom_left": [1533, 783]
+            }
+          },
+          {
+            "key": "lot_075",
+            "ru_name": "Харбор Квортер",
+            "en_name": "Harbor Quarter Gym",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 152528,
+            "price_empty": 2500,
+            "size": [30, 30],
+            "coordinates": {
+              "top_left": [1583, 807],
+              "top_right": [1690, 844],
+              "bottom_right": [1624, 889],
+              "bottom_left": [1517, 850]
+            }
+          },
+          {
+            "key": "lot_076",
+            "ru_name": "Пан Европа",
+            "en_name": "Discotheque Pan Europa",
+
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 131263,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [1286, 862],
+              "top_right": [1393, 835],
+              "bottom_right": [1438, 871],
+              "bottom_left": [1331, 898]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_017",
+        "ru_name": "Покинутый остров",
+        "en_name": "The Crumbling Isle",
+        "ru_description": "Покинутый остров совершенно не соответствует своему названию — здесь до самого горизонта простираются лишь современные и элитные постройки.",
+        "en_description": "The Crumbling Isle is a bit of a misnomer for this part of town. There's nothing here but glorious high-end real estate as far as the eye can see.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_077",
+            "ru_name": "Маяк",
+            "en_name": "The Lighthouse",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 161492,
+            "price_empty": 3000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [292, 649],
+              "top_right": [442, 640],
+              "bottom_right": [442, 687],
+              "bottom_left": [288, 695]
+            }
+          },
+          {
+            "key": "lot_078",
+            "ru_name": "Mid-NoWhere",
+            "en_name": "Из ниоткуда в никуда",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 1500,
+            "price_empty": 1500,
+            "size": [20, 20],
+            "coordinates": {
+              "top_left": [412, 726],
+              "top_right": [492, 721],
+              "bottom_right": [493, 754],
+              "bottom_left": [412, 760]
+            }
+          },
+          {
+            "key": "lot_079",
+            "ru_name": "Пир-палас",
+            "en_name": "Pier Palace",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 133691,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [341, 810],
+              "top_right": [415, 789],
+              "bottom_right": [467, 836],
+              "bottom_left": [391, 857]
+            }
+          },
+          {
+            "key": "lot_080",
+            "ru_name": "Док Ден",
+            "en_name": "Dock Den",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 86287,
+            "price_empty": 0,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [564, 811],
+              "top_right": [638, 823],
+              "bottom_right": [586, 878],
+              "bottom_left": [510, 865]
+            }
+          },
+          {
+            "key": "lot_081",
+            "ru_name": "Фон Винденбург Естейт",
+            "en_name": "Von-Windenburg Estate",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 266319,
+            "price_empty": 12000,
+            "size": [64, 64],
+            "coordinates": {
+              "top_left": [576, 682],
+              "top_right": [817, 667],
+              "bottom_right": [844, 774],
+              "bottom_left": [586, 790]
+            }
+          }
+        ]
+      },
+      {
+        "key": "neighborhood_018",
+        "ru_name": "Виндслар",
+        "en_name": "Windslar",
+        "ru_description": "Бескрайние просторы и парочка замков. Оцените восхитительную загородную жизнь в Виндсларе.",
+        "en_description": "Wide open spaces and a chateau or two. Visit or live in Windslar for a delectable taste of countryside living.",
+        "icon": "",
+        "lots": [
+          {
+            "key": "lot_082",
+            "ru_name": "Коттедж Коринберг",
+            "en_name": "Coorinberg Cottage",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 10165,
+            "price_empty": 3000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [446, 313],
+              "top_right": [554, 322],
+              "bottom_right": [523, 351],
+              "bottom_left": [414, 340]
+            }
+          },
+          {
+            "key": "lot_083",
+            "ru_name": "Коттедж 'На озере'",
+            "en_name": "Cottage Am See",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 45915,
+            "price_empty": 1500,
+            "size": [20, 20],
+            "coordinates": {
+              "top_left": [544, 364],
+              "top_right": [598, 370],
+              "bottom_right": [576, 390],
+              "bottom_left": [520, 383]
+            }
+          },
+          {
+            "key": "lot_084",
+            "ru_name": "Провинциальная резиденция",
+            "en_name": "Rustic Residence",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 16665,
+            "price_empty": 2000,
+            "size": [30, 20],
+            "coordinates": {
+              "top_left": [594, 402],
+              "top_right": [686, 405],
+              "bottom_right": [676, 426],
+              "bottom_left": [582, 422]
+            }
+          },
+          {
+            "key": "lot_085",
+            "ru_name": "Кричащие ламы",
+            "en_name": "The Shrieking Llama",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 57328,
+            "price_empty": 1500,
+            "size": [20, 20],
+            "coordinates": {
+              "top_left": [750, 404],
+              "top_right": [797, 417],
+              "bottom_right": [760, 435],
+              "bottom_left": [712, 422]
+            }
+          },
+          {
+            "key": "lot_086",
+            "ru_name": "Летний домик",
+            "en_name": "The Summer Home",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 3000,
+            "price_empty": 3000,
+            "size": [40, 30],
+            "coordinates": {
+              "top_left": [874, 406],
+              "top_right": [995, 415],
+              "bottom_right": [974, 448],
+              "bottom_left": [851, 437]
+            }
+          },
+          {
+            "key": "lot_087",
+            "ru_name": "Дрезден Хаус",
+            "en_name": "Dresden House",
+            "filled_img": "",
+            "empty_img": "",
+            "price_filled": 135430,
+            "price_empty": 12000,
+            "size": [64, 64],
+            "coordinates": {
+              "top_left": [780, 322],
+              "top_right": [963, 313],
+              "bottom_right": [991, 373],
+              "bottom_left": [798, 384]
+            }
+          }
+        ]
+      }
+    ],
+    "just_lots": [
+      {
+        "key": "lot_088",
+        "ru_name": "Фон Хонт Естейт",
+        "en_name": "Von Haunt Estate",
+        "filled_img": "",
+        "empty_img": "",
+        "price_filled": 213930,
+        "price_empty": 0,
+        "size": [40, 30],
+        "coordinates": {
+          "top_left": [695, 237],
+          "top_right": [774, 240],
+          "bottom_right": [752, 273],
+          "bottom_left": [672, 269]
+        }
+      },
+      {
+        "key": "lot_089",
+        "ru_name": "Утесы",
+        "en_name": "The Bluffs",
+        "filled_img": "",
+        "empty_img": "",
+        "price_filled": 30732,
+        "price_empty": 0,
+        "size": [30, 30],
+        "coordinates": {
+          "top_left": [574, 574],
+          "top_right": [666, 592],
+          "bottom_right": [615, 631],
+          "bottom_left": [520, 613]
+        }
+      },
+      {
+        "key": "lot_090",
+        "ru_name": "Древние развалины",
+        "en_name": "Ancient Ruins",
+        "filled_img": "",
+        "empty_img": "",
+        "price_filled": 2690,
+        "price_empty": 0,
+        "size": [20, 15],
+        "coordinates": {
+          "top_left": [1177, 405],
+          "top_right": [1229, 396],
+          "bottom_right": [1251, 409],
+          "bottom_left": [1198, 418]
+        }
+      }
+    ]
+  }
+]

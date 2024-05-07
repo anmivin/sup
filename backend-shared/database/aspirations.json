@@ -1,0 +1,3302 @@
+[
+  {
+    "key": "aspiration_001_friendoftheanimals",
+    "ru_name": "Друг животных",
+    "en_name": "Friend of the Animals",
+    "ru_description": "Этот персонаж хочет дружить с животными",
+    "en_description": "This Sim wants to be friends with the animals",
+    "part": "sims_4",
+    "group": "aspiration_group_001",
+    "bonus": "trait_094",
+    "icon": "AnimalsFriend.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Знакомый животных",
+        "en_name": "Acquaintance of the Animals",
+        "part": "sims_4",
+        "ru_description": "Завести питомца/Стать друзьями с одним питомцем/Выполнить 12 дружелюбных взаимодействий с питомцем",
+        "en_description": "Have a pet in your household/Be friends with 1 animal /Be friendly with animals 12 times"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Друг животных",
+        "en_name": "Friend of the Animals",
+        "part": "sims_4",
+        "ru_description": "Подружиться с 5 питомцем/Стать близкими друзьями с одним питомцем/Успешно отучить от 2 плохих действий",
+        "en_description": "Be friends with 5 animals/Be companions with 1 animal/Successfully train out 2 misbehaviors"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Лучший друг животных",
+        "en_name": "Best Friend of the Animals",
+        "part": "sims_4",
+        "ru_description": "Стать близкими друзьями с двумя питомцами/Почувствовать любовь с 5 разными питомцами/Успешно отучить от 4 плохих действий",
+        "en_description": "Be companions with 2 animals/Feel the love 5 times/Successfully train out 4 misbehaviors"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Самый лучший друг животных",
+        "en_name": "BFF of the Animals",
+        "part": "sims_4",
+        "ru_description": "Поиграть с 2 призраками питомцев/Почувствовать любовь с 8 разными питомцами/тать друзьями с 12 питомцами одновременно",
+        "en_description": "Play with 2 different ghost pets/Feel the love with 8 different pets/Be friends with 12 animals at the same time"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_002_bodybuilder",
+    "ru_name": "Культурист",
+    "en_name": "Bodybuilder",
+    "ru_description": "Этот персонаж хочет заниматься спортом и стать как можно сильнее",
+    "en_description": "This Sim wants to work out and become as strong as they can be!",
+    "part": "sims_4",
+    "group": "aspiration_group_002",
+    "bonus": "trait_095",
+    "icon": "Bodybuilder.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Тренер",
+        "en_name": "Basic Trainer",
+        "part": "sims_4",
+        "ru_description": "Упражняться в течение 8 часов/Упражняться в спортивном зале",
+        "en_description": "Work out for 8 total hours/Work out at a gym venue"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Гроза тренировок",
+        "en_name": "Exercise Demon",
+        "part": "sims_4",
+        "ru_description": "Достичь 4 уровня в навыке фитнеса/Упражняться 1 час на выносливость в возбужденном состоянии/Иметь 2 тренажёра",
+        "en_description": "Achieve level 4 fitness skill/Push the limits for 1 hour while energized/Own 2 pieces of workout equipment"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "В отличной форме",
+        "en_name": "Fit to a T",
+        "part": "sims_4",
+        "ru_description": "Достичь 6 уровня в навыке фитнеса/Бегать в течение 2 часов/Выполнять физические упражнения 10 часов",
+        "en_description": "Achieve level 6 fitness skill/Go jogging for 2 total hours/Spend 10 hours exercising"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Культурист",
+        "en_name": "Bodybuilder",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня в навыке фитнеса/Достичь максимального физического потенциала",
+        "en_description": "Achieve level 10 fitness skill/Reach Sim's maximum body potential"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_003_extremesportsenthusiast",
+    "ru_name": "Любитель экстрима",
+    "en_name": "Extreme Sports Enthusiast",
+    "ru_description": "Этот персонаж хочет изучить дикую природу горы Комореби и заняться экстремальными зимними видами спорта",
+    "en_description": "This Sim wants to explore Mt. Komorebi's wilderness and participate in extreme snow sports",
+    "part": "sims_4",
+    "group": "aspiration_group_002",
+    "bonus": "trait_096",
+    "icon": "ExtremeSpots.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Снежный студент",
+        "en_name": "Snow Student",
+        "part": "sims_4",
+        "ru_description": "Спуститься по учебному спуску/Купить лечебное или защитное средство в автомате или через компьютер/Воспользоваться доской объявлений на горе Комореби",
+        "en_description": "Go Down the Bunny Slope/Use a Vending Machine or the Computer to purchase a Remedy or Deterrent/Use a Mt. Komorebi Info Board"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Любитель острых ощущений",
+        "en_name": "Thrill Seeker",
+        "part": "sims_4",
+        "ru_description": "Достичь 3-го уровня навыка скалолазания/Пройти до конца пешеходной тропы/Активно кататься на лыжах, сноуборде или заниматься скалолазанием 3 часа/Встретить кодама или духа леса",
+        "en_description": "Achieve Level 3 Rock Climbing Skill/Complete a Hiking Trail/Actively Ski, Snowboard, or Rock Climb for 3 Hours/Encounter a Kodama or Forest Spirit"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Первопроходец",
+        "en_name": "Trailblazer",
+        "part": "sims_4",
+        "ru_description": "Кататься на лыжах или сноуборде с высокой активностью на склоне для любителей или знатоков/Успешно достичь вершины горы Комореби/Получить травму, катаясь на лыжах и сноуборде или занимаясь скалолазанием",
+        "en_description": "Perform High Intensity Skiing or Snowboarding on an Intermediate or Expert Slope/Successfully Reach the Peak of Mt. Komorebi/Endure an Injury Sustained from Skiing, Snowboarding, or Rock Climbing"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Первый среди первых",
+        "en_name": "Peak Pioneer",
+        "part": "sims_4",
+        "ru_description": "Не получить повреждений при нападении диких животных 3 раза/Достигнуть 8-го уровня навыка катания на лыжах или сноуборде или навыка скалолазания/Успешно покататься с высокой активностью на лыжах или сноуборде или заняться скалолазанием в плохие погодные условия",
+        "en_description": "Survive 3 Wildlife Attacks Unscathed/Achieve Level 8 Skiing, Snowboarding, or Rock Climbing Skill/Successfully Complete High Intensity Skiing or Snowboarding on an Expert Slope or Rock Climbing During Inclement Weather"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_004_championshiprider",
+    "ru_name": "Чемпионская езда",
+    "en_name": "Championship Rider",
+    "ru_description": "Персонаж хочет войти в число лучших всадников мира и доказать это на соревнованиях",
+    "en_description": "This Sim wants to be one of the world's premiere Horse Riders and will prove it by participating in Horse Competitions",
+    "part": "sims_4",
+    "group": "aspiration_group_002",
+    "bonus": "trait_097",
+    "icon": "ChampionshipRider.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Чемпионская езда",
+        "en_name": "Championship Rider",
+        "part": "sims_4",
+        "ru_description": "Достичь 10-го уровня в навыке верховой езды/Принять участие в 15 конных состязаниях/Получить золото в 5 конных состязаниях для мастеров/Победить в главном чемпионате",
+        "en_description": "Achieve level 10 Horse Riding Skill/Compete in 15 Horse Competitions/Win Gold in 5 Master Horse Competitions/Place at the Ultimate Horse Championship"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_005_paintereExtraordinaire",
+    "ru_name": "Исключительный художник",
+    "en_name": "Painter Extraordinaire",
+    "ru_description": "Этот персонаж хочет посвятить свою жизнь искусству и рисованию",
+    "en_description": "This Sim wants his/her life to be all about art and painting!",
+    "part": "sims_4",
+    "group": "aspiration_group_003",
+    "bonus": "trait_098",
+    "icon": "PainterExtraordinaire.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Работа с мольбертом",
+        "en_name": "Ill at Easel",
+        "part": "sims_4",
+        "ru_description": "Начать 3 картины, находясь во вдохновленном состоянии/Рисовать в течение 5 часов",
+        "en_description": "Start 3 paintings while inspired/Paint for 5 hours"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Кисточка величия",
+        "en_name": "Brushing with Greatness",
+        "part": "sims_4",
+        "ru_description": "Достичь 6 уровня в навыке рисования/Любоваться или восхищаться 3 картинами в музее/Нарисовать 10 превосходных картин",
+        "en_description": "Achieve level 6 painting skill/View or admire 3 paintings at a museum/Complete 10 excellent paintings"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Искусный художник",
+        "en_name": "Fine Artist",
+        "part": "sims_4",
+        "ru_description": "Достичь 4 уровня в навыке рисования/Продать 3 картины коллекционерам или художественной галерее/Нарисовать 3 эмоциональные картины",
+        "en_description": "Achieve level 4 painting skill/Sell 3 paintings to collectors or art gallery/Complete 3 emotional paintings"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Особый художник",
+        "en_name": "Painter Extraordinaire",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня в навыке рисования/Нарисовать 5 шедевров",
+        "en_description": "Achieve level 10 painting skill/Complete 5 masterpieces"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_006_musicalgenius",
+    "ru_name": "Музыкальный талант",
+    "en_name": "Musical Genius",
+    "ru_description": "Этот персонаж хочет стать профессиональным музыкантом и поэтом-песенником",
+    "en_description": "This Sim wants to be an expert musician and songwriter!",
+    "part": "sims_4",
+    "group": "aspiration_group_003",
+    "bonus": "trait_100",
+    "icon": "MusicalGenius.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Без музыкального слуха",
+        "en_name": "Tone Deaf",
+        "part": "sims_4",
+        "ru_description": "Упражняться в музыке 6 часов/Слушать музыку в течение 2 часов",
+        "en_description": "Practice music for 6 hours/Listen to music for 2 hours"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Точная настройка",
+        "en_name": "Fine Tuned",
+        "part": "sims_4",
+        "ru_description": "Достичь 4 уровня навыка игры на инструменте/Играть 1 час на музыкальном инструменте, находясь во вдохновленном состоянии",
+        "en_description": "Achieve level 4 skill in an instrument/Play an instrument for 1 hour while inspired"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Мелодичный",
+        "en_name": "Harmonious",
+        "part": "sims_4",
+        "ru_description": "Достичь 6 уровня навыка игры на инструменте/Сочинить 4 песни/Заработать 500 §, продавая права на песни",
+        "en_description": "Achieve level 6 skill in any instrument/Write 4 songs/Earn §500 from licensed songs"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Музыкальный талант",
+        "en_name": "Musical Genius",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня навыка игры на инструменте/Играть на музыкальном инструменте в течение 75 часов/Руководить обучением музыке в течение 3 часов",
+        "en_description": "Reach level 10 skill in an instrument/Have spent 75 hour playing musical instruments/Mentor others in music for 3 hours"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_007_bestsellingauthor",
+    "ru_name": "Популярный автор",
+    "en_name": "Bestselling Author",
+    "ru_description": "Этот персонаж хочет писать книги и стать известным автором",
+    "en_description": "This Sim wants to write books and become a famous author!",
+    "part": "sims_4",
+    "group": "aspiration_group_003",
+    "bonus": "trait_099",
+    "icon": "BestsellingAuthor.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Лингвист-недоучка",
+        "en_name": "Fledge-linguist",
+        "part": "sims_4",
+        "ru_description": "Написать 2 книги/Писать 1 час подряд, находясь во вдохновленном состоянии",
+        "en_description": "Write 2 books/Write for 1 hour while inspired"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Грамотный литератор",
+        "en_name": "Competent Wordsmith",
+        "part": "sims_4",
+        "ru_description": "Достичь 4 уровня в навыке писательства/Писать в течение 15 часов/Написать 5 хороших книг",
+        "en_description": "Achieve level 4 writing skill/Have written for a total of 15 hours/Write 5 good books"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Романтичный романист",
+        "en_name": "Novelest Novelist",
+        "part": "sims_4",
+        "ru_description": "Достичь 6 уровня в навыке писательства/Опубликовать 10 книг/Написать 5 превосходных книг",
+        "en_description": "Achieve level 6 writing skill/Publish 10 books/Write 5 excellent books"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Популярный автор",
+        "en_name": "Bestselling Author",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня в навыке писательства/Написать 3 бестселлера/Заработать 25 000 § на лицензионных отчислениях за опубликованные книги",
+        "en_description": "Achieve level 10 writing skill/Complete 3 bestsellers/ Have earned §25,000 in royalties publishing books"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_008_masteractor",
+    "ru_name": "Опытный актер",
+    "en_name": "Master Actor",
+    "ru_description": "Персонаж хочет отточить своё мастерство и стать признанным актёром",
+    "en_description": "This Sim wants to hone their craft and become an acclaimed actor",
+    "part": "sims_4",
+    "group": "aspiration_group_003",
+    "bonus": "trait_101",
+    "icon": "GreatActor.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Начинающий актёр",
+        "en_name": "Aspiring Actor",
+        "part": "sims_4",
+        "ru_description": "Достигнуть 3-го уровня навыка актёрского мастерства/Учиться входить в роль в течение 2 часов",
+        "en_description": "Achieve level 3 acting skill/Practice acting for 2 hours"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Посредственный актёр",
+        "en_name": "Intermediate Actor",
+        "part": "sims_4",
+        "ru_description": "Повзрослеть/Начать актёрскую карьеру/Заработать золото на съёмки в рекламе/Устройте уличное представление",
+        "en_description": "Become an adult/Join the Acting career/Earn Gold in a commercial acting gig/Give a street performance"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Перспективный актёр",
+        "en_name": "Advanced Actor",
+        "part": "sims_4",
+        "ru_description": "Достигнуть 7-го уровня навыка актёрского мастерства/Получить награду/Заработать золото за съёмки в сериале",
+        "en_description": "Achieve level 7 acting skill/Receive an award/Earn Gold in a TV show acting gig"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Опытный актёр",
+        "en_name": "Master Actor",
+        "part": "sims_4",
+        "ru_description": "Достигнуть 10-го уровня навыка актёрского мастерства/Разместить плитку со своим именем на бульваре Старлайт/Заработать золото за съёмки в кино",
+        "en_description": "Achieve level 10 acting skill/Place a celebrity tile in Starlight boulevard/Earn Gold in a movie acting gig"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_009_mastermaker",
+    "ru_name": "Искусный мастер",
+    "en_name": "Master Maker",
+    "ru_description": "Этот персонаж хочет в совершенстве освоить навык производства",
+    "en_description": "This Sim wants to become an expert at Fabrication!",
+    "part": "sims_4",
+    "group": "aspiration_group_003",
+    "bonus": "trait_102",
+    "icon": "CreativityMaker.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Разнорабочий",
+        "en_name": "Jerry Rigger",
+        "part": "sims_4",
+        "ru_description": "Достичь 3-го уровня навыка производства/Утилизировать мусор 5 раз",
+        "en_description": "Achieve level 3 skill in fabrication/Recycle 5 times"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Кустарь",
+        "en_name": "The Better Builder",
+        "part": "sims_4",
+        "ru_description": "Достичь 5-го уровня навыка производства/Собрать 5 предметов/Приобрести 5 красок",
+        "en_description": "Achieve level 5 skill in fabrication/Fabricate 5 items/Have 5 dyes"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Ремесленник",
+        "en_name": "Competent Crafter",
+        "part": "sims_4",
+        "ru_description": "Достичь 7-го уровня навыка производства/Собрать насекомых с фермы насекомых 3 раза/Изготовить 5 свечей",
+        "en_description": "Achieve level 7 skill in fabrication/Collect insects from an insect farm 3 times/Create 5 candles"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Искусный мастер",
+        "en_name": "Master Maker",
+        "part": "sims_4",
+        "ru_description": "Достичь 10-го уровня навыка производства/Создать 20 свечей/Выполнить 5 заказов в качестве внештатного производителя",
+        "en_description": "Achieve level 10 skill in fabrication/Make 20 candles/Complete 5 gigs as a freelance crafter"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_010_lordoftheknits",
+    "ru_name": "Повелитель вязания",
+    "en_name": "Lord of the Knits",
+    "ru_description": "У этого персонажа вместо крови в венах нитки, и его ничто не остановит на пути к становлению умелым вязальщиком",
+    "en_description": "This Sim has yarn running through his/her veins and will stop at nothing on his/her quest to craft the perfect knittable!",
+    "part": "sims_4",
+    "group": "aspiration_group_003",
+    "bonus": "trait_103",
+    "icon": "LordOfTheKnits.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Скромный вязальщик",
+        "en_name": "Humble Knitter",
+        "part": "sims_4",
+        "ru_description": "Вязать в течение 5 часов/Начать 3 проекта для вязания, будучи во вдохновлённом состоянии/Вязать в кресле-качалке",
+        "en_description": "Knit for 5 Hours/Start 3 Knitting Projects while Inspired/ Knit on a Rocking Chair"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Друг ниток",
+        "en_name": "Thread Setter",
+        "part": "sims_4",
+        "ru_description": "Достичь 4-го уровня навыка вязания/Вязать под музыку/Продать вязаное изделие в «Продавито»",
+        "en_description": "Achieve Level 4 Knitting Skill/Knit while listening to Music/Sell a Knitted Object on Plopsy"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Ткач снов",
+        "en_name": "Dream Weaver",
+        "part": "sims_4",
+        "ru_description": "Создать 10 превосходных вязаных изделий/Успешно подарить 3 вязаных изделия/Достичь 6-го уровня навыка вязания/Успешно показать своё вязаное изделие другому персонажу",
+        "en_description": "Complete 10 Excellent Knittables/Successfully Gift 3 Knittables/Achieve Level 6 Knitting Skill/Successfully Show Off your Knitted Sweater to another Sim"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Повелитель вязания",
+        "en_name": "Lord of the Knits",
+        "part": "sims_4",
+        "ru_description": "Пожертвовать 5 вязаных изделий на цели благотворительности/Достичь 10-го уровня навыка вязания/Создать 5 вязаных изделий легендарного качества/Учить другого персонажа вязанию",
+        "en_description": "Donate 5 Knitted Items to Charity/Achieve Level 10 Knitting Skill/Complete 5 Legendary Knittables/Teach another Sim to Knit"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_011_publicenemy",
+    "ru_name": "Враг народа",
+    "en_name": "Public Enemy",
+    "ru_description": "Этот персонаж хочет завести врагов и стать известным криминальным авторитетом!",
+    "en_description": "This Sim wants to make enemies and be a famous criminal!",
+    "part": "sims_4",
+    "group": "aspiration_group_004",
+    "bonus": "trait_104",
+    "icon": "PublicEnemy.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Почти безвредный",
+        "en_name": "Mostly Harmless",
+        "part": "sims_4",
+        "ru_description": "Выполнить 10 злых или пакостных действий/Стать недругом 2 персонажам",
+        "en_description": "Perform 10 mean or mischievous interactions/Be disliked by 2 Sim"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Гроза соседей",
+        "en_name": "Neighborhood Nuisance",
+        "part": "sims_4",
+        "ru_description": "Стать недругом 4 персонажам/Стать взрослым/Начать карьеру преступника(цы)",
+        "en_description": "Be disliked by 4 Sims/Become an adult/Join the criminal career"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Коварный жулик",
+        "en_name": "Criminal Mind",
+        "part": "sims_4",
+        "ru_description": "Признать персонажа врагом/Достичь 4 уровня в карьере преступника(цы)/Ввязаться в 5 драк",
+        "en_description": "Have a declared enemy/Reach level 4 of the criminal career/Fight 5 times"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Злоумышленник",
+        "en_name": "Public Enemy",
+        "part": "sims_4",
+        "ru_description": "Станьте свидетелем смерти персонажа/Достичь 8 уровня в карьере преступника(цы)/Признать врагами 3 персонажей",
+        "en_description": "Witness the death of a Sim/Reach level 8 of the criminal career/Have 3 declared enemies"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_012_chiefofmischief",
+    "ru_name": "Большой бедокур",
+    "en_name": "Chief of Mischief",
+    "ru_description": "Этот персонаж обожает шутки и розыгрыши!",
+    "en_description": "This Sim is all about pranks and mayhem!",
+    "part": "sims_4",
+    "group": "aspiration_group_004",
+    "bonus": "trait_105",
+    "icon": "ChiefofMischief.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Почти безвредный",
+        "en_name": "Mostly Harmless",
+        "part": "sims_4",
+        "ru_description": "Выполнить 10 злых или пакостных действий/Стать недругом 2 персонажам",
+        "en_description": "Perform 10 mean or mischievous interactions/Be disliked by 2 Sims"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Коварный жулик",
+        "en_name": "Artful Trickster",
+        "part": "sims_4",
+        "ru_description": "Совершить 3 раза пакость, пользуясь компьютером/Достичь 3 уровня в навыке пакостей",
+        "en_description": "Use a computer to cause mischief 3 times/Achieve level 3 mischief skill"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Профессиональный проказник",
+        "en_name": "Professional Prankster",
+        "part": "sims_4",
+        "ru_description": "Пошалить 10 раз/Достичь 6 уровня в навыке пакостей",
+        "en_description": "Pull 10 pranks/Achieve level 6 mischief skill"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Большой бедокур",
+        "en_name": "Chief of Mischief",
+        "part": "sims_4",
+        "ru_description": "Засорить сливы в 3 домах/Совершить ритуал Вуду 5 раз/Достичь 10 уровня в навыке пакостей",
+        "en_description": "Clog drains at 3 different homes/Perform voodoo 5 times/Achieve level 10 mischief skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_013_villainousvalentine",
+    "ru_name": "Подлый партнер",
+    "en_name": "Villainous Valentine",
+    "ru_description": "Этот персонаж обожает рушить романтические отношения, включая свои собственные",
+    "en_description": "This Sim wants to destroy the love lives of all Sims, including their own!",
+    "part": "sims_4",
+    "group": "aspiration_group_004",
+    "bonus": "trait_106",
+    "icon": "VillainousValentine.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Подлый партнер",
+        "en_name": "Villainous Valentine",
+        "part": "sims_4",
+        "ru_description": "Оказаться пойманным на измене/Стать бывшим партнёром других персонажей/Разрушать пары",
+        "en_description": "Get caught cheating/Achieve ex status with other Sims/Break up couples"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_014_seekerofsecrets",
+    "ru_name": "Жажда сокрытого",
+    "en_name": "Seeker of Secrets",
+    "ru_description": "Смысл жизни этих персонажей - узнавать чужие тайны. Что им потом делать с этой информацией - уже другой вопрос...",
+    "en_description": "This Sim loves the thrill of discovering juicy Secrets about other Sims. What they do with that information has yet to be decided...",
+    "part": "sims_4",
+    "group": "aspiration_group_004",
+    "bonus": "trait_",
+    "icon": "SeekerOfSecrets.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Зарождение любопытства",
+        "en_name": "Nosy Novice",
+        "part": "sims_4",
+        "ru_description": "Узнать секреты/Рыться в вещах ради секрета/Подслушать разговоры персонажей",
+        "en_description": "Discover Secrets/Snoop for Secrets/Eavesdrop on Sims"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Опытная слежка",
+        "en_name": "Superior Pryer",
+        "part": "sims_4",
+        "ru_description": "Спросить персонажа про секрет/Сохранить секрет/Узнать секреты с помощью подслушивания",
+        "en_description": "Confront a Sim with a Secret/Keep a Secret/Discover Secrets by Eavesdropping"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Первоклассное подглядывание",
+        "en_name": "Snooper Extraordinaire",
+        "part": "sims_4",
+        "ru_description": "Проникнуть в чужой дом/Найти удостоверение специалиста по отлову тигров/Шантажировать персонажа",
+        "en_description": "Break into a Home/Find a Tiger Inspector Badge/Blackmail a Sim"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_015_successfullineage",
+    "ru_name": "Хорошая наследственность",
+    "en_name": "Successful Lineage",
+    "ru_description": "Этот персонаж хочет, чтобы его семья хорошо устроилась в жизни",
+    "en_description": "This Sim wants to have a family that succeeds in life!",
+    "part": "sims_4",
+    "group": "aspiration_group_005",
+    "bonus": "trait_108",
+    "icon": "SuccessfulLineage.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Примерный родитель",
+        "en_name": "Readily a Parent",
+        "part": "sims_4",
+        "ru_description": "Стать взрослым/Потратить 1 000 § на товары для детей",
+        "en_description": "Become an adult/Spend §1000 on kids' stuff"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Попечитель",
+        "en_name": "Caregiver",
+        "part": "sims_4",
+        "ru_description": "Почитать ребёнку в течение 2 часов/Стать родителем/Пообщаться со своим ребёнком 10 раз",
+        "en_description": "Read to a child for 2 total hours/Become a parent/Socialize with your child 10 times"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Почитаемый наставник",
+        "en_name": "Trusted Mentor",
+        "part": "sims_4",
+        "ru_description": "Помочь ребёнку с домашним заданием 3 раза/Пусть ребёнок получит пятёрку в школе/Пусть ребёнок максимально разовьёт один из навыков",
+        "en_description": "Help a child with homework 3 times/Have a child earn an 'A' in high school/Have a child max any skill"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Хорошая наследственность",
+        "en_name": "Successful Lineage",
+        "part": "sims_4",
+        "ru_description": "Руководить обучением своего ребёнка 3 раза/Пусть ребёнок выполнит жизненную цель/Пусть ребёнок или внук достигнет верха карьеры",
+        "en_description": "Mentor your child 3 times/Have a child complete an aspiration/Have a child or grandchild reach the top of a career"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_016_bighappyfamily",
+    "ru_name": "Счастливая семья",
+    "en_name": "Big Happy Family",
+    "ru_description": "Этот персонаж хочет построить большой и полный любви дом",
+    "en_description": "This Sim wants to build a large, loving household!",
+    "part": "sims_4",
+    "group": "aspiration_group_005",
+    "bonus": "trait_107",
+    "icon": "HappyFamily.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Примерный родитель",
+        "en_name": "Readily a Parent",
+        "part": "sims_4",
+        "ru_description": "Стать взрослым/Потратить 1 000 § на товары для детей",
+        "en_description": "Become an adult/Spend §1000 on kids' stuff"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Попечитель",
+        "en_name": "Caregiver",
+        "part": "sims_4",
+        "ru_description": "Почитать ребёнку в течение 2 часов/Стать родителем/Пообщаться со своим ребёнком 10 раз",
+        "en_description": "Read to a child for 2 total hours/Become a parent/Socialize with your child 10 times"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Любящий опекун",
+        "en_name": "Loving Guardian",
+        "part": "sims_4",
+        "ru_description": "Быть родителем ребёнка, у которого есть 3 друга/Стать другом 3 своим детям/Иметь женатого ребёнка",
+        "en_description": "Be parent to a child with 3 friends/Be friends with 3 of your children/Have a child get married"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Счастливая семья",
+        "en_name": "Big Happy Family",
+        "part": "sims_4",
+        "ru_description": "Пообщаться со своим ребёнком или внуком 10 раз/Обзавестись 4 внуками/Стать хорошими друзьями с 4 детьми или внуками",
+        "en_description": "Socialize with your child or grandchild 10 times/Have 4 grandchildren/Become good friends with 4 children or grandchildren"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_017_vampirefamily",
+    "ru_name": "Семья вампиров",
+    "en_name": "Vampire Family",
+    "ru_description": "Этот персонаж хочет создать семью вампиров",
+    "en_description": "This Sim wants to have a family of Vampires!",
+    "part": "sims_4",
+    "group": "aspiration_group_005",
+    "bonus": "trait_109",
+    "icon": "VampireFamily.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Основы",
+        "en_name": "The Basics",
+        "part": "sims_4",
+        "ru_description": "Стать вампиром",
+        "en_description": "Become a Vampire"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "У меня есть сила",
+        "en_name": "I Have the Power",
+        "part": "sims_4",
+        "ru_description": "Купить способность \"Создание вампиров\"/Стать младшим вампиром",
+        "en_description": "Purchase the Vampire Creation Power/Become a Minor Vampire"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Мне не одиноко",
+        "en_name": "I am Not Alone",
+        "part": "sims_4",
+        "ru_description": "Стать опытным вампиром/Обучать отпрыска: 3/Обратить персонажей в вампиров: 5",
+        "en_description": "Become a Prime Vampire/Train 3 Offspring/Convert 5 Sims into full grown Vampires"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Новая семья",
+        "en_name": "A New Family",
+        "part": "sims_4",
+        "ru_description": "Стать хорошими друзьями с отпрыском: 5/Стать повелителем вампиров",
+        "en_description": "Be Good Friends with 5 Offspring/Become a Master Vampire"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_018_superparent",
+    "ru_name": "Супер-родитель",
+    "en_name": "Super Parent",
+    "ru_description": "Этот персонаж хочет стать самым лучшим родителем",
+    "en_description": "This Sim wants to be the best parent ever!",
+    "part": "sims_4",
+    "group": "aspiration_group_005",
+    "bonus": "trait_110",
+    "icon": "Superparent.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Примерный родитель",
+        "en_name": "Readily a Parent",
+        "part": "sims_4",
+        "ru_description": "Стать взрослым · Потратить 1 000 § на товары для детей",
+        "en_description": "Become an adult/Spend §1000 on kids' stuff"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Попечитель",
+        "en_name": "Offspring Instructor",
+        "part": "sims_4",
+        "ru_description": "Стать родителем/Достичь 4-го уровня в навыке воспитания/Наказать малыша, ребёнка или подростка 5 раз",
+        "en_description": "Become a Parent/Achieve Level 4 Parenting Skill/Discipline Your Child, Toddler, or Teen 5 Times"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Почитаемый наставник",
+        "en_name": "Character Coach",
+        "part": "sims_4",
+        "ru_description": "Помогать ребёнку с домашним заданием в течение 4 часов/Достичь 6-го уровня в навыке воспитания/Воспитать ребёнка с достоинством характера в пределах диапазона для получения черты характера",
+        "en_description": "Help a Child with School Work for 4 Hours/Achieve Level 6 Parenting Skill/Have a Child with a Character Value within range to receive a Trait"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Любящий опекун",
+        "en_name": "Super Parent",
+        "part": "sims_4",
+        "ru_description": "Достичь 10-го уровня в навыке воспитания/Включить режим \"Мега-родитель\"/Воспитать ребёнка с тремя положительными достоинствами характера",
+        "en_description": "Achieve Level 10 Parenting Skill/Go into Full Parent Mode/Have a Child with 3 Positive Character Value Traits"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_019_masterchef",
+    "ru_name": "Шеф-повар",
+    "en_name": "Master Chef",
+    "ru_description": "Этот персонаж хочет освоить кулинарное искусство",
+    "en_description": "This Sim wants to master the Culinary Arts!",
+    "part": "sims_4",
+    "group": "aspiration_group_006",
+    "bonus": "trait_111",
+    "icon": "MasterChef.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Помощник шефа",
+        "en_name": "Aluminum Chef",
+        "part": "sims_4",
+        "ru_description": "Приготовить 5 превосходных блюд/Приготовить 2 блюда, находясь во вдохновленном состоянии",
+        "en_description": "Cook 5 excellent meals/Cook 2 meals while inspired"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Капитан Кок",
+        "en_name": "Captain Cook",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня в навыке кулинарии/Приготовить изысканное блюдо/Заработать серебро за званый обед",
+        "en_description": "Achieve level 5 cooking skill/Cook a gourmet meal/Earn silver at a dinner party event"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Искусный кулинар",
+        "en_name": "Culinary Artist",
+        "part": "sims_4",
+        "ru_description": "Стать взрослым/Достичь 4 уровня в карьере кулинара/Создать 3 типа превосходных блюд",
+        "en_description": "Become an adult/Reach level 4 in the culinary career/Create 3 types of excellent food"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Шеф-повар",
+        "en_name": "Master Chef",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня в навыке изысканной кулинарии/Достичь 8 уровня в карьере кулинара/Приготовить 3 изысканных блюда на одном мероприятии",
+        "en_description": "Achieve level 5 of gourmet cooking skill/Reach level 8 of the culinary career/Cook 3 gourmet dishes at a single event"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_020_mastermixologist",
+    "ru_name": "Лучший бармен",
+    "en_name": "Master Mixologist",
+    "ru_description": "Этот персонаж хочет знать всё, что только можно узнать, про смешивание напитков",
+    "en_description": "This Sim wants to know everything there is to know about Mixology!",
+    "part": "sims_4",
+    "group": "aspiration_group_006",
+    "bonus": "trait_112",
+    "icon": "MasterMixologist.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Бармен-новичок",
+        "en_name": "Bar Tenderfoot",
+        "part": "sims_4",
+        "ru_description": "Приготовить 10 напитков/Приобрести 2 барных стула",
+        "en_description": "Mix 10 drinks/Own a bar and 2 barstools"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Электромиксер",
+        "en_name": "Electric Mixer",
+        "part": "sims_4",
+        "ru_description": "Достичь 4 уровня в навыке смешивания напитков/Стать взрослым · Начать карьеру кулинара",
+        "en_description": "Achieve level 4 mixology skill/Become an adult/Join the culinary career"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Главный по напиткам",
+        "en_name": "Beverage Boss",
+        "part": "sims_4",
+        "ru_description": "Приготовить 3 напитка на одном общественном мероприятии/Выбрать специализацию «Бармен» в карьере кулинара/Достичь 7 уровня в навыке смешивания напитков",
+        "en_description": "Mix 3 drinks at a single social event/Join the mixology branch of the culinary career/Achieve level 7 in mixology skill"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Лучший бармен",
+        "en_name": "Master Mixologist",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня в навыке смешивания напитков/Создать 5 типов превосходных напитков",
+        "en_description": "Achieve level 10 mixology skill/Create 5 types of excellent drink"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_021_expertnectarmaker",
+    "ru_name": "Эксперт по нектару",
+    "en_name": "Expert Nectar Maker",
+    "ru_description": "Персонаж хочет досконально изучить искусство приготовления нектара и всегда готовить нектар высшей пробы. А еще заработать на этом неприлично много симолеонов",
+    "en_description": "This Sim wants to master the art of Nectar Making, honing their abilities to consistently craft only the best Nectars. They also want to make an absurd amount of Simoleons doing it",
+    "part": "sims_4",
+    "group": "aspiration_group_006",
+    "bonus": "trait_113",
+    "icon": "ExpertNectarMaker.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Эксперт по нектару",
+        "en_name": "Expert Nectar Maker",
+        "part": "sims_4",
+        "ru_description": "Достичь 5-го уровня в навыке приготовления нектара/Сделать отличные бутылки нектара: 50/Заработать деньги на продаже нектара: 100000 §",
+        "en_description": "Achieve level 5 Nectar Making Skill/Make 50 Excellent Bottles of Nectar/Make §100,000 Selling Nectar"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_022_appliancewiz",
+    "ru_name": "Чудеса техники",
+    "en_name": "Appliance Wiz",
+    "ru_description": "Этот персонаж умеет обращаться с небольшими бытовыми приборами!",
+    "en_description": "This Sim knows their way around the small kitchen appliances!",
+    "part": "sims_4",
+    "group": "aspiration_group_006",
+    "bonus": "trait_237",
+    "icon": "ApplianceWiz.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Скоростная рубка",
+        "en_name": "Chop Chopper",
+        "part": "sims_4",
+        "ru_description": "Получить заготовленные ингридиенты 5 раз, находясь во вдохновленном состоянии/Иметь 1 небольшой бытовой прибор",
+        "en_description": "Collect Prepped Ingredients 5 times while Inspired/Own 1 small kitchen appliance"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Мастерская резьба на куски",
+        "en_name": "Slicer and Dicer",
+        "part": "sims_4",
+        "ru_description": "Быстро что-то приготовить 5 раз/Получить 3 заготовленных ингридиента, которые были созданы с использованием свежих ингридиентов",
+        "en_description": "Experience Sped Up Cooking 5 timers/Collect 3 Prepped Ingredients that were made using Fresh Ingredients"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Теория вкуса",
+        "en_name": "Flavor Fusionist",
+        "part": "sims_4",
+        "ru_description": "Получить 1 заготовленный ингридиент превосходного качества/Готовить 5 раз под музыку/Приготовить бляда с использованием 6 разных заготовленных ингридиентов",
+        "en_description": "Collect 1 excellent quality Prepped Ingredient/Cook 5 times while listening to music/Cook meals using 6 unique Prepped Ingredients"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Маэстро смешивания",
+        "en_name": "Mixing Maestro",
+        "part": "sims_4",
+        "ru_description": "приготовить приятно неприятные вафли/Сделать заготовленный ингридиент, используя миксер с как минимум одним улучшением/Приготовить 2 пиццы или вафли после достижения серебрянного уровня на целевом событии",
+        "en_description": "Make Pleasantly-Unpleasant Waffles/Make a Prepped ingredient using a Stand Mixer with at least one Upgrade/Cook 2 Pizzas or Waffles at a single Goaled Social Event after reaching Silver"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_023_grilledcheese",
+    "ru_name": "Жаренный сыр",
+    "en_name": "Grilled Cheese",
+    "ru_description": "Этот персонаж хочет есть, обсуждать, спать, мечтать и жить горячими бутербродами с сыром",
+    "en_description": "This Sim wants to eat, discuss, sleep, dream, and live grilled cheese sandwiches",
+    "part": "sims_4",
+    "group": "aspiration_group_006",
+    "bonus": "trait_114",
+    "icon": "GrilledCheese.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Поедатель сыра гауда",
+        "en_name": "Gouda Greenhorn",
+        "part": "sims_4",
+        "ru_description": "Обсудить жареный сыр с 3 разными персонажами/Съесть 10 горячих бутербродов с сыром",
+        "en_description": "Talk about Grilled Cheese with 3 different Sims/Eat 10 Grilled Cheese"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Знаток сыра чеддер",
+        "en_name": "Cheddar Connoisseur",
+        "part": "sims_4",
+        "ru_description": "Съесть 10 горячих бутербродов с сыром превосходного качества/Приготовить 3 порции горячих бутербродов с сыром/Обсудить жареный сыр с 5 разными персонажами",
+        "en_description": "Eat 10 Grilled Cheese of Excellent quality/Prepare 3 group servings of Grilled Cheese//"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Любитель сыра мюнстер",
+        "en_name": "Muenster Maniac",
+        "part": "sims_4",
+        "ru_description": "Есть горячий бутерброд с сыром в космосе/Сделать горячий бутерброд с сыром превосходного качества/Обсудить жареный сыр со Смертью",
+        "en_description": "Eat Grilled Cheese in space/Prepare Grilled Cheese of Excellent quality/Talk to the Grim Reaper about Grilled Cheese"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_024_fabulouslywealthy",
+    "ru_name": "Сказочное богатство",
+    "en_name": "Fabulously Wealthy",
+    "ru_description": "Этот персонаж хочет разбогатеть и иметь успешную карьеру",
+    "en_description": "This Sim wants to get rich and have a successful career!",
+    "part": "sims_4",
+    "group": "aspiration_group_007",
+    "bonus": "trait_115",
+    "icon": "FabulouslyWealthy.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Уже не банкрот",
+        "en_name": "Going for Not Broke",
+        "part": "sims_4",
+        "ru_description": "Заработать 5 000 §/Иметь в запасе 10 000 §",
+        "en_description": "Have earned §5,000/Have §10,000 in reserve"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Уже не растратчик",
+        "en_name": "Learning Earning",
+        "part": "sims_4",
+        "ru_description": "Иметь в запасе 20 000 §/Заработать 25 000 §",
+        "en_description": "Have §20,000 in reserve/Have earned §25,000"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "При деньгах",
+        "en_name": "Well-off",
+        "part": "sims_4",
+        "ru_description": "Заработать 75 000 §/Иметь в запасе 35 000 §",
+        "en_description": "Have earned §75,000/Have §35,000 in reserve"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Сказочное богатство",
+        "en_name": "Fabulously Wealthy",
+        "part": "sims_4",
+        "ru_description": "Заработать 200 000 §/Иметь в запасе 50 000 §",
+        "en_description": "Have earned §200,000/Have §50,000 in reserve"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_025_mansionbaron",
+    "ru_name": "Барон",
+    "en_name": "Mansion Baron",
+    "ru_description": "Этот персонаж хочет иметь самый большой и вычурный дом",
+    "en_description": "This Sim is all about owning the biggest, fanciest home!",
+    "part": "sims_4",
+    "group": "aspiration_group_007",
+    "bonus": "trait_116",
+    "icon": "MansionBaron.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Помещик",
+        "en_name": "Estate of the Art",
+        "part": "sims_4",
+        "ru_description": "Владеть домом стоимостью в 50 000 §/Стать владельцем 15 предметов искусства",
+        "en_description": "Have a home worth §50,000/Own 15 pieces of art"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Известный дизайнер",
+        "en_name": "The Great Landscaper",
+        "part": "sims_4",
+        "ru_description": "Владеть домом стоимостью в 100 000 §/Купить предметы для благоустройства и озеленения на сумму 5 000 §",
+        "en_description": "Have a home worth §100,000/Purchase §5,000 worth of landscaping"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Реставратор",
+        "en_name": "Home Renovator",
+        "part": "sims_4",
+        "ru_description": "Владеть домом стоимостью в 200 000 §/Стать владельцем 30 окон",
+        "en_description": "Have a home worth §200,000/Own 30 windows"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Барон",
+        "en_name": "Mansion Baron",
+        "part": "sims_4",
+        "ru_description": "Владеть домом стоимостью в 350 000 §/Купить 20 колонн",
+        "en_description": "Have a home worth §350,000/Purchase 20 columns"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_026_marketmagnate",
+    "ru_name": "Гроза рынка",
+    "en_name": "Market Magnate",
+    "ru_description": "Этот персонаж хочет владеть самым прибыльным киоском с едой",
+    "en_description": "This Sim wants to operate the most profitable food stand!",
+    "part": "sims_4",
+    "group": "aspiration_group_007",
+    "bonus": "trait_238",
+    "icon": "MarketMagnate.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Прибыльные углеводы",
+        "en_name": "Carb Commerce",
+        "part": "sims_4",
+        "ru_description": "Устроить кулинарную ярмарку на жилом участке/Продать 5 отличных пицц или вафкль на кулинарной ярмарке",
+        "en_description": "Run a Food Sale from a residential lot/Sell 5 excellent Pizzas or Waffles during a Food Sale"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Вкус кочевой жизни",
+        "en_name": "Nom Nom Nomad",
+        "part": "sims_4",
+        "ru_description": "Устроить кулинарную ярмарку на 2 разных участках/Убедить посетителей совершить покупку на кулинарной ярмарке 5 раз",
+        "en_description": "Run Food Sales from 2 different lots/Convince customers to buy something 5 times during a Food Sale"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Уличная подработка",
+        "en_name": "Hustling Hawker",
+        "part": "sims_4",
+        "ru_description": "Заработать 500 § на одной кулинарной ярмарке/Работать в киоске с едой болеее 6 часов/Продать товар плохого качества за 100 §",
+        "en_description": "Earn 500 § during a single Food Sale/Tend a Food Stand for more than 6 hours/Sell a poor quality item for 100 §"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Экспертная торговля из киоска",
+        "en_name": "Street Stall Sage",
+        "part": "sims_4",
+        "ru_description": "Воскресить призрака, продав амброзию/Заработать 10000 § на кулинарных ярмарках/Продать блюдо за 300 §",
+        "en_description": "Resurrect a Ghost by selling Ambrosia/Earn 10,000 § by completing Food Sales/Sell one meal for 300 §"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_027_fivestarpropertyowner",
+    "ru_name": "",
+    "en_name": "Five-Star Property Owner",
+    "ru_description": "",
+    "en_description": "This Sim wants to be the best Property Owner the world has ever seen!",
+    "part": "sims_4",
+    "group": "aspiration_group_007",
+    "bonus": "trait_",
+    "icon": "FiveStarPropertyOwner.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "",
+        "en_name": "Property Pupil",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": "Have a Unit Occupied by a Tenant/Handle a Maintenance Event/Perform an Inspection Pass"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "",
+        "en_name": "Shrew Manager",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": "Handle an Emergency Event/Have a Unit With a Rating of 3 or Higher/Have Two Units Occupied by Tenants/Perform Inspection Passes on Rentals"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "",
+        "en_name": "Proprietary Legend",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": "Achieve a 5 Star Rating on a Unit/Become Good Friends with a Tenant/Have Three Units Occupied by Tenants"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_028_renaissancesim",
+    "ru_name": "Человек эпохи возраждения",
+    "en_name": "Renaissance Sim",
+    "ru_description": "Этот персонаж хочет хорошо разбираться во всех областях",
+    "en_description": "This Sim wants to be good at many things at once!",
+    "part": "sims_4",
+    "group": "aspiration_group_008",
+    "bonus": "trait_121",
+    "icon": "RenaissanceSim.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Рассудительный ученик",
+        "en_name": "Prudent Student",
+        "part": "sims_4",
+        "ru_description": "Закончить читать 3 книги/Достичь 3 уровня в навыке логики",
+        "en_description": "Finish reading 3 books/Achieve level 3 logic skill"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Мастер на почти все руки",
+        "en_name": "Jack of Some Trades",
+        "part": "sims_4",
+        "ru_description": "Стать взрослым/Достичь 4 уровня в 4 навыках/Достичь 3 уровня в любой карьере",
+        "en_description": "Become an adult/Achieve level 4 in 4 skills/Reach level 3 of any career"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Ходячая энциклопедия",
+        "en_name": "Pantologist",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня в 5 навыках/Достичь 3 уровня в 2 карьерах",
+        "en_description": "Achieve level 5 in 5 skills/Reach level 3 in 2 careers"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Человек эпохи Возрождения",
+        "en_name": "Renaissance Sim",
+        "part": "sims_4",
+        "ru_description": "Достичь 8 уровня в 6 навыках/Достичь 3 уровня в 3 карьерах",
+        "en_description": "Achieve level 8 in 6 skills/Reach level 3 in 3 careers"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_029_nerdbrain",
+    "ru_name": "Мозговитый чудак",
+    "en_name": "Nerd Brain",
+    "ru_description": "Этот персонаж хочет быть и начитанным, и мастером на все руки",
+    "en_description": "This Sim wants to be both book smart and handy!",
+    "part": "sims_4",
+    "group": "aspiration_group_008",
+    "bonus": "trait_118",
+    "icon": "NerdBrain.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Рассудительный ученик",
+        "en_name": "Prudent Student",
+        "part": "sims_4",
+        "ru_description": "Закончить читать 3 книги/Достичь 3 уровня в навыке логики",
+        "en_description": "Finish reading 3 books/Achieve level 3 logic skill"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Эрудит",
+        "en_name": "Erudite",
+        "part": "sims_4",
+        "ru_description": "Починить или улучшить предмет/Создать предмет на столярном станке/Достичь 6 уровня в навыке логики",
+        "en_description": "Repair or upgrade an object/Craft an Object on the Woodworking Table/Achieve level 6 logic skill"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Ракетный учёный",
+        "en_name": "Rocket Scientist",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня в навыке механики/Запустить или улучшить ракету 5 раз/Стать владельцем космического корабля",
+        "en_description": "Achieve level 5 handiness skill/Launch or upgrade a rocket 5 times/Own a rocket ship"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Мозговитый чудак",
+        "en_name": "Nerd Brain",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня в навыке логики/Починить или улучшить 5 предметов",
+        "en_description": "Achieve level 10 logic skill/Fix or upgrade 5 objects"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_030_computerwhiz",
+    "ru_name": "Компьютерный гений",
+    "en_name": "Computer Whiz",
+    "ru_description": "Этот персонаж хочет знать всё про компьютеры — от компьютерных игр до программирования за деньги",
+    "en_description": "This Sim wants to know everything about computers, from playing games to Careers!",
+    "part": "sims_4",
+    "group": "aspiration_group_008",
+    "bonus": "trait_123",
+    "icon": "ComputerWhiz.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "По программе",
+        "en_name": "With the Program",
+        "part": "sims_4",
+        "ru_description": "Практиковаться в программировании в течение 5 часов/Играть в видеоигры в течение 5 часов",
+        "en_description": "Practice programming for 5 total hours/Play video games for 5 total hours"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Почти знаток",
+        "en_name": "Technically Adept",
+        "part": "sims_4",
+        "ru_description": "Сохранять внимательность 2 часа подряд, играя в видеоигры/Достичь 3 уровня в навыке программирования/Иметь предметов общей стоимостью 3 000 § из категории электроники",
+        "en_description": "Maintain focus for 2 straight hours of video gaming/Achieve level 3 programming skill/ Own §3000 worth of electronics"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Компьютерный гений",
+        "en_name": "Computer Geek",
+        "part": "sims_4",
+        "ru_description": "Стать взрослым/Достичь 3 уровня в карьере технического специалиста/Создать видеоигру или приложение",
+        "en_description": "Become an adult/Reach level 3 of the tech guru career/Make a video game or an app"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Компьютерный гений",
+        "en_name": "Computer Whiz",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня в карьере технического специалиста/Провести 100 часов за компьютером",
+        "en_description": "Reach level 5 of the tech guru career/Have spent 100 hours on the computer"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_031_mastervampire",
+    "ru_name": "Повелитель вампиров",
+    "en_name": "Master Vampire",
+    "ru_description": "Это персонаж хочет стать мудрым и могущественным вампиром",
+    "en_description": "This Sim wants to become a wise and power Vampire!",
+    "part": "sims_4",
+    "group": "aspiration_group_008",
+    "bonus": "trait_117",
+    "icon": "MasterVampire.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Основы",
+        "en_name": "The Basics",
+        "part": "sims_4",
+        "ru_description": "Стать вампиром · Воспользоваться компьютером, чтобы найти информацию о вампирах/Читать первый том энциклопедии «Вампиры»",
+        "en_description": "Become a Vampire/Use a Computer to Search for Information on Vampires/Read Encyclopedia Vampirica Vol. 1"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Узнать про тёмное наследие",
+        "en_name": "Discover Dark Birthrights",
+        "part": "sims_4",
+        "ru_description": "Достичь уровня 4 знаний о вампиризме/Принять участие в обучении вампира/Стать младшим вампиром",
+        "en_description": "Reach Vampire Lore level 4/Participate in Vampire training/Become a Minor Vampire"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Сила и мудрость",
+        "en_name": "Strength and Wisdom",
+        "part": "sims_4",
+        "ru_description": "Достичь уровня 7 знаний о вампиризме/Победить в поединке вампиров: 3/Стать опытным вампиром",
+        "en_description": "Reach Vampire Lore level 7/Defeat 3 Vampires in Combat/Become a Prime Vampire"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Древность",
+        "en_name": "The Ancient One",
+        "part": "sims_4",
+        "ru_description": "Читать всеобъемлющий справочник по вампирам/Стать великим магистром вампиров/Выжить в течение ещё 20 дней в качестве вампира",
+        "en_description": "Read The Ultimate Vampire Tome/Become a Grand Master Vampire/Survive for an Additional 20 Days as a Vampire"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_032_archaeologyscholar",
+    "ru_name": "Специалист по археологии",
+    "en_name": "Archaeology Scholar",
+    "ru_description": "Этот персонаж хочет разбираться в археологии",
+    "en_description": "This Sim wants to understand Archaeology. Sims who select this Aspiration will complete a series of actions related to the Archaeology Skill",
+    "part": "sims_4",
+    "group": "aspiration_group_008",
+    "bonus": "trait_120",
+    "icon": "Archeologie.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Энтузиаст с лопатой",
+        "en_name": "Trowel Technician",
+        "part": "sims_4",
+        "ru_description": "Раскопать 3 кучки или места раскопок/Извлечь артефакт из кома грязи",
+        "en_description": "Excavate 3 Dig Piles or Excavation Sites/Uncover Artifact from Dirt Clump/"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Помощник исследователя",
+        "en_name": "Research Associate",
+        "part": "sims_4",
+        "ru_description": "Достичь 4 уровня в навыке археологии/Искать кучку/Установить подлинность 3-х артефактов",
+        "en_description": "Achieve Level 4 Archaeology Skill/Survey for a Dig Pile/Authenticate 3 Artifacts"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Эксперт по раскопкам",
+        "en_name": "Excavation Expert",
+        "part": "sims_4",
+        "ru_description": "Достичь 7 уровня в навыке археологии/Подготовить 3 мест раскопок/Найти и установить подлинность 5-ти артефактов хорошего качества",
+        "en_description": "Achieve Level 7 Archaeology Skill/Establish 3 Excavation Sites/Find and Authenticate 5 Excellent Quality Artifacts"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Специалист по археологии",
+        "en_name": "Archaeology Scholar",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня в навыке археологии/Написать отличную книгу по навыку археологии/Успешно прочесть лекцию по археологии",
+        "en_description": "Achieve Level 10 Archaeology Skill/Write a Good Archaeology Skill Book/Give a Successful Archaeology Lecture"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_033_spellcraftandsorcery",
+    "ru_name": "Чародейство",
+    "en_name": "Spellcraft & Sorcery",
+    "ru_description": "Этому персонажу не терпится получить глубокие знания о древней магии",
+    "en_description": "This Sim craves a deep knowledge of the arcane magical arts",
+    "part": "sims_4",
+    "group": "aspiration_group_008",
+    "bonus": "trait_122",
+    "icon": "Sorserrer.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Первые шаги",
+        "en_name": "First Steps",
+        "part": "sims_4",
+        "ru_description": "Стать чародеем/Отправиться в волшебный мир/Освоить заклинание",
+        "en_description": "Become a Spellcaster/Travel to The Magic Realm/Learn a Spell"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Новые познания",
+        "en_name": "Learning the Ways",
+        "part": "sims_4",
+        "ru_description": "Достичь 2 уровня чародея — Приверженец/Выучить 3 разных заклинания/Использовать заклинание на другом персонаже",
+        "en_description": "Reach Spellcaster Rank 2 - Acolyte/Know 3 Different Spells/Cast a Spell on Another Sim/"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Дьявольский дуэлянт",
+        "en_name": "Devilish Dueler",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня чародея — Эксперт/Станьте победителем в 3 дуэлях с другими чародеями/Выучить 5 разных заклинаний",
+        "en_description": "Reach Spellcaster Rank 3 - Adept/Win 3 Duels Against Other Spellcasters/Know 5 Different Spells"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Волшебный чародей",
+        "en_name": "Wand-erful Spellcaster",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня чародея — Виртуоз/Выучить 10 разных заклинаний",
+        "en_description": "Reach Spellcaster Rank 5 - Virtuoso/Know 10 Different Spells"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_034_academic",
+    "ru_name": "Академик",
+    "en_name": "Academic",
+    "ru_description": "Этот персонаж хочет поступить в университет и начать работать, но учеба все же на первом месте",
+    "en_description": "This Sim wants to attend university and get a job, but most importantly – learn!",
+    "part": "sims_4",
+    "group": "aspiration_group_008",
+    "bonus": "trait_119",
+    "icon": "Academic.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Первокурсник",
+        "en_name": "Freshman",
+        "part": "sims_4",
+        "ru_description": "Достичь 3-го уровня навыка научных исследований и дебатов/Поступить в университет",
+        "en_description": "Achieve Level 3 Research & Debate Skill/Enroll in a University"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Восторженный студент",
+        "en_name": "Bright-Eyed Student",
+        "part": "sims_4",
+        "ru_description": "Достичь 5-го уровня навыка научных исследований и дебатов/Посетить лекции приглашенного преподавателя/Закончить курс с пятеркой",
+        "en_description": "Achieve Level 5 Research & Debate Skill/Attend Guest Lectures/Finish a Course with an A Grade"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Рьяный преподаватель",
+        "en_name": "Avid Academic",
+        "part": "sims_4",
+        "ru_description": "Получить общий балл за симестр не ниже 4/Обучать студентов/Достичь 6-го уровня навыка научных исследований и дебатов",
+        "en_description": "Have a Term GPA of B or Higher/Tutor Students/Achieve Level 6 Research & Debate Skill"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Старший научный сотрудник",
+        "en_name": "Senior Scholar",
+        "part": "sims_4",
+        "ru_description": "Получить диплом/Добавить новую информацию в архивное хранилище/Достичь 7-го уровня навыка научных исследований и дебатов/Получить работу с дипломом",
+        "en_description": "Earn a Degree/Contribute Knowledge on a Research Archive Machine/Achieve Level 7 Research & Debate Skill/Get a Job Using a Degree"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_035_serialromantic",
+    "ru_name": "Серийный романтик",
+    "en_name": "Serial Romantic",
+    "ru_description": "Этот персонаж хочет флиртовать и ходить на свидания с различными интересными персонажами",
+    "en_description": "This Sim wants to play the field and go on all sorts of dates with people!",
+    "part": "sims_4",
+    "group": "aspiration_group_009",
+    "bonus": "trait_124",
+    "icon": "HopefulRomantic.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Ухажёр",
+        "en_name": "Amore Amateur",
+        "part": "sims_4",
+        "ru_description": "Стать парой/Сходить на 2 свидания",
+        "en_description": "Have a boyfriend or girlfriend/Go on 2 dates"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Мастер свиданий",
+        "en_name": "Up to Date",
+        "part": "sims_4",
+        "ru_description": "Достичь 4 уровня в навыке обаяния/Совершить первый поцелуй 3 раза",
+        "en_description": "Achieve level 4 charisma skill/Have had 3 first kisses"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Романтик-профессионал",
+        "en_name": "Romance Juggler",
+        "part": "sims_4",
+        "ru_description": "Достичь 6 уровня в навыке обаяния/Иметь крепкие романтические отношения с 3 персонажами одновременно/Поцеловаться с 10 персонажами",
+        "en_description": "Achieve level 6 charisma skill/Have a strong romantic relationship with 3 Sims at once/Kiss 10 Sims"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Серийный романтик",
+        "en_name": "Serial Romantic",
+        "part": "sims_4",
+        "ru_description": "Заработать золото на 3 свиданиях/Стать парой 8 раз",
+        "en_description": "Earn gold on 3 dates/Have had 8 boyfriends or girlfriends"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_036_soulmate",
+    "ru_name": "Родственная душа",
+    "en_name": "Soulmate",
+    "ru_description": "Этот персонаж желает обрести и прожить полную жизнь со своей Второй половинкой",
+    "en_description": "This Sim wants to find and live a rewarding life with The One!",
+    "part": "sims_4",
+    "group": "aspiration_group_009",
+    "bonus": "trait_125",
+    "icon": "Soulmate.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Ухажёр",
+        "en_name": "Amore Amateur",
+        "part": "sims_4",
+        "ru_description": "Стать парой/Сходить на 2 свидания",
+        "en_description": "Have a boyfriend or girlfriend/Go on 2 dates"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Потенциальная вторая половинка",
+        "en_name": "Marriage Material",
+        "part": "sims_4",
+        "ru_description": "Стать взрослым/Вступить в брак с другом/подругой навек",
+        "en_description": "Become an adult/Be married to BFF"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Знаток любви",
+        "en_name": "Love Handler",
+        "part": "sims_4",
+        "ru_description": "Заработать серебро на 2 свиданиях с супругом/супругой/Стать родственными душами с супругом/супругой",
+        "en_description": "Earn silver on 2 dates with spouse/Achieve soulmate relationship with spouse"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Родственная душа",
+        "en_name": "Soulmate",
+        "part": "sims_4",
+        "ru_description": "Выполнить 50 романтических действий по отношению к супругу/супруге, будучи родственными душами/Заработать золото на 3 свиданиях с супругом/супругой",
+        "en_description": "Perform 50 romantic gestures with spouse as soulmates/Earn gold on 3 dates with spouse"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_037_citynative",
+    "ru_name": "Коренной горожанин",
+    "en_name": "City Native",
+    "ru_description": "Этот персонаж обожает городской образ жизни",
+    "en_description": "This Sim is all about the city life",
+    "part": "sims_4",
+    "group": "aspiration_group_010",
+    "bonus": "trait_126",
+    "icon": "CityLiving.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Турист",
+        "en_name": "Tourist",
+        "part": "sims_4",
+        "ru_description": "Представиться новому персонажу в трёх различных районах города/Дать ключ от квартиры другу/Сделать три заказа в киосках с едой",
+        "en_description": "Introduce Self to Someone New in 3 Different City Neighborhoods/Give an Apartment Key to a Friend/Order 3 Times from Food Stalls"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Житель",
+        "en_name": "Inhabitant",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня в навыке пения/Запускать фейерверки на фестивале «Шутки и забавы»/Воспользоваться аппаратом для пускания пузырей",
+        "en_description": "Achieve level 4 singing skill/Light Fireworks at the Humor and Hijinks Festival/Use a Bubble Blower"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Городской эксперт",
+        "en_name": "City Expert",
+        "part": "sims_4",
+        "ru_description": "Пожертвовать митингующему/Поцеловать кого-нибудь на фестивале романтики/Завершить роспись в центре творчества",
+        "en_description": "Donate to a Protester/Kiss Someone at the Romance Festival/Complete a Mural at the Arts Center"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Коренной горожанин",
+        "en_name": "City Native",
+        "part": "sims_4",
+        "ru_description": "Жить в квартире стоимостью 100 000 §/Овладеть навыком пения/Выиграть турнир на фестивале «УмниКон»",
+        "en_description": "Live in an Apartment worth 100,000 Simoleons/Master the Singing Skill/Win a Contest at GeekCon"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_038_strangervillemystery",
+    "ru_name": "Тайна Стрейнджервиля",
+    "en_name": "StrangerVille Mystery",
+    "ru_description": "Стрейнджервиль хранит мрачный секрет, и этот персонаж хочет узнать, почему жители так странно себя ведут",
+    "en_description": "StrangerVille is holding some deep dark secret, and this Sim wants to uncover why all the townsfolk are acting a bit strange",
+    "part": "sims_4",
+    "group": "aspiration_group_010",
+    "bonus": "trait_127",
+    "icon": "StrangerVille.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Новый житель",
+        "en_name": "New Resident",
+        "part": "sims_4",
+        "ru_description": "Поговорить про Стрейнджервиль с 5 персонажами · Купить вещицу в лавке древностей · Изучить закрытую дверь в тайной лаборатории",
+        "en_description": "Talk about StrangerVille with 5 Sims/Buy Curio from the Curio Shop/Examine Sealed Door at Secret Lab"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Личный шпион",
+        "en_name": "Personal Spy",
+        "part": "sims_4",
+        "ru_description": "Собрать не менее 15 доказательств/Собрать тайное досье о Стрейнджервиле/Открыть опечатанную дверь в тайной лаборатории",
+        "en_description": "Gather 15 pieces of Evidence/Compile a StrangerVille Secret Dossier/Open the Sealed Door in the Secret Lab"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Эксперт по патогену",
+        "en_name": "Pathogenic Investigator",
+        "part": "sims_4",
+        "ru_description": "Собрать не менее 15 скоплений спор/Собрать защитный костюм/Зайдите в самую дальнюю часть тайной лаборатории",
+        "en_description": "Collect 15 Spore Clusters/Assemble the Hazmat Suit/Traverse to the deepest part of the Secret Lab"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Герой Стрейнджервиля",
+        "en_name": "StrangerVille Hero",
+        "part": "sims_4",
+        "ru_description": "Дать вакцину 3 персонажам/Завербовать не менее 3 персонажей, чтобы остановить распространение инфекции/Уничтожить источник инфекции",
+        "en_description": "Vaccinate 3 Sims/Recruit 3 Sims to Help Stop the source of the Infection/Defeat the source of the Infection"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_039_beachlife",
+    "ru_name": "Пляжная жизнь",
+    "en_name": "Beach Life",
+    "ru_description": "Этот персонаж хочет насладиться отдыхом на пляже и перестать напрягаться",
+    "en_description": "This Sim wants to take it slow and enjoy beach life",
+    "part": "sims_4",
+    "group": "aspiration_group_010",
+    "bonus": "trait_128",
+    "icon": "BeachLife.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Турист",
+        "en_name": "Tourist",
+        "part": "sims_4",
+        "ru_description": "Загореть/Заработать золото на празднике кавы/Съесть кокос",
+        "en_description": "Get a Suntan/Earn Gold on a Kava Party/Eat a Coconut"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Песочник",
+        "en_name": "Sand-Sifter",
+        "part": "sims_4",
+        "ru_description": "Найти предметы в песке/Жарить или запекать еду",
+        "en_description": "Find Things Beachcombing/Grill, Barbeque, or Roast Food"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Местный житель на отдыхе",
+        "en_name": "Leisurely Local",
+        "part": "sims_4",
+        "ru_description": "Исследовать пещеру у пляжа/Найти зарытое сокровище",
+        "en_description": "Explore the Beach Cave/Discover Buried Treasure"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Пляжный завсегдатай",
+        "en_name": "Beach Fixture",
+        "part": "sims_4",
+        "ru_description": "Уснуть на шезлонге или надувном матрасе",
+        "en_description": "Doze-Off while Relaxing in Lounge Chair or Float Lounger"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_040_mtkomorebisightseer",
+    "ru_name": "Турист на горе Комореби",
+    "en_name": "Mt. Komorebi Sightseer",
+    "ru_description": "Эти персонажи стремятся изучить местную культуру и  попробовать различные деликатесы",
+    "en_description": "This Sim wants to explore Mt. Komorebi's culture and experience everything it has to offer",
+    "part": "sims_4",
+    "group": "aspiration_group_010",
+    "bonus": "trait_129",
+    "icon": "Comorebi.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Исследователь",
+        "en_name": "Explorer",
+        "part": "sims_4",
+        "ru_description": "Есть на фестивале Света, Снега или Юности/Сделать селфи с символом горы Комореби/Получить симми, открыв капсулу Симми/Плавать один час в реке Вакаба",
+        "en_description": "Eat Food at the Festival of Snow, Light or Youth/Take a Selfie with the Mt. Komorebi Mascot/ Collect a Simmi by Popping Open a Simmi Capsule/Swim for 1 Hour in Wakaba's River"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Пеший турист",
+        "en_name": "Backpacker",
+        "part": "sims_4",
+        "ru_description": "Долго отмокать в горячем источнике/Надеть праздничный наряд для фестиваля из торгового автомата/Скатиться на санках 3 раза/Есть еду палочками.",
+        "en_description": "Soak for a Long Time in a Hot Spring/Wear a Festival Costume from a Vending Machine/Go Sledding 3 Times/Eat Food Using Chopsticks"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Заядлый путешественник",
+        "en_name": "Globetrotter",
+        "part": "sims_4",
+        "ru_description": "Общаться в бане онсэн/Загадать желание духу леса или поймать духа леса/Притормозить и обрести эмоциональную осознанность",
+        "en_description": "Socialize at Onsen Bathhouse/Make a Wish On or Collect a Forest Spirit/Take it Slow and Become Emotionally Mindful"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_041_perfectlypristine",
+    "ru_name": "Идеальная чистота",
+    "en_name": "Perfectly Pristine",
+    "ru_description": "Этому персонажу нравится, что в доме всегда чисто и опрятно",
+    "en_description": "This Sim likes their home to be presentable and clean all the time. Taking pride in their pristine homes, these Sims shoot for perfection and thrive when they have a spotless house to show off to guests",
+    "part": "sims_4",
+    "group": "aspiration_group_010",
+    "bonus": "trait_130",
+    "icon": "Clean.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Сертификат по домохозяйству",
+        "en_name": "Basic Home Training",
+        "part": "sims_4",
+        "ru_description": "Очистить 3 объекта на кухне/Пылесосить 3 часа/Помыть посуду три раза/Выбросить мусор",
+        "en_description": "Clean 3 Kitchen or Bathroom Objects/Vacuum for 3 Hours/Wash 3 Dishes/Empty the Trash"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Регулярная уборка",
+        "en_name": "Proactive Cleaning",
+        "part": "sims_4",
+        "ru_description": "Убрать беспорядок 5 раз/Помыть руки после туалета/Показать чистый дом гостям/Получить настрой Усердие",
+        "en_description": "Clean Up 5 Messes/Wash Hands After Using the Toilet/Show Off Your Clean House to Guests/Earn the Moodlet Perfectionist Zeal"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Виртуоз с пылесосом",
+        "en_name": "Vacuum Virtuoso",
+        "part": "sims_4",
+        "ru_description": "Купить портативный и вертикальный пылесос/Уничтожить три клубка пыли или пыльных проказника с помощью пылесоса/Убрать беспорядок или кучи хлама с помощью пылесоса 5 раз/Установить два улучшения на пылесос",
+        "en_description": "Purchase a Handheld and Upright Vacuum/Destroy 3 Dust Bunnies or Filth Fiends with Vacuum Cleaner/Destroy 5 Messy or Dust Pile Objects with Vacuum Cleaner/Perform 2 Upgrades on a Vacuum Cleaner"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Главный чистильщик",
+        "en_name": "Chief Cleaning Officer",
+        "part": "sims_4",
+        "ru_description": "Устроить вечеринку в чистом доме/Убираться 5 часов, находясь в счастливом, уверенном, вдохновлённом или внимательном состоянии/Успешно попросить или потребовать 3 раза, чтобы другие персонажи убирались/Заказать профессиональную уборку 2 раза",
+        "en_description": "Throw a Party Social Event in a Clean House/Clean for 5 Hours in a Happy, Confident, Inspired, or Focused Mood/Successfully Ask or Demand that Other Sims Clean 3 Times/Hire a Housekeeping Service 2 Times"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_042_fabulouslyfilthy",
+    "ru_name": "Невероятная грязь",
+    "en_name": "Fabulously Filthy",
+    "ru_description": "Этот персонаж предпочитает грязь и беспорядок и категорически отказывается убираться",
+    "en_description": "This Sim revels in filthy, messy homes and avoids cleaning at all costs. Procrastinate, dodge chores, lower your standards, and find creative ways to thrive in the filthiest environments!",
+    "part": "sims_4",
+    "group": "aspiration_group_010",
+    "bonus": "trait_131",
+    "icon": "Filth.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Лентяй",
+        "en_name": "Procrastinator",
+        "part": "sims_4",
+        "ru_description": "Оставить еду портиться/Не чистить 3 объекта на кухне или в ванной/Не убираться хотя бы на одном этаже в доме/Пусть персонаж заполнит шкалу досуга на запыленном, грязном или отвратительно грязном этаже",
+        "en_description": "Leave Out Food to Spoil/Let 3 Kitchen or Bathroom Objects Get Dirty/Let At Least One Floor Level of your Home Become Dirty/Max Out (Sim Name)'s Fun Motive While on a Dusty, Dirty, or Filthy Floor"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Любитель отлынивать от дел",
+        "en_name": "Chore Dodger",
+        "part": "sims_4",
+        "ru_description": "Успешно попросить трёх персонажей убраться/Подружиться с клубком пыли/Приготовить 3 блюда на грязном или отвратительно грязном этаже/Оплатить службу уборки",
+        "en_description": "Successfully Ask 3 Sims to Clean/Befriend a Dust Bunny/Cook 3 Meals on a Dirty or Filthy Floor Level/Pay for a Cleaning Service"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Низкие стандарты",
+        "en_name": "Low Standards",
+        "part": "sims_4",
+        "ru_description": "Съесть три порции испорченной еды/Помыться в грязной ванне или душевой кабинке 3 раза/Не мыть руки после туалета/Пригласить гостя в грязный или отвратительно грязный дом",
+        "en_description": "Eat 3 Meals that are Spoiled/Bathe or Shower 3 Times in a Dirty Shower or Tub/Don't Wash Your Hands After Using the Toilet/Invite a Guest Over while House is Dirty or Filthy"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "С пылью на ты",
+        "en_name": "Filth Fiend",
+        "part": "sims_4",
+        "ru_description": "Опрокинуть 3 мусорных бака/Устроить вечеринку в отвратительно грязном доме/Задобрить пыльного проказника грязным подношением/Заняться вуху в отвратительно грязном доме",
+        "en_description": "Knock Over 3 Trash Cans/Throw a Party Social Event in a Filthy House/Appease a Filth Field with a Filth Tribute/WooHoo in a Filthy House"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_043_fountoftomaraniknowledge",
+    "ru_name": "",
+    "en_name": "Fount of Tomarani Knowledge",
+    "ru_description": "",
+    "en_description": "This Sim wants to immerse themselves in everything Tomarang has to offer!",
+    "part": "sims_4",
+    "group": "aspiration_group_010",
+    "bonus": "trait_",
+    "icon": "FountOfTomaraniKnowledge.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "",
+        "en_name": "Regional Rookie",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": "Leave Fruit or Incense at a Spirit House/Use Tomarani Introduction/Meet a Sim with the Child of the Village Personality Trait/Use a Squat Toilet"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "",
+        "en_name": "Culinary Conoisseur",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": "Cook Tomarani Cuisine/Buy a Shirt from the Night Market/Buy Food at the Night Market/Prepare a Recipe using a Pressure Cooker"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "",
+        "en_name": "Explorer Extraordinaire",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": "Collect Unique Tassels/Explore Tomarang's Cave/Explore the Sulea Tiger Sanctuary/View the Statue of Khun Mae and the Tiger"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_044_freelancebotanist",
+    "ru_name": "Независимый ботаник",
+    "en_name": "Freelance Botanist",
+    "ru_description": "Этот персонаж хочет выращивать растения и стать профессиональным садоводом",
+    "en_description": "This Sim wants to grow plants and become an expert Gardener!",
+    "part": "sims_4",
+    "group": "aspiration_group_011",
+    "bonus": "trait_133",
+    "icon": "FreelanceBotanist.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Натуралист",
+        "en_name": "Naturewalker",
+        "part": "sims_4",
+        "ru_description": "Посадить что-нибудь 3 раза/Прополоть или полить растения 10 раз",
+        "en_description": "Plant something 3 times/Weed or water plants 10 times"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Садовник",
+        "en_name": "Garden Variety",
+        "part": "sims_4",
+        "ru_description": "Достичь 4 уровня в навыке садоводства/Способствовать росту 5 растений",
+        "en_description": "Achieve level 4 gardening skill/Evolve 5 different plants"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Любитель природы",
+        "en_name": "Nature Nurturer",
+        "part": "sims_4",
+        "ru_description": "Достичь 6 уровня в навыке садоводства/Привить на 3 растения/Удобрить 5 растений",
+        "en_description": "Achieve level 6 gardening skill/Graft onto 3 plants/Fertilize 5 plants"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Независимый ботаник",
+        "en_name": "Freelance Botanist",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня в навыке садоводства/Вырастить жвачное растение/Способствовать росту 10 растений отличного качества",
+        "en_description": "Achieve level 10 gardening skill/Grow a cowplant/Evolve 10 excellent plants"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_045_thecurator",
+    "ru_name": "Куратор",
+    "en_name": "The Curator",
+    "ru_description": "Этот персонаж хочет собрать всё, что есть в этом мире",
+    "en_description": "This Sim wants to collect everything this world has to offer!",
+    "part": "sims_4",
+    "group": "aspiration_group_011",
+    "bonus": "trait_135",
+    "icon": "TheCurator.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Дачник-любитель",
+        "en_name": "Out and About",
+        "part": "sims_4",
+        "ru_description": "Найти 10 коллекционных предметов",
+        "en_description": "Collect 10 collectibles"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Собиратель",
+        "en_name": "Gatherer",
+        "part": "sims_4",
+        "ru_description": "Найти 5 кристаллов/Найти 3 лягушки/Найти 3 окаменелости",
+        "en_description": "Collect 5 crystals/Collect 3 frogs/Collect 3 fossils"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Охотник за сокровищами",
+        "en_name": "Treasure Hunter",
+        "part": "sims_4",
+        "ru_description": "Отправить 5 предметов в Геологический совет/Размножить лягушек 5 раз/Найти 5 элементов",
+        "en_description": "Send 5 items to the geological council/Breed 5 frogs/Collect 5 elements"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Куратор",
+        "en_name": "The Curator",
+        "part": "sims_4",
+        "ru_description": "Завершить коллекцию/Найти 25 коллекционных предметов",
+        "en_description": "Complete a collection/Collect 25 collectibles"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_046_anglingace",
+    "ru_name": "Рыбак-ас",
+    "en_name": "Angling Ace",
+    "ru_description": "Этот персонаж хочет знать всё про рыбную ловлю",
+    "en_description": "This Sim wants to know everything about fishing!",
+    "part": "sims_4",
+    "group": "aspiration_group_011",
+    "bonus": "trait_134",
+    "icon": "AnglingAce.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Вытащить из воды",
+        "en_name": "Fish out of Water",
+        "part": "sims_4",
+        "ru_description": "Поймать 5 рыб/Рыбачить на 3 различных участках",
+        "en_description": "Catch 5 fish/Fish at 3 different locations"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "На крючке",
+        "en_name": "Hooked",
+        "part": "sims_4",
+        "ru_description": "Рыбачить в течение 10 часов/Повесить на стену или выпустить в аквариум 5 рыб/Достичь 4 уровня в навыке рыбной ловли",
+        "en_description": "Fish for 10 total hours/Mount or bowl 5 fish/Achieve level 4 fishing skill"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "На полную катушку",
+        "en_name": "Reel Smart",
+        "part": "sims_4",
+        "ru_description": "Поймать на наживку 5 рыб/Отлично порыбачить 6 раз/Достичь 6 уровня в навыке рыбной ловли",
+        "en_description": "Catch 5 fish using bait/Make 6 great catches/Achieve level 6 fishing skill"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Рыбак-ас",
+        "en_name": "Angling Ace",
+        "part": "sims_4",
+        "ru_description": "Поймать 20 рыб/Достичь 10 уровня в навыке рыбной ловли",
+        "en_description": "Collect 20 types of fish/Achieve level 10 fishing skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_047_outdoorenthusiast",
+    "ru_name": "Любитель свежего воздуха",
+    "en_name": "Outdoor Enthusiast",
+    "ru_description": "Любители свежего воздуха хотят опробовать всё, что только может предложить природа",
+    "en_description": "Outdoor Enthusiasts want to experience everything nature has to offer!",
+    "part": "sims_4",
+    "group": "aspiration_group_011",
+    "bonus": "trait_132",
+    "icon": "OutdoorEnthusiast.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Новичок",
+        "en_name": "Greenhorn",
+        "part": "sims_4",
+        "ru_description": "Собрать урожай с 10 неопознанных растений/Поймать 5 рыб в Гранит Фоллз",
+        "en_description": "Harvest 10 unidentified plants/Catch 5 fish in Granite Falls"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Лесной разведчик",
+        "en_name": "Forest Scout",
+        "part": "sims_4",
+        "ru_description": "Достичь уровня 4 в навыке траволечения/Приготовить на костре 2 блюда из жуков/Съесть 10 растений",
+        "en_description": "Achieve level 4 herbalism skill/Cook 2 plates of beetles over a campfire/Eat 10 plants"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Исследователь дикой природы",
+        "en_name": "Wilderness Explorer",
+        "part": "sims_4",
+        "ru_description": "Приготовить 3 превосходных снадобья из трав/Определить все неопознанные растения/Найти отшельника в Гранит Фоллз и подружиться с ним",
+        "en_description": "Craft 3 excellent herbal remedies/Identify all unidentified plants/Befriend the hermit of Granite Falls"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Любитель свежего воздуха",
+        "en_name": "Outdoor Enthusiast",
+        "part": "sims_4",
+        "ru_description": "Достичь уровня 10 в навыке траволечения/Спать в палатке 5 дней/Найти 15 насекомых",
+        "en_description": "Achieve level 10 herbalism skill/Sleep for 5 nights in a tent/Collect 15 insects"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_048_jungleexplorer",
+    "ru_name": "Исследователь джунглей",
+    "en_name": "Jungle Explorer",
+    "ru_description": "Этот персонаж хочет исследовать джунгли",
+    "en_description": "This Sim wants to explore the jungle! Sims who select this Aspiration will complete a series of actions related to the exploration",
+    "part": "sims_4",
+    "group": "aspiration_group_011",
+    "bonus": "trait_136",
+    "icon": "JungleExplorer.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Турист",
+        "en_name": "Vacationer",
+        "part": "sims_4",
+        "ru_description": "Купить что-нибудь на рынке 3 раза/Отведать сельвадорадское блюдо/Рассматривать статую Мадре Косеке",
+        "en_description": "Buy 3 Goods at the Marketplace/Eat a Selvadoradian Meal/View Statue of Madre Cosecha"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Новичок в экспедиции",
+        "en_name": "Expedition Rookie",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня в навыке сельвадорадской культуры/Найти потайной путь/Осмотреть 3 ловушки",
+        "en_description": "Achieve Level 3 Selvadoradian Culture Skill/Find an Area off the Path/Examine 3 Traps"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Краевед",
+        "en_name": "Regional Master",
+        "part": "sims_4",
+        "ru_description": "Защититься от природных опасностей 2 раза/Достичь 5 уровня в навыке сельвадорадской культуры/Собрать таинственную реликвию",
+        "en_description": "Defend Against 2 Natural Dangers/Achieve Level 5 Selvadoradian Culture Skill/Assemble a Mystical Relic"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Исследователь джунглей",
+        "en_name": "Jungle Explorer",
+        "part": "sims_4",
+        "ru_description": "Открыть 3 редких омисканских сундуков с сокровищами/Активировать таинственную реликвию 5 раз/Найти 5 омисканских сокровищ",
+        "en_description": "Open 3 Rare Omiscan Treasure Chests/Activate a Mystical Relic 5 Times/Find 5 Omiscan Treasures"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_049_purveyorofpotions",
+    "ru_name": "Творец зелий",
+    "en_name": "Purveyor of Potions",
+    "ru_description": "Этот персонаж хочет найти и приготовить все до единого рецепты зелий",
+    "en_description": "This Sim wants to learn every potion's recipe and craft each one!",
+    "part": "sims_4",
+    "group": "aspiration_group_011",
+    "bonus": "trait_137",
+    "icon": "PotionPreparator.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Первые шаги",
+        "en_name": "First Steps",
+        "part": "sims_4",
+        "ru_description": "Стать чародеем/Отправиться в волшебный мир/Найти рецепт нового зелья",
+        "en_description": "Become a Spellcaster/Travel to The Magic Realm/Learn a Potion Recipe"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Бурление",
+        "en_name": "Bubbling Up",
+        "part": "sims_4",
+        "ru_description": "Достичь 2 уровня чародея — Приверженец/Иметь котел/Знать рецепты 3 разных зелий",
+        "en_description": "Reach Spellcaster Rank 2 - Acolyte/Own a Cauldron/Know 3 Different Potions"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Зелья из котла",
+        "en_name": "Cauldron Connections",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня чародея — Эксперт/Знать рецепты 5 разных зелий/Приготовить 5 зелий",
+        "en_description": "Reach Spellcaster Rank 3 - Adept/Know 5 Different Potions/Brew 5 Potions"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Профессиональный зельевар",
+        "en_name": "Potion Pro",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня чародея — Виртуоз/Знать рецепты 10 разных зелий",
+        "en_description": "Reach Spellcaster Rank 5 - Virtuoso/Know 10 Different Potions"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_050_ecoinnovator",
+    "ru_name": "Эконоватор",
+    "en_name": "Eco Innovator",
+    "ru_description": "Этот персонаж хочет создать лучшее и экологичное сообщество",
+    "en_description": "This Sim wants to build a better, greener community",
+    "part": "sims_4",
+    "group": "aspiration_group_011",
+    "bonus": "trait_138",
+    "icon": "EcoLifestyle.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Экоэкономист",
+        "en_name": "Eco-Economist",
+        "part": "sims_4",
+        "ru_description": "Получить 5 очков влияния сообщества/Проголосовать за 1 комплекс мер",
+        "en_description": "Have 5 community influence points/Vote on 1 neighborhood action plan"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Житель чистого города",
+        "en_name": "Clean City Civilian",
+        "part": "sims_4",
+        "ru_description": "Продать избыток электричества или воды/Стать истроительным инженером",
+        "en_description": "Sell power or water on a utility bill/Become a civil designer"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Ответственный горожанин",
+        "en_name": "Civil Citizen",
+        "part": "sims_4",
+        "ru_description": "Попытаться убедить персонажа проголосовать за комплекс мер/Проголосовать за комплексы мер два раза/Достичь 10-го уровня карьеры строительного инженера",
+        "en_description": "Attempt to convince a Sim to vote on a neighborhood action plan/Vote on neighborhood action plans two separate times/Reach level 10 of the civil designer career"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_051_countrycaretaker",
+    "ru_name": "Сельский смотритель",
+    "en_name": "Country Caretaker",
+    "ru_description": "Сельский смотритель ухаживает за местной природой и дружит со всеми животными и жучками",
+    "en_description": "Country Caretakers want to tend the countryside and befriend all animals and critters!",
+    "part": "sims_4",
+    "group": "aspiration_group_011",
+    "bonus": "trait_139",
+    "icon": "CountryCaretaker.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Попечитель сна",
+        "en_name": "Campestral Curator",
+        "part": "sims_4",
+        "ru_description": "Купить 1 корову, курицу или ламу для своего домашнего участка/Пообщаться с лисой, кроликом или птицей 5 раз/Купить 1 грядку для своего домашнего участка/Посетить Финчвик, Олд-Нью Хэнфорд и Брамблвудский лес в Хэнфорд-он-Бэгли",
+        "en_description": "Purchase 1 Cow, Chicken, or Llama on Your Home Lot/Socialize with a Fox, Rabbit, or Bird 5 Times/Purchase 1 Garden Patch for Your Home Lot/Visit Finchwick, Old New Henford, and the Bramblewood Neighborhoods in Henford-on-Bagley"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Эксперт по жизни в деревне",
+        "en_name": "Agrestic Savant",
+        "part": "sims_4",
+        "ru_description": "Подружиться с курицей, коровой или ламой/Разместить на своём домашнем уцчастке дом для дикого кролика или стаю диких птиц/Удобрить 3 растения или крупные культуры",
+        "en_description": "Befriend a Chicken, Cow, or Llama/Place 1 Wild Rabbit Home or Flock of Wild Birds on your Home Lot/Fertilize 3 Plants or Oversized Crops"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Хранитель жучко",
+        "en_name": "Critter Keeper",
+        "part": "sims_4",
+        "ru_description": "Вручить 3 подарка лисам, кроликам или птицам/Создать лакомства для животных 5 раз/Собрать 1 урожай крупной культуры идеального качества/Найти 5 предметов в Брамблвудском лесу",
+        "en_description": "Give 3 Gifts to Foxes, Rabbits, or Birds/Craft Animal Treats 5 Times/Harvest 1 Perfect Quality Oversized Crop/Forage 5 Items from the Bramblewood"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Друг природы",
+        "en_name": "Legendairy",
+        "part": "sims_4",
+        "ru_description": "Максимально развить отьношения с коровой, курицей или ламой/Получить 3 подарка от кроликов или птиц/Одержать победу в конкурсе на Финчвикской ярмарке в Хэнфорд-он-Бэгли",
+        "en_description": "Reach Maximum Relationship with a Cow, Chicken, or Llama/Receive 3 Gifts from Rabbits or Birds/Win a Competition in Henford-on-Bagley's Finchwick Fair"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_052_jokestar",
+    "ru_name": "Популярный шутник",
+    "en_name": "Joke Star",
+    "ru_description": "Это персонаж хочет рассказывать анекдоты и стать известным комиком",
+    "en_description": "This Sim wants to tell jokes and become an famous comedian!",
+    "part": "sims_4",
+    "group": "aspiration_group_012",
+    "bonus": "trait_141",
+    "icon": "JokeStar.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Практичный шутник",
+        "en_name": "Practical Joker",
+        "part": "sims_4",
+        "ru_description": "Рассмешить 5 персонажей/Достичь 3 уровня в навыке комедии",
+        "en_description": "Be funny to 5 Sims/Achieve level 3 comedy skill"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Раскрутка разговорного жанра",
+        "en_name": "Stand-up Start-up",
+        "part": "sims_4",
+        "ru_description": "Стать взрослым/Начать карьеру исполнителя/Иметь свой микрофон",
+        "en_description": "Become an adult/Join the entertainer career/Own a microphone"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Весёлый бизнесмен",
+        "en_name": "Funny Businessman",
+        "part": "sims_4",
+        "ru_description": "Достичь 6 уровня в навыке комедии/Выбрать специализацию «Комик» в карьере исполнителя/Сочинить 3 комедийных номера",
+        "en_description": "Achieve level 6 comedy skill/Join the comedian branch of the entertainer career/Write 3 comedy routines"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Шутник",
+        "en_name": "Joke Star",
+        "part": "sims_4",
+        "ru_description": "Исполнить 3 комедийных номера/Достичь 10 уровня в навыке комедии",
+        "en_description": "Perform 3 comedy routines/Achieve level 10 comedy skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_053_partyanimal",
+    "ru_name": "Душа компании",
+    "en_name": "Party Animal",
+    "ru_description": "Этот персонаж хочет всё бросить и прийти на удивительные вечеринки",
+    "en_description": "This Sim wants to throw and attend amazing parties!",
+    "part": "sims_4",
+    "group": "aspiration_group_012",
+    "bonus": "trait_143",
+    "icon": "PartyAnimal.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Новенький",
+        "en_name": "New in Town",
+        "part": "sims_4",
+        "ru_description": "Представиться 10 персонажам/Завести 3 друзей",
+        "en_description": "Introduce self to 10 Sims/Have 3 friends"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Благодушный хозяин вечера",
+        "en_name": "Welcoming Host",
+        "part": "sims_4",
+        "ru_description": "Устроить 3 вечеринки/Заработать серебро на 3 мероприятиях",
+        "en_description": "Throw 3 parties/Earn silver on 3 social events"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Организатор гала-концерта",
+        "en_name": "Sir Gala Had",
+        "part": "sims_4",
+        "ru_description": "Заработать серебро за 3 устроенных вечеринок/Посетить 10 мероприятий в 5 разных местах",
+        "en_description": "Earn silver on 3 thrown parties/Attend social events at 5 unique locations"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Душа компании",
+        "en_name": "Party Animal",
+        "part": "sims_4",
+        "ru_description": "Устроить 10 общественных мероприятий/Посетить 15 общественных мероприятий/Заработать золото за 2 устроенных вечеринок",
+        "en_description": "Throw 10 social events/Attend 15 social events/Earn gold on 2 thrown parties"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_054_friendoftheworld",
+    "ru_name": "Мировой друг",
+    "en_name": "Friend of the World",
+    "ru_description": "Этот персонаж хочет найти много друзей в своем городе",
+    "en_description": "This Sim wants to make and keep as many friends as they can!",
+    "part": "sims_4",
+    "group": "aspiration_group_012",
+    "bonus": "trait_142",
+    "icon": "FriendToTheWorld.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Новенький",
+        "en_name": "New in Town",
+        "part": "sims_4",
+        "ru_description": "Представиться 10 персонажам/Завести 3 друга",
+        "en_description": "Introduce self to 10 Sims/Have 3 friends"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Всеми любимый персонаж",
+        "en_name": "Well Liked",
+        "part": "sims_4",
+        "ru_description": "Познакомиться с кем-нибудь новым в 4 разных местах/Достичь 4 уровня в навыке обаяния",
+        "en_description": "Meet someone new in 3 different locations/Achieve level 4 charisma skill"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Отличный друг",
+        "en_name": "Super Friend",
+        "part": "sims_4",
+        "ru_description": "Завести 12 друзей/Достичь 6 уровня в навыке обаяния",
+        "en_description": "Have 12 friends/Achieve level 6 charisma skill"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Мировой друг",
+        "en_name": "Friend of the world",
+        "part": "sims_4",
+        "ru_description": "Завести 20 друзей/Завести друга/подругу навек/Достичь 10 уровня в навыке обаяния",
+        "en_description": "Have 20 friends/Make a BFF/Achieve level 10 charisma skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_055_neighborhoodconfidante",
+    "ru_name": "Надёжный сосед",
+    "en_name": "Neighborhood Confidante",
+    "ru_description": "Персонаж хочет давать советы и таким образом оказывать положительное влияние на соседей",
+    "en_description": "This Sim wants to provide all manner of advice, to be a positive influence in the lives of their neighbors",
+    "part": "sims_4",
+    "group": "aspiration_group_012",
+    "bonus": "trait_144",
+    "icon": "NeighborhoodConfidante.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Дружелюбный советник",
+        "en_name": "Neighborly Advisor",
+        "part": "sims_4",
+        "ru_description": "Дайте хороший совет и тем самым повлияйте на жизнь другого персонажа!/Стать хорошими друзьями с персонажами: 5/Достичь 7-го уровня в навыке обаяния",
+        "en_description": "Successfully advise and influence the lives of other Sims!/Become Good Friends with 5 Sims/Achieve level 7 Charisma Skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_056_leaderofthepack",
+    "ru_name": "Главарь",
+    "en_name": "Leader of the Pack",
+    "ru_description": "Этот персонаж хочет стать лидером лучшего клуба в городе",
+    "en_description": "This Sim wants to be the leader of the best Club in Town!",
+    "part": "sims_4",
+    "group": "aspiration_group_012",
+    "bonus": "trait_140",
+    "icon": "ChiefBand.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Вступить в клуб",
+        "en_name": "Get Accepted",
+        "part": "sims_4",
+        "ru_description": "Создать клуб или вступить в клуб/Купить преимущество клуба",
+        "en_description": "Start or Join a Club/Buy a Club Perk"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Частное собрание",
+        "en_name": "Private Gathering",
+        "part": "sims_4",
+        "ru_description": "Быть на собрании клуба в течение 12 часов/Выполнить 10 клубных действий",
+        "en_description": "Be in a Club Gathering for 12 Hours/Perform 10 Club Activities"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Мировая весть",
+        "en_name": "Spread the Word",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня в навыке обаяния/Поговорить про клубы с 5 членами клуба",
+        "en_description": "Achieve Level 5 charisma Skill/Talk about Clubs with 5 Club members"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Главарь",
+        "en_name": "Leader of the Pack",
+        "part": "sims_4",
+        "ru_description": "Заработать 1 000 клубных очков/Быть лидером клуба с 8 членами",
+        "en_description": "Earn 1000 Club Points/Lead a Club with 8 Sims"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_057_goodvampire",
+    "ru_name": "Хороший вампир",
+    "en_name": "Good Vampire",
+    "ru_description": "Этот персонаж хочет контролировать жажду и держится за свои человеческие качества",
+    "en_description": "This Sim wants to tame his/her thirst and remain as human as possible!",
+    "part": "sims_4",
+    "group": "aspiration_group_012",
+    "bonus": "trait_145",
+    "icon": "GoodVampire.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Трансформация",
+        "en_name": "The Transformation",
+        "part": "sims_4",
+        "ru_description": "Воспользоваться компьютером, чтобы найти информацию о вампирах/Стать вампиром/Достичь уровня 3 знаний о вампиризме",
+        "en_description": "Use a Computer to Search for Information on Vampires/Become a Vampire/Reach Vampire Lore level 3"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Совладать с искушением",
+        "en_name": "Cope with Temptation",
+        "part": "sims_4",
+        "ru_description": "Пить кровь из пакета/Завести 5 друзей/Запрещено пить долго в течение 5 дней подряд/Достичь уровня 4 знаний о вампиризме",
+        "en_description": "Drink a Plasma Pack/Make 5 Friends/Don't drink deeply for 5 days in a row/Reach Vampire Lore level 4"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Круг доверия",
+        "en_name": "Circle of Trust",
+        "part": "sims_4",
+        "ru_description": "Стать хорошими друзьями с персонажами: 2/Получить разрешение пить кровь из 2 различных персонажей/Купить способность «Подавление жажды»/Создать пакеты с кровью из рыб и лягушек: 3",
+        "en_description": "Make 2 Good Friends/Get Permission to Drink from 2 Different Sims/Purchase the Tamed Thirst Power/Create 3 Plasma Packs from Fish or Frogs"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Отвергнуть монстра",
+        "en_name": "Reject The Beast",
+        "part": "sims_4",
+        "ru_description": "Завести друга/подругу навек/Запрещено пить без разрешения в течение 15 дней подряд/Собрать урожай кровавых плодов: 3 раза",
+        "en_description": "Make a BFF/Don't drink without permission for 14 days in a row/Harvest from a Plasma Fruit Tree 3 Times"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_058_worldfamouscelebrity",
+    "ru_name": "Мировая знаменитость",
+    "en_name": "World-Famous Celebrity",
+    "ru_description": "Этот персонаж хочет стать очень известным",
+    "en_description": "This Sim wants to become illustriously famous",
+    "part": "sims_4",
+    "group": "aspiration_group_012",
+    "bonus": "trait_146",
+    "icon": "PopularCelebrity.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Узнаваемая личность",
+        "en_name": "Aspiring Star",
+        "part": "sims_4",
+        "ru_description": "Стать знаменитостью с 2 звёздами/Купить бонус славы",
+        "en_description": "Become a 2 star celebrity/Purchase a Fame Perk"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Популярная персона",
+        "en_name": "Somebody",
+        "part": "sims_4",
+        "ru_description": "Стать знаменитостью с 3 звёздами/Посетить популярное среди знаменитостей место/Устроить встречу со звездой",
+        "en_description": "Become a 3 star celebrity/Visit a Celebrity hot spot/Host a Meet and Greet"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Восходящая звезда",
+        "en_name": "Rising Star",
+        "part": "sims_4",
+        "ru_description": "Стать знаменитостью с 4 звёздами/Получить просьбу сделать селфи 3 раза/Разобраться с папарацци 3 раза",
+        "en_description": "Become a 4 star celebrity/Be asked 3 times for a selfie/Deal with the paparazzi 3 times"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Мировая знаменитость",
+        "en_name": "World-Famous Celebrity",
+        "part": "sims_4",
+        "ru_description": "Стать знаменитостью с 5 звёздами/Вызвать 25 одобрительных возгласов/Дать 3 автографа",
+        "en_description": "Become a 5 star celebrity/Receive 25 positive responses from inciting cheers/Sign 3 autographs"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_059_discerningdweller",
+    "ru_name": "",
+    "en_name": "Discerning Dweller",
+    "ru_description": "",
+    "en_description": "This Sim aspires to be the perfect Tenant and neighbor in a Residential Rental!",
+    "part": "sims_4",
+    "group": "aspiration_group_012",
+    "bonus": "trait_",
+    "icon": "DiscerningDweller.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "",
+        "en_name": "First Time Renter",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": "Live in a Residential Rental/Meet a Residential Rental Neighbor/Have the Property Owner Visit Your Unit"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "",
+        "en_name": "Seasoned Tenant",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": "Fix Something during an Emergency or Maintenance Event/Host a Neighborhood Potluck or Pool Party Event/Use an Amenity in a Shared Space"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "",
+        "en_name": "Respected Resident",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": "Achieve Gold in a Neighborhood Potluck or Pool Party Event/Become Good Friends with Your Property Owner/Successfully Break a Unit Rule"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_060_hopevsorder",
+    "ru_name": "Надежда или Порядок",
+    "en_name": "Hope VS Order",
+    "ru_description": "На планете Батуу разгорается конфликт. Этот персонаж отправляется на аванпост Черный шпиль, чтобы выбрать сторону и присягнуть Сопротивлению или Первому Ордену",
+    "en_description": "On the world of Batuu there is a growing conflict. This Sim is out to explore Black Spire Outpost and understand whether they should stand with the Resistance of the First Order",
+    "part": "sims_4",
+    "group": "aspiration_group_013",
+    "bonus": "",
+    "icon": "HopeVSOrder.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Надежда или Порядок",
+        "en_name": "First Steps",
+        "part": "sims_4",
+        "ru_description": "Посетить все районы Батуу/Спросить про Сопротивление или Первый Орден на Батуу/Выполнить задание для Сопротивления или Первого Ордена",
+        "en_description": "Visit Every Neighbourhood on Batuu/Ask About Resistance or First Order presence on Batuu/Complete a Mission for the Resistance or First Order Faction"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_061_paragonofhope",
+    "ru_name": "Символ Надежды",
+    "en_name": "Paragon of Hope",
+    "ru_description": "Этот персонаж хочет стать символом надежды, расстроить планы Первого Ордена на Батуу и оказать поддержку Сопротивлению",
+    "en_description": "This Sim looks to be the spark of hope that disrupts the First Order’s operations on Batuu and aid the Resistance cause",
+    "part": "sims_4",
+    "group": "aspiration_group_013",
+    "bonus": "trait_147",
+    "icon": "ParagonOfHope.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Во имя Сопротивления",
+        "en_name": "For The Resistance",
+        "part": "sims_4",
+        "ru_description": "Представиться 3 членам Сопротивления/Изучить батууанские пещеры/Выполнить 2 задания для Сопротивления",
+        "en_description": "Introduce Self to 3 Resistance Members/Explore the Caves of Batuu/Complete 2 Missions for the Resistance"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Защитник Батуу",
+        "en_name": "Protector of Batuu",
+        "part": "sims_4",
+        "ru_description": "Завербовать 3 персонажей в ряды Сопротивления/Приобрести дроида-спутника/Взломать замки и забрать предметы из двух ящиков с припасами в районе Первого Ордена",
+        "en_description": "Recruit 3 Sims to the Resistance/Obtain a Droid Companion/Override Locks and Loot 2 Supply Crates in the First Order District"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Символ надежды",
+        "en_name": "Paragon of Hope",
+        "part": "sims_4",
+        "ru_description": "Проникнуть на склад Первого Ордена и взломать голотранслятор/Провести разведку на истребителе типа Х 5 раз/Достичь 5 уровня репутации Сопротивления",
+        "en_description": "Infiltrate the First Order Cargo Building and Slice the Holotable/Explore 5 times in the X-wing/Reach Resistance Reputation Rank 5"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_062_enforceroforder",
+    "ru_name": "Силовик Ордена",
+    "en_name": "Enforcer of Order",
+    "ru_description": "Этот персонаж готов доказать свою преданность Первому Ордену, искоренив сторонников Сопротивления на Батуу",
+    "en_description": "This Sim is out to prove their loyalty to the First Order by stamping out the Resistance presence on Batuu",
+    "part": "sims_4",
+    "group": "aspiration_group_013",
+    "bonus": "trait_149",
+    "icon": "EnforcerOfOrder.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Контрразведчик",
+        "en_name": "Counter-Operative",
+        "part": "sims_4",
+        "ru_description": "Завербовать 3 персонажей в ряды Первого Ордена/Забрать товары из двух ящиков с припасами на аванпосте \"Черный шпиль\"/Выполнить 2 задания для Первого Ордена",
+        "en_description": "Recruit 3 Sims to join the First Order/Seize Goods From 2 Supply Crates in Black Spire Outpost/Complete 2 Missions for the First Order"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Сопротивление бесполезно",
+        "en_name": "Do Not Resist",
+        "part": "sims_4",
+        "ru_description": "Проверить документы 5 жителей Батуу/Приобрести дроида-спутника/Арестовать члена Сопротивления",
+        "en_description": "Check ID of 5 Batuu Citizens/Obtain a Droid Companion/Arrest a Member of the Resistance"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Силовик Ордена",
+        "en_name": "Enforcer of Order",
+        "part": "sims_4",
+        "ru_description": "Проникнуть в бункер Сопротивления и взломать голотранслятор/Провести разведку на СИД-эшелоне 5 раз/Достичь 5 уровня репутации Первого Ордена",
+        "en_description": "Infiltrate the Resistance Bunker and Slice the Holotable/Explore 5 times in the TIE echelon/Reach First Order Reputation Rank 5"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_063_galacticprivateer",
+    "ru_name": "Галактический приватир",
+    "en_name": "Galactic Privateer",
+    "ru_description": "Этот персонаж не собирается выбирать сторону. Ему просто нравится общаться с контрабандистами и охотниками за головами на удаленной планете Батуу. А также зарабатывать кредиты – и неважно, каким способом",
+    "en_description": "This Sim isn’t about choosing sides, they’re happy just mingling among the smugglers, and bounty hunters on the fringe planet of Batuu. Earning a few extra credits along the way is just a bonus, no matter how they get them",
+    "part": "sims_4",
+    "group": "aspiration_group_013",
+    "bonus": "trait_148",
+    "icon": "GalacticPrivateer.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Начинающий пират",
+        "en_name": "First Steps",
+        "part": "sims_4",
+        "ru_description": "Заказать напиток в кантине Оги/Сыграть 5 раундов игры в сабакк/Достичь 3-го уровня навыка программирования",
+        "en_description": "Order a drink at Oga’s Cantina/Play 5 Rounds of Sabacc/Reach Programming Level 3"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Подонки и злодеи",
+        "en_name": "Scum and Villainy",
+        "part": "sims_4",
+        "ru_description": "Обмануть 2 персонажей/Выполнить 5 заданий для мерзавцев/Открыть ящик с припасами",
+        "en_description": "Swindle 2 Sims/Complete 5 Missions for the Scoundrel Faction/Open Supply crate"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Обаятельный изгой",
+        "en_name": "Lovable Rogue",
+        "part": "sims_4",
+        "ru_description": "Успешно дать взятку штурмовику Первого Ордена/Незаконно получить кредиты в 3 панелях управления/Успешно сжульничать и выиграть в сабакк",
+        "en_description": "Successfully Bribe a First Order Stormtrooper/Skim Credits from 3 Control Panels/Successfully Cheat and Win at Sabacc"
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Галактический приватир",
+        "en_name": "Galactic Privateer",
+        "part": "sims_4",
+        "ru_description": "Иметь больше 5000 галактических кредитов/Провести разведку на Соколе Тысячелетия 5 раз/Достичь 5 уровня репутации мерзавцев",
+        "en_description": "Have more than 5,000 Galactic Credits/Explore 5 times in the Millennium Falcon/Reach Scoundrel Reputation Rank 5"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_064_innerpeace",
+    "ru_name": "Душевное равновесие",
+    "en_name": "Inner Peace",
+    "ru_description": "Этот персонаж хочет достичь душевного равновесия",
+    "en_description": "This Sim is on quest to achieve Inner Peace. Although true harmony is sometimes ephemeral, what's important is developing tools to help mitigate negative emotions",
+    "part": "sims_4",
+    "group": "aspiration_group_014",
+    "bonus": "trait_155",
+    "icon": "InnerPeace.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Душевное равновесие",
+        "en_name": "Inner Peace ",
+        "part": "sims_4",
+        "ru_description": "Прийти в состояние осознанности/Попробовать расслабиться/Найти умиротворяющее место/Поддерживать баланс",
+        "en_description": "Practice Mindfulness/Seek Relaxation/Find Peaceful Surroundings/Maintain Harmony"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_065_selfcarespecialist",
+    "ru_name": "Специалист сферы заботы о себе",
+    "en_name": "Self-Care Specialist",
+    "ru_description": "Этот персонаж захочет заработать много симолеонов в индустрии здорового образа жизни",
+    "en_description": "This Sim wants to make it big with monetizing Wellness activities like offering Manicures or Tending the Massage Table at Spa",
+    "part": "sims_4",
+    "group": "aspiration_group_014",
+    "bonus": "trait_156",
+    "icon": "SelfCareSpecialist.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Специалист сферы заботы о себе",
+        "en_name": "Self-Care Specialist",
+        "part": "sims_4",
+        "ru_description": "Работать/Заработать репутацию в сфере заботы о себе/Регулярно посещать спа-салон/Иметь регулярных клиентов",
+        "en_description": "Hustle/Gain Self-Care Notoriety/Become a Spa Regular/Maintain a Regular Customer"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_066_zenguru",
+    "ru_name": "Учитель дзен",
+    "en_name": "Zen Guru",
+    "ru_description": "Этот персонаж хочет поделиться своими знаниями в области здорового образа жизни со всем миром",
+    "en_description": "This sim wants to share their mastery of Wellness with the world, and train a successor to pass on their knowledge",
+    "part": "sims_4",
+    "group": "aspiration_group_014",
+    "bonus": "trait_154",
+    "icon": "ZenGuru.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Учитель дзен",
+        "en_name": "Zen Guru",
+        "part": "sims_4",
+        "ru_description": "Утешать других/Помогать другим/Выпить вместе очищающий чай/Стать знатоком здорового образа жизни",
+        "en_description": "Comfort Others/Guide Others/Share Detox Tea/Become a Master Wellness Teacher"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_067_werewolfinitiate",
+    "ru_name": "Посвещение в оборотни",
+    "en_name": "Werewolf Initiate",
+    "ru_description": "Этот персонаж хочет пробудить в себе зверя и стать оборотнем!",
+    "en_description": "This Sim wants to unleash his/her inner beast and become a werewolf!",
+    "part": "sims_4",
+    "group": "aspiration_group_015",
+    "bonus": "trait_157",
+    "icon": "WerewolfInitiate.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Посвещение в оборотни",
+        "en_name": "Lunar Attunement",
+        "part": "sims_4",
+        "ru_description": "Стать оборотнем./Повысить уровень до моськи/Пережить полнолуние/Читать книги про оборотней 3 раза",
+        "en_description": "Become a Werewolf/Level up to Runt/Experience a Full Moon/Read Werewolf Books 3 Times"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_068_lonewolf",
+    "ru_name": "Одинокий волк",
+    "en_name": "Lone Wolf",
+    "ru_description": "Этот персонаж хочет самостоятельно стать самым сильным и страшным оборотнем!",
+    "en_description": "This Sim wants to become the strongest and most feared werewolf, all on his/her own!",
+    "part": "sims_4",
+    "group": "aspiration_group_015",
+    "bonus": "trait_160",
+    "icon": "LoneWolf.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Одинокий волк",
+        "en_name": "Solo Hunt",
+        "part": "sims_4",
+        "ru_description": "Повысить уровень до хищника/Выпустить зверя (25)/Бороться с оборотнями (5)/Победить Грега в бою оборотней",
+        "en_description": "Level up to Apex/Unleash the Beast 25 Times/Spar with Werewolves 5 Times/Defeat Greg in a Werewolf Brawl"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_069_emissaryofthecollective",
+    "ru_name": "Представитель Общины",
+    "en_name": "Emissary of the Collective",
+    "ru_description": "Этот персонаж хочет вступить в Общину Мунвуда и стать дружелюбным представителем оборотней для всех!",
+    "en_description": "This sim wants to join The Moonwood Collective and become a friendly ambassador to all!",
+    "part": "sims_4",
+    "group": "aspiration_group_015",
+    "bonus": "trait_158",
+    "icon": "EmissaryOfCollective.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Представитель Общины",
+        "en_name": "Community Canine",
+        "part": "sims_4",
+        "ru_description": "Вступить в Общину Мунвуда/Общаться с друзьями-оборотнями (4)/Стать достойным представителем оборотней (25)/Стать альфа-волком Общины Мунвуда",
+        "en_description": "Join the Moonwood Collective/Socialize with Werewolf Friends 4 Times/Be a Good Werewolf Ambassador 15 Times/Become Alpha of the Moonwood Collective"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_070_wildfangrenegade",
+    "ru_name": "Ренегат Клыков",
+    "en_name": "Wildfang Renegade",
+    "ru_description": "Этот персонаж хочется присоединиться к Клыкам и смело бросить вызов миру в образе оборотня!",
+    "en_description": "This Sim wants to join the Wildfangs and unapologetically take on the world as a Werewolf!",
+    "part": "sims_4",
+    "group": "aspiration_group_015",
+    "bonus": "trait_159",
+    "icon": "WildfangRenegade.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Ренегат Клыков",
+        "en_name": "Going Wild Worldwide",
+        "part": "sims_4",
+        "ru_description": "Присоединиться к Клыкам/Превратить персонажей в оборотней (3)/Мир во власти оборотней! (25)/Стать альфа-волком Клыков",
+        "en_description": "Join the Wildfangs/Turn 3 Sims into Werewolves/Werewolf World Domination! 25 times/Become Alpha of the Wildfangs"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_071_cureseeker",
+    "ru_name": "Искатель лекарства",
+    "en_name": "Cure Seeker",
+    "ru_description": "Этот персонаж ищет лекарство от ликантропии, чтобы превратиться из оборотня в обычного персонажа",
+    "en_description": "This Sim seeks a cure for lycanthropy to live his/her life as a non-werewolf Sim",
+    "part": "sims_4",
+    "group": "aspiration_group_015",
+    "bonus": "trait_161",
+    "icon": "CureSeeker.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Искатель лекарства",
+        "en_name": "Finding a Cure",
+        "part": "sims_4",
+        "ru_description": "Собрать луноцвет (3)/Собрать волчий корень (10)/Создать антиобратин/Выпить лекарство",
+        "en_description": "Harvest 3 Moonpetal/Collect 10 Wolfsbane/Craft Wolf-B-Gone/Drink the Cure"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_072_whizkid",
+    "ru_name": "Вундеркинд",
+    "en_name": "Whiz Kid",
+    "ru_description": "Этот персонаж хочет стать самым умным ребенков в школе!",
+    "en_description": "This Sim wants to be the smartest kid in school!",
+    "part": "sims_4",
+    "group": "aspiration_group_016",
+    "bonus": "trait_163",
+    "icon": "WhizKid.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Развитие не по годам",
+        "en_name": "Precocious",
+        "part": "sims_4",
+        "ru_description": "Читать со взрослым 2 часа/Сыграть 3 партии в шахматы",
+        "en_description": "Read with an Adult for 2 hours/Play 3 Games of Chess"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Юный ученый",
+        "en_name": "Junior Scientist",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня интеллекта/Сделать 2 домашние работы во внимательном настроении",
+        "en_description": "Achieve level 5 Mental skill/Finish Homework 2 times while Focused"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Вундеркинд",
+        "en_name": "Whiz Kid",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня интеллекта/Стать отличником в школе/Смешать 3 зелья эмоций",
+        "en_description": "Achieve a grade of A at school/Craft 3 Emotional Potions/Achieve level 10 Mental skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_073_rambunctiousscamp",
+    "ru_name": "Непослушный проказник",
+    "en_name": "Rambunctious Scamp",
+    "ru_description": "Этот персонаж хочет быть прытким шалунишкой!",
+    "en_description": "This Sim wants to be playful and nimble!",
+    "part": "sims_4",
+    "group": "aspiration_group_016",
+    "bonus": "trait_164",
+    "icon": "RambunctiousScamp.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Энергичность",
+        "en_name": "Energetic",
+        "part": "sims_4",
+        "ru_description": "Достичь 2 уровня моторики/Играть в гимнастическом комплексе в игривом настроении",
+        "en_description": "Play on a Jungle Gym while Playful/Achieve level 2 Motor skill"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Шустрый изобретатель",
+        "en_name": "Agile Developer",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня моторики/Упражняться в наборе текста 4 часа",
+        "en_description": "Achieve level 5 Motor skill/Practice typing for 4 hours"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Непослушный проказник",
+        "en_name": "Rambunctious Scamp",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня моторики/Пролезть по «паутинке» 3 раза/Получить лучший результат в игре по вводу текста",
+        "en_description": "Make it across the Monkey Bars 3 times/Earn a High Score on the Typing Game/Achieve level 10 Motor skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_074_socialbutterfly",
+    "ru_name": "Светский львёнок",
+    "en_name": "Social Butterfly",
+    "ru_description": "Этот персонаж хочет разговаривать со всеми и заводить друзей!",
+    "en_description": "This Sim wants to talk to everyone and make friends!",
+    "part": "sims_4",
+    "group": "aspiration_group_016",
+    "bonus": "trait_165",
+    "icon": "SocialButterfly.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Тараторка",
+        "en_name": "Chatterbox",
+        "part": "sims_4",
+        "ru_description": "Познакомиться с 5-ю новыми персонажами",
+        "en_description": "Make a friend/Meet 5 new Sims"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Популярный ребенок",
+        "en_name": "Popular Kid",
+        "part": "sims_4",
+        "ru_description": "Достичь 5 уровня общения/Завести друга навек",
+        "en_description": "Achieve level 5 Social skill/Make a BFF"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Светский львенок",
+        "en_name": "Social Butterfly",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня общения/Подружиться с 3 детьми и 2 взрослыми",
+        "en_description": "Become friends with 3 other children/Become friends with 2 adults/Achieve level 10 Social skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_075_artisticprodigy",
+    "ru_name": "Творческое дарование",
+    "en_name": "Artistic Prodigy",
+    "ru_description": "Этот персонаж мечтает о карьере на поприще искусства",
+    "en_description": "This Sim has dreams of succeeding in the arts!",
+    "part": "sims_4",
+    "group": "aspiration_group_016",
+    "bonus": "trait_162",
+    "icon": "ArtisticProdigy.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Активное воображение",
+        "en_name": "Active Imagination",
+        "part": "sims_4",
+        "ru_description": "Иметь дома столик для поделок/Нарисовать 2 картины во вдохновленном настроении",
+        "en_description": "Have an Activity Table/Draw 2 pictures while Inspired"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Фантазер",
+        "en_name": "Daydreamer",
+        "part": "sims_4",
+        "ru_description": "Достичь 6 уровня творческих способностей/Поиграть с 3 игрушками",
+        "en_description": "Achieve level 5 Creativity skill/Play with 3 toys"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Творческое дарование",
+        "en_name": "Artistic Prodigy",
+        "part": "sims_4",
+        "ru_description": "Достичь 10 уровня творческих способностей/Нарисовать 5 типов картин на столике для поделок/Играть на музыкальном инструменте 5 часов",
+        "en_description": "Play instruments for 5 total hours/Draw all 5 picture types on the Activity Table/Achieve level 10 Creativity skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_076_slumberpartyanimal",
+    "ru_name": "Душа пижамной вечеринки",
+    "en_name": "Slumber Party Animal",
+    "ru_description": "Этот персонаж хочет стать душой вечеринки... но не обычной, а пижамной!",
+    "en_description": "This Sim wants to be the life of the party - in a uniquely creative way!",
+    "part": "sims_4",
+    "group": "aspiration_group_016",
+    "bonus": "trait_166",
+    "icon": "SlumberPartyAnimal.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Мечты в пижаме",
+        "en_name": "Pajama Wearer",
+        "part": "sims_4",
+        "ru_description": "Посетить вечеринку с ночевкой/Достичь 3 уровня в навыке общения",
+        "en_description": "Attend a Slumber Party/Achieve Level 3 Social Skill"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Интересные истории",
+        "en_name": "Storyteller",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня в навыке творчества/Рассказать 3 истории, сидя на спальном мешке/Обменяться браслетами дружбы",
+        "en_description": "Achieve Level 3 Creativity Skill/Tell 3 Stories from a Sleeping Bag/Exchange a Friendship Bracelet"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Опытный организатор",
+        "en_name": "Host with the Most",
+        "part": "sims_4",
+        "ru_description": "Достичь золотого уровня на вечеринке с ночевкой/Достичь 6 уровня в навыке общения/Достичь 5 уровня в навыке общения",
+        "en_description": "Achieve Gold in a Slumber Party Event/Achieve Level 6 Social Skill/Achieve Level 5 Creativity Skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_077_mindandbody",
+    "ru_name": "Душа и тело",
+    "en_name": "Mind and Body",
+    "ru_description": "Этот персонаж хочет установить связь как со своей душой, так и телом!",
+    "en_description": "This Sim wants to master both their mind and body!",
+    "part": "sims_4",
+    "group": "aspiration_group_016",
+    "bonus": "trait_167",
+    "icon": "MindAndBody.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Уверенный ребенок",
+        "en_name": "Confident Kiddo",
+        "part": "sims_4",
+        "ru_description": "Обрести уверенность в себе/Достичь 3 уровня в навыке интеллекта",
+        "en_description": "Become Confident/Achieve Level 3 Mental Skill"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Сильная взаимность",
+        "en_name": "Super Bike Tyke",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня в навыке моторики/Учиться ездить на велосипеде",
+        "en_description": "Achieve Level 3 Motor Skill/Learn to ride a Bike"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Идеальный контроль",
+        "en_name": "Master of Control",
+        "part": "sims_4",
+        "ru_description": "Поддерживать все потребности удовлетворенными в течение 12 часов/Достичь 6 уровня в навыке интеллекта/Достичь 5 уровня в навыке моторики",
+        "en_description": "Go 12 Hours without a Negative Need Moodlet/Achieve Level 6 Mental Skill/Achieve Level 5 Motor Skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_078_playtimecaptain",
+    "ru_name": "Жизнь как игра",
+    "en_name": "Playtime Captain",
+    "ru_description": "Этот персонаж обожает активные игры с друзьями!",
+    "en_description": "This Sim loves to seek out active play - with friends!",
+    "part": "sims_4",
+    "group": "aspiration_group_016",
+    "bonus": "trait_168",
+    "icon": "PlaytimeCaptain.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Быстрый темп",
+        "en_name": "Silly Stomper",
+        "part": "sims_4",
+        "ru_description": "Игриво топать в сухом фонтане/Достичь 3 уровня в навыке моторики",
+        "en_description": "Stomp Playfully on a Splash Pad/Achieve Level 3 Motor Skill"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Сплошные разговоры",
+        "en_name": "Talky-Talker",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня в навыке общения/Подружиться с 3 детьми",
+        "en_description": "Achieve Level 3 Social Skill/Become Friends with 3 Other Children"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Знать детской площадки",
+        "en_name": "Playground Royalty",
+        "part": "sims_4",
+        "ru_description": "Кататься на велосипеде в течение 4 часов/Достичь 6 уровня в навыке моторики/Достичь 5 уровня в навыке общения",
+        "en_description": "Ride a Bike for 4 hours/Achieve Level 6 Motor Skill/Achieve Level 5 Social Skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_079_creativegenius",
+    "ru_name": "Творческий взгляд",
+    "en_name": "Creative Genius",
+    "ru_description": "Этот персонаж хочет развить навыки творчества и интеллекта, чтобы постоянно создавать что-то новое и играть!",
+    "en_description": "This Sim wants to build their creative and mental skills to inspire innovation and play!",
+    "part": "sims_4",
+    "group": "aspiration_group_016",
+    "bonus": "trait_169",
+    "icon": "CreativeGenius.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Первое проявление одаренности",
+        "en_name": "Gifted Fledgling",
+        "part": "sims_4",
+        "ru_description": "Играть понарошку в домике на дереве/Достичь 3 уровня в навыке творчества",
+        "en_description": "Play Pretend in the Treehouse/Achieve Level 3 Creativity Skill"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Вдохновляющее видение",
+        "en_name": "Inspired Visionary",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня в навыке интеллекта/Смотреть на звезды",
+        "en_description": "Achieve Level 3 Mental Skill/Stargaze"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Высший класс",
+        "en_name": "Best-in-Class",
+        "part": "sims_4",
+        "ru_description": "Спать в домике на дереве в течение 6 часов/Достичь 6 уровня в навыке творчества/Достичь 5 уровня в навыке интеллекта",
+        "en_description": "Sleep in a Treehouse for 6 hours/Achieve Level 6 Creativity Skill/Achieve Level 5 Mental Skill"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_080_dramallama",
+    "ru_name": "Лама с драмой",
+    "en_name": "Drama Llama",
+    "ru_description": "Этот персонаж живет ради драмы",
+    "en_description": "This Sim wants all the drama all the time",
+    "part": "sims_4",
+    "group": "aspiration_group_017",
+    "bonus": "trait_150",
+    "icon": "DramaLlama.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Рассадник сплетен",
+        "en_name": "Hot Gossip",
+        "part": "sims_4",
+        "ru_description": "Сплетничать 5 раз/Распускать слухи/Дурачиться в тележке для обнимашек",
+        "en_description": "Gossip 5 times/Spread a rumor/Mess around in the cuddle carts"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Интернет тролль",
+        "en_name": "Internet Troll",
+        "part": "sims_4",
+        "ru_description": "Задираться в Кролике общения 5 раз/Разорвать отношения с персонажем",
+        "en_description": "Be mean on Social Bunny 5 times/Break up with a Sim"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Лама с драмой",
+        "en_name": "Drama Llama",
+        "part": "sims_4",
+        "ru_description": "Завести врага среди соперников",
+        "en_description": "Have an enemy rival"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_081_goaloriented",
+    "ru_name": "Вижу цель, не вижу препятствий",
+    "en_name": "Goal Oriented",
+    "ru_description": "Этот персонаж хочетдобиться успеха во всем! Оценки? Только пятерки. Спорт? Ради медалей и трофеев. Деньги? И побольше! Именно так выглядит путь к успеху!",
+    "en_description": "This Sim wants to be the best: Grades? Check. Sports? Check. Money? Check! The road to success is being paved!",
+    "part": "sims_4",
+    "group": "aspiration_group_017",
+    "bonus": "trait_151",
+    "icon": "GoalOriented.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Большие амбиции",
+        "en_name": "Setting Your Sights",
+        "part": "sims_4",
+        "ru_description": "Записаться на внеклассное занятие/Делать домашнюю работу 5 раз/Заработать 500 симолеонов",
+        "en_description": "Join an after-school activity/Do homework 5 times/Earn 500 Simoleons"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Предмет зависти",
+        "en_name": "Major Flex",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня, занимаясь внеклассной деятельностью/Получить высший балл и не понизить оценку/Посетить мероприятие по профориентации",
+        "en_description": "Reach level 3 of an after-school activity/Earn and keep an A/Attend Career Day"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Вижу цель, не вижу препятствий",
+        "en_name": "Goal Oriented",
+        "part": "sims_4",
+        "ru_description": "Достичь 3 уровня в подработке",
+        "en_description": "Reach level 3 of a side hustle"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_082_livefast",
+    "ru_name": "Разгульная жизнь",
+    "en_name": "Live Fast",
+    "ru_description": "Этот персонаж хочет получить от жизни все, не прилагая усилий и не следуя правилам",
+    "en_description": "This Sim aims to get the most out of live by living care-free and rules-free",
+    "part": "sims_4",
+    "group": "aspiration_group_017",
+    "bonus": "trait_152",
+    "icon": "LiveFast.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Нарушитель спокойствия",
+        "en_name": "Trouble Maker",
+        "part": "sims_4",
+        "ru_description": "Шалить 3 раза/Попасть в неприятности/Тайком сбежать на вечеринку",
+        "en_description": "Pull a prank 3 times/Get in trouble/Sneak out to a party"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Рискованное дело",
+        "en_name": "Risky Business",
+        "part": "sims_4",
+        "ru_description": "Позвать персонажа на свидание 5 раз/Начать драку/Оживить городскую легенду",
+        "en_description": "Ask a Sim out on a date 5 times/Start a fight/Summon an Urban Myth twice"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Разгульная жизнь",
+        "en_name": "Live Fast",
+        "part": "sims_4",
+        "ru_description": "Подзадорить или ложно обвинить персонажа",
+        "en_description": "Dare or frame a Sim"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_083_admiredicon",
+    "ru_name": "Легенда при жизни",
+    "en_name": "Admired Icon",
+    "ru_description": "Этот персонаж хочет задавать новые тенденции, обрести популярность и влиять на жизни других. Настоящая легенда",
+    "en_description": "This Sim wants to be a trend setter, popular, and influential. A true icon",
+    "part": "sims_4",
+    "group": "aspiration_group_017",
+    "bonus": "trait_153",
+    "icon": "AdmiredIcon.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Всеобщий любимчик",
+        "en_name": "Everyone's Bestie",
+        "part": "sims_4",
+        "ru_description": "Принять участие в испытании \"Т-поза\"/Завести друзей подросткового возраста: 10/Написать в Кролике общения 5 раз",
+        "en_description": "Join a T-Pose challenge/Make 10 teen friends/Post on Social Bunny 5 times"
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Охотник за популярностью",
+        "en_name": "Clout Chaser",
+        "part": "sims_4",
+        "ru_description": "Выставить на продажу в Тренди 5 нарядов/Заработать золото на своей вечеринке",
+        "en_description": "List 5 outfits on Trendi/Earn Gold on any hosted party"
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Легенда при жизни",
+        "en_name": "Admired Icon",
+        "part": "sims_4",
+        "ru_description": "Иметь 250 подписчиков в Кролике общения",
+        "en_description": "Have 250 followers on Social Bunny"
+      }
+    ]
+  },
+  {
+    "key": "aspiration_084_crystalcrafter",
+    "ru_name": "Приручение кристаллов",
+    "en_name": "Crystal Crafter",
+    "ru_description": "Этот персонаж хочет гранить самоцветы, создавать ювелирные изделия и ощущать силу кристаллов!",
+    "en_description": "This Sim wants to cut gemstones, craft jewelry, and harness the power of crystals!",
+    "part": "sims_4",
+    "group": "aspiration_group_011",
+    "bonus": "trait_248",
+    "icon": "CrystalCrafter.png",
+    "steps": [
+      {
+        "key": "step_1",
+        "ru_name": "Коллекционирование из любопытства",
+        "en_name": "Curious Collector",
+        "part": "sims_4",
+        "ru_description": "Купить геммологический стол/",
+        "en_description": ""
+      },
+      {
+        "key": "step_2",
+        "ru_name": "Торговля безделушками",
+        "en_name": "Bauble Broker",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": ""
+      },
+      {
+        "key": "step_3",
+        "ru_name": "Увлечений геммологией",
+        "en_name": "Gifted Gemologist",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": ""
+      },
+      {
+        "key": "step_4",
+        "ru_name": "Легендарная резьба по камню",
+        "en_name": "Legendary Lapidary",
+        "part": "sims_4",
+        "ru_description": "",
+        "en_description": ""
+      }
+    ]
+  }
+]

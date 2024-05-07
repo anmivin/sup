@@ -1,0 +1,171 @@
+[
+  {
+    "key": "challenge_001",
+    "ru_name": "Бон вояж",
+    "en_name": "",
+    "ru_description": "Отправиться в отпуск всей семьей",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_002",
+    "ru_name": "Вы меня все зае",
+    "en_name": "",
+    "ru_description": "Уехать в отпуск одному",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_003",
+    "ru_name": "Что бы изменить",
+    "en_name": "",
+    "ru_description": "Сменить прическу",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_004",
+    "ru_name": "Цыганские настроения",
+    "en_name": "",
+    "ru_description": "Совершить крупную покупку",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_005",
+    "ru_name": "Хочется услышать топот маленьких ножек",
+    "en_name": "",
+    "ru_description": "Зачать ребенка",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_006",
+    "ru_name": "Еще по одной",
+    "en_name": "",
+    "ru_description": "Провести всю ночь в баре",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_007",
+    "ru_name": "Отвратительный коллектив",
+    "en_name": "",
+    "ru_description": "Бросить работу",
+    "en_description": ""
+  },
+  { "key": "challenge_008", "ru_name": "", "en_name": "", "ru_description": "Найти любовника", "en_description": "" },
+  {
+    "key": "challenge_009",
+    "ru_name": "Непреодолимое желание взять ипотеку",
+    "en_name": "",
+    "ru_description": "Переехать в новый дом",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_010",
+    "ru_name": "Шо бы поделать",
+    "en_name": "",
+    "ru_description": "Начать развивать новый навык",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_011",
+    "ru_name": "Это меня больше не интересует",
+    "en_name": "",
+    "ru_description": "Сменить цель жизни",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_012",
+    "ru_name": "Слишком спокойно в доме",
+    "en_name": "",
+    "ru_description": "Завести питомца",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_013",
+    "ru_name": "Запах любви",
+    "en_name": "",
+    "ru_description": "Сходить на свидание",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_014",
+    "ru_name": "Я в потоке",
+    "en_name": "",
+    "ru_description": "Здоровый образ жизни",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_015",
+    "ru_name": "Стрессовая ситуация",
+    "en_name": "",
+    "ru_description": "Устроить день рождения прямо сейчас",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_016",
+    "ru_name": "Несчастный случай",
+    "en_name": "",
+    "ru_description": "Сим умирает",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_017",
+    "ru_name": "Очень редкая болезнь",
+    "en_name": "",
+    "ru_description": "Сим умирает, если не удастся собрать 100к за три дня",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_018",
+    "ru_name": "Хочу импланты - звоню врачу",
+    "en_name": "",
+    "ru_description": "Можно поменять одного персонажа через cas.fulleditmode за 10к",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_019",
+    "ru_name": "Азарт",
+    "en_name": "",
+    "ru_description": "Вы проиграли 15к",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_020",
+    "ru_name": "Компенсируем",
+    "en_name": "",
+    "ru_description": "Потратьте 3 000$ на благотворительность",
+    "en_description": ""
+  },
+  {
+    "key": "challenge_021",
+    "ru_name": "Смерть пятиюродного дяди по маминой линии",
+    "en_name": "",
+    "ru_description": "Получите 25к",
+    "en_description": ""
+  },
+  { "key": "challenge_022", "ru_name": "", "en_name": "", "ru_description": "Усыновить", "en_description": "" },
+  {
+    "key": "challenge_023",
+    "ru_name": "Кто за зож",
+    "en_name": "",
+    "ru_description": "Питаемся правильно и занимаемся спортиком",
+    "en_description": ""
+  },
+  { "key": "challenge_024", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_025", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_026", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_027", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_028", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_029", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_030", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" },
+  { "key": "challenge_001", "ru_name": "", "en_name": "", "ru_description": "", "en_description": "" }
+]

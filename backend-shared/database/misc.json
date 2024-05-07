@@ -1,0 +1,158 @@
+[
+  {
+    "key": "life_stages_baby",
+    "ru_name": "Новорожденный",
+    "en_name": "Baby",
+    "part": ["sims_1", "sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_stages_infant",
+    "ru_name": "Младенец",
+    "en_name": "Infant",
+    "part": ["sims_4"]
+  },
+  {
+    "key": "life_stages_toddler",
+    "ru_name": "Малыш",
+    "en_name": "Toddler",
+    "part": ["sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_stages_child",
+    "ru_name": "Ребенок",
+    "en_name": "Child",
+    "part": ["sims_1", "sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_stages_teen",
+    "ru_name": "Подросток",
+    "en_name": "Teen",
+    "part": ["sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_stages_youngadult",
+    "ru_name": "Молодой",
+    "en_name": "Young adult",
+    "part": ["sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_stages_adult",
+    "ru_name": "Взрослый",
+    "en_name": "Adult",
+    "part": ["sims_1", "sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_stages_elder",
+    "ru_name": "Пожилой",
+    "en_name": "Elder",
+    "part": ["sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_states_human",
+    "ru_name": "Человек",
+    "en_name": "Human",
+    "part": ["sims_1", "sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_states_ghost",
+    "ru_name": "Призрак",
+    "en_name": "Ghost",
+    "part": ["sims_1", "sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_states_witch",
+    "ru_name": "Ведьма",
+    "en_name": "Witch",
+    "part": ["sims_1", "sims_2", "sims_3"]
+  },
+  {
+    "key": "life_states_alien",
+    "ru_name": "Пришелец",
+    "en_name": "Alien",
+    "part": ["sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_states_bigfoot",
+    "ru_name": "Снежный человек",
+    "en_name": "Bigfoot",
+    "part": ["sims_2"]
+  },
+  {
+    "key": "life_states_genie",
+    "ru_name": "Джин",
+    "en_name": "Genie",
+    "part": ["sims_3"]
+  },
+  {
+    "key": "life_states_plantsim",
+    "ru_name": "Ростоман",
+    "en_name": "PlantSim",
+    "part": ["sims_2", "sims_3"]
+  },
+  {
+    "key": "life_states_servo",
+    "ru_name": "Серворобот",
+    "en_name": "Servo",
+    "part": ["sims_2", "sims_4"]
+  },
+  {
+    "key": "life_states_vampire",
+    "ru_name": "Вампир",
+    "en_name": "Vampire",
+    "part": ["sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_states_werewolf",
+    "ru_name": "Оборотень",
+    "en_name": "Werewolf",
+    "part": ["sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "life_states_zombie",
+    "ru_name": "Зомби",
+    "en_name": "Zombie",
+    "part": ["sims_2"]
+  },
+  {
+    "key": "life_states_fairy",
+    "ru_name": "Фея",
+    "en_name": "Fairy",
+    "part": ["sims_3"]
+  },
+  {
+    "key": "life_states_mermaid",
+    "ru_name": "Русалка",
+    "en_name": "Mermaid",
+    "part": ["sims_3", "sims_4"]
+  },
+  {
+    "key": "life_states_imaginaryfriend",
+    "ru_name": "Воображаемый друг",
+    "en_name": "Imaginary friend",
+    "part": ["sims_3"]
+  },
+  {
+    "key": "life_states_mummy",
+    "ru_name": "Мумия",
+    "en_name": "Mummy",
+    "part": ["sims_3"]
+  },
+  {
+    "key": "life_states_plumbot",
+    "ru_name": "Плюмбот",
+    "en_name": "Plumbot",
+    "part": ["sims_3"]
+  },
+  {
+    "key": "life_states_simbot",
+    "ru_name": "Симбот",
+    "en_name": "Simbot",
+    "part": ["sims_3"]
+  },
+  {
+    "key": "life_states_spellcaster",
+    "ru_name": "Чародей",
+    "en_name": "Spellcaster",
+    "part": ["sims_4"]
+  }
+]

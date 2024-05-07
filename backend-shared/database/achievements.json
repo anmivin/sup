@@ -1,0 +1,911 @@
+[
+  {
+    "key": "achievement_001_areuouentertained",
+    "ru_name": "А вас ещё не развлекли?",
+    "en_name": "Are You Entertained?",
+    "ru_description": "Достигнуть максимального уровня в карьере исполнителя",
+    "en_description": "Have a Sim reach max level in the Entertainer career",
+    "points": 50,
+    "icon": "Stage.png"
+  },
+  {
+    "key": "achievement_002_captainofindustry",
+    "ru_name": "Капитан отрасли",
+    "en_name": "Captain of Industry",
+    "ru_description": "Достигнуть максимального уровня в карьере бизнесмена",
+    "en_description": "Have a Sim reach the max level in the Business career",
+    "points": 50,
+    "icon": "Briefcase.png"
+  },
+  {
+    "key": "achievement_003_flyingcolors",
+    "ru_name": "Парящие цвета",
+    "en_name": "Flying Colors",
+    "ru_description": "Достигнуть максимального уровня в карьере художника",
+    "en_description": "Have a Sim reach max level in the Painter career",
+    "points": 50,
+    "icon": "Brush.png"
+  },
+  {
+    "key": "achievement_004_ispy",
+    "ru_name": "Я - шпион",
+    "en_name": "I, Spy",
+    "ru_description": "Достигнуть максимального уровня в карьере тайного агента",
+    "en_description": "Have a Sim reach max level in the Secret Agent career",
+    "points": 50,
+    "icon": "SpyWatch.png"
+  },
+  {
+    "key": "achievement_005_knackofalltrades",
+    "ru_name": "Ловкач на все руки",
+    "en_name": "Knack of All Trades",
+    "ru_description": "Достичь максимального уровня в каждой карьере",
+    "en_description": "Reach max level in every career",
+    "points": 100,
+    "icon": "SwissArmyKnife.png"
+  },
+  {
+    "key": "achievement_006_startupupstart",
+    "ru_name": "Достигший успеха",
+    "en_name": "Startup Upstart",
+    "ru_description": "Достичь максимального уровня в карьере технического специалиста",
+    "en_description": "Have a Sim reach max level in the Tech Guru career",
+    "points": 50,
+    "icon": "Motherboard.png"
+  },
+  {
+    "key": "achievement_007_stellarwork",
+    "ru_name": "Звездные работы",
+    "en_name": "Stellar Work",
+    "ru_description": "Достичь максимального уровня в карьере космонавта",
+    "en_description": "Have a Sim reach max level in the Astronaut career",
+    "points": 50,
+    "icon": "Astronaut.png"
+  },
+  {
+    "key": "achievement_008_suavecriminal",
+    "ru_name": "Учтивый преступник",
+    "en_name": "Suave Criminal",
+    "ru_description": "Достигнуть максимального уровня в карьере преступника",
+    "en_description": "Have a Sim reach max level in the Criminal career",
+    "points": 50,
+    "icon": "BriefcaseCash.png"
+  },
+  {
+    "key": "achievement_009_thepenismightier",
+    "ru_name": "Что написано пером",
+    "en_name": "The Pen is Mightier",
+    "ru_description": "Достичь максимального уровня в карьере писателя",
+    "en_description": "Have a Sim reach max level in the Writer career",
+    "points": 50,
+    "icon": "Writing.png"
+  },
+  {
+    "key": "achievement_010_upanotch",
+    "ru_name": "Новый уровень",
+    "en_name": "Up a Notch",
+    "ru_description": "Достичь максимального уровня в карьере кулинара",
+    "en_description": "Have a Sim reach max level in the Culinary Career",
+    "points": 50,
+    "icon": "Cooking.png"
+  },
+  {
+    "key": "achievement_011_worldcompetitor",
+    "ru_name": "Мировой соперник",
+    "en_name": "World Competitor",
+    "ru_description": "Достигнуть максимального уровня в карьере спортсмена",
+    "en_description": "Have a Sim reach max level in the Athlete career",
+    "points": 50,
+    "icon": "Muscles.png"
+  },
+  {
+    "key": "achievement_012_cluedin",
+    "ru_name": "В курсе дела",
+    "en_name": "Clued In",
+    "ru_description": "Достигнуть максимального уровня в карьере детектива",
+    "en_description": "Have a Sim reach max level in the Detective career",
+    "points": 50,
+    "icon": "PoilceBadge.png"
+  },
+  {
+    "key": "achievement_013_downtoascience",
+    "ru_name": "Владение в совершенстве",
+    "en_name": "Down to a Science",
+    "ru_description": "Достигнуть максимального уровня в карьере учёного",
+    "en_description": "Have a Sim reach max level in the Scientist career",
+    "points": 50,
+    "icon": "Scientifique.png"
+  },
+  {
+    "key": "achievement_014_patientsareavirtue",
+    "ru_name": "Лечение пациентов - это призвание",
+    "en_name": "Patients Are a Virtue",
+    "ru_description": "Достигнуть максимального уровня в карьере доктора",
+    "en_description": "Have a Sim reach max level in the Doctor career",
+    "points": 50,
+    "icon": "Medecin.png"
+  },
+  {
+    "key": "achievement_015_tildeathdousPart",
+    "ru_name": "Пока смерть не разлучит нас",
+    "en_name": "'Til Death Do Us Part",
+    "ru_description": "Пусть сим умрет на собственной свадьбе",
+    "en_description": "Have a Sim die at their own wedding",
+    "points": 100,
+    "icon": "WeddingDivorce.png"
+  },
+  {
+    "key": "achievement_016_alphabetlegacy",
+    "ru_name": "Наследие в алфавитном порядке",
+    "en_name": "Alphabet Legacy",
+    "ru_description": "Играть семьей в течение 26 поколений.",
+    "en_description": "Play a household for 26 generations or more",
+    "points": 100,
+    "icon": "Genealogy.png"
+  },
+  {
+    "key": "achievement_017_aspirational",
+    "ru_name": "Амбиции",
+    "en_name": "Aspirational",
+    "ru_description": "Выполнить все жизненные цели",
+    "en_description": "Complete every Aspiration",
+    "points": 100,
+    "icon": "Star.png"
+  },
+  {
+    "key": "achievement_018_babyboom",
+    "ru_name": "Всплеск рождаемости",
+    "en_name": "Baby Boom",
+    "ru_description": "Заиметь 400 детей с любыми персонажами",
+    "en_description": "Have 400 babies across all your Sims",
+    "points": 50,
+    "icon": "BabyGear.png"
+  },
+  {
+    "key": "achievement_019_eventhorizon",
+    "ru_name": "Горизонт событий",
+    "en_name": "Event Horizon",
+    "ru_description": "Заработать серебро на всех видах общественных мероприятий",
+    "en_description": "Earn a Silver rating on 5 different social events",
+    "points": 25,
+    "icon": "MouthOpen.png"
+  },
+  {
+    "key": "achievement_020_fullhouse",
+    "ru_name": "Полон дом",
+    "en_name": "Full House",
+    "ru_description": "Играть с семьей в 8 человек",
+    "en_description": "Play with an eight-Sim household",
+    "points": 10,
+    "icon": "House.png"
+  },
+  {
+    "key": "achievement_021_ghostfamily",
+    "ru_name": "Семья привидений",
+    "en_name": "Ghost Family",
+    "ru_description": "Иметь семью с 8 игровыми привидениям",
+    "en_description": "Have a family of 8 playable Ghosts",
+    "points": 100,
+    "icon": "HouseHaunted.png"
+  },
+  {
+    "key": "achievement_022_ghostly",
+    "ru_name": "Привидение",
+    "en_name": "Ghostly",
+    "ru_description": "Иметь в семье привидение",
+    "en_description": "Have a Ghost join your household",
+    "points": 25,
+    "icon": "Ghost2.png"
+  },
+  {
+    "key": "achievement_023_honorarysimguru",
+    "ru_name": "Почетный игрок",
+    "en_name": "Honorary SimGuru",
+    "ru_description": "Играть в течение 100 часов",
+    "en_description": "Play for 100 hours",
+    "points": 100,
+    "icon": "TrophyPlumbob.png"
+  },
+  {
+    "key": "achievement_024_hostwiththemost",
+    "ru_name": "Тамада",
+    "en_name": "Host with the Most",
+    "ru_description": "Провести 50 бронзовых общественных мероприятий всеми персонажами",
+    "en_description": "Host 50 Bronze or better Social Events across all Sims",
+    "points": 100,
+    "icon": "Balloons.png"
+  },
+  {
+    "key": "achievement_025_inthegame",
+    "ru_name": "В игре",
+    "en_name": "In the Game",
+    "ru_description": "Играть в течение 24 часов",
+    "en_description": "Play for 24 hours",
+    "points": 50,
+    "icon": "TrophyPlumbob2.png"
+  },
+  {
+    "key": "achievement_026_justgettingstarted",
+    "ru_name": "Самое начало",
+    "en_name": "Just Getting Started",
+    "ru_description": "Играть в течение 5 часов",
+    "en_description": "Play for 5 hours",
+    "points": 25,
+    "icon": "TrophyPlumbob3.png"
+  },
+  {
+    "key": "achievement_027_knockknock",
+    "ru_name": "Тук-тук",
+    "en_name": "Knock, Knock...",
+    "ru_description": "Посетить 25 различных участков",
+    "en_description": "Visit 25 different Lots",
+    "points": 50,
+    "icon": "World.png"
+  },
+  {
+    "key": "achievement_028_legacyleader",
+    "ru_name": "Глава наследия",
+    "en_name": "Legacy Leader",
+    "ru_description": "Иметь в мире десять семей, каждая из которых насчитывает не менее десяти поколений",
+    "en_description": "Have 10 households in the world that have been played for ten generations or more",
+    "points": 100,
+    "icon": "Genealogy.png"
+  },
+  {
+    "key": "achievement_029_legacyplayer",
+    "ru_name": "Любитель традиций",
+    "en_name": "Legacy Player",
+    "ru_description": "Играть семьей в течение десяти поколений или дольше",
+    "en_description": "Play a household for ten generations or more",
+    "points": 100,
+    "icon": "Genealogy.png"
+  },
+  {
+    "key": "achievement_030_legendarylegacy",
+    "ru_name": "Легендарное наследие",
+    "en_name": "Legendary Legacy",
+    "ru_description": "Играть семьей в течение 100 поколений",
+    "en_description": "Play a household for 100 generations or more",
+    "points": 100,
+    "icon": "Genealogy.png"
+  },
+  {
+    "key": "achievement_031_themainevent",
+    "ru_name": "Главное событие",
+    "en_name": "The Main Event",
+    "ru_description": "Заработать золото на 7 разных общественных мероприятиях",
+    "en_description": "Earn a Gold rating on every social event.",
+    "points": 100,
+    "icon": "TrophyStar.png"
+  },
+  {
+    "key": "achievement_032_vengefuldeity",
+    "ru_name": "Мстительный божок",
+    "en_name": "Vengeful Deity",
+    "ru_description": "Пусть 10 персонажей умрут неестественной смертью",
+    "en_description": "Kill off 10 of your Sims via unnatural causes",
+    "points": 25,
+    "icon": "Ghost.png"
+  },
+  {
+    "key": "achievement_033_whimsical",
+    "ru_name": "Прихоть",
+    "en_name": "Whimsical",
+    "ru_description": "Выполнить 100 прихотей любых персонажей",
+    "en_description": "Complete 100 Whims across all Sims",
+    "points": 50,
+    "icon": "TrophyBubbles.png"
+  },
+  {
+    "key": "achievement_034_nolongersolitary",
+    "ru_name": "Одиночеству бой",
+    "en_name": "No Longer Solitary",
+    "ru_description": "Вернуть отшельника в общество",
+    "en_description": "Bring a hermit back to society",
+    "points": 25,
+    "icon": "Silhouette3.png"
+  },
+  {
+    "key": "achievement_035_aliensamongus",
+    "ru_name": "Пришельцы среди нас",
+    "en_name": "Aliens Among Us",
+    "ru_description": "Разоблачить 10 замаскированных пришельцев",
+    "en_description": "Discover 10 Aliens in Disguise",
+    "points": 50,
+    "icon": "Alien.png"
+  },
+  {
+    "key": "achievement_036_carriedaway",
+    "ru_name": "Повальное завлечение",
+    "en_name": "Carried Away",
+    "ru_description": "Пусть пришельцы похитят персонажей 3 раза",
+    "en_description": "Have Sims be abducted by Aliens 3 times",
+    "points": 50,
+    "icon": "AlienAbduction.png"
+  },
+  {
+    "key": "achievement_037_simstagramstarter",
+    "ru_name": "Начинающий пользователь Симстаграмм",
+    "en_name": "Simstagram Starter",
+    "ru_description": "Получить 25 подписчиков в Симстаграмм",
+    "en_description": "Gain 25 Simstagram Followers",
+    "points": 25,
+    "icon": "Paw.png"
+  },
+  {
+    "key": "achievement_038_simstagraminfluencer",
+    "ru_name": "Влиятельный пользователь Симстаграмм",
+    "en_name": "Simstagram Influencer",
+    "ru_description": "Получить 250 подписчиков в Симстаграмм",
+    "en_description": "Gain 250 Simstagram Followers",
+    "points": 25,
+    "icon": "Paw.png"
+  },
+  {
+    "key": "achievement_039_simstagramcelebrity",
+    "ru_name": "Звезда Симстаграмма",
+    "en_name": "Simstagram Celebrity",
+    "ru_description": "Получить 1500 подписчиков в Симстаграмм",
+    "en_description": "Gain 1500 Simstagram Followers",
+    "points": 50,
+    "icon": "Paw.png"
+  },
+  {
+    "key": "achievement_040_fiftymilehighclub",
+    "ru_name": "Клуб 50 миль над землёй",
+    "en_name": "50-Mile-High-Club",
+    "ru_description": "Успешно заняться вуху в космическом корабле",
+    "en_description": "Successfully Woohoo in a Rocketship",
+    "points": 10,
+    "icon": "RocketshipLove.png"
+  },
+  {
+    "key": "achievement_041_hellodarknessmyoldchum",
+    "ru_name": "Ну, привет, тьма, мой старый друг",
+    "en_name": "Hello, Darkness, My Old Chum",
+    "ru_description": "Подружиться со смертью",
+    "en_description": "Have a Sim befriend the Grim Reaper",
+    "points": 25,
+    "icon": "Scythe.png"
+  },
+  {
+    "key": "achievement_042_serialmonogamist",
+    "ru_name": "Серийная моногамия",
+    "en_name": "Serial Monogamist",
+    "ru_description": "Устроить свадьбы в 20 разных семьях",
+    "en_description": "Perform Marriages in 20 Unique Households",
+    "points": 50,
+    "icon": "WeddingRing.png"
+  },
+  {
+    "key": "achievement_043_soillcallyou",
+    "ru_name": "Ну... Я позвоню?",
+    "en_name": "So… I'll call you?",
+    "ru_description": "Описаться на свидании",
+    "en_description": "Have a Sim bladder fail while on a date",
+    "points": 10,
+    "icon": "PeeStain.png"
+  },
+  {
+    "key": "achievement_044_speeddating",
+    "ru_name": "Блиц-свидание",
+    "en_name": "Speed Dating",
+    "ru_description": "Пусть персонаж подарит первый поцелуй три раза на одном общественном мероприятии",
+    "en_description": "Have a Sim first kiss three times at a single social event",
+    "points": 25,
+    "icon": "KissLips.png"
+  },
+  {
+    "key": "achievement_045_superbestfriends",
+    "ru_name": "Самые-самые лучшие друзья",
+    "en_name": "Super Best Friends",
+    "ru_description": "Завести 20 друзей навек среди неигровых персонажей",
+    "en_description": "Make 20 BFFs with Non-Player Sims",
+    "points": 50,
+    "icon": "HandShake.png"
+  },
+  {
+    "key": "achievement_046_woohoo",
+    "ru_name": "Вуху",
+    "en_name": "WooHoo!",
+    "ru_description": "Заняться вуху с 50 разными неигровыми персонажами",
+    "en_description": "WooHoo with 50 Unique Non-Player Sims",
+    "points": 50,
+    "icon": "HeartFire.png"
+  },
+  {
+    "key": "achievement_047_allnighter",
+    "ru_name": "Ночное бдение",
+    "en_name": "All Nighter",
+    "ru_description": "Не спать 24 сим-часа подряд",
+    "en_description": "Have a Sim stay awake for 24 straight Sim hours",
+    "points": 25,
+    "icon": "CoffeeSwirl.png"
+  },
+  {
+    "key": "achievement_048_basketcase",
+    "ru_name": "Близкое сумасшествие",
+    "en_name": "Basketcase",
+    "ru_description": "Сделать так, чтобы персонаж побывал в каждом основном эмоциональном состоянии за 24 сим-часа",
+    "en_description": "Have a Sim get in and out of all primary emotional states within 24 Sim hours",
+    "points": 100,
+    "icon": "DramaMask.png"
+  },
+  {
+    "key": "achievement_049_blackwidow",
+    "ru_name": "Черная вдова",
+    "en_name": "Black Widow",
+    "ru_description": "Пусть персонаж переживет пять супругов",
+    "en_description": "Have a Sim outlive five spouses",
+    "points": 25,
+    "icon": "TombstoneMany.png"
+  },
+  {
+    "key": "achievement_050_channelsurfer",
+    "ru_name": "Телерадиомания",
+    "en_name": "Channel Surfer",
+    "ru_description": "Пусть один из персонажей посмотрит все телеканалы и послушает все радиостанции из основной игры",
+    "en_description": "Have a Sim listen to all radio stations and watch all TV channels",
+    "points": 10,
+    "icon": "Television.png"
+  },
+  {
+    "key": "achievement_051_illgetaroundtoit",
+    "ru_name": "Я как-нибудь этим займусь",
+    "en_name": "I'll get around to it!",
+    "ru_description": "Иметь 10 сломанных предметов на участке персонажа",
+    "en_description": "Have 10 broken objects on Sim's lot",
+    "points": 10,
+    "icon": "Hammer.png"
+  },
+  {
+    "key": "achievement_052_introvert",
+    "ru_name": "Интроверт",
+    "en_name": "Introvert",
+    "ru_description": "Не выполнять действия общения 24 сим-часа подряд",
+    "en_description": "Have a Sim do nothing social for 24 Sim hours",
+    "points": 25,
+    "icon": "Wolf.png"
+  },
+  {
+    "key": "achievement_053_myyouvechanged",
+    "ru_name": "Надо же, как вы изменились",
+    "en_name": "My, You've Changed!",
+    "ru_description": "Пусть один из персонажей в течение жизни станет максимально худым и максимально толстым",
+    "en_description": "Have a Sim become both max thin and fat within a lifetime",
+    "points": 25,
+    "icon": "Muscles.png"
+  },
+  {
+    "key": "achievement_054_noexcuse",
+    "ru_name": "Нет оправданий",
+    "en_name": "No Excuse",
+    "ru_description": "Описаться на участке, на котором есть не менее 5 унитазов",
+    "en_description": "Have a Sim's bladder fail on a lot with 5 or more toilets",
+    "points": 10,
+    "icon": "Toilet.png"
+  },
+  {
+    "key": "achievement_055_olderandwiser",
+    "ru_name": "Взрослее и мудрее",
+    "en_name": "Older & Wiser",
+    "ru_description": "Персонаж стал старше",
+    "en_description": "Have a Sim age up",
+    "points": 10,
+    "icon": "CakeBirthday.png"
+  },
+  {
+    "key": "achievement_056_onawhim",
+    "ru_name": "Внезапный порыв",
+    "en_name": "On a Whim",
+    "ru_description": "Выполните 10 прихотей персонажа на одном общественном мероприятии",
+    "en_description": "Have a Sim complete 10 Whims at a single social event",
+    "points": 25,
+    "icon": "ThoughtBubble.png"
+  },
+  {
+    "key": "achievement_057_overachiever",
+    "ru_name": "Не останавливающийся на достигнутом персонаж",
+    "en_name": "Over-Achiever",
+    "ru_description": "Пусть один персонаж выполнит 5 жизненных целей",
+    "en_description": "Have a Sim complete 5 Aspirations",
+    "points": 100,
+    "icon": "Trophy.png"
+  },
+  {
+    "key": "achievement_058_thecircleoflife",
+    "ru_name": "Цикл жизни",
+    "en_name": "The Circle of Life",
+    "ru_description": "Сыграть персонажем от самого рождения до естественной смерти",
+    "en_description": "Play a Sim from birth to natural death",
+    "points": 25,
+    "icon": "RoseWilted.png"
+  },
+  {
+    "key": "achievement_059_themostinterestingsimintheworld",
+    "ru_name": "Самый интересный персонаж в мире",
+    "en_name": "The Most Interesting Sim in the World",
+    "ru_description": "Иметь персонажа с 12 и более чертами характера",
+    "en_description": "Have a Sim with 12 or more Traits",
+    "points": 50,
+    "icon": "InterestingMan.png"
+  },
+  {
+    "key": "achievement_060_tripleplay",
+    "ru_name": "Тройная игра",
+    "en_name": "Triple Play",
+    "ru_description": "Пусть персонаж родит тройню",
+    "en_description": "Have a Sim give birth to triplets",
+    "points": 25,
+    "icon": "BabyBottle3.png"
+  },
+  {
+    "key": "achievement_061_whatmakesasimturnneutral",
+    "ru_name": "Что значит быть нормальным?",
+    "en_name": "What Makes a Sim Turn Neutral?",
+    "ru_description": "Оставаться в нормальном эмоциональном состоянии 48 игровых часов подряд",
+    "en_description": "Have a Sim be fine for 48 straight Sim hours",
+    "points": 25,
+    "icon": "PressureGuage.png"
+  },
+  {
+    "key": "achievement_062_whatwoulditbelike",
+    "ru_name": "Интересно, каковы ощущения",
+    "en_name": "What would it be like?",
+    "ru_description": "Заняться вуху с привидением",
+    "en_description": "WooHoo with a ghost",
+    "points": 10,
+    "icon": "WooGooGhost.png"
+  },
+  {
+    "key": "achievement_063_tasteslikeburning",
+    "ru_name": "Обжигающий привкус",
+    "en_name": "Tastes Like Burning",
+    "ru_description": "Пусть персонаж попробует все виды токсичных растений",
+    "en_description": "Have a Sim consume every type of toxic plant",
+    "points": 25,
+    "icon": "TongueFire.png"
+  },
+  {
+    "key": "achievement_064_autopsyturvy",
+    "ru_name": "Вскрытие",
+    "en_name": "Autopsy-Turvy",
+    "ru_description": "Сделать успешную операцию пришельцу",
+    "en_description": "Perform surgery successfully on an Alien",
+    "points": 10,
+    "icon": "XRay.png"
+  },
+  {
+    "key": "achievement_065_deathofasalesman",
+    "ru_name": "Смерть коммивояжера",
+    "en_name": "Death of a Salesman",
+    "ru_description": "Умереть, работая в магазине",
+    "en_description": "Have a Sim die while running a store",
+    "points": 25,
+    "icon": "Scythe.png"
+  },
+  {
+    "key": "achievement_066_doublelife",
+    "ru_name": "Двойная жизнь",
+    "en_name": "Double Life",
+    "ru_description": "Пусть замаскированный инопланетянин вступит в брак с ничего не подозревающим персонажем",
+    "en_description": "Have an Alien in disguise marry a Sim without them knowing their secret",
+    "points": 50,
+    "icon": "AlienCrush.png"
+  },
+  {
+    "key": "achievement_067_veryspecialdelivery",
+    "ru_name": "Особое пополнение",
+    "en_name": "Very Special Delivery",
+    "ru_description": "Пусть персонаж-мужчина родит пришельца",
+    "en_description": "Have a male Sim give birth to an Alien baby",
+    "points": 50,
+    "icon": "AlienBaby.png"
+  },
+  {
+    "key": "achievement_068_youreeka",
+    "ru_name": "Эврика",
+    "en_name": "You-Reek-A",
+    "ru_description": "Сделать научное открытие, принимая душ",
+    "en_description": "Make a scientific breakthrough while taking a shower",
+    "points": 10,
+    "icon": "HikingBoot2.png"
+  },
+  {
+    "key": "achievement_069_viewallmyshunomeadowssculptures",
+    "ru_name": "Посмотреть все скульптуры в Сан-Мишуно",
+    "en_name": "View All Myshuno Meadows' Sculptures",
+    "ru_description": "Прочитать описания ко всем статуям в Сан-Мишуно",
+    "en_description": "View all of Myshuno Meadows' sculpture descriptions",
+    "points": 25,
+    "icon": "MyshunoMeadowsSculpture.png"
+  },
+  {
+    "key": "achievement_070_perfectllama",
+    "ru_name": "Трюк Идеальная лама",
+    "en_name": "Perfect Llama",
+    "ru_description": "Пусть персонаж выбьет все страйки за 10 фреймов в игре в боулинг",
+    "en_description": "Have a Sim bowl a perfect 10 frame game of all strikes on the Bowling Lane",
+    "points": 125,
+    "icon": "BowlingBall.png"
+  },
+  {
+    "key": "achievement_071_polarbearclub",
+    "ru_name": "Клуб моржей",
+    "en_name": "Polar Bear Club",
+    "ru_description": "Пусть персонаж отправится плавать, когда на улице мороз",
+    "en_description": "Have a Sim go for a swim while the weather is freezing",
+    "points": 25,
+    "icon": "PolarBear.png"
+  },
+  {
+    "key": "achievement_072_beyondrepairs",
+    "ru_name": "Не подлежит ремонту",
+    "en_name": "Beyond Repairs",
+    "ru_description": "Достигнуть максимального уровня в навыке механики",
+    "en_description": "Have a Sim reach max level in the Handiness skill",
+    "points": 50,
+    "icon": "Wrench.png"
+  },
+  {
+    "key": "achievement_073_bowdacious",
+    "ru_name": "Скрипичный ключ",
+    "en_name": "Bow-dacious",
+    "ru_description": "Достигнуть максимального уровня в навыке игры на скрипке",
+    "en_description": "Have a Sim reach max level in the Violin skill",
+    "points": 50,
+    "icon": "Violin.png"
+  },
+  {
+    "key": "achievement_074_castaway",
+    "ru_name": "Робинзон",
+    "en_name": "Cast Away",
+    "ru_description": "Достигнуть максимального уровня в навыке рыбной ловли",
+    "en_description": "Have a Sim reach max level in the Fishing skill",
+    "points": 50,
+    "icon": "Fishing.png"
+  },
+  {
+    "key": "achievement_075_codemonk",
+    "ru_name": "Код программиста",
+    "en_name": "Code Monk",
+    "ru_description": "Достигнуть максимального уровня в навыке программирования",
+    "en_description": "Have a Sim reach max level in the Programming skill",
+    "points": 50,
+    "icon": "ComputerKey.png"
+  },
+  {
+    "key": "achievement_076_connoisseurusrex",
+    "ru_name": "Знаток кулинарии",
+    "en_name": "Connoisseurus Rex",
+    "ru_description": "Достигнуть максимального уровня в навыке изысканной кулинарии",
+    "en_description": "Have a Sim reach max level in the Gourmet Cooking skill",
+    "points": 50,
+    "icon": "HatChef.png"
+  },
+  {
+    "key": "achievement_077_elementary",
+    "ru_name": "Элементарно!",
+    "en_name": "Elementary",
+    "ru_description": "Достигнуть максимального уровня в навыке логики",
+    "en_description": "Have a Sim reach max level in the Logic skill",
+    "points": 50,
+    "icon": "ChessPawn.png"
+  },
+  {
+    "key": "achievement_078_firedup",
+    "ru_name": "Полная мотивация",
+    "en_name": "Fired Up",
+    "ru_description": "Достигнуть максимального уровня в навыке фитнеса",
+    "en_description": "Have a Sim reach max level in the Fitness skill",
+    "points": 50,
+    "icon": "WorkoutBench.png"
+  },
+  {
+    "key": "achievement_079_gameswithingames",
+    "ru_name": "Игры внутри игр",
+    "en_name": "Games Within Games",
+    "ru_description": "Достигнуть максимального уровня в навыке видеоигр",
+    "en_description": "Have a Sim reach max level in the Video Gaming skill",
+    "points": 50,
+    "icon": "VideoGameController.png"
+  },
+  {
+    "key": "achievement_080_greenthumb",
+    "ru_name": "Садовод",
+    "en_name": "Green Thumb",
+    "ru_description": "Достигнуть максимального уровня в навыке садоводство",
+    "en_description": "Have a Sim reach max level in the Gardening skill",
+    "points": 50,
+    "icon": "GardeningTools.png"
+  },
+  {
+    "key": "achievement_081_imthemixmaster",
+    "ru_name": "Я - мастер по напиткам",
+    "en_name": "I'm the Mix Master",
+    "ru_description": "Смешать 100 напитков",
+    "en_description": "Mix 100 Drinks",
+    "points": 25,
+    "icon": "MartiniRainbow.png"
+  },
+  {
+    "key": "achievement_082_itsnotbrainsurgery",
+    "ru_name": "Не бог весть какая наука",
+    "en_name": "It's Not Brain Surgery",
+    "ru_description": "Достигнуть максимального уровня в навыке ракетостроения",
+    "en_description": "Have a Sim reach max level in the Rocket Science Skill",
+    "points": 50,
+    "icon": "Rocketship.png"
+  },
+  {
+    "key": "achievement_083_ivorytower",
+    "ru_name": "Башня слоновой кости",
+    "en_name": "Ivory Tower",
+    "ru_description": "Достигнуть максимального уровня в навыке игры на пианино",
+    "en_description": "Have a Sim reach max level in the Piano skill",
+    "points": 50,
+    "icon": "Piano.png"
+  },
+  {
+    "key": "achievement_084_literalgenius",
+    "ru_name": "Начитанный гений",
+    "en_name": "Literal Genius",
+    "ru_description": "Достигнуть максимального уровня навыке писательство",
+    "en_description": "Have a Sim reach max level in the Writing skill",
+    "points": 50,
+    "icon": "WritingPaper.png"
+  },
+  {
+    "key": "achievement_085_maelstrum",
+    "ru_name": "Бренчанье на высоте",
+    "en_name": "Mael-strum",
+    "ru_description": "Достигнуть максимально уровня в навыке игры на гитаре",
+    "en_description": "Have a Sim reach max level in the Guitar skill",
+    "points": 50,
+    "icon": "GuitarAcoustic.png"
+  },
+  {
+    "key": "achievement_086_mischiefmastered",
+    "ru_name": "Пакости освоены",
+    "en_name": "Mischief Mastered",
+    "ru_description": "Достигнуть максимального уровня в навыке пакостей",
+    "en_description": "Have a Sim reach max level in the Mischief skill",
+    "points": 50,
+    "icon": "HatJester.png"
+  },
+  {
+    "key": "achievement_087_pictureperfect",
+    "ru_name": "Как с картинки",
+    "en_name": "Picture Perfect",
+    "ru_description": "Достигнуть максимального уровня в навыке фотографии",
+    "en_description": "Have a Sim reach max level in the Photography Skill",
+    "points": 50,
+    "icon": "Camera.png"
+  },
+  {
+    "key": "achievement_088_problemchild",
+    "ru_name": "Трудный ребёнок",
+    "en_name": "Problem Child",
+    "ru_description": "Достигнуть 10 уровня в навыке пакостей будучи подростком",
+    "en_description": "Have a Sim reach Level 10 Mischief skill as a teenager",
+    "points": 25,
+    "icon": "DevilTrident.png"
+  },
+  {
+    "key": "achievement_089_refinedpalette",
+    "ru_name": "Изысканная палитра",
+    "en_name": "Refined Palette",
+    "ru_description": "Достигнуть максимального уровня в навыке рисования",
+    "en_description": "Have a Sim reach max level in the Painting skill",
+    "points": 50,
+    "icon": "Palette.png"
+  },
+  {
+    "key": "achievement_090_smoothtalker",
+    "ru_name": "Краснобай",
+    "en_name": "Smooth Talker",
+    "ru_description": "Достигнуть максимального уровня в навыке обаяние",
+    "en_description": "Have a Sim reach max level in the Charisma skill",
+    "points": 50,
+    "icon": "GlassesShades.png"
+  },
+  {
+    "key": "achievement_091_spliceoflife",
+    "ru_name": "Черенок жизни",
+    "en_name": "Splice of Life",
+    "ru_description": "Получить доступ к новому типу растений путем черенкования",
+    "en_description": "Unlock a new plant type through grafting",
+    "points": 25,
+    "icon": "Sprout.png"
+  },
+  {
+    "key": "achievement_092_straightforthejocular",
+    "ru_name": "Переход на личности",
+    "en_name": "Straight for the Jocular",
+    "ru_description": "Достигнуть максимального уровня в навыке комедии",
+    "en_description": "Have a Sim reach max level in the Comedy skill",
+    "points": 50,
+    "icon": "GlassesDisguise.png"
+  },
+  {
+    "key": "achievement_093_tenderloving",
+    "ru_name": "Барное мастерство",
+    "en_name": "Tender Loving",
+    "ru_description": "Достигнуть максимального уровня в навыке смешивания напитков",
+    "en_description": "Have a Sim reach max level in the Mixology Skill",
+    "points": 50,
+    "icon": "DrinkShaker.png"
+  },
+  {
+    "key": "achievement_094_tungstenchef",
+    "ru_name": "Главный шеф-повар",
+    "en_name": "Tungsten Chef",
+    "ru_description": "Достигнуть максимального уровня в навыке кулинарии",
+    "en_description": "Have a Sim reach max level in the Cooking skill",
+    "points": 50,
+    "icon": "FryingPan.png"
+  },
+  {
+    "key": "achievement_095_viewtoaskill",
+    "ru_name": "Наученный",
+    "en_name": "View to a Skill",
+    "ru_description": "Достигнуть максимального уровня в каждом навыке",
+    "en_description": "Reach max level in every skill",
+    "points": 100,
+    "icon": "TrophyLightbulb.png"
+  },
+  {
+    "key": "achievement_096_naturescourse",
+    "ru_name": "Закон природы",
+    "en_name": "Nature's Course",
+    "ru_description": "Достигнуть максимального уровня в навыке траволечения",
+    "en_description": "Have a Sim reach the maximum level in the Herbalism skill",
+    "points": 50,
+    "icon": "GoldLeaf.png"
+  },
+  {
+    "key": "achievement_097_pieceofcake",
+    "ru_name": "Проще простого",
+    "en_name": "Piece of Cake!",
+    "ru_description": "Достигнуть максимального уровня в навыке выпечки",
+    "en_description": "Have a Sim reach max level in the Baking Skill",
+    "points": 50,
+    "icon": "Cupcake.png"
+  },
+  {
+    "key": "achievement_098_forthehoard",
+    "ru_name": "Запасы",
+    "en_name": "For the Hoard!",
+    "ru_description": "Собрать все коллекции из основной игры",
+    "en_description": "Complete all collections available in Base Game",
+    "points": 100,
+    "icon": "ButterflyBadge.png"
+  },
+  {
+    "key": "achievement_099_harvestedinterest",
+    "ru_name": "Процент с урожая",
+    "en_name": "Harvested Interest",
+    "ru_description": "Собрать урожай с 50 диких растений",
+    "en_description": "Harvest from 50 wild plants",
+    "points": 25,
+    "icon": "FlowerBouquet.png"
+  },
+  {
+    "key": "achievement_100_rosebud",
+    "ru_name": "Бутон розы",
+    "en_name": "Rosebud",
+    "ru_description": "Заработать 1 000 000 симолеонов в одной семье",
+    "en_description": "Gain 1,000,000 Simoleons in a single Household",
+    "points": 100,
+    "icon": "SimoleonSymbol.png"
+  },
+  {
+    "key": "achievement_101_crittercatcher",
+    "ru_name": "Ловец тварей",
+    "en_name": "Critter Catcher",
+    "ru_description": "Собрать все виды насекомых и все новые виды рыб в Гранит Фоллз",
+    "en_description": "Collect all the insects (21) and all the new fish (5) in Granite Falls",
+    "points": 50,
+    "icon": "FrogHand.png"
+  }
+]

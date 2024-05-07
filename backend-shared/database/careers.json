@@ -1,0 +1,937 @@
+[
+  {
+    "key": "career_001_astronaut",
+    "ru_name": "Космонавт",
+    "en_name": "Astronaut",
+    "ru_description": "Кто не мечтал полететь в космос? Станьте космонавтом — узрите галактику воочию",
+    "en_description": "Who doesn't dream of going to space? Become an astronaut and the galaxy will be your playground",
+    "icon": "Astronaut.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_spaceranger",
+        "ru_name": "Космический рейнджер",
+        "en_name": "Space Ranger",
+        "ru_description": "Космос — дикое и непослушное место, может, даже совсем не послушное. Межпланетный патруль создан для того, чтобы обеспечить безопасность будущих поколений",
+        "en_description": "Space is wild and unruly - a bit too unruly. Taking a post in the Planet Patrol ensures that space remains safe for future generations."
+      },
+      {
+        "key": "root_2_interstellarsmuggler",
+        "ru_name": "Контрабандист",
+        "en_name": "Interstellar Smuggler",
+        "ru_description": "Персонаж, который облетел большинством звёзд, знает и про лазейки на границах. Зарабатывайте на жизнь любой подвернувшейся работой, пусть даже вы не сможете приземляться на планеты",
+        "en_description": "The Sim who wrangles the most of the stars takes advantage of the ungoverned frontier. Take any job - even if it doesn't touch the ground"
+      }
+    ]
+  },
+  {
+    "key": "career_002_athlete",
+    "ru_name": "Спортсмен",
+    "en_name": "Athlete",
+    "ru_description": "Спортсмен должен быть физически силен, быстр, вынослив и умен. Начните карьеру, и восторженные поклонники будут выкрикивать ваше имя, носить ваши футболки и будут вечно помнить все ваши достижения",
+    "en_description": "An athlete requires physical strength, speed, endurance, and intelligence. Start a career where enthusiastic fans will shout your name, wear your jersey, and remember your feats forever",
+    "icon": "Athlete.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_professionalathlete",
+        "ru_name": "Профессиональный спортсмен",
+        "en_name": "Professional Athlete",
+        "ru_description": "Вы любите спорт? У вас есть амбиции и природный талант соревноваться и быть среди лучших? Хотите зарабатывать на жизнь, играя в игру, которую любили в детстве? Тогда карьера профессионального спортсмена для вас! Станьте спортсменом и развлекайте публику своими атлетическими способностями",
+        "en_description": "Are you a physical specimen with the motor, ambition, and natural talent to compete with the best? Want to earn a living playing a game that you played as a child? Then a career as a Professional Athlete is for you! Live the lifestyle and entertain the masses with your athletic ability"
+      },
+      {
+        "key": "root_2_bodybuilder",
+        "ru_name": "Культурист",
+        "en_name": "Bodybuilder",
+        "ru_description": "Как настоящий мускульных дел мастер, вы будете вести жизнь, полную спорта, правильного питания и силовых тренировок. Тренируйте других персонажей, показывайте свое мастерство обожающим поклонникам и ваяйте тело Аполлона",
+        "en_description": "As a master of muscle, you will partake in a life of fitness, nutrition, and weight training. Train fellow Sims, show off feats of strength to adoring fans, and sculpt your body into the form of a god"
+      }
+    ]
+  },
+  {
+    "key": "career_003_business",
+    "ru_name": "Бизнес",
+    "en_name": "Business",
+    "ru_description": "Координация! Эффективность! Выполнение плана! Если даже произнося эти слова, вы уже чувствуете оживление, тогда карьера бизнесмена — то, что вам нужно!",
+    "en_description": "Synergy! Efficiency! Planfulness! If the mere sound of these industry buzzwords gets you buzzing, then a career in business might just be the right fit for you!",
+    "icon": "Business.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_management",
+        "ru_name": "Менеджер",
+        "en_name": "Management",
+        "ru_description": "Стоит ли уволить всех работников и заменить их роботами? Стоит изменить логотип компании и добавить побольше лам? Вот такие критические решения вам придётся принимать, если вы рискнёте пойти по стезе менеджера",
+        "en_description": "Should everyone be laid off and replaced by robots? Should the company logo be redone to include more llamas? These are the types of critical decisions you would be making should you choose to venture down the path of management"
+      },
+      {
+        "key": "root_2_investor",
+        "ru_name": "Инвестор",
+        "en_name": "Investor",
+        "ru_description": "Чтобы зарабатывать симолеоны, нужны симолеоны. Оптимизируйте своим инвестиции, тщательно изучив рынок, и превратите кучи симолеонов в настоящие горы симолеонов!",
+        "en_description": "It takes Simoleons to make Simoleons. Optimize your investments through diligent research and try to turn piles of Simoleons into even bigger piles of Simoleons!"
+      }
+    ]
+  },
+  {
+    "key": "career_004_criminal",
+    "ru_name": "Преступник",
+    "en_name": "Criminal",
+    "ru_description": "Не все персонажи хотят жить по правилам. Став преступником, вы можете зарабатывать кучу симолеонов и в то же время наслаждаться жизнью",
+    "en_description": "Not every Sim wants to play by the rules. You can make tons of Simoleons and have fun, too, as an outlaw.",
+    "icon": "Criminal.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_boss",
+        "ru_name": "Начальство",
+        "en_name": "Boss",
+        "ru_description": "Ваш дом — улица. У вас есть только два пути: добраться до верха или опуститься до самых низов. Вы выбираете путь наверх",
+        "en_description": "The streets are your playground. You know there are only two paths: up to the top, or down with the fishes. You? You're going up"
+      },
+      {
+        "key": "root_2_oracle",
+        "ru_name": "Оракул",
+        "en_name": "Oracle",
+        "ru_description": "Зачем подчиняться правилам, если можно их обойти? Есть много способов добиться своего, и вы их все знаете",
+        "en_description": "Why be part of the machine, when you can take it down? There are plenty of ways to skin a cat, or an enterprise, and you'll figure them out"
+      }
+    ]
+  },
+  {
+    "key": "career_005_culinary",
+    "ru_name": "Кулинар",
+    "en_name": "Culinary",
+    "ru_description": "Любой может приготовить ужин или напиток дома. Карьера кулинара подойдёт тем, кто хочет большего и мечтает заработать на этом деньги",
+    "en_description": "Anyone can make dinner or mix a drink at home. The Culinary career is for those who want to take it to another level and make money doing it",
+    "icon": "Culinary.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_chef",
+        "ru_name": "Шеф-повар",
+        "en_name": "Chef",
+        "ru_description": "Чтобы приготовить изысканное блюдо, нужен специальный подход. Здесь начинается ваше путешествие в страну кулинарии, где все персонажи пускают слюнки при виде ваших опасно аппетитных блюд",
+        "en_description": "It takes a special touch to craft exquisite food. Begin your journey of making Sims weak in the knees with a dangerously delicious dish"
+      },
+      {
+        "key": "root_2_mixologist",
+        "ru_name": "Бармен",
+        "en_name": "Mixologist",
+        "ru_description": "Лучший бармен умеет обращаться со всеми нужными приборами и знает все ингредиенты, чтобы создать напиток, который захочет попробовать даже самый нерешительный персонаж",
+        "en_description": "A master mixologist knows the ins and outs of various mixers and ingredients to create a drink that makes the shyest Sim sit up and notice"
+      }
+    ]
+  },
+  {
+    "key": "career_006_entertainer",
+    "ru_name": "Исполнитель",
+    "en_name": "Entertainer",
+    "ru_description": "Вы хотели быть в свете прожекторов с самого детства. Воплотите свою мечту в жизнь и прославьтесь, выбрав карьеру в сфере развлечений, смеша публику своими шутками или вызывая слёзы на глазах трогательными мелодиями",
+    "en_description": "You've wanted your name in lights from the time you could spell it, maybe even before. Answer your calling and claim your fame as a professional entertainer, either making the audience laugh with you or melting their hearts with your melodies",
+    "icon": "Entertainer.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_musician",
+        "ru_name": "Музыкант",
+        "en_name": "Musician",
+        "ru_description": "Такой музыкальный талант прятать нельзя! Ваши пальцы будут порхать по клавишам и струнам, и поклонники будут обожать ваши мелодии!",
+        "en_description": "The gift of music simply must be shared! Tickle those keys and strum those strings as your adoring fans fall in love with every melody!"
+      },
+      {
+        "key": "root_2_comedian",
+        "ru_name": "Комик",
+        "en_name": "Comedian",
+        "ru_description": "Жизнь профессионального комика не самая весёлая, поэтому отрабатывайте пародии и шутки на злобу дня, потому что теперь ваше время блистать на сцене!",
+        "en_description": "The life of a professional comedian isn't all funny business, so practice those impressions and prepare your best topical jokes!"
+      }
+    ]
+  },
+  {
+    "key": "career_007_painter",
+    "ru_name": "Художник",
+    "en_name": "Painter",
+    "ru_description": "Создайте свой собственный мир взмахом кисти! Получите известность в мире искусства, создав нереально натуральные шедевры и абстрактные работы непревзойдённой красоты",
+    "en_description": "Create your own world with a few strokes of a brush! Make a place for yourself in the art world with hyperreal masterpieces or abstract works of unsettling beauty",
+    "icon": "Painter.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_masterofthereal",
+        "ru_name": "Истинный мастер",
+        "en_name": "Master of the Real",
+        "ru_description": "У вас настоящий талант, и другие начинают его замечать. Живите своим искусством и относитесь к нему с почтением, и весь мир последует за вами",
+        "en_description": "You have Real Talent, and now others are starting to recognize it. Live your art, treat it with gravitas, and all the world shall follow"
+      },
+      {
+        "key": "root_2_patronofthearts",
+        "ru_name": "Меценат",
+        "en_name": "Patron of the Arts",
+        "ru_description": "Ваши творческие вкусы безупречны, и вы можете добиться отличных результатов. Станьте меценатом и покажите всем свои познания",
+        "en_description": "Your taste in art is impeccable, and you can make Great Things happen. Show off what you know as a Patron of the Arts"
+      }
+    ]
+  },
+  {
+    "key": "career_008_secretagent",
+    "ru_name": "Тайный агент",
+    "en_name": "Secret agent",
+    "ru_description": "Живите незаметно, став агентом под прикрытием. Пробирайтесь в штаб-квартиры баранов и осваивайте искусство вопроса — чем дольше выслать узнаете, тем меньше будут знать про вас",
+    "en_description": "Live life unnoticed as a covert operative. From infiltrating enemy headquarters to the art of interrogation, the more you learn, the less you’ll be known",
+    "icon": "SecretAgent.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_diamondagent",
+        "ru_name": "Алмазный агент",
+        "en_name": "Diamond Agent",
+        "ru_description": "Вы продвинулись по службе и теперь можете принимать решения и отдавать приказы. Каждая миссия алмазного агента опасна, и ошибки недопустимы",
+        "en_description": "You've risen through the ranks and have unparalled [sic] clearance. As a Diamond Agent, every mission is critical- -and no misstep forgiven"
+      },
+      {
+        "key": "root_2_villain",
+        "ru_name": "Злодей",
+        "en_name": "Villain",
+        "ru_description": "Ваш незаурядный ум и подготовка слишком хороши для добрых дел. Так почему же не стать лучшим среди самых отъявленных преступников?",
+        "en_description": "Your superior intelligence and training are too great to waste on doing good. So why not be the best among the world’s worst?"
+      }
+    ]
+  },
+  {
+    "key": "career_009_styleinfluencer",
+    "ru_name": "Законодатель стиля",
+    "en_name": "Style influencer",
+    "ru_description": "Выбрав подходящие цвета, модные узоры и уникальные сочетания и подобрав модель, которая продемонстрирует новые наряды, законодатели стиля могут сделать сам мир привлекательнее",
+    "en_description": "By identifying the right colors, the trendy patterns, the unseen ensemble pairings, and identifying the right person to act as a vehicle for such insight, the Style Influencer can twist the world towards a more cohesive end",
+    "icon": "StyleInfluencer.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_stylist",
+        "ru_name": "Стилист",
+        "en_name": "Stylist",
+        "ru_description": "Подрезать тут, подровнять там, подобрать это с тем и вуаля — готова новая модная вещица. Чик-чик, готов новый наряд. Очень модный прикид",
+        "en_description": "Voila! A snip here, a trim there, a pairing of this with that, and boom, a new dash of fashionable zoosh. Snap snap snap, that new title? It’s so in right now"
+      },
+      {
+        "key": "root_2_trendsetter",
+        "ru_name": "Законодатель моды",
+        "en_name": "Trend Setter",
+        "ru_description": "Задача законодателей моды — создать новые модные тенденции в одежде. Изменив внешний вид мира, мы достигнем мира во всем мире",
+        "en_description": "The task of a Trendsetter is to create trends through the medium of fashion and clothing. By affecting the look of the world, true peace may be achieved in our time"
+      }
+    ]
+  },
+  {
+    "key": "career_010_techguru",
+    "ru_name": "Технический специалист",
+    "en_name": "Tech guru",
+    "ru_description": "Зачем учиться, если у вас уже есть непревзойдённые навыки программирования? У вас большие перспективы, и пора воспользоваться этим шансом",
+    "en_description": "Who needs college with programming skills like yours? Opportunity is out there, ripe for the picking, and you and your big brain are ready to pluck away",
+    "icon": "TechGuru.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_esportgamer",
+        "ru_name": "Игрок в компьютерные игры",
+        "en_name": "Esport gamer",
+        "ru_description": "Для вас в жизни не существует ничего, кроме видеоигр, с того самого момента, как вы научились сгибать указательный палец. Став игроков в компьютерные игры, вы можете хорошо на этом заработать",
+        "en_description": "You’ve been living and breathing videogames since the moment you could twitch your trigger finger, and as an eSport Gamer, you can cash in on that"
+      },
+      {
+        "key": "root_2_startupentrepreneur",
+        "ru_name": "Специалист по раскрутке",
+        "en_name": "Start-up entrepreneur",
+        "ru_description": "Воплощайте свои потрясающие идеи в жизнь, став гением раскрутки. Понадобится вся смекалка и связи, но за все труды вам воздастся по заслугам",
+        "en_description": "Turn your Big Ideas into household names as a Start-up Genius. It'll take savvy and connections, but fortune is within your reach"
+      }
+    ]
+  },
+  {
+    "key": "career_011_writer",
+    "ru_name": "Писатель ",
+    "en_name": "Writer",
+    "ru_description": "Зарабатывайте деньги, выражая свои мысли замысловатыми оборотами и мудрёными словами!",
+    "en_description": "Get paid to express your ideas with beautiful turns of phrase, and words—wonderful words!",
+    "icon": "Writer.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_author",
+        "ru_name": "Автор",
+        "en_name": "Author",
+        "ru_description": "Если вы любите приукрашивать события и придумывать истории, авторство — ваша стезя. Создайте персонажа и отправьте его в сказочное приключение",
+        "en_description": "If you love the freedom to embellish and invent, the Author’s life is for you. Call up a character, chase after a tale.... The written word is yours"
+      },
+      {
+        "key": "root_2_journalist",
+        "ru_name": "Журналист",
+        "en_name": "Journalist",
+        "ru_description": "Слова могут быть мощным оружием, если использовать их для разоблачения секретов. Став журналистом, вы будете собирать компромат и выставлять его на всеобщее обозрение",
+        "en_description": "Words can be powerful weapons, when used to expose the truth. As a Journalist, you’ll dig up important dirt and scatter it for all to see"
+      }
+    ]
+  },
+  {
+    "key": "career_012_doctor",
+    "ru_name": "Доктор",
+    "en_name": "Doctor",
+    "ru_description": "Кто же не хочет быть ответственным за здоровье и благополучие другого персонажа? Доктор при продвижении по службе будет получать в награду такие предметы, как напольная хирургическая лампа и скелет в полный рост, и сможет поставить их у себя дома. А ещё вы получите доступ к собственным больничным униформам и медицинским халатам и сможете играть в доктора дома!",
+    "en_description": "Who doesn’t want to be held responsible for another Sim's health and well-being? A Doctor who can advance in the medical ranks will find themselves rewarded with objects like a Standing Surgical Light and a Full-Sized Skeleton to brighten up the home nursery. To make the deal extra sweet, you'll be able to unlock your very own Hospital Scrubs and Patient Gowns so you can play Doctor at home!",
+    "icon": "Doctor.png",
+    "age": ["adult"],
+    "pack_key": "TS4_GTW",
+    "roots": []
+  },
+  {
+    "key": "career_013_detective",
+    "ru_name": "Детектив",
+    "en_name": "Detective ",
+    "ru_description": "Вы хотите стать полицейским, которые всегда работает? Если да, то эта работа именно для вас, и мы даже не вознаградим вас за такое нездоровое отношение к службе! Получите доступ к такой одежде, как полицейская форма, которую можно носить вместо пижамы. Преподайте ценный урок подросткам — оденьте их в комбинезоны арестантов и превратите их комнаты в тюремную. камеру, добавив стены с решётками и декоративную камеру слежения. И в качестве бонуса вы даже можете следить за ними через одностороннее зеркало",
+    "en_description": "Do you want to be the type of cop who’s never really off-duty? If so, this job’s for you and we’ve got the rewards to support that unhealthy lifestyle! Unlock outfits like your Police Uniform to wear as pajamas. Teach your teen a valuable lesson for that C+ by dressing them in Prisoner Coveralls and transforming their bedroom into a virtual jail cell complete with Prison Bar Walls and a decorative Security Camera. As a bonus, you can keep an eye on them with your very own One-Way Mirror",
+    "icon": "Detective .png",
+    "age": ["adult"],
+    "pack_key": "TS4_GTW",
+    "roots": []
+  },
+  {
+    "key": "career_014_Scientist",
+    "ru_name": "Учёный",
+    "en_name": "Scientist",
+    "ru_description": "Созываем все умы мира! Являетесь ли вы одним из тех умников, кто носят шапки из фольги и украшают студию контейнерами с чем-то блестящим? Учёный, который сможет доказать, что у него слишком много серого вещества, за счёт которого он сможет изменить мир, получит новые наряды, такие как наряд охотника за НЛО или предметы, такие как химическая лаборатория, чтобы создавать новые изобретения и сыворотки",
+    "en_description": "Calling all brains! Are you the nerdy type who aspires to one day wear tin foil on your head and decorate your studio with huge bubbly tanks? A Scientist who proves they've got the gray matter to change the world as we know it can unlock new outfits like the UFO hunter or objects like a swanky Chemistry Lab for concocting new inventions and serums",
+    "icon": "Scientist.png",
+    "age": ["adult"],
+    "pack_key": "TS4_GTW",
+    "roots": []
+  },
+  {
+    "key": "career_015_critic",
+    "ru_name": "Критик",
+    "en_name": "Critic",
+    "ru_description": "У каждого есть своё мнение. Но не каждому платят за это мнение! Персонажи, которые думают, что обладают отменным чувством критицизма, могут податься в критики. Будь то еда или произведения искусства, ваш персонаж найдёт, что сказать, а другие будут обязаны выслушать",
+    "en_description": "Everyone has an opinion. But not everyone is paid to have it! Sims who feel they have superior judgement can enter the Critic Career. Whether it’s the foods or the arts, your Sim will have something to say about it, and others WILL listen",
+    "icon": "Critic.png",
+    "age": ["adult"],
+    "pack_key": "TS4_CL",
+    "roots": [
+      {
+        "key": "root_1_artscritic",
+        "ru_name": "Художественный критик",
+        "en_name": "Arts Critic",
+        "ru_description": "Стать эталоном для всех творческих начинаний",
+        "en_description": "Set the standard for all artistic endeavors"
+      },
+      {
+        "key": "root_2_foodcritic",
+        "ru_name": "Ресторанный критик",
+        "en_name": "Food Critic",
+        "ru_description": "Если вам не нравится, они есть не будут",
+        "en_description": "If you don't love it, they won't eat it"
+      }
+    ]
+  },
+  {
+    "key": "career_016_politician",
+    "ru_name": "Политик",
+    "en_name": "Politician ",
+    "ru_description": "Добро пожаловать на государственную службу! Устраивайте митинги против несправедливого отношения, собираете средства на на поддержку общественно цели и даже иногда берите взятки, ведь в политике все средства хороши",
+    "en_description": "Join a life of public service! From protesting against the unjust, to gathering donations for good causes, or even collecting the occasional bribe as a 'means to an end', Politics is always interesting",
+    "icon": "Politician.png",
+    "age": ["adult"],
+    "pack_key": "TS4_CL",
+    "roots": [
+      {
+        "key": "root_1_politician",
+        "ru_name": "Политик",
+        "en_name": "Politician",
+        "ru_description": "Набирайте голоса, произносите речи и станете руководителем государства! Не забудьте записать свои политические взгляды на общественный строй!",
+        "en_description": "Secure votes, give speeches, and become the National Leader! Better brush up on your public policy!"
+      },
+      {
+        "key": "root_2_charityorganizer",
+        "ru_name": "Организатор благотворительного фонда",
+        "en_name": "Charity Organizer",
+        "ru_description": "Пользуйтесь своим значимым положением в политике на благо общества. собирайте пожертвования в поддержку своей общественной цели!",
+        "en_description": "Use your political prowess for the greater good. Raise money and fund a solution for the Cause you support!"
+      }
+    ]
+  },
+  {
+    "key": "career_017_socialmedia",
+    "ru_name": "Социальные сети",
+    "en_name": "Social media",
+    "ru_description": "Что сейчас популярно? Где подают лучшую еду в городе? Какая знаменитость интереснее? Начните карьеру в соцсетях и станьте тем, кто отвечает на эти вопросы. Ведите блог и отмечайтесь в заведениях, чтобы подписчики не скучали",
+    "en_description": "What's trending? Where's the best food in town? Who's the most interesting celebrity? Start a career in Social Media to be the person that answers these questions for their followers. Blog and check-in at venues to keep followers coming back for more",
+    "icon": "SocialMedia.png",
+    "age": ["adult"],
+    "pack_key": "TS4_CL",
+    "roots": [
+      {
+        "key": "root_1_internetpersonality",
+        "ru_name": "Интернет-знаменитость",
+        "en_name": "Internet Personality",
+        "ru_description": "Слава в Интернете может прийти к любому. Продолжайте расширять армию своих подписчиков, устраивая шалости и рассказывая анекдоты, и добьётесь звездного статуса в Интернете!",
+        "en_description": "Internet fame can be for anyone. Continue to build your army of followers through pranks and jokes, all while working towards complete internet stardom!"
+      },
+      {
+        "key": "root_2_publicrelations",
+        "ru_name": "Связи с общественностью",
+        "en_name": "Public relations",
+        "ru_description": "Работа в корпорациях не всегда 'злодейская' — вы получаете доступ к знаменитостям высшего уровня и можете рекламировать лучшие продукты. Один из ваших талантов — убеждать людей показать самих себя. Вы можете распиарить всё, что угодно",
+        "en_description": "Going corporate is not always a bad thing, it gives a view to the highest level of celebrities and publicizing large products. Convincing people to show off is one of your best skills. There is nothing too big for you to spin in your favor"
+      }
+    ]
+  },
+  {
+    "key": "career_018_gardener",
+    "ru_name": "Садовод",
+    "en_name": "Gardener",
+    "ru_description": "Вы всегда были хорошим садоводом, а теперь вы сможете на этом заработать симолеоны. Сначала вам предстоит заниматься исключительно садоводством, но со временем вы сможете добиться успеха в науке или флористике",
+    "en_description": "",
+    "icon": "Gardener.png",
+    "age": ["adult"],
+    "pack_key": "TS4_S",
+    "roots": [
+      {
+        "key": "root_1_botanist",
+        "ru_name": "Ботаник",
+        "en_name": "Botanist",
+        "ru_description": "Вас интересует наука о растениях? Воспользуйтесь своими знаниями чтобы улучшить природу! Ботаники анализируют растения, пишут научные работы и даже могут получить грант. Вы также можете работать с жвачными растениями, главное, не окажитесь у них в пасти...",
+        "en_description": "Do you have an interest in the science side of plants? Then use your knowledge to improve on nature! Botanists will analyze plants, write papers, and can eventually earn grants. You'll also be eaten by...er...work with a lot of Cowplants"
+      },
+      {
+        "key": "root_2_floraldesigner",
+        "ru_name": "Флорист",
+        "en_name": "Floral Designer",
+        "ru_description": "Флористы будут выращивать растения и создавать из них произведения искусства. За столом флориста они смогут создавать прекрасные цветочные композиции. Но сначала вам предстоит подрезать стебли и убирать лишние листья",
+        "en_description": "Floral Designers will grow and use plants as their artistic medium. The main creative outlet will be using the Flower Arranging Table to create masterpieces. But you'll start by trimming steams and leaves"
+      }
+    ]
+  },
+  {
+    "key": "career_019_scout",
+    "ru_name": "Скаут",
+    "en_name": "Scout",
+    "ru_description": "Эй, салага! Думаешь, у тебя получится стать настоящим скаутом? Доставай компас — ты сегодня доброволец! Как благонравный скаут, ты будешь принимать участие в увлекательных мероприятиях со своими товарищами из отряда скаутов и узнаешь, как стать достойным членом общества",
+    "en_description": "Hey whippersnapper, do you have what it takes to be a Scout? Whip out that compass and volunteer today! As a virtuous Scout, you'll do fun activities with your troop and learn what it takes to be an upright member of your community",
+    "icon": "Scout.png",
+    "age": ["child", "teen"],
+    "pack_key": "TS4_S",
+    "roots": []
+  },
+  {
+    "key": "career_020_actor",
+    "ru_name": "Актёр",
+    "en_name": "Actor",
+    "ru_description": "Прожекторы прогреты, камеры настроены и всё готов к съёмкам крупным планом. Вам предстоит вдохнуть жизнь в слова сценария и заставить зрителя поверить в вашего героя",
+    "en_description": "",
+    "icon": "Actor.png",
+    "age": ["adult"],
+    "pack_key": "TS4_GF",
+    "roots": []
+  },
+  {
+    "key": "career_021_Drama club",
+    "ru_name": "Драмкружок",
+    "en_name": "Drama club",
+    "ru_description": "Записывайтесь в драмкружок! Став членом драмкружка, вы будете играть в местных постановках и сможете отточить своё актёрское мастерство. Плач по требованию пригодится вам как в выступлениях, так и в неловких жизненных ситуациях. Удивите одноклассников и родителей своей возможностью сыграть любую роль! Только постарайтесь не опозориться на сцене, иначе это воспоминание будет преследовать вас всю жизнь...",
+    "en_description": "Join Drama Club! As a Drama Club member, you'll perform in local plays and eventually hone those fine acting skills. Crying on demand is useful in plays as well as getting out of things! Impress your classmates and parents with your ability to become virtually anyone! Just make sure you don't do anything embarrassing on stage, because those memories will last a lifetime...",
+    "icon": "DramaСlub.png",
+    "age": ["child", "teen"],
+    "pack_key": "TS4_GF",
+    "roots": []
+  },
+  {
+    "key": "career_022_military",
+    "ru_name": "Военный служащий",
+    "en_name": "Military",
+    "ru_description": "Физическая подготовка и дисциплина — ключевые факторы успеха в военной карьере. Повысить ранг будет непросто, если вы не сможете продемонстрировать физическое превосходство, умение вербовать и талант лидера. Вы мечтаете стать главнокомандующим, или же вас больше привлекают тайные операции и раскрытие секретов других?",
+    "en_description": "Physical fitness and discipline will be the keys to success in the Military career. Rising through the ranks will not come easy unless you can demonstrate your physical prowess as well as your ability to recruit and be a leader. Will you pursue the path of a Grand Marshal, or will you follow a more secretive path to uncover what others might be hiding?",
+    "icon": "Military.png",
+    "age": ["adult"],
+    "pack_key": "TS4_SV",
+    "roots": [
+      {
+        "key": "root_1_covertoperator",
+        "ru_name": "Спецагент",
+        "en_name": "Covert Operator",
+        "ru_description": "Военные редко рассказывают про свои спецслужбы. Вы будете выполнять секретные задания, ставить жучки и подслушивать разговоры ничего не подозревающих персонажей. Вам предстоит допрашивать всех подозрительных личностей. Никому нельзя доверять, и все что-то замышляют. Вы справитесь?",
+        "en_description": "The Covert Ops Branch is the part of the Military that no one talks about. You will be required to undergo secret tasks, by planting bugs and listening in on the unsuspecting. You will need to interrogate any and all suspicious individuals. No one can be trusted, and everyone is up to something. Are you up for the task?"
+      },
+      {
+        "key": "root_2_officer",
+        "ru_name": "Офицер",
+        "en_name": "Officer",
+        "ru_description": "Выбрав специализацию «Офицер», вы продолжите получать медали и официальные звания в военной карьере. Офицер может получить наивысшее звание и стать главнокомандующим. Чтобы в будущем стать настоящим лидером, вам предстоит научиться отдавать приказы и обрести отличную физическую форму. Ведь главнокомандующего не может одолеть какой-нибудь новобранец!",
+        "en_description": "In the Officer Branch you will continue to earn medals while you rise through the formal ranks of the Military. The Officer path will see you earning the highest rank possible and becoming a Grand Marshal. To build your leadership skills you will be tasked to order others and build to peak physical fitness. No Grand Marshal can be outdone by a Raw Recruit!"
+      }
+    ]
+  },
+  {
+    "key": "career_023_conservationist",
+    "ru_name": "Эколог",
+    "en_name": "Conservationist",
+    "ru_description": "Вы посмотрели все документальные фильмы о природе и знаете, в какой опасности находится планета. Просвещая общественность и проводя дополнительные изучения, вы хотите изменить плачевную ситуацию. Ничто не изменится за одну ночь, поэтому продолжайте свои изыскания, чтобы улучшить экосистему!",
+    "en_description": "You've watched every nature documentary out there, and you know just how much the planet is in danger. From educating the public to performing research expeditions, you want to truly make a difference. Change won't happen overnight, but keep at it and your hard work can lead to thriving ecosystems!",
+    "icon": "Conservationist.png",
+    "age": ["adult"],
+    "pack_key": "TS4_IL",
+    "roots": [
+      {
+        "key": "root_1_environmentalmanager",
+        "ru_name": "Менеджер по вопросам экологии",
+        "en_name": "Environmental Manager",
+        "ru_description": "Используйте свои умения, чтобы консультировать по доступным политикам защиты окружающей среды, получать гранты и распространять информацию среди общественности. Пришла пора расширить свой круг деятельности!",
+        "en_description": "Use your expertise to consult on environmental policies, secure grants, and spread awareness to the masses. It's time to widen the scope of your work!"
+      },
+      {
+        "key": "root_2_marinebiologist",
+        "ru_name": "Океанолог",
+        "en_name": "Marine Biologist",
+        "ru_description": "Покажите свою любовь к морю и морским обитателям — от коралловых рифов до морских черепах. Океану нужна ваша помощь!",
+        "en_description": "From coral reefs to sea turtles, show your love of marine life and the sea. The ocean calls to you!"
+      }
+    ]
+  },
+  {
+    "key": "career_024_education",
+    "ru_name": "Преподаватель",
+    "en_name": "Education",
+    "ru_description": "Формируйте умы будущего, выбрав карьеру в сфере образования. Эта работа непростая, но очень результативная",
+    "en_description": "",
+    "icon": "Education.png",
+    "age": ["adult"],
+    "pack_key": "TS4_DU",
+    "roots": [
+      {
+        "key": "root_1_administrator",
+        "ru_name": "Администратор",
+        "en_name": "Administrator",
+        "ru_description": "Персонажи, строящие карьеру в ректорате, выполняют функции широкого спектра, от каждой из которых зависит успех учебного заведения. Вы не работаете непосредственно со студентами, но от ваших решений зависит процесс их обучения и их дальнейшие жизни",
+        "en_description": "Sims pursuing a career in university administration will fill a variety of roles, all critical to the success of the larger institution. You don't work directly with the students, but your decisions will impact their entire educational experience and their lives for years to come."
+      },
+      {
+        "key": "root_2_professor",
+        "ru_name": "Профессор",
+        "en_name": "Professor",
+        "ru_description": "Постройте карьеру и станьте профессором в университете. Читайте лекции, консультируйте студентов, проводите исследования для университета и, конечно же, ставьте оценки!",
+        "en_description": "Pursue a career as a university professor. Run lectures, assist students, research for the university, and of course, assign grades!"
+      }
+    ]
+  },
+  {
+    "key": "career_025_engineer",
+    "ru_name": "Инженер",
+    "en_name": "Engineer",
+    "ru_description": "В мире много проблем, для решения которых требуется современный и творческий подход. Воспользуйтесь своей любовью к технологиям и начните карьеру инженера, чтобы решить мировые проблемы с помощью компьютеров и механических устройств!",
+    "en_description": "",
+    "icon": "Engineer.png",
+    "age": ["adult"],
+    "pack_key": "TS4_DU",
+    "roots": [
+      {
+        "key": "root_1_computerengineer",
+        "ru_name": "Компьютерный инженер",
+        "en_name": "Computer Engineer ",
+        "ru_description": "Будущее находится в руках компьютерных инженеров, которые строят миры внутри миров, чтобы помочь нашему стабильно и уверенно развиваться. Помимо прочих наград вы получите умные очки",
+        "en_description": "The future is in the hands of Computer Engineers building worlds within worlds to keep our own chugging along efficiently. Rewards include the Computer Glasses"
+      },
+      {
+        "key": "root_2_mechanicalengineer",
+        "ru_name": "Инженер-механик",
+        "en_name": "Mechanical Engineer",
+        "ru_description": "Чтобы помочь миру встретить 22 век, понадобится не только программное обеспечение. За дело берутся инженеры-механики! Помимо прочих наград вы получите экзомеханические костюм и шлем",
+        "en_description": "It's going to take more than software to bring the world into the 22nd Century. That's where Mechanical Engineering comes in! Rewards include the ExoMech Suit and Helmet."
+      }
+    ]
+  },
+  {
+    "key": "career_026_esportscompetitor",
+    "ru_name": "Участник соревнований по киберспорту",
+    "en_name": "E-sports competitor",
+    "ru_description": "",
+    "en_description": "",
+    "icon": "EsportsCompetitor",
+    "age": ["student"],
+    "pack_key": "TS4_DU",
+    "roots": []
+  },
+  {
+    "key": "career_026_law",
+    "ru_name": "Юрист",
+    "en_name": "Law",
+    "ru_description": "Персонажи, выбравшие карьеру юриста, могут предоставлять юридическую помощь другим персонажам, отстаивать их интересы и работать на благо общества. Неплохая зарплата тоже никогда не помешает!",
+    "en_description": "",
+    "icon": "Law.png",
+    "age": ["adult"],
+    "pack_key": "TS4_DU",
+    "roots": [
+      {
+        "key": "root_1_judge",
+        "ru_name": "Судья",
+        "en_name": "Judge",
+        "ru_description": "Судьи являются председателями суда и проводят суды в объективной и справедливой форме. С молотком и в судейской мантии, они олицетворяют конституционную власть",
+        "en_description": "Judges preside over court proceedings and conduct trials in an impartial and lawful manner. Armed with a gavel and decked out in judicial robes, they wield constitutional authority"
+      },
+      {
+        "key": "root_2_privateattorney",
+        "ru_name": "Частный адвокат",
+        "en_name": "Private Attorney",
+        "ru_description": "Рассмотрение судебных дел, участие в судопроизводстве и поиск важных клиентов — всё это будет вашей обязанностью, когда вы станете частным адвокатом. Работайте усердно, выигрывайте дела и когда-нибудь, возможно, станете партнером",
+        "en_description": "Handling legal cases, practicing law in court, and recruiting high profile clients, it's all the name of the game when you're a Private Attorney. Work hard, win your cases, and you might make Partner"
+      }
+    ]
+  },
+  {
+    "key": "career_027_soccerteamplayer",
+    "ru_name": "Игрок футбольной команды",
+    "en_name": "Soccer team player",
+    "ru_description": "",
+    "en_description": "",
+    "icon": "SoccerTeamPlayer.png",
+    "age": ["student"],
+    "pack_key": "TS4_DU",
+    "roots": []
+  },
+  {
+    "key": "career_028_civildesigner",
+    "ru_name": "Строительный инженер",
+    "en_name": "Civil designer",
+    "ru_description": "Став строительным инженером, займитесь планированием и дизайном решений для различных экологических проблем и обсуждайте с другими персонажами, как сделать ваш мир лучше",
+    "en_description": "As a Civil Designer, get involved in planning and designing solutions to all kinds of environmental problems, and chat to your fellow Sims about how to make their world a better place to live",
+    "icon": "CivilDesigner.png",
+    "age": ["adult"],
+    "pack_key": "TS4_EL",
+    "roots": [
+      {
+        "key": "root_1_civicplanner",
+        "ru_name": "Градостроитель",
+        "en_name": "Civic Planner",
+        "ru_description": "Градостроители знают толк в планировании и умеют агитировать, привлекать и всячески подбадривать местных жителей, чтобы внести улучшения в окружающую среду",
+        "en_description": "Planning is a passion of the Civic Planner, so get out into the world and canvas, rally and generally enthuse local Sims to improve their environment"
+      },
+      {
+        "key": "root_2_greentechnician",
+        "ru_name": "Экотехнолог",
+        "en_name": "Green Technician",
+        "ru_description": "Экотехнологи применяют свои навыки и смекалку, чтобы спроектировать и создать новые гаджеты и процессы для озеленения и улучшения жизни персонажей",
+        "en_description": "Green Technicians use all of their craft and ingenuity to design and construct new gadgetry and processes to greenify and enrich Sims' lives"
+      }
+    ]
+  },
+  {
+    "key": "career_029_salaryperson",
+    "ru_name": "Сарариман",
+    "en_name": "Salaryperson",
+    "ru_description": "Посвятить свою жизнь корпорации «Данные будущего» и поставить её интересы превыше — обязательный первый шаг в карьере сараримана. Вас ждут стабильность, уважение и бесконечные рабочие часы. Дослужитесь до должности руководителя или эксперта в своей области, добираясь до работы каждое утро и проводя в караоке каждый вечер",
+    "en_description": "Dedicating your life to the Farseer Data Corporation and putting its needs above all else is just the first step for a Salaryperson. Stability, respect, and endless hours of work are in your future. Advance to be a Supervisor or a Expert in your field all while enjoying morning commutes and evening Karaoke",
+    "icon": "Salaryperson.png",
+    "age": ["adult"],
+    "pack_key": "TS4_SE",
+    "roots": [
+      {
+        "key": "root_1_expert",
+        "ru_name": "Эксперт",
+        "en_name": "Expert",
+        "ru_description": "Эксперты нужны во всех областях. Вы не ограничиваете себя. Вы знаете ответы на все вопросы вашего начальника. Вам звонят из всех отделов, когда у них возникают проблемы",
+        "en_description": "Experts are needed in all fields. You don't limit yourself. You are an expert in everything that your boss needs you to be. You are the first and last call teams make when working on difficult problems"
+      },
+      {
+        "key": "root_2_supervisor",
+        "ru_name": "Руководитель",
+        "en_name": "Supervisor",
+        "ru_description": "Корпоративный коллективный разум плохо функционирует без многочисленных начальников. Пополните их ряды и станьте руководителем. Повышайте производительность на сотую долю процента, проводя мотивационные занятия по сплочению коллектива",
+        "en_description": "The corporate hive mind does not function without a endless number of team leads. Join their legion and become a Supervisor. Increase productivity by hundredths of a percent through inspirational team exercises"
+      }
+    ]
+  },
+  {
+    "key": "career_030_interiordecorator",
+    "ru_name": "Дизайнер интерьеров",
+    "en_name": "Interior Decorator",
+    "ru_description": "",
+    "en_description": "",
+    "icon": "InteriorDecorator.png",
+    "age": ["adult"],
+    "pack_key": "TS4_DHD",
+    "roots": []
+  },
+  {
+    "key": "career_031_cheerteammember",
+    "ru_name": "Участник группы поддержки",
+    "en_name": "Cheer team member",
+    "ru_description": "",
+    "en_description": "Go Copperdale Flying Womp Womps! Join the competitive cheerleading team to level up on fitness and learn some amazing cheer moves. Practice with your squad and compete at the cheer competition once a week. You'll need a cheer mat to get started but reach cheer captain to earn a golden cheer mat, team flag, and trophy",
+    "icon": "CheerTeamMember.png",
+    "age": ["teen"],
+    "pack_key": "TS4_HSY",
+    "roots": []
+  },
+  {
+    "key": "career_032_chessteammember",
+    "ru_name": "Член шахматного клуба",
+    "en_name": "Chess team member",
+    "ru_description": "",
+    "en_description": "Join the High School Chess team! Put your logic skills to the test by joining this activity and meeting teammates that you can enhance your chess playing skills with. By joining this activity, you'll be able to request a High School Science Fair where you'll get to participate in a chess puzzle with other guests. Build your way up to captain where you can earn a special chess table, a team flag, and a trophy!",
+    "icon": "ChessTeamMember.png",
+    "age": ["teen"],
+    "pack_key": "TS4_HSY",
+    "roots": []
+  },
+  {
+    "key": "career_033_Computer team member",
+    "ru_name": "Член компьютерного клуба",
+    "en_name": "Computer team member",
+    "ru_description": "",
+    "en_description": "Get out that RGB keyboard and join the High School Computer Team! Work on your coding experience by practicing programming on a computer. If you join this activity, you'll be able to request a Science Fair where you'll get to participate in a Game Jam and compete against guests! Make your way up in the team to reach captain level where you can earn a golden laptop, team flag, and trophy!",
+    "icon": "Computer team member.png",
+    "age": ["teen"],
+    "pack_key": "TS4_HSY",
+    "roots": []
+  },
+  {
+    "key": "career_034_footballteammember",
+    "ru_name": "Игрок футбольной команды",
+    "en_name": "Football team member",
+    "ru_description": "",
+    "en_description": "Join the football team and level up on fitness! You'll be able to practice football throwing and catching performance that you can show off at the Sports Day festival. Along with football practice, you'll be able to reach captain level position and earn a golden football, team flag, and trophy!",
+    "icon": "FootballTeamMember.png",
+    "age": ["teen"],
+    "pack_key": "TS4_HSY",
+    "roots": []
+  },
+  {
+    "key": "career_035_babysitter",
+    "ru_name": "Няня",
+    "en_name": "Babysitter",
+    "ru_description": "Получайте деньги, играя с детьми, заботясь о них и все такое. Теперь ваша очередь быть главным...",
+    "en_description": "Get paid to play with kids–and keep them safe and all that. You get to be in charge...",
+    "icon": "Babysitter.png",
+    "age": ["teen", "adult"],
+    "pack_key": null,
+    "roots": []
+  },
+  {
+    "key": "career_036_barista",
+    "ru_name": "Бармен",
+    "en_name": "Barista",
+    "ru_description": "Если вам нравится тусоваться в кофейнях и вы уже знаете, как приготовить любой, самый искусный напиток, так почему бы не заработать на этом?",
+    "en_description": "If you love hanging out at the coffee house and already know all the fancy drink names, why not get paid for it?",
+    "icon": "Barista.png",
+    "age": ["teen", "adult"],
+    "pack_key": null,
+    "roots": []
+  },
+  {
+    "key": "career_037_fastfoodemployee",
+    "ru_name": "Официант",
+    "en_name": "Fast Food Employee",
+    "ru_description": "Заработайте немного денег, подавая еду знакомым. И убирая после них, конечно же",
+    "en_description": "Earn a little spending money serving food to people you know. And wiping up after them, for a while.",
+    "icon": "FastFoodEmployee.png",
+    "age": ["teen", "adult"],
+    "pack_key": null,
+    "roots": []
+  },
+  {
+    "key": "career_038_manuallaborer",
+    "ru_name": "Разнорабочий",
+    "en_name": "Manual Laborer",
+    "ru_description": "Вы молоды и здоровы, так почему бы не заработать денег, работая на тех, кто не может похвастаться такими качествами? Вы можете косить газоны и даже управлять большими машинами",
+    "en_description": "You're young and healthy, so get paid by people who aren't. From mowing lawns to operating big machines, your muscle is where the money is",
+    "icon": "ManualLaborer.png",
+    "age": ["teen", "adult"],
+    "pack_key": null,
+    "roots": []
+  },
+  {
+    "key": "career_039_retailemployee",
+    "ru_name": "Продавец",
+    "en_name": "Retail Employee",
+    "ru_description": "Нацельтесь на будущее, начав карьеру в коммерции. Оформляйте витрины и утихомиривайте покупателей — вы на пути к получению бонусов, скидок и таких привлекательных симолеонов",
+    "en_description": "Set your sights on the future by launching your career in sales. From creating displays to disarming customers, you're on your way to perks, discounts and sweet Simoleons",
+    "icon": "RetailEmployee.png",
+    "age": ["teen", "adult"],
+    "pack_key": null,
+    "roots": []
+  },
+
+  {
+    "key": "career_040_diver",
+    "ru_name": "Водолаз",
+    "en_name": "Diver",
+    "ru_description": "Берите плавательную трубку и за работу! Главная задача водолаза — исследовать морское дно",
+    "en_description": "Grab your snorkel and get to work! Being a Diver is all about exploring the depths of the ocean floor",
+    "icon": "Diver.png",
+    "age": ["teen", "adult"],
+    "pack_key": "TS4_IL",
+    "roots": []
+  },
+  {
+    "key": "career_041_fisherman",
+    "ru_name": "Рыболов",
+    "en_name": "Fisherman",
+    "ru_description": "Расслабляйтесь у кромки воды и ждите, когда рыба сама к вам приплывет. У рыболова самое ценное — крюк, удочка и грузило!",
+    "en_description": "Relax by the water and let the fish come to you. It's all about how you catch'em (hook, line and sinker) when you're a Fisherman!",
+    "icon": "Fisherman.png",
+    "age": ["teen", "adult"],
+    "pack_key": "TS4_IL",
+    "roots": []
+  },
+  {
+    "key": "career_042_lifeguard",
+    "ru_name": "Спасатель",
+    "en_name": "Lifeguard",
+    "ru_description": "Крем от загара, свистки и редкие акулы — составляющие повседневной жизни спасателя. Любите плавать, следить за спокойствием и ругать неугомонных детей, топящих друг друга? Тогда эта карьера для вас!",
+    "en_description": "Sunscreen, whistles, and the occasional shark are all part of everyday life as a Lifeguard. Love swimming, safety, and yelling at rambunctious children trying to drown each other? This is the part-time career for you!",
+    "icon": "Lifeguard.png",
+    "age": ["teen", "adult"],
+    "pack_key": "TS4_IL",
+    "roots": []
+  },
+  {
+    "key": "career_043_simfluencer",
+    "ru_name": "Симфлюэнсер",
+    "en_name": "Simfluencer",
+    "ru_description": "У вас есть веб-камера? А как насчёт уникального стиля и харизмы? Тогда станьте симфлюэнсером, и крупные корпорации обратятся к вам за помощью в продвижении их новинок",
+    "en_description": "Got a webcam? Got a hint of personality? Be a Simfluencer and big companies will search you out to help shill their latest wares",
+    "icon": "Simfluencer.png",
+    "age": ["teen", "adult"],
+    "pack_key": "TS4_HSY",
+    "roots": []
+  },
+  {
+    "key": "career_044_videogamestreamer",
+    "ru_name": "Игровой стример",
+    "en_name": "Video Game Streamer",
+    "ru_description": "Играйте в видеоигры ради удовольствия и прибыли! Станьте игровым стримером и пустите в ход непревзойдённые рефлексы и комедийный талант, чтобы стать звездой своего виртуального шоу!",
+    "en_description": "Playing video games for fun and profit! Be a Video Game Streamer where slick moves and comedy basics combine and you are the star of the (virtual) show!",
+    "icon": "VideoGameStreamer.png",
+    "age": ["teen", "adult"],
+    "pack_key": "TS4_HSY",
+    "roots": []
+  },
+  {
+    "key": "career_045_handyperson",
+    "ru_name": "Мастер разных дел",
+    "en_name": "Handyperson",
+    "ru_description": "Если вы умеете орудовать гаечным ключом, эта карьера отлично вам подойдёт! Делайте ремонт или халтурьте прямо под носом у владельца жилья и получайте за это симолеоны!",
+    "en_description": "If you know which end of a wrench is which, this job is for you! Under the watchful gaze of the Property Owner, bodge and fix up things to your heart's(and cash flow's) delight!",
+    "icon": "Handyperson.png",
+    "age": ["teen", "adult"],
+    "pack_key": "TS4_FR",
+    "roots": []
+  },
+  {
+    "key": "career_046_freelancer",
+    "ru_name": "",
+    "en_name": "Freelancer",
+    "ru_description": "Сам себе начальник! Свое расписание! Неплохо, не правда ли? Если вы ответственный и дисциплинированный человек, возможно, вам подойдёт карьера фрилансера. Вы можете выбрать одну из многочисленных отраслей, а агентства не замедлят найти для вас клиентов!",
+    "en_description": "",
+    "icon": "Freelancer.png",
+    "age": ["adult"],
+    "pack_key": null,
+    "roots": [
+      {
+        "key": "root_1_freelanceprogrammer",
+        "ru_name": "Внештатный программист",
+        "en_name": "Freelance Programmer",
+        "ru_description": "",
+        "en_description": ""
+      },
+      {
+        "key": "root_2_electrifiedartists",
+        "ru_name": "Графический дизайнер",
+        "en_name": "Electrified Artists",
+        "ru_description": "",
+        "en_description": ""
+      },
+      {
+        "key": "root_3_freelancewriter",
+        "ru_name": "Внештатный корреспондент",
+        "en_name": "Freelance Writer",
+        "ru_description": "",
+        "en_description": ""
+      },
+      {
+        "key": "root_4_fabricator",
+        "ru_name": "Внештатный производитель",
+        "en_name": "Fabricator",
+        "ru_description": "",
+        "en_description": ""
+      },
+      {
+        "key": "root_5_freelancefashionphotographer",
+        "ru_name": "Модный фотограф",
+        "en_name": "Freelance Fashion Photographer",
+        "ru_description": "",
+        "en_description": ""
+      },
+      {
+        "key": "root_6_paranormalinvestigator",
+        "ru_name": "Паранормальный сыщик",
+        "en_name": "Paranormal Investigator",
+        "ru_description": "",
+        "en_description": ""
+      }
+    ]
+  },
+  {
+    "key": "career_047_retail",
+    "ru_name": "Розничный магазин",
+    "en_name": "Retail",
+    "ru_description": "",
+    "en_description": "",
+    "icon": "Retail.png",
+    "age": ["adult"],
+    "pack_key": "TS4_GTW",
+    "roots": []
+  },
+  {
+    "key": "career_048_restaurant",
+    "ru_name": "Ресторан",
+    "en_name": "Restaurant",
+    "ru_description": "",
+    "en_description": "",
+    "icon": "Restaurant..png",
+    "age": ["adult"],
+    "pack_key": "TS4_DO",
+    "roots": []
+  },
+  {
+    "key": "career_049_vetclinic",
+    "ru_name": "Ветеринарная клиника",
+    "en_name": "Vet clinic",
+    "ru_description": "",
+    "en_description": "",
+    "icon": "VetClinic.png",
+    "age": ["adult"],
+    "pack_key": "TS4_CaD",
+    "roots": []
+  },
+  {
+    "key": "career_050_landlord",
+    "ru_name": "Арендатор",
+    "en_name": "Landlord",
+    "ru_description": "",
+    "en_description": "",
+    "icon": "Landlord.png",
+    "age": ["adult"],
+    "pack_key": "TS4_FR",
+    "roots": []
+  }
+]

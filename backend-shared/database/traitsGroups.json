@@ -1,0 +1,80 @@
+[
+  {
+    "key": "trait_group_001_emotional",
+    "ru_name": "Эмоции",
+    "en_name": "Emotional",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_002_hobby",
+    "ru_name": "Увлечения",
+    "en_name": "Hobby",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_003_lifestyle",
+    "ru_name": "Стиль жизни",
+    "en_name": "Lifestyle",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_004_social",
+    "ru_name": "Общение",
+    "en_name": "Social",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_005_toddler",
+    "ru_name": "Малыши",
+    "en_name": "Toddler",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_006_infant",
+    "ru_name": "Младенцы",
+    "en_name": "Infant",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_007_bonus",
+    "ru_name": "Бонусные",
+    "en_name": "Bonus",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_008_aspirationreward",
+    "ru_name": "За выполнение жизненной цели",
+    "en_name": "Aspiration reward",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_009_satisfactionreward",
+    "ru_name": "За баллы удовлетворения",
+    "en_name": "Satisfaction reward",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_010_careerreward",
+    "ru_name": "Профессиональные",
+    "en_name": "Career reward",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_011_foodmastery",
+    "ru_name": "Связанные с едой",
+    "en_name": "Food mastery",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_012_inherited",
+    "ru_name": "Наследственные",
+    "en_name": "Inherited",
+    "part": "sims_4"
+  },
+  {
+    "key": "trait_group_013_charactervalue",
+    "ru_name": "Достоинства характера",
+    "en_name": "Character value",
+    "part": "sims_4"
+  }
+]

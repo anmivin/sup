@@ -1,0 +1,2485 @@
+[
+  {
+    "key": "trait_001_ambitious",
+    "ru_name": "Карьерист",
+    "en_name": "Ambitious",
+    "ru_description": "Настроение этих персонажей повышается из-за успехов в карьере и портится из-за карьерных неудач. Персонажи могут расстроиться, если не получат повышение",
+    "en_description": "These Sims gain powerful Moodlets from career success, gain negative Moodlets from career failure, and may become Tense if not promoted",
+    "part": "sims_4",
+    "icon": "Ambitious.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_002_cheerful",
+    "ru_name": "Веселый",
+    "en_name": "Cheerful",
+    "ru_description": "Эти персонажи обычно счастливее других персонажей",
+    "en_description": "These Sims tend to be Happier than other Sims",
+    "part": "sims_4",
+    "icon": "Cheerful.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_003_childish",
+    "ru_name": "Вечное дитя",
+    "en_name": "Childish",
+    "ru_description": "Настроение этих персонажей повышается от просмотра детских программ. Они приходят в игривое настроение, играя с детьми, и становятся счастливы, когда могут играть с детскими игрушками",
+    "en_description": "These Sims gain powerful Moodlets from watching the Kids Network, become Playful when playing with Children, and become Happy when playing with Children's toys",
+    "part": "sims_4",
+    "icon": "Childish.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_004_clumsy",
+    "ru_name": "Неуклюжий",
+    "en_name": "Clumsy",
+    "ru_description": "Эти персонажи меньше других занимаются спортом и обычно смеются над своими неудачами, вместо того чтобы расстраиваться",
+    "en_description": "These Sims tend to fail more often at physical activities and tend to laugh at failure instead of becoming upset",
+    "part": "sims_4",
+    "icon": "Clumsy.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_005_creative",
+    "ru_name": "Творец",
+    "en_name": "Creative",
+    "ru_description": "Эти персонажи стараются почаще вдохновляться идеями и расстраиваются, если долго не занимаются творчеством",
+    "en_description": "These Sims tend to be Inspired, can Share Creative Ideas with other Sims, and may become upset if they're not creative for a period of time",
+    "part": "sims_4",
+    "icon": "Creative.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_006_erratic",
+    "ru_name": "Чудаковатый",
+    "en_name": "Erratic",
+    "ru_description": "Эти персонажи могут разговаривать сами с собой, а их эмоциональное состояние непредсказуемо",
+    "en_description": "These Sims can Talk to themselves and have unpredictable Emotions",
+    "part": "sims_4",
+    "icon": "Erratic.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_007_genius",
+    "ru_name": "Гений",
+    "en_name": "Genius",
+    "ru_description": "Эти персонажи стараются почаще сосредотачиваться, делиться идеями с другими персонажами и могут расстроиться, если в течение какого-то времени не смогут улучшать умственные навыки",
+    "en_description": "These Sims tend to be Focused, can Share Ideas with other Sims, and may become upset if they haven't improved their Mental Skills for some time",
+    "part": "sims_4",
+    "icon": "Genius.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_008_gloomy",
+    "ru_name": "Угрюмый",
+    "en_name": "Gloomy",
+    "ru_description": "Эти персонажи часто грустят и они могут делиться своими унылыми идеями с другими персонажами. Также они быстрее улучшают свои творческие навыки, когда грустят",
+    "en_description": "These Sims tend to be Sad, can Share Melancholy Thoughts to other Sims, and while sad, gain a boost to their Creative Skill",
+    "part": "sims_4",
+    "icon": "Gloomy.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_009_goofball",
+    "ru_name": "Растяпа",
+    "en_name": "Goofball",
+    "ru_description": "Эти персонажи имеют склонность к игривости",
+    "en_description": "These Sims tend to be Playful",
+    "part": "sims_4",
+    "icon": "Goofball.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_010_highmaintenance",
+    "ru_name": "Высокие запросы",
+    "en_name": "High Maintenance",
+    "ru_description": "Таким персонажам требуется больше усилий, чтобы поддержать форму. Их проблемы могут показаться другим персонажам обыденными и иногда возникают из ниоткуда. Персонаж должен соблюдать режим, чтобы устранить проблему. Успешно с ней справившись, они получат эмоциональную разрядку",
+    "en_description": "These Sims require extra work to keep in good condition. Their problems sometimes appear trivial, and may even appear out of the blue. These struggles can be remedied through mindful habits, which puts them in a state of catharsis",
+    "part": "sims_4",
+    "icon": "HighMaintenance.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_011_hotheaded",
+    "ru_name": "Холерик",
+    "en_name": "Hot-Headed",
+    "ru_description": "Эти персонажи сердятся чаще других, могут приводить в ярость других персонажей и злятся, когда становятся объектом озорства",
+    "en_description": "These Sims tend to be Angry, can Rile up other Sims, and become Angry when targeted with Mischief",
+    "part": "sims_4",
+    "icon": "HotHeaded.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_012_paranoid",
+    "ru_name": "Параноиик",
+    "en_name": "Paranoid",
+    "ru_description": "Параноики ждут опасности из-за каждого угла и считают, что о них постоянно сплетничают другие. Они чувствуют себя в безопасности в подвалах",
+    "en_description": "Paranoid Sims feel that danger is around every corner, and that people are always talking about them. Paranoid Sims feel a sense of security while hanging out in basements",
+    "part": "sims_4",
+    "icon": "Paranoid.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_013_romantic",
+    "ru_name": "Романтик",
+    "en_name": "Romantic",
+    "ru_description": "Эти персонажи кокетничают чаще других и грустят, если не совершают романтических действий в течение длительного периода времени",
+    "en_description": "These Sims tend to be Flirty and may become Sad if they don't have any Romantic social interactions for a period of time",
+    "part": "sims_4",
+    "icon": "Romantic.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_014_selfassured",
+    "ru_name": "Самоуверенный",
+    "en_name": "Self-Assured",
+    "ru_description": "Эти персонажи увереннее других",
+    "en_description": "These Sims tend to be Confident",
+    "part": "sims_4",
+    "icon": "SelfAssured.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_015_squeamish",
+    "ru_name": "Привереда",
+    "en_name": "Squeamish",
+    "ru_description": "Привереды не переносят вид насекомых и очищающих желудок персонажей, жестокое поведение и смерть. Такие персонажи недовольны, когда находятся рядом с чем-нибудь грязным",
+    "en_description": "Squeamish Sims are nauseated by the sight of creepy crawlies, vomiting, violence and death. These Sims become Uncomfortable near anything dirty",
+    "part": "sims_4",
+    "icon": "Squeamish.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_016_unflirty",
+    "ru_name": "Недотрога",
+    "en_name": "Unflirty",
+    "ru_description": "Эти персонажи напрягаются, если рядом находятся кокетливые персонажи, и редко кокетничают сами. Им сложно выполнять романтические действия у всех на виду",
+    "en_description": "These Sims get Tense around Flirty Sims and seldom get Flirty themselves. It's difficult for them to be Romantic in public",
+    "part": "sims_4",
+    "icon": "Unflirty.png",
+    "group": "trait_group_001"
+  },
+  {
+    "key": "trait_017_wise",
+    "ru_name": "Мудрый",
+    "en_name": "Wise",
+    "ru_description": "Эти персонажи успели многое повидать на своем веку и теперь прекрасно разбираются в жизни. Они любят предаваться воспоминаниям и делиться мудростью, поэтому из них получаются великолепные наставники. Благодаря богатому жизненному опыту они без труда осваивают новые навыки, а их эмоциональная зрелость помогает подавлять гневные и неприятные мысли",
+    "en_description": "A Sim who's experienced enough of life to know what really matters. These Sims enjoy reminiscing and sharing life's wisdom, making them excellent Mentors for those willing to listen. Their years of experience allow them to naturally learn new Skills with ease, and their emotional intelligence reduces their angry and uncomfortable thoughts",
+    "part": "sims_4",
+    "icon": "Wise.png",
+    "group": "trait_group_001_emotional"
+  },
+  {
+    "key": "trait_018_artlover",
+    "ru_name": "Искусствовед",
+    "en_name": "Art Lover",
+    "ru_description": "Настроение этих персонажей повышается от просмотра произведений искусства. Они также могут восхищаться искусством и обсуждать искусство различными способами",
+    "en_description": "These Sims gain powerful Moodlets from Viewing works of art and can Admire Art and Discuss Art in unique ways",
+    "part": "sims_4",
+    "icon": "ArtLover.png",
+    "group": "trait_group_002_hobby"
+  },
+  {
+    "key": "trait_019_bookworm",
+    "ru_name": "Книжный червь",
+    "en_name": "Bookworm",
+    "ru_description": "Настроение этих персонажей повышается от чтения книг. Они также могут анализировать книги и обсуждать книги различными способами",
+    "en_description": "These Sims gain powerful Moodlets from reading Books and can Analyze Books and Discuss Books in unique ways",
+    "part": "sims_4",
+    "icon": "Bookworm.png",
+    "group": "trait_group_002_hobby"
+  },
+  {
+    "key": "trait_020_dancemachine",
+    "ru_name": "Танцмашина",
+    "en_name": "Dance Machine",
+    "ru_description": "Этим персонажам не терпится выйти на танцпол, начать танцевать и тусоваться всю ночь напролёт! Находясь в барах, коктейль-барах и ночных клубах, они могут получить всплеск бодрости от совершения любого действия праздничного типа. Танцмашины также получат бодрящий настрой, когда придут в общественное заведение",
+    "en_description": "These Sims can't wait to get down, boogie, and party all night! When at venues like Bars, Nightclubs, and Lounges, these Sims can get a burst of energy with the Party Time interaction",
+    "part": "sims_4",
+    "icon": "DanceMachine.png",
+    "group": "trait_group_002_hobby"
+  },
+  {
+    "key": "trait_021_foodie",
+    "ru_name": "Гурман",
+    "en_name": "Foodie",
+    "ru_description": "Эти персонажи счастливы, когда едят вкусную еду, чувствуют себя неуютно, когда едят некачественную, и черпают новые идеи, когда смотрят кулинарные программы",
+    "en_description": "These Sims become Happy and have Fun when eating good food, become Uncomfortable when eating bad food, and can Watch Cooking Shows for ideas",
+    "part": "sims_4",
+    "icon": "Foodie.png",
+    "group": "trait_group_002_hobby"
+  },
+  {
+    "key": "trait_022_lovesoutdoors",
+    "ru_name": "Любит природу",
+    "en_name": "Loves Outdoors",
+    "ru_description": "Эти персонажи могут восторгаться природой в разговорах с другими персонажами и любят проводить время на улице",
+    "en_description": "These Sims can Enthuse about Nature to other Sims and become Happy when Outdoors",
+    "part": "sims_4",
+    "icon": "LovesOutdoors.png",
+    "group": "trait_group_002_hobby"
+  },
+  {
+    "key": "trait_023_geek",
+    "ru_name": "Эксцентричный",
+    "en_name": "Geek",
+    "ru_description": "Эти персонажи счастливы, когда могут читать научную фантастику или играют в видеоигры, и чувствуют напряжение, когда долго не играют. Они хорошо ищут коллекционные предметы и могут обсуждать эксцентричные идеи с другими эксцентриками",
+    "en_description": "These Sims become Happy when Reading Sci-Fi or Playing Video Games, may become Tense if they haven't played much, are better at finding Collectibles, and can Discuss Geek Things with other Geek Sims",
+    "part": "sims_4",
+    "icon": "Geek.png",
+    "group": "trait_group_002_hobby"
+  },
+  {
+    "key": "trait_024_maker",
+    "ru_name": "Умелец",
+    "en_name": "Maker",
+    "ru_description": "Эти персонажи практически сияют счастьем, когда что-нибудь создают. Они начинают грустить, если долго ничего не создают в преобразователе, в соковарном аппарате, на столе для создания свеч или на столярном станке. Неудачи при создании и ремонте предметов не имеют негативных последствий",
+    "en_description": "These Sims become happy when making things. They become sad when it's been too long since completing a project on a Fabricator, Candlemaking Station, Juice Fizzer, or Woodworking Table. They do not receive negative effects from crafting or repair failures",
+    "part": "sims_4",
+    "icon": "Maker.png",
+    "group": "trait_group_002_hobby"
+  },
+  {
+    "key": "trait_025_musiclover",
+    "ru_name": "Меломан",
+    "en_name": "Music Lover",
+    "ru_description": "Настроение и уровень шкалы досуга этих персонажей повышается при прослушивании музыки. Эти персонажи также любят играть на музыкальных инструментах",
+    "en_description": "These Sims gain powerful Moodlets and boost their Fun Need when Listening to Music and become Happy when playing instruments",
+    "part": "sims_4",
+    "icon": "MusicLover.png",
+    "group": "trait_group_002_hobby"
+  },
+  {
+    "key": "trait_026_recycledisciple",
+    "ru_name": "Переработчик",
+    "en_name": "Recycle Disciple",
+    "ru_description": "Эти персонажи обожают утилизировать отходы и искать детали и материалы, но если они слишком долго ничего не перерабатывают...",
+    "en_description": "These Sims are rabid recyclers that benefit from recycling and rummaging for bits and pieces, but should they go too long without indulging in their hobby...",
+    "part": "sims_4",
+    "icon": "RecycleDisciple.png",
+    "group": "trait_group_002_hobby"
+  },
+  {
+    "key": "trait_027_active",
+    "ru_name": "Активный",
+    "en_name": "Active",
+    "ru_description": "Эти персонажи стараются почаще приходить в возбуждение, могут приводить других персонажей в состояние неистовой радости и расстраиваются, если долго не делают физические упражнения",
+    "en_description": "These Sims tend to be Energized, can Pump Up other Sims, and may become upset if they don't exercise for a period of time",
+    "part": "sims_4",
+    "icon": "Active.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_028_adventurous",
+    "ru_name": "Отважный",
+    "en_name": "Adventurous",
+    "ru_description": "Такие персонажи жаждут новых увлекательных приключений!",
+    "en_description": "These Sims seek out new and unique experiences",
+    "part": "sims_4",
+    "icon": "Adventurous.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_029_childoftheislands",
+    "ru_name": "Дитя острова",
+    "en_name": "Child of the Islands",
+    "ru_description": "Эти персонажи имеют прочную связь с островами Сулани. Отдайте дань уважения островам: примите участие в их культуре, вызовите мощных духов и получите награды (или навлеките их немилость)",
+    "en_description": "These Sims experience a spiritual connection to islands of Sulani. Honor the islands by partaking in their culture, summon powerful elementals and reap the rewards of their blessings—or the consequences of their disfavor",
+    "part": "sims_4",
+    "icon": "ChildOfTheIslands.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_030_childoftheocean",
+    "ru_name": "Дитя океана",
+    "en_name": "Child of the Ocean",
+    "ru_description": "Откликнитесь на зов океана! Персонажи с этой чертой характера предпочитают водные мероприятия и общение с подводными жителями",
+    "en_description": "Answer the call of the ocean! Sims with this trait will prefer water related activities and feel closer to denizens of the sea",
+    "part": "sims_4",
+    "icon": "ChildOfTheOcean.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_031_childofthevillage",
+    "ru_name": "Тяга к корням",
+    "en_name": "Child of the village",
+    "ru_description": "Эти персонажи стремятся быть частью своего сообщества и любят томарангскую культуру. Для того, чтобы быть счастливыми, им необходима прочная связь с родными и близкими. Кроме того, им важны занятия, напоминающие о доме",
+    "en_description": "These Sims love feeling anchored to their community and Tomarani culture. Keeping in touch with loved ones and engaging in activities that remind them of home is important for being Happy",
+    "part": "sims_4",
+    "icon": "Childofthevillage.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_032_freegan",
+    "ru_name": "Фриган",
+    "en_name": "Freegan",
+    "ru_description": "Эти персонажи не признают безудержное потребление и стараются максимально сократить количество производимых отходов. Им нравится находить бывшие в употреблении или выброшенные товары и продукты. Они лучше всех находят потрясающие сокровища в мусорном контейнере! Они могут почувствовать напряжение или дискомфорт, если будут зарабатывать или тратить симолеоны в течение продолжительного времени",
+    "en_description": "These Sims reject consumerism and prefer to reduce wasteful spending by any means. They enjoy finding re-used or thrown away goods and foods. In fact, they have the best luck at finding the highest-quality treasures in Dumpsters! They may become tense or uncomfortable if they spend too much time earning or spending Simoleons",
+    "part": "sims_4",
+    "icon": "Freegan,png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_033_glutton",
+    "ru_name": "Обжора",
+    "en_name": "Glutton",
+    "ru_description": "Эти персонажи хуже других переносят голод, обожают есть, независимо от качества еды, и могут есть испорченную еду",
+    "en_description": "These Sims have a greater negative reaction to Hunger, always enjoy eating, no matter the quality of the food, and will eat Spoiled Food",
+    "part": "sims_4",
+    "icon": "Glutton.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_034_greenfiend",
+    "ru_name": "Экоэнтузиаст",
+    "en_name": "Green Fiend",
+    "ru_description": "Эти персонажи счастливы, когда живут на экологически чистой улице, и постоянно находят новые способы улучшения окружающей среды",
+    "en_description": "These Sims are happiest when living on a green street and will continuously work towards making their environment more eco-friendly",
+    "part": "sims_4",
+    "icon": "GreenFiend.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_035_kleptomaniac",
+    "ru_name": "Клептоман",
+    "en_name": "Kleptomaniac",
+    "ru_description": "Эти персонажи ничего не имеют против «одалживания» предметов у других персонажей, просто крадя их, и напрягаются, если долго ничего не крали",
+    "en_description": "These Sims don't mind borrowing things from others with a simple swipe, but will get Tense when they have not swiped anything in a while",
+    "part": "sims_4",
+    "icon": "Kleptomaniac.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_036_lactoseintolerant",
+    "ru_name": "Непереносимость лактозы",
+    "en_name": "Lactose Intolerant",
+    "ru_description": "Такие персонажи болеют, когда употребляют молочные продукты, и прекрасно себя чувствуют, если им удается избежать приема молочных продуктов в течение какого-то времени",
+    "en_description": "These Sims will become sick if they eat dairy, but will feel great if they have avoided it for a while",
+    "part": "sims_4",
+    "icon": "LactoseIntolerant.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_037_lazy",
+    "ru_name": "Лежебока",
+    "en_name": "Lazy",
+    "ru_description": "Настроение этих персонажей повышается от просмотра телевизионных программ, им нравится дремать и пользоваться комфортной мебелью. Они быстрее устают, когда делают физические упражнения и чувствуют напряжение, когда занимаются делами по дому",
+    "en_description": "These Sims gain powerful Moodlets from Watching TV or Napping as well as from Comfortable furniture, become Fatigued more quickly from exercise, and grow Tense when performing household chores",
+    "part": "sims_4",
+    "icon": "Lazy.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_038_materialistic",
+    "ru_name": "Практичный",
+    "en_name": "Materialistic",
+    "ru_description": "Эти персонажи могут восхищаться и хвастаться вещами и грустят, если не покупают новые предметы в течении длительного периода времени",
+    "en_description": "These Sims can Admire and Brag about Possessions and become Sad when they haven't purchased a new item for a period of time",
+    "part": "sims_4",
+    "icon": "Materialistic.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_039_neat",
+    "ru_name": "Чистюля",
+    "en_name": "Neat",
+    "ru_description": "Эти персонажи радуются и повышают уровень шкалы досуга, выполняя дела по дому, могут устраивать генеральную уборку и чувствуют себя очень неуютно в неопрятной обстановке",
+    "en_description": "These Sims become Happy and have Fun when performing household chores, can have a Cleaning Frenzy, and become really Uncomfortable in dirty surroundings",
+    "part": "sims_4",
+    "icon": "Neat.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_040_overachiever",
+    "ru_name": "Достигатор",
+    "en_name": "Overachiever",
+    "ru_description": "Эти персонажи быстрее осваивают навыки и радуются, когда могут завершить рабочие задания, но с ними непросто наладить дружеские отношения",
+    "en_description": "These Sims tend to raise their skills faster and are happy when they finish work tasks, but are a little harder to get along with as friends",
+    "part": "sims_4",
+    "icon": "Overachiever.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_041_perfectionist",
+    "ru_name": "Перфекционист",
+    "en_name": "Perfectionist",
+    "ru_description": "Эти персонажи тратят больше времени на поделки, но качество их творений выше. Их настроение повышается при создании качественной поделки и портится, если поделка получается недоброкачественная",
+    "en_description": "These Sims take longer to craft items but tend to make them higher quality, gain powerful Moodlets after crafting a high quality item, and gain negative Moodlets after crafting a low quality item",
+    "part": "sims_4",
+    "icon": "Perfectionist.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_042_rancher",
+    "ru_name": "Любовь к ранчо",
+    "en_name": "Rancher",
+    "ru_description": "Такие персонажи на ранчо как рыба в воде.Им нравится работать руками и ухаживать за животными",
+    "en_description": "These Sims excel at ranch life and take pride in their work. They enjoy ranch chores and caring for their Livestock",
+    "part": "sims_4",
+    "icon": "Rancher.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_043_slob",
+    "ru_name": "Неряха",
+    "en_name": "Slob",
+    "ru_description": "Этих персонажей не волнует неопрятная обстановка, а предметы в доме пачкаются быстрее. Они также могут рыться в мусоре в поисках еды",
+    "en_description": "These Sims are not affected by dirty surroundings, make household items dirtier faster, and can Rummage for Food in garbage",
+    "part": "sims_4",
+    "icon": "Slob.png",
+    "group": "trait_group_003_lifestyle"
+  },
+  {
+    "key": "trait_044_vegetarian",
+    "ru_name": "Вегетарианец",
+    "en_name": "Vegetarian",
+    "ru_description": "Эти персонажи будут целенаправленно избегать мясных блюд и могут заболеть, если съедят что-нибудь мясное",
+    "en_description": "These Sims will actively avoid eating foods that contain meat products and can become sick if they eat such foods",
+    "part": "sims_4",
+    "icon": "Vegetarian.png",
+    "group": "trait_group_003_lifestyle"
+  },
+
+  {
+    "key": "trait_045_animalenthusiast",
+    "ru_name": "Любит жтвотных",
+    "en_name": "Animal Enthusiast",
+    "ru_description": "Эти персонажи одержимы животными и хотят как можно чаще быть с ними рядом. Им проще ухаживать за животными и заводить с ними дружеские отношения",
+    "en_description": "These Sims are obsessed with animals, and will seek their company often. They will have an easier time caring for animals and getting closer to them",
+    "part": "sims_4",
+    "icon": "AnimalEnthusiast.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_046_bro",
+    "ru_name": "Свой в доску",
+    "en_name": "Bro",
+    "ru_description": "Эти персонажи могут по-братски обниматься с другими персонажами с чертой характера «Свой в доску», набираться уверенности рядом с ними и приходить в возбуждение от просмотра спортивных программ",
+    "en_description": "These Sims can Bro Hug other Bros, gain Confidence around other Bros, and become Energized from Watching Sports",
+    "part": "sims_4",
+    "icon": "Bro.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_047_catlover",
+    "ru_name": "Любитель кошек",
+    "en_name": "Cat Lover",
+    "ru_description": "Эти персонажи стараются заводить близкие дружеские отношения с кошками и предпочитают кошек другим персонажам",
+    "en_description": "These Sims tend to make cats their companions, preferring the company of cats to other Sims",
+    "part": "sims_4",
+    "icon": "CatLover.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_048_cringe",
+    "ru_name": "Кринжовый",
+    "en_name": "Cringe",
+    "ru_description": "Эти персонажи ведут себя как им вздумается, что не всегда одобряют другие. Кринжовые персонажи могут не учитывать окружающую обстановку, но стараются получить от жизни все",
+    "en_description": "Sims who are obnoxiously oblivious and oftentimes met with polarizing reactions. Cringe Sims can be socially unaware of their surroundings at times, but have an adorable enthusiasm for life.",
+    "part": "sims_4",
+    "icon": "Cringe.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_049_doglover",
+    "ru_name": "Любитель собак",
+    "en_name": "Dog Lover",
+    "ru_description": "Эти персонажи любят находиться в окружении собак. Они быстрее строят отношения и чаще других персонажей общаются с собаками",
+    "en_description": "These Sims love to be near dogs. They will gain relationships faster with dogs and socialize with dogs more than the average Sim",
+    "part": "sims_4",
+    "icon": "DogLover.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_050_evil",
+    "ru_name": "Злой",
+    "en_name": "Evil",
+    "ru_description": "Эти персонажи радуются, если рядом с ними находятся персонажи с плохим настроением, могут сардонически хохотать и обсуждать коварные планы. Они сердятся при общении с добрыми персонажами",
+    "en_description": "These Sims become Happy around Sims with negative Moodlets, can Laugh Maniacally and Discuss Evil Plans, and become Angry when interacting with Good Sims",
+    "part": "sims_4",
+    "icon": "Evil.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_051_familyoriented",
+    "ru_name": "Семьянин",
+    "en_name": "Family-oriented",
+    "ru_description": "Эти персонажи счастливы в кругу семьи, расстраиваются, когда долго не общаются с родственниками, и могут хвастаться своей семьёй",
+    "en_description": "These Sims become Happy around family members, become Sad if they don't interact with family for a period of time, and can Boast about Family",
+    "part": "sims_4",
+    "icon": "FamilyOriented.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_052_generous",
+    "ru_name": "",
+    "en_name": "Generous",
+    "ru_description": "",
+    "en_description": "Caring, empathetic, and patient. These Sims are happiest when offering their time and money to help others. Everyone loves Generous Sims, but they can be a little too brazen with their donations",
+    "part": "sims_4",
+    "icon": "Generous.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_053_good",
+    "ru_name": "Добрый",
+    "en_name": "Good",
+    "ru_description": "Эти персонажи счастливы, когда находятся в кругу персонажей с хорошим настроением, расстраиваются, когда общаются со злыми персонажами, могут жертвовать на благотворительность и обсуждать мир во всём мире",
+    "en_description": "These Sims become Happy around Sims with positive Moodlets, can Donate to Charity, become Sad with interacting with Evil Sims, and can Discuss World Peace",
+    "part": "sims_4",
+    "icon": "Good.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_054_hateschildren",
+    "ru_name": "Против детей",
+    "en_name": "Hates Children",
+    "ru_description": "Эти персонажи становятся сердитыми в окружении детей, чувствуют напряжение после попытки зачать ребенка, и могут злиться на детей",
+    "en_description": "These Sims become Angry around Children, become Tense after Try for a Baby, and can be Mean to Children",
+    "part": "sims_4",
+    "icon": "HatesChildren.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_055_horselover",
+    "ru_name": "Любовь к лошадям",
+    "en_name": "Horse Lover",
+    "ru_description": "Такие персонажи превосходно ладят с лошадьми. Общение с лошадьми и уход за ними дается им проще, чем другим'",
+    "en_description": "These Sims share a strong bond with Horses. They have an easier time socializing with and caring for Horses than other Sims",
+    "part": "sims_4",
+    "icon": "HorseLover.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_056_insider",
+    "ru_name": "Инсайдер",
+    "en_name": "Insider",
+    "ru_description": "Эти персонажи обожают посещать клубы и больше всего любят проводить время с друзьями",
+    "en_description": "These Sims love being in Clubs, and tend to be happiest when surrounded by their friends",
+    "part": "sims_4",
+    "icon": "Insider.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_057_jealous",
+    "ru_name": "Ревнивый",
+    "en_name": "Jealous",
+    "ru_description": "Эти персонажи ревнуют чаще других. Они становятся увереннее, находясь рядом со своими вторыми половинками, и напрягаются, если долго их не видят",
+    "en_description": "These Sims get Jealous more easily than other Sims. They gain a boost of Confidence from being around their significant other, but get Tense if they haven't seen them recently",
+    "part": "sims_4",
+    "icon": "Jealous.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_058_loner",
+    "ru_name": "Одиночка",
+    "en_name": "Loner",
+    "ru_description": "Эти персонажи радуются уединению, и их настроение не портится, если уровень шкалы общения низок. Они чувствуют напряжение в окружении незнакомцев и чаще других смущаются, когда им отказывают в общении",
+    "en_description": "These Sims become Happy when alone, do not receive negative Moodlets when their Social Need is low, become Tense around strangers, and become Embarrassed more often by social rejection",
+    "part": "sims_4",
+    "icon": "Loner.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_059_loyal",
+    "ru_name": "Преданный",
+    "en_name": "Loyal",
+    "ru_description": "Преданные персонажи очень ценят свои отношения с друзьями, романтическими партнёрами и даже коллегами! Они не лгут и не изменяют любимым, потому что невероятно дорожат их доверием",
+    "en_description": "Loyal sims value their relationships and fully commit to them. whether they are friendship, romance or even work! They avoid lying and cheating because their loved ones' trust is very important to them",
+    "part": "sims_4",
+    "icon": "Loyal.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_060_mean",
+    "ru_name": "Задира",
+    "en_name": "Mean",
+    "ru_description": "Эти персонажи становятся счастливыми, злясь или пакостя другим персонажам, а победив в драке становятся уверенными",
+    "en_description": "These Sims become Happy when being Mean or Mischievous to other Sims and become Confident after winning a fight",
+    "part": "sims_4",
+    "icon": "Mean.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_061_noncommittal",
+    "ru_name": "Непостоянный",
+    "en_name": "Noncommittal",
+    "ru_description": "Эти персонажи чувствуют напряжение, когда долго работают на одной работе или долго находятся в отношениях, и испытывают облегчение, когда увольняются или расстаются. Им требуется больше времени, чтобы сделать предложение, и они могут обсуждать страх принятия решений",
+    "en_description": "These Sims become Tense after a while in the same job or relationship, become Happy when they Quit a Job or Break Off a relationship, take longer to Propose, and can Discuss their Fear of Commitment",
+    "part": "sims_4",
+    "icon": "Noncommittal.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_062_nosy",
+    "ru_name": "Любопытный",
+    "en_name": "Nosy",
+    "ru_description": "Эти персонажи обожают сплетничать, подглядывать и следить за другими. Они не знают границ и не понимают, что такое личное пространство, но могут узнать абсолютно любые секреты",
+    "en_description": "Sims who thrive on gossip, snooping, and spying. They have incredibly poor boundaries and don't quite understand what personal space is, but they will discover secrets by any means necessary.",
+    "part": "sims_4",
+    "icon": "Nosy.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_063_outgoing",
+    "ru_name": "Дружелюбный",
+    "en_name": "Outgoing",
+    "ru_description": "Настроение этих персонажей повышается быстрее при дружелюбном общении и портится сильнее, если уровень шкалы общения низок. Уровень шкалы общения понижается быстрее, чем у других персонажей",
+    "en_description": "These Sims gain powerful Moodlets from Friendly socialization, have their Social need decay quickly, and gain more negative Moodlets when their Social need is low",
+    "part": "sims_4",
+    "icon": "Outgoing.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_064_partyanimal",
+    "ru_name": "Душа компании",
+    "en_name": "Party Animal",
+    "ru_description": "Эти персонажи любят вечеринки, и все вокруг знают об этом: они будоражат публику и показывают различные трюки",
+    "en_description": "These Sims tend to enjoy parties and letting every other Sim know by hyping up a crowd and performing party tricks",
+    "part": "sims_4",
+    "icon": "PartyAnimal.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_065_proper",
+    "ru_name": "Уважительный",
+    "en_name": "Proper",
+    "ru_description": "Такие персонажи не одобряют неприемлемое поведение других персонажей, к которому, например, относятся пакостные и злые действия. Они предпочитают носить строгие костюмы и намного лучше справляются с дружелюбными и романтическими действиями общения",
+    "en_description": "These Sims tend to disapprove of other Sims' improper behavior such as Mean or Mischievous socials, but find themselves happier in Formal Outfits and have a much easier time with Friendly and Romantic socials",
+    "part": "sims_4",
+    "icon": "Proper.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_066_selfabsorbed",
+    "ru_name": "Эгоцентричный",
+    "en_name": "Self-Absorbed",
+    "ru_description": "Эти персонажи думают только о себе! Они могут выуживать комплименты, обожают получать подарки и напрягаются, когда не получают достаточно внимания. Они обычно с большим удовольствием находятся в центре внимания. В конце концов, кто ещё будет любить их так, как они любят сами себя?",
+    "en_description": "These Sims are all about themselves! They can Fish for Compliments, are more excited when receiving a present, and may become tense when they haven’t gotten enough attention. The celebrity spotlight is something they generally relish. After all, everyone else should love them as much as they do themselves, right?",
+    "part": "sims_4",
+    "icon": "SelfAbsorbed.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_067_snob",
+    "ru_name": "Скептик",
+    "en_name": "Snob",
+    "ru_description": "Эти персонажи могут критиковать недоброкачественные предметы, набираются уверенности в окружении других скептиков, и им неинтересны низкопробные телевизионные программы",
+    "en_description": "These Sims can Critique Work on low quality items, are bored by low brow television, and gain Confidence around other Snob Sims",
+    "part": "sims_4",
+    "icon": "Snob.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_068_sociallyawkward",
+    "ru_name": "Неловкий в общении",
+    "en_name": "Socially Awkward",
+    "ru_description": "Этим персонажам трудно даётся общение. Они медленнее осваивают навыки обаяния, зато получают мощные настрои и ощущают сильные эмоции, если, преодолев неловкость, создают крепкие дружеские отношения",
+    "en_description": "These Sims tend to struggle in social situations and build charisma more slowly, but gain powerful Moodlets and Sentiments when they are able to overcome their awkwardness and accompanying nervousness to form close relationships",
+    "part": "sims_4",
+    "icon": "SociallyAwkward.png",
+    "group": "trait_group_004_social"
+  },
+  {
+    "key": "trait_069_angelic",
+    "ru_name": "Ангелочек",
+    "en_name": "Angelic",
+    "ru_description": "Идеальные малыши с легким характером. Они никогда не противоречат и не устраивают истерики. Они без страха общаются с незнакомцами",
+    "en_description": "Idyllic, easygoing Toddlers. They are never defiant and they don't throw a tantrum. They can easily talk to strangers",
+    "part": "sims_4",
+    "icon": "Angelic.png",
+    "group": "trait_group_005_toddler"
+  },
+  {
+    "key": "trait_070_charmer",
+    "ru_name": "Очаровашка",
+    "en_name": "Charmer",
+    "ru_description": "Эти малыши обожают общаться. Они быстрее осваивают навык общения и не боятся незнакомцев. Они могут окружать любовью других персонажей",
+    "en_description": "These Toddlers love to socialize. They earn Communication skill faster, and don't suffer Stranger Danger from strangers. They can Share the Love with other Sims",
+    "part": "sims_4",
+    "icon": "Charmer.png",
+    "group": "trait_group_005_toddler"
+  },
+  {
+    "key": "trait_071_clingy",
+    "ru_name": "Прилипчивый",
+    "en_name": "Clingy",
+    "ru_description": "Стеснительные малыши не избегают только персонажей из своей семьи и грустят, если на них не обращают внимания. Они быстрее повышают навыки, когда их обучают, и их настроение быстрее улучшается, когда их утешают",
+    "en_description": "These shy Toddlers avoid Sims outside the household and get sad if left behind. They gain extra skill when taught. And they recover faster from bad moods when Comforted",
+    "part": "sims_4",
+    "icon": "Clingy.png",
+    "group": "trait_group_005_toddler"
+  },
+  {
+    "key": "trait_072_Fussy",
+    "ru_name": "Любознательный",
+    "en_name": "Fussy",
+    "ru_description": "Любознательные исследователи. Такие малыши немного быстрее повышают уровень навыка мышления. Они любят учиться и грустят, если давно не узнавали ничего нового",
+    "en_description": "Curious explorers. These Toddlers gain Thinking skill slightly faster. They are happiest when learning something, and sad if they haven't learned anything lately",
+    "part": "sims_4",
+    "icon": "Fussy.png",
+    "group": "trait_group_005_toddler"
+  },
+  {
+    "key": "trait_073_independent",
+    "ru_name": "Независимый",
+    "en_name": "Independent",
+    "ru_description": "Эти малыши ценят свою свободу и не любят, когда попечители заставляют их что-либо делать. Они быстрее осваивают навыки, когда занимаются самостоятельно, и требуют меньше внимания, чем другие малыши",
+    "en_description": "These Toddlers love their freedom, and don't like to take orders from caregivers. They gain extra skill when they are left alone, and need less Attention than other Toddlers",
+    "part": "sims_4",
+    "icon": "Independant.png",
+    "group": "trait_group_005_toddler"
+  },
+  {
+    "key": "trait_074_inquisitive",
+    "ru_name": "Капризный",
+    "en_name": "Inquisitive",
+    "ru_description": "Юные сорванцы, которые обожают плакать, устраивать неприятности и беситься. Они счастливы, когда на них обращают внимание, что помогает им избавиться от отрицательных настроев",
+    "en_description": "Tiny trouble-makers who love to Cry, cause trouble, and Throw Fits. But being noticed makes them Happy and helps them overcome negative Moodlets",
+    "part": "sims_4",
+    "icon": "Inquisitive.png",
+    "group": "trait_group_005_toddler"
+  },
+  {
+    "key": "trait_075_silly",
+    "ru_name": "Легкомысленный",
+    "en_name": "Silly",
+    "ru_description": "Дурашливые и любопытные. Эти малыши обожают рассказывать анекдоты и играть. Они немного быстрее повышают уровень навыка воображения",
+    "en_description": "Goofy and curious. These Toddlers love to tell jokes and get Playful. They earn Imagination skill slightly faster",
+    "part": "sims_4",
+    "icon": "Silly.png",
+    "group": "trait_group_005_toddler"
+  },
+  {
+    "key": "trait_076_wild",
+    "ru_name": "Неугомонный",
+    "en_name": "Wild",
+    "ru_description": "Эти энергичные малыши обожают исследовать и приходить в возбуждённое состояние. Они немного быстрее осваивают навык передвижения и грустят, если долго не выходят на улицу",
+    "en_description": "Spirited and full of Energy. These Toddlers love to explore and get Energized. They earn Movement skill slightly faster. They get sad if they haven't been outside in a while",
+    "part": "sims_4",
+    "icon": "Wild.png",
+    "group": "trait_group_005_toddler"
+  },
+
+  {
+    "key": "trait_077_calm",
+    "ru_name": "Спокойный",
+    "en_name": "Calm",
+    "ru_description": "Такие персонажи любят наблюдать за миром, реже плачут и злятся, а также не так быстро устают от развлечений в отличие от других младенцев. Однако они вряд ли сами захотят исследовать мир",
+    "en_description": "These Sims like to watch the world, are less likely to cry or become angry, and don't grow tired of activities as easily as other infants; however, they are less likely to explore the world on their own",
+    "part": "sims_4",
+    "icon": "Calm.png",
+    "group": "trait_group_006_infant"
+  },
+  {
+    "key": "trait_078_cautious",
+    "ru_name": "Осторожный",
+    "en_name": "Cautious",
+    "ru_description": "Эти персонажи любят все знакомое и долго привыкают к новым занятиям, местам и персонажам",
+    "en_description": "These Sims appreciate the familiar but are slow to warm up to new experiences, locations, and Sims",
+    "part": "sims_4",
+    "icon": "Cautious.png",
+    "group": "trait_group_006_infant"
+  },
+  {
+    "key": "trait_079_intense",
+    "ru_name": "Впечатлительный",
+    "en_name": "Intense",
+    "ru_description": "Эти персонажи очень эмоциональны и никогда не скучают, но их также сложнее успокоить, если у них плохое настроение",
+    "en_description": "These Sims have big emotions and are easily entertained, but they are also more difficult to calm when in a bad mood",
+    "part": "sims_4",
+    "icon": "Intense.png",
+    "group": "trait_group_006_infant"
+  },
+  {
+    "key": "trait_080_sensitive",
+    "ru_name": "Чувствительный",
+    "en_name": "Sensitive",
+    "ru_description": "У этих персонажей чаще появляется опрелость, они привередливы в еде и могут переутомиться от продолжительной игры и общения. Но они также крепче спят, если перед этим их убаюкать",
+    "en_description": "These Sims are prone to diaper rash, are often picky with food, and can more easily become overstimulated by too much play and social interaction; however, they also rest more peacefully through the night when soothed",
+    "part": "sims_4",
+    "icon": "Sensitive.png",
+    "group": "trait_group_006_infant"
+  },
+  {
+    "key": "trait_081_sunny",
+    "ru_name": "Лучик солнца",
+    "en_name": "Sunny",
+    "ru_description": "Эти персонажи постоянно улыбаются и смеются, а также получают удовольствие от взаимодействия с другими персонажами, но им требуется больше общения",
+    "en_description": "These Sims are bursting with smiles and giggles and enjoy engaging with other Sims, but they do require more social attention",
+    "part": "sims_4",
+    "icon": "Sunny.png",
+    "group": "trait_group_006_infant"
+  },
+  {
+    "key": "trait_082_wiggly",
+    "ru_name": "Непоседливый",
+    "en_name": "Wiggly",
+    "ru_description": "Таких персонажей постоянно куда-то тянет, они всегда хотят играть и двигаться, но им также сложнее уснуть и долго удерживать на чем-то внимание",
+    "en_description": "These Sims are always on the go and want to play and move about; however they often struggle to fall asleep or pay attention for extended periods of time",
+    "part": "sims_4",
+    "icon": "Wiggly.png",
+    "group": "trait_group_006_infant"
+  },
+
+  {
+    "key": "trait_083_animalaffection",
+    "ru_name": "Любовь к животным",
+    "en_name": "Animal Affection",
+    "ru_description": "Отношения с животными строятся не с нуля",
+    "en_description": "Relationships with animals begin at higher values",
+    "part": "sims_4",
+    "icon": "AnimalAffection.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_084_highmetabolism",
+    "ru_name": "Повышенный обмен веществ",
+    "en_name": "High Metabolism",
+    "ru_description": "Если у вас повышенный обмен веществ, поддерживать форму гораздо проще",
+    "en_description": "It is easier to stay fit and trim when you have High Metabolism",
+    "part": "sims_4",
+    "icon": "HighMetabolism.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_085_muser",
+    "ru_name": "Мыслитель",
+    "en_name": "Muser",
+    "ru_description": "Вдохновлённые персонажи быстрее повышают навыки",
+    "en_description": "Musers get better boosts to their skills when they are inspired",
+    "part": "sims_4",
+    "icon": "Muser.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_086_dastardly",
+    "ru_name": "Негодяй",
+    "en_name": "Dastardly",
+    "ru_description": "Негодяи чаще и успешнее совершают подлые действия",
+    "en_description": "Dastardly Sims perform stronger and more successful mean interactions",
+    "part": "sims_4",
+    "icon": "Dastardly.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_087_domestic",
+    "ru_name": "Домосед",
+    "en_name": "Domestic",
+    "ru_description": "У домоседов семейные узы быстрее становятся крепче",
+    "en_description": "Domestic Sims will see their familiar relationships grow stronger faster",
+    "part": "sims_4",
+    "icon": "Domestic.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_088_essenceofflavor",
+    "ru_name": "Утонченный вкус",
+    "en_name": "Essence of Flavor",
+    "ru_description": "Персонажи, обладающие утончённым вкусом, готовят еду и напитки высокого качества",
+    "en_description": "Sims with Essence of Flavor make higher quality food and drink",
+    "part": "sims_4",
+    "icon": "EssenceOfFlavor.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_089_businesssavvy",
+    "ru_name": "Делец",
+    "en_name": "Business Savvy",
+    "ru_description": "Дельцы, продвигаясь по карьерной лестнице зарабатывают больше",
+    "en_description": "Business Savvy Sims earn more money from their careers",
+    "part": "sims_4",
+    "icon": "BusinessSavvy.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_090_quicklearner",
+    "ru_name": "Способный ученик",
+    "en_name": "Quick Learner",
+    "ru_description": "Способные ученики быстрее развивают навыки!",
+    "en_description": "Quick Learners build all skills a little bit faster!",
+    "part": "sims_4",
+    "icon": "QuickLearner.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_091_hometurf",
+    "ru_name": "Своя территория",
+    "en_name": "Home Turf",
+    "ru_description": "Эти персонажи счастливы, когда находятся в родном районе",
+    "en_description": "These Sims become Happy when they are in their home neighbourhood",
+    "part": "sims_4",
+    "icon": "HomeTurf.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_092_alluring",
+    "ru_name": "Очаровательный",
+    "en_name": "Alluring",
+    "ru_description": "Очаровательные персонажи успешнее других в романтических делах",
+    "en_description": "Alluring Sims are more successful at romance than others",
+    "part": "sims_4",
+    "icon": "Alluring.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_093_collector",
+    "ru_name": "Коллекционер",
+    "en_name": "Collector",
+    "ru_description": "Коллекционеры чаще других находят редкие коллекционные предметы!",
+    "en_description": "Collectors can find rare collectibles more often!",
+    "part": "sims_4",
+    "icon": "Collector.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_094_gregarious",
+    "ru_name": "Общительный",
+    "en_name": "Gregarious",
+    "ru_description": "Общительные персонажи быстрее выстраивают дружеские отношения",
+    "en_description": "Gregarious Sims build friendly relationships faster",
+    "part": "sims_4",
+    "icon": "Gregarious.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_095_preparedvoyager",
+    "ru_name": "Опытный путешественник",
+    "en_name": "Prepared Voyager",
+    "ru_description": "Опытные путешественники слегка удовлетворяют все потребности, когда путешествуют",
+    "en_description": "Sims who are Prepared Voyagers fill up their needs slightly when travelling",
+    "part": "sims_4",
+    "icon": "PreparedVoyager.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_096_relatable",
+    "ru_name": "Расположение к себе",
+    "en_name": "Relatable",
+    "ru_description": "Располагающие к себе персонажи быстрее выстраивают дружеские отношения с другими подростками",
+    "en_description": "Relatable Sims build friendly relationships with fellow teens faster",
+    "part": "sims_4",
+    "icon": "Relatable.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_097_spamembership",
+    "ru_name": "Абонемент в спа-салон",
+    "en_name": "Spa Membership",
+    "ru_description": "У этих персонажей каким-то образом сразу появляется абонемент в спа-салон. Никто точно не знает, откуда взялся этот абонемент, как его аннулировать и кто за него платит каждый месяц. Зато все услуги в спа-салоне предоставляются бесплатно! И это прекрасно!",
+    "en_description": "These Sims somehow came into possession of Spa Membership. Nobody is really sure where it came from, how to cancel it, or who keeps paying for it each month. But one thing is for certain all fees at Spas are waived! Nice!",
+    "part": "sims_4",
+    "icon": "SpaMembership.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_098_lunarconfidant",
+    "ru_name": "Друг луны",
+    "en_name": "Lunar Confidant",
+    "ru_description": "Эти персонажи получают изначальный бонус к отношениям, знакомясь с оборотнями (положительный или отрицательный в зависимости от их действий!)",
+    "en_description": "These Sims get an initial relationship boost when introducing themselves to werewolves (positive or negative, depending on how they act!)",
+    "part": "sims_4",
+    "icon": "LunarConfidant.png",
+    "group": "trait_group_007_bonus"
+  },
+  {
+    "key": "trait_099_animalwhisperer",
+    "ru_name": "Дрессировщик",
+    "en_name": "Animal Whisperer",
+    "ru_description": "Будет проще дрессировать и наказывать животных, а также строить с ними отношения",
+    "en_description": "It is easier to Train and Discipline animals as well as gain relationship with them faster",
+    "part": "sims_4",
+    "icon": "AnimalWhisper.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_100_longlived",
+    "ru_name": "Долгожитель",
+    "en_name": "Long Lived",
+    "ru_description": "Долгожители живут дольше, если не попадут в аварию",
+    "en_description": "Long Lived lets Sims live longer lives, barring any accidents",
+    "part": "sims_4",
+    "icon": "LongLived.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_101_survivalinstinct",
+    "ru_name": "Инстинкт выживания",
+    "en_name": "Survival Instinct",
+    "ru_description": "Эти персонажи успешнее в общении во время общественных мероприятий. Они любят заказывать еду на торговых стендах и могут договориться о скидке с продавцом торгового стенда, что надежнее других способов торговли",
+    "en_description": "These Sims will always escape wildlife attacks unscathed, manage to avoid injury from Skiing, Snowboarding, and Rock Climbing more often than other Sims, and have a natural resistance to inclement weather",
+    "part": "sims_4",
+    "icon": "SurvivalInstinct.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_102_grandchamptrainer",
+    "ru_name": "Тренер-чемпион",
+    "en_name": "Grand Champ Trainer",
+    "ru_description": "Такие персонажи бвстрее развивают навыки лошадей, продают лошадей дороже, уверенно чувствуют себя верхом, вселяют уверенность в лошадь во время верховой езды и тренировок и редко сталкиваются с неудачами во время езды на лошади. Они так здорово ладят с лошадьми, что тем очень нравится работать под их седлом. А еще такие персонажи могут дать совет по состязаниям начинающим всадникам",
+    "en_description": "These Sims train Horse Skills faster, sell Horses for higher prices, inspire confidence in themselves and their Horse when riding and training, and will rarely have a bad time riding a Horse. In fact, they are so good with Horses that Horses have even more fun when being ridden by them. They can also Give Competition Advice to aspiring Horse riders",
+    "part": "sims_4",
+    "icon": "GrandChampTrainer.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_103_expressionistic",
+    "ru_name": "Экспрессионист",
+    "en_name": "Expressionistic",
+    "ru_description": "Персонажи-экспрессионисты могут запечатлевать саму сущность ощущений и создавать очень эмоциональные работы независимо от своего настроения!",
+    "en_description": "Expressionistic Sims have captured the essence of feeling, and can create highly emotional works of art regardless of their actual mood!",
+    "part": "sims_4",
+    "icon": "Expressionistic.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_104_poetic",
+    "ru_name": "Поэт",
+    "en_name": "Poetic",
+    "ru_description": "Персонажи-поэты могут превратить жизнь в книгу и вернуть кого-то, потерянного давным-давно",
+    "en_description": "Poetic Sims can capture life itself in a book, and wield it to bring back someone they've lost",
+    "part": "sims_4",
+    "icon": "Poetic.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_105_piper",
+    "ru_name": "Дудочник",
+    "en_name": "Piper",
+    "ru_description": "Дудочники знают песни, которые имеют значимую власть над персонажами",
+    "en_description": "Pipers know an arsenal of songs that have significant power over others",
+    "part": "sims_4",
+    "icon": "Piper.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_106_worldrenownedactor",
+    "ru_name": "Всемирно известный актер",
+    "en_name": "World-Renowned Actor",
+    "ru_description": "Всемирно известные актеры плохо не играют — во всяком случае, так говорят...",
+    "en_description": "World-Renowned Actors never fail an acting action—as far as anyone can tell..",
+    "part": "sims_4",
+    "icon": "WorldRenownedActor.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_107_museofthemaker",
+    "ru_name": "Муза творца",
+    "en_name": "Muse of the Maker",
+    "ru_description": "Музы знают все приемы, необходимые для создания предметов с меньшими расходами",
+    "en_description": "Master Makers have learned all the tricks necessary to fabricate items at a reduced cost",
+    "part": "sims_4",
+    "icon": "MuseOfTheMaker.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_108_sacredknittingknowledge",
+    "ru_name": "Священное вязание",
+    "en_name": "Sacred Knitting Knowledge",
+    "ru_description": "Персонажи с этой чертой характера получают преимущества при обучении других персонажей вязанию. К тому же, им не грозит Проклятие свитера, и они умеют освобождать других персонажей от его крепких оков. А еще эти персонажи могут создавать уникальные вязаные изделия, среди которых особый герой из таинственной страны и запретный свитер, который, если уж на то пошло, запрещен не просто так...",
+    "en_description": "Sims with this trait gain enhanced benefits to teaching other Sims how to knit. Sims are also immune to the foul magic of the Sweater Curse, and can dispel afflicted Sims from its snarly grasp. Lastly, Sims have the ability to craft unique knitted items, like a very special companion from a strange land, or The Forbidden Sweater which, honestly, is forbidden for a reason...",
+    "part": "sims_4",
+    "icon": "SacredKnittingKnowledge.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_109_mastermind",
+    "ru_name": "Злой гений",
+    "en_name": "Mastermind",
+    "ru_description": "Злые гении знают, что сказать, чтобы вызвать у оппонента ярость, грусть или зависть",
+    "en_description": "Masterminds know just the right things to say to cause anger, sadness, and jealousy in their opponents",
+    "part": "sims_4",
+    "icon": "Mastermind.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_110_tormentor",
+    "ru_name": "Мучитель",
+    "en_name": "Tormentor",
+    "ru_description": "Мучители могут разрушить практически все: от предмета до лучших начинаний другого персонажа",
+    "en_description": "Tormentors can sabotage almost anything, be it an object, or another Sim’s best efforts",
+    "part": "sims_4",
+    "icon": "Tormentor.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_111_twistedheart",
+    "ru_name": "Каменное сердце",
+    "en_name": "Twisted Heart",
+    "ru_description": "Если бы вы могли взглянуть на сердце этого персонажа, вам бы стало плохо. Но [Имя Персонажа] никогда не покажет его, ведь его/ее это не интересует. [Имя Персонажа] получает бонусы для общения за выполнение злых и пакостных действий и перестает грустить и смущаться быстрее других персонажей",
+    "en_description": "If you could see this Sim's heart, you might recoil in disgust. But [Sim first name] would never let you see it, and that suits them just fine. [Sim first name] gains bonus Social from Mean and Mischief socials, while shrugging off Sad and Embarrassed Moods much faster than other Sims",
+    "part": "sims_4",
+    "icon": "TwistedHeart.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_112_pryofthetiger",
+    "ru_name": "Глаз-алмаз",
+    "en_name": "Pry of the Tiger",
+    "ru_description": "Персонажи с этой чертой характера без проблем находят желанное и лучше распознают спам. И самое главное, у них всегда есть идеальное алиби, если их поймают во время проникновения в чужой дом: удостоверение специалиста по отлову тигров!",
+    "en_description": "Pry of the Tiger Sims are more successful when rummaging and sorting through junk mail. Best of all, they have the perfect alibi when caught breaking into someone's home: a Tiger Inspector Badge!",
+    "part": "sims_4",
+    "icon": "Pryofthetiger.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_113_vicarious",
+    "ru_name": "Нравоучитель",
+    "en_name": "Vicarious",
+    "ru_description": "Нравоучители повышают уровень своих навыков, развивая навыки детей!",
+    "en_description": "By being Vicarious, your Children's skill gains can contribute to your own!",
+    "part": "sims_4",
+    "icon": "Vicarious.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_114_patriarch",
+    "ru_name": "Глава семейства",
+    "en_name": "Patriarch",
+    "ru_description": "Глава семейства помогает развивать навыки, находясь рядом со своими детьми",
+    "en_description": "Patriarchs provide skill boosts whenever they are around their children",
+    "part": "sims_4",
+    "icon": "Patriarch.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_115_iamthemaster",
+    "ru_name": "Я — повелитель",
+    "en_name": "I am the Master",
+    "ru_description": "Черта характера Я — повелитель дарит сверхъестественный контроль над разумом. Использование силы принуждения на отпрысках вампиров всегда успешно",
+    "en_description": "I am the Master grants supernatural control. Command Powers used on Vampire Offspring always succeed",
+    "part": "sims_4",
+    "icon": "IAmTheMaster.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_116_rolemodel",
+    "ru_name": "Образец для подражания",
+    "en_name": "Role Model",
+    "ru_description": "Дает дополнительные достоинства характера для находящихся поблизости малышей, детей и подростков",
+    "en_description": "Gives bonus Character Value scoring when near Toddlers, Children, or Teens",
+    "part": "sims_4",
+    "icon": "RoleModel.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_117_freshchef",
+    "ru_name": "Шеф-гений",
+    "en_name": "Fresh Chef",
+    "ru_description": "Шеф-гений всегда готовит еду наивысшего качества и у него все всегда получается!",
+    "en_description": "Fresh Chefs always make the highest quality food, and it never spoils!",
+    "part": "sims_4",
+    "icon": "FreshChef.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_118_potionmaster",
+    "ru_name": "Мастер зелий",
+    "en_name": "Potion Master",
+    "ru_description": "Мастера зелий могут создавать напитки, влияющие на настроение персонажей",
+    "en_description": "Potion Masters can mix potent drinks which can sway the drinker's emotions",
+    "part": "sims_4",
+    "icon": "PotionMaker.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_119_nectarknowitall",
+    "ru_name": "Знаток нектара",
+    "en_name": "Nectar Know-It-All",
+    "ru_description": "Такие персонажи умеют готовить уже выдержанный нектар и почти не бегают в туалет, когда пьют нектар, а их настроение меньше зависит от негативных эмоций",
+    "en_description": "These Sims can craft pre-aged Nectar, have an iron bladder when it comes to drinking Nectar, and their negative emotions have less influence on their current mood",
+    "part": "sims_4",
+    "icon": "NectarKnow.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_120_batchcook",
+    "ru_name": "Грандиозная готовка",
+    "en_name": "Batch Cook",
+    "ru_description": "Эти персонажи получают дубликаты блюд, которые они готовят с использованием заготовленных ингридиентов",
+    "en_description": "Sims with this trait get duplicates of any recipe they cook with Prepped Ingredients.",
+    "part": "sims_4",
+    "icon": "BatchCook.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_121_meltmaster",
+    "ru_name": "Мастер плавлений",
+    "en_name": "Melt Master",
+    "ru_description": "Мастера плавления посвятили всю свою жизнь плавлению сыра, чтобы стать истинными гуру сыра груйер. Они могут создавать горячие бутерброды с сыром и рисовать картины в стиле Жареный сыр",
+    "en_description": "Melt Masters have devoted enough of their love and bodies to grilled cheese to truly become Gurus of Gruyere. They can summon Grilled Cheese Sandwiches and Paint Grilled Cheese Paintings",
+    "part": "sims_4",
+    "icon": "MeltMaster.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_122_shrewd",
+    "ru_name": "Рассудительный",
+    "en_name": "Shrewd",
+    "ru_description": "Рассудительные персонажи еженедельно получают сумму денег, зависящую от средств их семьи",
+    "en_description": "Shrewd Sims receive a direct deposit each week based on their Household Funds",
+    "part": "sims_4",
+    "icon": "Shrewd.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_123_thrifty",
+    "ru_name": "Бережливый",
+    "en_name": "Thrifty",
+    "ru_description": "Бережливые персонажи получают скидку в 10% на покупки в режиме строительства каждую неделю. Скидки применяются непосредственно к бюджету семьи",
+    "en_description": "Thrifty Sims receive a 10% rebate on all Build Mode purchases made each week. Rebates will be directly applied to Household Funds",
+    "part": "sims_4",
+    "icon": "Thrifty.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_124_boothboss",
+    "ru_name": "Звезда уличной торговли",
+    "en_name": "Booth Boss",
+    "ru_description": "Эти персонажи могут устанавливать более высокие наценки и чаще убеждают посетителей совершить покупки при использовании киосков с едой и столов для продажи поделок",
+    "en_description": "Booth Bosses can set higher markups and are more successful at Convincing Customers to Buy while using Food Stands and Sales Tables",
+    "part": "sims_4",
+    "icon": "BoothBoss.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_125_homemanagermaven",
+    "ru_name": "Эксперт по управлению жильем",
+    "en_name": "Home Manager Maven",
+    "ru_description": "Персонажи с этой чертой характера без труда справляются с событиями 'Происшествие' и 'Техническое обслуживание', возникающими у арендаторов, и лучше ладят с арендаторами, а их съемное жилье получает более высокие рейтинги",
+    "en_description": "Sims with this trait are more successful solving Tenants' Emergency and Maintenance Events, build stronger relationships with Tenants, and have increased ratings on owned Residential Rentals",
+    "part": "sims_4",
+    "icon": "Homenanagermaven.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_126_atruemaster",
+    "ru_name": "Истинный повелитель",
+    "en_name": "A True Master",
+    "ru_description": "Истинный повелитель не только в совершенстве владеет способностью управлять сознанием, но и обладает огромными запасами вампирической энергии",
+    "en_description": "A True Master not only excels at Mind Control Powers, they also have greater stores of Vampire Energy to call upon",
+    "part": "sims_4",
+    "icon": "ATrueMaster.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_127_handy",
+    "ru_name": "Мастер на все руки",
+    "en_name": "Handy",
+    "ru_description": "Мастера на все руки могут мгновенно чинить и улучшать любые предметы",
+    "en_description": "Handy Sims can instantly Fix and Upgrade any object",
+    "part": "sims_4",
+    "icon": "Handy.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_128_highereducation",
+    "ru_name": "Высшее образование",
+    "en_name": "Higher Education",
+    "ru_description": "Персонажи с высшим образованием получили полноценный опыт в университете и могут применять полученные знания в жизни! Они быстрее осваивают навыки, изучая информацию в архивном хранилище, и получают больше симолеонов за публикацию исследований или добавление новой информации в архивное хранилище",
+    "en_description": "This Sim has proven they have what it takes to excel at University. Along the way, they learned a lot, allowing them to gain more skill using the Electromagnetic Research Archive Machine and earn more money from Publishing Research Papers and Contributing Knowledge",
+    "part": "sims_4",
+    "icon": "HigherEducation.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_129_museumpatron",
+    "ru_name": "Завсегдатай музея",
+    "en_name": "Museum Patron",
+    "ru_description": "Такие персонажи любят древние вещи. Они чувствуют себя особенно уверенно в музеях, а их свидания у исторических объектов всегда проходят на ура. Они также могут жертвовать артефакты в Симсонский национальный музей",
+    "en_description": "These Sims are lovers of all things ancient. They will be especially confident at museums, and even more flirty while on dates there. They also have the unique ability to donate artifacts to the Simsonian Museum",
+    "part": "sims_4",
+    "icon": "MuseumPatron.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_130_professorial",
+    "ru_name": "Профессионал",
+    "en_name": "Professorial",
+    "ru_description": "Персонажи-профессионалы могут написать полезное руководство в любой области, в которой чувствуют себя уверенно",
+    "en_description": "Professorial Sims can write helpful manuals about any skill they're well-versed in",
+    "part": "sims_4",
+    "icon": "Professional.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_131_slingerofspells",
+    "ru_name": "Прядильщик заклинаний",
+    "en_name": "Slinger of Spells",
+    "ru_description": "Прядильщики заклинаний создают намного меньше заряда при использовании заклинаний",
+    "en_description": "A Slinger of Spells generates much less charge when casting spells",
+    "part": "sims_4",
+    "icon": "SlingerOfSpells.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_132_webmaster",
+    "ru_name": "Сисадмин",
+    "en_name": "Webmaster",
+    "ru_description": "Сисадмины извлекают максимум пользы из компьютеров и знают всевозможные и крайне эффективные способы работы с ними",
+    "en_description": "Webmasters get the most out of their computers, unlocking extremely useful ways to use them",
+    "part": "sims_4",
+    "icon": "Webmaster.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_133_player",
+    "ru_name": "Игрок",
+    "en_name": "Player",
+    "ru_description": "Игроки никогда не вызовут ревность у других персонажей, и неважно, что они делают",
+    "en_description": "Players will never cause other Sims to get jealous, no matter what they do",
+    "part": "sims_4",
+    "icon": "Player.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_134_companion",
+    "ru_name": "Близкий друг",
+    "en_name": "Companion",
+    "ru_description": "Персонажи, обладающие чертой «Близкий друг», могут взаимодействовать с супругами особым образом, что поможет им справиться с жизненными невзгодами",
+    "en_description": "Sims with a Companion have special interactions with their spouse that help ease the trials of life",
+    "part": "sims_4",
+    "icon": "Companion.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_135_intheknow",
+    "ru_name": "В курсе дел",
+    "en_name": "In the Know",
+    "ru_description": "Персонажи в курсе дел могут получить огромные скидки при покупке любых товаров на продуктовых стендах, если будут торговаться с продавцами",
+    "en_description": "Sims who are In the Know can get a massive discount on market stall purchases if they Haggle with vendors",
+    "part": "sims_4",
+    "icon": "InTheKnow.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_136_heroofstrangerville",
+    "ru_name": "Герой Стрейнджервиля",
+    "en_name": "Hero of StrangerVille",
+    "ru_description": "Став героем Стрейнджервиля, вы будете получать письма от поклонников и сможете пересказывать историю о том, как вам удалось уничтожить источник заражения",
+    "en_description": "As the Hero of StrangerVille you will receive fan mail as well as being able to retell the tale of how you defeated the source of the infection",
+    "part": "sims_4",
+    "icon": "HeroOfStrangerville.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_137_laidback",
+    "ru_name": "Расслабленный",
+    "en_name": "Laid-Back",
+    "ru_description": "Расслабленные персонажи никогда не напрягаются",
+    "en_description": "Sims who are Laid-Back never become tense",
+    "part": "sims_4",
+    "icon": "LaidBack.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_138_worldlyknowledge",
+    "ru_name": "Житейские знания",
+    "en_name": "Worldly Knowledge",
+    "ru_description": "Эти персонажи успешнее в общении во время общественных мероприятий. Они любят заказывать еду на торговых стендах и могут договориться о скидке с продавцом торгового стенда, что надежнее других способов торговли",
+    "en_description": "These Sims are better at socializing during Social Events and enjoy ordering food from market stalls. They also can Negotiate a Discount at market stalls, which gives them an advantage over other bargaining techniques",
+    "part": "sims_4",
+    "icon": "WorldlyKnowledge.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_139_fastandfastidious",
+    "ru_name": "Пыль на абордаж",
+    "en_name": "Fast & Fastidious",
+    "ru_description": "Когда персонажи убираются, они не получают отрицательные настрои, и уровень шкалы досуга не снижается. Персонажи будут убираться быстрее и могут стать внимательнее во время уборки. Персонажи с чертой характера Пыль на абордаж могут выполнять действия Тщательно почистить и Тщательно пылесосить, чтобы основательно прибраться",
+    "en_description": "Sims don't get negative moodlets or lose fun while cleaning. Sim will clean at a more rapid pace and is more likely to become focused when cleaning, and for maximal cleaning efficiency, Fast & Fastidious Sims can use the Power Clean and Power Vacuum interactions",
+    "part": "sims_4",
+    "icon": "FastFastidious.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_140_filthdweller",
+    "ru_name": "Пыль веков",
+    "en_name": "Filth Dweller",
+    "ru_description": "Персонажи больше не будут получать отрицательные настрои в грязной или неопрятной обстановке. Они ненавидят убираться, обожают грязь и становятся счастливее в грязных и отвратительно грязных домах. К тому же, они могут общаться и дружить с пыльными проказниками!",
+    "en_description": "This Sim no longer receives negative moodlets from living in dusty or messy environments. They loathe cleaning and love filth, and will receive Happy moodlets while in Dirty or Filthy houses. Additionally, they gain the ability to bond with and befriend Filth Fiends!",
+    "part": "sims_4",
+    "icon": "FilthyDweller.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_141_tomarangexpert",
+    "ru_name": "",
+    "en_name": "Tomarang Expert",
+    "ru_description": "",
+    "en_description": "Sims with this Trait are better at cooking Tomarani Cuisine, finding Tassels, getting along with Sims with the Child of the Village trait, and will be more successful when exploring the Sulea Tiger Sanctuary and the Cave at Beard Beard Cove",
+    "part": "sims_4",
+    "icon": "TomarangExpert.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_142_survivalist",
+    "ru_name": "Борец за выживание",
+    "en_name": "Survivalist",
+    "ru_description": "Борцы за выживание обожают преодолевать трудности и питаться дарами природы. Сон под звездным небом и использование походных принадлежностей доставляют им кучу удовольствия",
+    "en_description": "Survivalists are happy roughin’ it and like living off the land. Sleeping under the stars or using camping equipment provides lots of enjoyment",
+    "part": "sims_4",
+    "icon": "Survivalist.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_143_naturalist",
+    "ru_name": "Натуралист",
+    "en_name": "Naturalist",
+    "ru_description": "Натуралисты не боятся огня. Он им не повредит, и они с легкостью его гасят",
+    "en_description": "Sims that are Naturalists don't need to fear fire; it won't touch them, and they can extinguish it with ease",
+    "part": "sims_4",
+    "icon": "Naturalist.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_144_anglerstranquility",
+    "ru_name": "Безмятежный рыболов",
+    "en_name": "Angler's Tranquility",
+    "ru_description": "Персонажи с чертой характера «Безмятежный рыболов» отправляются на рыбалку, чтобы забыть про все свои проблемы",
+    "en_description": "Sims with Angler's Tranquility will find that all of their problems seem to melt away while they are fishing",
+    "part": "sims_4",
+    "icon": "AnglersTranquility.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_145_appraiser",
+    "ru_name": "Оценщик",
+    "en_name": "Appraiser",
+    "ru_description": "Оценщики могут продавать коллекционные предметы, такие как металлы, кристаллы, элементы и окаменелости, Симсоновскому музею и брать за это больше денег",
+    "en_description": "Appraisers can sell collectibles, like Metals, Crystals, Elements, and Fossils to the Simsonian Museum for extra money",
+    "part": "sims_4",
+    "icon": "Appraiser.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_146_treasurehunter",
+    "ru_name": "Охотник за сокровищами",
+    "en_name": "Treasure Hunter",
+    "ru_description": "У охотников за сокровищами глаз наметан, и периодически они находят сокровища и реликвии, которые не заметили другие персонажи",
+    "en_description": "Treasure Hunters have a sharp eye and will occasionally find treasure and relics in Treasure Chests that other Sims miss",
+    "part": "sims_4",
+    "icon": "TreasureHunter.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_147_mastermixer",
+    "ru_name": "Зельевар",
+    "en_name": "Master Mixer",
+    "ru_description": "Зельевары редко ошибаются, когда используют зелья на себе",
+    "en_description": "A Master Mixer rarely fails when using potions on themselves",
+    "part": "sims_4",
+    "icon": "MasterMixer.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_148_influentialindividual",
+    "ru_name": "Влиятельное лицо",
+    "en_name": "Influential Individual",
+    "ru_description": "Когда влиятельные люди говорят, их все слушают. Они могут с легкостью прославить местного героя — или изгнать персонажа из общества",
+    "en_description": "When Influential Individuals speak, everyone listens. They can get the community to cheer on a local hero, or cancel them on a whim",
+    "part": "sims_4",
+    "icon": "InfluentialIndividual.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_149_natureconversationalist",
+    "ru_name": "Собеседник от природы",
+    "en_name": "Nature Conversationalist",
+    "ru_description": "Собеседникам от природы легче строить отношения с животными и их животные живут дольше. Кролики и птицы приносят им больше подарков. Такие персонажи могут по-своему общаться с растениями и получать больше урожая. Они не платят за доставку продуктов, а если живут в районе Хэнфорд-он-Бэгли, то еще и платят меньше по счетам",
+    "en_description": "Nature Conversationalist Sims have improved relationships with animals, allowing their animals to live longer, happier lives. Rabbits and birds will bring them more gifts. And they can interact with plants in unique ways, receiving more yield from harvests. They will also receive free grocery delivery, and, when residing in Henford-on Bagley, a discount on their bills",
+    "part": "sims_4",
+    "icon": "NatureConservationalist.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_150_naturalleader",
+    "ru_name": "Прирождённый лидер",
+    "en_name": "Natural Leader",
+    "ru_description": "Попытки переворота в клубе всегда успешны, и вашего персонажа нельзя свергнуть. К тому же, персонаж будет быстрее зарабатывать клубные очки во время собрания клуба",
+    "en_description": "Sims that are Natural Leaders will earn Club points much faster, and they will be able to overthrow other leaders with ease",
+    "part": "sims_4",
+    "icon": "NaturalLeader.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_151_hilarious",
+    "ru_name": "Весельчак",
+    "en_name": "Hilarious",
+    "ru_description": "Весельчаки всегда шутят к месту и у них всегда есть шутка-другая наготове",
+    "en_description": "Hilarious Sims can never go wrong with a joke, and have a few extra-special ones up their sleeve",
+    "part": "sims_4",
+    "icon": "Hilarious.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_152_beloved",
+    "ru_name": "Всеобщий любимец",
+    "en_name": "Beloved",
+    "ru_description": "Всеобщих любимцев не забывают! Их отношения не угасают",
+    "en_description": "Everyone remembers a Beloved Sim! Their relationships never fade",
+    "part": "sims_4",
+    "icon": "Beloved.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_153_perfecthost",
+    "ru_name": "Идеальный организатор",
+    "en_name": "Perfect Host",
+    "ru_description": "Идеальные организаторы получают дополнительные очки за устроенные мероприятия",
+    "en_description": "Perfect Hosts get a boost to the score of any social event they throw",
+    "part": "sims_4",
+    "icon": "PerfectHost.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_154_confidante",
+    "ru_name": "Доверенное лицо",
+    "en_name": "Confidante",
+    "ru_description": "Доверенные лица умеют избегать скучных разговоров и быстрее знакомятся с другими персонажами",
+    "en_description": "Confidantes are able to easily avoid boring conversations and are more successful in getting to know others",
+    "part": "sims_4",
+    "icon": "Confidante.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_155_regainedhumanity",
+    "ru_name": "Восстановление человечности",
+    "en_name": "Regained Humanity",
+    "ru_description": "Вампиры с чертой характера Восстановление человечности добрее и безопаснее для окружающих. Персонажи будут чаще разрешать им пить свою кровь",
+    "en_description": "Vampires with Regained Humanity seem kinder and safer. Sims are more likely give permission to Drink",
+    "part": "sims_4",
+    "icon": "RegainedHumanity.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_156_unstoppablefame",
+    "ru_name": "Вечная слава",
+    "en_name": "Unstoppable Fame",
+    "ru_description": "Персонажи, обладающие вечной славой, никогда не перестанут быть известными и знаменитыми. Они настолько комфортно себя чувствуют в свете прожекторов, что никогда не выйдут из себя из-за назойливых папарацци. Они также получают дополнительное очко славы",
+    "en_description": "Sims with Unstoppable Fame are immortalized celebrities, incapable of experiencing fame decay over time. They’re so comfortable in the limelight they’ll never react poorly towards those pesky paparazzi. They also receive an extra Fame Perk point",
+    "part": "sims_4",
+    "icon": "UnstoppableFame.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_157_neighborly",
+    "ru_name": "",
+    "en_name": "Neighborly",
+    "ru_description": "",
+    "en_description": "These Sims are better at negotiating Rent forgiveness, getting along with neighbors, won't have their belongings repossessed by their Property Owner, and host better Events",
+    "part": "sims_4",
+    "icon": "Neighborly.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_158_heroicpresence",
+    "ru_name": "Героическое присутствие",
+    "en_name": "Heroic Presence",
+    "ru_description": "Персонажи-герои быстрее повышают навык обаяния и могут вдохновлять других персонажей поблизости",
+    "en_description": "Heroic Sims gain Charisma more easily, and can also inspire other Sims with their presence",
+    "part": "sims_4",
+    "icon": "HeroicPresence.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_159_sleightofhand",
+    "ru_name": "Ловкость рук",
+    "en_name": "Sleight of Hand",
+    "ru_description": "Персонажи с чертой характера Ловкость рук могут красть у других персонажей и никогда не попадутся на жульничестве в игре в сабакк",
+    "en_description": "Sims with a Sleight of Hand can Pickpocket other Sims and will never get caught cheating at Sabacc",
+    "part": "sims_4",
+    "icon": "SleightOfHand.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_160_supremeauthority",
+    "ru_name": "Верховная власть",
+    "en_name": "Supreme Authority",
+    "ru_description": "Персонаже с чертой характера Верховная власть обладают превосходством в боевых действиях и могут продемонстрировать свою силу, чтобы запугать других персонажей и отвратить их от выполнения враждебных действий по отношению к ним. Такие персонажи редко умирают в сердитом настроении",
+    "en_description": "Sims with Supreme Authority have an edge during fights and can show their might, encouraging other Sims to back down from hostile socials with them. These Sims are also less likely to die from anger",
+    "part": "sims_4",
+    "icon": "SupremeAuthority.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_161_untroubled",
+    "ru_name": "Беззаботность",
+    "en_name": "Untroubled",
+    "ru_description": "Для персонажей с чертой характера Беззаботность все как с гуся вода. Жизненная цель Лама с драмой может сильно навредить отношениям, поэтому лучше просто забыть и отпустить. Б - беззаботность",
+    "en_description": "Untroubled Sims always bounce back. Being a Drama Llama can leave relationships rocky. Nothing says carefree like moving on and letting go",
+    "part": "sims_4",
+    "icon": "Untroubled.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_162_highflier",
+    "ru_name": "Птица высокого полета",
+    "en_name": "Highflier",
+    "ru_description": "Птицы высокого полета чаще становятся успешными, особенно в бизнесе",
+    "en_description": "Highflier Sims have the potential to be more successful, especially in business",
+    "part": "sims_4",
+    "icon": "Highflier.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_163_dauntless",
+    "ru_name": "Бесстрашие",
+    "en_name": "Dauntless",
+    "ru_description": "Персонажи с чертой характера Бесстрашие берут от жизни все, а Смерть питает слабость к бесстрашным просьбам, когда дело касается жизни и смерти. У рискованного веселья есть свои преимущества",
+    "en_description": "Dauntless Sims always live life to the fullest, and the Grim Reaper has a soft spot for dauntless pleas during matters of life and death. Risky fun sure has its perks",
+    "part": "sims_4",
+    "icon": "Dauntless.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_164_iconic",
+    "ru_name": "Легенда",
+    "en_name": "Iconic",
+    "ru_description": "Легенды - это популярные персонажи, на которых все хотят быть похожи. Они заслужили уважение других персонажей и теперь могут попробовать себя на просторах интернета",
+    "en_description": "Iconic Sims are the ones everyone wants to follow. They've earned the admiration of their peers, and can now set their sights anywhere on the world wide web",
+    "part": "sims_4",
+    "icon": "Iconic.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_165_calmingaura",
+    "ru_name": "Успокаивающая аура",
+    "en_name": "Calming Aura",
+    "ru_description": "Персонаж в совершенстве осваивает навык здорового образа жизни и излучает успокаивающее свечение! Воспользуйтесь этой уникальной способностью, чтобы успокаивать персонажей поблизости и при этом выглядеть неотразимо.",
+    "en_description": "When Sim masters wellness it will allow them to emanate a soothing glow! Use this newfound ability to calm Sims around them, and... well, to look awesome!",
+    "part": "sims_4",
+    "icon": "CalmingAura.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_166_clearperspective",
+    "ru_name": "Ясная картина",
+    "en_name": "Clear Perspective",
+    "ru_description": "Персонаж теперь трезво мыслит! Персонаж теперь может устраивать передышки и отдыхать от повседневного стресса, а также переосмысливать окружающие вещи. Например, все бессмысленно, но это неплохо!",
+    "en_description": "This Sim has clear head on their shoulders! Sim will be able to have a brief respite from the harshness of reality and re-contextualize things. Like how it's all sort of meaningless... but in a good way!",
+    "part": "sims_4",
+    "icon": "ClearPerspective.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_167_selfcareexpertise",
+    "ru_name": "Квалификация в сфере заботы о себе",
+    "en_name": "Self-Care Expertise",
+    "ru_description": "Персонаж становится квалифицированным специалистом в сфере красоты и здоровья! Клиенты теперь будут платить намного больше симолеонов за его услуги!",
+    "en_description": "This Sim will be the Self-Care Expert and develop an expertise for all things Wellness. Clients will now cough up way more money for her services",
+    "part": "sims_4",
+    "icon": "SelfCareExpertise.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_168_fangedfriend",
+    "ru_name": "Клыкастый друг",
+    "en_name": "Fanged Friend",
+    "ru_description": "Клыкастые друзья получают дополнительный бонус к отношениям с оборотнями и обычными персонажами",
+    "en_description": "Fanged Friends get an additional boost to their relationships with both Werewolves and non-Werewolf Sims",
+    "part": "sims_4",
+    "icon": "FangedFriend.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_169_refinedlupine",
+    "ru_name": "Утонченный волк",
+    "en_name": "Refined Lupine",
+    "ru_description": "Утонченные волки воротят нос от самой возможности потерять над собой контроль, поэтому они пассивно вырабатывают меньше ярости",
+    "en_description": "Refined Lupines turn their noses up at the thought of losing control of their Fury, passively generating less of it over time",
+    "part": "sims_4",
+    "icon": "RefinedLupine.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_170_chompchampion",
+    "ru_name": "Жевастик",
+    "en_name": "Chomp Champion",
+    "ru_description": "Персонажи, превращенные в оборотней жевастиками, не испытывают отрицательную реакцию на превращение, а также захотят вступить в стаю жевастиков!",
+    "en_description": "Sims turned into werewolves by Chomp Champions won't negatively react to being turned, and they'll want to join the Chomp Champion's pack too!",
+    "part": "sims_4",
+    "icon": "ChompChampion.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_171_threateningpresence",
+    "ru_name": "Вселение страха",
+    "en_name": "Threatening Presence",
+    "ru_description": "Персонажи с этой чертой сильнее пугают окружающих, иногда доводя их до обморока. А как же Грег? Что ж, по сравнению с ними он покажется милым щеночком",
+    "en_description": "Sims with a Threatening Presence inspire more fear in those around them, sometimes to the point of fainting. And Greg? Well to them, he might as well be a cute puppy",
+    "part": "sims_4",
+    "icon": "ThreateningPresence.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_172_lunarlink",
+    "ru_name": "Связь с луной",
+    "en_name": "Lunar Link",
+    "ru_description": "Персонажи с этой чертой сохраняют особые преимущества лунного цикла, которые они получали в качестве оборотней, и могут выть как в старые добрые времена!",
+    "en_description": "Sims with a Lunar Link retain the special benefits of the Lunar Cycle they once felt as Werewolves, and can still Howl just like old times!",
+    "part": "sims_4",
+    "icon": "LunarLink.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_173_creativelygifted",
+    "ru_name": "Творческая одаренность",
+    "en_name": "Creatively Gifted",
+    "ru_description": "Творчески одаренные персонажи во взрослом возрасте развивают творческие способности быстрее",
+    "en_description": "Creatively Gifted Sims build adult creative skills faster",
+    "part": "sims_4",
+    "icon": "CreativelyGifted.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_174_mentallygifted",
+    "ru_name": "Умственная одаренность",
+    "en_name": "Mentally Gifted",
+    "ru_description": "Умственно одаренные персонажи во взрослом возрасте развивают умственные способности быстрее",
+    "en_description": "Mentally Gifted Sims build adult mental skills faster",
+    "part": "sims_4",
+    "icon": "MentallyGifted.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_175_physicallygifted",
+    "ru_name": "Физическое совершенство",
+    "en_name": "Physically Gifted",
+    "ru_description": "Физически одаренные персонажи во взрослом возрасте развивают физические навыки быстрее",
+    "en_description": "Physically Gifted Sims build adult physical skills faster",
+    "part": "sims_4",
+    "icon": "PhysicallyGifted.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_176_sociallygifted",
+    "ru_name": "Дар общения",
+    "en_name": "Socially Gifted",
+    "ru_description": "Персонажи, обладающие даром общения, во взрослом возрасте развивают навыки общения быстрее",
+    "en_description": "Socially Gifted Sims build adult social skills faster",
+    "part": "sims_4",
+    "icon": "SociallyGifted.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_177_practicedhost",
+    "ru_name": "Опытный организатор",
+    "en_name": "Practiced Host",
+    "ru_description": "Эти персонажи — лучшие организаторы мероприятий. Им также легче даются дружелюбные и веселые действия общения на вечеринках",
+    "en_description": "These Sims are some of the best event hosts. Their friendly and funny socials during parties will always succeed",
+    "part": "sims_4",
+    "icon": "PracticedHost.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_178_headstrong",
+    "ru_name": "Упрямство",
+    "en_name": "Headstrong",
+    "ru_description": "Эти персонажи умеют контролировать свое тело и мысли, а также дольше остаются внимательными и уверенными",
+    "en_description": "These Sims have learned to discipline their body and minds. Their Focused and Confident moodlets will last longer!",
+    "part": "sims_4",
+    "icon": "Headstrong.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_179_packanimal",
+    "ru_name": "Стайное создание",
+    "en_name": "Pack Animal",
+    "ru_description": "Эти персонажи обожают заниматься самосовершенствованием вместе с другими. Они быстрее развивают отношения и осваивают навыки, когда занимаются с друзьями!",
+    "en_description": "These Sims love improving themselves and others together. They have faster relationship and skill gain when training with friends!",
+    "part": "sims_4",
+    "icon": "PackAnimal.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_180_ideaperson",
+    "ru_name": "Генератор идей",
+    "en_name": "Idea Person",
+    "ru_description": "В детстве эти персонажи активно развивали свои навыки интеллекта и творчества, поэтому теперь они быстрее рисуют, пишут, программируют и сочиняют песни. У них также быстрее проходит творческий кризис!",
+    "en_description": "These Sims focused on a combination of mental and creativity skills during their childhood. Due to their efforts they can now paint, write, program, and write songs faster. Any writer's block will also vanish much more quickly!",
+    "part": "sims_4",
+    "icon": "IdeaPerson.png",
+    "group": "trait_group_008_aspirationreward"
+  },
+  {
+    "key": "trait_181_alwayswelcome",
+    "ru_name": "Желанный гость",
+    "en_name": "Always Welcome",
+    "ru_description": "Будучи желанным гостем, вы всегда сможете заходить в дома соседей, и никто не станет возражать!",
+    "en_description": "Always Welcome Sims will act more at home when at others' residences, and the hosts won't mind at all!",
+    "part": "sims_4",
+    "icon": "AlwaysWelcome.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_182_gymrat",
+    "ru_name": "Любитель спорта",
+    "en_name": "Gym Rat",
+    "ru_description": "Упражняясь, любитель спорта повышает веселье и не ухудшает гигиену",
+    "en_description": "Gym Rats build Fun and don't lose Hygiene while exercising!",
+    "part": "sims_4",
+    "icon": "GymRat.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_183_observant",
+    "ru_name": "Проницательный",
+    "en_name": "Observant",
+    "ru_description": "Проницательные персонажи узнают черты других персонажей просто при встрече",
+    "en_description": "Observant Sims learn the traits of others just by meeting them",
+    "part": "sims_4",
+    "icon": "Observant.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_184_speedcleaner",
+    "ru_name": "Быстрая уборка",
+    "en_name": "Speed Cleaner",
+    "ru_description": "Персонажи убираются намного быстрее!",
+    "en_description": "Speed Cleaners tidy up much faster!",
+    "part": "sims_4",
+    "icon": "SpeedCleaner.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_185_greatstoryteller",
+    "ru_name": "Отличный рассказчик",
+    "en_name": "Great Storyteller",
+    "ru_description": "Отличные рассказчики могут лучше и увлекательнее рассказывать истории!",
+    "en_description": "Great Storytellers always succeed at telling bigger and better stories!",
+    "part": "sims_4",
+    "icon": "GreatStoryteller.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_186_heatacclimation",
+    "ru_name": "Акклиматизация к жаре",
+    "en_name": "Heat Acclimation",
+    "ru_description": "Персонажам практически не страшна жара, но высокие температуры все же имеют на них воздействие",
+    "en_description": "Sims with Heat Acclimation aren't affected as much by hot weather, but can still feel the effects",
+    "part": "sims_4",
+    "icon": "HeatAcclimation.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_187_coldacclimation",
+    "ru_name": "Акклиматизация к холоду",
+    "en_name": "Cold Acclimation",
+    "ru_description": "Персонажам практически не страшен холод, но низкие температуры все же имеют на них воздействие",
+    "en_description": "Sims with Cold Acclimation aren't affected as much by chilly weather, but can still feel the effects",
+    "part": "sims_4",
+    "icon": "ColdAcclimation.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_188_waterproof",
+    "ru_name": "Водостойкий",
+    "en_name": "Waterproof",
+    "ru_description": "Водостойкие персонажи не промокают под дождем",
+    "en_description": "Waterproof Sims do not get wet in the rain",
+    "part": "sims_4",
+    "icon": "Waterproof.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_189_inspiredexplorer",
+    "ru_name": "Тяга к приключениям",
+    "en_name": "Inspired Explorer",
+    "ru_description": "Персонажи быстрее строят отношения и осваивают навыки, когда находятся за пределами своего района",
+    "en_description": "Inspired Explorers have an easier time building relationships and skills while outside their home neighborhood",
+    "part": "sims_4",
+    "icon": "InspiredExplorer.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_190_mentor",
+    "ru_name": "Наставник",
+    "en_name": "Mentor",
+    "ru_description": "Достигнув 10 уровня определенного навыка, наставники получат доступ к руководству обучением других персонажей, что поможет тем развивать навыки быстрее!",
+    "en_description": "Once Mentors reach Level 10 in certain skills, the Mentor interaction becomes available and they can help other Sims improve their skills even more quickly!",
+    "part": "sims_4",
+    "icon": "Mentor.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_191_morningsim",
+    "ru_name": "Жаворонок",
+    "en_name": "Morning Sim",
+    "ru_description": "Жаворонки дополнительно развивают навыки по утрам",
+    "en_description": "Morning Sims build extra skill in the morning",
+    "part": "sims_4",
+    "icon": "MorningSim.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_192_nightowl",
+    "ru_name": "Сова",
+    "en_name": "Night Owl",
+    "ru_description": "Совы дополнительно развивают навыки по ночам",
+    "en_description": "Night Owls build extra skill at night",
+    "part": "sims_4",
+    "icon": "NightOwl.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_193_speedreader",
+    "ru_name": "Быстрое чтение",
+    "en_name": "Speed Reader",
+    "ru_description": "Персонажи могут читать намного быстрее обычного персонажа",
+    "en_description": "Speed Readers read books faster than your average Sim",
+    "part": "sims_4",
+    "icon": "SpeedReader.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_194_stormchaser",
+    "ru_name": "Охотник за бурями",
+    "en_name": "Storm Chaser",
+    "ru_description": "Охотники за бурями обожают грозу и отлично себя чувствуют даже при самых ненастных погодных условиях",
+    "en_description": "Storm Chaser Sims love stormy weather and thrive in terrifying conditions",
+    "part": "sims_4",
+    "icon": "StormChaser.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_195_freeservices",
+    "ru_name": "Бесплатные услуги",
+    "en_name": "Free Services",
+    "ru_description": "Все запросы на однократные услуги бесплатны",
+    "en_description": "All single use service requests are free",
+    "part": "sims_4",
+    "icon": "FreeServices.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_196_marketable",
+    "ru_name": "Деловая хватка",
+    "en_name": "Marketable",
+    "ru_description": "Персонажи, обладающие деловой хваткой, выручают за свои поделки больше симолеонов",
+    "en_description": "Marketable Sims sell items they've crafted for more Simoleons!",
+    "part": "sims_4",
+    "icon": "Marketable.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_197_stovesandgrillsmaster",
+    "ru_name": "Специалист по плитам и грилям",
+    "en_name": "Stoves and Grills Master",
+    "ru_description": "Специалисты по плитам и грилям могут создавать расходные материалы безупречного качества, которые необходимы для плит и грилей!",
+    "en_description": "Stoves and Grills Masters have a chance to create impeccable quality consumables that use stoves and grills!",
+    "part": "sims_4",
+    "icon": "StoveAndGrillMaster.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_198_creativevisionary",
+    "ru_name": "Визуалист",
+    "en_name": "Creative Visionary",
+    "ru_description": "Визуалисты имеют большую вероятность нарисовать или написать шедевр",
+    "en_description": "Creative Visionaries have a higher chance of painting and writing masterworks",
+    "part": "sims_4",
+    "icon": "CreativeVisionary.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_199_entrepreneurial",
+    "ru_name": "Предприниматель",
+    "en_name": "Entrepreneurial",
+    "ru_description": "Предприимчивые персонажи вероятнее получают повышение по работе",
+    "en_description": "Entrepreneurial Sims are more likely to get promoted in their Caree",
+    "part": "sims_4",
+    "icon": "Entrepreneurial.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_200_frugal",
+    "ru_name": "Бережливый",
+    "en_name": "Frugal",
+    "ru_description": "У бережливых персонажей счета меньше",
+    "en_description": "A Frugal Sim's household has reduced bills",
+    "part": "sims_4",
+    "icon": "Frugal.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_201_independent",
+    "ru_name": "Независимый",
+    "en_name": "Independent",
+    "ru_description": "У одиночек уровень потребности в общении снижается медленнее",
+    "en_description": "Independent Sims' Social Need decays slower",
+    "part": "sims_4",
+    "icon": "Independent.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_202_shameless",
+    "ru_name": "Беззастенчивость",
+    "en_name": "Shameless",
+    "ru_description": "Беззастенчивые персонажи никогда не смущаются!",
+    "en_description": "Shameless Sims will never get Embarrassed!",
+    "part": "sims_4",
+    "icon": "Shameless.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_203_steelbladder",
+    "ru_name": "Укротитель мочевого пузыря",
+    "en_name": "Steel Bladder",
+    "ru_description": "Персонажи редко обращают внимание на шкалу естественной нужды",
+    "en_description": "Sims with a Steel Bladder rarely have to pay attention to their Bladder Need",
+    "part": "sims_4",
+    "icon": "SteelBladder.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_204_incrediblyfriendly",
+    "ru_name": "Невероятное дружелюбие",
+    "en_name": "Incredibly Friendly",
+    "ru_description": "Невероятно дружелюбные персонажи нравятся абсолютно всем уже на первых минутах знакомства!",
+    "en_description": "Incredibly Friendly Sims are immediately liked when met with a nice introduction",
+    "part": "sims_4",
+    "icon": "IncrediblyFriendly.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_205_heatproof",
+    "ru_name": "Жаропрочный",
+    "en_name": "Heatproof",
+    "ru_description": "Жаропрочные персонажи любят жару, а высокие температуры не причиняют им вреда",
+    "en_description": "Heatproof Sims aren't negatively affected by hot temperatures and enjoy the heat",
+    "part": "sims_4",
+    "icon": "HeatProof.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_206_iceproof",
+    "ru_name": "Закаленный",
+    "en_name": "Ice Proof",
+    "ru_description": "Закаленные персонажи любят холод, а низкие температуры не причиняют им вреда",
+    "en_description": "Iceproof Sims aren't negatively affected by cold temperatures and enjoy the cold",
+    "part": "sims_4",
+    "icon": "IceProof.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_207_beguiling",
+    "ru_name": "Обольстительный",
+    "en_name": "Beguiling",
+    "ru_description": "Персонажи могут любого заставить кокетничать с первого взгляда",
+    "en_description": "Beguiling Sims can put anyone in a flirty mood with just one look",
+    "part": "sims_4",
+    "icon": "Beguiling.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_208_antiseptic",
+    "ru_name": "Чистоплотный",
+    "en_name": "Antiseptic",
+    "ru_description": "У чистоплотных персонажей уровень гигиены снижается намного медленнее",
+    "en_description": "Antiseptic Sims' Hygiene Need decays much slower",
+    "part": "sims_4",
+    "icon": "Antiseptic.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_209_carefree",
+    "ru_name": "Беззаботный",
+    "en_name": "Carefree",
+    "ru_description": "Беззаботные персонажи никогда не испытывают напряжения",
+    "en_description": "Carefree Sims will never get Tense",
+    "part": "sims_4",
+    "icon": "Carefree.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_210_connections",
+    "ru_name": "Хорошие связи",
+    "en_name": "Connections",
+    "ru_description": "Персонажи со связями начинают подъем по карьерной лестнице на несколько ступенек выше!",
+    "en_description": "Sims with Connections start all Careers several levels ahead!",
+    "part": "sims_4",
+    "icon": "Connections.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_211_fertile",
+    "ru_name": "Многодетный",
+    "en_name": "Fertile",
+    "ru_description": "Многодетным персонажам проще зачать ребенка и у них чаще рождаются двойни или тройни",
+    "en_description": "Fertile Sims have an easier time when trying for a baby, and a higher chance of twins or triplets",
+    "part": "sims_4",
+    "icon": "Fertile.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_212_greatkisser",
+    "ru_name": "Любитель целоваться",
+    "en_name": "Great Kisser",
+    "ru_description": "Любители целоваться великолепно целуются, увеличивая харизму с каждым поцелуем",
+    "en_description": "Great Kissers have amazing success with kissing, and increase Charisma with every kiss!",
+    "part": "sims_4",
+    "icon": "GreatKisser.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_213_paranormalinvestigator",
+    "ru_name": "Паранормальный сыщик",
+    "en_name": "Paranormal Investigator",
+    "ru_description": "Этот перонаж владеет лицензей паранормального сыщика, подписанной Клодом Рене Дюплантье Гидри. Персонажи могут работать в Бюро Призрачных Расследований в качестве внештатного сыщика",
+    "en_description": "This Sim is a certified Paranormal Investigator, issued by the Claude René Duplantier Guidry. Sims with this license are eligible to join the Federal Bureau of Spooky Investigation as a freelance investigator",
+    "part": "sims_4",
+    "icon": "ParanormalInvestigator.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_214_hardlyhungry",
+    "ru_name": "Укротитель голода",
+    "en_name": "Hardly Hungry",
+    "ru_description": "У некоторых персонажей просто нет аппетита",
+    "en_description": "Some Sims just don't have much of an appetite",
+    "part": "sims_4",
+    "icon": "HardlyHungry.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_215_professionalslacker",
+    "ru_name": "Вечный лентяй",
+    "en_name": "Professional Slacker",
+    "ru_description": "Профессиональные лентяи не боятся понижения в должности и даже увольнения",
+    "en_description": "Professional Slackers have no fear of being demoted or fired",
+    "part": "sims_4",
+    "icon": "ProffessionalSlacker.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_216_savant",
+    "ru_name": "Эрудит",
+    "en_name": "Savant",
+    "ru_description": "Эрудиты быстрее осваивают любые навыки!",
+    "en_description": "Savants gain all skills much faster!",
+    "part": "sims_4",
+    "icon": "Savant.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_217_seldomsleepy",
+    "ru_name": "Динамичный",
+    "en_name": "Seldom Sleepy",
+    "ru_description": "Динамичным персонажам требуется меньше сна",
+    "en_description": "Seldom Sleepy Sims need less sleep than other Sims",
+    "part": "sims_4",
+    "icon": "SeldomSleepy.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_218_supergreenthumb",
+    "ru_name": "Гений садоводства",
+    "en_name": "Super Green Thumb",
+    "ru_description": "Гении садоводства выращивают очень живучие растения!",
+    "en_description": "Super Green Thumbs will find that the plants they garden have amazing vitality!",
+    "part": "sims_4",
+    "icon": "SuperGreenThumb.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_219_needsnoone",
+    "ru_name": "Одиночество в радость",
+    "en_name": "Needs No One",
+    "ru_description": "Персонажам никогда не надо общаться",
+    "en_description": "Sims that Need No One never need to socialize",
+    "part": "sims_4",
+    "icon": "NeedsNoOne.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_220_brave",
+    "ru_name": "Храбрость",
+    "en_name": "Brave",
+    "ru_description": "Персонажа с этой чертой непросто напугать! Храбрые персонажи быстрее берут себя в руки, чем большинство, и не боятся находиться рядом со сверхъестественными созданиями, например призраками и скелетами! Храбрые персонажи дольше сохраняют уверенность в себе!",
+    "en_description": "Sims with this trait aren't as easily frightened. Brave Sims regain their composure faster than most Sims, and don't mind being near supernatural beings such as Ghosts or Skeletons. Brave Sims also stay Confident longer than most Sims!",
+    "part": "sims_4",
+    "icon": "Brave.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_221_foreverfresh",
+    "ru_name": "Вечная свежесть",
+    "en_name": "Forever Fresh",
+    "ru_description": "Персонажам никогда не надо мыться!",
+    "en_description": "Forever Fresh Sims never need to shower or bathe!",
+    "part": "sims_4",
+    "icon": "ForeverFresh.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_222_foreverfull",
+    "ru_name": "Полный желудок",
+    "en_name": "Forever Full",
+    "ru_description": "Персонажи никогда не хотят есть!",
+    "en_description": "Forever Full Sims never need to eat!",
+    "part": "sims_4",
+    "icon": "ForeverFull.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_223_neverweary",
+    "ru_name": "Неустающий",
+    "en_name": "Never Weary",
+    "ru_description": "Персонажам не нужно спать",
+    "en_description": "Never Weary Sims never need sleep",
+    "part": "sims_4",
+    "icon": "NeverWeary.png",
+    "group": "trait_group_009_satisfactionreward"
+  },
+  {
+    "key": "trait_224_sicknessresistance",
+    "ru_name": "Иммунитет к заболеваниям",
+    "en_name": "Sickness Resistance",
+    "ru_description": "Персонажи с сильным иммунитетом будут реже заболевать и быстрее восстанавливаться после болезни",
+    "en_description": "Resilient Immunity, Sims will have a lower chance of getting sick and will recover from sickness faster",
+    "part": "sims_4",
+    "icon": "SicknessResistance.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_225_criticallyconnected",
+    "ru_name": "Критические связи",
+    "en_name": "Critically Connected",
+    "ru_description": "Эффективно пользуясь своим статусом в мире искусства, персонажи с критическими связями каждую неделю получают скидку 20% на покупку произведений искусства в режиме строительства. Скидка будет учтена в бюджете семьи",
+    "en_description": "Leveraging their status in the art world, Critically Connected Sims receive a 20% rebate on all Art purchased in Build Mode each week. Rebates will be applied directly to Household Funds",
+    "part": "sims_4",
+    "icon": "CriticallyConnected.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_226_scoutingaptitude",
+    "ru_name": "Талантливый скаут",
+    "en_name": "Scouting Aptitude",
+    "ru_description": "Ваши навыки в скаутстком движении позволят легче осваивать другие навыки",
+    "en_description": "All of your Scouting ability makes future earning of Skills a little bit easier",
+    "part": "sims_4",
+    "icon": "ScoutingAptitude.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_227_masterofthesea",
+    "ru_name": "Хозяин морей",
+    "en_name": "Master of the Sea",
+    "ru_description": "Хозяева морей быстрее заводят дружбу с дельфинами и русалками и лучше ориентируются на море",
+    "en_description": "A Master of the Sea becomes friends with dolphins and mermaids faster, and can maneuver around the ocean much more easily",
+    "part": "sims_4",
+    "icon": "MasterOfTheSea.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_228_naturalspeaker",
+    "ru_name": "Оратор от природы",
+    "en_name": "Natural Speaker",
+    "ru_description": "Ораторы от природы имеют талант и обаяние от природы. Дружелюбие — их вторая натура. Такие персонажи с легкостью вызывают энтузиазм и доносят информацию до других персонажей, а их заявки на грант обычно не получают отказа",
+    "en_description": "Sims that are Natural Speakers have been empowered by nature with instinctive charisma. Being friendly is second nature. These Sims find it easy to Enthuse and Spread Awareness of their cause to other Sims, and find that their grant applications tend to get accepted",
+    "part": "sims_4",
+    "icon": "NaturalSpeaker.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_229_seasonedgamer",
+    "ru_name": "Опытный игрок",
+    "en_name": "Seasoned Gamer",
+    "ru_description": "Став элитным игроком, персонаж получает больше удовольствия от видеоигр, чаще выигрывает в турнирах и получает различные преимущества благодаря повышенной продуктивности, занимаясь киберспортом",
+    "en_description": "As an elite gamer, (Sim) has more fun when playing video games, is more likely to win tournaments, and benefits from increased performance within the E-Sports activity",
+    "part": "sims_4",
+    "icon": "SeasonedGamer.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_230_mentalmagister",
+    "ru_name": "Магистр интеллекта",
+    "en_name": "Mental Magister",
+    "ru_description": "Осваивайте интеллектуальные навыки быстрее",
+    "en_description": "Gain Mental skills at a greater rate",
+    "part": "sims_4",
+    "icon": "MentalMagister.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_231_championofthepeople",
+    "ru_name": "Защитник народа",
+    "en_name": "Champion of the People",
+    "ru_description": "Защитники людей всегда получают дополнительные очки влияния, дополнительные очки удовлетворения при повышении уровня влияния и опять же больше получают подарков от других персонажей",
+    "en_description": "A Champion of the People always gains extra Influence, extra Satisfaction Points when gaining Influence, and will find themselves the recipient of more gifts from other Sims",
+    "part": "sims_4",
+    "icon": "ChampionOfThePeople.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_232_ecoengineer",
+    "ru_name": "Экоинженер",
+    "en_name": "Eco-Engineer",
+    "ru_description": "Экоинженеры быстрее устанавливают экоулучшения и всегда находят детали для экоулучшений при утилизации отходов",
+    "en_description": "An Eco-Engineer will find Eco-Upgrades to objects are completed more quickly and always get Eco-Upgrade Parts from recycling",
+    "part": "sims_4",
+    "icon": "EcoEngineer.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_233_legendarystamina",
+    "ru_name": "Легендарная выносливость",
+    "en_name": "Legendary Stamina",
+    "ru_description": "Эти персонажи научились оставаться бодрыми, даже когда офисный кофейник пуст. Их энергия будет истощаться медленнее, чем у других",
+    "en_description": "These Sims have learned how to keep their energy up when the office coffeepot is empty. Their energy will drain more slowly than other Sims",
+    "part": "sims_4",
+    "icon": "LegendaryStamina.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_234_charismaticcrooner",
+    "ru_name": "Обаятельный певец",
+    "en_name": "Charismatic Crooner",
+    "ru_description": "Эти персонажи научились брать голосом чарующие ноты, помогающие им лучше поладить с коллегами. Эти ноты могут даже помочь им в умении петь",
+    "en_description": "These Sims have mastered charismatic vocal tones that help them get along better with co-workers. These tones may even help with their singing ability",
+    "part": "sims_4",
+    "icon": "CharismaticCrooner.png",
+    "group": "trait_group_010_careerreward"
+  },
+  {
+    "key": "trait_235_chopsticksavvy",
+    "ru_name": "Жонглер китайскими палочками",
+    "en_name": "Chopstick Savvy",
+    "ru_description": "Эти персонажи мастерски пользуются китайскими палочками и могут есть все — от изворотливой лапши до крохотных горошин",
+    "en_description": "From slippery noodles to tiny peas, these Sims have mastered the art of eating with Chopsticks",
+    "part": "sims_4",
+    "icon": "ChopstickSavvy.png",
+    "group": "trait_group_011_foodmastery"
+  },
+  {
+    "key": "trait_236_spicehound",
+    "ru_name": "Любитель острого",
+    "en_name": "Spice Hound",
+    "ru_description": "Для любителей острого нет слишком острой еды. Съев острое блюдо, впоследствии они могут часами пребывать в счастливом настроении",
+    "en_description": "Spice Hounds never find any food too Spicy, and feel Happy for hours after eating a Spicy Meal",
+    "part": "sims_4",
+    "icon": "SpiceHound.png",
+    "group": "trait_group_011_foodmastery"
+  },
+  {
+    "key": "trait_237_immortal",
+    "ru_name": "Бессмертие",
+    "en_name": "Immortal",
+    "ru_description": "Персонаж не умрет от старости",
+    "en_description": "Sim is immune from dying of old age",
+    "part": "sims_4",
+    "icon": "Immortal.png",
+    "group": "trait_group_011_foodmastery"
+  },
+  {
+    "key": "trait_238_afizzionado",
+    "ru_name": "Газатор",
+    "en_name": "Afizzionado",
+    "ru_description": "Газаторы становятся внимательнее, когда создают напитки хорошего качества в соковарном аппарате, и быстрее восстанавливаются после закваса",
+    "en_description": "Afizzionados become focused while creating better products from the Juice Fizzer, as well as recovering from becoming Overbucha’d faster",
+    "part": "sims_4",
+    "icon": "Affizionado.png",
+    "group": "trait_group_011_foodmastery"
+  },
+  {
+    "key": "trait_239_ghastlyconsequences",
+    "ru_name": "Жуткие последствия",
+    "en_name": "Ghastly Consequences",
+    "ru_description": "Путь к бессмертию полон неудач и несчастных случаев. Но, к счастью, это скоро пройдет. А пока наслаждайтесь своей эфемерностью",
+    "en_description": "The pursuit of immortality is full of failures and accidents. Luckily, it looks like this will pass in a while. Try to enjoy your phantasmal existence while you can",
+    "part": "sims_4",
+    "icon": "GhastlyConsequences.png",
+    "group": "trait_group_011_foodmastery"
+  },
+  {
+    "key": "trait_240_infected",
+    "ru_name": "Зараженный",
+    "en_name": "Infected",
+    "ru_description": "Зараженные персонажи подверглись воздействию инфекции в Стрейнджервиле. Персонажи могут странно себя вести и даже стать одержимыми",
+    "en_description": "Infected Sims have been exposed to the StrangerVille Infection. Sims might exhibit strange behaviour, or even become Possessed",
+    "part": "sims_4",
+    "icon": "Posessed.png",
+    "group": "trait_group_011_foodmastery"
+  },
+  {
+    "key": "trait_241_fatherwintersbaby",
+    "ru_name": "Малыш Деда Мороза",
+    "en_name": "Father Winter's Baby",
+    "ru_description": "Оказывается, что сим — ребенок Деда Мороза! Потрясающе! Интересно, а у него есть волшебные способности?",
+    "en_description": "Wow! Father Winter is actually Sim's Dad! That's amazing! Wonder if they get any magical abilities?",
+    "part": "sims_4",
+    "icon": "FatherWinterBaby.png",
+    "group": "trait_group_012_inherited"
+  },
+  {
+    "key": "trait_242_sulanimana",
+    "ru_name": "Энергия Сулани",
+    "en_name": "Sulani Mana",
+    "ru_description": "Этот персонаж пропитан энергией духов Сулани благодаря своему наследию. Он может повышать качество растений и вызывать вулканические выбросы",
+    "en_description": "This Sim is imbued with Sulani's elemental energy due to their heritage. They can increase the quality of plants as well as summon Volcanic Bombs",
+    "part": "sims_4",
+    "icon": "SulaniMana.png",
+    "group": "trait_group_012_inherited"
+  },
+  {
+    "key": "trait_243_weakbloodline",
+    "ru_name": "Угасающий род",
+    "en_name": "Weak Bloodline",
+    "ru_description": "У родителей этого персонажа нет черт характера, связанных с родом. Персонажи получают дополнительное очко таланта за каждый уровень чародейства и могут потратить их на бонусы. Они быстрее повышают опыт чародейства и снижают вероятность накопления избыточного заряда на 10%",
+    "en_description": "This Sim's parents had no Bloodline traits. Sims with a Weak Bloodline trait gain an additional talent point at each Spellcaster rank to spend towards perks. They also gain Spellcaster experience faster and reduce the chance of overloading by 10%",
+    "part": "sims_4",
+    "icon": "WeakBloodline.png.png",
+    "group": "trait_group_012_inherited"
+  },
+  {
+    "key": "trait_244_strongbloodline",
+    "ru_name": "Чистокровный род",
+    "en_name": "Strong Bloodline",
+    "ru_description": "По крайней мере один родитель этого персонажа из угасающего рода. Персонажи получают дополнительное очко таланта за каждый уровень чародейства и могут потратить их на бонусы. Они быстрее повышают опыт чародейства и снижают вероятность накопления избыточного заряда на 20%",
+    "en_description": "At least one of this Sim's parents had a Weak Bloodline trait. Sims with a Strong Bloodline trait gain an additional talent point for each Spellcaster rank to spend towards perks. They also gain Spellcaster experience faster and reduce the chance of overloading by 20%",
+    "part": "sims_4",
+    "icon": "StrongBloodline.png",
+    "group": "trait_group_012_inherited"
+  },
+  {
+    "key": "trait_245_ancientbloodline",
+    "ru_name": "Древний род",
+    "en_name": "Ancient Bloodline",
+    "ru_description": "По крайней мере один родитель этого персонажа из чистокровного или древнего рода. Персонажи получают дополнительное очко таланта за каждый уровень чародейства и могут потратить их на бонусы. Они быстрее повышают опыт чародейства и снижают вероятность накопления избыточного заряда на 50%",
+    "en_description": "At least one of this Sim's parents had a Strong or Ancient Bloodline trait. Sims with the Ancient Bloodline trait gain an additional talent point at each Spellcaster rank to spend towards perks. They also gain Spellcaster experience faster and reduce the chance of overloading by 50%",
+    "part": "sims_4",
+    "icon": "AncientBloodline.png.png",
+    "group": "trait_group_012_inherited"
+  },
+  {
+    "key": "trait_246_dormantwolf",
+    "ru_name": "Спящий волк",
+    "en_name": "Dormant Wolf",
+    "ru_description": "Внутри персонажа крепко спит волк. Что будет, если его разбудить?",
+    "en_description": "The wolf sleeps soundly within Sim. What would it take to awaken?",
+    "part": "sims_4",
+    "icon": "DormantWolf.png",
+    "group": "trait_group_012_inherited"
+  },
+  {
+    "key": "trait_247_greaterwolfblood",
+    "ru_name": "Великая волчья кровь",
+    "en_name": "Greater Wolf Blood",
+    "ru_description": "Луна благославила персонажа великой волчью кровью, которая ускоряет рост оборотня. Как вам такие большие надежды?",
+    "en_description": "The moon has blessed Sim with a Greater Wolf Blood, enhancing their Werewolf growth. Talk about high expectations!",
+    "part": "sims_4",
+    "icon": "GreaterWolfBlood.png",
+    "group": "trait_group_012_inherited"
+  },
+  {
+    "key": "trait_248_attuned",
+    "ru_name": "Гармония",
+    "en_name": "Attuned",
+    "ru_description": "Персонажи с этой чертой характера лучше разбираются в кристаллах. Ювелирные изделия, которые они носят, дольше остаются заряженными, а сами персонажи могут поглощать энергию заряженных кристаллов",
+    "en_description": "These Sims have great insights into the mysteries of crystals. The jewelry they wear will remain charged for longer, and they can absorb energy from charged crystals",
+    "part": "sims_4",
+    "icon": "Attuned.png",
+    "group": "trait_group_008_aspirationreward"
+  }
+]

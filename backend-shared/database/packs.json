@@ -1,0 +1,586 @@
+[
+  {
+    "key": "TS4_GTW",
+    "icon": "TS4GTW.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "На работу!",
+    "en_name": "Get to Work"
+  },
+  {
+    "key": "TS4_GT",
+    "icon": "TS4GT.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Веселимся вместе!",
+    "en_name": "Get Together"
+  },
+  {
+    "key": "TS4_CL",
+    "icon": "TS4CL.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Жизнь в городе",
+    "en_name": "City Living"
+  },
+  {
+    "key": "TS4_CaD",
+    "icon": "TS4CaD.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Кошки и собаки",
+    "en_name": "Cats & Dogs"
+  },
+  {
+    "key": "TS4_S",
+    "icon": "TS4S.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Времена года",
+    "en_name": "Seasons"
+  },
+  {
+    "key": "TS4_GF",
+    "icon": "TS4GF.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Путь к славе",
+    "en_name": "Get Famous"
+  },
+  {
+    "key": "TS4_IL",
+    "icon": "TS4IL.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Жизнь на острове",
+    "en_name": "Island Living"
+  },
+  {
+    "key": "TS4_DU",
+    "icon": "TS4DU.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "В университете",
+    "en_name": "Discover University"
+  },
+  {
+    "key": "TS4_EL",
+    "icon": "TS4EL.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Экологичная жизнь",
+    "en_name": "Eco Lifestyle"
+  },
+  {
+    "key": "TS4_SE",
+    "icon": "TS4SE.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Снежные просторы",
+    "en_name": "Snowy Escape"
+  },
+  {
+    "key": "TS4_CLV",
+    "icon": "TS4CLV.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Загородная жизнь",
+    "en_name": "Cottage Living"
+  },
+  {
+    "key": "TS4_HSY",
+    "icon": "TS4HSY.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Старшая школа",
+    "en_name": "High School Years"
+  },
+  {
+    "key": "TS4_GTO",
+    "icon": "TS4GTO.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Жизненный путь",
+    "en_name": "Growing Together"
+  },
+  {
+    "key": "TS4_HR",
+    "icon": "TS4HR.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Конное ранчо",
+    "en_name": "Horse Ranch"
+  },
+  {
+    "key": "TS4_FR",
+    "icon": "TS4FR.png",
+    "part": "sims_4",
+    "type": "expansion_pack",
+    "ru_name": "Сдаётся!",
+    "en_name": "For Rent"
+  },
+  {
+    "key": "TS4_OR",
+    "icon": "TS4OR.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "В поход!",
+    "en_name": "Outdoor Retreat"
+  },
+  {
+    "key": "TS4_SD",
+    "icon": "TS4SD.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "День спа",
+    "en_name": "Spa Day"
+  },
+  {
+    "key": "TS4_DO",
+    "icon": "TS4DO.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "В ресторане",
+    "en_name": "Dine Out"
+  },
+  {
+    "key": "TS4_V",
+    "icon": "TS4V.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "Вампиры",
+    "en_name": "Vampires"
+  },
+  {
+    "key": "TS4_PH",
+    "icon": "TS4PH.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "Родители",
+    "en_name": "Parenthood"
+  },
+  {
+    "key": "TS4_JA",
+    "icon": "TS4JA.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "Приключения в джунглях",
+    "en_name": "Jungle Adventure"
+  },
+  {
+    "key": "TS4_SV",
+    "icon": "TS4SV.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "Стрейнджервиль",
+    "en_name": "StrangerVille"
+  },
+  {
+    "key": "TS4_ROM",
+    "icon": "TS4ROM.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "Мир магии",
+    "en_name": "Realm of Magic"
+  },
+  {
+    "key": "TS4_JTB",
+    "icon": "TS4JTB.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "Путешествие на Батуу",
+    "en_name": "Journey to Batuu"
+  },
+  {
+    "key": "TS4_DHD",
+    "icon": "TS4DHD.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "Интерьер мечты",
+    "en_name": "Dream Home Decorator"
+  },
+  {
+    "key": "TS4_MWS",
+    "icon": "TS4MWS.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "Свадебные истории",
+    "en_name": "My Wedding Stories"
+  },
+  {
+    "key": "TS4_WW",
+    "icon": "TS4WW.png",
+    "part": "sims_4",
+    "type": "game_pack",
+    "ru_name": "Оборотни",
+    "en_name": "Werewolves"
+  },
+  {
+    "key": "TS4_LPS",
+    "icon": "TS4LPS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Роскошная вечеринка",
+    "en_name": "Luxury Party Stuff"
+  },
+  {
+    "key": "TS4_PPS",
+    "icon": "TS4PPF.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Внутренний дворик",
+    "en_name": "Perfect Patio Stuff"
+  },
+  {
+    "key": "TS4_CKS",
+    "icon": "TS4CKS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Классная кухня",
+    "en_name": "Cool Kitchen Stuff"
+  },
+  {
+    "key": "TS4_SS",
+    "icon": "TS4SS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Жуткие вещи",
+    "en_name": "Spooky Stuff"
+  },
+  {
+    "key": "TS4_MHS",
+    "icon": "TS4MHS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Домашний кинотеатр",
+    "en_name": "Movie Hangout Stuff"
+  },
+  {
+    "key": "TS4_RGS",
+    "icon": "TS4RGS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Романтический сад",
+    "en_name": "Romantic Garden Stuff"
+  },
+  {
+    "key": "TS4_KRS",
+    "icon": "TS4KRS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Детская комната",
+    "en_name": "Kids Room Stuff"
+  },
+  {
+    "key": "TS4_BS",
+    "icon": "TS4BS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "На заднем дворе",
+    "en_name": "Backyard Stuff"
+  },
+  {
+    "key": "TS4_VGS",
+    "icon": "TS4VGS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Гламурный винтаж",
+    "en_name": "Vintage Glamour Stuff"
+  },
+  {
+    "key": "TS4_BNS",
+    "icon": "TS4BNS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Вечер боулинга",
+    "en_name": "Bowling Night Stuff"
+  },
+  {
+    "key": "TS4_FS",
+    "icon": "TS4FS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Фитнес",
+    "en_name": "Fitness Stuff"
+  },
+  {
+    "key": "TS4_TS",
+    "icon": "TS4TS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Детские вещи",
+    "en_name": "Toddler Stuff"
+  },
+  {
+    "key": "TS4_LDS",
+    "icon": "TS4LDS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "День стирки",
+    "en_name": "Laundry Day Stuff"
+  },
+  {
+    "key": "TS4_MFPS",
+    "icon": "TS4MFPS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Мой первый питомец",
+    "en_name": "My First Pet Stuff"
+  },
+  {
+    "key": "TS4_MS",
+    "icon": "TS4MS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Moschino",
+    "en_name": "Moschino Stuff"
+  },
+  {
+    "key": "TS4_TiLS",
+    "icon": "TS4TiLS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Компактная жизнь",
+    "en_name": "Tiny Living Stuff"
+  },
+  {
+    "key": "TS4_NKS",
+    "icon": "TS4NKS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Нарядные нитки",
+    "en_name": "Nifty Knitting Stuff"
+  },
+  {
+    "key": "TS4_PS",
+    "icon": "TS4PS.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Паранормальное",
+    "en_name": "Paranormal Stuff"
+  },
+  {
+    "key": "TS4_HCH",
+    "icon": "TS4HCH.png",
+    "part": "sims_4",
+    "type": "stuff_pack",
+    "ru_name": "Кулинарные страсти",
+    "en_name": "Home Chef Hustle Stuff"
+  },
+  {
+    "key": "TS4_BDK",
+    "icon": "TS4BDK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Ни пылинки",
+    "en_name": "Bust the Dust Kit"
+  },
+  {
+    "key": "TS4_CKK",
+    "icon": "TS4CKK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Сельская кухня",
+    "en_name": "Country Kitchen Kit"
+  },
+  {
+    "key": "TS4_TFK",
+    "icon": "TS4TFK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Наряды из прошлого",
+    "en_name": "Throwback Fit Kit"
+  },
+  {
+    "key": "TS4_COK",
+    "icon": "TS4COK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Личный оазис",
+    "en_name": "Courtyard Oasis Kit"
+  },
+  {
+    "key": "TS4_ILK",
+    "icon": "TS4ILK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Лофт",
+    "en_name": "Industrial Loft Kit"
+  },
+  {
+    "key": "TS4_FSK",
+    "icon": "TS4FSK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Фэшн-стрит",
+    "en_name": "Fashion Street Kit"
+  },
+  {
+    "key": "TS4_IAK",
+    "icon": "TS4IAK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Стиль Инчхона",
+    "en_name": "Incheon Arrivals Kit"
+  },
+  {
+    "key": "TS4_BRK",
+    "icon": "TS4BRK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Комнатные растения",
+    "en_name": "Blooming Rooms Kit"
+  },
+  {
+    "key": "TS4_MMK",
+    "icon": "TS4MMK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Мужская мода",
+    "en_name": "Modern Menswear Kit"
+  },
+  {
+    "key": "TS4_CSK",
+    "icon": "TS4CSK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Карнавал",
+    "en_name": "Carnaval Streetwear Kit"
+  },
+  {
+    "key": "TS4_DMK",
+    "icon": "TS4DMK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Максимализм в интерьере",
+    "en_name": "Decor to the Max Kit"
+  },
+  {
+    "key": "TS4_MCK",
+    "icon": "TS4MCK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Полуночный шик",
+    "en_name": "Moonlight Chic Kit"
+  },
+  {
+    "key": "TS4_LCK",
+    "icon": "TS4LCK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Маленькие туристы",
+    "en_name": "Little Campers Kit"
+  },
+  {
+    "key": "TS4_FFK",
+    "icon": "TS4FFK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Первые наряды",
+    "en_name": "First Fits Kit"
+  },
+  {
+    "key": "TS4_DLK",
+    "icon": "TS4DLK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Роскоши пустыни",
+    "en_name": "Desert Luxe Kit"
+  },
+  {
+    "key": "TS4_ECK",
+    "icon": "TS4ECK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Мелочи для дома",
+    "en_name": "Everyday Clutter Kit"
+  },
+  {
+    "key": "TS4_PPK",
+    "icon": "TS4PPK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Пастельные тона",
+    "en_name": "Pastel Pop Kit"
+  },
+  {
+    "key": "TS4_BCK",
+    "icon": "TS4BCK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Ванные принадлежности",
+    "en_name": "Bathroom Clutter Kit"
+  },
+  {
+    "key": "TS4_SCK",
+    "icon": "TS4SCK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Симтимная мода",
+    "en_name": "Simtimates Collection Kit"
+  },
+  {
+    "key": "TS4_BTK",
+    "icon": "TS4BTK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Сокровища из подвала",
+    "en_name": "Basement Treasures Kit"
+  },
+  {
+    "key": "TS4_GHK",
+    "icon": "TS4GHK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Теплица мечты",
+    "en_name": "Greenhouse Haven Kit"
+  },
+  {
+    "key": "TS4_GRK",
+    "icon": "TS4GRK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Возрождение гранжа",
+    "en_name": "Grunge Revival Kit"
+  },
+  {
+    "key": "TS4_BNK",
+    "icon": "TS4BNK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Книжный уголок",
+    "en_name": "Book Nook Kit"
+  },
+  {
+    "key": "TS4_MLK",
+    "icon": "TS4MLK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Современная роскошь",
+    "en_name": "Modern Luxe Kit"
+  },
+  {
+    "key": "TS4_PSK",
+    "icon": "TS4PSK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Отдых у бассейна",
+    "en_name": "Poolside Splash Kit"
+  },
+  {
+    "key": "TS4_CEK",
+    "icon": "TS4CEK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Личный замок",
+    "en_name": "Castle Estates Kit"
+  },
+  {
+    "key": "TS4_GGK",
+    "icon": "TS4GGK.png",
+    "part": "sims_4",
+    "type": "kit_pack",
+    "ru_name": "Грандиозная готика",
+    "en_name": "Goth Galore Kit"
+  }
+]

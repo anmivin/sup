@@ -1,0 +1,121 @@
+[
+  {
+    "key": "aspiration_group_001_animal",
+    "ru_name": "Питомцы",
+    "en_name": "Animal",
+    "part": "sims_4",
+    "bonus": "trait_083_animalaffection"
+  },
+  {
+    "key": "aspiration_group_002_athletic",
+    "ru_name": "Спорт",
+    "en_name": "Athletic",
+    "part": "sims_4",
+    "bonus": "trait_084_highmetabolism"
+  },
+  {
+    "key": "aspiration_group_003_creativity",
+    "ru_name": "Творчество",
+    "en_name": "Creativity",
+    "part": "sims_4",
+    "bonus": "trait_085_muser"
+  },
+  {
+    "key": "aspiration_group_004_deviance",
+    "ru_name": "Дурной нрав",
+    "en_name": "Deviance",
+    "part": "sims_4",
+    "bonus": "trait_086_dastardly"
+  },
+  {
+    "key": "aspiration_group_005_family",
+    "ru_name": "Семья",
+    "en_name": "Family",
+    "part": "sims_4",
+    "bonus": "trait_087_domestic"
+  },
+  {
+    "key": "aspiration_group_006_food",
+    "ru_name": "Еда",
+    "en_name": "Food",
+    "part": "sims_4",
+    "bonus": "trait_088_essenceofflavor"
+  },
+  {
+    "key": "aspiration_group_007_fortune",
+    "ru_name": "Богатство",
+    "en_name": "Fortune",
+    "part": "sims_4",
+    "bonus": "trait_089_businesssavvy"
+  },
+  {
+    "key": "aspiration_group_008_knowledge",
+    "ru_name": "Знания",
+    "en_name": "Knowledge",
+    "part": "sims_4",
+    "bonus": "trait_090_quicklearner"
+  },
+  {
+    "key": "aspiration_group_009_love",
+    "ru_name": "Любовь",
+    "en_name": "Love",
+    "part": "sims_4",
+    "bonus": "trait_092_alluring"
+  },
+  {
+    "key": "aspiration_group_010_location",
+    "ru_name": "Местоположение",
+    "en_name": "Location",
+    "part": "sims_4",
+    "bonus": "trait_091_hometurf"
+  },
+  {
+    "key": "aspiration_group_011_nature",
+    "ru_name": "Природа",
+    "en_name": "Nature",
+    "part": "sims_4",
+    "bonus": "trait_093_collector"
+  },
+  {
+    "key": "aspiration_group_012_popularity",
+    "ru_name": "Популярность",
+    "en_name": "Popularity",
+    "part": "sims_4",
+    "bonus": "trait_094_gregarious"
+  },
+  {
+    "key": "aspiration_group_013_starwars",
+    "ru_name": "Звездные войны",
+    "en_name": "Star Wars",
+    "part": "sims_4",
+    "bonus": "trait_095_preparedvoyager"
+  },
+  {
+    "key": "aspiration_group_014_wellness",
+    "ru_name": "Здоровый образ жизни",
+    "en_name": "Wellness",
+    "part": "sims_4",
+    "bonus": "trait_097_spamembership"
+  },
+  {
+    "key": "aspiration_group_015_werewolf",
+    "ru_name": "Оборотни",
+    "en_name": "Werewolf",
+    "part": "sims_4",
+    "bonus": "trait_098_lunarconfidant"
+  },
+  {
+    "key": "aspiration_group_016_child",
+    "ru_name": "Дети",
+    "en_name": "Child",
+    "part": "sims_4",
+    "bonus": ""
+  },
+  {
+    "key": "aspiration_group_017_teen",
+    "ru_name": "Подростки",
+    "en_name": "Teen",
+    "part": "sims_4",
+    "bonus": "trait_096_relatable"
+  }
+]

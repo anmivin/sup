@@ -1,0 +1,569 @@
+[
+  {
+    "key": "milestone_001_learnedtoreach",
+    "icon": "LearnedtoReach.png",
+    "age": "infant",
+    "ru_name": "Умение тянуться",
+    "en_name": "Learned to Reach",
+    "ru_description": "Развиваем свои мышцы! Персонаж вытянул свои руки",
+    "en_description": "Work those tiny muscles! Sim reached their arm out"
+  },
+  {
+    "key": "milestone_002_learnedtograb",
+    "icon": "LearnedtoGrab.png",
+    "age": "infant",
+    "ru_name": "Умение хватать",
+    "en_name": "Learned to Grab",
+    "ru_description": "Откуда в этих маленьких ручках столько силы? Персонаж использовал свои руки, демонстрируя нешуточные хватательные способности!",
+    "en_description": "Who knew tiny hands could be this strong? Sim used their hands to grab with all their might!"
+  },
+  {
+    "key": "milestone_003_puttoeinmouth",
+    "icon": "PutToeInMouth.png",
+    "age": "infant",
+    "ru_name": "Пальцы ног во рту",
+    "en_name": "Put Toe In Mouth",
+    "ru_description": "Персонаж становится сильнее с каждым днем. Теперь он может похвастаться умением крутиться и вертеться, наклоняться и даже засовывать в рот палец ноги. Какая поразительная гибкость!",
+    "en_description": "Sim is getting stronger every day. What a momentous occasion when they can wiggle around, bend over, and even stick their toe in their mouth. How flexible!"
+  },
+  {
+    "key": "milestone_004_learnedpincergrasp",
+    "icon": "LearnedPincerGrasp.png",
+    "age": "infant",
+    "ru_name": "Умение держать предметы в руках",
+    "en_name": "Learned Pincer Grasp",
+    "ru_description": "Персонаж научился держать предметы в руках благодаря своим сильным пальцам! Теперь от его цепких пальцев не скроется ни один предмет!",
+    "en_description": "Sim's powerful fingers are now able to perform the Pincer Grasp! Nothing will escape from their fingers unless they will it!"
+  },
+  {
+    "key": "milestone_005_learnedtoclap",
+    "icon": "LearnedtoClap.png",
+    "age": "infant",
+    "ru_name": "Умение хлопать",
+    "en_name": "Learned to Clap",
+    "ru_description": "Персонаж ВПЕРВЫЕ издал звуки с помощью рук!",
+    "en_description": "Sim made their first sounds with their hands!"
+  },
+  {
+    "key": "milestone_006_learnedtowave",
+    "icon": "LearnedtoWave.png",
+    "age": "infant",
+    "ru_name": "Умение махать",
+    "en_name": "Learned to Wave",
+    "ru_description": "Сул-сул! Персонаж освоил новый способ приветствовать окружающих, махая рукой!",
+    "en_description": "Sul Sul! Sim learned a new way to say hello by waving their hand!"
+  },
+  {
+    "key": "milestone_007_sleptthroughthenight",
+    "icon": "SleptThroughtheNight.png",
+    "age": "infant",
+    "ru_name": "Крепкий ночной сон",
+    "en_name": "Slept Through the Night",
+    "ru_description": "Ах, какая приятная тишина. Семья никогда не забудет первый раз, когда Персонаж проспал целую ночь без пробуждений",
+    "en_description": "Ah, the sweet sound of silence. Those living with (Sim Name) will never forget the first time they finally slept a full rest without interruption"
+  },
+  {
+    "key": "milestone_008_firstbath",
+    "icon": "FirstBath.png",
+    "age": "infant",
+    "ru_name": "Первая ванна",
+    "en_name": "First Bath",
+    "ru_description": "После своей первой ванны Персонаж может похвастаться безупречной чистотой",
+    "en_description": "Sim was squeaky clean after receiving their first ever bath"
+  },
+  {
+    "key": "milestone_009_firstbubblebath",
+    "icon": "FirstBubbleBath.png",
+    "age": "infant",
+    "ru_name": "Первая ванна с пеной",
+    "en_name": "First Bubble Bath",
+    "ru_description": "Пузырьки, пузырьки, пузырьки! Персонаж в восторге от своей первой ванны с пеной!",
+    "en_description": "Bubbles bubbles bubbles! Sim loved their very first bubble bath!"
+  },
+  {
+    "key": "milestone_010_firstbabyfood",
+    "icon": "FirstBabyFood.png",
+    "age": "infant",
+    "ru_name": "Первая детская еда",
+    "en_name": "First Baby Food",
+    "ru_description": "Ням-ням! Персонаж полакомился своей первой детской едой",
+    "en_description": "Mmm, yummy! Sim had their very first baby food"
+  },
+  {
+    "key": "milestone_011_firstfingerfood",
+    "icon": "FirstFingerFood.png",
+    "age": "infant",
+    "ru_name": "Первая закуска",
+    "en_name": "First Finger Food",
+    "ru_description": "Персонаж смог самостоятельно взять и съесть вкусное лакомство",
+    "en_description": "Sim managed to pick up and eat food all by themself"
+  },
+  {
+    "key": "milestone_012_firsttriptoapark",
+    "icon": "FirstTriptoaPark.png",
+    "age": "infant",
+    "ru_name": "Первый поход в парк",
+    "en_name": "First Trip to a Park",
+    "ru_description": "Персонаж открыл для себя радость путешествий, впервые посетив парк!",
+    "en_description": "The world got a little bigger for Sim when they visited a park for the first time!"
+  },
+  {
+    "key": "milestone_013_firstvacation",
+    "icon": "FirstVacation.png",
+    "age": "infant",
+    "ru_name": "Первый отпуск",
+    "en_name": "First Vacation",
+    "ru_description": "Пейзажи, звуки и запахи новых мест завораживали персонажа во время первого отпуска",
+    "en_description": "The sights, sounds, and smells of a new place mesmerized Sim on their very first vacation"
+  },
+  {
+    "key": "milestone_014_firstvisittoafamilymembershome",
+    "icon": "FirstVisittoaFamilyMembersHome.png",
+    "age": "infant",
+    "ru_name": "Первый поход в гости к родственникам",
+    "en_name": "First Visit to a Family Member's Home",
+    "ru_description": "Персонаж отправился в путешествие, чтобы навестить родственников",
+    "en_description": "Sim went on a trip to visit their relatives"
+  },
+  {
+    "key": "milestone_015_firstvisitors",
+    "icon": "FirstVisitors.png",
+    "age": "infant",
+    "ru_name": "Первые гости",
+    "en_name": "First Visitors",
+    "ru_description": "Новое знакомство! Персонаж впервые познакомился с персонажем за пределами своего дома",
+    "en_description": "A new face! Sim had their first encounter meeting someone from outside their household"
+  },
+  {
+    "key": "milestone_016_firstdiaperblowout",
+    "icon": "FirstDiaperBlowout.png",
+    "age": "infant",
+    "ru_name": "Первый разрыв подгузника",
+    "en_name": "First Diaper Blowout",
+    "ru_description": "Персонаж впервые обкакался в подгузник. Этот терпкий запах надолго останется в памяти тех, кому не повело оказаться рядом",
+    "en_description": "Sim experienced their first diaper blowout. That foul stench won't be forgotten by those who were unfortunately present"
+  },
+  {
+    "key": "milestone_017_peedoncaregiver",
+    "icon": "PeedonCaregiver.png",
+    "age": "infant",
+    "ru_name": "Описанный попечитель",
+    "en_name": "Peed on Caregiver",
+    "ru_description": "Персонаж никогда об этом не вспомнит, зато другие точно не забудут, когда он описал другого персонажа во время смены подгузника",
+    "en_description": "Sim will never know it happened, but others will surely remember the first time they peed on someone during a diaper change"
+  },
+  {
+    "key": "milestone_018_liftedhead",
+    "icon": "LiftedHead.png",
+    "age": "infant",
+    "ru_name": "Поднятая голова",
+    "en_name": "Lifted Head",
+    "ru_description": "Персонаж научился самостоятельно поднимать голову. Теперь он сможет увидеть столько всего интересного!",
+    "en_description": "Sim developed the ability to lift their head all on their own. There's a whole world to look at!"
+  },
+  {
+    "key": "milestone_019_rolledovertoback",
+    "icon": "RolledOvertoBack.png",
+    "age": "infant",
+    "ru_name": "Переворачивание на спину",
+    "en_name": "Rolled Over to Back",
+    "ru_description": "Что плохо для черепахи, крайне полезно для младенца. Персонаж смог перевернуться на спину",
+    "en_description": "A bad move for a turtle, but a great move for an Infant... Sim rolled themself onto their back!"
+  },
+  {
+    "key": "milestone_020_rolledovertotummy",
+    "icon": "RolledOvertoTummy.png",
+    "age": "infant",
+    "ru_name": "Переворачивание на живот",
+    "en_name": "Rolled Over to Tummy",
+    "ru_description": "Персонаж освоил умение переворачиваться со спины на живот и обратно! Этот важный шаг в развитии поможет ориентироваться в пространстве",
+    "en_description": "Sim mastered the ability to roll from their back to tummy and back again! It's a critical step to help them orient themself within their world"
+  },
+  {
+    "key": "milestone_021_learnedtocreep",
+    "icon": "LearnedtoCreep.png",
+    "age": "infant",
+    "ru_name": "Умение лазить",
+    "en_name": "Learned to Creep",
+    "ru_description": "Умение лазить по полу – важная веха в жизни младенца. Ловко применив силу и координацию, персонаж оттолкнулся от пола и двинулся навстречу новым открытиям",
+    "en_description": "There's nothing creepy about an Infant that's creeping! Using their newfound strength and coordination, Sim pushed themself up off the floor to creep about"
+  },
+  {
+    "key": "milestone_022_learnedtositup",
+    "icon": "LearnedtoSitUp.png",
+    "age": "infant",
+    "ru_name": "Умение сидеть",
+    "en_name": "Learned to Sit Up",
+    "ru_description": "Научившись уверенно сидеть, Персонаж готов к следующему важному шагу в своем развитии: умению хватать своими ручками окружающие предметы",
+    "en_description": "Having learned how to support themself by sitting up, Sim is just an awkward butt scoot away from getting their grubby little hands on nearby objects"
+  },
+  {
+    "key": "milestone_023_learnedtocrawl",
+    "icon": "LearnedtoCrawl.png",
+    "age": "infant",
+    "ru_name": "Умение ползать",
+    "en_name": "Learned to Crawl",
+    "ru_description": "Персонаж больше не знает преград! Научившись ползать, он готов к бесчисленным шалостям и проказам",
+    "en_description": "Watch out world, Sim is on the loose! Having learned to crawl, there's no shortage of mischief they'll be able to get up to"
+  },
+  {
+    "key": "milestone_024_pulledtostand",
+    "icon": "PulledtoStand.png",
+    "age": "infant",
+    "ru_name": "Подтянуться и встать",
+    "en_name": "Pulled to Stand",
+    "ru_description": "Несмотря на то, что Персонаж в буквальном смысле встал на ноги, ему всё еще требуется помощь и поддержка для дальнейшего развития. А пока можно только восхититься, как сильно вырос Персонаж",
+    "en_description": "Despite literally learning to stand on their own two feet, Sim will still need care and guidance for some time to come. In the meantime, look how tall Sim has grown!"
+  },
+  {
+    "key": "milestone_025_learnedtodance",
+    "icon": "LearnedtoDance.png",
+    "age": "infant",
+    "ru_name": "Умение танцевать",
+    "en_name": "Learned to Dance",
+    "ru_description": "Персонаж научился танцевать, размахивая руками. Когда он станет малышом, то сможет топать ногами в такт музыки",
+    "en_description": "Wave those hands! Sim learned to dance. Once they become a toddler, they'll be able to use their feet to tap to the beat!"
+  },
+  {
+    "key": "milestone_026_born",
+    "icon": "Born.png",
+    "age": "infant",
+    "ru_name": "Рождение",
+    "en_name": "Born",
+    "ru_description": "Каждое путешествие начинается с первого шага. Добро пожаловать!",
+    "en_description": "Every journey has a first step; let's welcome Sim into the world!"
+  },
+  {
+    "key": "milestone_027_bornatahospital",
+    "icon": "BornataHospital.png",
+    "age": "infant",
+    "ru_name": "Рождение в больнице",
+    "en_name": "Born at a Hospital",
+    "ru_description": "Каждое путешествие начинается с первого шага. Добро пожаловать!",
+    "en_description": "Every journey has a first step; let's welcome Sim into the world!"
+  },
+  {
+    "key": "milestone_028_bornathome",
+    "icon": "BornatHome.png",
+    "age": "infant",
+    "ru_name": "Рождение дома",
+    "en_name": "Born at Home",
+    "ru_description": "Каждое путешествие начинается с первого шага. Добро пожаловать!",
+    "en_description": "Every journey has a first step; let's welcome Sim into the world!"
+  },
+  {
+    "key": "milestone_029_adopted",
+    "icon": "Adopted.png",
+    "age": "infant",
+    "ru_name": "Усыновление",
+    "en_name": "Adopted",
+    "ru_description": "Персонаж усыновлен. Добро пожаловать в семью!",
+    "en_description": "Sim was adopted. Welcome to the family!"
+  },
+  {
+    "key": "milestone_030_firstsmiled",
+    "icon": "FirstSmiled.png",
+    "age": "infant",
+    "ru_name": "Первая улыбка",
+    "en_name": "First Smiled",
+    "ru_description": "После первой улыбки персонажа мир стал чуточку светлее!",
+    "en_description": "The world just got a bit brighter with Sim's very first smile!"
+  },
+  {
+    "key": "milestone_031_learnedtocoo",
+    "icon": "LearnedtoCoo.png",
+    "age": "infant",
+    "ru_name": "Умение ворковать",
+    "en_name": "Learned to Coo",
+    "ru_description": "Персонаж начал умилительно ворковать!",
+    "en_description": "Sim started making the most adorable cooing sounds!"
+  },
+  {
+    "key": "milestone_032_learnedtolaugh",
+    "icon": "LearnedtoLaugh.png",
+    "age": "infant",
+    "ru_name": "Умение смеяться",
+    "en_name": "Learned to Laugh",
+    "ru_description": "Персонаж выразил свою радость заливистым смехом!",
+    "en_description": "Eyes sparkling with joy, Sim laughed at something funny!"
+  },
+  {
+    "key": "milestone_033_learnedtoblowraspberry",
+    "icon": "LearnedtoBlowRaspberry.png",
+    "age": "infant",
+    "ru_name": "Умение фыркать",
+    "en_name": "Learned to Blow Raspberry",
+    "ru_description": "Персонаж попытался выразить свои чувства фырканьем, умилительно брызжа слюной во все стороны!",
+    "en_description": "With an adorably tiny sputter, (Sim Name) attempted to communicate by blowing a raspberry"
+  },
+  {
+    "key": "milestone_034_learnedtobabble",
+    "icon": "LearnedtoBabble.png",
+    "age": "infant",
+    "ru_name": "Умение лепетать",
+    "en_name": "Learned to Babble",
+    "ru_description": "Персонаж научился радостно лепетать, общаясь с окружающим миром. Каким же будет его первое слово?",
+    "en_description": "Sim learned to happily babble away at the world around them. What will their first word be...?"
+  },
+  {
+    "key": "milestone_035_learnedtoblowkiss",
+    "icon": "LearnedtoBlowKiss.png",
+    "age": "infant",
+    "ru_name": "Умение посылать воздушный поцелуй",
+    "en_name": "Learned to Blow Kiss",
+    "ru_description": "Какая прелесть: Персонаж продемонстрировал свою любовь, посылая воздушные поцелуи!",
+    "en_description": "Aww, Sim showed their love by blowing kisses!"
+  },
+  {
+    "key": "milestone_036_learnedpeekaboo",
+    "icon": "LearnedPeekABoo.png",
+    "age": "infant",
+    "ru_name": "Умение играть в «ку-ку»!",
+    "en_name": "Learned Peek-A-Boo",
+    "ru_description": "Персонаж впервые сыграл в «ку-ку» и, как ни удивительно, победил!",
+    "en_description": "Sim played their first game of Peek-A-Boo... And would you believe it, Sim won!"
+  },
+  {
+    "key": "milestone_037_saidfirstword",
+    "icon": "SaidFirstWord.png",
+    "age": "infant",
+    "ru_name": "Первое слово",
+    "en_name": "Said First Word",
+    "ru_description": "Персонаж произнес свое первое слово. Нужно его записать!",
+    "en_description": "Sim uttered their very first word! Write that down!"
+  },
+  {
+    "key": "milestone_038_studiedletters",
+    "icon": "StudiedLetters.png",
+    "age": "toddler",
+    "ru_name": "Выученные буквы",
+    "en_name": "Studied Letters",
+    "ru_description": "В мире персонажа появилась письменность.",
+    "en_description": "Sim's world expanded to include the realm of written language"
+  },
+  {
+    "key": "milestone_039_studiednumbers",
+    "icon": "StudiedNumbers.png",
+    "age": "toddler",
+    "ru_name": "Выученные цифры",
+    "en_name": "Studied Numbers",
+    "ru_description": "Раз, два, три... Персонаж теперь может считать до бесконечности",
+    "en_description": "One, two, three... Sim's counting prowess is limitless."
+  },
+  {
+    "key": "milestone_040_studiedshapes",
+    "icon": "StudiedShapes.png",
+    "age": "toddler",
+    "ru_name": "Выученные формы",
+    "en_name": "Studied Shapes",
+    "ru_description": "Круг, треугольник, квадрат... Способности персонажа не знают границ!",
+    "en_description": "Circle, triangle, square... Sim's genius knows no bounds!"
+  },
+  {
+    "key": "milestone_041_askedwhyforthefirsttime",
+    "icon": "AskedWhyfortheFirstTime.png",
+    "age": "toddler",
+    "ru_name": "Первый вопрос «Почему?»",
+    "en_name": "Asked 'Why?' for the First Time",
+    "ru_description": "Персонаж начинает задавать один из самых главных вопросов в жизни",
+    "en_description": "Sim started asking one of life's important questions"
+  },
+  {
+    "key": "milestone_042_artappreciation",
+    "icon": "ArtAppreciation.png",
+    "age": "toddler",
+    "ru_name": "Любовь к искусству",
+    "en_name": "Art Appreciation",
+    "ru_description": "Персонаж теперь может рассматривать произведения искусства и для своего возраста неплохо разбирается в них",
+    "en_description": "Now able to view art, Sim has quite the discerning eye for a Toddler"
+  },
+  {
+    "key": "milestone_043_maxedimaginationskill",
+    "icon": "MaxedImaginationSkill.png",
+    "age": "toddler",
+    "ru_name": "Максимальный уровень навыка воображения",
+    "en_name": "Maxed Imagination Skill",
+    "ru_description": "Персонаж достигает максимального уровня навыка уровня навыка воображения!",
+    "en_description": "Sim maxed the Imagination Skill!"
+  },
+  {
+    "key": "milestone_044_maxedthinkingskill",
+    "icon": "MaxedThinkingSkill.png",
+    "age": "toddler",
+    "ru_name": "Максимальный уровень навыка мышления",
+    "en_name": "Maxed Thinking Skill",
+    "ru_description": "Персонаж достигает максимального уровня навыка мышления!",
+    "en_description": "Sim maxed the Thinking Skill!"
+  },
+  {
+    "key": "milestone_045_firsttimeatdaycare",
+    "icon": "FirstTimeatDaycare.png",
+    "age": "toddler",
+    "ru_name": "Первый раз в детском саду",
+    "en_name": "First Time at Daycare",
+    "ru_description": "Персонаж впервые отправляется в детский сад",
+    "en_description": "Sim went to daycare for the first time"
+  },
+  {
+    "key": "milestone_046_readfirstbook",
+    "icon": "ReadFirstBook.png",
+    "age": "toddler",
+    "ru_name": "Первая прочитанная книга",
+    "en_name": "Read First Book",
+    "ru_description": "Персонаж впервые самостоятельно прочитал книгу",
+    "en_description": "Sim read a book all by themself for the first time!"
+  },
+  {
+    "key": "milestone_047_masteredpottytraining",
+    "icon": "MasteredPottyTraining.png",
+    "age": "toddler",
+    "ru_name": "Приучение к горшку",
+    "en_name": "Mastered Potty Training",
+    "ru_description": "Персонаж теперь умеет ходить в туалет",
+    "en_description": "Sim learned the ways of the loo"
+  },
+  {
+    "key": "milestone_048_firstnightmare",
+    "icon": "FirstNightmare.png",
+    "age": "toddler",
+    "ru_name": "Первый кошмар",
+    "en_name": "First Nightmare",
+    "ru_description": "Оказывается, страшные вещи могут происходить не только в жизни, но и во сне персонажа!",
+    "en_description": "Life's not all fun and games, not even when Sim is asleep. Scary stuff!"
+  },
+  {
+    "key": "milestone_049_threwatantrum",
+    "icon": "ThrewaTantrum.png",
+    "age": "toddler",
+    "ru_name": "Устроенная истерика",
+    "en_name": "Threw a Tantrum",
+    "ru_description": "Раздражение персонажа достигло точки кипения, и он устроил истерику",
+    "en_description": "Their frustration reached its boiling point! Sim threw a tantrum."
+  },
+  {
+    "key": "milestone_050_learnedtowalk",
+    "icon": "LearnedtoWalk.png",
+    "age": "toddler",
+    "ru_name": "Умение ходить",
+    "en_name": "Learned to Walk",
+    "ru_description": "Теперь персонажу открыты все пути!",
+    "en_description": "Oh, the places Sim will go!"
+  },
+  {
+    "key": "milestone_051_learnedtoclimbstairs",
+    "icon": "LearnedtoClimbStairs.png",
+    "age": "toddler",
+    "ru_name": "Умение взбираться по ступенькам",
+    "en_name": "Learned to Climb Stairs",
+    "ru_description": "Теперь Персонаж может достичь новых высот – в прямом смысле",
+    "en_description": "Sim can now reach new heights, literally."
+  },
+  {
+    "key": "milestone_052_learnedtodance",
+    "icon": "LearnedtoDanceToddler.png",
+    "age": "toddler",
+    "ru_name": "Умение танцевать",
+    "en_name": "Learned to Dance",
+    "ru_description": "Бедра не лгут! Благодаря постоянному движению в такт музыке. Персонаж теперь умеет танцевать!",
+    "en_description": "Those hips don't lie, Sim can't stop shaking to the beat and learned how to dance!"
+  },
+  {
+    "key": "milestone_053_learnedtorun",
+    "icon": "LearnedtoRun.png",
+    "age": "toddler",
+    "ru_name": "Умение бегать",
+    "en_name": "Learned to Run",
+    "ru_description": "Посторонись! Персонаж теперь умеет бегать",
+    "en_description": "Zoom, zoom! Sim learned to run"
+  },
+  {
+    "key": "milestone_054_maxedmovementskill",
+    "icon": "MaxedMovementSkill.png",
+    "age": "toddler",
+    "ru_name": "Максимальный навык передвижения",
+    "en_name": "Maxed Movement Skill",
+    "ru_description": "Персонаж достигает максимального уровня навыка передвижения!",
+    "en_description": "Sim maxed the Movement Skill!"
+  },
+  {
+    "key": "milestone_055_learnedtotalk",
+    "icon": "LearnedtoTalk.png",
+    "age": "toddler",
+    "ru_name": "Умение говорить",
+    "en_name": "Learned to Talk",
+    "ru_description": "Хватит этого детского лепета со случайными словами! Теперь Персонаж умеет говорить",
+    "en_description": "No longer limited to babbling with the occasional word interspersed, Sim learned to talk!"
+  },
+  {
+    "key": "milestone_056_playedwithothers",
+    "icon": "PlayedwithOthers.png",
+    "age": "toddler",
+    "ru_name": "Игра с другими",
+    "en_name": "Played with Others",
+    "ru_description": "Персонаж впервые играет с другими",
+    "en_description": "Sim played with others for the first time."
+  },
+  {
+    "key": "milestone_057_firstchildhoodfriend",
+    "icon": "FirstChildhoodFriend.png",
+    "age": "toddler",
+    "ru_name": "Первый друг детства",
+    "en_name": "First Childhood Friend",
+    "ru_description": "Персонаж заводит друга за пределами семьи!",
+    "en_description": "Sim made a friend outside the family!"
+  },
+  {
+    "key": "milestone_058_maxedcommunicationskill",
+    "icon": "MaxedCommunicationSkill.png",
+    "age": "toddler",
+    "ru_name": "Максимальный навык общения",
+    "en_name": "Maxed Communication Skill",
+    "ru_description": "Персонаж достигает максимального уровня навыка общения!",
+    "en_description": "Sim maxed the Communication Skill!"
+  },
+  {
+    "key": "milestone_059_",
+    "icon": ".png",
+    "age": "toddler",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": ""
+  },
+  {
+    "key": "milestone_018_survivedsevennightsinahauntedhouse",
+    "icon": "SurvivedSevenNightsinaHauntedHouse.png",
+    "age": "infant",
+    "ru_name": "Семь ночей в доме с призраками",
+    "en_name": "Survived Seven Nights in a Haunted House",
+    "ru_description": "",
+    "en_description": "The paranormal was no match for Sim!"
+  },
+  {
+    "key": "milestone_048_adoptedpet",
+    "icon": "AdoptedPet.png",
+    "age": "toddler",
+    "ru_name": "Питомец из приюта",
+    "en_name": "Adopted Pet",
+    "ru_description": "Новый друг вступает в семью",
+    "en_description": "A new friend joined the family"
+  },
+  {
+    "key": "milestone_048_celebratedabirthday",
+    "icon": "CelebratedaBirthday.png",
+    "age": "toddler",
+    "ru_name": "Празднование дня рождения",
+    "en_name": "Celebrated a Birthday",
+    "ru_description": "Персонаж отпраздновал день рождения!",
+    "en_description": "Sim celebrated a birthday!"
+  },
+  {
+    "key": "milestone_048_Got Evicted",
+    "icon": "Got Evicted.png",
+    "age": "toddler",
+    "ru_name": "",
+    "en_name": "Got Evicted",
+    "ru_description": "",
+    "en_description": "Sim got served with an Eviction Notice!"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "sup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "app/*",
+    "backend-shared/*"
+  ],
+  "scripts": {
+    "release": "standard-version -t ''",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "dev": "turbo run dev --parallel",
+    "start": "turbo run start",
+    "front: install": "npm install --workspace=@sup/front-end",
+    "back: install": "npm install --workspace=@sup/back-end",
+    "translations: install": "npm install --workspace=@sup/translation-service",
+    "generate:api": "npx openapi-typescript http://localhost:3002/api-json --output app/front-end/src/shared/api/Api.ts",
+    "generate:translations": "npx openapi-typescript http://localhost:3003/api-json --output app/front-end/src/shared/api/TranslationsApi.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}

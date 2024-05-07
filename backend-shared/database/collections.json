@@ -1,0 +1,5209 @@
+[
+  {
+    "key": "collection_001",
+    "ru_name": "Пришельцы",
+    "en_name": "Aliens",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "Мёртвый красный коралл",
+        "en_name": "Dead Red Coral",
+        "ru_description": "Предварительные исследования показали, что этот «скелет» излучает постоянные коротковолновые передачи, представляющие собой цифровую последовательность",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_002",
+        "ru_name": "Мёртвый космический дикобраз",
+        "en_name": "Dead Space Porcupine",
+        "ru_description": "Анатомический анализ показал, что этот образец обладает репродуктивной системой как рептилий, так и млекопитающих, что идеально подходит для нерегулярных метеорологических структур",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_003",
+        "ru_name": "Мёртвый розовый кит",
+        "en_name": "Dead Pink Whale",
+        "ru_description": "Жизненные соки этого организма содержат небольшое количество фосфора, который может непродолжительное время светиться при реакции с кислородом. Очевидное «окаменелое» топливо?",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_004",
+        "ru_name": "Мёртвый синий слизняк",
+        "en_name": "Dead Blue Slug",
+        "ru_description": "Вызволенный из тела бывшего хозяина, этот организм продолжает двигаться, даже когда другие признаки жизни уже отсутствуют",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_005",
+        "ru_name": "Мёртвый космический кальмар",
+        "en_name": "Dead Space Squid",
+        "ru_description": "Судя по шести отросткам, частичной прозрачности и необычной отражающей внешней мембране, этот образец, по всей видимости, эволюционировал на планете, покрытой водой, до того как оказался на месте обнаружения",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_006",
+        "ru_name": "Живой космический дикобраз",
+        "en_name": "Live Space Porcupine",
+        "ru_description": "Этот «игольчатый» образец со скромным поведением стреляет «иглами» для защиты от хищников",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_007",
+        "ru_name": "Живой розовый кит",
+        "en_name": "Live Pink Whale",
+        "ru_description": "Отдаленно напоминающий земных млекопитающих, этот «космический кит» управляет материей времени и пространства для целей перемещения",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_008",
+        "ru_name": "Живой красный коралл",
+        "en_name": "Live Red Coral",
+        "ru_description": "Непохожий на своих земных собратьев, этот, состоящий на 90% из кораллов образец, участвует в метаболических процессах",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_009",
+        "ru_name": "Живой синий слизняк",
+        "en_name": "Live Blue Slug",
+        "ru_description": "Паразит, который обитает в мозгах превышающих по размеру организмов и играет роль кукловода. Демонстративно экстремофильный",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_010",
+        "ru_name": "Живой космический кальмар",
+        "en_name": "Live Space Squid",
+        "ru_description": "Желеобразный организм, который общается путём пульсации своей биолюминесцентной кожи",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "rare"
+      }
+    ]
+  },
+  {
+    "key": "collection_002",
+    "ru_name": "Кристаллы",
+    "en_name": "Crystals",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "Алебастр",
+        "en_name": "Alabaster",
+        "ru_description": "Алебастр — мягкий и гладкий на ощупь камень молочно-белого цвета",
+        "en_description": "Alabaster is a milky white stone that is soft and smooth to the touch",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_002",
+        "ru_name": "Цитрин",
+        "en_name": "Citrine",
+        "ru_description": "Цвет цитрина варьируется от бледно-желтого до золотистого, как и у цитрусовых. Может, как раз из-за цвета считается, что цитрин приносит удачу и богатство!",
+        "en_description": "Like delicious citrus fruits, Citrine colors range from pale yellow to golden. Perhaps that color is why it's thought to bring success and prosperity!",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_003",
+        "ru_name": "Изумруд",
+        "en_name": "Emerald",
+        "ru_description": "Изумруд буквально значит «зеленый камень», а его зеленый цвет поистине уникален! Приобретите изумруд, и другие просто позеленеют от зависти!",
+        "en_description": "Emerald literally means green gem, and the gorgeous green color of emeralds are unparalleled! Having one will surely make others green with envy!",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_004",
+        "ru_name": "Топаз оранжевого цвета",
+        "en_name": "Orange Topaz",
+        "ru_description": "Довольно распространенный и долговечный, топаз оранжевого цвета заслужил популярность за счет жизнерадостного оттенка, признанного символом дружбы",
+        "en_description": "Being relatively abundant and durable, Orange Topaz is a very popular gemstone! With its happy color, it can be a symbol of friendship",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_005",
+        "ru_name": "Камень персикового цвета",
+        "en_name": "Peach",
+        "ru_description": "Небольшой по размеру и неброского персикового цвета камень. Неудивительно, что его считают воплощением невинности",
+        "en_description": "This small stone is delicate in size with a demure, peachy-pink color. No wonder it is the embodiment of innocence",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_006",
+        "ru_name": "Кварц",
+        "en_name": "Quartz",
+        "ru_description": "Раньше считалось, что кварц — это нетающий лед, но теперь мы точно знаем, что это тетраэдр из кремния и кислорода. Да-да",
+        "en_description": "Quartz was once believed to be ice crystals that would never melt, but now we know it's made of silicon-oxygen tetrahedral. Duh",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_007",
+        "ru_name": "Розовый кварц",
+        "en_name": "Rose",
+        "ru_description": "Названный в честь своего бледно-розового цвета, розовый кварц является камнем безграничной любви и источает умиротворенность",
+        "en_description": "Named for its pale pink color, Rose quartz is the stone of unconditional love and exudes a soothing sense of tranquility",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_008",
+        "ru_name": "Рубин",
+        "en_name": "Ruby",
+        "ru_description": "Популярные из-за своего ярко-красного оттенка, рубины олицетворяют страстную любовь. Рубины на тапочках не позволят вам телепортироваться",
+        "en_description": "Sought after for their brilliant red hues, rubies represent the passion of love. Decorating your slippers with them do not allow you to teleport",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_009",
+        "ru_name": "Сапфир",
+        "en_name": "Sapphire",
+        "ru_description": "От сапфира, голубее самого неба, невозможно оторвать глаз! Он считается камнем правды и верности",
+        "en_description": "Bluer than the sky, Sapphire is a sight to behold! Known as the gem of truth, helped coin the phrase 'true blue'",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_010",
+        "ru_name": "Бирюза",
+        "en_name": "Turquoise",
+        "ru_description": "Бирюза — непрозрачный камень от голубого до зеленого цветов, который ценился столетиями, так как ходили поверья, что он приносит защиту и удачу",
+        "en_description": "Turquoise is an opaque, blue-to-green stone that has been prized for centuries, as many believe it brings protection and good fortune",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_011",
+        "ru_name": "Аметист",
+        "en_name": "Amethyst",
+        "ru_description": "Аметист — это просто кварц фиолетового цвета! Оттенки от мягко-сиреневого до по-королевски лилового зависят от количества железа в камне",
+        "en_description": "Amethysts are purple colored quartz! From soft lilac to royal violet these purple shades are caused by iron impurities in the stone",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_012",
+        "ru_name": "Алмаз",
+        "en_name": "Diamond",
+        "ru_description": "Часто используемые в ювелирных украшениях, эти блестящие камушки считаются самыми ценными в мире, а еще это самый прочный материал, известный науке!",
+        "en_description": "Often used in jewelry, these sparkling gems are some of the most valued in the world and are also the hardest known natural material!",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_013",
+        "ru_name": "Огненный опал",
+        "en_name": "Fire Opal",
+        "ru_description": "Эти необычные опалы обычно встречаются в вулканических породах и ценятся за теплые яркие цвета",
+        "en_description": "These uncommon opals are generally found in volcanic rock formations and are prized for their shifting warm, fiery colors",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_014",
+        "ru_name": "Гематит",
+        "en_name": "Hematite",
+        "ru_description": "Хотя гематит выглядит как чёрный металл, изнутри он кроваво-красный",
+        "en_description": "Even though Hematite has a black metallic luster on the outside, it has a dark blood red color on the inside",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_015",
+        "ru_name": "Симанит",
+        "en_name": "Simanite",
+        "ru_description": "Симанит — один из немногих камней настоящего серебряного цвета. Его используют как в алхимии, так и в полировке утвари",
+        "en_description": "Simanite is one of the few stones with a true silver color. It has been used in everything from alchemy to utensil polishing",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_016",
+        "ru_name": "Блистолит",
+        "en_name": "Shinolite",
+        "ru_description": "Блистолит — самый блистательный камень! Не смотрите слишком долго, иначе его мерцающая серебром красота вас загипнотизирует",
+        "en_description": "Shinolite is the shiniest stone of them all! Be careful looking at it as you might just get hypnotized by its gleaming silver beauty",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_017",
+        "ru_name": "Агат",
+        "en_name": "Jet",
+        "ru_description": "Из-за своего мрачного цвета агаты обычно используются в траурных ювелирных изделиях, но мало кто знает, что агат — это на самом деле окаменелая древесина!",
+        "en_description": "Because of its somber coloring Jet is commonly used in mourning jewelry, but it isn't commonly known that Jet is actually fossilized wood!",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_018",
+        "ru_name": "Йонкилист",
+        "en_name": "Jonquilyst",
+        "ru_description": "Йонкилист как сверкающая капля солнца! Его яркий желтый цвет так и пышет жизнерадостностью",
+        "en_description": "Jonquilyst is like a glittering drop of sunshine! Its bright, yellow color radiates cheerfulness",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_019",
+        "ru_name": "Пламбит",
+        "en_name": "Plumbite",
+        "ru_description": "Оттенки пламбитов варьируются от красного и желтого до зеленого, но самый популярный — темно-зеленый цвет",
+        "en_description": "While Plumbites are found in varying shades from red to yellow to green, it's most popular hue is a deep, bright green",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_020",
+        "ru_name": "Радужник",
+        "en_name": "Rainborz",
+        "ru_description": "Радужник — редкий и необычный разноцветный драгоценный камень с преобладанием красного оттенка. И, что странно, обычно его находят у подножия радуг!",
+        "en_description": "Rainborz is a rare and unusual gemstone that is multi-colored, but predominantly red. And strangely, it is frequently found near rainbows!",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_021",
+        "ru_name": "Крандестин",
+        "en_name": "Crandestine",
+        "ru_description": "Крандестин — это инопланетный красный самоцвет, который нельзя найти на Земле",
+        "en_description": "Crandestine is an otherworldly red gemstone like nothing ever seen on Earth",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "на работу"
+      },
+      {
+        "key": "item_022",
+        "ru_name": "Нителит",
+        "en_name": "Nitelite",
+        "ru_description": "Нителит — это люминесцентный зеленый кристалл, настолько яркий, что при пристальном разглядывании может обжечь глаза",
+        "en_description": "Nitelite is a fluorescent green crystal that is so bright it burns to look directly at it",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "на работу"
+      },
+      {
+        "key": "item_023",
+        "ru_name": "Амазонит",
+        "en_name": "Amazonite",
+        "ru_description": "Цвет амазонита проявляется лучше всего в обработанном виде. Иногда его можно найти в бесконечных извилистых реках",
+        "en_description": "A softer gemstone which really shows off its beautiful color when polished. Sometimes found in the waters of long winding rivers",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "джунгли"
+      },
+      {
+        "key": "item_024",
+        "ru_name": "Александрит",
+        "en_name": "Alexandrite",
+        "ru_description": "Поразительный цвет этого редкого самоцвета меняется днем и ночью. Иногда александрит принимают за изумруд днем и за рубин ночью",
+        "en_description": "This rare gem has a dramatic color shift from day to night. Alexandrite is sometimes described as a emerald by day and a ruby by night",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "джунгли"
+      }
+    ]
+  },
+  {
+    "key": "collection_003",
+    "ru_name": "Элементы",
+    "en_name": "Elements",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "Алкинит",
+        "en_name": "Alcineat",
+        "ru_description": "Алкинит (химический символ An) — представитель элитных королевских жидкостей ярких цветов и без запаха. Он был обнаружен в 50-х гг., когда кто-то нашел лужу у себя во дворе",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_002",
+        "ru_name": "Грахмал",
+        "en_name": "Goobleck",
+        "ru_description": "Грахмал (химический символ Vg) — представитель элитных королевских жидкостей ярких цветов и без запаха. Было научно доказано, что у грахмала самое лучшее имя среди всех элементов",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_003",
+        "ru_name": "Мелакс",
+        "en_name": "Melacoo",
+        "ru_description": "Мелакс (химический символ Q) — представитель элитных королевских жидкостей ярких цветов и без запаха. Ленивые ученые долго считали, что мелакс — это сидролин",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_004",
+        "ru_name": "Оксипин",
+        "en_name": "Oxypin",
+        "ru_description": "Оксипин — представитель семейства переходных металлов. Ученый, открывший данную группу металлов, в то время переживал трудные времена, оттуда и название. Оксипин — металл голубого цвета, который так не нравится ученому",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_005",
+        "ru_name": "Озинат",
+        "en_name": "Ozinate",
+        "ru_description": "Озинат — представитель семейства переходных металлов. Говорят, что даже щепотка озината превратит запеканку в шедевр!",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_006",
+        "ru_name": "Фозон",
+        "en_name": "Phozone",
+        "ru_description": "Фозон (химический символ Pz) — представитель элитных королевских жидкостей ярких цветов и без запаха. Ученый, открывший фозон, очень любил бульон с лапшой, мясом и морковкой, чем и баловался во время проведения опытов",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_007",
+        "ru_name": "Селий",
+        "en_name": "Selium",
+        "ru_description": "Селий — представитель семейства переходных металлов. Не имеет никакого отношения к одноименной музыкальной группе",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_008",
+        "ru_name": "Сидролин",
+        "en_name": "Sydrolin",
+        "ru_description": "Сидролин (химический символ Sy) — представитель элитных королевских жидкостей ярких цветов и без запаха. Сидролин похож на виноградный сок, но не стоит пробовать его на вкус. Ни в коем случае",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_009",
+        "ru_name": "Волентон",
+        "en_name": "Volenton",
+        "ru_description": "Волентон — ореллоид прелестного лилового цвета. В природе встречается в залежах вулканической руды и в бутербродах с грудинкой",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_010",
+        "ru_name": "Периллий",
+        "en_name": "Peryllium",
+        "ru_description": "Периллий (химический символ Ll) — ореллоид прелестного розового цвета. Многие, даже прославленные, ученые описывают его как побочный продукт волшебства единорогов",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_011",
+        "ru_name": "Платий",
+        "en_name": "Plathium",
+        "ru_description": "Платий (химический символ Pl) — представитель элитных королевских жидкостей ярких цветов и без запаха. Платий по цвету напоминает лимонад, но на вкус хуже не придумаешь",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_012",
+        "ru_name": "Ходориум",
+        "en_name": "Wolfium",
+        "ru_description": "Ходориум — странное вещество, известное своим запахом — запахом мокрой псины",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_013",
+        "ru_name": "Критакс",
+        "en_name": "Crytacoo",
+        "ru_description": "Критакс знаменит своей прочностью. Он настолько тверд, что ни один инструмент его не возьмет. Поэтому приходится искать критакс нужной формы!",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_014",
+        "ru_name": "Фираксий",
+        "en_name": "Firaxium",
+        "ru_description": "О фираксии мало что известно. Такая вот темная лошадка",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_015",
+        "ru_name": "Пламбобус",
+        "en_name": "Plumbobus",
+        "ru_description": "Описать пламбобус так же трудно, как и укусить себя за локоть! Пламбобус уникален... Он просто поразителен",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_016",
+        "ru_name": "Ксенопетрий",
+        "en_name": "Xenopetrium",
+        "ru_description": "Ксенопетрий — крайне неустойчивый элемент. Он был обнаружен, когда ребенок в попытке поймать сбежавшего питомца ксенофлокса споткнулся о груду камней странной текстуры. Бедный малыш взлетел до небес и был возвращен домой только пару орбит спустя. Открытие нового элемента привело к практически молниеносной цепи открытий, включая космические полеты",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "на работу"
+      }
+    ]
+  },
+  {
+    "key": "collection_004",
+    "ru_name": "Рыба",
+    "en_name": "Fish",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "Золотая рыбка",
+        "en_name": "Goldfish",
+        "ru_description": "Маленькая рыбка семейства карповых, частый обитатель аквариумов и унитазов",
+        "en_description": "A small member of the carp family known to frequent both fishbowls and toilet bowls",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_002",
+        "ru_name": "Гуппи",
+        "en_name": "Guppy",
+        "ru_description": "Небольшая яркая тропическая рыбка. К тому же, ещё и довольно умна",
+        "en_description": "A small, bright tropical fish. (Not only bright as in colorful, they're also pretty smart.)",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_003",
+        "ru_name": "Корюшка",
+        "en_name": "Minnow",
+        "ru_description": "Рыбка настолько маленькая, что её используют в качестве наживки",
+        "en_description": "A fish so small, it's best used to catch other fish",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_004",
+        "ru_name": "Окунь",
+        "en_name": "Perch",
+        "ru_description": "Небольшая колючая рыбка, живущая в лесах и озерах",
+        "en_description": "A small spiny fish typically found in rivers and lakes",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_005",
+        "ru_name": "Лосось",
+        "en_name": "Salmon",
+        "ru_description": "Эта внушительного размера рыба является символом мудрости в кельтской мифологии. А также славится своим вкусом",
+        "en_description": "A good sized fish known in Celtic mythology as a symbol of wisdom. Also known for being delicious",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_006",
+        "ru_name": "Тетра",
+        "en_name": "Tetra",
+        "ru_description": "Небольшая пресноводная рыбка с узким блестящим телом и выдающимися плавниками",
+        "en_description": "A small freshwater fish with a compressed, shiny body and distinctive fins",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_007",
+        "ru_name": "Форель",
+        "en_name": "Trout",
+        "ru_description": "Может, она слегка и похожа на лосося, но это, несомненно, форель",
+        "en_description": "It might look a little bit like salmon, but no doubt it's trout",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_008",
+        "ru_name": "Карп Кои",
+        "en_name": "Koi",
+        "ru_description": "«Кои» — это сокращение от «нишикигои», что означает «парчовый карп». Красивое название красивой рыбы",
+        "en_description": "Koi is actually a shortening of nishikigoi meaning 'brocaded carp'. A pretty name for a pretty fish",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_009",
+        "ru_name": "Морской окунь",
+        "en_name": "Bass",
+        "ru_description": "Эту рыбу называют окунем. Хорошее имечко",
+        "en_description": "A Perch by another name. Nice sound dynamics though",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_010",
+        "ru_name": "Морской ангел",
+        "en_name": "Angelfish",
+        "ru_description": "Симпатичная рыбка, ей можно хвастаться перед друзьями, также она хорошо приглядывает за другими рыбками",
+        "en_description": "A lovely small fish, perfect for showing off and keeping other fish on their best behavior",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_011",
+        "ru_name": "Бойцовая рыбка",
+        "en_name": "Betta",
+        "ru_description": "Бойцовая рыбка — маленькая и отважная",
+        "en_description": "A very small and hard fish, that's betta than most!",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_012",
+        "ru_name": "Гурами",
+        "en_name": "Kissing Gourami",
+        "ru_description": "Не целуйте эти губы. Рот этой рыбы полон острых зубов",
+        "en_description": "Don't kiss these lips; kissing gourami have sharp rows of teeth lining their mouth",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_013",
+        "ru_name": "Угревидная зубатка",
+        "en_name": "Wolf Eel",
+        "ru_description": "Эта придонная угревидная рыба известна тем, что раскусывает раковины. Напуганы? На самом деле они весьма дружелюбны",
+        "en_description": "This bottom feeding eel-like fish is known for its hard-shell eating teeth. Scared? They're actually quite friendly",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_014",
+        "ru_name": "Тиляпия",
+        "en_name": "Tilapia",
+        "ru_description": "Тиляпия — это вид цихлид. Она неплохо чувствует себя в аквариуме",
+        "en_description": "Tilapia are a type of cichlid fish. They're pretty happy in a nice aquarium too",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_015",
+        "ru_name": "Сом",
+        "en_name": "Catfish",
+        "ru_description": "Как и кот, сом усами исследует окружающий мир. Такие длинные тонкие язычки",
+        "en_description": "Unlike a domestic cat, this fish uses its whiskers to taste its surroundings. Like thin little tongues",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_016",
+        "ru_name": "Рыба-нетопырь",
+        "en_name": "Batfish",
+        "ru_description": "Рыба-нетопырь не спит вниз головой. Её так прозвали за кожистые крылья",
+        "en_description": "The batfish doesn't sleep upside-down, but it has nice, leathery wings to make up for it",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_017",
+        "ru_name": "Пиранья",
+        "en_name": "Piranha",
+        "ru_description": "Небольшая, но очень кусачая рыбка. Правда, берегитесь этих крошечных зубов",
+        "en_description": "A small fish with a big bite. But really, watch out for those tiny teeth",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_018",
+        "ru_name": "Двухцветный лабео",
+        "en_name": "Red-Tailed Black Shark",
+        "ru_description": "Небольшая рыбка с красивым именем. Также известна как краснохвостый окунь",
+        "en_description": "A small fish with a big name. Also known as a redtail sharkminnow",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_019",
+        "ru_name": "Осётр",
+        "en_name": "Sturgeon",
+        "ru_description": "Осётр — большая рыба, которую иногда называют живым ископаемым. К счастью, они не обижаются",
+        "en_description": "Sturgeon are large fish sometimes called living fossils. Luckily, they aren't offended",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_020",
+        "ru_name": "Зубчатолобый морской окунь",
+        "en_name": "Treefish",
+        "ru_description": "Тсс... слышите их песни? Нет? Ну, даже волшебный зубчатолобый морской окунь может не все",
+        "en_description": "Shhh... can you hear their singing? No? Well, even magical treefish have limits",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_021",
+        "ru_name": "Капитан Скелет",
+        "en_name": "'Captain Fishbones' Bonefish",
+        "ru_description": "Он плавает кругами, ничего не помнит и давно почил... Настоящий друг!",
+        "en_description": "He swims in circles, can't remember a thing, and is already dead… your best friend!",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_022",
+        "ru_name": "Липкий гуппи",
+        "en_name": "Gummie Guppie",
+        "ru_description": "Восхитительно липкий друг для вашего дома. Главное, не подпускайте зубаток слишком близко",
+        "en_description": "A deliciously squishy friend for your home, just don't leave him alone with the catfish",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_023",
+        "ru_name": "Радужная рыба",
+        "en_name": "Rainbowfish",
+        "ru_description": "Вопреки распространенному заблуждению, радужная рыба не приведет вас к горшку золотых рыбок",
+        "en_description": "Contrary to popular belief, following a rainbowfish will not lead you to a pot of goldfish",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_024",
+        "ru_name": "Рыба-удильщик",
+        "en_name": "Anglerfish",
+        "ru_description": "Хитрая хищная рыба заманивает добычу прямо в рот при помощи небольшого мерцающего отростка на голове",
+        "en_description": "A sneaky predator fish that lures prey into its mouth with a small, glowing tentacle like growth on its head",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_025",
+        "ru_name": "Жёлтый окунь",
+        "en_name": "Yellow Perch",
+        "ru_description": "Родственник судака. Обладают отличительными черными тигровыми полосами и ворчат, когда голодны",
+        "en_description": "Kin to Walleyes. Best known for their black tiger stripes and growling when they're hungry",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "в поход"
+      },
+      {
+        "key": "item_026",
+        "ru_name": "Судак",
+        "en_name": "Walleye",
+        "ru_description": "Эта огромная рыба с бисерными глазками не различает синий и Жёлтый цвета. Зато она хороша на вкус",
+        "en_description": "These huge marble eyed fish are color blind. They cannot see blue or yellow. Good eatin' though",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "в поход"
+      },
+      {
+        "key": "item_027",
+        "ru_name": "Красный рак",
+        "en_name": "Red Crawdad",
+        "ru_description": "Родственники омаров. Только ни в коем случае не говорите им об этом - они считают себя уникальными",
+        "en_description": "Kissing cousins to lobsters. But don't tell them that, they want to be unique",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "в поход"
+      },
+      {
+        "key": "item_028",
+        "ru_name": "Голубой рак",
+        "en_name": "Blue Crawdad",
+        "ru_description": "Поговаривают, что таинственный синий рак стал такого цвета из-за промышленной аварии при производстве черники",
+        "en_description": "The mysterious blue crawdad is rumored to received its color from an industrial blueberry accident",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "в поход"
+      },
+      {
+        "key": "item_029",
+        "ru_name": "Горная крылатка",
+        "en_name": "Mountain Lionfish",
+        "ru_description": "Экзотическая рыба, которая водится только в нескольких горных районах. Аккуратнее с иголками — они могут нанести серьезные повреждения!",
+        "en_description": "An exotic fish only found in rare mountainous regions. Beware their spines, they can do serious damage!",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "в поход"
+      },
+      {
+        "key": "item_030",
+        "ru_name": "Цихлида",
+        "en_name": "Cichlid",
+        "ru_description": "Цихлиды бывают совершенно разных размеров. Выбирай не хочу",
+        "en_description": "Cichlids span in a wide range of body sizes. So no 'one size' fits all for this kind",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "спа"
+      },
+      {
+        "key": "item_031",
+        "ru_name": "Дискус",
+        "en_name": "Discus",
+        "ru_description": "Благодаря своей характерной форме и ярким цветам дискусы пользуются большой популярностью как аквариумные рыбки",
+        "en_description": "Due to their distinctive shape and bright colors, Discus are popular as freshwater aquarium fish",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "спа"
+      },
+      {
+        "key": "item_032",
+        "ru_name": "Экзотическая золотая рыбка",
+        "en_name": "Exotic Goldfish",
+        "ru_description": "Самые вычурные рыбки из семейства золотых рыбок. Только не говорите другим рыбкам — обязательно расстроятся!",
+        "en_description": "The fanciest of the goldfish family. Don't tell the other members we said that",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "спа"
+      },
+      {
+        "key": "item_033",
+        "ru_name": "Тунец",
+        "en_name": "Tuna",
+        "ru_description": "унец — довольно распространенная и обычно большая рыба. Наслаждайтесь необыкновенным вкусом тунца в больших порциях сашими или радуйте глаз, повесив чучело рыбы на стену",
+        "en_description": "Tuna are rather common and rather large, in general. Enjoy as a large portioned sashimi or as a large decorative on a small mount",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "в городе"
+      },
+      {
+        "key": "item_034",
+        "ru_name": "Фугу",
+        "en_name": "Pufferfish",
+        "ru_description": "Чучело рыбы фугу, которая при жизни любит сдуваться и раздуваться. И есть которую очень опасно",
+        "en_description": "Mounted Pufferfish, which, when alive, used to huff and puff. Oh eating it could also be poisonous",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "в городе"
+      },
+      {
+        "key": "item_035",
+        "ru_name": "Кальмар-вампир",
+        "en_name": "Vampire Squid",
+        "ru_description": "Не поддавайтесь его чарам или, скорее, отсутствием таковых...",
+        "en_description": "Do not succumb to its cuteness...or lack thereof",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "вампиры"
+      },
+      {
+        "key": "item_036",
+        "ru_name": "Бурый паку",
+        "en_name": "Tambaqui",
+        "ru_description": "Бурый паку и так достаточно большой, а этот даже больше обычного",
+        "en_description": "The Tambaqui is already pretty big. This one's bigger",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "джунгли"
+      },
+      {
+        "key": "item_037",
+        "ru_name": "Броняковый сом",
+        "en_name": "Armored Catfish",
+        "ru_description": "Эта рыба всегда готова к встрече с хищниками",
+        "en_description": "This fish is ready to go to war",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "джунгли"
+      },
+      {
+        "key": "item_038",
+        "ru_name": "Электрический угорь",
+        "en_name": "Electric Eel",
+        "ru_description": "Этот электрический угорь большой в размерах, но его удары током удивят вас куда больше",
+        "en_description": "This Electric Eel is shockingly large but sparks great interest from those who catch one",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "джунгли"
+      },
+      {
+        "key": "item_039",
+        "ru_name": "Небесный окунь",
+        "en_name": "Celestial Grouper",
+        "ru_description": "Первобытные хищники. Обычно лежат на спине в ожидании добычи и резко устремляются за жертвой, предпочитая молодых рыбок-хирургов и ракообразных. Они также могут без движения зависнуть в воде, чтобы потом внезапно напасть",
+        "en_description": "They are primordially hunters, they lie on the bottom and surge forward, preferring juvenile surgeonfish and crustaceans. Alternatively they may hover motionless in the water column before attacking",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "остров"
+      },
+      {
+        "key": "item_040",
+        "ru_name": "Рыба-клоун",
+        "en_name": "Clownfish",
+        "ru_description": "На сегодняшний день известно 30 видов: один из них относится к премнасам, а остальные — к амфиприонам. В дикой природе они формируют взаимовыгодный симбиоз с актиниями. В зависимости от вида помацентровые могут быть желтого, оранжевого, красноватого или черноватого цветов, и на многих присутствуют белые полосы или пятна",
+        "en_description": "Thirty species are recognized: one in the genus Premnas, while the remaining are in the genus Amphiprion. In the wild, they all form symbiotic mutualisms with sea anemones",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "остров"
+      },
+      {
+        "key": "item_041",
+        "ru_name": "Макрель",
+        "en_name": "Mahi Mahi",
+        "ru_description": "Вид лучеперых рыб, обитающих в тропических и субтропических водах по всему миру. Ее также называют дорадо и большой корифеной",
+        "en_description": "Surface-dwelling, ray-finned fish found in off-shore temperate, tropical, and subtropical waters worldwide. Also widely called dorado and dolphin",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "остров"
+      },
+      {
+        "key": "item_042",
+        "ru_name": "Неоновый морской ангел",
+        "en_name": "Neon Angelfish",
+        "ru_description": "Яркая неоновая рыба! Ярче, чем обычная садовая рыба-ангел",
+        "en_description": "Neon...Shinier! Glossier than your garden variety Angelfish",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "остров"
+      },
+      {
+        "key": "item_043",
+        "ru_name": "Сиамский петушок",
+        "en_name": "Fighting Plakat",
+        "ru_description": "Сиамских петушков еще называют бойцовыми рыбками. Изначально они разводили на рисовых полях в Таиланде и Юго-Восточной Азии. Популярная рыба для аквариумов за свой драчливый характер",
+        "en_description": "Pronounced pla-COT, they are a short-finned variety of Betta Splendens. They were originally selected out of rice paddies in Thailand and Southeast Asia and bred for their fighting abilities",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "остров"
+      },
+      {
+        "key": "item_044",
+        "ru_name": "Рыба-попугай",
+        "en_name": "Parrotfish",
+        "ru_description": "Рыба-попугай — красочная и прожорливая травоядная рыба, которая 90% своих дней проводит, поедая своим клювом водоросли на коралловых рифах. Они испражняются песком, что только на руку местным пляжникам...",
+        "en_description": "Parrotfish are colorful and voracious herbivores that spend up to 90% of their day eating algae off of coral reefs with their beak-like teeth. And they defecate sand, keeping beaches beachy",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "остров"
+      },
+      {
+        "key": "item_045",
+        "ru_name": "Рыба-бабочка",
+        "en_name": "Butterflyfish",
+        "ru_description": "Хотя некоторые виды не обладают яркой окраской, большинство можно распознать по замысловатым узорами на чешуе синего, красного, оранжевого или желтого цвета. У многих присутствуют полосы, маскирующие глаза, и круглые, похожие на глаза точки на боках, чтобы хищники не знали, с какой стороны атаковать",
+        "en_description": "Although some species are dull-colored, most wear intricate patterns with striking backgrounds of blue, red, orange, or yellow",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "остров"
+      },
+      {
+        "key": "item_046",
+        "ru_name": "Голубой тунец",
+        "en_name": "Bluefin Tuna",
+        "ru_description": "Голубой тунец является самой большой разновидностью тунца",
+        "en_description": "Bluefin are the largest tuna",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "остров"
+      },
+      {
+        "key": "item_047",
+        "ru_name": "Зелёный петушок",
+        "en_name": "Green Plakat",
+        "ru_description": "Довольно умные для рыб. Их даже можно дрессировать, чтобы узнавать хозяев или выполнять трюки",
+        "en_description": "They are quite intelligent as fish go, and they can even be trained to recognize their owners and do tricks",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "остров"
+      },
+      {
+        "key": "item_048",
+        "ru_name": "Леопардовая акула",
+        "en_name": "Leopard Shark",
+        "ru_description": "Не представляют опасности людям. Леопардовые акулы популярны среди коммерческих и туристических рыболовных компаний, которые ловят их для еды и аквариумов",
+        "en_description": "Harmless to humans, the leopard shark is caught by commercial and recreational fisheries for food and the aquarium trade",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "остров"
+      },
+      {
+        "key": "item_049",
+        "ru_name": "Морской ерш",
+        "en_name": "Scorpionfish",
+        "ru_description": "Члены семейства ершовых умеют сливаться с окружающей средой, что делает их одними из самых опасных хищников в своей среде обитания",
+        "en_description": "Members of the scorpionfish family are experts at blending in with their surroundings, making them excellent ambush predators in their habitat",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "остров"
+      },
+      {
+        "key": "item_050",
+        "ru_name": "Королевская чухонь",
+        "en_name": "Royal Sabrefish",
+        "ru_description": "Почему королевская? Никто толком не знает",
+        "en_description": "How Royal? We are not sure",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "остров"
+      },
+      {
+        "key": "item_051",
+        "ru_name": "Рыба-меч",
+        "en_name": "Swordfish",
+        "ru_description": "Популярная среди рыболовов, хоть и трудноуловимая рыба из семейства марлиновых",
+        "en_description": "They are a popular sport fish of the billfish category, though elusive",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "остров"
+      },
+      {
+        "key": "item_052",
+        "ru_name": "Золотая макрель",
+        "en_name": "Golden Mahi Mahi",
+        "ru_description": "Эта рыба привлекает к себе внимание великолепным золотым цветом",
+        "en_description": "They are distinguished by dazzling colors, in this case GOLD!",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "остров"
+      }
+    ]
+  },
+  {
+    "key": "collection_005",
+    "ru_name": "Окаменелости",
+    "en_name": "Fossils",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "Громадный трилобит",
+        "en_name": "",
+        "ru_description": "Слово «трилобит» значит «три лба». Но никак не значит «бить по лбу в три раза сильнее»!",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_002",
+        "ru_name": "Доисторический камень",
+        "en_name": "",
+        "ru_description": "В доисторические времена все камни имели форму треугольника с острыми краями, что позволяло древним людям использовать их для охоты. Со временем люди начали заниматься сельским хозяйством и завели домашний скот, надобность в камнях отпала, и те превратились в толстые круглые комочки",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_003",
+        "ru_name": "Доисторический след от копыта",
+        "en_name": "",
+        "ru_description": "Пещерный человек сохранял следы животных и выставлял их в знаменитой пещере-музее на всеобщее обозрение. Представьте, как повезло современным антропологам, когда они нашли удачно сохранившиеся следы в одном месте!",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_004",
+        "ru_name": "Коготь хищника",
+        "en_name": "",
+        "ru_description": "Этот коготь принадлежал охотнице, чтобы атаковать не только спереди, но и сбоку — все думали, что по бокам на них нападают еще хищники. Очень умная девочка",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_005",
+        "ru_name": "Окаменелая рука персонажа",
+        "en_name": "",
+        "ru_description": "Эта окаменелая рука — мрачное напоминание того, что чрезмерное и чересчур рьяное пожатие рук может привести к трагедии",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_006",
+        "ru_name": "Окаменелое морское чудовище",
+        "en_name": "",
+        "ru_description": "Миллиарды лет назад могущественный волшебник бороздил морские просторы и сражался с морскими чудовищами. Одно из чудовищ было решило, что взяло верх над волшебником, и опомнилось только на дне морском, уже будучи каменной статуей",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_007",
+        "ru_name": "Окаменелое яйцо",
+        "en_name": "",
+        "ru_description": "Из этого яйца ничто не вылупится, но невольно возникает вопрос, не детеныш динозавра ли в нем спрятан, или, может быть, цыпленок огромной доисторической курицы",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_008",
+        "ru_name": "Окаменелый отпечаток растения",
+        "en_name": "",
+        "ru_description": "Вощеная бумага появилась сравнительно недавно. Когда пещерные люди находили листья, которые им нравились, они обрамляли их в глиняную рамку, высушивали и выставляли рядом с коврами из меха мамонтов",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_009",
+        "ru_name": "Уморительно маленькие лапки тираннозавра",
+        "en_name": "",
+        "ru_description": "Лапы тираннозавра в свое время считались символом удачи. Люди вешали их на запястья, брелоки для ключей и на зеркала в машинах. Ученые подтвердили, что лапы не приносят удачу, хотя им посчастливилось найти аж две!",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common"
+      },
+      {
+        "key": "item_010",
+        "ru_name": "Доисторическая птица",
+        "en_name": "",
+        "ru_description": "Почти идеально сохраненный скелет птицы, которая, как известно, бессистемно меняла направление полета, чтобы отвлечь других хищников. Недостатком такого защитного поведения было постоянное столкновение с деревьями и камнями, что приводило к моментальной смерти",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_011",
+        "ru_name": "Окаменелое вымя",
+        "en_name": "",
+        "ru_description": "Каждый ученый знает, что у доисторических коров, как у акул, было несколько рядов зубов. Неудивительно, что их вымя обладало такой прочностью. Именно поэтому этот образец идеально сохранился даже спустя миллиарды лет после того, как эти мирные гиганты бродили по миру",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_012",
+        "ru_name": "Отлично сохранившиеся усы",
+        "en_name": "",
+        "ru_description": "Эта окаменелость указывает на кончину настоящего древнего джентльмена. Джентльмена, упавшего лицом в древнюю грязь",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon"
+      },
+      {
+        "key": "item_013",
+        "ru_name": "Голова прапрапраперсонажа",
+        "en_name": "",
+        "ru_description": "Аустралосимикус афаренсис, или «прапрапраперсонаж», жил в периоде от 3,9 до 2,9 млн. лет назад. Не ВСЕ это время, конечно, а где-то в этот период... Короче, это редкая находка!",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_014",
+        "ru_name": "Окаменелое непонятно что",
+        "en_name": "",
+        "ru_description": "Эта окаменелость поставила в тупик многих экспертов традиционных научных дисциплин. Никто так и не знает, что это такое",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_015",
+        "ru_name": "Окаменелый череп пришельца",
+        "en_name": "",
+        "ru_description": "Это либо доказательство существования внеземных форм жизни, либо просто папье-маше — ученые так и не могут определить!",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "rare"
+      },
+      {
+        "key": "item_016",
+        "ru_name": "Окаменелый песчаный червь",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "на работу"
+      },
+      {
+        "key": "item_017",
+        "ru_name": "Окаменелый мозазавр",
+        "en_name": "",
+        "ru_description": "Крошечный и противный грызун доисторических времен теперь навсегда увековечен в камне. Главное, не уроните его!",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "джунгли"
+      },
+      {
+        "key": "item_018",
+        "ru_name": "Окаменелый палец задней лапы ламы",
+        "en_name": "",
+        "ru_description": "У лам нет копыт, как у лошадей, овец или коров. Зато они обладают двумя пальцами, благодаря чему им удается удерживать равновесие даже на самых неровных поверхностях",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "common",
+        "pack": "джунгли"
+      },
+      {
+        "key": "item_019",
+        "ru_name": "Окаменелая пасть крокодила",
+        "en_name": "",
+        "ru_description": "Крокодилы зародились более 200 миллионов лет назад, но острота и опасность их зубов с тех пор не изменилась",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "джунгли"
+      },
+      {
+        "key": "item_020",
+        "ru_name": "Окаменелый след существа с тремя пальцами на задних лапах",
+        "en_name": "",
+        "ru_description": "Все доисторические существа с тремя пальцами на задних лапах решили эволюционировать. потому что многие начали путаться и принимали их следы за указатели или неприличные жесты",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "uncommon",
+        "pack": "джунгли"
+      },
+      {
+        "key": "item_021",
+        "ru_name": "Окаменелая обезьяна",
+        "en_name": "",
+        "ru_description": "Эта окаменелость обезьяны была найдена вместе со сломанной цепью. В цепи не хватает звена, а обезьяна, похоже, погибла в попытках его найти",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": "rare",
+        "pack": "джунгли"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  },
+  {
+    "key": "collection_001",
+    "ru_name": "",
+    "en_name": "",
+    "ru_description": "",
+    "en_description": "",
+    "items": [
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png",
+        "rarity": ""
+      },
+      {
+        "key": "item_001",
+        "ru_name": "",
+        "en_name": "",
+        "ru_description": "",
+        "en_description": "",
+        "icon": ".png"
+      }
+    ]
+  }
+]
