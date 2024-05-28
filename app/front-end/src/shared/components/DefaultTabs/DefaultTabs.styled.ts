@@ -1,11 +1,6 @@
-import { Box, styled, Tabs, TabsProps } from '@mui/material';
-import { ForwardedRef, forwardRef } from 'react';
+import { Tabs, styled } from '@mui/material';
 
-export interface DefaultTabsProps extends TabsProps {
-  adjustForPaperBox?: boolean;
-}
-
-const StyledTabs = styled(Tabs)`
+export const StyledTabs = styled(Tabs)`
   & .MuiButtonBase-root.Mui-selected {
     color: ${(props) => props.theme.color.primaryMain};
     background-color: ${(props) => props.theme.color.infoLight};
@@ -28,7 +23,6 @@ const StyledTabs = styled(Tabs)`
   .MuiTab-root {
     background-color: ${(props) => props.theme.color.actionSelected};
     color: ${(props) => props.theme.color.textSecondary};
-    text-transform: uppercase;
     font-size: 12px;
     line-height: 18px;
     border-radius: 24px;
@@ -46,24 +40,7 @@ const StyledTabs = styled(Tabs)`
     gap: ${(props) => props.theme.spacing(1)};
   }
 
-  .MuiTabs-indicator {
-    display: none;
-  }
-
   .MuiSvgIcon-root {
     color: ${(props) => props.theme.color.primaryMain};
   }
 ` as typeof Tabs;
-
-const DefaultTabs = (
-  { sx, className, adjustForPaperBox = true, ...tabsProps }: DefaultTabsProps,
-  ref: ForwardedRef<any>,
-) => {
-  return (
-    <Box ref={ref} sx={{ mx: adjustForPaperBox ? undefined : 0, ...sx }} className={className}>
-      <StyledTabs {...tabsProps} />
-    </Box>
-  );
-};
-
-export default forwardRef(DefaultTabs);

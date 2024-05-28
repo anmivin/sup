@@ -154,5 +154,47 @@
     "ru_name": "Чародей",
     "en_name": "Spellcaster",
     "part": ["sims_4"]
+  },
+  {
+    "key": "impregnation_types_woohoo",
+    "ru_name": "ВуХу",
+    "en_name": "WooHoo",
+    "part": ["sims_1", "sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "impregnation_types_adoption",
+    "ru_name": "Усыновление",
+    "en_name": "Adoption",
+    "part": ["sims_1", "sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "impregnation_types_ alienabduction",
+    "ru_name": "Похищение пришельцами",
+    "en_name": "Alien abduction",
+    "part": ["sims_2", "sims_3", "sims_4"]
+  },
+  {
+    "key": "impregnation_types_cloning",
+    "ru_name": "Клонирование",
+    "en_name": "Cloning",
+    "part": ["sims_3"]
+  },
+  {
+    "key": "impregnation_types_",
+    "ru_name": "Семечко запретного плода",
+    "en_name": "",
+    "part": ["sims_3"]
+  },
+  {
+    "key": "impregnation_types_",
+    "ru_name": "Моделирование детей",
+    "en_name": "",
+    "part": ["sims_3"]
+  },
+  {
+    "key": "impregnation_types_",
+    "ru_name": "Из пробирки",
+    "en_name": "",
+    "part": ["sims_4"]
   }
 ]

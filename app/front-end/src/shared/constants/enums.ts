@@ -2,18 +2,6 @@ export enum IconPaths {
   Achievements = '',
 }
 
-export enum Languages {
-  ru = 'Русский',
-  en = 'English',
-}
-
-export enum GameParts {
-  One = 'The Sims 1',
-  Two = 'The Sims 2',
-  Three = 'The Sims 3',
-  Four = 'The Sims 4',
-}
-
 export enum LIFE_STATES {
   Sim = 'Сим',
   Vampire = 'Вампир',

@@ -36,20 +36,21 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
 
-/* import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
+import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
 import * as path from 'path';
- */
+
 //из енва значения поставить
 @Module({
   imports: [
-    /*  I18nModule.forRoot({
+     I18nModule.forRoot({
       fallbackLanguage: 'ru',
       loaderOptions: {
         path: path.join(__dirname, '/i18n/'),
         watch: true,
       },
       resolvers: [{ use: QueryResolver, options: ['lang'] }, AcceptLanguageResolver],
-    }), */
+      typesOutputPath: path.join(__dirname, '../src/generated/i18n.generated.ts'),
+    }), 
     ConfigModule.forRoot({
       isGlobal: true,
       load: [NEST_CONFIG],

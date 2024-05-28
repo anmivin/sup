@@ -1,4 +1,4 @@
-/* import { decode } from 'jsonwebtoken'; */
+import { decode } from 'jsonwebtoken';
 import { StateCreator } from 'zustand';
 
 import { ProfileDataSliceProps, googleToken } from './Profile.types';
@@ -16,12 +16,12 @@ export const ProfileDataSlice: StateCreator<ProfileDataSliceProps, [], []> = (se
     } catch (e) {}
   },
   loginWithGoogle: async (payload) => {
-    /*  const decoded = decode(payload) as googleToken;
+    const decoded = decode(payload) as googleToken;
     const userCreds = { email: decoded.email, avatar: decoded.picture, name: decoded.name };
     try {
       const userId = await logInWithGoogleRequest(userCreds);
       set({ userId });
-    } catch (e) {} */
+    } catch (e) {}
   },
   logout: () => {
     set({ userId: null });

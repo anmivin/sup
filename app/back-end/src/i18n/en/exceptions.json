@@ -1,0 +1,23 @@
+{
+  "notfound": {
+    "masculine": "not found",
+    "feminine": "not found",
+    "neuter": "not found",
+    "plural": "not found"
+  },
+  "wrong": {
+    "masculine": "wrong",
+    "feminine": "wrong",
+    "neuter": "wrong",
+    "plural": "wrong"
+  },
+  "conflict": {
+    "single": "already exists",
+    "plural": "already exist"
+  },
+
+  "password": "password",
+  "user": "user",
+  "username": "username",
+  "email": "email"
+}

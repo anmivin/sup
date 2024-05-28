@@ -16,8 +16,8 @@ interface RoutesProps {
 }
 
 export const routes: RoutesProps[] = [
-  /*   { link: '/profile/mypage', key: 'profile', group: 'profile', Component:  },
-  { link: '/profile/settings', key: 'settings', group: 'profile', Component }, */
+  { link: '/profile/mypage', key: 'profile', group: 'profile', Component: Challenges },
+  { link: '/profile/settings', key: 'settings', group: 'profile', Component: Challenges },
   { link: '/trees', key: 'trees', group: 'main', Component: Trees },
   { link: '/challenges', key: 'challenges', group: 'challenges', Component: Challenges },
   /* { link: '/challenges/randomizer', key: 'randomizer', group: 'challenges', Component }, */

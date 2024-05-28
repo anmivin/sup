@@ -72,33 +72,6 @@ const Header = () => {
         <Box
           display="flex"
           ref={MenuRef}
-          id="database"
-          onMouseEnter={(event) => {
-            setAnchorEl(event.currentTarget);
-            MenuRef.current = event.currentTarget;
-          }}
-          onMouseLeave={() => setAnchorEl(null)}
-        >
-          <DefaultButton decor="skewed" endIcon={<KeyboardDoubleArrowDownIcon />}>
-            {t('data.pages.challenges')}
-          </DefaultButton>
-          <StyledPoper open={anchorEl?.id === 'database'} anchorEl={MenuRef.current} disablePortal>
-            <MenuList>
-              {routes
-                .filter((rout) => rout.group === 'challenges')
-                .map((route) => (
-                  <DefaultMenuItem key={route.link} onClick={() => setAnchorEl(null)}>
-                    <Link style={{ textDecoration: 'none', color: theme.color.textPrimary }} href={route.link}>
-                      {t(`data.pages.${route.key}`)}
-                    </Link>
-                  </DefaultMenuItem>
-                ))}
-            </MenuList>
-          </StyledPoper>
-        </Box>
-        <Box
-          display="flex"
-          ref={MenuRef}
           id="profile"
           onMouseEnter={(event) => {
             setAnchorEl(event.currentTarget);
@@ -112,7 +85,7 @@ const Header = () => {
           <StyledPoper open={anchorEl?.id === 'profile'} anchorEl={MenuRef.current} disablePortal>
             <MenuList>
               {routes
-                .filter((rout) => rout.group === 'profile' && rout.visible /* && user */)
+                .filter((rout) => rout.group === 'profile' && rout.visible  && userId)
                 .map((route) => (
                   <DefaultMenuItem key={route.link} onClick={() => setAnchorEl(null)}>
                     <Link href={route.link} style={{ textDecoration: 'none', color: theme.color.textPrimary }}>

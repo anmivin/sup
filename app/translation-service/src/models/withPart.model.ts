@@ -1,5 +1,5 @@
 import { PrimaryKey, DefaultScope, AutoIncrement, Model, DataType, Column, Table } from 'sequelize-typescript';
-
+import {GameParts} from '@backend-shared/types'
 export class TranslationWithPartModel extends Model<TranslationWithPartModel> {
   @AutoIncrement
   @Column
@@ -14,7 +14,7 @@ export class TranslationWithPartModel extends Model<TranslationWithPartModel> {
 
   @Column
   declare en_name: number;
-  @Column(DataType.ARRAY(DataType.ENUM({ values: ['sims_1', 'sims_2', 'sims_3', 'sims_4'] })))
+  @Column(DataType.ARRAY(DataType.ENUM({ values: GameParts })))
   declare part: string[];
 }
 

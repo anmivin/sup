@@ -16,11 +16,11 @@ import DefaultFormContainer from '@components/FormContainer';
 import { TreeStore } from '@stores/Handbook/Handbook.store';
 
 import { SIMS_DRAWER_TABS, SIMS_DRAWER_TABS_VARIATIONS } from './CreateSimDrawer.types';
-import { CreateSimDrawerProps, CreateSimForm, OptionProps, SimDrawerSchema } from './CreateSimDrawer.types';
+import { CreateSimDrawerProps, CreateSimForm, SimDrawerSchema } from './CreateSimDrawer.types';
 
 const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues }: CreateSimDrawerProps) => {
   const [selectedTab, setSelectedTab] = useState<SIMS_DRAWER_TABS_VARIATIONS>(SIMS_DRAWER_TABS_VARIATIONS.PersonalData);
-  const { t } = useTranslation(['aspirations', 'skills', 'traits']);
+  const { t } = useTranslation(['aspirations', 'skills', 'traits', 'treeRelated']);
   const { aspirations, skills, traits } = TreeStore();
 
   const formMethods = useForm<CreateSimForm>({
@@ -59,8 +59,6 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues }: CreateSimD
       image: formdata.image,
       treeId: 1,
       part: '',
-      birthYear: +(formdata.birthYear ?? 0),
-      deathYear: +(formdata.deathYear ?? 0),
       parentFirstId: formdata.parentFirstId,
       parentSecondId: formdata.parentSecondId,
       partnersIds: formdata.partners ?? [],

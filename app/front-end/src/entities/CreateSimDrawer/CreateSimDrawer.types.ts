@@ -14,43 +14,42 @@ export enum partnershipType {
   married = 'married',
   partners = 'partners',
 }
-export interface OptionProps {
-  localName: string;
-}
+
 export interface CreateSimForm {
   name: string;
   image: string;
+  isDead: boolean;
+  deathCause?: string | null;
   part: string;
-  birthYear?: string;
-  deathYear?: string;
   parentFirstId?: number | null;
   parentSecondId?: number | null;
   partners: { id?: string; type?: partnershipType }[];
   aspirations: { localName?: string; completed: boolean }[];
-
-  traits: OptionProps[];
-  /*   careers: {careerId: number, level: string}[];
-    collections: {collectionId: number, }[]; */
+  traits: string[];
   skills: { localName?: string; level: number }[];
+  careers: { localName: string; level: string }[];
+  collections: { localName: string }[];
 }
 
 export const SimDrawerSchema: ZodType<CreateSimForm> = z.object({
   name: z.string(),
   image: z.string(),
+  isDead: z.boolean(),
+  deathCause: z.string().optional(),
   part: z.string(),
-  birthYear: z.string().optional(),
-  deathYear: z.string().optional(),
   parentFirstId: z.number().optional(),
   parentSecondId: z.number().optional(),
   partners: z.array(z.object({ id: z.string(), type: z.nativeEnum(partnershipType) })),
   aspirations: z.array(z.object({ localName: z.string(), completed: z.boolean() })),
   traits: z.array(z.string()),
   skills: z.array(z.object({ localName: z.string(), level: z.number() })),
+  careers: z.array(z.object({ localName: z.string(), level: z.string() })),
+  collections: z.array(z.object({ localName: z.string() })),
 });
 
 export enum SIMS_DRAWER_TABS_VARIATIONS {
-  PersonalData = 'personalData',
-  Qualities = 'qualities',
+  PersonalData = 'tree_mainInfo',
+  Qualities = 'tree_qualities',
 }
 
 export enum SIMS_DRAWER_TABS_NAMES {

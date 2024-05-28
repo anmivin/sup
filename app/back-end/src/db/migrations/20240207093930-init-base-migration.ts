@@ -20,20 +20,14 @@ module.exports = {
       type: {
         type: DataTypes.ENUM('local', 'google'),
       },
-    });
-    await queryInterface.createTable('avatars', {
-      id: {
-        allowNull: false,
-        primaryKey: true,
+      image_path: {
         type: DataTypes.STRING,
       },
-      image: {
-        type: DataTypes.STRING,
-      },
-      thumbnale: {
+      image_path_tn: {
         type: DataTypes.STRING,
       },
     });
+
     await queryInterface.createTable('trees', {
       id: {
         allowNull: false,
@@ -50,7 +44,10 @@ module.exports = {
       name: {
         type: DataTypes.STRING,
       },
-      image: {
+      image_path: {
+        type: DataTypes.STRING,
+      },
+      image_path_tn: {
         type: DataTypes.STRING,
       },
     });
@@ -71,7 +68,10 @@ module.exports = {
       name: {
         type: DataTypes.STRING,
       },
-      image: {
+      image_path: {
+        type: DataTypes.STRING,
+      },
+      image_path_tn: {
         type: DataTypes.STRING,
       },
       is_in_tree: {
@@ -85,7 +85,7 @@ module.exports = {
         },
       },
       part: {
-        type: DataTypes.STRING,
+        type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
       },
     });
     await queryInterface.createTable('packs', {
@@ -104,9 +104,37 @@ module.exports = {
         type: DataTypes.STRING,
       },
     });
+    await queryInterface.createTable('buildings', {
+      id: {
+        allowNull: false,
+        primaryKey: true,
+        type: DataTypes.STRING,
+      },
+      user_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'users',
+          key: 'id',
+        },
+      },
+      lot_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'lots',
+          key: 'id',
+        },
+      },
+      image_path: {
+        type: DataTypes.STRING,
+      },
+      image_path_tn: {
+        type: DataTypes.STRING,
+      },
+    })
   },
 
   async down(queryInterface: QueryInterface, sequelize: Sequelize) {
+    await queryInterface.dropTable('buildings');
     await queryInterface.dropTable('packs');
     await queryInterface.dropTable('sims');
     await queryInterface.dropTable('trees');
