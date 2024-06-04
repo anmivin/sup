@@ -1,0 +1,41 @@
+[
+  { "key": "pages_error", "ru_name": "Вернуться на главную", "en_name": "Back to Home Page" },
+  { "key": "pages_profile", "ru_name": "Профиль", "en_name": "Profile" },
+  { "key": "pages_login", "ru_name": "Войти", "en_name": "Login" },
+  { "key": "pages_logout", "ru_name": "Выйти", "en_name": "Logout" },
+  { "key": "pages_signup", "ru_name": "Зарегистрироваться", "en_name": "Sign Up" },
+  { "key": "pages_settings", "ru_name": "Настройки", "en_name": "Settings" },
+  { "key": "pages_trees", "ru_name": "Деревья", "en_name": "Trees" },
+  { "key": "pages_challenges", "ru_name": "Челленджи", "en_name": "Challenges" },
+  { "key": "pages_randomizer", "ru_name": "Рандомайзер", "en_name": "Randomizer" },
+  { "key": "pages_handbook", "ru_name": "Справочник", "en_name": "Handbook" },
+  { "key": "pages_worlds", "ru_name": "Миры", "en_name": "Worlds" },
+  { "key": "pages_tracker", "ru_name": "Трекер", "en_name": "Tracker" },
+
+  { "key": "utility_open", "ru_name": "Открыть", "en_name": "Open" },
+  { "key": "utility_close", "ru_name": "Закрыть", "en_name": "Close" },
+  { "key": "utility_save", "ru_name": "Сохранить", "en_name": "Save" },
+  { "key": "utility_cancel", "ru_name": "Отменить", "en_name": "Cancel" },
+  { "key": "utility_continue", "ru_name": "Продолжить", "en_name": "Continue" },
+  { "key": "utility_complete", "ru_name": "Завершить", "en_name": "Complete" },
+  { "key": "utility_reset", "ru_name": "Сбросить", "en_name": "Reset" },
+  { "key": "utility_back", "ru_name": "Назад", "en_name": "Back" },
+  { "key": "utility_exit", "ru_name": "Выйти", "en_name": "Exit" },
+  { "key": "utility_create", "ru_name": "Создать", "en_name": "Create" },
+  { "key": "utility_edit", "ru_name": "Редактировать", "en_name": "Edit" },
+  { "key": "utility_delete", "ru_name": "Удалить", "en_name": "Delete" },
+  {
+    "key": "utility_nooption",
+    "ru_name": "Нет доступных вариантов",
+    "en_name": "No available options"
+  },
+
+  { "key": "forms_username", "ru_name": "Логин", "en_name": "Username" },
+  { "key": "forms_password", "ru_name": "Пароль", "en_name": "Password" },
+  { "key": "forms_email", "ru_name": "Почта", "en_name": "Email" },
+  { "key": "forms_browse", "ru_name": "Выберите фйл", "en_name": "Browse file" },
+  { "key": "forms_drag", "ru_name": "или перетащиет его сюда", "en_name": "or drag it here" },
+
+  { "key": "misc_sim", "ru_name": "сима", "en_name": "sim" },
+  { "key": "misc_tree", "ru_name": "древо", "en_name": "house" }
+]

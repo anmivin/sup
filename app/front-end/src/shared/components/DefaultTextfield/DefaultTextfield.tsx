@@ -1,11 +1,11 @@
-import { FC, ForwardedRef, forwardRef } from 'react';
+import { ForwardedRef, forwardRef } from 'react';
 
 import { StyledTextField } from './DefaultTextfield.styled';
 
 import { DefaultTextfieldProps } from './DefaultTextfield.types';
 
-export const DefaultTextfield: FC<DefaultTextfieldProps> = forwardRef(
-  ({ ...rest }, ref: ForwardedRef<HTMLDivElement>) => {
+export const DefaultTextfield = forwardRef<HTMLDivElement, DefaultTextfieldProps>(
+  ({ ...rest }: DefaultTextfieldProps, ref: ForwardedRef<HTMLDivElement>) => {
     return <StyledTextField ref={ref} {...rest} />;
   },
 );

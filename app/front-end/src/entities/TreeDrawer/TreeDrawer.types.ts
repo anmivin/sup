@@ -1,6 +1,9 @@
 import { ZodType, z } from 'zod';
 
+import { DrawerVariants } from '@constants/sharedTypes';
+
 export interface CreateTreeDrawerProps {
+  type: DrawerVariants;
   onCloseModal: () => void;
 }
 

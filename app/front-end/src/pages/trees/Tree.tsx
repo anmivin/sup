@@ -8,6 +8,8 @@ import TreeDrawer from '@entities/TreeDrawer';
 
 import DefaultButton from '@components/DefaultButton';
 
+import { DrawerVariants } from '@constants/sharedTypes';
+
 import { TreeStore } from '@stores/Handbook/Handbook.store';
 
 /* import {
@@ -74,7 +76,7 @@ const Tree = () => {
           onCloseModal={() => setShowSimDrawer(false)}
         />
       )}
-      {showTreeDrawer && <TreeDrawer onCloseModal={() => setShowTreeDrawer(false)} />}
+      {showTreeDrawer && <TreeDrawer type={DrawerVariants.Create} onCloseModal={() => setShowTreeDrawer(false)} />}
     </>
   );
 };

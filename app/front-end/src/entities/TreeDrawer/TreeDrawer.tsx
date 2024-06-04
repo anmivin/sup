@@ -1,24 +1,31 @@
 import { useCallback } from 'react';
-import { useFormContext } from 'react-hook-form';
+import { useFieldArray, useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
+
+import { zodResolver } from '@hookform/resolvers/zod';
 
 import DefaultDrawer from '@components/DefaultDrawer';
 import DefaultTextField from '@components/DefaultTextfield/DefaultTextfield';
 import DefaultFormFooter from '@components/Form/FormFooter';
-import FormContainer from '@components/FormContainer';
+import DefaultFormContainer from '@components/FormContainer';
+
+import { DrawerVariants } from '@constants/sharedTypes';
 
 import { CreateTreeDrawerProps, CreateTreeForm, TreeDrawerSchema } from './TreeDrawer.types';
 
-const TreeDrawer = ({ onCloseModal }: CreateTreeDrawerProps) => {
+const TreeDrawer = ({ onCloseModal, type }: CreateTreeDrawerProps) => {
   const { t } = useTranslation();
-  const methods = useFormContext();
+
+  const formMethods = useForm<CreateTreeForm>({
+    resolver: zodResolver(TreeDrawerSchema),
+  });
 
   const {
     handleSubmit,
     formState: { errors },
     control,
     watch,
-  } = methods;
+  } = formMethods;
 
   const onSubmit = useCallback(async (formdata: CreateTreeForm) => {
     const data = {
@@ -34,12 +41,15 @@ const TreeDrawer = ({ onCloseModal }: CreateTreeDrawerProps) => {
   }, []);
 
   return (
-    <DefaultDrawer onClose={onCloseModal} label="CReata a sim">
-      <FormContainer onSubmit={onSubmit} schema={TreeDrawerSchema}>
+    <DefaultDrawer
+      onClose={onCloseModal}
+      label={`${t(type === DrawerVariants.Create ? 'data.utility.create' : 'data.utility.edit')} древо`}
+    >
+      <DefaultFormContainer formMethods={formMethods} onSubmit={onSubmit}>
         <DefaultTextField name="name" label="Имя" />
         <DefaultTextField name="image" label="Картинка" />
         <DefaultFormFooter onSubmit={handleSubmit(onSubmit)} />
-      </FormContainer>
+      </DefaultFormContainer>
     </DefaultDrawer>
   );
 };

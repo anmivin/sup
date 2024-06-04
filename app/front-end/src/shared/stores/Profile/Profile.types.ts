@@ -7,8 +7,8 @@ export interface ProfileStateSliceProps {
   gamePart: GameParts;
   setGamePart: (val: GameParts) => void;
 
-  isDarkTheme: boolean;
-  setIsDarkTheme: (val: boolean) => void;
+  isDarkTheme: () => boolean;
+  setIsDarkTheme: (val: () => boolean) => void;
 
   isSignFormOpen: boolean;
   setIsSignFormOpen: (val: boolean) => void;

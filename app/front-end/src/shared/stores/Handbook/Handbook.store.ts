@@ -10,9 +10,8 @@ export const TreeStore = create<HandbookStoreProps>((set) => ({
   traits: null,
   getAspirations: async () => {
     try {
-      console.log('???');
       const res = await fetchAspirations();
-      console.log(res);
+
       set({ aspirations: res });
     } catch (e) {}
   },

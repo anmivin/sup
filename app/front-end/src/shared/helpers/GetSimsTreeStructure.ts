@@ -1,5 +1,6 @@
+import { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
+
 import axios from 'axios';
-import { Dispatch, SetStateAction, useEffect, useState, useMemo } from 'react';
 
 export interface SimsProps {
   id: number;
@@ -35,7 +36,7 @@ export interface edgesProps {
 const GetSimsTreeStructure = (simData: SimsProps[]) => {
   const nodes: nodesProps[] = [];
   const edges: edgesProps[] = [];
-  console.log(simData);
+
   // const myNewArray = myArray.map((item, index) =>  { return {"number" :index + 1, ...item} }
   // sim birthYear === Y = previousSimY + (currentSimBirthYear - previousSimY.birtYear)
   simData.forEach((sim) => {
@@ -52,7 +53,7 @@ const GetSimsTreeStructure = (simData: SimsProps[]) => {
       },
     });
   });
-  console.log(nodes);
+
   /*   const root = data.find((sim) => !sim.parentFirstId && !sim.parentSecondId);
   if (!root) return;
   data.forEach((dat) => {

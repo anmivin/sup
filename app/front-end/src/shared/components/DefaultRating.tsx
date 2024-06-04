@@ -1,21 +1,17 @@
-import ViewStreamIcon from '@mui/icons-material/ViewStream';
 import { Rating } from '@mui/material';
+
+import { RatingFilledIcon, RatingIcon } from './Icons';
 
 const DefaultRating = () => {
   return (
     <>
       <Rating
-        precision={0.5}
+        max={10}
+        precision={1}
         defaultValue={2}
-        emptyIcon={<ViewStreamIcon sx={{ transform: 'rotate(90deg)' }} />}
-        icon={
-          <ViewStreamIcon
-            sx={{
-              transform: 'rotate(90deg)',
-              color: 'text.primary',
-            }}
-          />
-        }
+        emptyIcon={<RatingIcon />}
+        icon={<RatingFilledIcon color="backgroundPaper" />}
+        onChange={(e, value) => console.log(value)}
       />
     </>
   );

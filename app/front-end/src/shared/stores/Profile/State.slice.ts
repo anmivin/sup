@@ -11,9 +11,13 @@ export const ProfileStateSlice: StateCreator<ProfileStateSliceProps, [], []> = (
     set({ gamePart });
   },
 
-  isDarkTheme: false,
+  isDarkTheme: () => {
+    const storage = localStorage.getItem('theme');
+    return storage ? JSON.parse(storage) : false;
+  },
   setIsDarkTheme: (isDarkTheme) => {
     set({ isDarkTheme });
+    localStorage.setItem('theme', JSON.stringify(isDarkTheme()));
   },
 
   isSignFormOpen: false,
