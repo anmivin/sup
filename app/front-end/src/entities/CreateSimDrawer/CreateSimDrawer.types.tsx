@@ -1,4 +1,8 @@
+import { ReactNode } from 'react';
+
 import { ZodType, z } from 'zod';
+
+import { HeartBrokenIcon, RingIcon, RingsCrossedIcon, RingsIcon, TwoHeartsIcon } from '@components/Icons';
 
 export interface CreateSimDrawerProps {
   simsInTree: SimsProps[];
@@ -14,6 +18,14 @@ export enum partnershipType {
   married = 'married',
   partners = 'partners',
 }
+
+export const PartnershipIcons: Record<partnershipType, ReactNode> = {
+  [partnershipType.divorced]: <RingsCrossedIcon />,
+  [partnershipType.engaged]: <RingIcon />,
+  [partnershipType.exes]: <HeartBrokenIcon />,
+  [partnershipType.married]: <RingsIcon />,
+  [partnershipType.partners]: <TwoHeartsIcon />,
+};
 export interface OptionProps {
   localName: string;
 }

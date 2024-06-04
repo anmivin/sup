@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
@@ -53,7 +53,7 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
   }, []);
 
   return (
-    <DefaultModal open={false} onClose={onClose}>
+    <DefaultModal open={open} onClose={onClose}>
       <Box display="flex" flexDirection="column" gap={2} width="50%" justifyContent="center">
         <Controller control={control} name="name" render={({ field }) => <TextField {...field} label="name" />} />
         <Controller
@@ -75,7 +75,7 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
 
         <GoogleAuth
           type={isSignUp ? 'signUp' : 'signIn'}
-          isDarkTheme={isDarkTheme}
+          isDarkTheme={isDarkTheme()}
           onSuccess={(credentialResponse) => successHandler(credentialResponse)}
           onError={errorHandler}
         />

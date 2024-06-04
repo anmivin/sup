@@ -19,7 +19,7 @@ export const routes: RoutesProps[] = [
   /*   { link: '/profile/mypage', key: 'profile', group: 'profile', Component:  },
   { link: '/profile/settings', key: 'settings', group: 'profile', Component }, */
   { link: '/trees', key: 'trees', group: 'main', Component: Trees },
-  { link: '/challenges', key: 'challenges', group: 'challenges', Component: Challenges },
+  { link: '/challenges', key: 'challenges', group: 'main', Component: Challenges },
   /* { link: '/challenges/randomizer', key: 'randomizer', group: 'challenges', Component }, */
   { link: '/worlds', key: 'worlds', group: 'main', Component: Worlds },
   { link: '/tracker', key: 'tracker', group: 'main', Component: Tracker },

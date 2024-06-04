@@ -12,11 +12,11 @@ export const StyledButton = styled(Button)`
 
     padding: 0 20px;
     height: 40px;
-    transform: skewX(-28deg);
+    transform: skewX(-30deg);
     border-radius: 0px;
 
     > * {
-      transform: skewX(28deg);
+      transform: skewX(30deg);
     }
   }
 

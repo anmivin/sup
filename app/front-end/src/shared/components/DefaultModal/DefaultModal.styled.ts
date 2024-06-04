@@ -1,4 +1,4 @@
-import { Box, Modal, styled } from '@mui/material';
+import { Box, IconButton, Modal, styled } from '@mui/material';
 
 export const StyledModal = styled(Modal)`
   display: flex;
@@ -16,3 +16,5 @@ export const ModalContent = styled(Box)<{ maxW?: string; width?: string }>`
   max-width: ${({ maxW }) => maxW || '650px'};
   background: ${({ theme }) => theme.color.primaryMain};
 `;
+
+export const StyledIconButton = styled(IconButton)``;

@@ -1,6 +1,8 @@
-import { Box, Typography, styled, IconButton } from '@mui/material';
 import { useState } from 'react';
+
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { Box, IconButton, Typography, styled } from '@mui/material';
+
 const HelpBox = styled(Box)`
   background-color: ${({ theme }) => theme.color.primaryMain};
   color: ${({ theme }) => theme.color.textSecondary};
@@ -43,7 +45,7 @@ const HelpSection = () => {
     <RawBox>
       {open ? (
         <Box display="flex" flexDirection="row">
-          <HelpBox></HelpBox>
+          <HelpBox />
           <Rect>
             <IconButton onClick={() => setOpen(false)}>
               <FavoriteBorderIcon color="primary" fontSize="small" />

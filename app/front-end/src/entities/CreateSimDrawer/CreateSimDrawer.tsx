@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button, Select, Tab, Typography } from '@mui/material';
 
 import DefaultDrawer from '@components/DefaultDrawer';
+import DefaultRating from '@components/DefaultRating';
 import DefaultTabs from '@components/DefaultTabs';
 import FormAutocomplete from '@components/Form/FormAutocomplete';
 import FormCheckbox from '@components/Form/FormCheckbox';
@@ -178,7 +179,7 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues }: CreateSimD
                   options={skillsIds}
                   getOptionLabel={(option) => getLabel(option, 'skills')}
                 />
-
+                <DefaultRating />
                 <FormTextField type="number" name={`skills.${index}.level`} sx={{ width: '60px' }} />
               </Box>
             ))}

@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 import { ReactFlowProvider } from 'reactflow';
 import 'reactflow/dist/style.css';
 
@@ -19,11 +19,12 @@ const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
 const Providers = () => {
   const { isDarkTheme } = ProfileStore();
+
   return (
     <Suspense fallback={<Loader />}>
       <GoogleOAuthProvider clientId={googleClientId ?? ''}>
         <ReactFlowProvider>
-          <ThemeColorModeProvider isDarkTheme={isDarkTheme}>
+          <ThemeColorModeProvider isDarkTheme={isDarkTheme()}>
             <Routing />
           </ThemeColorModeProvider>
         </ReactFlowProvider>

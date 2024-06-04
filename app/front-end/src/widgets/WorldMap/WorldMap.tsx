@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { Box } from '@mui/material';
-import Link from 'next/link';
 
 import Loader from '@entities/Loader';
 

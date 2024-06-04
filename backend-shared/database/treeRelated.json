@@ -22,5 +22,8 @@
   { "key": "tree_aspirations", "ru_name": "Жизненные цели", "en_name": "Aspirations" },
   { "key": "tree_traits", "ru_name": "Черты характера", "en_name": "Traits" },
   { "key": "tree_lifeStyles", "ru_name": "Стиль жизни", "en_name": "Life style" },
-  { "key": "tree_milestones", "ru_name": "Рубежи", "en_name": "Milestones" }
+  { "key": "tree_milestones", "ru_name": "Рубежи", "en_name": "Milestones" },
+
+  { "key": "tree_sim", "ru_name": "сима", "en_name": "sim" },
+  { "key": "tree_tree", "ru_name": "древо", "en_name": "house" }
 ]
