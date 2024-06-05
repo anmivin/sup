@@ -1,22 +1,21 @@
 import { Button as MuiButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-import { rgbaFromHex } from '@components/DefaultComponents/theme/theme.lib';
-import { Color, ColorOptions } from '@components/DefaultComponents/theme/theme.types';
+import { Color, ColorOptions } from '@theme/theme.types';
 
 import { ButtonSize, buttonSizeMap } from './Button.constants';
 
-const getEventsColors = (color: ColorOptions, colorName: Color = 'black', variant = '') => {
+const getEventsColors = (color: ColorOptions, colorName: Color = 'secondaryMain', variant = '') => {
   const postFix = variant === 'contained' ? ':before' : '';
   return {
     [`&:focus-visible${postFix}`]: {
-      backgroundColor: rgbaFromHex(color[colorName], '200'),
+      backgroundColor: color[colorName],
     },
     [`&:hover${postFix}`]: {
-      backgroundColor: rgbaFromHex(color[colorName], '50'),
+      backgroundColor: color[colorName],
     },
     [`&:active${postFix}`]: {
-      backgroundColor: rgbaFromHex(color[colorName], '150'),
+      backgroundColor: color[colorName],
     },
   };
 };

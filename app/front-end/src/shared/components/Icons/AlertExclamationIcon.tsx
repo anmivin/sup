@@ -1,6 +1,6 @@
-import IconWrapper, { IconComponent } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@components/IconWrapper';
 
-const AlertExclamationIcon: IconComponent = (props) => {
+const AlertExclamationIcon = (props: IconProps) => {
   return (
     <IconWrapper {...props} isLineIcon>
       <path

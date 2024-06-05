@@ -4,9 +4,11 @@ import { ZodType, z } from 'zod';
 
 import { HeartBrokenIcon, RingIcon, RingsCrossedIcon, RingsIcon, TwoHeartsIcon } from '@components/Icons';
 
+import { DrawerVariants } from '@constants/sharedTypes';
+
 export interface CreateSimDrawerProps {
   simsInTree: SimsProps[];
-  type: 'edit' | 'create';
+  type: DrawerVariants;
   onCloseModal: () => void;
   defaultValues?: CreateSimForm;
 }
@@ -17,6 +19,21 @@ export enum partnershipType {
   exes = 'exes',
   married = 'married',
   partners = 'partners',
+}
+
+export enum sexType {
+  male = 'male',
+  female = 'female',
+}
+
+export enum lifestageType {
+  male = 'male',
+  female = 'female',
+}
+
+export enum lifestateType {
+  male = 'male',
+  female = 'female',
 }
 
 export const PartnershipIcons: Record<partnershipType, ReactNode> = {
@@ -31,6 +48,9 @@ export interface OptionProps {
 }
 export interface CreateSimForm {
   name: string;
+  sex: sexType;
+  lifestage: lifestageType;
+  lifestate: lifestateType;
   image: string;
   part: string;
   birthYear?: string;

@@ -1,9 +1,8 @@
-import { FC } from 'react';
-
 import { StyledMenu } from './Menu.styled';
+
 import { MenuProps } from './Menu.types';
 
-export const Menu: FC<MenuProps> = (props) => {
+export const Menu = (props: MenuProps) => {
   return <StyledMenu {...props} />;
 };
 

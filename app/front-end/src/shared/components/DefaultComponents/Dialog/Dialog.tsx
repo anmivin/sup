@@ -2,7 +2,7 @@ import { css, styled } from '@mui/material/styles';
 
 import IconButton from '@components/DefaultComponents/IconButton';
 import Text from '@components/DefaultComponents/Typography/Text';
-import { CloseIcon } from '@components/DefaultComponents/icons';
+import { CloseIcon } from '@components/Icons';
 
 import { StyledMuiDialog } from './Dialog.styled';
 

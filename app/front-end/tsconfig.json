@@ -25,6 +25,8 @@
     "paths": {
       "@app/*": ["./src/app/*"],
       "@pages/*": ["./src/pages/*"],
+      "@widgets/*": ["./src/widgets/*"],
+      "@features/*": ["./src/features/*"],
       "@entities/*": ["./src/entities/*"],
       "@api/*": ["./src/shared/api/*"],
       "@components/*": ["./src/shared/components/*"],
@@ -33,8 +35,6 @@
       "@stores/*": ["./src/shared/stores/*"],
       "@theme/*": ["./src/shared/theme/*"],
       "@assets/*": ["./src/shared/assets/*"],
-      "@widgets/*": ["./src/widgets/*"],
-      "@features/*": ["./src/features/*"],
       "@images/*": ["./public/*"]
     }
   },

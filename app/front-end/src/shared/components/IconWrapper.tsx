@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes, ReactNode } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 
 import { styled } from '@mui/material/styles';
 
@@ -12,16 +12,8 @@ export interface IconProps extends HTMLAttributes<SVGSVGElement> {
   responsive?: boolean;
   children?: ReactNode;
 }
-export type IconComponent = FC<IconProps>;
 
-const IconWrapper: IconComponent = ({
-  size = 24,
-  viewBox = '0 0 24 24',
-  color,
-  children,
-  responsive,
-  ...rest
-}: IconProps) => {
+const IconWrapper = ({ size = 24, viewBox = '0 0 24 24', color, children, responsive, ...rest }: IconProps) => {
   return (
     <StyledSvg
       {...rest}

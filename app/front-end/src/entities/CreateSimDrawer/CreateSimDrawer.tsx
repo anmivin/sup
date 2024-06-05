@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button, Select, Tab, Typography } from '@mui/material';
 
+import { PhotoUpload } from '@components/DefaultComponents/FileUploader';
 import DefaultDrawer from '@components/DefaultDrawer';
 import DefaultRating from '@components/DefaultRating';
 import DefaultTabs from '@components/DefaultTabs';
@@ -14,14 +15,16 @@ import DefaultFormFooter from '@components/Form/FormFooter';
 import FormTextField from '@components/Form/FormTextField';
 import DefaultFormContainer from '@components/FormContainer';
 
+import { DrawerVariants } from '@constants/sharedTypes';
+
 import { TreeStore } from '@stores/Handbook/Handbook.store';
 
 import { SIMS_DRAWER_TABS, SIMS_DRAWER_TABS_VARIATIONS } from './CreateSimDrawer.types';
 import { CreateSimDrawerProps, CreateSimForm, OptionProps, SimDrawerSchema } from './CreateSimDrawer.types';
 
-const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues }: CreateSimDrawerProps) => {
+const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimDrawerProps) => {
   const [selectedTab, setSelectedTab] = useState<SIMS_DRAWER_TABS_VARIATIONS>(SIMS_DRAWER_TABS_VARIATIONS.PersonalData);
-  const { t } = useTranslation(['aspirations', 'skills', 'traits']);
+  const { t } = useTranslation(['translation', 'aspirations', 'skills', 'traits']);
   const { aspirations, skills, traits } = TreeStore();
 
   const formMethods = useForm<CreateSimForm>({
@@ -99,7 +102,10 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues }: CreateSimD
   }, []);
 
   return (
-    <DefaultDrawer onClose={onCloseModal} label="CReata a sim">
+    <DefaultDrawer
+      onClose={onCloseModal}
+      label={`${t(type === DrawerVariants.Create ? 'data.utility.create' : 'data.utility.edit')} древо`}
+    >
       <DefaultFormContainer formMethods={formMethods} onSubmit={onSubmit}>
         <DefaultTabs value={selectedTab} onChange={(_e, value) => setSelectedTab(value as SIMS_DRAWER_TABS_VARIATIONS)}>
           {SIMS_DRAWER_TABS.map((tab) => (
@@ -108,8 +114,14 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues }: CreateSimD
         </DefaultTabs>
         {selectedTab === SIMS_DRAWER_TABS_VARIATIONS.PersonalData && (
           <>
-            <FormTextField name="name" label="Имя" />
-            <FormTextField name="image" label="Картинка" />
+            <Box display="flex" gap={2}>
+              <PhotoUpload onFilesAdd={() => {}} />
+              <Box display="flex" flexDirection="column" gap={2} flexGrow={1}>
+                <FormTextField name="name" label="Имя" />
+                <FormTextField name="name" label="Пол" />
+              </Box>
+            </Box>
+
             <FormTextField name="part" label="Часть" />
             <FormTextField name="birthYear" label="Родился" />
             <FormTextField name="deathYear" label="Помер" />

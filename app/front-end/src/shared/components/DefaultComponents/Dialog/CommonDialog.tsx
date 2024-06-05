@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 import Button, { ButtonProps } from '@components/DefaultComponents/Button';
 
@@ -15,7 +15,7 @@ export interface CommonDialogProps extends Omit<DialogProps, 'content' | 'childr
   actions?: ButtonProps[];
 }
 
-export const CommonDialog: FC<CommonDialogProps> = ({ content, title, actions, onClose, ...rest }) => {
+export const CommonDialog = ({ content, title, actions, onClose, ...rest }: CommonDialogProps) => {
   return (
     <Dialog {...rest} onClose={onClose}>
       {title && <DialogTitle>{title}</DialogTitle>}

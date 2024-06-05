@@ -1,12 +1,10 @@
-import { FC } from 'react';
-
 import { Box, Typography } from '@mui/material';
 
 import { StyledBox } from './DefaultCard.styled';
 
 import { DefaultCardProps } from './DefaultCard.types';
 
-const DefaultCard: FC<DefaultCardProps> = ({ label, description, image, width }) => {
+const DefaultCard = ({ label, description, image, width }: DefaultCardProps) => {
   return (
     <StyledBox width={width}>
       {image && <img src={image.src} alt={image.alt} width={image.width} height={image.height} />}

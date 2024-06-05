@@ -22,10 +22,10 @@ export const AlertColorMaps: AlertColorProps = {
   default: { icon: <AlertDotsIcon /> },
 };
 
-const alertTypeStyles = (blank: boolean, theme: Theme, severity: AlertColor) => {
+const alertTypeStyles = (theme: Theme, severity: AlertColor) => {
   return {
     borderRadius: 4,
-    ...(blank ? {} : { border: `1px solid ${alpha(theme.palette[severity].light, 0.15)}` }),
+    border: `1px solid ${alpha(theme.palette[severity].light, 0.15)}`,
   };
 };
 
@@ -34,7 +34,7 @@ export const StyledAlert = styled(Alert)(({ theme, severity }) => ({
   minWidth: 280,
   minHeight: 56,
   alignItems: 'center',
-  ...alertTypeStyles($blank, theme, severity as AlertColor),
+  ...alertTypeStyles(theme, severity as AlertColor),
   '.MuiAlert-action': {
     padding: '0 0 0 16px',
   },

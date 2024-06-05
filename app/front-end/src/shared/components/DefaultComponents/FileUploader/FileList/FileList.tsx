@@ -1,11 +1,7 @@
 import { CircularProgress } from '@mui/material';
 
-import ContextMenuButton from '@components/ContextMenuButton';
-import Box from '@components/DefaultComponents/Box';
-import FileFormatIcon from '@components/DefaultComponents/FileUploader/FileFormatIcon/FileFormatIcon';
 import IconButton from '@components/DefaultComponents/IconButton';
 import Text from '@components/DefaultComponents/Typography/Text';
-import { CloseIcon } from '@components/DefaultComponents/icons';
 import { formatFileSize } from '@components/DefaultComponents/libs';
 
 import { FileListItem, FileName, StyledMenuList } from './FileList.styled';
@@ -17,10 +13,10 @@ const FileList = <TFileData,>({ files, onFileRemove, onFileClick, itemActions }:
     <>
       {!!files.length && (
         <StyledMenuList>
-          {files.map((fileItem) => (
+          {/*           {files.map((fileItem) => (
             <FileListItem key={fileItem.key}>
               <Box display="flex" gap={1.5} alignItems="center" width="100%">
-                <FileFormatIcon filename={fileItem.properties.name} />
+               
                 <Box maxWidth="calc(100% - 48px)">
                   <Box display="flex" gap={0.5} alignItems="center">
                     <FileName onClick={onFileClick ? () => onFileClick(fileItem) : undefined}>
@@ -67,7 +63,7 @@ const FileList = <TFileData,>({ files, onFileRemove, onFileClick, itemActions }:
                 )}
               </Box>
             </FileListItem>
-          ))}
+          ))} */}
         </StyledMenuList>
       )}
     </>

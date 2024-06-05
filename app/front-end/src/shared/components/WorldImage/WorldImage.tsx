@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useRef } from 'react';
 
-import { Box, styled } from '@mui/material';
-
 import { GameParts } from '@constants/enums';
 
 import { AnimatedBox, Container, StyledBox } from './WorldImage.styled';
@@ -41,15 +39,15 @@ const WorldImage = <T extends GameParts>({ image }: WorldImageProps<T>) => {
     };
   }, []);
 
-  if (typeof image === 'string') return <StyledBox img={image} />;
+  if (typeof image === 'string') return <StyledBox $img={image} />;
 
   return (
     <Container ref={containerRef}>
-      <AnimatedBox className="fifth" img={image.fifth} />
-      <AnimatedBox className="fourth" img={image.fourth} speed={24} />
-      <AnimatedBox className="third" img={image.third} speed={18} />
-      <AnimatedBox className="second" img={image.second} speed={12} />
-      <AnimatedBox className="first" img={image.first} speed={8} />
+      <AnimatedBox className="fifth" $img={image.fifth} />
+      <AnimatedBox className="fourth" $img={image.fourth} $speed={24} />
+      <AnimatedBox className="third" $img={image.third} $speed={18} />
+      <AnimatedBox className="second" $img={image.second} $speed={12} />
+      <AnimatedBox className="first" $img={image.first} $speed={8} />
     </Container>
   );
 };

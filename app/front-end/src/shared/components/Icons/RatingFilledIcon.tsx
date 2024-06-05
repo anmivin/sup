@@ -1,6 +1,6 @@
-import IconWrapper, { IconComponent } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@components/IconWrapper';
 
-const RatingFilledIcon: IconComponent = (props) => {
+const RatingFilledIcon = (props: IconProps) => {
   return (
     <IconWrapper {...props}>
       <path

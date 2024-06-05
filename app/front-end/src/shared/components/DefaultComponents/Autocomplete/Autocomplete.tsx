@@ -1,10 +1,7 @@
 import { ForwardedRef, ReactElement, forwardRef } from 'react';
 
 import { Autocomplete as MUIAutocomplete } from '@mui/material';
-// eslint-disable-next-line import/named
-import { omit, pick } from 'lodash';
-
-import { TextField } from '@components/DefaultComponents/TextField/TextField';
+import { omit } from 'lodash';
 
 import { AutocompleteProps } from './Autocomplete.types';
 
@@ -22,31 +19,11 @@ function Autocomplete<
   }: AutocompleteProps<T, Multiple, DisableClearable, FreeSolo>,
   ref: ForwardedRef<HTMLInputElement>,
 ) {
-  const forwardedTextFieldProps = pick(restProps, [
-    'label',
-    'placeholder',
-    'required',
-    'error',
-    'helperText',
-    'onBlur',
-  ]);
-
   return (
     <MUIAutocomplete<T, Multiple, DisableClearable, FreeSolo>
       ref={ref}
       noOptionsText={noOptionsText}
-      renderInput={(params) =>
-        renderInput ? (
-          renderInput(params)
-        ) : (
-          <TextField
-            {...params}
-            {...forwardedTextFieldProps}
-            {...TextFieldProps}
-            InputProps={{ ...params.InputProps, ...(TextFieldProps?.InputProps || {}) }}
-          />
-        )
-      }
+      renderInput={(params) => renderInput(params)}
       {...omit(restProps, ['helperText', 'error'])}
     />
   );

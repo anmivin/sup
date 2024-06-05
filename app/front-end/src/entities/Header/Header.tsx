@@ -8,11 +8,11 @@ import SignForm from '@entities/SignForm';
 
 import { MoonIcon, SunIcon } from '@components/Icons';
 
+import routes from '@constants/routes';
+
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
-import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton, StyledPoper } from './Header.styled';
-
-import routes from '../../shared/pathes/routes';
+import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton } from './Header.styled';
 
 const Header = () => {
   const { t } = useTranslation();

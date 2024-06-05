@@ -17,5 +17,4 @@ declare module '@mui/material/Button' {
 
 export interface ButtonProps extends MuiButtonProps {
   component?: ElementType;
-  isLoading?: boolean;
 }

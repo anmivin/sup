@@ -1,6 +1,6 @@
-import IconWrapper, { IconComponent } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@components/IconWrapper';
 
-const ClipIcon: IconComponent = (props) => {
+const ClipIcon = (props: IconProps) => {
   return (
     <IconWrapper {...props} isLineIcon>
       <path

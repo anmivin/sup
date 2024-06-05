@@ -9,7 +9,6 @@ export type DefaultContextMenuItemProps = Omit<MenuItemProps, 'onClick'> & {
 
 export interface DefaultContextMenuProps {
   items: DefaultContextMenuItemProps[];
-  anchorEl?: Element | null;
   menuProps?: Omit<MenuProps, 'anchorEl' | 'open' | 'onClose'>;
   icon?: ReactNode;
 }

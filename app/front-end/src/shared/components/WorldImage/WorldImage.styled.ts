@@ -10,16 +10,16 @@ export const Container = styled(Box)`
   cursor: pointer;
 `;
 
-export const AnimatedBox = styled(Box)<{ img: string; speed?: number }>`
+export const AnimatedBox = styled(Box)<{ $img: string; $speed?: number }>`
   grid-column: 1;
   grid-row: 1;
   width: 300px;
   height: 300px;
-  background-image: ${({ img }) => `url(${img})`};
+  background-image: ${({ $img }) => `url(${$img})`};
   background-size: cover;
   border-radius: 50%;
   background-repeat: repeat-x;
-  animation: ${({ speed }) => (speed ? `move ${speed}s linear infinite` : undefined)};
+  animation: ${({ $speed }) => ($speed ? `move ${$speed}s linear infinite` : undefined)};
   animation-play-state: paused;
   @keyframes move {
     0% {
@@ -31,10 +31,10 @@ export const AnimatedBox = styled(Box)<{ img: string; speed?: number }>`
   }
 `;
 
-export const StyledBox = styled(Box)<{ img: string }>`
+export const StyledBox = styled(Box)<{ $img: string }>`
   width: 300px;
   height: 200px;
-  background-image: ${({ img }) => `url(${img})`};
+  background-image: ${({ $img }) => `url(${$img})`};
   background-size: cover;
   border-radius: ${({ theme }) => theme.radius.lg};
   cursor: pointer;

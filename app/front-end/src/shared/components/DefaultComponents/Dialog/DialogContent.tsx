@@ -1,7 +1,6 @@
 import { UIEvent, forwardRef, useCallback, useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
-import { mergeRefs } from 'react-merge-refs';
 
-import { debounce } from '@components/DefaultComponents/libs';
+import { debounce } from 'lodash';
 
 import { StyledMuiDialogContent } from './Dialog.styled';
 
@@ -44,7 +43,7 @@ export const DialogContent = forwardRef<DialogContentImperativeHandler, DialogCo
 
     return (
       <StyledMuiDialogContent
-        ref={mergeRefs([ref, localRef])}
+        ref={localRef /* mergeRefs([ref, localRef]) */}
         onScroll={handleScroll}
         {...rest}
         data-test-id="DialogContent"

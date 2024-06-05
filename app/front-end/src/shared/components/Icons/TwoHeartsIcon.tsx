@@ -1,6 +1,6 @@
-import IconWrapper, { IconComponent } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@components/IconWrapper';
 
-const TwoHeartsIcon: IconComponent = (props) => {
+const TwoHeartsIcon = (props: IconProps) => {
   return (
     <IconWrapper {...props} isLineIcon>
       <path

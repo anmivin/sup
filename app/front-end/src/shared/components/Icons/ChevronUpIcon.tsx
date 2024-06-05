@@ -1,6 +1,6 @@
-import IconWrapper, { IconComponent } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@components/IconWrapper';
 
-const ChevronUpIcon: IconComponent = (props) => {
+const ChevronUpIcon = (props: IconProps) => {
   return (
     <IconWrapper {...props} isLineIcon>
       <path d="M18 15L12 9L6 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

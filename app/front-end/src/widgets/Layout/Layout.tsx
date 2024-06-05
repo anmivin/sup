@@ -1,7 +1,6 @@
 import { ReactNode, useMemo } from 'react';
 
 import HelpSection from '@widgets/HelpSection/HelpSection';
-import classNames from 'classnames';
 import { useStore } from 'zustand';
 
 import Header from '@entities/Header/Header';
@@ -21,7 +20,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       {!isError && <Header />}
-      <ContentBox className={classNames({ isError: isError })}>{children}</ContentBox>
+      <ContentBox $noHeader={isError}>{children}</ContentBox>
       <HelpSection />
       <SignForm open={isSignFormOpen} onClose={() => setIsSignFormOpen(false)} />
     </>

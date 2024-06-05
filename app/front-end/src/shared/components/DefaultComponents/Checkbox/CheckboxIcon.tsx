@@ -1,5 +1,3 @@
-import { FC } from 'react';
-
 import clsx from 'clsx';
 
 import { CheckboxIconProps } from '@components/DefaultComponents/Checkbox/Checkbox.types';
@@ -14,16 +12,9 @@ const fontSizeToStrokeWidthMap = {
   [CheckboxSize.large]: 1.7,
 };
 
-export const CheckboxIcon: FC<CheckboxIconProps> = ({
-  indeterminate,
-  checked,
-  className,
-  size,
-  fontSize: _,
-  ...rest
-}) => {
+export const CheckboxIcon = ({ indeterminate, checked, className, size, fontSize: _, ...rest }: CheckboxIconProps) => {
   return (
-    <StyledCheckboxIcon indeterminate={indeterminate} checked={checked} className={clsx(className, 'checkboxIcon')}>
+    <StyledCheckboxIcon className={clsx(className, 'checkboxIcon')}>
       <svg {...rest} viewBox="0 0 20 20">
         <path d="M6 9.5L9 12.5L14 7.5" strokeWidth={fontSizeToStrokeWidthMap[size]} strokeLinecap="round" />
       </svg>

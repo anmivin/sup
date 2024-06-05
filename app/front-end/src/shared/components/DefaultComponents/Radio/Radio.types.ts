@@ -12,7 +12,6 @@ export interface RadioProps extends MuiRadioProps {
   error?: boolean;
 }
 export type RadioIconProps = SVGProps<SVGSVGElement> & {
-  indeterminate: boolean;
   checked?: boolean;
   size: RadioSizeKey;
 };

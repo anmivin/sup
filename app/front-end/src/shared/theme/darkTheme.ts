@@ -1,11 +1,13 @@
-import { commonColors } from './common/color';
 import { Components, PaletteOptions, createTheme } from '@mui/material/styles';
-import { commonTheme } from './common/commonTheme';
-import { commonPalette } from './common/palette';
-import { commonComponents } from './common/components';
+
 import { Theme } from './theme.types';
 
-export const color = {
+import { commonColors } from './common/color';
+import { commonTheme } from './common/commonTheme';
+import { commonComponents } from './common/components';
+import { commonPalette } from './common/palette';
+
+export const themeColor = {
   backgroundDefault: commonColors.monoDark,
   backgroundPaper: commonColors.transparentLight,
   primaryMain: commonColors.turqoiseLight,
@@ -29,7 +31,9 @@ export const color = {
   actionSelected: commonColors.monoExtra,
   actionDisable: commonColors.monoExtra,
   actionFocus: commonColors.monoExtra,
-} as const;
+};
+
+export const color = { ...themeColor, ...commonColors } as const;
 
 export type Color = keyof typeof color;
 

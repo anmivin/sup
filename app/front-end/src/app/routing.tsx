@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Error from '@widgets/Error';
 import Layout from '@widgets/Layout/Layout';
 
-import routes from '../shared/pathes/routes';
+import routes from '@constants/routes';
 
 const Routing = () => {
   return (
