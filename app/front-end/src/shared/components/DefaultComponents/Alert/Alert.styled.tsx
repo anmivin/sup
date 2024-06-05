@@ -15,17 +15,17 @@ import {
 import { AlertColorProps } from './Alert.types';
 
 export const AlertColorMaps: AlertColorProps = {
-  success: { icon: <AlertCheckIcon /> },
-  error: { icon: <AlertCloseIcon /> },
-  info: { icon: <AlertInfoIcon /> },
-  warning: { icon: <AlertExclamationIcon /> },
-  default: { icon: <AlertDotsIcon /> },
+  success: { icon: <AlertCheckIcon />, color: 'successMain' },
+  error: { icon: <AlertCloseIcon />, color: 'errorMain' },
+  info: { icon: <AlertInfoIcon />, color: 'infoMain' },
+  warning: { icon: <AlertExclamationIcon />, color: 'warningMain' },
+  default: { icon: <AlertDotsIcon />, color: 'infoMain' },
 };
 
-const alertTypeStyles = (blank: boolean, theme: Theme, severity: AlertColor) => {
+const alertTypeStyles = (theme: Theme, severity: AlertColor) => {
   return {
     borderRadius: 4,
-    ...(blank ? {} : { border: `1px solid ${alpha(theme.palette[severity].light, 0.15)}` }),
+    border: `1px solid ${theme.color[AlertColorMaps[severity]]}`,
   };
 };
 
@@ -34,7 +34,7 @@ export const StyledAlert = styled(Alert)(({ theme, severity }) => ({
   minWidth: 280,
   minHeight: 56,
   alignItems: 'center',
-  ...alertTypeStyles($blank, theme, severity as AlertColor),
+  ...alertTypeStyles(theme, severity as AlertColor),
   '.MuiAlert-action': {
     padding: '0 0 0 16px',
   },

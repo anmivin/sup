@@ -16,7 +16,8 @@ internal
   .use(initReactI18next)
   .init<HttpBackendOptions>({
     partialBundledLanguages: true,
-    ns: [],
+    ns: ['translation'],
+    defaultNS: 'translation',
     resources: {},
     fallbackLng: fallbackLanguage,
     backend: {

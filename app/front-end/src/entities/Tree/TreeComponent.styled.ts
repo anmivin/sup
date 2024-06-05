@@ -18,7 +18,7 @@ export const StyledIconButton = styled(Box)`
   align-items: center;
   display: flex;
   background-color: ${({ theme }) => theme.color.primaryMain};
-  border: ${({ theme }) => `4px solid ${theme.color.errorMain}`};
+  border: ${({ theme }) => `4px solid ${theme.color.textMain}`};
 `;
 
 export const TheBox = styled(Box)`
@@ -41,7 +41,7 @@ export const Circle = styled(Box)`
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: ${({ theme }) => theme.color.errorMain};
+  background-color: ${({ theme }) => theme.color.textMain};
   position: absolute;
   top: 80px;
   left: 80px;
@@ -67,5 +67,5 @@ export const Invis = styled(Box)`
 `;
 
 export const InnerIconButtom = styled(IconButton)`
-  color: ${({ theme }) => theme.color.errorMain};
+  color: ${({ theme }) => theme.color.textMain};
 `;

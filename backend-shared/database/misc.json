@@ -47,6 +47,7 @@
     "en_name": "Elder",
     "part": ["sims_2", "sims_3", "sims_4"]
   },
+
   {
     "key": "life_states_human",
     "ru_name": "Человек",

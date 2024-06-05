@@ -1,20 +1,11 @@
 import { ForwardedRef, forwardRef } from 'react';
 
-import Box from '@components/DefaultComponents/Box';
-import { CircularProgress } from '@components/DefaultComponents/Progress';
-
 import { StyledCheckbox } from './Checkbox.styled';
 
-import { CheckboxProps, CheckboxSizeKey } from './Checkbox.types';
+import { CheckboxProps } from './Checkbox.types';
 
 import { DEFAULT_CHECKBOX_SIZE, DEFAULT_CHECKBOX_VARIANT } from './Checkbox.constants';
 import { CheckboxIcon } from './CheckboxIcon';
-
-const CheckboxFontSizeMap: Record<CheckboxSizeKey, number> = {
-  small: 16,
-  medium: 20,
-  large: 24,
-};
 
 export const Checkbox = forwardRef<HTMLButtonElement, CheckboxProps>(
   (
@@ -27,14 +18,6 @@ export const Checkbox = forwardRef<HTMLButtonElement, CheckboxProps>(
     }: CheckboxProps,
     ref: ForwardedRef<HTMLButtonElement>,
   ) => {
-    if (isLoading) {
-      return (
-        <Box p={2}>
-          <CircularProgress size={CheckboxFontSizeMap[size]} />
-        </Box>
-      );
-    }
-
     return (
       <StyledCheckbox
         ref={ref}

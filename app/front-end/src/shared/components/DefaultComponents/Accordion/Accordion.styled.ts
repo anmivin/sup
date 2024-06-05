@@ -10,7 +10,7 @@ export const StyledAccordion = styled(MuiAccordion)`
   border-bottom: 1px solid ${({ theme }) => theme.palette.divider};
 
   &.Mui-disabled {
-    background-color: ${({ theme }) => theme.color.monoA100};
+    background-color: ${({ theme }) => theme.color.primaryDark};
   }
 `;
 

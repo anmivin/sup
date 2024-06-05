@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { NodeProps } from 'reactflow';
 
 import AddIcon from '@mui/icons-material/Add';
@@ -11,7 +10,7 @@ interface NodeData {
   onClick: () => void;
 }
 
-const AddNode: FC<NodeProps<NodeData>> = ({ data }) => {
+const AddNode = ({ data }: NodeProps<NodeData>) => {
   return (
     <Tooltip title={data.name}>
       <StyledIconButton>

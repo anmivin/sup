@@ -3,9 +3,9 @@ import { styled } from '@mui/material/styles';
 
 export const MenuList = styled(MuiMenuList)`
   .MuiMenuItem-root.Mui-selected {
-    background-color: ${({ theme }) => theme.color.secondaryA100};
+    background-color: ${({ theme }) => theme.color.primaryDark};
     &:hover {
-      background-color: ${({ theme }) => theme.color.secondaryA150};
+      background-color: ${({ theme }) => theme.color.primaryMain};
     }
   }
 `;

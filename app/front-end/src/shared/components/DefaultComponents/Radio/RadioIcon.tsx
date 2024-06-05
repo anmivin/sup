@@ -1,5 +1,3 @@
-import { FC } from 'react';
-
 import clsx from 'clsx';
 
 import { RadioIconProps } from '@components/DefaultComponents/Radio/Radio.types';
@@ -14,9 +12,9 @@ const fontSizeToStrokeWidthMap = {
   [RadioSize.large]: 3,
 };
 
-export const RadioIcon: FC<RadioIconProps> = ({ indeterminate, checked, className, size, fontSize: _, ...rest }) => {
+export const RadioIcon = ({ checked, className, size, fontSize: _, ...rest }: RadioIconProps) => {
   return (
-    <StyledRadioIcon indeterminate={indeterminate} checked={checked} className={clsx(className, 'RadioIcon')}>
+    <StyledRadioIcon className={clsx(className, 'RadioIcon')}>
       <svg {...rest} viewBox="0 0 20 20">
         <circle cx="10" cy="10" r={fontSizeToStrokeWidthMap[size]} />
       </svg>

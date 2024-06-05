@@ -1,6 +1,6 @@
-import IconWrapper, { IconComponent } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@components/IconWrapper';
 
-const ToggleLeftIcon: IconComponent = (props) => {
+const ToggleLeftIcon = (props: IconProps) => {
   return (
     <IconWrapper {...props} isLineIcon>
       <path

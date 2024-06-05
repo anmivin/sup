@@ -1,3 +1,6 @@
+import { forwardRef } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import { PaperProps } from '@mui/material';
 import { omit } from 'lodash';
 
@@ -15,13 +18,15 @@ const DefaultAutocomplete = <
   FreeSolo extends boolean | undefined = undefined,
 >({
   renderInput,
-  noOptionsText = 'Нет доступных значений',
+  ref,
   ...props
 }: DefaultAutocompleteProps<T, Multiple, DisableClearable, FreeSolo>) => {
+  const { t } = useTranslation();
   return (
-    <StyledAutocomplete<T, Multiple, DisableClearable, FreeSolo>
+    <StyledAutocomplete
+      ref={ref}
       PaperComponent={CustomPaper}
-      noOptionsText={noOptionsText}
+      noOptionsText={t('data.utility.nooption')}
       renderInput={(params) => renderInput(params)}
       {...omit(props, ['helperText', 'error'])}
     />

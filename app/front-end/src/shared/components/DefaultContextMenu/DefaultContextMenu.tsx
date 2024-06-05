@@ -5,12 +5,10 @@ import Menu, { MenuItem } from '@components/Menu';
 
 import { DefaultContextMenuProps } from './DefaultContextMenu.types';
 
-const DefaultContextMenu = ({ items, anchorEl, menuProps, icon }: DefaultContextMenuProps) => {
+const DefaultContextMenu = ({ items, menuProps, icon }: DefaultContextMenuProps) => {
   const [isShowMenu, toggleShowMenu] = useState<boolean>(false);
   const contextMenuButton = useRef<HTMLButtonElement>(null);
-  if (!anchorEl) {
-    return null;
-  }
+
   return (
     <>
       <IconButton
@@ -21,7 +19,7 @@ const DefaultContextMenu = ({ items, anchorEl, menuProps, icon }: DefaultContext
       >
         {icon}
       </IconButton>
-      <Menu anchorEl={anchorEl} open={isShowMenu} onClose={() => toggleShowMenu(false)} {...menuProps}>
+      <Menu anchorEl={contextMenuButton.current} open={isShowMenu} onClose={() => toggleShowMenu(false)} {...menuProps}>
         {items.map(({ onClick, label, children, id, key, ...rest }, index) => (
           <MenuItem
             {...rest}

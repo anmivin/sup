@@ -1,6 +1,6 @@
-import IconWrapper, { IconComponent } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@components/IconWrapper';
 
-const CameraPlusIcon: IconComponent = (props) => {
+const CameraPlusIcon = (props: IconProps) => {
   return (
     <IconWrapper {...props} isLineIcon>
       <path

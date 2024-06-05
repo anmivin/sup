@@ -11,10 +11,16 @@ export class BasicController {
   @Get('/:lang')
   @ApiOperation({ summary: 'Get all achievements' })
   @ApiParam({ name: 'lang', required: true, description: 'Language' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success', type: BasicTranslationDto })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: BasicTranslationDto,
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getBaseTranslations(@Param('lang') lang: 'ru' | 'en'): Promise<BasicTranslationDto> {
+  async getBaseTranslations(
+    @Param('lang') lang: 'ru' | 'en',
+  ): Promise<BasicTranslationDto> {
     return await this.basicService.getBaseTranslations(lang);
   }
 }

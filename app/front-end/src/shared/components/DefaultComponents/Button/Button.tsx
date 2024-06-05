@@ -1,12 +1,10 @@
 import { Children, ForwardedRef, cloneElement, forwardRef, isValidElement, useMemo } from 'react';
 
-import { CircularProgress } from '@components/DefaultComponents/Progress';
-
 import { StyledButton } from './Button.styled';
 
 import { ButtonProps } from './Button.types';
 
-import { DEFAULT_BUTTON_SIZE, DEFAULT_BUTTON_VARIANT, buttonSizeMap } from './Button.constants';
+import { DEFAULT_BUTTON_SIZE, DEFAULT_BUTTON_VARIANT } from './Button.constants';
 
 const resizeIcon = (iconElement: ButtonProps['startIcon'], size: ButtonProps['size']) => {
   return Children.map(iconElement, (child) => {
@@ -26,7 +24,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       children,
       startIcon,
       endIcon,
-      isLoading = false,
+
       disabled = false,
       ...rest
     }: ButtonProps,
@@ -44,24 +42,10 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           size={size}
           startIcon={startIconSized}
           endIcon={endIconSized}
-          disabled={isLoading || disabled}
+          disabled={disabled}
           {...rest}
         >
           {children && <span className="buttonContentWrapper">{children}</span>}
-          {isLoading && (
-            <CircularProgress
-              size={buttonSizeMap[size] / 2}
-              color={color}
-              sx={{
-                position: 'absolute',
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 0,
-                margin: 'auto',
-              }}
-            />
-          )}
         </StyledButton>
       </>
     );

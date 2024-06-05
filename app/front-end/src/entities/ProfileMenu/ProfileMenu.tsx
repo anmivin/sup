@@ -16,7 +16,7 @@ import { ProfileStore } from '@stores/Profile/Profile.store';
 
 import { ProfileMenuProps } from './ProfileMenu.types';
 
-import routes from '../../shared/pathes/routes';
+import routes from '../../shared/constants/routes';
 
 const ProfileMenu = ({ onOpenLoginForm }: ProfileMenuProps) => {
   const { t, i18n } = useTranslation();

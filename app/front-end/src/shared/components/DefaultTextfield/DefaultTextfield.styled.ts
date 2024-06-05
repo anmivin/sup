@@ -19,6 +19,10 @@ export const StyledTextField = styled(TextField)(({ theme }) => ({
     '&.Mui-focused:not(.Mui-error) fieldset': {
       borderColor: theme.color.infoDark,
     },
+
+    '&.Mui-disabled fieldset': {
+      borderColor: theme.color.infoDark,
+    },
   },
 
   '& .MuiInput-root': {

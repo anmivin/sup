@@ -8,11 +8,11 @@ import SignForm from '@entities/SignForm';
 
 import { MoonIcon, SunIcon } from '@components/Icons';
 
+import routes from '@constants/routes';
+
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
-import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton, StyledPoper } from './Header.styled';
-
-import routes from '../../shared/pathes/routes';
+import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton } from './Header.styled';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -25,8 +25,8 @@ const Header = () => {
       <Box display="flex" flexDirection="row" justifyContent="flex-end" gap={2} alignItems="center">
         <Switch
           onChange={(e) => setIsDarkTheme(() => e.target.checked)}
-          checkedIcon={<MoonIcon color="textPrimary" />}
-          icon={<SunIcon color="textPrimary" />}
+          checkedIcon={<MoonIcon color="textMain" />}
+          icon={<SunIcon color="textMain" />}
           checked={isDarkTheme()}
         />
       </Box>

@@ -1,9 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 
 import { clsx } from 'clsx';
-
-import { useAutoRef } from '@components/DefaultComponents/hooks/useAutoRef';
-import { generateUniqueID } from '@components/DefaultComponents/libs';
+import { uniqueId } from 'lodash';
 
 import { StyledButton, StyledButtonGroup } from './ButtonToggle.styled';
 
@@ -21,10 +19,6 @@ const ButtonToggle = <T extends string | number>({
   ButtonGroupProps,
   disableRipple = true,
 }: ButtonToggleProps<T>) => {
-  const refProps = useAutoRef({
-    onChange,
-  });
-
   const isControlled = useMemo(() => value !== undefined, [value]);
   const [innerValue, setInnerValue] = useState(defaultValue);
   const actualValue = useMemo(() => (isControlled ? value : innerValue), [innerValue, isControlled, value]);
@@ -32,7 +26,7 @@ const ButtonToggle = <T extends string | number>({
   const optionItems = useMemo<OptionItem<T>[]>(
     () =>
       options.map((optionItem) => ({
-        key: getOptionKey?.(optionItem) ?? generateUniqueID(),
+        key: getOptionKey?.(optionItem) ?? uniqueId(),
         label: getOptionLabel?.(optionItem) ?? `${optionItem}`,
         value: optionItem,
       })),
@@ -41,13 +35,13 @@ const ButtonToggle = <T extends string | number>({
 
   const handleChange = useCallback(
     (value: T) => {
-      refProps.current.onChange?.(value);
+      onChange?.(value);
 
       if (!isControlled) {
         setInnerValue(value);
       }
     },
-    [isControlled, refProps],
+    [isControlled],
   );
 
   return (

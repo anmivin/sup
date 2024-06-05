@@ -1,4 +1,4 @@
-import { FC, ReactNode, useMemo } from 'react';
+import { ReactNode, useMemo } from 'react';
 
 import { GlobalStyles } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
@@ -12,7 +12,7 @@ interface ThemeColorModeProviderProps {
   isDarkTheme: boolean;
 }
 
-const ThemeColorModeProvider: FC<ThemeColorModeProviderProps> = ({ children, isDarkTheme }) => {
+const ThemeColorModeProvider = ({ children, isDarkTheme }: ThemeColorModeProviderProps) => {
   const curretnTheme = useMemo(() => {
     return isDarkTheme ? ThemeName.dark : ThemeName.light;
   }, [isDarkTheme]);

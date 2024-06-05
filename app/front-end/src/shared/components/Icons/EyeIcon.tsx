@@ -1,6 +1,6 @@
-import IconWrapper, { IconComponent } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@components/IconWrapper';
 
-const EyeIcon: IconComponent = (props) => {
+const EyeIcon = (props: IconProps) => {
   return (
     <IconWrapper {...props} isLineIcon>
       <path

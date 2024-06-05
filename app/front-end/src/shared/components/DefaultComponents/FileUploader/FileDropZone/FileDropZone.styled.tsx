@@ -10,9 +10,7 @@ export const DragAndDropZone = styled('button')`
   width: 100%;
   gap: ${({ theme }) => theme.spacing(1)};
   padding: ${({ theme }) => theme.spacing(12, 3)};
-  border: 1px dashed ${({ theme }) => theme.color.monoA100};
   border-radius: ${({ theme }) => theme.spacing(2)};
-  color: ${({ theme }) => theme.color.monoA400};
   background: ${({ theme }) => theme.color.monoA50};
   transition: background 0.3s ease-out;
 

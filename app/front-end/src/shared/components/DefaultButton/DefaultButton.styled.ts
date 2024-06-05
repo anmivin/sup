@@ -1,7 +1,7 @@
 import { Button, styled } from '@mui/material';
 
 export const StyledButton = styled(Button)`
-  color: ${({ theme }) => theme.color.textSecondary};
+  color: ${({ theme }) => theme.color.textMain};
   &.skewed {
     background-color: ${({ theme }) => theme.color.primaryMain};
     box-shadow: ${({ theme }) => `0px 0px 8px 0px ${theme.color.secondaryMain}`};
@@ -21,7 +21,7 @@ export const StyledButton = styled(Button)`
   }
 
   &.underscored {
-    border-bottom: ${({ theme }) => `2px solid ${theme.color.textPrimary}`};
+    border-bottom: ${({ theme }) => `2px solid ${theme.color.textMain}`};
     border-radius: 0px;
     padding: 16px 0;
     height: 20px;

@@ -8,6 +8,7 @@ export const TreeStore = create<HandbookStoreProps>((set) => ({
   aspirations: null,
   skills: null,
   traits: null,
+  deaths: null,
   getAspirations: async () => {
     try {
       const res = await fetchAspirations();
@@ -25,6 +26,12 @@ export const TreeStore = create<HandbookStoreProps>((set) => ({
     try {
       const res = await fetchTraits();
       set({ traits: res });
+    } catch (e) {}
+  },
+  getDeaths: async () => {
+    try {
+      const res = await fetchTraits();
+      set({ deaths: res });
     } catch (e) {}
   },
 }));

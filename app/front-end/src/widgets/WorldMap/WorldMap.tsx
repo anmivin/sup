@@ -1,13 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { Box } from '@mui/material';
-import clsx from 'clsx';
 
 import Loader from '@entities/Loader';
 
 import { WorldStore } from '@stores/World/World.store';
 
-import { StyledSvgPath } from './WorldMap.styles';
+import { StyledSvgPath } from './WorldMap.styled';
 
 const WorldMap = () => {
   const { selectedWorld, loadingSelectedWorld } = WorldStore();
@@ -53,7 +52,7 @@ const WorldMap = () => {
               <StyledSvgPath
                 key={index}
                 d={p.path}
-                className={clsx(selectedLot === p.key && 'isSelected')}
+                $selected={selectedLot === p.key}
                 onMouseOver={() => setSelectedLot(p.key)}
                 onMouseLeave={() => setSelectedLot(null)}
                 onClick={() => {}}

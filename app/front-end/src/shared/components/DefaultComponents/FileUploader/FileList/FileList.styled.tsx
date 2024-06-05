@@ -1,7 +1,6 @@
-import { MenuList } from '@mui/material';
+import { MenuList, css, styled } from '@mui/material';
 
 import Text from '@components/DefaultComponents/Typography/Text';
-import { css, styled } from '@components/DefaultComponents/libs/material';
 
 export const StyledMenuList = styled(MenuList)`
   display: flex;

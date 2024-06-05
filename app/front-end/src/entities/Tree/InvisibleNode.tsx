@@ -1,13 +1,13 @@
-import { FC } from 'react';
-import { Handle, Position, NodeProps } from 'reactflow';
-import { Box, styled, Typography } from '@mui/material';
+import { Handle, NodeProps, Position } from 'reactflow';
+
+import { Box, Typography } from '@mui/material';
 
 interface NodeData {
   name: string;
   married: string;
 }
 
-const InvisibleNode: FC<NodeProps<NodeData>> = ({ data, isConnectable }) => {
+const InvisibleNode = ({ data, isConnectable }: NodeProps<NodeData>) => {
   return (
     <>
       <Handle id="top" type="target" position={Position.Top} isConnectable={isConnectable} />

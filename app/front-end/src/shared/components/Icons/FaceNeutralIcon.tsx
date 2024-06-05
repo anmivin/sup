@@ -1,6 +1,6 @@
-import IconWrapper, { IconComponent } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@components/IconWrapper';
 
-const FaceNeutralIcon: IconComponent = (props) => {
+const FaceNeutralIcon = (props: IconProps) => {
   return (
     <IconWrapper {...props} isLineIcon>
       <path

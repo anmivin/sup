@@ -2,7 +2,7 @@ import { ForwardedRef, forwardRef } from 'react';
 
 import { clsx } from 'clsx';
 
-import { CloseMediumIcon } from '@components/DefaultComponents/icons';
+import { CloseIcon } from '@components/Icons';
 
 import { StyledChip } from './Chip.styled';
 
@@ -14,7 +14,7 @@ export const Chip = forwardRef<HTMLDivElement, ChipProps>(
       color = 'default',
       variant = 'filled',
       size = 'small',
-      deleteIcon = <CloseMediumIcon size={20} />,
+      deleteIcon = <CloseIcon size={20} />,
       label,
       children,
       selected,

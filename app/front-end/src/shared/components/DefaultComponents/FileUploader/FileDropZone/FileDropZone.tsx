@@ -5,7 +5,6 @@ import { Typography } from '@mui/material';
 import clsx from 'clsx';
 
 import { fileFormatToMimeType } from '@components/DefaultComponents/FileUploader/FileDropZone/FileDropZone.constants';
-import { useAutoRef } from '@components/DefaultComponents/hooks/useAutoRef';
 import { UploadIcon } from '@components/Icons';
 
 import { DragAndDropZone, FileDropZoneLabel } from './FileDropZone.styled';
@@ -14,9 +13,6 @@ import { FileDropZoneProps } from './FileDropZone.types';
 
 const FileDropZone = ({ onFilesAdd, fileFormats, error }: FileDropZoneProps) => {
   const { t } = useTranslation();
-  const refedProps = useAutoRef({
-    onFilesAdd,
-  });
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -24,26 +20,20 @@ const FileDropZone = ({ onFilesAdd, fileFormats, error }: FileDropZoneProps) => 
 
   const [isDraggedOver, setIsDraggedOver] = useState(false);
 
-  const handleDrop = useCallback<DragEventHandler<HTMLButtonElement>>(
-    (event) => {
-      event.preventDefault();
-      if (event.dataTransfer.files) {
-        refedProps.current.onFilesAdd(Array.from(event.dataTransfer.files));
-      }
+  const handleDrop = useCallback<DragEventHandler<HTMLButtonElement>>((event) => {
+    event.preventDefault();
+    if (event.dataTransfer.files) {
+      onFilesAdd(Array.from(event.dataTransfer.files));
+    }
 
-      setIsDraggedOver(false);
-    },
-    [refedProps],
-  );
+    setIsDraggedOver(false);
+  }, []);
 
-  const handleInputChange = useCallback<ChangeEventHandler<HTMLInputElement>>(
-    (event) => {
-      if (event.target.files) {
-        refedProps.current.onFilesAdd(Array.from(event.target.files));
-      }
-    },
-    [refedProps],
-  );
+  const handleInputChange = useCallback<ChangeEventHandler<HTMLInputElement>>((event) => {
+    if (event.target.files) {
+      onFilesAdd(Array.from(event.target.files));
+    }
+  }, []);
 
   return (
     <DragAndDropZone

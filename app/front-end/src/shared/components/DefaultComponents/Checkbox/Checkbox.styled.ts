@@ -184,7 +184,7 @@ export const StyledCheckboxIcon = styled('div')(({ theme }) => ({
     fill: 'none',
     path: {
       transition: 'd 0.1s',
-      d: indeterminate ? "path('M6 10L9 10L14 10')" : "path('M6 9.5L9 12.5L14 7.5')",
+      d: "path('M6 9.5L9 12.5L14 7.5')",
     },
   },
 }));
