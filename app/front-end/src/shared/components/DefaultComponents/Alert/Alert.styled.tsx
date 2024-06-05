@@ -29,12 +29,7 @@ const alertTypeStyles = (blank: boolean, theme: Theme, severity: AlertColor) => 
   };
 };
 
-export const StyledAlert = styled(Alert)<{ $blank: boolean }>(({ $blank, theme, severity }) => ({
-  ...($blank
-    ? {
-        backgroundColor: 'white',
-      }
-    : {}),
+export const StyledAlert = styled(Alert)(({ theme, severity }) => ({
   color: theme.palette.text.primary,
   minWidth: 280,
   minHeight: 56,

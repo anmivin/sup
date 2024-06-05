@@ -1,17 +1,19 @@
 import { ChangeEventHandler, DragEventHandler, useCallback, useMemo, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Typography } from '@mui/material';
 import clsx from 'clsx';
 
 import { fileFormatToMimeType } from '@components/DefaultComponents/FileUploader/FileDropZone/FileDropZone.constants';
 import { useAutoRef } from '@components/DefaultComponents/hooks/useAutoRef';
-import { UploadIcon } from '@components/DefaultComponents/icons';
+import { UploadIcon } from '@components/Icons';
 
 import { DragAndDropZone, FileDropZoneLabel } from './FileDropZone.styled';
 
 import { FileDropZoneProps } from './FileDropZone.types';
 
-const FileDropZone = ({ onFilesAdd, maxFileSize = 50, fileFormats, error }: FileDropZoneProps) => {
+const FileDropZone = ({ onFilesAdd, fileFormats, error }: FileDropZoneProps) => {
+  const { t } = useTranslation();
   const refedProps = useAutoRef({
     onFilesAdd,
   });
@@ -68,17 +70,13 @@ const FileDropZone = ({ onFilesAdd, maxFileSize = 50, fileFormats, error }: File
       />
 
       <FileDropZoneLabel>
-        <UploadIcon color="primary" />
+        <UploadIcon />
         <Typography color="primary" variant="button" textTransform="none">
-          {isDraggedOver ? 'Перетащите сюда файл' : 'Выберите файлы'}
+          Выберите файлы
         </Typography>
       </FileDropZoneLabel>
 
-      <Typography>
-        {isDraggedOver ? 'отпустите файл в этой области ' : 'или перетащите файлы в эту область '}
-        <br />({fileFormats && fileFormats.length > 0 && Object.values(fileFormats).join(', ') + ' '}не более{' '}
-        {maxFileSize} мб)
-      </Typography>
+      <Typography>или перетащите файлы в эту область</Typography>
     </DragAndDropZone>
   );
 };

@@ -1,4 +1,4 @@
-import { styled } from '@components/DefaultComponents/libs/material';
+import { styled } from '@mui/material';
 
 export const DragAndDropZone = styled('button')`
   & > * {

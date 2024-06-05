@@ -1,8 +1,9 @@
 import { Checkbox as MuiCheckbox } from '@mui/material';
 import { Theme, styled } from '@mui/material/styles';
 
-import { CheckboxSize, CheckboxVariant, DEFAULT_CHECKBOX_SIZE, DEFAULT_CHECKBOX_VARIANT } from './Checkbox.constants';
 import { CheckboxProps, CheckboxSizeKey, CheckboxVariantKey } from './Checkbox.types';
+
+import { CheckboxSize, CheckboxVariant, DEFAULT_CHECKBOX_SIZE, DEFAULT_CHECKBOX_VARIANT } from './Checkbox.constants';
 
 const getSizeStyles = (size: CheckboxSizeKey) => {
   switch (size) {
@@ -158,13 +159,10 @@ export const StyledCheckbox = styled(MuiCheckbox)<CheckboxProps>(
     '&.Mui-disabled': {
       opacity: 0.3,
     },
-  })
+  }),
 );
 
-export const StyledCheckboxIcon = styled('div')<{
-  indeterminate: boolean;
-  checked?: boolean;
-}>(({ theme, indeterminate }) => ({
+export const StyledCheckboxIcon = styled('div')(({ theme }) => ({
   display: 'block',
   width: 'calc(1em - 2px)',
   height: 'calc(1em - 2px)',

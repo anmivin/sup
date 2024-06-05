@@ -9,11 +9,11 @@ export const StyledModal = styled(Modal)`
   }
 `;
 
-export const ModalContent = styled(Box)<{ maxW?: string; width?: string }>`
+export const ModalContent = styled(Box)`
   border-radius: 12px;
   width: fit-content;
   padding: 20px;
-  max-width: ${({ maxW }) => maxW || '650px'};
+  max-width: 650px;
   background: ${({ theme }) => theme.color.primaryMain};
 `;
 

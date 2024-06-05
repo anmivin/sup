@@ -1,8 +1,9 @@
 import { Radio as MuiRadio } from '@mui/material';
 import { Theme, styled } from '@mui/material/styles';
 
-import { DEFAULT_RADIO_SIZE, DEFAULT_RADIO_VARIANT, RadioSize, RadioVariant } from './Radio.constants';
 import { RadioProps, RadioSizeKey, RadioVariantKey } from './Radio.types';
+
+import { DEFAULT_RADIO_SIZE, DEFAULT_RADIO_VARIANT, RadioSize, RadioVariant } from './Radio.constants';
 
 const getSizeStyles = (size: RadioSizeKey) => {
   switch (size) {
@@ -158,13 +159,10 @@ export const StyledRadio = styled(MuiRadio)<RadioProps>(
     '&.Mui-disabled': {
       opacity: 0.3,
     },
-  })
+  }),
 );
 
-export const StyledRadioIcon = styled('div')<{
-  indeterminate: boolean;
-  checked?: boolean;
-}>(({ theme, indeterminate }) => ({
+export const StyledRadioIcon = styled('div')(({ theme }) => ({
   display: 'block',
   width: 'calc(1em - 2px)',
   height: 'calc(1em - 2px)',
@@ -185,17 +183,7 @@ export const StyledRadioIcon = styled('div')<{
     fill: 'currentColor',
     path: {
       transition: 'd 0.1s',
-      d: indeterminate ? "path('M6 10L9 10L14 10')" : "path('M6 9.5L9 12.5L14 7.5')",
+      d: "path('M6 10L9 10L14 10')",
     },
   },
 }));
-
-export const TemporaryLoadingWrapper = styled('div')`
-  position: relative;
-  width: 1em;
-  height: 1em;
-  > svg {
-    width: 100%;
-    height: 100%;
-  }
-`;

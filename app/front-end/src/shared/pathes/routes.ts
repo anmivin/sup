@@ -10,17 +10,21 @@ import { components } from '../api/TranslationsApi';
 interface RoutesProps {
   link: string;
   key: keyof components['schemas']['PagesBasicTranslationDto'];
-  group: string;
   visible?: boolean;
   Component: () => ReactElement;
 }
 
-export const routes: RoutesProps[] = [
-  /*   { link: '/profile/mypage', key: 'profile', group: 'profile', Component:  },
-  { link: '/profile/settings', key: 'settings', group: 'profile', Component }, */
-  { link: '/trees', key: 'trees', group: 'main', Component: Trees },
-  { link: '/challenges', key: 'challenges', group: 'main', Component: Challenges },
+const menuRoutes: RoutesProps[] = [
+  { link: '/trees', key: 'trees', Component: Trees },
+  { link: '/challenges', key: 'challenges', Component: Challenges },
   /* { link: '/challenges/randomizer', key: 'randomizer', group: 'challenges', Component }, */
-  { link: '/worlds', key: 'worlds', group: 'main', Component: Worlds },
-  { link: '/tracker', key: 'tracker', group: 'main', Component: Tracker },
+  { link: '/worlds', key: 'worlds', Component: Worlds },
+  { link: '/tracker', key: 'tracker', Component: Tracker },
 ];
+
+const profileRoutes: RoutesProps[] = [
+  { link: '/profile/mypage', key: 'profile', Component: Challenges },
+  { link: '/profile/settings', key: 'settings', Component: Challenges },
+];
+
+export default { menuRoutes, profileRoutes };

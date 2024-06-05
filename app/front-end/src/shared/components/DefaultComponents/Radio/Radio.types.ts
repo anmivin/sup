@@ -10,7 +10,6 @@ export type RadioSizeKey = keyof typeof RadioSize;
 export interface RadioProps extends MuiRadioProps {
   variant?: RadioVariantKey;
   error?: boolean;
-  isLoading?: boolean;
 }
 export type RadioIconProps = SVGProps<SVGSVGElement> & {
   indeterminate: boolean;

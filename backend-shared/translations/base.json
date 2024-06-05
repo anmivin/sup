@@ -24,9 +24,18 @@
   { "key": "utility_create", "ru_name": "Создать", "en_name": "Create" },
   { "key": "utility_edit", "ru_name": "Редактировать", "en_name": "Edit" },
   { "key": "utility_delete", "ru_name": "Удалить", "en_name": "Delete" },
-  { "key": "utility_noOption", "ru_name": "Нет доступных вариантов", "en_name": "No option" },
+  {
+    "key": "utility_nooption",
+    "ru_name": "Нет доступных вариантов",
+    "en_name": "No available options"
+  },
 
-  { "key": "settings_username", "ru_name": "Логин", "en_name": "Username" },
-  { "key": "settings_password", "ru_name": "Пароль", "en_name": "Password" },
-  { "key": "settings_email", "ru_name": "Почта", "en_name": "Email" }
+  { "key": "forms_username", "ru_name": "Логин", "en_name": "Username" },
+  { "key": "forms_password", "ru_name": "Пароль", "en_name": "Password" },
+  { "key": "forms_email", "ru_name": "Почта", "en_name": "Email" },
+  { "key": "forms_browse", "ru_name": "Выберите фйл", "en_name": "Browse file" },
+  { "key": "forms_drag", "ru_name": "или перетащиет его сюда", "en_name": "or drag it here" },
+
+  { "key": "misc_sim", "ru_name": "сима", "en_name": "sim" },
+  { "key": "misc_tree", "ru_name": "древо", "en_name": "house" }
 ]
