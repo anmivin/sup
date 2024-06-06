@@ -4,14 +4,15 @@ import { useTranslation } from 'react-i18next';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 
-import DefaultDrawer from '@components/DefaultDrawer';
 import DefaultTextField from '@components/DefaultTextfield/DefaultTextfield';
-import DefaultFormFooter from '@components/Form/FormFooter';
+import DefaultFormFooter from ../../shared/ui/DefaultTextfield/DefaultTextfield
 import DefaultFormContainer from '@components/FormContainer';
 
-import { DrawerVariants } from '@constants/sharedTypes';
+import { DRAWER_VARIANTS } from '@type/enums';
 
 import { CreateTreeDrawerProps, CreateTreeForm, TreeDrawerSchema } from './TreeDrawer.types';
+
+import DefaultDrawer from '../../shared/ui/DefaultDrawer';
 
 const TreeDrawer = ({ onCloseModal, type }: CreateTreeDrawerProps) => {
   const { t } = useTranslation();
@@ -43,7 +44,7 @@ const TreeDrawer = ({ onCloseModal, type }: CreateTreeDrawerProps) => {
   return (
     <DefaultDrawer
       onClose={onCloseModal}
-      label={`${t(type === DrawerVariants.Create ? 'data.utility.create' : 'data.utility.edit')} древо`}
+      label={`${t(type === DRAWER_VARIANTS.Create ? 'data.utility.create' : 'data.utility.edit')} древо`}
     >
       <DefaultFormContainer formMethods={formMethods} onSubmit={onSubmit}>
         <DefaultTextField name="name" label="Имя" />

@@ -27,6 +27,7 @@ module.exports = {
     '^@libs/(.*)$',
     '^@stores/(.*)$',
     '^@theme/(.*)$',
+    '^@ui/(.*)$',
     '^@assets/(.*)$',
     '^@images/(.*)$',
     '^./(.*).styled$',

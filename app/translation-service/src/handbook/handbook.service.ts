@@ -1,6 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { AspirationGroupsTranslationModel, TraitGroupsTranslationModel } from '../models/withPart.model';
+import {
+  AspirationGroupsTranslationModel,
+  TraitGroupsTranslationModel,
+} from '../models/withPart.model';
 import {
   AchievementsTranslationModel,
   AspirationsTranslationModel,
@@ -64,8 +67,18 @@ export class HandbookService {
     const translations = await this.traitGroupsTranslationModel.findAll();
     const getTrans = (lang: 'ru' | 'en') => {
       const obj: any = {};
-      obj.ru = Object.fromEntries(translations.map((translation) => [translation.key, translation.ru_name]));
-      obj.en = Object.fromEntries(translations.map((translation) => [translation.key, translation.en_name]));
+      obj.ru = Object.fromEntries(
+        translations.map((translation) => [
+          translation.key,
+          translation.ru_name,
+        ]),
+      );
+      obj.en = Object.fromEntries(
+        translations.map((translation) => [
+          translation.key,
+          translation.en_name,
+        ]),
+      );
       return obj[lang];
     };
     return { data: getTrans(lang) };
@@ -75,8 +88,18 @@ export class HandbookService {
     const translations = await this.aspirationGroupsTranslationModel.findAll();
     const getTrans = (lang: 'ru' | 'en') => {
       const obj: any = {};
-      obj.ru = Object.fromEntries(translations.map((translation) => [translation.key, translation.ru_name]));
-      obj.en = Object.fromEntries(translations.map((translation) => [translation.key, translation.en_name]));
+      obj.ru = Object.fromEntries(
+        translations.map((translation) => [
+          translation.key,
+          translation.ru_name,
+        ]),
+      );
+      obj.en = Object.fromEntries(
+        translations.map((translation) => [
+          translation.key,
+          translation.en_name,
+        ]),
+      );
       return obj[lang];
     };
     return { data: getTrans(lang) };

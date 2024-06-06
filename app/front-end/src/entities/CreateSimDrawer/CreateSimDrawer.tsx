@@ -3,11 +3,8 @@ import { useFieldArray, useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Box, Button, Tab, Typography } from '@mui/material';
-import { DRAWER_VARIANTS } from '@type/enums';
+import { Box, Button, Tab } from '@mui/material';
 
-import { PhotoUpload } from '@components/DefaultComponents/FileUploader';
-import DefaultDrawer from '@components/DefaultDrawer';
 import DefaultRating from '@components/DefaultRating';
 import DefaultTabs from '@components/DefaultTabs';
 import FormAutocomplete from '@components/Form/FormAutocomplete';
@@ -15,17 +12,22 @@ import FormCheckbox from '@components/Form/FormCheckbox';
 import DefaultFormFooter from '@components/Form/FormFooter';
 import FormTextField from '@components/Form/FormTextField';
 import DefaultFormContainer from '@components/FormContainer';
+import { PhotoUpload } from '@components/ImageUploader';
+../../shared/ui/ImageUploader
+import { DRAWER_VARIANTS, GAME_PART, SEX } from '@type/enums';
 
-import { TreeStore } from '@stores/Handbook/Handbook.store';
+import { HandbookStore } from '@stores/Handbook/Handbook.store';
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
 import { SIMS_DRAWER_TABS, SIMS_DRAWER_TABS_VARIATIONS } from './CreateSimDrawer.types';
 import { CreateSimDrawerProps, CreateSimForm, SimDrawerSchema } from './CreateSimDrawer.types';
 
+import DefaultDrawer from '../../shared/ui/DefaultDrawer';
+
 const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimDrawerProps) => {
   const [selectedTab, setSelectedTab] = useState<SIMS_DRAWER_TABS_VARIATIONS>(SIMS_DRAWER_TABS_VARIATIONS.MainInfo);
-  const { t } = useTranslation(['translation', 'aspirations', 'skills', 'traits']);
-  const { aspirations, skills, traits } = TreeStore();
+  const { t } = useTranslation(['translation', 'aspirations', 'skills', 'traits', 'misc', 'tree']);
+  const { aspirations, skills, traits } = HandbookStore();
   const { userId } = ProfileStore();
   const formMethods = useForm<CreateSimForm>({
     resolver: zodResolver(SimDrawerSchema),
@@ -107,7 +109,7 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
   return (
     <DefaultDrawer
       onClose={onCloseModal}
-      label={`${t(type === DRAWER_VARIANTS.Create ? 'data.utility.create' : 'data.utility.edit')} древо`}
+      label={`${t(type === DRAWER_VARIANTS.Create ? 'data.utility.create' : 'data.utility.edit')} ${t('data.misc.sim')}`}
     >
       <DefaultFormContainer formMethods={formMethods} onSubmit={onSubmit}>
         <DefaultTabs value={selectedTab} onChange={(_e, value) => setSelectedTab(value as SIMS_DRAWER_TABS_VARIATIONS)}>
@@ -120,25 +122,30 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
             <Box display="flex" gap={2}>
               <PhotoUpload onFilesAdd={() => {}} />
               <Box display="flex" flexDirection="column" gap={2} flexGrow={1}>
-                <FormTextField name="name" label="Имя" />
+                <FormTextField name="name" label={t('data.name', { ns: 'tree' })} />
                 <FormAutocomplete
-                  name="name"
+                  name="sex"
                   inputProps={{
                     label: 'Пол',
                   }}
-                  options={simsIds}
-                  getOptionLabel={(option) => option.name ?? ''}
+                  options={Object.keys(SEX)}
+                  getOptionLabel={(option) => t(`data.misc.${option as 'male' | 'female'}`, { ns: 'translation' })}
                 />
               </Box>
             </Box>
 
-            <FormTextField name="part" label="Часть" />
-            <FormTextField name="birthYear" label="Родился" />
-            <FormTextField name="deathYear" label="Помер" />
+            <FormAutocomplete
+              name="part"
+              inputProps={{
+                label: t('data.part', { ns: 'tree' }),
+              }}
+              options={Object.keys(GAME_PART)}
+              /*  getOptionLabel={(option) => t(`data.${option}`, { ns: 'tree' })} */
+            />
             <FormAutocomplete
               name="parentFirstId"
               inputProps={{
-                label: 'Первый родитель',
+                label: t('data.parents', { ns: 'tree' }),
               }}
               options={simsIds}
               getOptionLabel={(option) => option.name ?? ''}
@@ -146,7 +153,7 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
             <FormAutocomplete
               name="parentSecondId"
               inputProps={{
-                label: 'Второй родитель',
+                label: t('data.parents', { ns: 'tree' }),
               }}
               options={simsIds}
               getOptionLabel={(option) => option.name ?? ''}
@@ -157,7 +164,7 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
                 <FormAutocomplete
                   name={`partners.${index}.id`}
                   multiple
-                  inputProps={{ label: 'Партнеры' }}
+                  inputProps={{ label: t('data.partners', { ns: 'tree' }) }}
                   options={simsIds}
                   getOptionLabel={(option) => option.name ?? ''}
                 />
@@ -173,7 +180,7 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
                 <FormAutocomplete
                   name={`aspirations.${index}.localName`}
                   inputProps={{
-                    label: 'Жизненные цели',
+                    label: t('data.aspirations', { ns: 'tree' }),
                   }}
                   options={aspirationsIds}
                   getOptionLabel={(option) => getLabel(option, 'aspirations')}
@@ -187,7 +194,7 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
             <FormAutocomplete
               name="traits"
               multiple
-              inputProps={{ label: 'Черты характера' }}
+              inputProps={{ label: t('data.traits', { ns: 'tree' }) }}
               options={traitsIds}
               getOptionLabel={(option) => getLabel(option, 'traits') as string}
             />
@@ -196,7 +203,7 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
                 <FormAutocomplete
                   name={`skills.${index}.localName`}
                   inputProps={{
-                    label: 'Навыки',
+                    label: t('data.skills', { ns: 'tree' }),
                   }}
                   options={skillsIds}
                   getOptionLabel={(option) => getLabel(option, 'skills')}

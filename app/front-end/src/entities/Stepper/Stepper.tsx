@@ -3,11 +3,12 @@ import { useState } from 'react';
 import { Box, Step, StepContent, StepLabel, Stepper, Typography } from '@mui/material';
 
 import { StyledBox } from '@components/DefaultBox';
-import DefaultButton from '@components/DefaultButton/DefaultButton';
 
 import { CircleBox, StyledPaper } from './Stepper.styled';
 
 import { LabelProps, StepperProps } from './Stepper.types';
+
+import DefaultButton from '../../shared/ui/DefaultButton/DefaultButton';
 
 const LabelComponent = ({ step }: LabelProps) => {
   return <CircleBox>{step}</CircleBox>;

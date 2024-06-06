@@ -1,17 +1,18 @@
 import { useTranslation } from 'react-i18next';
 
 import DefaultRating from '@components/DefaultRating';
-import * as icons from '@components/Icons';
-import DefaultSpinner from '@components/Spinner/Spinner';
 
 /* import RandomAspiration from '@components/Randomizer/RandomAspiration';
 import RandomSkill from '@components/Randomizer/RandomSkill';
 import RandomTrait from '@components/Randomizer/RandomTrait'; */
-import { TreeStore } from '@stores/Handbook/Handbook.store';
+import { HandbookStore } from '@stores/Handbook/Handbook.store';
 
-TreeStore.getState().getAspirations();
-TreeStore.getState().getSkills();
-TreeStore.getState().getTraits();
+import * as icons from '../../shared/ui/Icons';
+import DefaultSpinner from '../../shared/ui/Spinner/Spinner';
+
+HandbookStore.getState().getAspirations();
+HandbookStore.getState().getSkills();
+HandbookStore.getState().getTraits();
 
 const Challenges = () => {
   const { t } = useTranslation(['achievements']);

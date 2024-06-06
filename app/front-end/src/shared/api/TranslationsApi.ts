@@ -33,6 +33,14 @@ export interface paths {
     /** Get all achievements */
     get: operations["HandbookController_getTraits"];
   };
+  "/misc/{lang}": {
+    /** Get all achievements */
+    get: operations["MiscController_getMiscTranslations"];
+  };
+  "/tree/{lang}": {
+    /** Get all achievements */
+    get: operations["MiscController_getTreeTranslations"];
+  };
 }
 
 export type webhooks = Record<string, never>;
@@ -66,15 +74,26 @@ export interface components {
       create: string;
       edit: string;
       delete: string;
+      nooption: string;
     };
-    SettingsBasicTranslationDto: {
+    FormsBasicTranslationDto: {
       username: string;
       password: string;
+      email: string;
+      browse: string;
+      drag: string;
+    };
+    MiscBasicTranslationDto: {
+      sim: string;
+      tree: string;
+      male: string;
+      female: string;
     };
     BasicTranslationNoLangDto: {
       pages: components["schemas"]["PagesBasicTranslationDto"];
       utility: components["schemas"]["UtilityBasicTranslationDto"];
-      settings: components["schemas"]["SettingsBasicTranslationDto"];
+      forms: components["schemas"]["FormsBasicTranslationDto"];
+      misc: components["schemas"]["MiscBasicTranslationDto"];
     };
     BasicTranslationDto: {
       data: components["schemas"]["BasicTranslationNoLangDto"];
@@ -123,6 +142,49 @@ export interface components {
       data: {
         [key: string]: components["schemas"]["TranslationWithDescriptionDto"];
       };
+    };
+    LifeStagesTranslationDto: {
+      baby: string;
+      infant: string;
+      toddler: string;
+      child: string;
+      teen: string;
+      youngadult: string;
+      adult: string;
+      elder: string;
+    };
+    MiscTranslationNoLangDto: {
+      lifeStage: components["schemas"]["LifeStagesTranslationDto"];
+      lifeState: components["schemas"]["LifeStagesTranslationDto"];
+    };
+    MiscTranslationDto: {
+      data: components["schemas"]["MiscTranslationNoLangDto"];
+    };
+    TreeRelatedTranslationDto: {
+      mainInfo: string;
+      qualities: string;
+      name: string;
+      image: string;
+      part: string;
+      dead: string;
+      deathCause: string;
+      age: string;
+      lifeState: string;
+      parents: string;
+      children: string;
+      impregnationType: string;
+      partners: string;
+      relationType: string;
+      collections: string;
+      achievements: string;
+      skills: string;
+      aspirations: string;
+      traits: string;
+      lifeStyles: string;
+      milestones: string;
+    };
+    TreeTranslationDto: {
+      data: components["schemas"]["TreeRelatedTranslationDto"];
     };
   };
   responses: never;
@@ -301,6 +363,56 @@ export interface operations {
       200: {
         content: {
           "application/json": components["schemas"]["TraitsDto"];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Get all achievements */
+  MiscController_getMiscTranslations: {
+    parameters: {
+      path: {
+        /** @description Language */
+        lang: string;
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["MiscTranslationDto"];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Get all achievements */
+  MiscController_getTreeTranslations: {
+    parameters: {
+      path: {
+        /** @description Language */
+        lang: string;
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["TreeTranslationDto"];
         };
       };
       /** @description Bad Request */

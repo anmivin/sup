@@ -6,13 +6,13 @@ import { Box, Link, Switch } from '@mui/material';
 import ProfileMenu from '@entities/ProfileMenu';
 import SignForm from '@entities/SignForm';
 
-import { MoonIcon, SunIcon } from '@components/Icons';
-
 import routes from '@constants/routes';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
-import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton } from './Header.styled';
+import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton, StyledLink } from './Header.styled';
+
+import { MoonIcon, SunIcon } from '../../shared/ui/Icons';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -25,8 +25,8 @@ const Header = () => {
       <Box display="flex" flexDirection="row" justifyContent="flex-end" gap={2} alignItems="center">
         <Switch
           onChange={(e) => setIsDarkTheme(() => e.target.checked)}
-          checkedIcon={<MoonIcon color="textMain" />}
-          icon={<SunIcon color="textMain" />}
+          checkedIcon={<MoonIcon color="textDark" />}
+          icon={<SunIcon color="textDark" />}
           checked={isDarkTheme()}
         />
       </Box>
@@ -35,9 +35,9 @@ const Header = () => {
           <StyledButton key={route.key}>
             <ButtonContainer>
               <Divider />
-              <Link style={{ textDecoration: 'none' }} href={route.link}>
+              <StyledLink style={{ textDecoration: 'none' }} href={route.link}>
                 {t(`data.pages.${route.key}`)}
-              </Link>
+              </StyledLink>
             </ButtonContainer>
           </StyledButton>
         ))}

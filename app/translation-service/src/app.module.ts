@@ -1,12 +1,17 @@
 import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { BaseTranslationModel } from './models/base.model';
+import {
+  BaseTranslationModel,
+  TreeRelatedTranslationModel,
+  OtheTranslationModel,
+} from './models/base.model';
 import { HandbookModule } from './handbook/handbook.module';
 import {
   OtherTranslationModel,
   AspirationGroupsTranslationModel,
   TraitGroupsTranslationModel,
 } from './models/withPart.model';
+import { MiscModule } from './misc/misc.module';
 import {
   AchievementsTranslationModel,
   AspirationsTranslationModel,
@@ -50,10 +55,13 @@ import { BasicModule } from './basic/basic.module';
         TownsTranslationModel,
         CollectionItemsTranslationModel,
         AspirationStepsTranslationModel,
+        TreeRelatedTranslationModel,
+        OtheTranslationModel,
       ],
     }),
     BasicModule,
     HandbookModule,
+    MiscModule,
   ],
   providers: [],
   controllers: [],

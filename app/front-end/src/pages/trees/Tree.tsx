@@ -1,16 +1,15 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { Box, styled } from '@mui/material';
 import TreeComponent from '@widgets/Tree';
 
 import CreateSimDrawer from '@entities/CreateSimDrawer';
 import TreeDrawer from '@entities/TreeDrawer';
 
-import DefaultButton from '@components/DefaultButton';
+import { DRAWER_VARIANTS } from '@type/enums';
 
-import { DrawerVariants } from '@constants/sharedTypes';
+import { HandbookStore } from '@stores/Handbook/Handbook.store';
 
-import { TreeStore } from '@stores/Handbook/Handbook.store';
+import DefaultButton from '../../shared/ui/DefaultButton';
 
 /* import {
   fetchAspirations,
@@ -22,9 +21,9 @@ import { TreeStore } from '@stores/Handbook/Handbook.store';
 import { useFetcher } from '@front/fetchers/useFetch';
 import useModal from '@front/helpers/useModal'; */
 
-TreeStore.getState().getAspirations();
-TreeStore.getState().getSkills();
-TreeStore.getState().getTraits();
+HandbookStore.getState().getAspirations();
+HandbookStore.getState().getSkills();
+HandbookStore.getState().getTraits();
 const Tree = () => {
   /*   const { data: sims } = useFetcher(fetchSimsForTree, [1]);
   const { data: simsInTree } = useFetcher(fetchSimsForUser, [1]);
@@ -72,11 +71,11 @@ const Tree = () => {
       {showSimDrawer && (
         <CreateSimDrawer
           simsInTree={/* simsInTree ?? */ []}
-          type="create"
+          type={DRAWER_VARIANTS.Create}
           onCloseModal={() => setShowSimDrawer(false)}
         />
       )}
-      {showTreeDrawer && <TreeDrawer type={DrawerVariants.Create} onCloseModal={() => setShowTreeDrawer(false)} />}
+      {showTreeDrawer && <TreeDrawer type={DRAWER_VARIANTS.Create} onCloseModal={() => setShowTreeDrawer(false)} />}
     </>
   );
 };

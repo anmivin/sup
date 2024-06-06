@@ -16,7 +16,7 @@ module.exports = {
             empty_map: world.empty_map,
           },
         ],
-        //@ts-ignore
+        //@ts-expect-error  'returning' does not exist in type 'QueryOptions'
         { returning: ['key'] },
       )) as { key: string }[];
       world.just_lots.length &&
@@ -35,11 +35,12 @@ module.exports = {
                 world_key: worldKey,
               },
             ],
-            //@ts-ignore
+            //@ts-expect-error  'returning' does not exist in type 'QueryOptions'
             { returning: ['key'] },
           )) as { key: string }[];
 
-          const { top_left, top_right, bottom_right, bottom_left } = lot.coordinates;
+          const { top_left, top_right, bottom_right, bottom_left } =
+            lot.coordinates;
 
           await queryInterface.insert(null, 'coordinates', {
             id: v4(),
@@ -67,7 +68,7 @@ module.exports = {
                 world_key: worldKey,
               },
             ],
-            //@ts-ignore
+            //@ts-expect-error  'returning' does not exist in type 'QueryOptions'
             { returning: ['key'] },
           )) as { key: string }[];
 
@@ -87,11 +88,12 @@ module.exports = {
                   neighborhood_key: neighborhoodKey,
                 },
               ],
-              //@ts-ignore
+              //@ts-expect-error  'returning' does not exist in type 'QueryOptions'
               { returning: ['key'] },
             )) as { key: string }[];
 
-            const { top_left, top_right, bottom_right, bottom_left } = lot.coordinates;
+            const { top_left, top_right, bottom_right, bottom_left } =
+              lot.coordinates;
             await queryInterface.insert(null, 'coordinates', {
               id: v4(),
               lot_key: lotKey,

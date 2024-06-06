@@ -8,10 +8,10 @@ import aspirations from '@backend-shared/database/aspirations.json';
 import traits from '@backend-shared/database/traits.json';
 import treeRelated from '@backend-shared/translations/treeRelated.json';
 
-import { QueryInterface, Sequelize } from 'sequelize';
+import { QueryInterface } from 'sequelize';
 
 module.exports = {
-  async up(queryInterface: QueryInterface, _sequelize: Sequelize) {
+  async up(queryInterface: QueryInterface) {
     await queryInterface.bulkInsert(
       'base',
       basic.map((item) => ({
@@ -123,7 +123,7 @@ module.exports = {
     );
   },
 
-  async down(queryInterface: QueryInterface, _sequelize: Sequelize) {
+  async down(queryInterface: QueryInterface) {
     await queryInterface.bulkDelete('traits', {});
     await queryInterface.bulkDelete('trait_groups', {});
     await queryInterface.bulkDelete('skills', {});

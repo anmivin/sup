@@ -25,6 +25,13 @@ export class InputSimDto {
   partnersIds: string[];
 }
 
+export class OutputSimListDto {
+  @ApiProperty({ description: 'Sim id', nullable: false })
+  id: string;
+  @ApiProperty({ description: 'Sim name', nullable: false })
+  name: string;
+}
+
 export class SimsTreeStructure {
   id: string;
   name: string;

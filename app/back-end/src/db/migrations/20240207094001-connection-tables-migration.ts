@@ -44,7 +44,7 @@ module.exports = {
         allowNull: false,
         type: DataTypes.STRING,
         references: {
-          model: 'achievements_4',
+          model: 'achievements',
           key: 'key',
         },
       },
@@ -106,7 +106,7 @@ module.exports = {
       },
     });
 
-    await queryInterface.createTable('sim_aspiration_4', {
+    await queryInterface.createTable('sim_aspiration', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -122,7 +122,7 @@ module.exports = {
       aspiration_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'aspirations_4',
+          model: 'aspirations',
           key: 'key',
         },
       },
@@ -131,7 +131,7 @@ module.exports = {
       },
     });
 
-    await queryInterface.createTable('sim_trait_4', {
+    await queryInterface.createTable('sim_trait', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -147,13 +147,13 @@ module.exports = {
       trait_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'traits_4',
+          model: 'traits',
           key: 'key',
         },
       },
     });
 
-    await queryInterface.createTable('sim_career_4', {
+    await queryInterface.createTable('sim_career', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -169,7 +169,7 @@ module.exports = {
       career_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'careers_4',
+          model: 'careers',
           key: 'key',
         },
       },
@@ -180,7 +180,7 @@ module.exports = {
         type: DataTypes.INTEGER,
       },
     });
-    await queryInterface.createTable('sim_collection_4', {
+    await queryInterface.createTable('sim_collection', {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
@@ -196,12 +196,12 @@ module.exports = {
       collection_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'collections_4',
+          model: 'collections',
           key: 'key',
         },
       },
     });
-    await queryInterface.createTable('sim_skill_4', {
+    await queryInterface.createTable('sim_skill', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -217,7 +217,7 @@ module.exports = {
       skill_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'skills_4',
+          model: 'skills',
           key: 'key',
         },
       },
@@ -225,7 +225,7 @@ module.exports = {
         type: DataTypes.INTEGER,
       },
     });
-    await queryInterface.createTable('sim_death_4', {
+    await queryInterface.createTable('sim_death', {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
@@ -241,7 +241,7 @@ module.exports = {
       deaths_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'deaths_4',
+          model: 'deaths',
           key: 'key',
         },
       },
@@ -269,11 +269,11 @@ module.exports = {
   },
 
   async down(queryInterface: QueryInterface, sequelize: Sequelize) {
-    await queryInterface.dropTable('sim_skill_4');
-    await queryInterface.dropTable('sim_collection_4');
-    await queryInterface.dropTable('sim_career_4');
-    await queryInterface.dropTable('sim_trait_4');
-    await queryInterface.dropTable('sim_aspiration_4');
+    await queryInterface.dropTable('sim_skill');
+    await queryInterface.dropTable('sim_collection');
+    await queryInterface.dropTable('sim_career');
+    await queryInterface.dropTable('sim_trait');
+    await queryInterface.dropTable('sim_aspiration');
     await queryInterface.dropTable('partner_partner');
     await queryInterface.dropTable('parent_child');
     await queryInterface.dropTable('user_achievement');

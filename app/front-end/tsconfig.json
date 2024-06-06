@@ -35,6 +35,7 @@
       "@libs/*": ["./src/shared/libs/*"],
       "@stores/*": ["./src/shared/stores/*"],
       "@theme/*": ["./src/shared/theme/*"],
+      "@ui/*": ["./src/shared/ui/*"],
       "@assets/*": ["./src/shared/assets/*"],
       "@images/*": ["./public/*"]
     }

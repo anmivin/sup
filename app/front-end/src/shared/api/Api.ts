@@ -105,11 +105,8 @@ export interface paths {
     /** Log In */
     post: operations["AuthController_login"];
   };
-  "/auth/google": {
-    get: operations["AuthController_googleAuth"];
-  };
-  "/auth/google/callback": {
-    get: operations["AuthController_googleAuthRedirect"];
+  "/auth/google-login": {
+    get: operations["AuthController_loginGoogle"];
   };
 }
 
@@ -247,6 +244,12 @@ export interface components {
        */
       group: "trait_group_001_emotional" | "trait_group_002_hobby" | "trait_group_003_lifestyle" | "trait_group_004_social" | "trait_group_005_toddler" | "trait_group_006_infant" | "trait_group_007_bonus" | "trait_group_008_aspirationreward" | "Satisfaction reward" | "trait_group_010_careerreward" | "trait_group_011_foodmastery" | "trait_group_012_inherited" | "trait_group_013_charactervalue";
     };
+    OutputSimListDto: {
+      /** @description Sim id */
+      id: string;
+      /** @description Sim name */
+      name: string;
+    };
     EdgesDto: {
       /** @description Edge id */
       id: string;
@@ -367,6 +370,14 @@ export interface components {
       name: string;
       /** @description User password */
       password: string;
+    };
+    UserGoogleCredentials: {
+      /** @description User name */
+      name: string;
+      /** @description User password */
+      email: string;
+      /** @description User password */
+      avatar: Record<string, unknown> | null;
     };
   };
   responses: never;
@@ -745,7 +756,9 @@ export interface operations {
     responses: {
       /** @description Success */
       200: {
-        content: never;
+        content: {
+          "application/json": components["schemas"]["OutputSimListDto"][];
+        };
       };
       /** @description Bad Request */
       400: {
@@ -945,14 +958,12 @@ export interface operations {
       };
     };
   };
-  AuthController_googleAuth: {
-    responses: {
-      200: {
-        content: never;
+  AuthController_loginGoogle: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["UserGoogleCredentials"];
       };
     };
-  };
-  AuthController_googleAuthRedirect: {
     responses: {
       200: {
         content: never;

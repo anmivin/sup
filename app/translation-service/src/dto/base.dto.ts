@@ -74,6 +74,10 @@ export class MiscBasicTranslationDto {
   sim: string;
   @ApiProperty()
   tree: string;
+  @ApiProperty()
+  male: string;
+  @ApiProperty()
+  female: string;
 }
 
 export class BasicTranslationNoLangDto {

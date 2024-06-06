@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 import { Box, Typography } from '@mui/material';
 
-import DefaultButton from '@components/DefaultButton';
+import DefaultButton from '../../ui/DefaultButton';
 
 export interface DefaultFormFooterProps {
   onClose?: () => void;
@@ -33,6 +35,7 @@ const FormFooter = ({
   onSubmit,
   buttonEnd,
 }: DefaultFormFooterProps) => {
+  const { t } = useTranslation('translation');
   return (
     <Box display="flex" flexDirection="column" gap={2} justifyContent="flex-start" mt={2}>
       {showRequiredHint && <RequiredHint />}
@@ -45,7 +48,7 @@ const FormFooter = ({
           decor="underscored"
           className="little"
         >
-          {customSubmitText || 'Сохранить'}
+          {customSubmitText || t('data.utility.save')}
         </DefaultButton>
         <DefaultButton
           onClick={onClose}
@@ -56,7 +59,7 @@ const FormFooter = ({
             order: buttonEnd ? -1 : 0,
           }}
         >
-          {customCancelText || 'Отменить'}
+          {customCancelText || t('data.utility.cancel')}
         </DefaultButton>
       </Box>
     </Box>

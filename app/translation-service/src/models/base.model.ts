@@ -1,7 +1,12 @@
-import { PrimaryKey, AutoIncrement, Column, Model, Table } from 'sequelize-typescript';
+import {
+  PrimaryKey,
+  AutoIncrement,
+  Column,
+  Model,
+  Table,
+} from 'sequelize-typescript';
 
-@Table({ tableName: 'base', underscored: true, timestamps: false })
-export class BaseTranslationModel extends Model<BaseTranslationModel> {
+export class BasicTranslationModel extends Model<BasicTranslationModel> {
   @AutoIncrement
   @Column
   declare id: number;
@@ -16,3 +21,12 @@ export class BaseTranslationModel extends Model<BaseTranslationModel> {
   @Column
   declare en_name: number;
 }
+
+@Table({ tableName: 'base', underscored: true, timestamps: false })
+export class BaseTranslationModel extends BasicTranslationModel {}
+
+@Table({ tableName: 'other', underscored: true, timestamps: false })
+export class OtheTranslationModel extends BasicTranslationModel {}
+
+@Table({ tableName: 'tree', underscored: true, timestamps: false })
+export class TreeRelatedTranslationModel extends BasicTranslationModel {}

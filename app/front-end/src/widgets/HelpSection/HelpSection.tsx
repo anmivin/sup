@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 import { Box, IconButton } from '@mui/material';
 
-import { HeartIcon } from '@components/Icons';
-
 import { Divider, HelpBox, RawBox, Rect } from './HelpSection.styled';
+
+import { HeartIcon } from '../../shared/ui/Icons';
 
 const HelpSection = () => {
   const [open, setOpen] = useState(false);
