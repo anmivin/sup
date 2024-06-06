@@ -7,11 +7,11 @@ import DefaultSpinner from '@components/Spinner/Spinner';
 /* import RandomAspiration from '@components/Randomizer/RandomAspiration';
 import RandomSkill from '@components/Randomizer/RandomSkill';
 import RandomTrait from '@components/Randomizer/RandomTrait'; */
-import { TreeStore } from '@stores/Handbook/Handbook.store';
+import { HandbookStore } from '@stores/Handbook/Handbook.store';
 
-TreeStore.getState().getAspirations();
-TreeStore.getState().getSkills();
-TreeStore.getState().getTraits();
+HandbookStore.getState().getAspirations();
+HandbookStore.getState().getSkills();
+HandbookStore.getState().getTraits();
 
 const Challenges = () => {
   const { t } = useTranslation(['achievements']);

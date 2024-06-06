@@ -1,14 +1,15 @@
 import { ReactNode } from 'react';
 
-import { DRAWER_VARIANTS, LIFE_STAGE, LIFE_STATE, PARTNERSHIP, SEX } from '@type/enums';
 import { ZodType, z } from 'zod';
 
 import { components } from '@api/Api';
 
 import { HeartBrokenIcon, RingIcon, RingsCrossedIcon, RingsIcon, TwoHeartsIcon } from '@components/Icons';
 
+import { DRAWER_VARIANTS, LIFE_STAGE, LIFE_STATE, PARTNERSHIP, SEX } from '@type/enums';
+
 export interface CreateSimDrawerProps {
-  simsInTree: components['schemas']['OutputSimDTO'][][];
+  simsInTree: components['schemas']['OutputSimListDto'][];
   type: DRAWER_VARIANTS;
   onCloseModal: () => void;
   defaultValues?: CreateSimForm;

@@ -1,4 +1,4 @@
-import { ChangeEventHandler, useCallback, useRef } from 'react';
+import { ChangeEventHandler, useCallback, useRef, useState } from 'react';
 
 import { CameraPlusIcon } from '@components/Icons';
 
@@ -8,24 +8,25 @@ import { PhotoUploadProps } from './PhotoUpload.types';
 
 const PhotoUpload = ({ onFilesAdd, value }: PhotoUploadProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
-
+  const [img, setImg] = useState<File | null>(null);
   const handleInputChange = useCallback<ChangeEventHandler<HTMLInputElement>>((event) => {
     if (event.target.files) {
-      onFilesAdd(Array.from(event.target.files));
+      const files = event.target.files[0];
+      console.log(files);
+      setImg(files);
+      /*       onFilesAdd(Array.from(event.target.files)); */
     }
   }, []);
 
   return (
     <>
-      {value ? (
-        <ExistPhotoContainer />
+      {img ? (
+        <ExistPhotoContainer $img={URL.createObjectURL(img)} />
       ) : (
-        <AddPhotoContainer type="button" onClick={() => inputRef.current?.click()}>
+        <AddPhotoContainer onClick={() => inputRef.current?.click()}>
           <input
-            value=""
             type="file"
             ref={inputRef}
-            multiple
             onChange={handleInputChange}
             style={{ display: 'none' }}
             accept=".png,.jpeg,.jpg"

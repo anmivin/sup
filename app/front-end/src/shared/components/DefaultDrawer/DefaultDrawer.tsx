@@ -12,6 +12,7 @@ const DefaultDrawer = ({ width, children, label, onClose, anchor = 'right', ...d
       {...drawerProps}
       $width={width}
       open={true}
+      variant="persistent"
       onClose={onClose}
       anchor={anchor}
       SlideProps={{

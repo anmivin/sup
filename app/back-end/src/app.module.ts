@@ -42,13 +42,17 @@ import * as path from 'path';
 //из енва значения поставить
 @Module({
   imports: [
-    /*  I18nModule.forRoot({
+    /* I18nModule.forRoot({
       fallbackLanguage: 'ru',
       loaderOptions: {
         path: path.join(__dirname, '/i18n/'),
         watch: true,
       },
-      resolvers: [{ use: QueryResolver, options: ['lang'] }, AcceptLanguageResolver],
+      resolvers: [
+        { use: QueryResolver, options: ['lang'] },
+        AcceptLanguageResolver,
+      ],
+      typesOutputPath: path.join(__dirname, '/generated/i18n.generated.ts'),
     }), */
     ConfigModule.forRoot({
       isGlobal: true,

@@ -36,7 +36,7 @@ const ProfileMenu = ({ onOpenLoginForm }: ProfileMenuProps) => {
     >
       <ButtonContainer>
         <Divider />
-        <UserIcon />
+        <UserIcon color="textDark" />
       </ButtonContainer>
       <StyledPoper open={anchorEl?.id === 'profile'} anchorEl={MenuRef.current} disablePortal>
         <MenuList>

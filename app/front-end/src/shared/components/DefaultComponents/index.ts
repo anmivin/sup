@@ -1,5 +1,5 @@
 export { default as Alert } from './Alert';
-export { default as Autocomplete } from './Autocomplete/Autocomplete';
+
 export { Accordion, AccordionDetails, AccordionSummary } from './Accordion';
 export { default as Button } from './Button';
 export { default as ButtonToggle } from './ButtonToggle';
@@ -7,7 +7,7 @@ export { default as Chip } from './Chip';
 export { default as Checkbox } from './Checkbox';
 export { default as Radio } from './Radio';
 
-export { default as Dialog, DialogTitle, DialogContent, DialogActions, CommonDialog } from './Dialog';
+export { default as Dialog, DialogContent, CommonDialog } from './Dialog';
 export { default as IconButton } from './IconButton';
 
 export { useFileUploader, FileDropZone, FileList } from './FileUploader';
@@ -31,7 +31,7 @@ export { default as Stepper } from './Stepper';
 
 // Types
 export type { AccordionProps, AccordionSummaryProps, AccordionDetailsProps } from './Accordion/Accordion.types';
-export type { AutocompleteProps } from './Autocomplete/Autocomplete.types';
+
 export type { AlertProps } from './Alert/Alert.types';
 export type { ButtonProps } from './Button/Button.types';
 export type { ButtonToggleProps } from './ButtonToggle/ButtonToggle.types';

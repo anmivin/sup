@@ -12,6 +12,8 @@ declare module 'i18next' {
       aspirationGroups: components['schemas']['AspirationGroupsDto'];
       achievements: components['schemas']['AchievementsDto'];
       traitsGroups: components['schemas']['TraitGroupsDto'];
+      misc: components['schemas']['MiscTranslationDto'];
+      tree: components['schemas']['TreeTranslationDto'];
     };
   }
 }

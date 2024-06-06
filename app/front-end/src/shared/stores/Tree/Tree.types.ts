@@ -14,6 +14,9 @@ export interface TreeStateSliceProps {
 
   simDrawerType: DrawerVariants;
   setSimDrawerType: (val: DrawerVariants) => void;
+
+  isCropModalOpen: boolean;
+  setIsCropModalOpen: (val: boolean) => void;
 }
 
 export interface TreeDataSliceProps {

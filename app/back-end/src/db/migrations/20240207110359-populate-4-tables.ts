@@ -9,7 +9,7 @@ import { QueryInterface, Sequelize } from 'sequelize';
 module.exports = {
   up: async (queryInterface: QueryInterface, _sequelize: Sequelize) => {
     await queryInterface.bulkInsert(
-      'achievements_4',
+      'achievements',
       achievements.map((achievement) => ({
         key: achievement.key,
         icon: achievement.icon,
@@ -17,7 +17,7 @@ module.exports = {
       })),
     );
     await queryInterface.bulkInsert(
-      'aspirations_4',
+      'aspirations',
       aspirations.map((aspiration) => ({
         key: aspiration.key,
         icon: aspiration.icon,
@@ -27,7 +27,7 @@ module.exports = {
       })),
     );
     await queryInterface.bulkInsert(
-      'skills_4',
+      'skills',
       skills.map((skill) => ({
         key: skill.key,
         icon: skill.icon,
@@ -36,7 +36,7 @@ module.exports = {
       })),
     );
     await queryInterface.bulkInsert(
-      'traits_4',
+      'traits',
       traits.map((trait) => ({
         key: trait.key,
         icon: trait.icon,
@@ -53,7 +53,7 @@ module.exports = {
       })),
     );
     await queryInterface.bulkInsert(
-      'careers_4',
+      'careers',
       careers.map((career) => ({
         key: career.key,
         icon: career.icon,
@@ -65,9 +65,9 @@ module.exports = {
   },
   down: async (queryInterface: QueryInterface, _sequelize: Sequelize) => {
     await queryInterface.bulkDelete('packs', {});
-    await queryInterface.bulkDelete('skills_4', {});
-    await queryInterface.bulkDelete('traits_4', {});
-    await queryInterface.bulkDelete('aspirations_4', {});
-    await queryInterface.bulkDelete('achievements_4', {});
+    await queryInterface.bulkDelete('skills', {});
+    await queryInterface.bulkDelete('traits', {});
+    await queryInterface.bulkDelete('aspirations', {});
+    await queryInterface.bulkDelete('achievements', {});
   },
 };

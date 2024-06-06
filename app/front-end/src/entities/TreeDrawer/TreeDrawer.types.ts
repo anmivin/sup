@@ -1,9 +1,9 @@
 import { ZodType, z } from 'zod';
 
-import { DrawerVariants } from '@constants/sharedTypes';
+import { DRAWER_VARIANTS } from '@type/enums';
 
 export interface CreateTreeDrawerProps {
-  type: DrawerVariants;
+  type: DRAWER_VARIANTS;
   onCloseModal: () => void;
 }
 

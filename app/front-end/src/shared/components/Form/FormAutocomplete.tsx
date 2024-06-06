@@ -1,5 +1,6 @@
 import { ElementType, FC, ForwardRefExoticComponent } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 
 import { AutocompleteProps, AutocompleteValue } from '@mui/material';
 import { ChipTypeMap } from '@mui/material/Chip';
@@ -36,7 +37,7 @@ const FormAutocomplete = <
   ...props
 }: FormAutocompleteProps<T, InputProps, Multiple, DisableClearable, FreeSolo>) => {
   const { control } = useFormContext();
-
+  const { t } = useTranslation('translation');
   return (
     <Controller
       control={control}
@@ -49,7 +50,7 @@ const FormAutocomplete = <
             onChangeValue ? onChangeValue(newValue) : field.onChange(newValue);
             withOnChange?.(newValue);
           }}
-          noOptionsText="Нет вариантов"
+          noOptionsText={t('data.utility.nooption')}
           renderInput={(params) => (
             <DefaultTextfield {...params} {...inputProps} error={!!error} helperText={error?.message} />
           )}

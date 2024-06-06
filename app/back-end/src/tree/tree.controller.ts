@@ -1,8 +1,19 @@
-import { InputSimDto, InputTreeDto, OutputTreeDto } from '@back/tree/tree.dto';
+import {
+  InputSimDto,
+  InputTreeDto,
+  OutputSimListDto,
+  OutputTreeDto,
+} from '@back/tree/tree.dto';
 import { TreeService } from '@back/tree/tree.service';
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
-import { ApiOperation, ApiTags, ApiParam, ApiResponse, ApiBody } from '@nestjs/swagger';
+import {
+  ApiOperation,
+  ApiTags,
+  ApiParam,
+  ApiResponse,
+  ApiBody,
+} from '@nestjs/swagger';
 
 @ApiTags('Tree Module')
 @Controller('tree')
@@ -11,17 +22,25 @@ export class TreeController {
   @Get('/:id')
   @ApiOperation({ summary: 'Get sims for user' })
   @ApiParam({ name: 'id', required: true, description: 'User id' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: [OutputSimListDto],
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getSimsForUser(@Param('id') id: string): Promise<any> {
+  async getSimsForUser(@Param('id') id: string): Promise<OutputSimListDto[]> {
     return await this.treeService.getSimsForUser(+id);
   }
 
   @Get('/tree/:id')
   @ApiOperation({ summary: 'Get sims for tree' })
   @ApiParam({ name: 'id', required: true, description: 'Tree id' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success', type: OutputTreeDto })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: OutputTreeDto,
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async getTreeStructure(@Param('id') id: string): Promise<OutputTreeDto> {
@@ -31,7 +50,11 @@ export class TreeController {
   @Get('/sim/:id')
   @ApiOperation({ summary: 'Get sim by id' })
   @ApiParam({ name: 'id', required: true, description: 'Sim id' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success', type: OutputTreeDto })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: OutputTreeDto,
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async getSim(@Param('id') id: string): Promise<any> {

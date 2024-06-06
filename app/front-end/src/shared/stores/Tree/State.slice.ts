@@ -24,4 +24,9 @@ export const TreeStateSlice: StateCreator<TreeStateSliceProps, [], []> = (set) =
   setSimDrawerType: (simDrawerType) => {
     set({ simDrawerType });
   },
+
+  isCropModalOpen: false,
+  setIsCropModalOpen: (isCropModalOpen) => {
+    set({ isCropModalOpen });
+  },
 });

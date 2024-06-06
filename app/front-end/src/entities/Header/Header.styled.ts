@@ -1,4 +1,4 @@
-import { Box, Button, Popper, styled } from '@mui/material';
+import { Box, Button, Link, Popper, styled } from '@mui/material';
 
 export const HeaderContainer = styled(Box)`
   position: fixed;
@@ -9,7 +9,7 @@ export const HeaderContainer = styled(Box)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme }) => theme.color.primaryMain};
+  background-color: ${({ theme }) => theme.color.secondaryMain};
   padding: 0 8px;
 `;
 
@@ -56,7 +56,7 @@ export const ButtonContainer = styled(Box)`
 
 export const Divider = styled(Box)`
   width: 6px;
-  background-color: ${({ theme }) => theme.color.textMain};
+  background-color: ${({ theme }) => theme.color.textDark};
   transform: skewX(-30deg);
 `;
 export const MainSection = styled(Box)`
@@ -70,8 +70,13 @@ export const StyledButton = styled(Button)`
   border-radius: 0;
   padding: 0;
   &:hover {
-    background-color: ${({ theme }) => theme.color.primaryMain};
-    box-shadow: ${({ theme }) => `0 4px ${theme.color.textMain}`};
+    background-color: ${({ theme }) => theme.color.secondaryMain};
+    box-shadow: ${({ theme }) => `0 4px ${theme.color.textDark}`};
     transition: box-shadow 0.2s ease-out;
   }
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.textDark};
 `;

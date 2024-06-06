@@ -7,6 +7,7 @@ import { SimTraitModel } from '@back/connection.models/SimTrait.model';
 import { ParentChildModel } from '@back/tree/models/ParentChild.model';
 import { PartnerPartnerModel } from '@back/tree/models/PartnerPartner.model';
 import { SimsModel } from '@back/tree/models/Sim.model';
+import { OutputSimListDto } from '@back/tree/tree.dto';
 import { TreeModel } from '@back/tree/models/Tree.model';
 import {
   OutputTreeDto,
@@ -38,16 +39,12 @@ export class TreeService {
     @InjectModel(SimPositionModel)
     private simPositionModel: typeof SimPositionModel,
   ) {}
-  async getSimsForUser(id: number): Promise<SimsModel[]> {
-    return await this.simsModel.findAll({
-      where: { userId: id },
-      include: [
-        { model: this.partnersModel, as: 'firstPartner' },
-        { model: this.partnersModel, as: 'secondPartner' },
-        { model: this.childrenModel, as: 'parents' },
-        { model: this.childrenModel, as: 'children' },
-      ],
-    });
+  async getSimsForUser(id: number): Promise<OutputSimListDto[]> {
+    return (
+      await this.simsModel.findAll({
+        where: { userId: id },
+      })
+    ).map(({ id, name }) => ({ id: id, name: name }));
   }
   async getSimsForTree(id: number): Promise<SimsModel[]> {
     return await this.simsModel.findAll({

@@ -20,17 +20,10 @@ module.exports = {
       type: {
         type: DataTypes.ENUM('local', 'google'),
       },
-    });
-    await queryInterface.createTable('avatars', {
-      id: {
-        allowNull: false,
-        primaryKey: true,
+      image_path: {
         type: DataTypes.STRING,
       },
-      image: {
-        type: DataTypes.STRING,
-      },
-      thumbnale: {
+      image_path_tn: {
         type: DataTypes.STRING,
       },
     });
@@ -50,7 +43,10 @@ module.exports = {
       name: {
         type: DataTypes.STRING,
       },
-      image: {
+      image_path: {
+        type: DataTypes.STRING,
+      },
+      image_path_tn: {
         type: DataTypes.STRING,
       },
     });
@@ -71,7 +67,10 @@ module.exports = {
       name: {
         type: DataTypes.STRING,
       },
-      image: {
+      image_path: {
+        type: DataTypes.STRING,
+      },
+      image_path_tn: {
         type: DataTypes.STRING,
       },
       is_in_tree: {
@@ -85,7 +84,7 @@ module.exports = {
         },
       },
       part: {
-        type: DataTypes.STRING,
+        type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
       },
     });
     await queryInterface.createTable('packs', {

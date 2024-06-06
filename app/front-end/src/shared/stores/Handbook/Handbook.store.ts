@@ -4,7 +4,7 @@ import { HandbookStoreProps } from './Handbook.types';
 
 import { fetchAspirations, fetchSkills, fetchTraits } from './Handbook.api';
 
-export const TreeStore = create<HandbookStoreProps>((set) => ({
+export const HandbookStore = create<HandbookStoreProps>((set) => ({
   aspirations: null,
   skills: null,
   traits: null,

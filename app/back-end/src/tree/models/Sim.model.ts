@@ -7,7 +7,16 @@ import { ParentChildModel } from '@back/tree/models/ParentChild.model';
 import { PartnerPartnerModel } from '@back/tree/models/PartnerPartner.model';
 import { TreeModel } from '@back/tree/models/Tree.model';
 import { UserModel } from '@back/users/models/users.model';
-import { DataType, PrimaryKey, Column, Model, Table, ForeignKey, BelongsTo, HasMany } from 'sequelize-typescript';
+import {
+  DataType,
+  PrimaryKey,
+  Column,
+  Model,
+  Table,
+  ForeignKey,
+  BelongsTo,
+  HasMany,
+} from 'sequelize-typescript';
 
 export interface SimsModelCreate
   extends Omit<
@@ -61,10 +70,16 @@ export class SimsModel extends Model<SimsModel, SimsModelCreate> {
   @Column(DataType.INTEGER)
   declare deathYear: number | null;
 
-  @HasMany(() => PartnerPartnerModel, { foreignKey: 'partnerFirstId', as: 'partnerFirst' })
+  @HasMany(() => PartnerPartnerModel, {
+    foreignKey: 'partnerFirstId',
+    as: 'partnerFirst',
+  })
   partnerFirst: PartnerPartnerModel[];
 
-  @HasMany(() => PartnerPartnerModel, { foreignKey: 'partnerSecondId', as: 'partnerSecond' })
+  @HasMany(() => PartnerPartnerModel, {
+    foreignKey: 'partnerSecondId',
+    as: 'partnerSecond',
+  })
   partnerSecond: PartnerPartnerModel[];
 
   @HasMany(() => ParentChildModel, { foreignKey: 'childId', as: 'children' })
