@@ -15,17 +15,17 @@ import {
 import { AlertColorProps } from './Alert.types';
 
 export const AlertColorMaps: AlertColorProps = {
-  success: { icon: <AlertCheckIcon /> },
-  error: { icon: <AlertCloseIcon /> },
-  info: { icon: <AlertInfoIcon /> },
-  warning: { icon: <AlertExclamationIcon /> },
-  default: { icon: <AlertDotsIcon /> },
+  success: { icon: <AlertCheckIcon />, color: 'successMain' },
+  error: { icon: <AlertCloseIcon />, color: 'errorMain' },
+  info: { icon: <AlertInfoIcon />, color: 'infoMain' },
+  warning: { icon: <AlertExclamationIcon />, color: 'warningMain' },
+  default: { icon: <AlertDotsIcon />, color: 'infoMain' },
 };
 
 const alertTypeStyles = (theme: Theme, severity: AlertColor) => {
   return {
     borderRadius: 4,
-    border: `1px solid ${alpha(theme.palette[severity].light, 0.15)}`,
+    border: `1px solid ${theme.color[AlertColorMaps[severity]]}`,
   };
 };
 

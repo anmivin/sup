@@ -1,96 +1,71 @@
 import { ReactNode } from 'react';
 
+import { DRAWER_VARIANTS, LIFE_STAGE, LIFE_STATE, PARTNERSHIP, SEX } from '@type/enums';
 import { ZodType, z } from 'zod';
+
+import { components } from '@api/Api';
 
 import { HeartBrokenIcon, RingIcon, RingsCrossedIcon, RingsIcon, TwoHeartsIcon } from '@components/Icons';
 
-import { DrawerVariants } from '@constants/sharedTypes';
-
 export interface CreateSimDrawerProps {
-  simsInTree: SimsProps[];
-  type: DrawerVariants;
+  simsInTree: components['schemas']['OutputSimDTO'][][];
+  type: DRAWER_VARIANTS;
   onCloseModal: () => void;
   defaultValues?: CreateSimForm;
 }
 
-export enum partnershipType {
-  divorced = 'divorced',
-  engaged = 'engaged',
-  exes = 'exes',
-  married = 'married',
-  partners = 'partners',
-}
-
-export enum sexType {
-  male = 'male',
-  female = 'female',
-}
-
-export enum lifestageType {
-  male = 'male',
-  female = 'female',
-}
-
-export enum lifestateType {
-  male = 'male',
-  female = 'female',
-}
-
-export const PartnershipIcons: Record<partnershipType, ReactNode> = {
-  [partnershipType.divorced]: <RingsCrossedIcon />,
-  [partnershipType.engaged]: <RingIcon />,
-  [partnershipType.exes]: <HeartBrokenIcon />,
-  [partnershipType.married]: <RingsIcon />,
-  [partnershipType.partners]: <TwoHeartsIcon />,
+export const PartnershipIcons: Record<PARTNERSHIP, ReactNode> = {
+  [PARTNERSHIP.divorced]: <RingsCrossedIcon />,
+  [PARTNERSHIP.engaged]: <RingIcon />,
+  [PARTNERSHIP.exes]: <HeartBrokenIcon />,
+  [PARTNERSHIP.married]: <RingsIcon />,
+  [PARTNERSHIP.partners]: <TwoHeartsIcon />,
 };
 export interface OptionProps {
   localName: string;
 }
 export interface CreateSimForm {
   name: string;
-  sex: sexType;
-  lifestage: lifestageType;
-  lifestate: lifestateType;
+  sex: SEX;
+  lifestage: LIFE_STAGE;
+  lifestate: LIFE_STATE;
   image: string;
   part: string;
-  birthYear?: string;
-  deathYear?: string;
-  parentFirstId?: number | null;
-  parentSecondId?: number | null;
-  partners: { id?: string; type?: partnershipType }[];
+  parentFirst?: { id: string; name: string };
+  parentSecond?: { id: string; name: string };
+  partners: { id?: string; name?: string; type?: PARTNERSHIP }[];
   aspirations: { localName?: string; completed: boolean }[];
-
-  traits: OptionProps[];
-  /*   careers: {careerId: number, level: string}[];
-    collections: {collectionId: number, }[]; */
+  traits: string[];
   skills: { localName?: string; level: number }[];
+  /*   careers: {careerId: number, level: string}[];*/
 }
 
 export const SimDrawerSchema: ZodType<CreateSimForm> = z.object({
   name: z.string(),
+  sex: z.nativeEnum(SEX),
+  lifestage: z.nativeEnum(LIFE_STAGE),
+  lifestate: z.nativeEnum(LIFE_STATE),
   image: z.string(),
   part: z.string(),
-  birthYear: z.string().optional(),
-  deathYear: z.string().optional(),
-  parentFirstId: z.number().optional(),
-  parentSecondId: z.number().optional(),
-  partners: z.array(z.object({ id: z.string(), type: z.nativeEnum(partnershipType) })),
+  parentFirst: z.object({ id: z.string(), name: z.string() }).optional(),
+  parentSecond: z.object({ id: z.string(), name: z.string() }).optional(),
+  partners: z.array(z.object({ id: z.string(), name: z.string(), type: z.nativeEnum(PARTNERSHIP) })),
   aspirations: z.array(z.object({ localName: z.string(), completed: z.boolean() })),
   traits: z.array(z.string()),
   skills: z.array(z.object({ localName: z.string(), level: z.number() })),
 });
 
 export enum SIMS_DRAWER_TABS_VARIATIONS {
-  PersonalData = 'personalData',
+  MainInfo = 'maininfo',
   Qualities = 'qualities',
 }
 
 export enum SIMS_DRAWER_TABS_NAMES {
-  PersonalData = 'Основные данные',
+  MainInfo = 'Основные данные',
   Qualities = 'Качества',
 }
 
 export const SIMS_DRAWER_TABS: { value: SIMS_DRAWER_TABS_VARIATIONS; label: string }[] = [
-  { value: SIMS_DRAWER_TABS_VARIATIONS.PersonalData, label: SIMS_DRAWER_TABS_NAMES.PersonalData },
+  { value: SIMS_DRAWER_TABS_VARIATIONS.MainInfo, label: SIMS_DRAWER_TABS_NAMES.MainInfo },
   { value: SIMS_DRAWER_TABS_VARIATIONS.Qualities, label: SIMS_DRAWER_TABS_NAMES.Qualities },
 ];

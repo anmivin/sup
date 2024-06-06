@@ -1,9 +1,10 @@
 [
-  { "key": "tree_mainInfo", "ru_name": "Основные данные", "en_name": "Main info" },
+  { "key": "tree_maininfo", "ru_name": "Основные данные", "en_name": "Main info" },
   { "key": "tree_qualities", "ru_name": "Качества", "en_name": "Qualities" },
 
   { "key": "tree_name", "ru_name": "Имя", "en_name": "Name" },
   { "key": "tree_image", "ru_name": "Фото", "en_name": "Image" },
+  { "key": "tree_sex", "ru_name": "Пол", "en_name": "Sex" },
   { "key": "tree_part", "ru_name": "Часть", "en_name": "Part" },
   { "key": "tree_dead", "ru_name": "Мертв", "en_name": "Dead" },
   { "key": "tree_deathCause", "ru_name": "Причина смерти", "en_name": "Death cause" },

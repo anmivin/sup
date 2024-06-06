@@ -19,6 +19,7 @@ export default defineConfig({
       '@api': `${path.resolve(__dirname, './src/shared/api/')}`,
       '@components': `${path.resolve(__dirname, './src/shared/components/')}`,
       '@constants': `${path.resolve(__dirname, './src/shared/constants/')}`,
+      '@type': `${path.resolve(__dirname, './src/shared/types/')}`,
       '@libs': `${path.resolve(__dirname, './src/shared/libs/')}`,
       '@stores': `${path.resolve(__dirname, './src/shared/stores/')}`,
       '@theme': `${path.resolve(__dirname, './src/shared/theme/')}`,

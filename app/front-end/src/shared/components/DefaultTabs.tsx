@@ -8,7 +8,7 @@ export interface DefaultTabsProps extends TabsProps {
 
 const StyledTabs = styled(Tabs)`
   & .MuiButtonBase-root.Mui-selected {
-    color: ${(props) => props.theme.color.textSecondary};
+    color: ${(props) => props.theme.color.textLight};
   }
 ` as typeof Tabs;
 

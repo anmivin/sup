@@ -4,7 +4,7 @@ export const CircleBox = styled(Box)`
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  background-color: ${({ theme }) => theme.color.textPrimary};
+  background-color: ${({ theme }) => theme.color.textMain};
   color: ${({ theme }) => theme.color.primaryMain};
   display: flex;
   justify-content: center;

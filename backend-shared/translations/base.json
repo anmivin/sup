@@ -37,5 +37,7 @@
   { "key": "forms_drag", "ru_name": "или перетащиет его сюда", "en_name": "or drag it here" },
 
   { "key": "misc_sim", "ru_name": "сима", "en_name": "sim" },
-  { "key": "misc_tree", "ru_name": "древо", "en_name": "house" }
+  { "key": "misc_tree", "ru_name": "древо", "en_name": "house" },
+  { "key": "misc_male", "ru_name": "мужчина", "en_name": "male" },
+  { "key": "misc_female", "ru_name": "женщина", "en_name": "female" }
 ]

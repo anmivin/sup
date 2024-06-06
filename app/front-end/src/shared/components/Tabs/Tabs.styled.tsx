@@ -15,13 +15,13 @@ export const StyledTab = styled(Tab)`
   &.MuiButtonBase-root {
     ${fontStyles};
     height: ${({ theme }) => theme.spacing(12)};
-    color: ${({ theme }) => theme.color.monoA700};
+    color: ${({ theme }) => theme.color.textLight};
 
     &.Mui-selected {
-      color: ${({ theme }) => theme.color.monoA900};
+      color: ${({ theme }) => theme.color.textDark};
     }
     &.Mui-disabled {
-      color: ${({ theme }) => theme.color.monoA500};
+      color: ${({ theme }) => theme.color.textMain};
     }
   }
 `;

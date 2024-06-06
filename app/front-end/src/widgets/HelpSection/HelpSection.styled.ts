@@ -1,8 +1,8 @@
-import { Box, IconButton, Typography, styled } from '@mui/material';
+import { Box, styled } from '@mui/material';
 
 export const HelpBox = styled(Box)`
   background-color: ${({ theme }) => theme.color.primaryMain};
-  color: ${({ theme }) => theme.color.textSecondary};
+  color: ${({ theme }) => theme.color.textLight};
   height: 30px;
   width: 200px;
   transform: skewX(-28deg);
@@ -12,7 +12,7 @@ export const HelpBox = styled(Box)`
 
 export const Divider = styled(Box)`
   background-color: black;
-  color: ${({ theme }) => theme.color.textSecondary};
+  color: ${({ theme }) => theme.color.textLight};
   height: 30px;
   width: 200px;
   transform: skewX(-28deg);
@@ -32,6 +32,6 @@ export const Rect = styled(Box)`
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: ${({ theme }) => theme.color.errorMain};
+  background-color: ${({ theme }) => theme.color.textMain};
   z-index: 3;
 `;

@@ -23,6 +23,7 @@ module.exports = {
     '^@api(.*)$',
     '^@components/(.*)$',
     '^@constants/(.*)$',
+    '^@type/(.*)$',
     '^@libs/(.*)$',
     '^@stores/(.*)$',
     '^@theme/(.*)$',

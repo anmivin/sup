@@ -15,7 +15,7 @@ export const globalStyles = (theme: Theme) => css`
       'tnum' on,
       'lnum' on;
     color: #000;
-    background-color: ${theme.color.backgroundDefault};
+    background-color: ${theme.color.primaryMain};
     overflow: hidden;
   }
 
@@ -52,13 +52,13 @@ export const globalStyles = (theme: Theme) => css`
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: ${theme.color.actionDisable};
+    background-color: ${theme.color.secondaryDark};
     border-radius: 8px;
     min-height: 24px;
 
     &:active,
     &:hover {
-      background-color: ${theme.color.actionDisable};
+      background-color: ${theme.color.secondaryLight};
     }
   }
 `;

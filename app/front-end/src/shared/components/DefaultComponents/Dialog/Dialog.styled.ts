@@ -1,9 +1,9 @@
-import { Dialog, DialogActions, DialogContent, DialogTitle, styled } from '@mui/material';
+import { Dialog, DialogContent, styled } from '@mui/material';
 
 export const StyledMuiDialog = styled(Dialog)`
   .MuiDialog-paper {
     position: relative;
-    box-shadow: ${({ theme }) => theme.shadow.down900};
+    box-shadow: ${({ theme }) => theme.shadows[1]};
     border-radius: ${({ theme }) => theme.radius.lg};
 
     &.MuiDialog-paperWidthMd {
@@ -20,10 +20,6 @@ export const StyledMuiDialog = styled(Dialog)`
   }
 `;
 
-export const StyledMuiDialogTitle = styled(DialogTitle)`
-  padding: ${({ theme }) => theme.spacing(4, 6, 2)};
-  ${({ theme }) => theme.fontStyle.h4};
-`;
 export const StyledMuiDialogContent = styled(DialogContent)`
   padding: ${({ theme }) => theme.spacing(4, 6)};
   border-top: 1px solid transparent;
@@ -33,11 +29,5 @@ export const StyledMuiDialogContent = styled(DialogContent)`
   .MuiDialogTitle-root + & {
     // добавил padding-top сюда, так как у DialogContent overflow-y: auto и может обрезаться содержимое, например лейблы у полей
     padding-top: ${({ theme }) => theme.spacing(2)};
-  }
-`;
-export const StyledMuiDialogActions = styled(DialogActions)`
-  padding: ${({ theme }) => theme.spacing(6)};
-  > :not(:first-of-type) {
-    margin-left: ${({ theme }) => theme.spacing(4)};
   }
 `;

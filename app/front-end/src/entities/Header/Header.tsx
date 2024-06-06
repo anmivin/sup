@@ -25,8 +25,8 @@ const Header = () => {
       <Box display="flex" flexDirection="row" justifyContent="flex-end" gap={2} alignItems="center">
         <Switch
           onChange={(e) => setIsDarkTheme(() => e.target.checked)}
-          checkedIcon={<MoonIcon color="textPrimary" />}
-          icon={<SunIcon color="textPrimary" />}
+          checkedIcon={<MoonIcon color="textMain" />}
+          icon={<SunIcon color="textMain" />}
           checked={isDarkTheme()}
         />
       </Box>

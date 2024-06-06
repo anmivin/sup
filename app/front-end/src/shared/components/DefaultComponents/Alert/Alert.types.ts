@@ -4,11 +4,14 @@ import { AlertProps as MUIAlertProps } from '@mui/material';
 
 import { ButtonProps } from '@components/DefaultComponents/Button';
 
+import { Color } from '@theme/index';
+
 import { AlertColorVariants } from './Alert.constants';
 
 export type AlertColorProps = {
   [key in AlertColorVariants]: {
     icon: ReactNode;
+    color: Color;
   };
 };
 

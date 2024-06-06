@@ -8,29 +8,33 @@ import { commonComponents } from './common/components';
 import { commonPalette } from './common/palette';
 
 export const themeColor = {
-  backgroundDefault: commonColors.monoDark,
-  backgroundPaper: commonColors.transparentLight,
-  primaryMain: commonColors.turqoiseLight,
-  primaryLight: commonColors.monoSuperdark,
-  secondaryMain: commonColors.monoSuperdark,
-  secondaryDark: commonColors.turqoiseSuperdark,
-  secondaryLight: commonColors.monoExtra,
-  textPrimary: commonColors.turqoiseLight,
-  textSecondary: commonColors.monoSuperdark,
-  errorMain: commonColors.blueMedium,
-  errorLight: commonColors.monoExtra,
-  errorDark: commonColors.monoExtra,
-  infoMain: commonColors.monoExtra,
-  infoLight: commonColors.monoExtra,
-  infoDark: commonColors.blueSuperdark,
-  successMain: commonColors.greenLight,
-  successLight: commonColors.monoExtra,
-  successDark: commonColors.monoExtra,
-  actionActive: commonColors.monoSuperlight,
-  actionHover: commonColors.transparentLight,
-  actionSelected: commonColors.monoExtra,
-  actionDisable: commonColors.monoExtra,
-  actionFocus: commonColors.monoExtra,
+  primaryMain: commonColors.mono500,
+  primaryDark: commonColors.mono800,
+  primaryLight: commonColors.mono200,
+
+  secondaryMain: commonColors.turquoise500,
+  secondaryDark: commonColors.turquoise800,
+  secondaryLight: commonColors.turquoise200,
+
+  textMain: commonColors.turquoise500,
+  textDark: commonColors.mono800,
+  textLight: commonColors.mono800,
+
+  successMain: commonColors.green500,
+  successDark: commonColors.green800,
+  successLight: commonColors.green200,
+
+  infoMain: commonColors.blue500,
+  infoDark: commonColors.blue800,
+  infoLight: commonColors.blue200,
+
+  warningMain: commonColors.orange500,
+  warningLight: commonColors.orange800,
+  warningDark: commonColors.orange200,
+
+  errorMain: commonColors.red500,
+  errorDark: commonColors.red800,
+  errorLight: commonColors.red200,
 };
 
 export const color = { ...themeColor, ...commonColors } as const;
@@ -49,6 +53,5 @@ export const palette: PaletteOptions = {
 export const darkTheme: Theme = createTheme({
   ...commonTheme,
   color,
-  palette,
   components,
 });

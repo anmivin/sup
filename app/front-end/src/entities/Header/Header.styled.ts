@@ -15,8 +15,8 @@ export const HeaderContainer = styled(Box)`
 
 export const StyledPoper = styled(Popper)`
   width: 200px;
-  background-color: ${({ theme }) => theme.color.backgroundPaper};
-  color: ${({ theme }) => theme.color.textPrimary};
+  background-color: ${({ theme }) => theme.color.secondaryMain};
+  color: ${({ theme }) => theme.color.textMain};
   box-shadow: ${({ theme }) => theme.shadows[3]};
   border-radius: 4px;
   z-index: 10;
@@ -29,7 +29,7 @@ export const StyledPoper = styled(Popper)`
     padding: 2;
 
     &:hover {
-      background-color: ${({ theme }) => theme.color.backgroundPaper};
+      background-color: ${({ theme }) => theme.color.secondaryMain};
 
       &:first-child {
         border-radius: 4px 4px 0 0;
@@ -56,7 +56,7 @@ export const ButtonContainer = styled(Box)`
 
 export const Divider = styled(Box)`
   width: 6px;
-  background-color: ${({ theme }) => theme.color.textPrimary};
+  background-color: ${({ theme }) => theme.color.textMain};
   transform: skewX(-30deg);
 `;
 export const MainSection = styled(Box)`
@@ -71,7 +71,7 @@ export const StyledButton = styled(Button)`
   padding: 0;
   &:hover {
     background-color: ${({ theme }) => theme.color.primaryMain};
-    box-shadow: ${({ theme }) => `0 4px ${theme.color.textPrimary}`};
+    box-shadow: ${({ theme }) => `0 4px ${theme.color.textMain}`};
     transition: box-shadow 0.2s ease-out;
   }
 `;

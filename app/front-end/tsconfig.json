@@ -31,6 +31,7 @@
       "@api/*": ["./src/shared/api/*"],
       "@components/*": ["./src/shared/components/*"],
       "@constants/*": ["./src/shared/constants/*"],
+      "@type/*": ["./src/shared/types/*"],
       "@libs/*": ["./src/shared/libs/*"],
       "@stores/*": ["./src/shared/stores/*"],
       "@theme/*": ["./src/shared/theme/*"],
