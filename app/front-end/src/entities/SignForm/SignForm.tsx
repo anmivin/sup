@@ -7,15 +7,16 @@ import { Box, Button, TextField, Tooltip, Typography } from '@mui/material';
 import { CredentialResponse } from '@react-oauth/google';
 import { useStore } from 'zustand';
 
-import DefaultButton from '@components/DefaultButton';
 import DefaultModal from '@components/DefaultModal/DefaultModal';
-import GoogleAuth from '@components/GoogleAuth';
+import GoogleAuth from '@c../../shared/ui/DefaultModal/DefaultModal
 
 import { SignFormVariants } from '@constants/sharedTypes';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
 import { SignFormProps, SignFormValuesProps, SignFormValuesSchema } from './SignForm.types';
+
+import DefaultButton from '../../shared/ui/DefaultButton';
 
 const SignForm = ({ onClose, open }: SignFormProps) => {
   const { t } = useTranslation();

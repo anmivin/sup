@@ -4,7 +4,9 @@ import { ZodType, z } from 'zod';
 
 import { components } from '@api/Api';
 
-import { HeartBrokenIcon, RingIcon, RingsCrossedIcon, RingsIcon, TwoHeartsIcon } from '@components/Icons';
+import { DRAWER_VARIANTS, LIFE_STAGE, LIFE_STATE, PARTNERSHIP, SEX } from '@type/enums';
+
+import { HeartBrokenIcon, RingIcon, RingsCrossedIcon, RingsIcon, TwoHeartsIcon } from '../../shared/ui/Icons';
 
 import { DRAWER_VARIANTS, LIFE_STAGE, LIFE_STATE, PARTNERSHIP, SEX } from '@type/enums';
 

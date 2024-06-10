@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 import { AutocompleteProps, AutocompleteValue } from '@mui/material';
 import { ChipTypeMap } from '@mui/material/Chip';
 
-import DefaultAutocomplete from '@components/DefaultAutocomplete';
-import { DefaultAutocompleteProps } from '@components/DefaultAutocomplete/DefaultAutocomplete.types';
-import DefaultChip from '@components/DefaultChip';
-import DefaultTextfield from '@components/DefaultTextfield';
+import DefaultAutocomplete from '../../ui/DefaultAutocomplete';
+import { DefaultAutocompleteProps } from '../../ui/DefaultAutocomplete/DefaultAutocomplete.types';
+import DefaultChip from '../../ui/DefaultChip';
+import DefaultTextfield from '../../ui/DefaultTextfield';
 
 export interface FormAutocompleteProps<
   T,

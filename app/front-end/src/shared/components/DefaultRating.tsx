@@ -1,6 +1,6 @@
 import { Rating } from '@mui/material';
 
-import { RatingFilledIcon, RatingIcon } from './Icons';
+import { RatingFilledIcon, RatingIcon } from '../ui/Icons';
 
 const DefaultRating = () => {
   return (

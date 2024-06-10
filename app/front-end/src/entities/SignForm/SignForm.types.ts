@@ -1,6 +1,6 @@
 import { ZodType, z } from 'zod';
 
-import { DefaultModalProps } from '@components/DefaultModal';
+import { DefaultModalProps } from '../../shared/ui/DefaultModal';
 
 export enum SignFormtype {
   SignUp = 'SignUp',

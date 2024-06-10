@@ -6,9 +6,6 @@ import { MenuList } from '@mui/material';
 import { ButtonContainer, Divider, StyledButton, StyledPoper } from '@entities/Header/Header.styled';
 
 import { Link } from '@components/DefaultComponents';
-import DefaultMenuItem from '@components/DefaultMenuItem';
-import DefaultSelect from '@components/DefaultSelect';
-import { UserIcon } from '@components/Icons';
 
 import { Languages } from '@constants/enums';
 
@@ -17,6 +14,9 @@ import { ProfileStore } from '@stores/Profile/Profile.store';
 import { ProfileMenuProps } from './ProfileMenu.types';
 
 import routes from '../../shared/constants/routes';
+import DefaultMenuItem from '../../shared/ui/DefaultMenuItem';
+import DefaultSelect from '../../shared/ui/DefaultSelect';
+import { UserIcon } from '../../shared/ui/Icons';
 
 const ProfileMenu = ({ onOpenLoginForm }: ProfileMenuProps) => {
   const { t, i18n } = useTranslation();

@@ -1,13 +1,14 @@
 import { useTranslation } from 'react-i18next';
 
 import DefaultRating from '@components/DefaultRating';
-import * as icons from '@components/Icons';
-import DefaultSpinner from '@components/Spinner/Spinner';
 
 /* import RandomAspiration from '@components/Randomizer/RandomAspiration';
 import RandomSkill from '@components/Randomizer/RandomSkill';
 import RandomTrait from '@components/Randomizer/RandomTrait'; */
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
+
+import * as icons from '../../shared/ui/Icons';
+import DefaultSpinner from '../../shared/ui/Spinner/Spinner';
 
 HandbookStore.getState().getAspirations();
 HandbookStore.getState().getSkills();

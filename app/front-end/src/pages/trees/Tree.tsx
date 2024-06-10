@@ -5,11 +5,11 @@ import TreeComponent from '@widgets/Tree';
 import CreateSimDrawer from '@entities/CreateSimDrawer';
 import TreeDrawer from '@entities/TreeDrawer';
 
-import DefaultButton from '@components/DefaultButton';
-
 import { DRAWER_VARIANTS } from '@type/enums';
 
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
+
+import DefaultButton from '../../shared/ui/DefaultButton';
 
 /* import {
   fetchAspirations,

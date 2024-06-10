@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Box, Typography } from '@mui/material';
 
-import DefaultButton from '@components/DefaultButton';
+import DefaultButton from '../../ui/DefaultButton';
 
 export interface DefaultFormFooterProps {
   onClose?: () => void;

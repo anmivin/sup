@@ -6,13 +6,13 @@ import { Box, Link, Switch } from '@mui/material';
 import ProfileMenu from '@entities/ProfileMenu';
 import SignForm from '@entities/SignForm';
 
-import { MoonIcon, SunIcon } from '@components/Icons';
-
 import routes from '@constants/routes';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
 import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton, StyledLink } from './Header.styled';
+
+import { MoonIcon, SunIcon } from '../../shared/ui/Icons';
 
 const Header = () => {
   const { t } = useTranslation();

@@ -2,11 +2,11 @@ import { Handle, NodeProps, Position } from 'reactflow';
 
 import { Box, Typography } from '@mui/material';
 
-import DefaultContextMenu from '@components/DefaultContextMenu';
-
 import { Settings } from '@constants/icons';
 
 import { Circle, TheBox } from './TreeComponent.styled';
+
+import DefaultContextMenu from '../../shared/ui/DefaultContextMenu';
 
 interface NodeData {
   name: string;

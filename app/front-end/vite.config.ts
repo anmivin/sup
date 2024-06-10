@@ -23,6 +23,7 @@ export default defineConfig({
       '@libs': `${path.resolve(__dirname, './src/shared/libs/')}`,
       '@stores': `${path.resolve(__dirname, './src/shared/stores/')}`,
       '@theme': `${path.resolve(__dirname, './src/shared/theme/')}`,
+      '@ui': `${path.resolve(__dirname, './src/shared/ui/')}`,
       '@assets': `${path.resolve(__dirname, './src/shared/assets/')}`,
       '@images': `${path.resolve(__dirname, './public/')}`,
     },
