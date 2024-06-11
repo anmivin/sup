@@ -2,7 +2,7 @@ import { CSSProperties, ElementType } from 'react';
 
 import { TypographyProps as MuiTypographyProps } from '@mui/material/Typography';
 
-import { Color } from '@components/DefaultComponents/theme';
+import { Color } from '@theme/index';
 
 export enum TitleVariant {
   h1 = 'h1',
@@ -33,25 +33,3 @@ export interface TypographyProps extends Omit<MuiTypographyProps, 'color'> {
 }
 
 export type TextProps = TypographyProps;
-
-export interface TypographyTitleProps extends Omit<TypographyProps, 'variant'> {
-  level?: TypographyTitleLevel;
-}
-
-type TypographyExtendVariants = {
-  [TextVariant.body1medium]: CSSProperties;
-  [TextVariant.mini]: CSSProperties;
-};
-
-declare module '@mui/material/styles' {
-  type TypographyVariants = TypographyExtendVariants;
-  type TypographyVariantsOptions = Partial<TypographyExtendVariants>;
-}
-
-declare module '@mui/material/Typography' {
-  interface TypographyPropsVariantOverrides {
-    body1medium: true;
-    mini: true;
-    overline: false;
-  }
-}

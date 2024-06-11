@@ -4,7 +4,7 @@ import { StyledMuiDialog } from './Dialog.styled';
 
 import { DialogProps } from './Dialog.types';
 
-import { CloseIcon } from '../Icons';
+import { CloseIcon } from '../../assets/icons';
 import Text from '../Typography/Text';
 
 const CloseButtonLabel = styled('label')(

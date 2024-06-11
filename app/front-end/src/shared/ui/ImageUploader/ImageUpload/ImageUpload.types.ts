@@ -1,4 +1,4 @@
 export interface ImageUploadProps {
-  onImageAdd: (props: File) => void;
-  value?: string;
+  onImageAdd: (props: File[]) => void;
+  value: string | null;
 }

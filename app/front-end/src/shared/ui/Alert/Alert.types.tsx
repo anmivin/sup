@@ -1,9 +1,10 @@
 import { ReactNode } from 'react';
 
 import { AlertProps } from '@mui/material';
-import { AlertBlankIcon, AlertCheckIcon, AlertCloseIcon, AlertExclamationIcon, AlertInfoIcon } from '@ui/Icons';
 
 import { Color } from '@theme/index';
+
+import { AlertBlankIcon, AlertCheckIcon, AlertCloseIcon, AlertExclamationIcon, AlertInfoIcon } from '@assets/icons';
 
 export enum ALERT_VARIANTS {
   success = 'success',

@@ -1,7 +1,8 @@
 import { ForwardedRef, forwardRef } from 'react';
 
 import { AlertTitle, Box, Button, IconButton } from '@mui/material';
-import { CloseIcon } from '@ui/Icons';
+
+import { CloseIcon } from '@assets/icons';
 
 import { StyledAlert } from './Alert.styled';
 

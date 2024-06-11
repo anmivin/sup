@@ -7,7 +7,7 @@ import { DropContainer } from './ImageDrop.styled';
 
 import { ImageDropProps } from './ImageDrop.types';
 
-import { UploadIcon } from '../../Icons';
+import { UploadIcon } from '../../../assets/icons';
 
 const ImageDrop = ({ onFilesAdd }: ImageDropProps) => {
   const { t } = useTranslation('translation');
@@ -26,6 +26,7 @@ const ImageDrop = ({ onFilesAdd }: ImageDropProps) => {
 
   const handleInputChange = useCallback<ChangeEventHandler<HTMLInputElement>>((event) => {
     if (event.target.files) {
+      console.log(event.target.files[0]);
       onFilesAdd(Array.from(event.target.files));
     }
   }, []);

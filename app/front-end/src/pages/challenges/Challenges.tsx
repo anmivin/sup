@@ -1,13 +1,20 @@
+import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import DefaultRating from '@components/DefaultRating';
+import { uniqueId } from 'lodash';
 
 /* import RandomAspiration from '@components/Randomizer/RandomAspiration';
 import RandomSkill from '@components/Randomizer/RandomSkill';
 import RandomTrait from '@components/Randomizer/RandomTrait'; */
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
 
-import * as icons from '../../shared/ui/Icons';
+import DefaultRating from '@ui/DefaultRating';
+import { ImageDrop, ImageList, ImageUpload } from '@ui/ImageUploader';
+import { ImageItem } from '@ui/ImageUploader/ImageUploader.types';
+
+import DrawLayout from '../../fetures/DrawLayout';
+import EditImageModal from '../../fetures/EditImageModal';
+import * as icons from '../../shared/assets/icons';
 import DefaultSpinner from '../../shared/ui/Spinner/Spinner';
 
 HandbookStore.getState().getAspirations();
@@ -16,10 +23,34 @@ HandbookStore.getState().getTraits();
 
 const Challenges = () => {
   const { t } = useTranslation(['achievements']);
+  const [files, setFiles] = useState<ImageItem[]>([]);
+  const [open, setOpen] = useState(false);
+  const [img, setImg] = useState<string | null>(null);
+  const onAdd = useCallback((files: File[]) => {
+    setFiles((prev) => [...prev, ...files.map((val) => ({ file: val, key: uniqueId(), uploadProgress: 0.7 }))]);
+  }, []);
 
+  useEffect(() => {
+    console.log('files', files);
+  }, [files]);
   return (
     <>
+      {/*       <DrawLayout /> */}
+      <ImageUpload
+        value={img}
+        onImageAdd={(files) => {
+          setFiles((prev) => [...prev, ...files.map((val) => ({ file: val, key: uniqueId(), uploadProgress: 0.7 }))]);
+          setOpen(true);
+        }}
+      />
+      <ImageDrop onFilesAdd={onAdd} />
+      <ImageList imageList={files} /* onImageRemove={() => {}} */ onImageClick={() => setOpen(true)} />
+      {!!files.length && (
+        <EditImageModal setImg={setImg} open={open} onClose={() => setOpen(false)} image={files[0].file} />
+      )}
+
       <DefaultRating />
+
       <icons.AlertBlankIcon />
       <icons.AlertCheckIcon />
       <icons.AlertCloseIcon />
@@ -51,8 +82,10 @@ const Challenges = () => {
       <icons.DoneIcon />
       <icons.DownloadIcon />
       <icons.EditIcon />
+      <icons.CursorIcon />
       <icons.EyeIcon />
       <icons.EyeOffIcon />
+      <icons.EraserIcon />
       <icons.FaceContentIcon />
       <icons.FaceFrownIcon />
       <icons.FaceHappyIcon />
@@ -62,8 +95,8 @@ const Challenges = () => {
       <icons.FlashIcon />
       <icons.GamePadIcon />
       <icons.GiftIcon />
-      <icons.GlobeIcon />
       <icons.GridIcon />
+
       <icons.HeartFilledIcon />
       <icons.HeartIcon />
       <icons.HomeIcon />
@@ -74,7 +107,6 @@ const Challenges = () => {
       <icons.MoonIcon />
       <icons.MoonStarIcon />
       <icons.PuzzleIcon />
-      <icons.RatingFilledIcon />
       <icons.RatingIcon />
       <icons.SaveIcon />
       <icons.SettingsIcon />
@@ -93,6 +125,7 @@ const Challenges = () => {
       <icons.HeartBrokenIcon />
       <icons.RingIcon />
       <icons.RingsCrossedIcon />
+
       {/*       <RandomAspiration aspirations={aspirations} />
       <RandomSkill />
       <RandomTrait /> */}

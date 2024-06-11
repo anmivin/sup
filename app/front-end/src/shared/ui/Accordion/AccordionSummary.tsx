@@ -4,7 +4,7 @@ import { StyledAccordionSummary } from './Accordion.styled';
 
 import { AccordionSummaryProps } from './Accordion.types';
 
-import { ChevronDownIcon } from '../Icons';
+import { ChevronDownIcon } from '../../assets/icons';
 import { Title } from '../Typography';
 
 export const AccordionSummary = forwardRef<HTMLDivElement, AccordionSummaryProps>(
