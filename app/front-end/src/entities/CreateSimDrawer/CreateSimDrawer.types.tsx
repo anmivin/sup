@@ -6,9 +6,7 @@ import { components } from '@api/Api';
 
 import { DRAWER_VARIANTS, LIFE_STAGE, LIFE_STATE, PARTNERSHIP, SEX } from '@type/enums';
 
-import { HeartBrokenIcon, RingIcon, RingsCrossedIcon, RingsIcon, TwoHeartsIcon } from '../../shared/ui/Icons';
-
-import { DRAWER_VARIANTS, LIFE_STAGE, LIFE_STATE, PARTNERSHIP, SEX } from '@type/enums';
+import { HeartBrokenIcon, RingIcon, RingsCrossedIcon, RingsIcon, TwoHeartsIcon } from '@ui/Icons';
 
 export interface CreateSimDrawerProps {
   simsInTree: components['schemas']['OutputSimListDto'][];

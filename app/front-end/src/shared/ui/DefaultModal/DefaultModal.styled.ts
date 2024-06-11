@@ -5,16 +5,22 @@ export const StyledModal = styled(Modal)`
   justify-content: center;
   align-items: center;
   .MuiBackdrop-root {
-    background: ${({ theme }) => theme.color.secondaryDark};
+    background: ${({ theme }) => theme.color.transparentDark700};
   }
 `;
 
 export const ModalContent = styled(Box)`
   border-radius: 12px;
   width: fit-content;
-  padding: 20px;
+  padding: ${({ theme }) => theme.spacing(4)};
   max-width: 650px;
   background: ${({ theme }) => theme.color.primaryMain};
+`;
+
+export const ModalHeader = styled(Box)`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const StyledIconButton = styled(IconButton)``;

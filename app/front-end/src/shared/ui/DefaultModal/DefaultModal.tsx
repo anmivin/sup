@@ -2,21 +2,23 @@ import { ForwardedRef, forwardRef } from 'react';
 
 import { Box } from '@mui/material';
 
-import { ModalContent, StyledIconButton, StyledModal } from './DefaultModal.styled';
+import { CloseIcon } from '@ui/Icons';
+
+import { ModalContent, ModalHeader, StyledIconButton, StyledModal } from './DefaultModal.styled';
 
 import { DefaultModalProps } from './DefaultModal.types';
 
-import { CloseIcon } from '../Icons';
-
 const DefaultModal = forwardRef(
-  ({ open, onClose, children, ...rest }: DefaultModalProps, ref: ForwardedRef<HTMLDivElement>) => {
+  ({ open, onClose, header, children, ...rest }: DefaultModalProps, ref: ForwardedRef<HTMLDivElement>) => {
     return (
       <StyledModal ref={ref} open={open} onClose={onClose} {...rest}>
         <ModalContent>
-          <StyledIconButton onClick={(e) => onClose?.(e, 'backdropClick')}>
-            <CloseIcon />
-          </StyledIconButton>
-          <Box>header</Box>
+          <ModalHeader>
+            <Box>{header}</Box>
+            <StyledIconButton onClick={(e) => onClose?.(e, 'backdropClick')}>
+              <CloseIcon />
+            </StyledIconButton>
+          </ModalHeader>
 
           {children}
         </ModalContent>

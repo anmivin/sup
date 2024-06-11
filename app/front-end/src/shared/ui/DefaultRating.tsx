@@ -1,6 +1,6 @@
 import { Rating } from '@mui/material';
 
-import { RatingFilledIcon, RatingIcon } from '../ui/Icons';
+import { RatingFilledIcon, RatingIcon } from './Icons';
 
 const DefaultRating = () => {
   return (
@@ -10,7 +10,7 @@ const DefaultRating = () => {
         precision={1}
         defaultValue={2}
         emptyIcon={<RatingIcon />}
-        icon={<RatingFilledIcon color="backgroundPaper" />}
+        icon={<RatingFilledIcon color="mono100" />}
         onChange={(e, value) => console.log(value)}
       />
     </>

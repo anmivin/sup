@@ -1,4 +1,4 @@
-import IconWrapper, { IconProps } from '@components/IconWrapper';
+import IconWrapper, { IconProps } from '@ui/IconWrapper';
 
 const ToggleLeftIcon = (props: IconProps) => {
   return (

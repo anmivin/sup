@@ -5,18 +5,17 @@ import { MenuList } from '@mui/material';
 
 import { ButtonContainer, Divider, StyledButton, StyledPoper } from '@entities/Header/Header.styled';
 
-import { Link } from '@components/DefaultComponents';
-
 import { Languages } from '@constants/enums';
+import routes from '@constants/routes';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
-import { ProfileMenuProps } from './ProfileMenu.types';
+import DefaultMenuItem from '@ui/DefaultMenuItem';
+import DefaultSelect from '@ui/DefaultSelect';
+import { UserIcon } from '@ui/Icons';
+import Link from '@ui/Link';
 
-import routes from '../../shared/constants/routes';
-import DefaultMenuItem from '../../shared/ui/DefaultMenuItem';
-import DefaultSelect from '../../shared/ui/DefaultSelect';
-import { UserIcon } from '../../shared/ui/Icons';
+import { ProfileMenuProps } from './ProfileMenu.types';
 
 const ProfileMenu = ({ onOpenLoginForm }: ProfileMenuProps) => {
   const { t, i18n } = useTranslation();

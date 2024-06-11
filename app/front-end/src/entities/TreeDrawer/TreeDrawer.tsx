@@ -4,11 +4,12 @@ import { useTranslation } from 'react-i18next';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 
-import DefaultTextField from '@components/DefaultTextfield/DefaultTextfield';
-import DefaultFormFooter from ../../shared/ui/DefaultTextfield/DefaultTextfield
+import DefaultFormFooter from '@components/Form/FormFooter';
 import DefaultFormContainer from '@components/FormContainer';
 
 import { DRAWER_VARIANTS } from '@type/enums';
+
+import DefaultTextField from '@ui/DefaultTextfield';
 
 import { CreateTreeDrawerProps, CreateTreeForm, TreeDrawerSchema } from './TreeDrawer.types';
 

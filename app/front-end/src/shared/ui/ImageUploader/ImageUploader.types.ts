@@ -1,10 +1,5 @@
-export interface ImageItem<T> {
-  fileData?: T;
-  file?: File;
-  properties: {
-    name: string;
-    size: number;
-  };
+export interface ImageItem {
+  file: File;
   key: string;
   uploadProgress?: number;
 }
@@ -18,25 +13,25 @@ export interface ImageSchema {
   size: number;
 }
 
-export interface UseImageUploaderProps<ImageData> {
+export interface UseImageUploaderProps {
   onFileAdd?: (
-    fileItem: ImageItem<ImageData>,
+    fileItem: ImageItem,
     onUploadProgress?: (event: ProgressEvent) => void,
-  ) => Promise<ImageItem<ImageData> | undefined>;
-  onFileRemove?: (fileItem: ImageItem<ImageData>) => void | Promise<void>;
-  defaultFiles?: ImageItem<ImageData>[];
+  ) => Promise<ImageItem | undefined>;
+  onFileRemove?: (fileItem: ImageItem) => void | Promise<void>;
+  defaultFiles?: ImageItem[];
 }
 
 export type CustomFileSchema = {
   [k: string]: string | number;
 } & ImageSchema;
 
-export interface ImageUploaderProps<T> {
+export interface ImageUploaderProps {
   sendData: (file: File, onUploadProgress?: (e: ProgressEvent) => void) => Promise<CustomFileSchema>;
-  onFileClick?: (fileItem: ImageItem<T>) => void;
-  onFileRemove?: (fileItem: ImageItem<T>) => void;
-  onChange?: (value: Array<ImageItem<T>>) => void;
-  value: Array<ImageItem<T>>;
+  onFileClick?: (fileItem: ImageItem) => void;
+  onFileRemove?: (fileItem: ImageItem) => void;
+  onChange?: (value: Array<ImageItem>) => void;
+  value: Array<ImageItem>;
   showFileList?: boolean;
   showFileUploader?: boolean;
   fileFormats?: string[];

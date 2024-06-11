@@ -1,13 +1,13 @@
 import { ReactNode } from 'react';
 
-import { partnershipType } from '@entities/CreateSimDrawer/CreateSimDrawer.types';
+import { PARTNERSHIP } from '@type/enums';
 
 import { HeartBrokenIcon, RingIcon, RingsCrossedIcon, RingsIcon, TwoHeartsIcon } from '.';
 
-export const PartnershipIcons: Record<partnershipType, ReactNode> = {
-  [partnershipType.divorced]: <RingsCrossedIcon />,
-  [partnershipType.engaged]: <RingIcon />,
-  [partnershipType.exes]: <HeartBrokenIcon />,
-  [partnershipType.married]: <RingsIcon />,
-  [partnershipType.partners]: <TwoHeartsIcon />,
+export const PartnershipIcons: Record<PARTNERSHIP, ReactNode> = {
+  [PARTNERSHIP.divorced]: <RingsCrossedIcon />,
+  [PARTNERSHIP.engaged]: <RingIcon />,
+  [PARTNERSHIP.exes]: <HeartBrokenIcon />,
+  [PARTNERSHIP.married]: <RingsIcon />,
+  [PARTNERSHIP.partners]: <TwoHeartsIcon />,
 };

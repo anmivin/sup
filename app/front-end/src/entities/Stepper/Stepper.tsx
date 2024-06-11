@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Box, Step, StepContent, StepLabel, Stepper, Typography } from '@mui/material';
 
-import { StyledBox } from '@components/DefaultBox';
+import { StyledBox } from '@ui/DefaultBox';
 
 import { CircleBox, StyledPaper } from './Stepper.styled';
 

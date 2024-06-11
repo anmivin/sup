@@ -26,6 +26,7 @@ const ImageDrop = ({ onFilesAdd }: ImageDropProps) => {
 
   const handleInputChange = useCallback<ChangeEventHandler<HTMLInputElement>>((event) => {
     if (event.target.files) {
+      console.log(event.target.files[0]);
       onFilesAdd(Array.from(event.target.files));
     }
   }, []);

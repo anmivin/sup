@@ -5,24 +5,24 @@ import { useTranslation } from 'react-i18next';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button, Tab } from '@mui/material';
 
-import DefaultRating from '@components/DefaultRating';
-import DefaultTabs from '@components/DefaultTabs';
 import FormAutocomplete from '@components/Form/FormAutocomplete';
 import FormCheckbox from '@components/Form/FormCheckbox';
 import DefaultFormFooter from '@components/Form/FormFooter';
 import FormTextField from '@components/Form/FormTextField';
 import DefaultFormContainer from '@components/FormContainer';
-import { PhotoUpload } from '@components/ImageUploader';
-../../shared/ui/ImageUploader
+
 import { DRAWER_VARIANTS, GAME_PART, SEX } from '@type/enums';
 
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
+import DefaultDrawer from '@ui/DefaultDrawer';
+import DefaultRating from '@ui/DefaultRating';
+import DefaultTabs from '@ui/DefaultTabs';
+import { ImageUpload } from '@ui/ImageUploader';
+
 import { SIMS_DRAWER_TABS, SIMS_DRAWER_TABS_VARIATIONS } from './CreateSimDrawer.types';
 import { CreateSimDrawerProps, CreateSimForm, SimDrawerSchema } from './CreateSimDrawer.types';
-
-import DefaultDrawer from '../../shared/ui/DefaultDrawer';
 
 const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimDrawerProps) => {
   const [selectedTab, setSelectedTab] = useState<SIMS_DRAWER_TABS_VARIATIONS>(SIMS_DRAWER_TABS_VARIATIONS.MainInfo);
@@ -120,7 +120,7 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
         {selectedTab === SIMS_DRAWER_TABS_VARIATIONS.MainInfo && (
           <>
             <Box display="flex" gap={2}>
-              <PhotoUpload onFilesAdd={() => {}} />
+              <ImageUpload onImageAdd={() => {}} />
               <Box display="flex" flexDirection="column" gap={2} flexGrow={1}>
                 <FormTextField name="name" label={t('data.name', { ns: 'tree' })} />
                 <FormAutocomplete

@@ -82,3 +82,5 @@ export { default as AlertExclamationIcon } from './AlertExclamationIcon';
 export { default as HeartBrokenIcon } from './HeartBrokenIcon';
 export { default as RingIcon } from './RingIcon';
 export { default as RingsCrossedIcon } from './RingsCrossedIcon';
+export { default as EraserIcon } from './EraserIcon';
+export { default as CursorIcon } from './CursorIcon';
