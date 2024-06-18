@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 
 import CropImage from '@entities/CropImage/CropImage';
 
-import DefaultModal from '@ui/DefaultModal';
+import DefaultModal from '@ui/Modal';
 
 import { EditImageModalProps } from './EditImageModal.types';
 

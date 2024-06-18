@@ -3,7 +3,7 @@ import { TextField, styled } from '@mui/material';
 export const StyledTextField = styled(TextField)(({ theme }) => ({
   '& label.Mui-focused': {
     borderWidth: 2,
-    color: theme.color.backgroundDefault,
+    color: theme.color.textDark,
   },
   '& .MuiOutlinedInput-root': {
     color: '#000',

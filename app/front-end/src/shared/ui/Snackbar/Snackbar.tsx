@@ -11,8 +11,8 @@ import {
   AlertPlusIcon,
   AlertQuestionIcon,
   CloseIcon,
-} from '@components/Icons';
-../Icons
+} from '@assets/icons';
+
 import * as S from './Snackbar.styled';
 
 import { SnackbarProps } from './Snackbar.types';

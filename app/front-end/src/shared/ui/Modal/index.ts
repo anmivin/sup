@@ -1,2 +1,2 @@
-export { default } from './DefaultModal';
-export { type DefaultModalProps } from './DefaultModal.types';
+export { default } from './Modal';
+export { type DefaultModalProps } from './Modal.types';

@@ -8,12 +8,12 @@ import RandomSkill from '@components/Randomizer/RandomSkill';
 import RandomTrait from '@components/Randomizer/RandomTrait'; */
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
 
-import DefaultRating from '@ui/DefaultRating';
 import { ImageDrop, ImageList, ImageUpload } from '@ui/ImageUploader';
 import { ImageItem } from '@ui/ImageUploader/ImageUploader.types';
+import Rating from '@ui/Rating';
 
-import DrawLayout from '../../fetures/DrawLayout';
-import EditImageModal from '../../fetures/EditImageModal';
+import DrawLayout from '../../features/DrawLayout';
+import EditImageModal from '../../features/EditImageModal';
 import * as icons from '../../shared/assets/icons';
 import DefaultSpinner from '../../shared/ui/Spinner/Spinner';
 
@@ -49,7 +49,7 @@ const Challenges = () => {
         <EditImageModal setImg={setImg} open={open} onClose={() => setOpen(false)} image={files[0].file} />
       )}
 
-      <DefaultRating />
+      <Rating />
 
       <icons.AlertBlankIcon />
       <icons.AlertCheckIcon />

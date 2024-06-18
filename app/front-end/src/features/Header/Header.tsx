@@ -1,17 +1,18 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Box, Link, Switch } from '@mui/material';
+import { Box, Switch } from '@mui/material';
+
+import ProfileMenu from '@features/ProfileMenu';
+import SignForm from '@features/SignForm';
 
 import routes from '@constants/routes';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
-import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton, StyledLink } from './Header.styled';
+import { MoonIcon, SunIcon } from '@assets/icons';
 
-import { MoonIcon, SunIcon } from '../../shared/assets/icons';
-import ProfileMenu from '../ProfileMenu';
-import SignForm from '../SignForm';
+import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton, StyledLink } from './Header.styled';
 
 const Header = () => {
   const { t } = useTranslation();

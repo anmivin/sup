@@ -28,7 +28,7 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
 
   '&.MuiButton-root[disabled]': {
     backgroundColor: 'transparent',
-    color: theme.color.monoA400,
+    color: theme.color.mono400,
   },
   '&.MuiButton-sizeXxl': {
     height: buttonSizeMap[ButtonSize.xxl],
@@ -57,35 +57,14 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
     padding: theme.spacing(0, 0.5),
   },
   '&.MuiButton-outlined': {
-    color: theme.color.monoA700,
-    border: `1px solid ${theme.color.monoA200}`,
+    color: theme.color.mono200,
+    border: `1px solid ${theme.color.mono700}`,
     ...getEventsColors(theme.color),
 
     '.MuiTouchRipple-root': {
       borderRadius: 3,
     },
-    '&Primary': {
-      color: theme.color.primary,
-      ...getEventsColors(theme.color, 'primary'),
-    },
-    '&Secondary': {
-      color: theme.color.secondary,
-      ...getEventsColors(theme.color, 'secondary'),
-    },
-    '&Error': {
-      color: theme.color.error,
-      ...getEventsColors(theme.color, 'error'),
-    },
-    '&Success': {
-      color: theme.color.success,
-      ...getEventsColors(theme.color, 'success'),
-    },
-    // '&Info': {
-    //   color: theme.color.info,
-    //   ...getEventsColors(theme.color, 'info'),
-    // },
-    // fix outlined button padding
-    // - 0.25 = 1px - border width size
+
     '&.MuiButton-sizeXxl': {
       padding: theme.spacing(0, 4 - 0.25),
     },
@@ -105,30 +84,14 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
   '&.MuiButton-text': {
     ...getEventsColors(theme.color),
 
-    '&Primary': {
-      color: theme.color.primary,
-      ...getEventsColors(theme.color, 'primary'),
-    },
-    '&Secondary': {
-      color: theme.color.secondary,
-      ...getEventsColors(theme.color, 'secondary'),
-    },
-    '&Error': {
-      color: theme.color.error,
-      ...getEventsColors(theme.color, 'error'),
-    },
-    '&Success': {
-      color: theme.color.success,
-      ...getEventsColors(theme.color, 'success'),
-    },
     '&.MuiButton-sizeXxl, &.MuiButton-sizeXl': {
       padding: theme.spacing(0, 3),
     },
   },
   '&.MuiButton-contained': {
     boxShadow: 'none',
-    color: theme.color.monoA900,
-    backgroundColor: theme.color.monoA100,
+    color: theme.color.mono200,
+    backgroundColor: theme.color.mono100,
     ':before': {
       content: '""',
       display: 'block',
@@ -139,30 +102,10 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
       backgroundColor: 'transparent',
       pointerEvents: 'none',
     },
-    ...getEventsColors(theme.color, 'black', 'contained'),
-    '&Primary': {
-      color: theme.color.monoB,
-      backgroundColor: theme.color.primary,
-      ...getEventsColors(theme.color, 'white', 'contained'),
-    },
-    '&Secondary': {
-      color: theme.color.monoA800,
-      backgroundColor: theme.color.secondary,
-      ...getEventsColors(theme.color, 'black', 'contained'),
-    },
-    '&Error': {
-      color: theme.color.monoB,
-      backgroundColor: theme.color.error,
-      ...getEventsColors(theme.color, 'white', 'contained'),
-    },
-    '&Success': {
-      color: theme.color.monoB,
-      backgroundColor: theme.color.success,
-      ...getEventsColors(theme.color, 'white', 'contained'),
-    },
+
     '&[disabled]': {
-      backgroundColor: rgbaFromHex(theme.color.monoA, '75'),
-      color: theme.color.monoA400,
+      backgroundColor: theme.color.mono600,
+      color: theme.color.mono400,
       transition: 'background-color 0.3s ease-out',
       ':before': {
         display: 'none',

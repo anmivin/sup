@@ -31,7 +31,6 @@ const CropImage = ({ url, onCrop }: CropImageProps) => {
 
   useEffect(() => {
     if (image) {
-      // you many need to reapply cache on some props changes like shadow, stroke, etc.
       imageRef.current.cache();
     }
   }, [image]);

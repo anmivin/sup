@@ -1,6 +1,6 @@
 import { StateCreator } from 'zustand';
 
-import { DrawerVariants } from '@constants/sharedTypes';
+import { DRAWER_VARIANTS } from '@type/enums';
 
 import { TreeStateSliceProps } from './Tree.types';
 
@@ -10,7 +10,7 @@ export const TreeStateSlice: StateCreator<TreeStateSliceProps, [], []> = (set) =
     set({ isTreeDrawerOpen });
   },
 
-  treeDrawerType: DrawerVariants.Read,
+  treeDrawerType: DRAWER_VARIANTS.Read,
   setTreeDrawerType: (treeDrawerType) => {
     set({ treeDrawerType });
   },
@@ -20,7 +20,7 @@ export const TreeStateSlice: StateCreator<TreeStateSliceProps, [], []> = (set) =
     set({ isSimDrawerOpen });
   },
 
-  simDrawerType: DrawerVariants.Read,
+  simDrawerType: DRAWER_VARIANTS.Read,
   setSimDrawerType: (simDrawerType) => {
     set({ simDrawerType });
   },

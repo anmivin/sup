@@ -13,7 +13,6 @@ import { SignFormVariants } from '@constants/sharedTypes';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
-import DefaultButton from '@ui/DefaultButton';
 import DefaultModal from '@ui/Modal';
 
 import { SignFormProps, SignFormValuesProps, SignFormValuesSchema } from './SignForm.types';
@@ -66,9 +65,9 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
         <Tooltip title="можете не заполнять, но тогда не сможете восстановить пароль, коли его забудете">
           <Controller control={control} name="email" render={({ field }) => <TextField {...field} label="email" />} />
         </Tooltip>
-        <DefaultButton onClick={onSubmit}>
+        <Button onClick={onSubmit}>
           <Typography>{isSignUp ? t(`data.pages.signup`) : t(`data.pages.login`)}</Typography>
-        </DefaultButton>
+        </Button>
         <Typography>{isSignUp ? 'Уже есть акк?' : 'Нет акка пока что'}</Typography>
         <Button onClick={() => setSignFormType(isSignUp ? SignFormVariants.SignIn : SignFormVariants.SignUp)}>
           {isSignUp ? t(`data.pages.login`) : t(`data.pages.signup`)}

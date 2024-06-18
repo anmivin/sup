@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useRef } from 'react';
 
-import { GameParts } from '@constants/enums';
+import { GAME_PARTS } from '@constants/enums';
 
 import { AnimatedBox, Container, StyledBox } from './WorldImage.styled';
 
 import { WorldImageProps } from './WorldImage.types';
 
-const WorldImage = <T extends GameParts>({ image }: WorldImageProps<T>) => {
+const WorldImage = <T extends GAME_PARTS>({ image }: WorldImageProps<T>) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   const startAnimation = useCallback(() => {

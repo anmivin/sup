@@ -1,11 +1,10 @@
 import { components } from '@api/Api';
 
-import { GameParts } from '@constants/enums';
-import { SignFormVariants } from '@constants/sharedTypes';
+import { GAME_PART, SIGN_FORM_VARIANTS } from '@type/enums';
 
 export interface ProfileStateSliceProps {
-  gamePart: GameParts;
-  setGamePart: (val: GameParts) => void;
+  gamePart: GAME_PART;
+  setGamePart: (val: GAME_PART) => void;
 
   isDarkTheme: () => boolean;
   setIsDarkTheme: (val: () => boolean) => void;
@@ -13,8 +12,8 @@ export interface ProfileStateSliceProps {
   isSignFormOpen: boolean;
   setIsSignFormOpen: (val: boolean) => void;
 
-  signFormType: SignFormVariants;
-  setSignFormType: (val: SignFormVariants) => void;
+  signFormType: SIGN_FORM_VARIANTS;
+  setSignFormType: (val: SIGN_FORM_VARIANTS) => void;
 }
 
 export interface ProfileDataSliceProps {

@@ -1,16 +1,15 @@
-import { MutableRefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Group, Image, Layer, Line, Rect, Shape, Stage, Transformer } from 'react-konva';
+import { MutableRefObject, useCallback, useEffect, useRef, useState } from 'react';
+import { Layer, Line, Rect, Stage } from 'react-konva';
 
-import { Box, Button, Link, Popper, styled } from '@mui/material';
+import { Box } from '@mui/material';
 import { useTheme } from '@mui/material';
 import Konva from 'konva';
 import { uniqueId } from 'lodash';
 
 import DrawLayoutMenu from '@entities/DrawLayoutMenu';
+import { MODE } from '@entities/DrawLayoutMenu/DrawLayoutMenu.types';
 
 import { PositionProps } from '@type/interfaces';
-
-import { MODE } from '../../entities/DrawLayoutMenu/DrawLayoutMenu.types';
 
 const squareSize = 30;
 const sizes = { x: 20, y: 15 };
@@ -84,7 +83,6 @@ const DrawLayout = () => {
         const line = new Konva.Line({
           id: 'drawing',
           stroke: theme.color.mono900,
-          // remove line from hit graph, so we can check intersections
           listening: false,
           points: [initPos.x, initPos.y, position.x, position.y],
         });

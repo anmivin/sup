@@ -4,9 +4,9 @@ import { Box } from '@mui/material';
 
 import { CloseIcon } from '@assets/icons';
 
-import { ModalContent, ModalHeader, StyledIconButton, StyledModal } from './DefaultModal.styled';
+import { ModalContent, ModalHeader, StyledIconButton, StyledModal } from './Modal.styled';
 
-import { DefaultModalProps } from './DefaultModal.types';
+import { DefaultModalProps } from './Modal.types';
 
 const DefaultModal = forwardRef(
   ({ open, onClose, header, children, ...rest }: DefaultModalProps, ref: ForwardedRef<HTMLDivElement>) => {

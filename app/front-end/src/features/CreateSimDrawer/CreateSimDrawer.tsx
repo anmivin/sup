@@ -3,7 +3,7 @@ import { useFieldArray, useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Box, Button, Tab } from '@mui/material';
+import { Box, Button } from '@mui/material';
 
 import FormAutocomplete from '@entities/FormComponents/FormAutocomplete';
 import FormCheckbox from '@entities/FormComponents/FormCheckbox';
@@ -14,16 +14,16 @@ import { DRAWER_VARIANTS, GAME_PART, SEX } from '@type/enums';
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
-import DefaultRating from '@ui/DefaultRating';
-import DefaultTabs from '@ui/DefaultTabs';
 import DefaultDrawer from '@ui/Drawer';
 import { ImageUpload } from '@ui/ImageUploader';
+import DefaultRating from '@ui/Rating';
+import DefaultTabs from '@ui/Tabs';
 
-import { SIMS_DRAWER_TABS, SIMS_DRAWER_TABS_VARIATIONS } from './CreateSimDrawer.types';
+import { SIMS_DRAWER_TABS } from './CreateSimDrawer.types';
 import { CreateSimDrawerProps, CreateSimForm, SimDrawerSchema } from './CreateSimDrawer.types';
 
 const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimDrawerProps) => {
-  const [selectedTab, setSelectedTab] = useState<SIMS_DRAWER_TABS_VARIATIONS>(SIMS_DRAWER_TABS_VARIATIONS.MainInfo);
+  const [selectedTab, setSelectedTab] = useState(0);
   const { t } = useTranslation(['translation', 'aspirations', 'skills', 'traits', 'misc', 'tree']);
   const { aspirations, skills, traits } = HandbookStore();
   const { userId } = ProfileStore();
@@ -109,12 +109,8 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
       onClose={onCloseModal}
       label={`${t(type === DRAWER_VARIANTS.Create ? 'data.utility.create' : 'data.utility.edit')} ${t('data.misc.sim')}`}
     >
-      <DefaultTabs value={selectedTab} onChange={(_e, value) => setSelectedTab(value as SIMS_DRAWER_TABS_VARIATIONS)}>
-        {SIMS_DRAWER_TABS.map((tab) => (
-          <Tab key={tab.value} label={tab.label} value={tab.value} />
-        ))}
-      </DefaultTabs>
-      {selectedTab === SIMS_DRAWER_TABS_VARIATIONS.MainInfo && (
+      <DefaultTabs tabs={SIMS_DRAWER_TABS} value={selectedTab} onChange={(value) => setSelectedTab(value)} />
+      {selectedTab === 0 && (
         <>
           <Box display="flex" gap={2}>
             <ImageUpload onImageAdd={() => {}} value={null} />
@@ -170,7 +166,7 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
           <Button onClick={() => partnersAppend({ id: undefined, type: undefined })}>добавить партнера</Button>
         </>
       )}
-      {selectedTab === SIMS_DRAWER_TABS_VARIATIONS.Qualities && (
+      {selectedTab === 1 && (
         <>
           {aspirationFields.map((field, index) => (
             <Box key={field.id}>

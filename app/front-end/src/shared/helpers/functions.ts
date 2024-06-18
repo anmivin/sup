@@ -25,32 +25,3 @@ export const getEnumValues = <T>(enumeration: Record<string | number, T>) => {
     .filter((value) => isNaN(Number(value)))
     .map((key) => enumeration[key]);
 };
-
-const fileSizePrefixes = ['К', 'М', 'Г', 'Т'] as const;
-export const formatFileSize = (sizeInBytes: number, prefix?: (typeof fileSizePrefixes)[number]) => {
-  const prefixIndex = prefix ? fileSizePrefixes.indexOf(prefix) : undefined;
-  const reducedSize = fileSizePrefixes.reduce(
-    (accumulator, prefixItem, index) => {
-      if (prefixIndex) {
-        return index <= prefixIndex
-          ? {
-              size: accumulator.size / 1024,
-              prefix: prefixItem,
-            }
-          : accumulator;
-      } else {
-        return accumulator.size / 1024 > 1
-          ? {
-              size: accumulator.size / 1024,
-              prefix: prefixItem,
-            }
-          : accumulator;
-      }
-    },
-    {
-      size: sizeInBytes,
-      prefix: '',
-    },
-  );
-  return `${Math.round(reducedSize.size)} ${reducedSize.prefix}Б`;
-};

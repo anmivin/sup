@@ -3,20 +3,20 @@ import { useTranslation } from 'react-i18next';
 
 import { MenuList } from '@mui/material';
 
-import { Languages } from '@constants/enums';
+import { ButtonContainer, Divider, StyledButton, StyledPoper } from '@features/Header/Header.styled';
+
+import { LANGUAGES } from '@constants/enums';
 import routes from '@constants/routes';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
-import DefaultMenuItem from '@ui/DefaultMenuItem';
-import DefaultSelect from '@ui/DefaultSelect';
 import Link from '@ui/Link';
+import DefaultMenuItem from '@ui/Menu/MenuItem';
+import Select from '@ui/Select';
 
 import { UserIcon } from '@assets/icons';
 
 import { ProfileMenuProps } from './ProfileMenu.types';
-
-import { ButtonContainer, Divider, StyledButton, StyledPoper } from '../Header/Header.styled';
 
 const ProfileMenu = ({ onOpenLoginForm }: ProfileMenuProps) => {
   const { t, i18n } = useTranslation();
@@ -52,20 +52,20 @@ const ProfileMenu = ({ onOpenLoginForm }: ProfileMenuProps) => {
             {userId ? t('data.pages.logout') : t('data.pages.login')}
           </DefaultMenuItem>
 
-          <DefaultSelect
+          <Select
             variant="standard"
             sx={{ '.MuiOutlinedInput-input': { padding: 1 } }}
             value={i18n.language}
             onChange={(e) => {
-              i18n.changeLanguage(e.target.value as Languages);
+              i18n.changeLanguage(e.target.value as LANGUAGES);
             }}
           >
-            {Object.entries(Languages).map(([key, value]) => (
+            {Object.entries(LANGUAGES).map(([key, value]) => (
               <DefaultMenuItem key={key} value={key}>
                 {value}
               </DefaultMenuItem>
             ))}
-          </DefaultSelect>
+          </Select>
         </MenuList>
       </StyledPoper>
     </StyledButton>

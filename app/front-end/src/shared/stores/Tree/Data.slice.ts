@@ -2,8 +2,6 @@ import { StateCreator } from 'zustand';
 
 import { TreeDataSliceProps } from './Tree.types';
 
-import { createSimRequest, createTreeRequest, fetchSimsForTree, fetchSimsForUser } from './Tree.api';
-
 export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => ({
   defaultSims: null,
   simsInTree: null,
