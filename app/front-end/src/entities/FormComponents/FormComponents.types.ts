@@ -1,6 +1,6 @@
 import { AutocompleteValue, FormControlLabelProps } from '@mui/material';
 
-import { DefaultAutocompleteProps } from '@ui/Autocomplete/DefaultAutocomplete.types';
+import { DefaultAutocompleteProps } from '@ui/Autocomplete/Autocomplete.types';
 import { DefaultTextfieldProps } from '@ui/Textfield';
 
 export interface FormAutocompleteProps<

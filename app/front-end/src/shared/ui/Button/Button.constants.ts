@@ -6,9 +6,9 @@ export enum ButtonSize {
   xxl = 'xxl',
 }
 export enum ButtonVariant {
-  outlined = 'outlined',
-  contained = 'contained',
-  text = 'text',
+  skewed = 'skewed',
+  underscored = 'underscored',
+  simple = 'simple',
 }
 export enum ButtonColor {
   default = 'default',
@@ -25,4 +25,4 @@ export const buttonSizeMap = {
 };
 
 export const DEFAULT_BUTTON_SIZE = ButtonSize.large;
-export const DEFAULT_BUTTON_VARIANT = ButtonVariant.outlined;
+export const DEFAULT_BUTTON_VARIANT = ButtonVariant.simple;

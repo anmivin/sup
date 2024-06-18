@@ -1,38 +1,24 @@
 import { useCallback, useEffect, useState } from 'react';
 
+import { Button } from '@mui/material';
+
 import TreeComponent from '@widgets/Tree';
 
-import { DRAWER_VARIANTS } from '@type/enums';
+/* 
+import Button from '@ui/Button'; */
+import CreateSimDrawer from '@features/CreateSimDrawer';
+import TreeDrawer from '@features/TreeDrawer';
 
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
-
-import CreateSimDrawer from '../../fetures/CreateSimDrawer';
-import TreeDrawer from '../../fetures/TreeDrawer';
-import DefaultButton from '../../shared/ui/DefaultButton';
-
-/* import {
-  fetchAspirations,
-  fetchSimsForTree,
-  fetchSimsForUser,
-  fetchSkills,
-  fetchTraits,
-} from '@front/fetchers/fetchers';
-import { useFetcher } from '@front/fetchers/useFetch';
-import useModal from '@front/helpers/useModal'; */
+import { TreeStore } from '@stores/Tree/Tree.store';
 
 HandbookStore.getState().getAspirations();
 HandbookStore.getState().getSkills();
 HandbookStore.getState().getTraits();
 const Tree = () => {
-  /*   const { data: sims } = useFetcher(fetchSimsForTree, [1]);
-  const { data: simsInTree } = useFetcher(fetchSimsForUser, [1]);
-  const { data: aspirations } = useFetcher(fetchAspirations);
-  const { data: skills } = useFetcher(fetchSkills);
-  const { data: traits } = useFetcher(fetchTraits); */
-
   const [showTreeDrawer, setShowTreeDrawer] = useState(false);
   const [showSimDrawer, setShowSimDrawer] = useState(false);
-  /*   const [type, setType] = useState(false); */
+  const { simDrawerType, treeDrawerType } = TreeStore();
 
   const initNode = {
     id: 'init-node',
@@ -45,8 +31,8 @@ const Tree = () => {
 
   return (
     <>
-      <DefaultButton onClick={async () => setShowSimDrawer(true)}>СОЗДАТЬ</DefaultButton>
-      <DefaultButton onClick={async () => setShowTreeDrawer(true)}>СОЗДАТЬ ДЕРЕВО</DefaultButton>
+      <Button onClick={async () => setShowSimDrawer(true)}>СОЗДАТЬ</Button>
+      <Button onClick={async () => setShowTreeDrawer(true)}>СОЗДАТЬ ДЕРЕВО</Button>
       {/*  {sims && ( */}
       <TreeComponent
         initialEdges={
@@ -70,11 +56,11 @@ const Tree = () => {
       {showSimDrawer && (
         <CreateSimDrawer
           simsInTree={/* simsInTree ?? */ []}
-          type={DRAWER_VARIANTS.Create}
+          type={simDrawerType}
           onCloseModal={() => setShowSimDrawer(false)}
         />
       )}
-      {showTreeDrawer && <TreeDrawer type={DRAWER_VARIANTS.Create} onCloseModal={() => setShowTreeDrawer(false)} />}
+      {showTreeDrawer && <TreeDrawer type={treeDrawerType} onCloseModal={() => setShowTreeDrawer(false)} />}
     </>
   );
 };

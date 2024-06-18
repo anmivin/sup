@@ -8,14 +8,14 @@ import { TooltipProps } from './Tooltip.types';
 const getTooltipColor = ({ theme }: { theme: Theme }) => {
   return {
     [`& .${tooltipClasses.arrow}`]: {
-      color: theme.color.monoA550,
+      color: theme.color.textMain,
       '&:before': {
         backdropFilter: 'blur(10px)',
       },
     },
     [`& .${tooltipClasses.tooltip}`]: {
-      color: theme.color.monoB,
-      backgroundColor: theme.color.monoA600,
+      color: theme.color.textMain,
+      backgroundColor: theme.color.secondaryDark,
       backdropFilter: 'blur(10px)',
     },
   };

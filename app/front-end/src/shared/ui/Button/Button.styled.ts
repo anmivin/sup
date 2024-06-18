@@ -1,9 +1,9 @@
-import { Button as MuiButton } from '@mui/material';
+import { Button, useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import { Color, ColorOptions } from '@theme/theme.types';
 
-import { ButtonSize, buttonSizeMap } from './Button.constants';
+import { ButtonSize, ButtonVariant, buttonSizeMap } from './Button.constants';
 
 const getEventsColors = (color: ColorOptions, colorName: Color = 'secondaryMain', variant = '') => {
   const postFix = variant === 'contained' ? ':before' : '';
@@ -20,7 +20,29 @@ const getEventsColors = (color: ColorOptions, colorName: Color = 'secondaryMain'
   };
 };
 
-export const StyledButton = styled(MuiButton)(({ theme }) => ({
+const getButtonVariant = (variant: ButtonVariant, size: number) => {
+  const theme = useTheme();
+  switch (variant) {
+    case ButtonVariant.skewed:
+      return {
+        height: `${size}60px`,
+        backgroundColor: 'transparent',
+        borderRadius: 0,
+        padding: 0,
+        '&:hover': {
+          backgroundColor: theme.color.secondaryMain,
+          boxShadow: `0 4px ${theme.color.textDark}`,
+          transition: 'box-shadow 0.2s ease-out',
+        },
+      };
+    case ButtonVariant.underscored:
+      return {};
+    case ButtonVariant.simple:
+      return {};
+  }
+};
+
+export const StyledButton = styled(Button)(({ theme }) => ({
   ...theme.typography.button,
   gap: theme.spacing(1),
   alignSelf: 'center',
@@ -28,7 +50,7 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
 
   '&.MuiButton-root[disabled]': {
     backgroundColor: 'transparent',
-    color: theme.color.monoA400,
+    color: theme.color.mono400,
   },
   '&.MuiButton-sizeXxl': {
     height: buttonSizeMap[ButtonSize.xxl],
@@ -57,35 +79,14 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
     padding: theme.spacing(0, 0.5),
   },
   '&.MuiButton-outlined': {
-    color: theme.color.monoA700,
-    border: `1px solid ${theme.color.monoA200}`,
+    color: theme.color.mono200,
+    border: `1px solid ${theme.color.mono700}`,
     ...getEventsColors(theme.color),
 
     '.MuiTouchRipple-root': {
       borderRadius: 3,
     },
-    '&Primary': {
-      color: theme.color.primary,
-      ...getEventsColors(theme.color, 'primary'),
-    },
-    '&Secondary': {
-      color: theme.color.secondary,
-      ...getEventsColors(theme.color, 'secondary'),
-    },
-    '&Error': {
-      color: theme.color.error,
-      ...getEventsColors(theme.color, 'error'),
-    },
-    '&Success': {
-      color: theme.color.success,
-      ...getEventsColors(theme.color, 'success'),
-    },
-    // '&Info': {
-    //   color: theme.color.info,
-    //   ...getEventsColors(theme.color, 'info'),
-    // },
-    // fix outlined button padding
-    // - 0.25 = 1px - border width size
+
     '&.MuiButton-sizeXxl': {
       padding: theme.spacing(0, 4 - 0.25),
     },
@@ -105,30 +106,14 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
   '&.MuiButton-text': {
     ...getEventsColors(theme.color),
 
-    '&Primary': {
-      color: theme.color.primary,
-      ...getEventsColors(theme.color, 'primary'),
-    },
-    '&Secondary': {
-      color: theme.color.secondary,
-      ...getEventsColors(theme.color, 'secondary'),
-    },
-    '&Error': {
-      color: theme.color.error,
-      ...getEventsColors(theme.color, 'error'),
-    },
-    '&Success': {
-      color: theme.color.success,
-      ...getEventsColors(theme.color, 'success'),
-    },
     '&.MuiButton-sizeXxl, &.MuiButton-sizeXl': {
       padding: theme.spacing(0, 3),
     },
   },
   '&.MuiButton-contained': {
     boxShadow: 'none',
-    color: theme.color.monoA900,
-    backgroundColor: theme.color.monoA100,
+    color: theme.color.mono200,
+    backgroundColor: theme.color.mono100,
     ':before': {
       content: '""',
       display: 'block',
@@ -139,30 +124,10 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
       backgroundColor: 'transparent',
       pointerEvents: 'none',
     },
-    ...getEventsColors(theme.color, 'black', 'contained'),
-    '&Primary': {
-      color: theme.color.monoB,
-      backgroundColor: theme.color.primary,
-      ...getEventsColors(theme.color, 'white', 'contained'),
-    },
-    '&Secondary': {
-      color: theme.color.monoA800,
-      backgroundColor: theme.color.secondary,
-      ...getEventsColors(theme.color, 'black', 'contained'),
-    },
-    '&Error': {
-      color: theme.color.monoB,
-      backgroundColor: theme.color.error,
-      ...getEventsColors(theme.color, 'white', 'contained'),
-    },
-    '&Success': {
-      color: theme.color.monoB,
-      backgroundColor: theme.color.success,
-      ...getEventsColors(theme.color, 'white', 'contained'),
-    },
+
     '&[disabled]': {
-      backgroundColor: rgbaFromHex(theme.color.monoA, '75'),
-      color: theme.color.monoA400,
+      backgroundColor: theme.color.mono600,
+      color: theme.color.mono400,
       transition: 'background-color 0.3s ease-out',
       ':before': {
         display: 'none',
@@ -179,7 +144,7 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
   },
 }));
 
-export const StyleddButton = styled(MuiButton)`
+export const StyleddButton = styled(Button)`
   color: ${({ theme }) => theme.color.textMain};
   &.skewed {
     background-color: ${({ theme }) => theme.color.primaryMain};

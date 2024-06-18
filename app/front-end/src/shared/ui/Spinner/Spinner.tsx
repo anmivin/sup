@@ -1,4 +1,4 @@
-import { StyledSpinner } from './DefaultSpinner.styled';
+import { StyledSpinner } from './Spinner.styled';
 
 const Spinner = ({ width = 100 }: { width?: number }) => {
   return (

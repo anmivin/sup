@@ -3,19 +3,22 @@ import { useTranslation } from 'react-i18next';
 
 import { uniqueId } from 'lodash';
 
+import DrawLayout from '@widgets/DrawLayout';
+
+import EditImageModal from '@features/EditImageModal';
+
+import { ImageDrop, ImageList, ImageUpload } from '@entities/ImageUploader';
+import { ImageItem } from '@entities/ImageUploader/ImageUploader.types';
+
 /* import RandomAspiration from '@components/Randomizer/RandomAspiration';
 import RandomSkill from '@components/Randomizer/RandomSkill';
 import RandomTrait from '@components/Randomizer/RandomTrait'; */
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
 
-import DefaultRating from '@ui/DefaultRating';
-import { ImageDrop, ImageList, ImageUpload } from '@ui/ImageUploader';
-import { ImageItem } from '@ui/ImageUploader/ImageUploader.types';
+import Rating from '@ui/Rating';
+import DefaultSpinner from '@ui/Spinner/Spinner';
 
-import DrawLayout from '../../fetures/DrawLayout';
-import EditImageModal from '../../fetures/EditImageModal';
-import * as icons from '../../shared/assets/icons';
-import DefaultSpinner from '../../shared/ui/Spinner/Spinner';
+import * as icons from '@assets/icons';
 
 HandbookStore.getState().getAspirations();
 HandbookStore.getState().getSkills();
@@ -30,9 +33,6 @@ const Challenges = () => {
     setFiles((prev) => [...prev, ...files.map((val) => ({ file: val, key: uniqueId(), uploadProgress: 0.7 }))]);
   }, []);
 
-  useEffect(() => {
-    console.log('files', files);
-  }, [files]);
   return (
     <>
       {/*       <DrawLayout /> */}
@@ -49,7 +49,7 @@ const Challenges = () => {
         <EditImageModal setImg={setImg} open={open} onClose={() => setOpen(false)} image={files[0].file} />
       )}
 
-      <DefaultRating />
+      <Rating />
 
       <icons.AlertBlankIcon />
       <icons.AlertCheckIcon />

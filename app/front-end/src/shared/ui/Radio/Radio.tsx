@@ -22,8 +22,8 @@ export const Radio = forwardRef<HTMLButtonElement, RadioProps & { indeterminate?
         ref={ref}
         variant={variant}
         checked={rest.checked}
-        icon={<RadioIcon size={size} indeterminate={indeterminate} />}
-        checkedIcon={<RadioIcon size={size} checked indeterminate={indeterminate} />}
+        icon={<RadioIcon size={size} />}
+        checkedIcon={<RadioIcon size={size} checked />}
         size={size}
         {...rest}
       />

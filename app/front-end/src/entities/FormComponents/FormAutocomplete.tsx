@@ -2,7 +2,7 @@ import { Controller, useFormContext } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
 import DefaultAutocomplete from '@ui/Autocomplete';
-import DefaultChip from '@ui/DefaultChip';
+import DefaultChip from '@ui/Chip';
 import DefaultTextfield from '@ui/Textfield';
 
 import { FormAutocompleteProps } from './FormComponents.types';

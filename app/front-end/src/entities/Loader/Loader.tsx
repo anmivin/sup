@@ -1,4 +1,4 @@
-import DefaultSpinner from '../../shared/ui/Spinner';
+import DefaultSpinner from '@ui/Spinner';
 
 const Loader = () => {
   return <DefaultSpinner />;

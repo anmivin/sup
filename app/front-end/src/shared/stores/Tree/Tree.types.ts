@@ -1,19 +1,19 @@
 import { components } from '@api/Api';
 
-import { DrawerVariants } from '@constants/sharedTypes';
+import { DRAWER_VARIANTS } from '@type/enums';
 
 export interface TreeStateSliceProps {
   isTreeDrawerOpen: boolean;
   setIsTreeDrawerOpen: (val: boolean) => void;
 
-  treeDrawerType: DrawerVariants;
-  setTreeDrawerType: (val: DrawerVariants) => void;
+  treeDrawerType: DRAWER_VARIANTS;
+  setTreeDrawerType: (val: DRAWER_VARIANTS) => void;
 
   isSimDrawerOpen: boolean;
   setIsSimDrawerOpen: (val: boolean) => void;
 
-  simDrawerType: DrawerVariants;
-  setSimDrawerType: (val: DrawerVariants) => void;
+  simDrawerType: DRAWER_VARIANTS;
+  setSimDrawerType: (val: DRAWER_VARIANTS) => void;
 
   isCropModalOpen: boolean;
   setIsCropModalOpen: (val: boolean) => void;
