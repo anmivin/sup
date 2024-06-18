@@ -2,13 +2,12 @@ import { useCallback, useEffect, useState } from 'react';
 
 import TreeComponent from '@widgets/Tree';
 
-import CreateSimDrawer from '@entities/CreateSimDrawer';
-import TreeDrawer from '@entities/TreeDrawer';
-
 import { DRAWER_VARIANTS } from '@type/enums';
 
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
 
+import CreateSimDrawer from '../../fetures/CreateSimDrawer';
+import TreeDrawer from '../../fetures/TreeDrawer';
 import DefaultButton from '../../shared/ui/DefaultButton';
 
 /* import {

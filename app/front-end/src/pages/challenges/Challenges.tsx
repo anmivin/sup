@@ -3,9 +3,6 @@ import { useTranslation } from 'react-i18next';
 
 import { uniqueId } from 'lodash';
 
-import DrawLayout from '@entities/DrawLayout';
-import EditImageModal from '@entities/EditImageModal';
-
 /* import RandomAspiration from '@components/Randomizer/RandomAspiration';
 import RandomSkill from '@components/Randomizer/RandomSkill';
 import RandomTrait from '@components/Randomizer/RandomTrait'; */
@@ -15,7 +12,9 @@ import DefaultRating from '@ui/DefaultRating';
 import { ImageDrop, ImageList, ImageUpload } from '@ui/ImageUploader';
 import { ImageItem } from '@ui/ImageUploader/ImageUploader.types';
 
-import * as icons from '../../shared/ui/Icons';
+import DrawLayout from '../../fetures/DrawLayout';
+import EditImageModal from '../../fetures/EditImageModal';
+import * as icons from '../../shared/assets/icons';
 import DefaultSpinner from '../../shared/ui/Spinner/Spinner';
 
 HandbookStore.getState().getAspirations();

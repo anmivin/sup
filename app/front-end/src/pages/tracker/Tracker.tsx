@@ -1,9 +1,9 @@
 /* import { Layer, Rect, Stage, Text } from 'react-konva'; */
 import { Box, styled } from '@mui/material';
 
-import WorldImage from '@components/WorldImage';
+import WorldImage from '@entities/WorldImage';
 
-import { RatingFilledIcon, RatingIcon, TreeIcon } from '../../shared/ui/Icons';
+import { RatingFilledIcon, RatingIcon, TreeIcon } from '../../shared/assets/icons';
 import Spinner from '../../shared/ui/Spinner';
 import DownTown from './Downtown.webp';
 import fifth from './oasis/fifth.png';

@@ -3,7 +3,7 @@ import { ForwardedRef, forwardRef } from 'react';
 import { Typography as MuiTypography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-import { Color } from '@components/DefaultComponents/theme';
+import { Color } from '@theme/index';
 
 import { TypographyProps } from './Typography.types';
 
@@ -18,21 +18,3 @@ export const StyledTypography = styled(ForwardedTypography)(
       color: Object.prototype.hasOwnProperty.call(theme.color, color) ? theme.color[color as Color] : color,
     },
 );
-
-//STORY
-export const Container = styled('div')`
-  display: flex;
-  flex-direction: column;
-`;
-export const ListItem = styled('div')`
-  display: flex;
-  padding: ${({ theme }) => theme.spacing(2)};
-  margin-bottom: ${({ theme }) => theme.spacing(2)};
-  align-items: center;
-`;
-export const ListItemName = styled('div')`
-  width: 120px;
-  flex-shrink: 0;
-  padding-right: ${({ theme }) => theme.spacing(4)};
-  color: gray;
-`;

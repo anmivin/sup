@@ -6,7 +6,7 @@ import { StyledChip } from './Chip.styled';
 
 import { ChipProps } from './Chip.types';
 
-import { CloseIcon } from '../Icons';
+import { CloseIcon } from '../../assets/icons';
 
 export const Chip = forwardRef<HTMLDivElement, ChipProps>(
   (

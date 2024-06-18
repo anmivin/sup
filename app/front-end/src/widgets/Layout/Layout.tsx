@@ -1,14 +1,16 @@
 import { ReactNode, useMemo } from 'react';
 
-import HelpSection from '@widgets/HelpSection/HelpSection';
 import { useStore } from 'zustand';
 
+import HelpSection from '@widgets/HelpSection/HelpSection';
+../../fetures/Header/Header
 import Header from '@entities/Header/Header';
-import SignForm from '@entities/SignForm';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
 import { ContentBox } from './Layout.styled';
+
+import SignForm from '../../fetures/SignForm';
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const { isSignFormOpen, setIsSignFormOpen } = useStore(ProfileStore);

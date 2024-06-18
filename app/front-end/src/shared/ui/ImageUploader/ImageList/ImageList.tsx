@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import { Box, Button, CircularProgress } from '@mui/material';
 
-import { CloseIcon } from '@ui/Icons';
+import { CloseIcon } from '@assets/icons';
 
 import { ImageContainer, ImageListContainer, ImagePreview } from './ImageList.styled';
 

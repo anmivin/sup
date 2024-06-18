@@ -1,12 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import { Handle, NodeProps, Position } from 'reactflow';
 
 import { Box, Typography } from '@mui/material';
 
-import { Settings } from '@constants/icons';
+import DefaultContextMenu from '@ui/ContextMenu';
+
+import { EditIcon } from '@assets/icons';
 
 import { Circle, TheBox } from './TreeComponent.styled';
-
-import DefaultContextMenu from '../../shared/ui/DefaultContextMenu';
 
 interface NodeData {
   name: string;
@@ -29,7 +30,7 @@ const FamilyTreeNode = ({ data, isConnectable }: NodeProps<NodeData>) => {
 
           <Circle>
             <DefaultContextMenu
-              icon={<Settings color="warning" />}
+              icon={<EditIcon color="primaryMain" />}
               items={[
                 { label: 'Редактировать', onClick: () => {} },
                 { label: 'Добавить ребёнка', onClick: () => {} },

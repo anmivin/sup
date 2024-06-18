@@ -2,8 +2,8 @@ import { ReactElement, Ref, forwardRef, useEffect, useMemo, useState } from 'rea
 
 import { ListItemText } from '@mui/material';
 
-import Radio from '@components/Radio';
-../Radio
+import Radio from '@ui/Radio';
+
 import { StyledSelect } from './Select.styled';
 
 import { SelectProps } from './Select.types';

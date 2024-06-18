@@ -7,7 +7,7 @@ import { DropContainer } from './ImageDrop.styled';
 
 import { ImageDropProps } from './ImageDrop.types';
 
-import { UploadIcon } from '../../Icons';
+import { UploadIcon } from '../../../assets/icons';
 
 const ImageDrop = ({ onFilesAdd }: ImageDropProps) => {
   const { t } = useTranslation('translation');

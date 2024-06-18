@@ -1,6 +1,6 @@
 import { ChangeEventHandler, useCallback, useRef, useState } from 'react';
 
-import { CameraPlusIcon } from '@ui/Icons';
+import { CameraPlusIcon } from '@assets/icons';
 
 import { AddImageContainer, Circle, ExistImageContainer } from './ImageUpload.styled';
 

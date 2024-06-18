@@ -1,21 +1,20 @@
-import {
-  Accordion as MuiAccordion,
-  AccordionDetails as MuiAccordionDetails,
-  AccordionSummary as MuiAccordionSummary,
-} from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { Accordion, AccordionDetails, AccordionSummary, styled } from '@mui/material';
 
-export const StyledAccordion = styled(MuiAccordion)`
+export const StyledAccordion = styled(Accordion)`
   padding: ${({ theme }) => theme.spacing(2)};
   border-bottom: 1px solid ${({ theme }) => theme.palette.divider};
-
+  background-color: ${({ theme }) => theme.color.primaryLight};
+  box-shadow: none;
   &.Mui-disabled {
     background-color: ${({ theme }) => theme.color.primaryDark};
   }
 `;
 
-export const StyledAccordionSummary = styled(MuiAccordionSummary)`
+export const StyledAccordionSummary = styled(AccordionSummary)`
   justify-content: flex-start;
+  &:hover {
+    box-shadow: inset 1px 1px 4px ${({ theme }) => theme.color.secondaryMain};
+  }
   .MuiAccordionSummary-expandIconWrapper {
     margin: ${({ theme }) => theme.spacing(0, 2)};
   }
@@ -25,4 +24,4 @@ export const StyledAccordionSummary = styled(MuiAccordionSummary)`
     align-items: center;
   }
 `;
-export const StyledAccordionDetails = styled(MuiAccordionDetails)``;
+export const StyledAccordionDetails = styled(AccordionDetails)``;

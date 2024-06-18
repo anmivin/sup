@@ -1,7 +1,7 @@
 import MuiTooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 
-import { Theme } from '@components/DefaultComponents/theme';
+import { Theme } from '@theme/index';
 
 import { TooltipProps } from './Tooltip.types';
 

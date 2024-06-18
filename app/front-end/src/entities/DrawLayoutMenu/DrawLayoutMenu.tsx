@@ -1,4 +1,4 @@
-import { CursorIcon, EditIcon, EraserIcon } from '@ui/Icons';
+import { CursorIcon, EditIcon, EraserIcon } from '@assets/icons';
 
 import { StyledBox, StyledButton } from './DrawLayoutMenu.styled';
 

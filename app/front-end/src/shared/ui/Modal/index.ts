@@ -1,2 +1,2 @@
-export { default } from './Modal';
-export { StyledModalPaper as ModalPaper } from './Modal.styled';
+export { default } from './DefaultModal';
+export { type DefaultModalProps } from './DefaultModal.types';

@@ -11,7 +11,7 @@ export const Spinner = styled('svg')`
   height: 50px;
 
   .path {
-    stroke: ${({ theme }) => theme.color.monoA500};
+    stroke: ${({ theme }) => theme.color.transparentDark400};
     strokelinecap: round;
     animation: dash 1.5s ease-in-out infinite;
   }
