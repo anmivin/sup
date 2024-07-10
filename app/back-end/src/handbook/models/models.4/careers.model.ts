@@ -1,11 +1,28 @@
-import { PrimaryKey, Column, Model, Table } from 'sequelize-typescript';
+import {
+  PrimaryKey,
+  ForeignKey,
+  Column,
+  Model,
+  Table,
+} from 'sequelize-typescript';
+import { FileModel } from '@back/file/file.model';
 
-@Table({ tableName: 'careers_4', underscored: true, timestamps: false })
+@Table({ tableName: 'careers', underscored: true, timestamps: false })
 export class Career4Model extends Model<Career4Model> {
   @PrimaryKey
   @Column
   declare key: string;
 
   @Column
-  declare icon: string;
+  @ForeignKey(() => FileModel)
+  declare iconId: string;
+
+  @Column
+  declare age: string[];
+
+  @Column
+  declare roots: number[];
+
+  @Column
+  declare part: string;
 }

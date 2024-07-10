@@ -8,8 +8,12 @@ module.exports = {
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon_path: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       points: {
         type: DataTypes.INTEGER,
@@ -24,8 +28,12 @@ module.exports = {
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon_path: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       steps: {
         type: DataTypes.INTEGER,
@@ -46,8 +54,12 @@ module.exports = {
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon_path: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       age: {
         type: DataTypes.ARRAY(DataTypes.STRING),
@@ -79,13 +91,17 @@ module.exports = {
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon_path: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       collection_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'collections_4',
+          model: 'collections',
           key: 'key',
         },
       },
@@ -111,8 +127,12 @@ module.exports = {
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon_path: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
     });
 
@@ -122,8 +142,12 @@ module.exports = {
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon_path: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       age: {
         type: DataTypes.STRING,
@@ -142,8 +166,12 @@ module.exports = {
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon_path: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       group: {
         type: DataTypes.STRING,
@@ -155,12 +183,11 @@ module.exports = {
   },
 
   async down(queryInterface: QueryInterface, sequelize: Sequelize) {
-    await queryInterface.dropTable('deaths');
+    await queryInterface.dropTable('traits');
     await queryInterface.dropTable('skills');
     await queryInterface.dropTable('lifestyles');
+    await queryInterface.dropTable('deaths');
     await queryInterface.dropTable('collection_items');
-    await queryInterface.dropTable('aspirations');
-    await queryInterface.dropTable('traits');
     await queryInterface.dropTable('collections');
     await queryInterface.dropTable('careers');
     await queryInterface.dropTable('aspirations');

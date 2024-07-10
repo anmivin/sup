@@ -35,7 +35,8 @@ import { WorldModule } from '@back/world/world.module';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
-
+import { MinioModule } from './minio/minio.module';
+/* import { FileModel } from './minio/file.model'; */
 /* import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
 import * as path from 'path';
  */
@@ -98,6 +99,7 @@ import * as path from 'path';
           LotModel,
           NeighborhoodModel,
           WorldModel,
+          /*           FileModel, */
         ],
       }),
     }),
@@ -107,6 +109,7 @@ import * as path from 'path';
     WorldModule,
     TokenModule,
     AuthModule,
+    MinioModule,
   ],
   controllers: [],
   providers: [],

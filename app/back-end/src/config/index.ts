@@ -12,3 +12,11 @@ export const NEST_CONFIG = () => ({
   google_clientid: process.env.GOOGLE_CLIENT_ID,
   google_secret: process.env.GOOGLE_SECRET,
 });
+
+export const MINIO_CONFIG = {
+  endPoint: process.env.MINIO_ENDPOINT,
+  port: +(process.env.MINIO_PORT ?? '0'),
+  useSSL: false,
+  accessKey: process.env.MINIO_ACCESS,
+  secretKey: process.env.MINIO_SECRET,
+};

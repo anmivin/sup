@@ -1,6 +1,14 @@
 import { LotModel } from './lot.model';
 import { NeighborhoodModel } from './neighbourhood.model';
-import { PrimaryKey, Column, Model, Table, HasMany } from 'sequelize-typescript';
+import {
+  ForeignKey,
+  PrimaryKey,
+  Column,
+  Model,
+  Table,
+  HasMany,
+} from 'sequelize-typescript';
+import { FileModel } from '@back/file/file.model';
 
 @Table({ tableName: 'worlds', underscored: true, timestamps: false })
 export class WorldModel extends Model<WorldModel> {
@@ -12,13 +20,16 @@ export class WorldModel extends Model<WorldModel> {
   declare part: string;
 
   @Column
-  declare icon: string;
+  @ForeignKey(() => FileModel)
+  declare iconId: string;
 
   @Column
-  declare filledMap: string;
+  @ForeignKey(() => FileModel)
+  declare filledMapId: string;
 
   @Column
-  declare emptyMap: string;
+  @ForeignKey(() => FileModel)
+  declare emptyMapId: string;
 
   @HasMany(() => NeighborhoodModel)
   declare neighborhoods: NeighborhoodModel[];

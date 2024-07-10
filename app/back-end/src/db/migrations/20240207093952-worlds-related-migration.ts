@@ -11,14 +11,26 @@ module.exports = {
       part: {
         type: DataTypes.STRING,
       },
-      icon: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
-      filled_map: {
+      filled_map_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
-      empty_map: {
+      empty_map_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
     });
     await queryInterface.createTable('neighborhoods', {
@@ -30,7 +42,14 @@ module.exports = {
       part: {
         type: DataTypes.STRING,
       },
-      icon: {
+      icon_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
+      },
+      icon_color: {
         type: DataTypes.STRING,
       },
       world_key: {
@@ -50,20 +69,14 @@ module.exports = {
       part: {
         type: DataTypes.STRING,
       },
-      filled_image: {
-        type: DataTypes.STRING,
-      },
-      empty_image: {
-        type: DataTypes.STRING,
-      },
-      price_filled: {
+      price: {
         type: DataTypes.INTEGER,
       },
-      price_empty: {
+      height: {
         type: DataTypes.INTEGER,
       },
-      size: {
-        type: DataTypes.STRING,
+      width: {
+        type: DataTypes.INTEGER,
       },
       world_key: {
         type: DataTypes.STRING,
@@ -79,43 +92,8 @@ module.exports = {
           key: 'key',
         },
       },
-    });
-    await queryInterface.createTable('coordinates', {
-      id: {
-        allowNull: false,
+      svg_path: {
         type: DataTypes.STRING,
-        primaryKey: true,
-      },
-      lot_key: {
-        type: DataTypes.STRING,
-        references: {
-          model: 'lots',
-          key: 'key',
-        },
-      },
-      top_left_x: {
-        type: DataTypes.INTEGER,
-      },
-      top_left_y: {
-        type: DataTypes.INTEGER,
-      },
-      top_right_x: {
-        type: DataTypes.INTEGER,
-      },
-      top_right_y: {
-        type: DataTypes.INTEGER,
-      },
-      bottom_right_x: {
-        type: DataTypes.INTEGER,
-      },
-      bottom_right_y: {
-        type: DataTypes.INTEGER,
-      },
-      bottom_left_x: {
-        type: DataTypes.INTEGER,
-      },
-      bottom_left_y: {
-        type: DataTypes.INTEGER,
       },
     });
 
@@ -139,18 +117,18 @@ module.exports = {
           key: 'id',
         },
       },
-      image_path: {
+      image_id: {
         type: DataTypes.STRING,
-      },
-      image_path_tn: {
-        type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
     });
   },
 
   async down(queryInterface: QueryInterface, sequelize: Sequelize) {
     await queryInterface.dropTable('buildings');
-    await queryInterface.dropTable('coordinates');
     await queryInterface.dropTable('lots');
     await queryInterface.dropTable('neighborhoods');
     await queryInterface.dropTable('worlds');

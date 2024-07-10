@@ -17,7 +17,7 @@ import {
   BelongsTo,
   HasMany,
 } from 'sequelize-typescript';
-
+import { FileModel } from '@back/file/file.model';
 export interface SimsModelCreate
   extends Omit<
     SimsModel,
@@ -49,7 +49,8 @@ export class SimsModel extends Model<SimsModel, SimsModelCreate> {
   declare name: string;
 
   @Column
-  declare image: string;
+  @ForeignKey(() => FileModel)
+  declare imageId: string;
 
   @Column
   declare isInTree: boolean;
@@ -64,11 +65,11 @@ export class SimsModel extends Model<SimsModel, SimsModelCreate> {
   @Column
   declare part: string;
 
-  @Column(DataType.INTEGER)
-  declare birthYear: number | null;
+  @Column
+  declare xPos: number;
 
-  @Column(DataType.INTEGER)
-  declare deathYear: number | null;
+  @Column
+  declare yPos: number;
 
   @HasMany(() => PartnerPartnerModel, {
     foreignKey: 'partnerFirstId',

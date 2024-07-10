@@ -1,5 +1,12 @@
-import { PrimaryKey, DataType, Column, Model, Table } from 'sequelize-typescript';
-
+import {
+  PrimaryKey,
+  DataType,
+  ForeignKey,
+  Column,
+  Model,
+  Table,
+} from 'sequelize-typescript';
+import { FileModel } from '@back/file/file.model';
 export interface UserModelCreate extends Omit<UserModel, keyof Model> {
   id: string;
 }
@@ -21,4 +28,8 @@ export class UserModel extends Model<UserModel, UserModelCreate> {
 
   @Column(DataType.ENUM({ values: ['local', 'google'] }))
   declare type: string;
+
+  @Column
+  @ForeignKey(() => FileModel)
+  declare imageId: string;
 }

@@ -46,4 +46,8 @@ export interface TreeDataSliceProps {
   removeParent: () => void;
 
   getDefaultSims: () => void;
+
+  saveImage: () => void;
+  editImage: () => void;
+  deleteImage: () => void;
 }
