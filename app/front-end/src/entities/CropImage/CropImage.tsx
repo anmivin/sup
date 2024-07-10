@@ -12,14 +12,11 @@ const initPos = { x: 50, y: 50 };
 const CropImage = ({ url, onCrop }: CropImageProps) => {
   const [selected, setSelected] = useState(false);
   const [image] = useImage(url);
+
   const cropRef = useRef() as MutableRefObject<Konva.Group>;
-
   const rectRef = useRef() as MutableRefObject<Konva.Rect>;
-
   const layerRef = useRef() as MutableRefObject<Konva.Layer>;
-
   const imageRef = useRef() as MutableRefObject<Konva.Image>;
-
   const trRef = useRef() as MutableRefObject<Konva.Transformer>;
 
   useEffect(() => {

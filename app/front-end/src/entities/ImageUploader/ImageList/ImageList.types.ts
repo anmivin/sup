@@ -1,4 +1,4 @@
-import { ImageItem } from '@ui/ImageUploader/ImageUploader.types';
+import { ImageItem } from '@entities/ImageUploader/ImageUploader.types';
 
 export interface ImageListProps {
   imageList: ImageItem[];

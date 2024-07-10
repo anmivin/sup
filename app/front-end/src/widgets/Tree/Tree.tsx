@@ -15,12 +15,12 @@ import ReactFlow, {
 
 import { Switch } from '@mui/material';
 
-import AddNode from '@entities/Tree/AddNode';
-import FamilyTree from '@entities/Tree/FamilyTreeEdge';
-import FamilyTreeNode from '@entities/Tree/FamilyTreeNode';
-import InvisibleNode from '@entities/Tree/InvisibleNode';
-import { StyledBox } from '@entities/Tree/TreeComponent.styled';
-import { TreeSDto } from '@entities/Tree/TreeComponent.types';
+import AddNode from '@entities/TreeComponents/AddNode';
+import FamilyTree from '@entities/TreeComponents/FamilyTreeEdge';
+import FamilyTreeNode from '@entities/TreeComponents/FamilyTreeNode';
+import InvisibleNode from '@entities/TreeComponents/InvisibleNode';
+import { StyledBox } from '@entities/TreeComponents/TreeComponent.styled';
+import { TreeSDto } from '@entities/TreeComponents/TreeComponent.types';
 
 const nodeTypes = { simNode: FamilyTreeNode, invisibleNode: InvisibleNode, addNode: AddNode };
 const edgeTypes = {

@@ -1,9 +1,9 @@
-import { Button as MuiButton } from '@mui/material';
+import { Button, useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import { Color, ColorOptions } from '@theme/theme.types';
 
-import { ButtonSize, buttonSizeMap } from './Button.constants';
+import { ButtonSize, ButtonVariant, buttonSizeMap } from './Button.constants';
 
 const getEventsColors = (color: ColorOptions, colorName: Color = 'secondaryMain', variant = '') => {
   const postFix = variant === 'contained' ? ':before' : '';
@@ -20,7 +20,29 @@ const getEventsColors = (color: ColorOptions, colorName: Color = 'secondaryMain'
   };
 };
 
-export const StyledButton = styled(MuiButton)(({ theme }) => ({
+const getButtonVariant = (variant: ButtonVariant, size: number) => {
+  const theme = useTheme();
+  switch (variant) {
+    case ButtonVariant.skewed:
+      return {
+        height: `${size}60px`,
+        backgroundColor: 'transparent',
+        borderRadius: 0,
+        padding: 0,
+        '&:hover': {
+          backgroundColor: theme.color.secondaryMain,
+          boxShadow: `0 4px ${theme.color.textDark}`,
+          transition: 'box-shadow 0.2s ease-out',
+        },
+      };
+    case ButtonVariant.underscored:
+      return {};
+    case ButtonVariant.simple:
+      return {};
+  }
+};
+
+export const StyledButton = styled(Button)(({ theme }) => ({
   ...theme.typography.button,
   gap: theme.spacing(1),
   alignSelf: 'center',
@@ -122,7 +144,7 @@ export const StyledButton = styled(MuiButton)(({ theme }) => ({
   },
 }));
 
-export const StyleddButton = styled(MuiButton)`
+export const StyleddButton = styled(Button)`
   color: ${({ theme }) => theme.color.textMain};
   &.skewed {
     background-color: ${({ theme }) => theme.color.primaryMain};

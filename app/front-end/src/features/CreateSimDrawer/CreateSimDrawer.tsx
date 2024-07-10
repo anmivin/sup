@@ -8,6 +8,7 @@ import { Box, Button } from '@mui/material';
 import FormAutocomplete from '@entities/FormComponents/FormAutocomplete';
 import FormCheckbox from '@entities/FormComponents/FormCheckbox';
 import FormTextField from '@entities/FormComponents/FormTextField';
+import { ImageUpload } from '@entities/ImageUploader';
 
 import { DRAWER_VARIANTS, GAME_PART, SEX } from '@type/enums';
 
@@ -15,7 +16,6 @@ import { HandbookStore } from '@stores/Handbook/Handbook.store';
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
 import DefaultDrawer from '@ui/Drawer';
-import { ImageUpload } from '@ui/ImageUploader';
 import DefaultRating from '@ui/Rating';
 import DefaultTabs from '@ui/Tabs';
 

@@ -2,7 +2,7 @@ import MuiMenu from '@mui/material/Menu';
 import MuiMenuItem from '@mui/material/MenuItem';
 import { styled } from '@mui/material/styles';
 
-import { Color } from '@theme/theme';
+import { Color } from '@theme/.';
 
 import { MenuItemProps } from './Menu.types';
 

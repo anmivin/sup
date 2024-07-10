@@ -1,12 +1,10 @@
 import { useTranslation } from 'react-i18next';
 
-import { PaperProps } from '@mui/material';
+import { AutocompleteProps, PaperProps } from '@mui/material';
 
-import { StyledAutocomplete, StyledPaper } from './DefaultAutocomplete.styled';
+import { StyledAutocomplete, StyledPaper } from './Autocomplete.styled';
 
-import { DefaultAutocompleteProps } from './DefaultAutocomplete.types';
-
-const DefaultAutocomplete = <
+const Autocomplete = <
   T,
   Multiple extends boolean | undefined = undefined,
   DisableClearable extends boolean | undefined = undefined,
@@ -14,7 +12,7 @@ const DefaultAutocomplete = <
 >({
   ref,
   ...props
-}: DefaultAutocompleteProps<T, Multiple, DisableClearable, FreeSolo>) => {
+}: AutocompleteProps<T, Multiple, DisableClearable, FreeSolo>) => {
   const { t } = useTranslation();
   return (
     <StyledAutocomplete
@@ -26,4 +24,4 @@ const DefaultAutocomplete = <
   );
 };
 
-export default DefaultAutocomplete;
+export default Autocomplete;

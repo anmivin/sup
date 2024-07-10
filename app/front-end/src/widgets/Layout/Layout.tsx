@@ -2,10 +2,10 @@ import { ReactNode, useMemo } from 'react';
 
 import { useStore } from 'zustand';
 
-import HelpSection from '@widgets/HelpSection/HelpSection';
-
 import Header from '@features/Header';
 import SignForm from '@features/SignForm';
+
+import HelpSection from '@entities/HelpSection/HelpSection';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 

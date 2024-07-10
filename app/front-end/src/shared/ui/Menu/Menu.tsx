@@ -1,6 +1,6 @@
-import { StyledMenu } from './Menu.styled';
+import { MenuProps } from '@mui/material/';
 
-import { MenuProps } from './Menu.types';
+import { StyledMenu } from './Menu.styled';
 
 export const Menu = (props: MenuProps) => {
   return <StyledMenu {...props} />;
