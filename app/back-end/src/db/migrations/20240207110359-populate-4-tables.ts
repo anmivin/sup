@@ -12,6 +12,7 @@ module.exports = {
       'achievements',
       achievements.map((achievement) => ({
         key: achievement.key,
+        //@TODO: заменить на айди файлов
         icon: achievement.icon,
         points: achievement.points,
       })),
@@ -20,6 +21,7 @@ module.exports = {
       'aspirations',
       aspirations.map((aspiration) => ({
         key: aspiration.key,
+        //@TODO: заменить на айди файлов
         icon: aspiration.icon,
         steps: aspiration.steps.length,
         group: aspiration.group,
@@ -30,6 +32,7 @@ module.exports = {
       'skills',
       skills.map((skill) => ({
         key: skill.key,
+        //@TODO: заменить на айди файлов
         icon: skill.icon,
         age: skill.age,
         steps: skill.steps,
@@ -39,6 +42,7 @@ module.exports = {
       'traits',
       traits.map((trait) => ({
         key: trait.key,
+        //@TODO: заменить на айди файлов
         icon: trait.icon,
         group: trait.group,
       })),
@@ -47,6 +51,7 @@ module.exports = {
       'packs',
       packs.map((pack) => ({
         key: pack.key,
+        //@TODO: заменить на айди файлов
         icon: pack.icon,
         part: 'sims_4',
         type: pack.type,
@@ -56,6 +61,7 @@ module.exports = {
       'careers',
       careers.map((career) => ({
         key: career.key,
+        //@TODO: заменить на айди файлов
         icon: career.icon,
         age: career.age,
         roots: career.roots.length,

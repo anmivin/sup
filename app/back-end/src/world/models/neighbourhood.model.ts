@@ -1,6 +1,15 @@
 import { LotModel } from './lot.model';
 import { WorldModel } from './world.model';
-import { PrimaryKey, HasMany, BelongsTo, Column, Model, Table, ForeignKey } from 'sequelize-typescript';
+import {
+  PrimaryKey,
+  HasMany,
+  BelongsTo,
+  Column,
+  Model,
+  Table,
+  ForeignKey,
+} from 'sequelize-typescript';
+import { FileModel } from '@back/minio/file.model';
 
 @Table({ tableName: 'neighborhoods', underscored: true, timestamps: false })
 export class NeighborhoodModel extends Model<NeighborhoodModel> {
@@ -12,7 +21,11 @@ export class NeighborhoodModel extends Model<NeighborhoodModel> {
   declare part: string;
 
   @Column
-  declare icon: string;
+  @ForeignKey(() => FileModel)
+  declare iconId: string;
+
+  @Column
+  declare iconColor: string;
 
   @Column
   @ForeignKey(() => WorldModel)

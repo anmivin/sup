@@ -1,6 +1,12 @@
 import { Age } from '@back/handbook/handbook.dto';
-import { PrimaryKey, Column, Model, Table } from 'sequelize-typescript';
-
+import {
+  PrimaryKey,
+  ForeignKey,
+  Column,
+  Model,
+  Table,
+} from 'sequelize-typescript';
+import { FileModel } from '@back/minio/file.model';
 @Table({ tableName: 'skills_4', underscored: true, timestamps: false })
 export class Skill4Model extends Model<Skill4Model> {
   @PrimaryKey
@@ -8,11 +14,15 @@ export class Skill4Model extends Model<Skill4Model> {
   declare key: string;
 
   @Column
-  declare icon: string;
+  @ForeignKey(() => FileModel)
+  declare iconId: string;
 
   @Column
   declare steps: number;
 
   @Column
   declare age: Age;
+
+  @Column
+  declare part: string;
 }

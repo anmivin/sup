@@ -1,20 +1,6 @@
-import multer from 'koa-multer';
-import * as Minio from 'minio';
-import * as process from 'process';
+/* import * as Minio from 'minio'; */
 
-const TYPE_STORAGE_FILES = 'local';
-
-const S3_DOMAIN = 'domain.com';
-const S3_PORT = 443;
-const S3_ACCESS_KEY = 'accessKey';
-const S3_SECRET_KEY = 'secretKey';
 const S3_NAMESPACE = 'local';
-const UPLOADS_PATH = './files/uploads';
-
-export enum TYPE_STORAGE {
-  S3 = 's3',
-  Local = 'local',
-}
 
 export enum FILE_TYPE {
   Icons = 'icons',
@@ -22,6 +8,8 @@ export enum FILE_TYPE {
   SimImage = 'simImage',
   TreeImage = 'treeImage',
   WorldImage = 'worldImage',
+  Translation = 'translation',
+  DataBase = 'dataBase',
 }
 
 export const getPrefixNameBucket = (bucketName: string) => {
@@ -30,27 +18,30 @@ export const getPrefixNameBucket = (bucketName: string) => {
 
 export const getBucketAndObjectNames = (pathFile: string) => {
   const index = pathFile.indexOf('/');
-
   const bucketName = pathFile.slice(0, index);
   const objectName = pathFile.slice(index + 1);
 
   return { bucketName, objectName };
 };
 
-export class S3Client {
+/* const minioClient = new Minio.Client({
+  endPoint: '127.0.0.1',
+  port: 9000,
+  useSSL: true,
+  accessKey: 'minioadmin',
+  secretKey: 'minioadmin',
+});
+ */
+/* export class S3Client {
   private readonly s3Client: Minio.Client;
   private readonly tags = {};
 
   constructor() {
-    const accessKey = process.env.S3_ACCESS_KEY;
-    const secretKey = process.env.S3_SECRET_KEY;
+    const accessKey = 'minioadmin';
+    const secretKey = 'minioadmin';
     const domain = process.env.S3_DOMAIN;
     const port = process.env.S3_PORT;
     const tags = process.env.S3_TAGS;
-
-    if (!domain || !accessKey || !secretKey || !port || isNaN(+port) || !tags) {
-      throw new Error('Проверьте данные конфигурации для клиента S3');
-    }
 
     const s3Config = {
       endPoint: domain,
@@ -132,8 +123,8 @@ export class S3Client {
       });
     });
   }
-}
-
+} */
+/* 
 const s3Client = new S3Client();
 
-export default s3Client;
+export default s3Client; */

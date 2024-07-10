@@ -1,14 +1,13 @@
-import { AvatarModel } from '@back/users/models/avatars.model';
-import { PackModel } from '@back/users/models/packs.model';
-import { UserModel } from '@back/users/models/users.model';
-import { UsersController } from '@back/users/users.controller';
-import { UsersService } from '@back/users/users.service';
+/* import { FileModel } from './file.model'; */
+import { MinioController } from './minio.controller';
+import { MinioService } from './minio.service';
+
 import { Module } from '@nestjs/common';
-import { SequelizeModule } from '@nestjs/sequelize';
+/* import { SequelizeModule } from '@nestjs/sequelize'; */
 
 @Module({
-  imports: [SequelizeModule.forFeature([UserModel, AvatarModel, PackModel])],
-  providers: [UsersService],
-  controllers: [UsersController],
+  /*   imports: [SequelizeModule.forFeature([FileModel])], */
+  providers: [MinioService],
+  controllers: [MinioController],
 })
-export class UsersModule {}
+export class MinioModule {}

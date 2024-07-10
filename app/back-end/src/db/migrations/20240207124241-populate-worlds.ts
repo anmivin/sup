@@ -11,6 +11,7 @@ module.exports = {
           {
             key: world.key,
             part: 'sims_4',
+            //@TODO: заменить на айди файлов
             icon: world.icon,
             filled_map: world.filled_map,
             empty_map: world.empty_map,
@@ -27,33 +28,16 @@ module.exports = {
               {
                 key: lot.key,
                 part: 'sims_4',
-                filled_image: lot.filled_img,
-                empty_image: lot.empty_img,
-                price_filled: lot.price_filled,
-                price_empty: lot.price_empty,
-                size: lot.size.join('x'),
+                price: lot.price_empty,
+                height: lot.size[1],
+                width: lot.size[0],
                 world_key: worldKey,
+                path: `M${lot.coordinates.top_left[0]} ${lot.coordinates.top_left[1]}L${lot.coordinates.top_right[0]} ${lot.coordinates.top_right[1]} L${lot.coordinates.bottom_right[0]} ${lot.coordinates.bottom_right[1]} L${lot.coordinates.bottom_left[0]} ${lot.coordinates.bottom_left[1]}Z`,
               },
             ],
             //@ts-expect-error  'returning' does not exist in type 'QueryOptions'
             { returning: ['key'] },
           )) as { key: string }[];
-
-          const { top_left, top_right, bottom_right, bottom_left } =
-            lot.coordinates;
-
-          await queryInterface.insert(null, 'coordinates', {
-            id: v4(),
-            lot_key: lotKey,
-            top_left_x: top_left[0],
-            top_left_y: top_left[1],
-            top_right_x: top_right[0],
-            top_right_y: top_right[1],
-            bottom_right_x: bottom_right[0],
-            bottom_right_y: bottom_right[1],
-            bottom_left_x: bottom_left[0],
-            bottom_left_y: bottom_left[1],
-          });
         });
 
       world.neighborhoods.length &&
@@ -64,6 +48,7 @@ module.exports = {
               {
                 key: neighborhood.key,
                 part: 'sims_4',
+                //@TODO: заменить на айди файлов
                 icon: neighborhood.icon,
                 world_key: worldKey,
               },
@@ -79,33 +64,17 @@ module.exports = {
                 {
                   key: lot.key,
                   part: 'sims_4',
-                  filled_image: lot.filled_img,
-                  empty_image: lot.empty_img,
-                  price_filled: lot.price_filled,
-                  price_empty: lot.price_empty,
-                  size: lot.size.join('x'),
+                  price: lot.price_empty,
+                  height: lot.size[1],
+                  width: lot.size[0],
                   world_key: worldKey,
                   neighborhood_key: neighborhoodKey,
+                  path: `M${lot.coordinates.top_left[0]} ${lot.coordinates.top_left[1]}L${lot.coordinates.top_right[0]} ${lot.coordinates.top_right[1]} L${lot.coordinates.bottom_right[0]} ${lot.coordinates.bottom_right[1]} L${lot.coordinates.bottom_left[0]} ${lot.coordinates.bottom_left[1]}Z`,
                 },
               ],
               //@ts-expect-error  'returning' does not exist in type 'QueryOptions'
               { returning: ['key'] },
             )) as { key: string }[];
-
-            const { top_left, top_right, bottom_right, bottom_left } =
-              lot.coordinates;
-            await queryInterface.insert(null, 'coordinates', {
-              id: v4(),
-              lot_key: lotKey,
-              top_left_x: top_left[0],
-              top_left_y: top_left[1],
-              top_right_x: top_right[0],
-              top_right_y: top_right[1],
-              bottom_right_x: bottom_right[0],
-              bottom_right_y: bottom_right[1],
-              bottom_left_x: bottom_left[0],
-              bottom_left_y: bottom_left[1],
-            });
           });
         });
     });

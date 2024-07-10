@@ -2,30 +2,6 @@ import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
 
 module.exports = {
   async up(queryInterface: QueryInterface, sequelize: Sequelize) {
-    await queryInterface.createTable('user_pack', {
-      id: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        primaryKey: true,
-      },
-      user_id: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        references: {
-          model: 'users',
-          key: 'id',
-        },
-      },
-      pack_key: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        references: {
-          model: 'packs',
-          key: 'key',
-        },
-      },
-    });
-
     await queryInterface.createTable('user_achievement', {
       id: {
         allowNull: false,
@@ -259,16 +235,11 @@ module.exports = {
           key: 'id',
         },
       },
-      x_pos: {
-        type: DataTypes.INTEGER,
-      },
-      y_pos: {
-        type: DataTypes.INTEGER,
-      },
     });
   },
 
   async down(queryInterface: QueryInterface, sequelize: Sequelize) {
+    await queryInterface.dropTable('sim_death');
     await queryInterface.dropTable('sim_skill');
     await queryInterface.dropTable('sim_collection');
     await queryInterface.dropTable('sim_career');
@@ -277,6 +248,5 @@ module.exports = {
     await queryInterface.dropTable('partner_partner');
     await queryInterface.dropTable('parent_child');
     await queryInterface.dropTable('user_achievement');
-    await queryInterface.dropTable('user_pack');
   },
 };

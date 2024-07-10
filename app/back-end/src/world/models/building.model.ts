@@ -1,16 +1,17 @@
-import { UserModel } from '@back/users/models/users.model';
 import {
   PrimaryKey,
   Column,
   Model,
   Table,
   ForeignKey,
+  BelongsTo,
+  HasOne,
 } from 'sequelize-typescript';
+import { UserModel } from '@back/users/models/users.model';
+import { LotModel } from './lot.model';
 import { FileModel } from '@back/minio/file.model';
-export interface TreeModelCreate extends Omit<TreeModel, keyof Model> {}
-
-@Table({ tableName: 'trees', underscored: true, timestamps: false })
-export class TreeModel extends Model<TreeModel, TreeModelCreate> {
+@Table({ tableName: 'buildings', underscored: true, timestamps: false })
+export class BuildingModel extends Model<BuildingModel> {
   @PrimaryKey
   @Column
   declare id: string;
@@ -20,7 +21,8 @@ export class TreeModel extends Model<TreeModel, TreeModelCreate> {
   declare userId: string;
 
   @Column
-  declare name: string;
+  @ForeignKey(() => LotModel)
+  declare lotId: string;
 
   @Column
   @ForeignKey(() => FileModel)

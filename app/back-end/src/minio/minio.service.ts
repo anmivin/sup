@@ -1,31 +1,73 @@
-import { AvatarModel } from '@back/users/models/avatars.model';
+/* import { AvatarModel } from '@back/users/models/avatars.model';
 import { PackModel } from '@back/users/models/packs.model';
 import { UserModel } from '@back/users/models/users.model';
-import { InputUserDto, EditUserDto } from '@back/users/user.dto';
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { InputUserDto, EditUserDto } from '@back/users/user.dto'; */
+import { Injectable /* NotFoundException */ } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import bcrypt from 'bcryptjs';
+/* import bcrypt from 'bcryptjs';
 import { Op } from 'sequelize';
 import { v4 } from 'uuid';
-
-import FileModel from './file.model';
-export enum TYPE_STORAGE {
-  S3 = 's3',
-  Local = 'local',
-}
-
-export const UPLOADS_PATH = process.env.PATH_UPLOADS as string;
-export const TYPE_STORAGE_FILES =
-  process.env.TYPE_STORAGE_FILES || TYPE_STORAGE.Local;
-export const S3_NAMESPACE = process.env.S3_NAMESPACE || 'local';
-
-import s3Client, { FILE_TYPE, getPrefixNameBucket } from './minio.handler';
+ */
+import { FileModel } from './file.model';
+import { SaveFileDto, EditFileDto, DeleteFileDto } from './minioDto';
+import * as Minio from 'minio';
 
 @Injectable()
 export class MinioService {
   constructor(@InjectModel(FileModel) private fileModel: typeof FileModel) {}
 
-  async saveFile(basket: string, files: File[]) {
+  async justFunc() {
+    const minioClient = new Minio.Client({
+      endPoint: '127.0.0.1',
+      port: 9000,
+      useSSL: false,
+      accessKey: 'minioadmin',
+      secretKey: 'minioadmin',
+    });
+
+    const sad = await minioClient.listBuckets();
+    const asd = await minioClient.listObjects('icons');
+
+    const presignedUrl = await minioClient.presignedUrl(
+      'GET',
+      'icons',
+      'favicon.png',
+      24 * 60 * 60,
+    );
+    console.log(sad);
+    console.log('================');
+    console.log(asd);
+    console.log('================');
+    console.log(presignedUrl);
+    return 'asda';
+  }
+
+  async createBucket(backet: string) {
+    const minioClient = new Minio.Client({
+      endPoint: '127.0.0.1',
+      port: 9000,
+      useSSL: false,
+      accessKey: 'minioadmin',
+      secretKey: 'minioadmin',
+    });
+    minioClient.makeBucket(backet);
+  }
+  async saveFile(props: SaveFileDto, bucket: string) {}
+  async editFile(props: EditFileDto) {}
+
+  async deleteFile(props: DeleteFileDto) {
+    const file = await this.fileModel.findOne({ where: { id } });
+    await file.destroy();
+  }
+  /*  async saveFile(bucket: string, files: File[]) {
+    const minioClient = new Minio.Client({
+      endPoint: '127.0.0.1',
+      port: 9000,
+      useSSL: false,
+      accessKey: 'minioadmin',
+      secretKey: 'minioadmin',
+    });
+    minioClient.fPutObject(bucket, )
     const actions = files.map(async (file) => {
       const url = `${25}`;
 
@@ -39,8 +81,5 @@ export class MinioService {
     return Promise.all(actions);
   }
 
-  async deleteFile(basket: string, id: string) {
-    const file = await this.fileModel.findOne({ where: { id } });
-    await file.destroy();
-  }
+ */
 }

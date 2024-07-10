@@ -8,18 +8,10 @@ import {
   Table,
 } from 'sequelize-typescript';
 
-import ProfileModel from '@/entities/kk/profile/profile.model';
-import LaborReportModel from '@/entities/laborReport/laborReport.model';
-import LaborReportFileModel from '@/entities/laborReport/laborReportFile.model';
-import LeavePeriodModel from '@/entities/leavePeriod/leavePeriod.model';
-import LeavePeriodFileModel from '@/entities/leavePeriod/leavePeriodFile.model';
-import ProjectModel from '@/entities/project/project.model';
-import StatementFileModel from '@/entities/statementFile/statementFile.model';
-
 export interface FileModelCreate extends Omit<FileModel, keyof Model> {}
 
 @Table({ tableName: 'files', underscored: true, timestamps: false })
-export default class FileModel extends Model<FileModel, FileModelCreate> {
+export class FileModel extends Model<FileModel, FileModelCreate> {
   @PrimaryKey
   @AutoIncrement
   @Column
@@ -33,22 +25,4 @@ export default class FileModel extends Model<FileModel, FileModelCreate> {
 
   @Column
   declare name: string;
-
-  @Column
-  declare size: number;
-
-  @BelongsToMany(() => LaborReportModel, () => LaborReportFileModel)
-  declare laborReports?: LaborReportModel[];
-
-  @BelongsToMany(() => LeavePeriodModel, () => LeavePeriodFileModel)
-  declare leavePeriods?: LeavePeriodModel[];
-
-  @HasOne(() => ProfileModel, 'imageFileId')
-  declare profile?: ProfileModel[];
-
-  @HasOne(() => StatementFileModel)
-  declare statementFile?: StatementFileModel;
-
-  @HasOne(() => ProjectModel, 'imageFileId')
-  declare project?: ProjectModel;
 }
