@@ -1,15 +1,23 @@
 import { Collection4Model } from '@back/handbook/models/models.4/collections.model';
 import { PackModel } from '@back/users/models/packs.model';
-import { PrimaryKey, ForeignKey, Column, Model, Table, BelongsTo } from 'sequelize-typescript';
-
-@Table({ tableName: 'collection_items_4', underscored: true, timestamps: false })
+import {
+  PrimaryKey,
+  ForeignKey,
+  Column,
+  Model,
+  Table,
+  BelongsTo,
+} from 'sequelize-typescript';
+import { FileModel } from '@back/minio/file.model';
+@Table({ tableName: 'collection_items', underscored: true, timestamps: false })
 export class CollectionItem4Model extends Model<CollectionItem4Model> {
   @PrimaryKey
   @Column
   declare key: string;
 
   @Column
-  declare icon: string;
+  @ForeignKey(() => FileModel)
+  declare iconId: string;
 
   @ForeignKey(() => Collection4Model)
   @Column
@@ -17,13 +25,6 @@ export class CollectionItem4Model extends Model<CollectionItem4Model> {
 
   @BelongsTo(() => Collection4Model)
   declare collection: Collection4Model;
-
-  @ForeignKey(() => PackModel)
-  @Column
-  declare packKey: string;
-
-  @BelongsTo(() => PackModel)
-  declare pack: PackModel;
 
   @Column
   declare rarity: string;

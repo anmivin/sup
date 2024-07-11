@@ -3,13 +3,13 @@ import { PackModel } from '@back/users/models/packs.model';
 import { UserModel } from '@back/users/models/users.model';
 import { InputUserDto, EditUserDto } from '@back/users/user.dto'; */
 import { Injectable /* NotFoundException */ } from '@nestjs/common';
-/* import { InjectModel } from '@nestjs/sequelize'; */
+import { InjectModel } from '@nestjs/sequelize';
 /* import bcrypt from 'bcryptjs';
 import { Op } from 'sequelize';
 import { v4 } from 'uuid';
  */
-/* import { FileModel } from './file.model'; */
-
+import { FileModel } from './file.model';
+import { SaveFileDto, EditFileDto, DeleteFileDto } from './minioDto';
 import * as Minio from 'minio';
 
 @Injectable()
@@ -52,7 +52,13 @@ export class MinioService {
     });
     minioClient.makeBucket(backet);
   }
+  async saveFile(props: SaveFileDto, bucket: string) {}
+  async editFile(props: EditFileDto) {}
 
+  async deleteFile(props: DeleteFileDto) {
+    const file = await this.fileModel.findOne({ where: { id } });
+    await file.destroy();
+  }
   /*  async saveFile(bucket: string, files: File[]) {
     const minioClient = new Minio.Client({
       endPoint: '127.0.0.1',
@@ -75,8 +81,5 @@ export class MinioService {
     return Promise.all(actions);
   }
 
-  async deleteFile(basket: string, id: string) {
-    const file = await this.fileModel.findOne({ where: { id } });
-    await file.destroy();
-  } */
+ */
 }
