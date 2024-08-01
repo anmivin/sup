@@ -8,7 +8,7 @@ import {
   Table,
   HasMany,
 } from 'sequelize-typescript';
-import { FileModel } from '@back/minio/file.model';
+import { FileModel } from '@back/file/file.model';
 
 @Table({ tableName: 'worlds', underscored: true, timestamps: false })
 export class WorldModel extends Model<WorldModel> {

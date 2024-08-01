@@ -6,7 +6,7 @@ import {
   Model,
   Table,
 } from 'sequelize-typescript';
-import { FileModel } from '@back/minio/file.model';
+import { FileModel } from '@back/file/file.model';
 @Table({ tableName: 'skills_4', underscored: true, timestamps: false })
 export class Skill4Model extends Model<Skill4Model> {
   @PrimaryKey

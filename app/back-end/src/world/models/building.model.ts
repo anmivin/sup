@@ -9,7 +9,7 @@ import {
 } from 'sequelize-typescript';
 import { UserModel } from '@back/users/models/users.model';
 import { LotModel } from './lot.model';
-import { FileModel } from '@back/minio/file.model';
+import { FileModel } from '@back/file/file.model';
 @Table({ tableName: 'buildings', underscored: true, timestamps: false })
 export class BuildingModel extends Model<BuildingModel> {
   @PrimaryKey

@@ -8,7 +8,7 @@ import {
   Table,
   BelongsTo,
 } from 'sequelize-typescript';
-import { FileModel } from '@back/minio/file.model';
+import { FileModel } from '@back/file/file.model';
 @Table({ tableName: 'collection_items', underscored: true, timestamps: false })
 export class CollectionItem4Model extends Model<CollectionItem4Model> {
   @PrimaryKey

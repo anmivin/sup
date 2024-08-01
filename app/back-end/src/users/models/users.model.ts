@@ -6,7 +6,7 @@ import {
   Model,
   Table,
 } from 'sequelize-typescript';
-import { FileModel } from '@back/minio/file.model';
+import { FileModel } from '@back/file/file.model';
 export interface UserModelCreate extends Omit<UserModel, keyof Model> {
   id: string;
 }

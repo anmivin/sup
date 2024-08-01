@@ -5,7 +5,7 @@ import {
   Model,
   Table,
 } from 'sequelize-typescript';
-import { FileModel } from '@back/minio/file.model';
+import { FileModel } from '@back/file/file.model';
 
 @Table({ tableName: 'careers', underscored: true, timestamps: false })
 export class Career4Model extends Model<Career4Model> {

@@ -1,11 +1,12 @@
-import {} from /*   AutoIncrement, */
-/*   BelongsToMany, */
-/*   Column, */
-/*   HasOne, */
-/*   Model,
+import {
+  AutoIncrement,
+  BelongsToMany,
+  Column,
+  HasOne,
+  Model,
   PrimaryKey,
-  Table, */
-'sequelize-typescript';
+  Table,
+} from 'sequelize-typescript';
 
 export interface FileModelCreate extends Omit<FileModel, keyof Model> {}
 

@@ -11,9 +11,9 @@ import {
 import { MinioService } from './minio.service';
 import { SaveFileDto, EditFileDto, DeleteFileDto } from './minioDto';
 
-@ApiTags('Minio Module')
-@Controller('minio')
-export class MinioController {
+@ApiTags('File Controller')
+@Controller('file')
+export class FileController {
   constructor(private minioService: MinioService) {}
   @Get()
   @ApiOperation({ summary: 'Create User' })

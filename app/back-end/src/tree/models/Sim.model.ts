@@ -17,7 +17,7 @@ import {
   BelongsTo,
   HasMany,
 } from 'sequelize-typescript';
-import { FileModel } from '@back/minio/file.model';
+import { FileModel } from '@back/file/file.model';
 export interface SimsModelCreate
   extends Omit<
     SimsModel,

@@ -1,5 +1,4 @@
 import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
-
 module.exports = {
   async up(queryInterface: QueryInterface, sequelize: Sequelize) {
     await queryInterface.createTable('files', {

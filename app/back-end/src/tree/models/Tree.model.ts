@@ -6,7 +6,7 @@ import {
   Table,
   ForeignKey,
 } from 'sequelize-typescript';
-import { FileModel } from '@back/minio/file.model';
+import { FileModel } from '@back/file/file.model';
 export interface TreeModelCreate extends Omit<TreeModel, keyof Model> {}
 
 @Table({ tableName: 'trees', underscored: true, timestamps: false })

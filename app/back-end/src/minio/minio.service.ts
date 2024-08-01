@@ -1,85 +1,37 @@
-/* import { AvatarModel } from '@back/users/models/avatars.model';
-import { PackModel } from '@back/users/models/packs.model';
-import { UserModel } from '@back/users/models/users.model';
-import { InputUserDto, EditUserDto } from '@back/users/user.dto'; */
-import { Injectable /* NotFoundException */ } from '@nestjs/common';
-import { InjectModel } from '@nestjs/sequelize';
-/* import bcrypt from 'bcryptjs';
-import { Op } from 'sequelize';
-import { v4 } from 'uuid';
- */
-import { FileModel } from './file.model';
-import { SaveFileDto, EditFileDto, DeleteFileDto } from './minioDto';
+import multer from 'koa-multer';
 import * as Minio from 'minio';
+import * as process from 'process';
+import { MINIO_CONFIG } from '@back/config';
+import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/sequelize';
 
+import { FileTypes } from './minio.dto';
+
+const minioUrl = process.env.MINIO_URL;
 @Injectable()
 export class MinioService {
-  constructor(/* @InjectModel(FileModel) private fileModel: typeof FileModel */) {}
+  private minioClient: Minio.Client;
+  constructor() {
+    this.minioClient = new Minio.Client(MINIO_CONFIG);
+  }
 
-  async justFunc() {
-    const minioClient = new Minio.Client({
-      endPoint: '127.0.0.1',
-      port: 9000,
-      useSSL: false,
-      accessKey: 'minioadmin',
-      secretKey: 'minioadmin',
-    });
+  async createBucket(bucket: string) {
+    const existed = this.minioClient.bucketExists(bucket);
+    if (!existed) await this.minioClient.makeBucket(bucket);
+    return `Bucket ${bucket} ${existed ? 'already exist' : 'created'}`;
+  }
 
-    const sad = await minioClient.listBuckets();
-    const asd = await minioClient.listObjects('icons');
-
-    const presignedUrl = await minioClient.presignedUrl(
-      'GET',
-      'icons',
-      'favicon.png',
-      24 * 60 * 60,
+  async saveFile(bucket: FileTypes, file: multer.File) {
+    this.minioClient.putObject(
+      bucket,
+      file.name,
+      file.buffer,
+      file.size,
+      (error) => {
+        if (error) throw error;
+      },
     );
-    console.log(sad);
-    console.log('================');
-    console.log(asd);
-    console.log('================');
-    console.log(presignedUrl);
-    return 'asda';
+    return `${minioUrl}/${bucket}/${file.name}`;
   }
-
-  async createBucket(backet: string) {
-    const minioClient = new Minio.Client({
-      endPoint: '127.0.0.1',
-      port: 9000,
-      useSSL: false,
-      accessKey: 'minioadmin',
-      secretKey: 'minioadmin',
-    });
-    minioClient.makeBucket(backet);
-  }
-  async saveFile(props: SaveFileDto, bucket: string) {}
-  async editFile(props: EditFileDto) {}
-
-  async deleteFile(props: DeleteFileDto) {
-    const file = await this.fileModel.findOne({ where: { id } });
-    await file.destroy();
-  }
-  /*  async saveFile(bucket: string, files: File[]) {
-    const minioClient = new Minio.Client({
-      endPoint: '127.0.0.1',
-      port: 9000,
-      useSSL: false,
-      accessKey: 'minioadmin',
-      secretKey: 'minioadmin',
-    });
-    minioClient.fPutObject(bucket, )
-    const actions = files.map(async (file) => {
-      const url = `${25}`;
-
-      return this.fileModel.create({
-        path: url,
-        pathTn: `${url}Tn`,
-        name: file.originalname,
-        size: file.size,
-      });
-    });
-    return Promise.all(actions);
-  }
-
- */
+  async deleteFile(bucket: string, fileName: string) {}
 }
