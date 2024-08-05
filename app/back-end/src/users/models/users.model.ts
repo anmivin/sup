@@ -29,7 +29,7 @@ export class UserModel extends Model<UserModel, UserModelCreate> {
   @Column(DataType.ENUM({ values: ['local', 'google'] }))
   declare type: string;
 
-  @Column
+  @Column(DataType.STRING)
   @ForeignKey(() => FileModel)
-  declare imageId: string;
+  declare imageId: string | null;
 }

@@ -160,7 +160,7 @@ export class TreeService {
       return {
         id: sim.id,
         name: sim.name,
-        image: sim.image,
+        imageId: sim.imageId,
         aspirations: sim.aspirations,
         traits: sim.traits,
         careers: sim.careers,
@@ -169,61 +169,61 @@ export class TreeService {
         children: getSimChildren(sim).map((child) => ({
           id: child.id,
           name: child.name,
-          image: child.image,
+          imageId: child.imageId,
           children: getSimChildren(child).map((item) => ({
             id: item.id,
             name: item.name,
-            image: item.image,
+            imageId: item.imageId,
           })),
           parents: getSimParents(child).map((item) => ({
             id: item.id,
             name: item.name,
-            image: item.image,
+            imageId: item.imageId,
           })),
           partners: getSimPartners(child).map((item) => ({
             id: item.id,
             name: item.name,
-            image: item.image,
+            imageId: item.imageId,
           })),
         })),
         parents: getSimParents(sim).map((parent) => ({
           id: parent.id,
           name: parent.name,
-          image: parent.image,
+          imageId: parent.imageId,
           children: getSimChildren(parent).map((item) => ({
             id: item.id,
             name: item.name,
-            image: item.image,
+            imageId: item.imageId,
           })),
           parents: getSimParents(parent).map((item) => ({
             id: item.id,
             name: item.name,
-            image: item.image,
+            imageId: item.imageId,
           })),
           partners: getSimPartners(parent).map((item) => ({
             id: item.id,
             name: item.name,
-            image: item.image,
+            imageId: item.imageId,
           })),
         })),
         partners: getSimPartners(sim).map((partner) => ({
           id: partner.id,
           name: partner.name,
-          image: partner.image,
+          imageId: partner.imageId,
           children: getSimChildren(partner).map((item) => ({
             id: item.id,
             name: item.name,
-            image: item.image,
+            imageId: item.imageId,
           })),
           parents: getSimParents(partner).map((item) => ({
             id: item.id,
             name: item.name,
-            image: item.image,
+            imageId: item.imageId,
           })),
           partners: getSimPartners(partner).map((item) => ({
             id: item.id,
             name: item.name,
-            image: item.image,
+            imageId: item.imageId,
           })),
         })),
       };
@@ -406,7 +406,7 @@ export class TreeService {
         data: {
           id: sim.item.id,
           name: sim.item.name,
-          image: sim.item.image,
+          imageId: sim.item.imageId,
           fixedY: getPosition(sim.level, sim.item).y,
           /*   aspirations: sim.item.aspirations,
           traits: sim.item.traits,

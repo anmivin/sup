@@ -1,14 +1,26 @@
 import { SimsModel } from '@back/tree/models/Sim.model';
-import { PrimaryKey, AutoIncrement, Column, Model, Table, ForeignKey, BelongsTo } from 'sequelize-typescript';
+import {
+  PrimaryKey,
+  Column,
+  Model,
+  Table,
+  ForeignKey,
+  BelongsTo,
+} from 'sequelize-typescript';
 
 export interface PartnerPartnerModelCreate
-  extends Omit<PartnerPartnerModel, keyof Model | 'partnerFirst' | 'partnerSecond'> {}
+  extends Omit<
+    PartnerPartnerModel,
+    keyof Model | 'partnerFirst' | 'partnerSecond'
+  > {}
 @Table({ tableName: 'partner_partner', underscored: true, timestamps: false })
-export class PartnerPartnerModel extends Model<PartnerPartnerModel, PartnerPartnerModelCreate> {
+export class PartnerPartnerModel extends Model<
+  PartnerPartnerModel,
+  PartnerPartnerModelCreate
+> {
   @PrimaryKey
-  @AutoIncrement
   @Column
-  declare id: number;
+  declare id: string;
 
   @Column
   @ForeignKey(() => SimsModel)

@@ -4,6 +4,7 @@ import {
   Column,
   Model,
   Table,
+  DataType,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 @Table({ tableName: 'achievements', underscored: true, timestamps: false })
@@ -19,6 +20,6 @@ export class Achievement4Model extends Model<Achievement4Model> {
   @Column
   declare points: number;
 
-  @Column
+  @Column(DataType.ENUM({ values: ['sims_3', 'sims_4'] }))
   declare part: string;
 }

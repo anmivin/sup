@@ -1,5 +1,5 @@
 import { Collection4Model } from '@back/handbook/models/models.4/collections.model';
-import { PackModel } from '@back/users/models/packs.model';
+
 import {
   PrimaryKey,
   ForeignKey,
@@ -8,7 +8,7 @@ import {
   Table,
   BelongsTo,
 } from 'sequelize-typescript';
-import { FileModel } from '@back/file/file.model';
+import { FileModel } from '@file/file.model';
 @Table({ tableName: 'collection_items', underscored: true, timestamps: false })
 export class CollectionItem4Model extends Model<CollectionItem4Model> {
   @PrimaryKey

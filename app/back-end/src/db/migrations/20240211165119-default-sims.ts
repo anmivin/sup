@@ -1,7 +1,7 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
+import { QueryInterface, DataTypes } from 'sequelize';
 
 module.exports = {
-  up: async (queryInterface: QueryInterface, _sequelize: Sequelize) => {
+  up: async (queryInterface: QueryInterface) => {
     await queryInterface.createTable('default_sims', {
       id: {
         allowNull: false,
@@ -105,7 +105,7 @@ module.exports = {
       },
     });
 
-    await queryInterface.createTable('default_sim_aspiration_4', {
+    await queryInterface.createTable('default_sim_aspiration', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -121,7 +121,7 @@ module.exports = {
       aspiration_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'aspirations_4',
+          model: 'aspirations',
           key: 'key',
         },
       },
@@ -130,7 +130,7 @@ module.exports = {
       },
     });
 
-    await queryInterface.createTable('default_sim_trait_4', {
+    await queryInterface.createTable('default_sim_trait', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -146,13 +146,13 @@ module.exports = {
       trait_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'traits_4',
+          model: 'traits',
           key: 'key',
         },
       },
     });
 
-    await queryInterface.createTable('default_sim_career_4', {
+    await queryInterface.createTable('default_sim_career', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -168,7 +168,7 @@ module.exports = {
       career_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'careers_4',
+          model: 'careers',
           key: 'key',
         },
       },
@@ -179,7 +179,7 @@ module.exports = {
         type: DataTypes.INTEGER,
       },
     });
-    await queryInterface.createTable('default_sim_skill_4', {
+    await queryInterface.createTable('default_sim_skill', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -195,7 +195,7 @@ module.exports = {
       skill_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'skills_4',
+          model: 'skills',
           key: 'key',
         },
       },
@@ -203,7 +203,7 @@ module.exports = {
         type: DataTypes.INTEGER,
       },
     });
-    await queryInterface.createTable('default_sim_death_4', {
+    await queryInterface.createTable('default_sim_death', {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
@@ -219,11 +219,21 @@ module.exports = {
       deaths_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'deaths_4',
+          model: 'deaths',
           key: 'key',
         },
       },
     });
   },
-  down: async (queryInterface: QueryInterface, _sequelize: Sequelize) => {},
+  down: async (queryInterface: QueryInterface) => {
+    await queryInterface.dropTable('default_sim_death');
+    await queryInterface.dropTable('default_sim_skill');
+    await queryInterface.dropTable('default_sim_career');
+    await queryInterface.dropTable('default_sim_trait');
+    await queryInterface.dropTable('default_sim_aspiration');
+    await queryInterface.dropTable('default_partner_partner');
+    await queryInterface.dropTable('deafult_parent_child');
+    await queryInterface.dropTable('default_sims_in_tree');
+    await queryInterface.dropTable('default_sims');
+  },
 };

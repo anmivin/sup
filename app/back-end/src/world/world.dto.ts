@@ -4,17 +4,13 @@ export class OutputLotDto {
   @ApiProperty()
   key: string;
   @ApiProperty()
-  filledImage: string;
+  price: number;
   @ApiProperty()
-  emptyImage: string;
+  width: number;
   @ApiProperty()
-  priceFilled: number;
+  height: number;
   @ApiProperty()
-  priceEmpty: number;
-  @ApiProperty()
-  size: string;
-  @ApiProperty()
-  coordinates: string;
+  svgPath: string;
 }
 
 export class OutputNeighbourhoodDto {

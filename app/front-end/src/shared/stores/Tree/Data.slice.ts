@@ -2,6 +2,16 @@ import { StateCreator } from 'zustand';
 
 import { TreeDataSliceProps } from './Tree.types';
 
+import {
+  createSimRequest,
+  createTreeRequest,
+  deleteImageRequest,
+  editImageRequest,
+  fetchSimsForTree,
+  fetchSimsForUser,
+  saveImageRequest,
+} from './Tree.api';
+
 export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => ({
   defaultSims: null,
   simsInTree: null,
@@ -22,6 +32,7 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
 
   createTree: async (payload) => {
     try {
+      const res = await createTreeRequest(payload);
     } catch (e) {}
   },
 
@@ -36,6 +47,7 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
 
   createSim: async (payload) => {
     try {
+      const res = await createSimRequest(payload);
     } catch (e) {}
   },
   editSim: async (payload) => {
@@ -76,6 +88,23 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
 
   getDefaultSims: async () => {
     try {
+    } catch (e) {}
+  },
+
+  saveImage: async (payload) => {
+    try {
+      await saveImageRequest(payload);
+    } catch (e) {}
+  },
+  editImage: async (payload) => {
+    try {
+      await editImageRequest(payload);
+    } catch (e) {}
+  },
+
+  deleteImage: async (payload) => {
+    try {
+      await deleteImageRequest(payload);
     } catch (e) {}
   },
 });

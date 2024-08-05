@@ -5,6 +5,7 @@ import {
   Model,
   Table,
   HasMany,
+  DataType,
 } from 'sequelize-typescript';
 
 @Table({ tableName: 'collections', underscored: true, timestamps: false })
@@ -16,7 +17,7 @@ export class Collection4Model extends Model<Collection4Model> {
   @Column
   declare count: number;
 
-  @Column
+  @Column(DataType.ENUM({ values: ['sims_2', 'sims_3', 'sims_4'] }))
   declare part: string;
 
   @HasMany(() => CollectionItem4Model)

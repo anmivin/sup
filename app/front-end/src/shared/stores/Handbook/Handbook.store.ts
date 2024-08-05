@@ -12,7 +12,6 @@ export const HandbookStore = create<HandbookStoreProps>((set) => ({
   getAspirations: async () => {
     try {
       const res = await fetchAspirations();
-
       set({ aspirations: res });
     } catch (e) {}
   },
@@ -30,8 +29,6 @@ export const HandbookStore = create<HandbookStoreProps>((set) => ({
   },
   getDeaths: async () => {
     try {
-      const res = await fetchTraits();
-      set({ deaths: res });
     } catch (e) {}
   },
 }));

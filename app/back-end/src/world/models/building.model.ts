@@ -5,7 +5,6 @@ import {
   Table,
   ForeignKey,
   BelongsTo,
-  HasOne,
 } from 'sequelize-typescript';
 import { UserModel } from '@back/users/models/users.model';
 import { LotModel } from './lot.model';
@@ -23,6 +22,9 @@ export class BuildingModel extends Model<BuildingModel> {
   @Column
   @ForeignKey(() => LotModel)
   declare lotId: string;
+
+  @BelongsTo(() => LotModel)
+  declare lot: LotModel;
 
   @Column
   @ForeignKey(() => FileModel)

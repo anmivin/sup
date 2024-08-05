@@ -53,11 +53,11 @@ export class UsersService {
     /*     await this.throwIfDublecate({ name: createUserDto.name, email: createUserDto.email }); */
 
     const newUser = await this.userModel.create({
+      id: v4(),
       name: createUserDto.name,
       password: dbpass,
       email: createUserDto.email,
       type: type ?? 'local',
-      id: v4(),
     });
 
     return newUser;

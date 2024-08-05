@@ -1,5 +1,3 @@
-import { ApiProperty } from '@nestjs/swagger';
-
 export enum READONLY_BUCKET_NAMES {
   Icons = 'icons',
   Translation = 'translation',
@@ -16,16 +14,16 @@ export enum PUBLIC_BUCKET_NAMES {
 export type FileTypes = READONLY_BUCKET_NAMES | PUBLIC_BUCKET_NAMES;
 
 export class SaveFileDto {
-  type: FileTypes;
+  type: PUBLIC_BUCKET_NAMES;
   entityId: string;
-  file: File[];
+  file: Express.Multer.File;
 }
 
 export class EditFileDto {
   bucket: string;
   fileName: string;
-  file: File[];
-  type: FileTypes;
+  file: Express.Multer.File;
+  type: PUBLIC_BUCKET_NAMES;
   entityId: string;
 }
 

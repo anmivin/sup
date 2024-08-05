@@ -1,7 +1,7 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
+import { QueryInterface, DataTypes } from 'sequelize';
 
 module.exports = {
-  async up(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async up(queryInterface: QueryInterface) {
     await queryInterface.createTable('user_achievement', {
       id: {
         allowNull: false,
@@ -156,6 +156,7 @@ module.exports = {
         type: DataTypes.INTEGER,
       },
     });
+
     await queryInterface.createTable('sim_collection', {
       id: {
         allowNull: false,
@@ -235,10 +236,17 @@ module.exports = {
           key: 'id',
         },
       },
+      x_Pos: {
+        type: DataTypes.INTEGER,
+      },
+      y_Pos: {
+        type: DataTypes.INTEGER,
+      },
     });
   },
 
-  async down(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async down(queryInterface: QueryInterface) {
+    await queryInterface.dropTable('sim_position');
     await queryInterface.dropTable('sim_death');
     await queryInterface.dropTable('sim_skill');
     await queryInterface.dropTable('sim_collection');
