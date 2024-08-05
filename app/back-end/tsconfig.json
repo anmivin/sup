@@ -18,15 +18,18 @@
     "resolveJsonModule": true,
     "baseUrl": "./",
     "outDir": "./dist",
-    "types": ["@types/node"],
+    "types": ["@types/node", "Multer"],
     "noEmitOnError": true,
     "paths": {
       "@back/*": ["./src/*"],
-      "@tree/*": ["./src/tree/*"],
+      "@dynasty/*": ["./src/dynasty/*"],
       "@handbook/*": ["./src/handbook/*"],
       "@world/*": ["./src/world/*"],
       "@user/*": ["./src/users/*"],
+      "@file/*": ["./src/file/*"],
+      "@minio/*": ["./src/minio/*"],
       "@backend-shared/*": ["../../backend-shared/*"]
     }
-  }
+  },
+  "include": ["./**/*.ts", "./**/*.js"]
 }

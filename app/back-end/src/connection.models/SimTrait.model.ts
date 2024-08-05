@@ -1,6 +1,13 @@
 import { Trait4Model } from '@back/handbook/models/models.4/traits.model';
-import { SimsModel } from '@back/tree/models/Sim.model';
-import { PrimaryKey, Column, Model, Table, ForeignKey, BelongsTo } from 'sequelize-typescript';
+import { SimsModel } from '@back/dynasty/models/Sim.model';
+import {
+  PrimaryKey,
+  Column,
+  Model,
+  Table,
+  ForeignKey,
+  BelongsTo,
+} from 'sequelize-typescript';
 
 @Table({ tableName: 'sim_trait_4', underscored: true, timestamps: false })
 export class SimTraitModel extends Model<SimTraitModel> {

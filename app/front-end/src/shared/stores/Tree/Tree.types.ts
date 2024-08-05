@@ -47,7 +47,7 @@ export interface TreeDataSliceProps {
 
   getDefaultSims: () => void;
 
-  saveImage: () => void;
-  editImage: () => void;
-  deleteImage: () => void;
+  saveImage: (payload: components['schemas']['SaveFileDto']) => void;
+  editImage: (payload: components['schemas']['EditFileDto']) => void;
+  deleteImage: (payload: components['schemas']['DeleteFileDto']) => void;
 }

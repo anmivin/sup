@@ -1,7 +1,7 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
+import { QueryInterface, DataTypes } from 'sequelize';
 
 module.exports = {
-  async up(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async up(queryInterface: QueryInterface) {
     await queryInterface.createTable('worlds', {
       key: {
         allowNull: false,
@@ -78,6 +78,9 @@ module.exports = {
       width: {
         type: DataTypes.INTEGER,
       },
+      svg_path: {
+        type: DataTypes.STRING,
+      },
       world_key: {
         type: DataTypes.STRING,
         references: {
@@ -91,9 +94,6 @@ module.exports = {
           model: 'neighborhoods',
           key: 'key',
         },
-      },
-      svg_path: {
-        type: DataTypes.STRING,
       },
     });
 
@@ -114,7 +114,7 @@ module.exports = {
         type: DataTypes.STRING,
         references: {
           model: 'lots',
-          key: 'id',
+          key: 'key',
         },
       },
       image_id: {
@@ -127,7 +127,7 @@ module.exports = {
     });
   },
 
-  async down(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async down(queryInterface: QueryInterface) {
     await queryInterface.dropTable('buildings');
     await queryInterface.dropTable('lots');
     await queryInterface.dropTable('neighborhoods');

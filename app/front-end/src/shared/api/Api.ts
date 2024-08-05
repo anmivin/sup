@@ -45,14 +45,6 @@ export interface paths {
     /** Get death by key */
     get: operations["HandbookController_getDeathById"];
   };
-  "/handbook/fears": {
-    /** Get all fears */
-    get: operations["HandbookController_getAllFears"];
-  };
-  "/handbook/fears/{key}": {
-    /** Get fear by key */
-    get: operations["HandbookController_getFearById"];
-  };
   "/handbook/skills": {
     /** Get all skills */
     get: operations["HandbookController_getAllSkills"];
@@ -108,6 +100,18 @@ export interface paths {
   "/auth/google-login": {
     get: operations["AuthController_loginGoogle"];
   };
+  "/file/save": {
+    /** Save file */
+    post: operations["FileController_saveFile"];
+  };
+  "/file/edit": {
+    /** Edit file */
+    post: operations["FileController_editFile"];
+  };
+  "/file/delete": {
+    /** Delete file */
+    post: operations["FileController_deleteFile"];
+  };
 }
 
 export type webhooks = Record<string, never>;
@@ -118,13 +122,13 @@ export interface components {
       /** @description Achievement key */
       key: string;
       /** @description Achievement icon */
-      icon: string;
+      iconPath: string;
     };
     OutputAchievement4Dto: {
       /** @description Achievement key */
       key: string;
       /** @description Achievement icon */
-      icon: string;
+      iconPath: string;
       /** @description Points you get for achievement */
       points: number;
     };
@@ -132,7 +136,7 @@ export interface components {
       /** @description Aspiration key */
       key: string;
       /** @description Aspiration icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Aspiration group key
        * @enum {string}
@@ -143,7 +147,7 @@ export interface components {
       /** @description Aspiration key */
       key: string;
       /** @description Aspiration icon */
-      icon: string;
+      iconPath: string;
       /** @description Aspiration steps count */
       steps: number;
       /**
@@ -158,13 +162,13 @@ export interface components {
       /** @description Career key */
       key: string;
       /** @description Career icon */
-      icon: string;
+      iconPath: string;
     };
     OutputCareer4Dto: {
       /** @description Career key */
       key: string;
       /** @description Career icon */
-      icon: string;
+      iconPath: string;
     };
     OutputCollectionList4Dto: {
       /** @description Collection key */
@@ -176,7 +180,7 @@ export interface components {
       /** @description Collection item key */
       key: string;
       /** @description Collection item icon */
-      icon: string;
+      iconPath: string;
     };
     OutputCollection4Dto: {
       /** @description Collection key */
@@ -188,19 +192,13 @@ export interface components {
       /** @description Death key */
       key: string;
       /** @description Pack key */
-      packKey: string;
-    };
-    OutputFears4Dto: {
-      /** @description Fear key */
-      key: string;
-      /** @description Fear icon */
-      icon: string;
+      part: string;
     };
     OutputSkillList4Dto: {
       /** @description Skill key */
       key: string;
       /** @description Skill icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Age since which skill available
        * @enum {string}
@@ -213,7 +211,7 @@ export interface components {
       /** @description Skill key */
       key: string;
       /** @description Skill icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Age since which skill available
        * @enum {string}
@@ -226,7 +224,7 @@ export interface components {
       /** @description Trait key */
       key: string;
       /** @description Trait icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Trait group key
        * @enum {string}
@@ -237,7 +235,7 @@ export interface components {
       /** @description Trait key */
       key: string;
       /** @description Trait icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Trait group key
        * @enum {string}
@@ -276,7 +274,7 @@ export interface components {
       /** @description Sim name */
       name: string;
       /** @description Sim image */
-      image: string;
+      imageId: Record<string, unknown> | null;
       /** @description Fixed node Y position */
       fixedY: number;
     };
@@ -306,15 +304,17 @@ export interface components {
       /** @description Sim name */
       name: string;
       /** @description Sim image */
-      image: string;
+      imageId: string | null;
+      /** @description Sim in tree */
+      isInTree: string;
       /** @description Tree id */
       treeId: string;
       /** @description Game part */
       part: string;
-      /** @description Sim birth year */
-      birthYear: number | null;
-      /** @description Sim death year */
-      deathYear: number | null;
+      /** @description X pos */
+      xPos: number;
+      /** @description Y pos */
+      yPos: number;
       /** @description First parent id */
       parentFirstId: string | null;
       /** @description Second parent id */
@@ -330,7 +330,7 @@ export interface components {
       /** @description Tree name */
       name: string;
       /** @description Tree image */
-      image: string;
+      imageId: string | null;
     };
     InputUserDto: {
       /** @description User name */
@@ -348,12 +348,10 @@ export interface components {
     };
     OutputLotDto: {
       key: string;
-      filledImage: string;
-      emptyImage: string;
-      priceFilled: number;
-      priceEmpty: number;
-      size: string;
-      coordinates: string;
+      price: number;
+      width: number;
+      height: number;
+      svgPath: string;
     };
     OutputNeighbourhoodDto: {
       key: string;
@@ -379,6 +377,9 @@ export interface components {
       /** @description User password */
       avatar: Record<string, unknown> | null;
     };
+    SaveFileDto: Record<string, never>;
+    EditFileDto: Record<string, never>;
+    DeleteFileDto: Record<string, never>;
   };
   responses: never;
   parameters: never;
@@ -601,50 +602,6 @@ export interface operations {
       200: {
         content: {
           "application/json": components["schemas"]["OutputDeaths4Dto"];
-        };
-      };
-      /** @description Bad Request */
-      400: {
-        content: never;
-      };
-      /** @description Not found */
-      404: {
-        content: never;
-      };
-    };
-  };
-  /** Get all fears */
-  HandbookController_getAllFears: {
-    responses: {
-      /** @description Success */
-      200: {
-        content: {
-          "application/json": components["schemas"]["OutputFears4Dto"][];
-        };
-      };
-      /** @description Bad Request */
-      400: {
-        content: never;
-      };
-      /** @description Not found */
-      404: {
-        content: never;
-      };
-    };
-  };
-  /** Get fear by key */
-  HandbookController_getFearById: {
-    parameters: {
-      path: {
-        /** @description Fear key */
-        key: string;
-      };
-    };
-    responses: {
-      /** @description Success */
-      200: {
-        content: {
-          "application/json": components["schemas"]["OutputFears4Dto"];
         };
       };
       /** @description Bad Request */
@@ -966,6 +923,72 @@ export interface operations {
     };
     responses: {
       200: {
+        content: never;
+      };
+    };
+  };
+  /** Save file */
+  FileController_saveFile: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["SaveFileDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Edit file */
+  FileController_editFile: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["EditFileDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Delete file */
+  FileController_deleteFile: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["DeleteFileDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
         content: never;
       };
     };

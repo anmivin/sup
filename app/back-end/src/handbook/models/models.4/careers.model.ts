@@ -4,6 +4,7 @@ import {
   Column,
   Model,
   Table,
+  DataType,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 
@@ -17,12 +18,12 @@ export class Career4Model extends Model<Career4Model> {
   @ForeignKey(() => FileModel)
   declare iconId: string;
 
-  @Column
+  @Column(DataType.ARRAY(DataType.STRING))
   declare age: string[];
 
-  @Column
+  @Column(DataType.ARRAY(DataType.INTEGER))
   declare roots: number[];
 
-  @Column
+  @Column(DataType.ENUM({ values: ['sims_1', 'sims_2', 'sims_3', 'sims_4'] }))
   declare part: string;
 }

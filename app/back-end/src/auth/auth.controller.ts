@@ -20,7 +20,12 @@ export class AuthController {
     return data.id;
   }
 
-  @Get('/google-login')
+  @Post('/google-login')
+  @ApiOperation({ summary: 'Google Log In' })
+  @ApiBody({ type: UserCredentials })
+  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
+  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
+  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async loginGoogle(
     @Body() loginUserDto: UserGoogleCredentials,
   ): Promise<string> {

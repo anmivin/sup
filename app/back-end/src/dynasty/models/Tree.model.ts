@@ -5,6 +5,7 @@ import {
   Model,
   Table,
   ForeignKey,
+  DataType,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 export interface TreeModelCreate extends Omit<TreeModel, keyof Model> {}
@@ -22,7 +23,7 @@ export class TreeModel extends Model<TreeModel, TreeModelCreate> {
   @Column
   declare name: string;
 
-  @Column
+  @Column(DataType.STRING)
   @ForeignKey(() => FileModel)
-  declare imageId: string;
+  declare imageId: string | null;
 }

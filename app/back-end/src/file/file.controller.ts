@@ -1,49 +1,22 @@
-import { InputUserDto } from '@back/users/user.dto';
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
-import { Controller, Get, Post, Param, Body } from '@nestjs/common';
-import {
-  ApiOperation,
-  ApiParam,
-  ApiTags,
-  ApiResponse,
-  ApiBody,
-} from '@nestjs/swagger';
-import { MinioService } from './minio.service';
-import { SaveFileDto, EditFileDto, DeleteFileDto } from './minioDto';
+import { Controller, Post, Body } from '@nestjs/common';
+import { ApiOperation, ApiTags, ApiResponse, ApiBody } from '@nestjs/swagger';
 
+import { SaveFileDto, EditFileDto, DeleteFileDto } from '@minio/minio.dto';
+import { FileService } from './file.service';
 @ApiTags('File Controller')
 @Controller('file')
 export class FileController {
-  constructor(private minioService: MinioService) {}
-  @Get()
-  @ApiOperation({ summary: 'Create User' })
-  @ApiBody({ type: InputUserDto })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
-  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
-  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async createUser() {
-    return this.minioService.justFunc();
-  }
+  constructor(private fileService: FileService) {}
 
-  @Get('/create')
-  @ApiOperation({ summary: 'Create bucket' })
-  @ApiBody({ type: InputUserDto })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
-  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
-  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async createBucketUser(@Body() bucketName: string) {
-    return this.minioService.createBucket(bucketName);
-  }
-
-  @Post('/save/:bucket')
+  @Post('/save')
   @ApiOperation({ summary: 'Save file' })
   @ApiBody({ type: SaveFileDto })
-  @ApiParam({ name: 'bucket', required: true, description: 'Bucket' })
   @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async saveFile(@Body() props: SaveFileDto, @Param('bucket') bucket: string) {
-    return this.minioService.saveFile(props, bucket);
+  async saveFile(@Body() props: SaveFileDto) {
+    return this.fileService.saveFile(props);
   }
 
   @Post('/edit')
@@ -53,7 +26,7 @@ export class FileController {
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async editFile(@Body() props: EditFileDto) {
-    return this.minioService.editFile(props);
+    return this.fileService.editFile(props);
   }
 
   @Post('/delete')
@@ -63,6 +36,6 @@ export class FileController {
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async deleteFile(@Body() props: DeleteFileDto) {
-    return this.minioService.deleteFile(props);
+    return this.fileService.deleteFile(props);
   }
 }

@@ -3,12 +3,12 @@ import { SimCareerModel } from '@back/connection.models/SimCareer.model';
 import { SimCollectionModel } from '@back/connection.models/SimCollection.model';
 import { SimSkillModel } from '@back/connection.models/SimSkill.model';
 import { SimTraitModel } from '@back/connection.models/SimTrait.model';
-import { ParentChildModel } from '@back/tree/models/ParentChild.model';
-import { PartnerPartnerModel } from '@back/tree/models/PartnerPartner.model';
-import { TreeModel } from '@back/tree/models/Tree.model';
+import { ParentChildModel } from '@back/dynasty/models/ParentChild.model';
+import { PartnerPartnerModel } from '@back/dynasty/models/PartnerPartner.model';
+import { TreeModel } from '@back/dynasty/models/Tree.model';
 import { UserModel } from '@back/users/models/users.model';
+import { SimPositionModel } from '@back/connection.models/SimPosition.model';
 import {
-  DataType,
   PrimaryKey,
   Column,
   Model,
@@ -16,6 +16,8 @@ import {
   ForeignKey,
   BelongsTo,
   HasMany,
+  DataType,
+  HasOne,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 export interface SimsModelCreate
@@ -34,6 +36,7 @@ export interface SimsModelCreate
     | 'collections'
     | 'skills'
     | 'traits'
+    | 'position'
   > {}
 @Table({ tableName: 'sims', underscored: true, timestamps: false })
 export class SimsModel extends Model<SimsModel, SimsModelCreate> {
@@ -48,9 +51,9 @@ export class SimsModel extends Model<SimsModel, SimsModelCreate> {
   @Column
   declare name: string;
 
-  @Column
+  @Column(DataType.STRING)
   @ForeignKey(() => FileModel)
-  declare imageId: string;
+  declare imageId: string | null;
 
   @Column
   declare isInTree: boolean;
@@ -62,14 +65,8 @@ export class SimsModel extends Model<SimsModel, SimsModelCreate> {
   @BelongsTo(() => TreeModel)
   declare tree: TreeModel;
 
-  @Column
+  @Column(DataType.ENUM({ values: ['sims_1', 'sims_2', 'sims_3', 'sims_4'] }))
   declare part: string;
-
-  @Column
-  declare xPos: number;
-
-  @Column
-  declare yPos: number;
 
   @HasMany(() => PartnerPartnerModel, {
     foreignKey: 'partnerFirstId',
@@ -103,4 +100,7 @@ export class SimsModel extends Model<SimsModel, SimsModelCreate> {
 
   @HasMany(() => SimTraitModel, { foreignKey: 'traitKey' })
   traits: SimTraitModel[];
+
+  @HasOne(() => SimPositionModel)
+  position: SimPositionModel;
 }

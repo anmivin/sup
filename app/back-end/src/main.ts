@@ -20,8 +20,8 @@ async function bootstrap() {
   /*   app.use(cookieParser.default()); */
   /*   app.useGlobalGuards(new JwtAuthGuard()); */
   const config = new DocumentBuilder()
-    .setTitle('s4ug Swagger')
-    .setDescription('s4ug API description')
+    .setTitle('sup Swagger')
+    .setDescription('sup API description')
     .setVersion('1.0')
     .build();
 

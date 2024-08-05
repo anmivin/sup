@@ -1,6 +1,13 @@
 import { Aspiration4Model } from '@back/handbook/models/models.4/aspirations.model';
-import { SimsModel } from '@back/tree/models/Sim.model';
-import { PrimaryKey, Column, Model, Table, ForeignKey, BelongsTo } from 'sequelize-typescript';
+import { SimsModel } from '@back/dynasty/models/Sim.model';
+import {
+  PrimaryKey,
+  Column,
+  Model,
+  Table,
+  ForeignKey,
+  BelongsTo,
+} from 'sequelize-typescript';
 
 @Table({ tableName: 'sim_aspiration_4', underscored: true, timestamps: false })
 export class SimAspirationModel extends Model<SimAspirationModel> {

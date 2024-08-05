@@ -1,7 +1,7 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
+import { QueryInterface, DataTypes } from 'sequelize';
 
 module.exports = {
-  async up(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async up(queryInterface: QueryInterface) {
     await queryInterface.createTable('achievements', {
       key: {
         allowNull: false,
@@ -182,7 +182,7 @@ module.exports = {
     });
   },
 
-  async down(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async down(queryInterface: QueryInterface) {
     await queryInterface.dropTable('traits');
     await queryInterface.dropTable('skills');
     await queryInterface.dropTable('lifestyles');

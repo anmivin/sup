@@ -8,7 +8,6 @@ import {
   OutputCollection4Dto,
   OutputCollectionList4Dto,
   OutputDeaths4Dto,
-  OutputFears4Dto,
   OutputSkill4Dto,
   OutputSkillList4Dto,
   OutputTrait4Dto,
@@ -162,33 +161,6 @@ export class HandbookController {
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async getDeathById(@Param('key') key: string): Promise<OutputDeaths4Dto> {
     return await this.handbookService.getDeathByKey(key);
-  }
-
-  @Get('/fears')
-  @ApiOperation({ summary: 'Get all fears' })
-  @ApiResponse({
-    status: SuccessStatus.OK,
-    description: 'Success',
-    type: [OutputFears4Dto],
-  })
-  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
-  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getAllFears(): Promise<OutputFears4Dto[]> {
-    return await this.handbookService.getAllFears();
-  }
-
-  @Get('/fears/:key')
-  @ApiOperation({ summary: 'Get fear by key' })
-  @ApiParam({ name: 'key', required: true, description: 'Fear key' })
-  @ApiResponse({
-    status: SuccessStatus.OK,
-    description: 'Success',
-    type: OutputFears4Dto,
-  })
-  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
-  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getFearById(@Param('key') key: string): Promise<OutputFears4Dto> {
-    return await this.handbookService.getFearByKey(key);
   }
 
   @Get('/skills')

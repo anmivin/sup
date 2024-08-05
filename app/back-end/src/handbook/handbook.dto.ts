@@ -48,14 +48,17 @@ export class OutputAchievementList4Dto {
   @ApiProperty({ description: 'Achievement key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Achievement icon', nullable: false })
-  icon: string;
+  iconPath: string;
 }
 export class OutputAchievement4Dto {
   @ApiProperty({ description: 'Achievement key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Achievement icon', nullable: false })
-  icon: string;
-  @ApiProperty({ description: 'Points you get for achievement', nullable: false })
+  iconPath: string;
+  @ApiProperty({
+    description: 'Points you get for achievement',
+    nullable: false,
+  })
   points: number;
 }
 
@@ -63,20 +66,31 @@ export class OutputAspirationList4Dto {
   @ApiProperty({ description: 'Aspiration key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Aspiration icon', nullable: false })
-  icon: string;
-  @ApiProperty({ description: 'Aspiration group key', nullable: false, enum: AspirationGroup })
+  iconPath: string;
+  @ApiProperty({
+    description: 'Aspiration group key',
+    nullable: false,
+    enum: AspirationGroup,
+  })
   group: AspirationGroup;
 }
 export class OutputAspiration4Dto {
   @ApiProperty({ description: 'Aspiration key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Aspiration icon', nullable: false })
-  icon: string;
+  iconPath: string;
   @ApiProperty({ description: 'Aspiration steps count', nullable: false })
   steps: number;
-  @ApiProperty({ description: 'Aspiration group key', nullable: false, enum: AspirationGroup })
+  @ApiProperty({
+    description: 'Aspiration group key',
+    nullable: false,
+    enum: AspirationGroup,
+  })
   group: AspirationGroup;
-  @ApiProperty({ description: 'Bonus trait Sim gets after completing aspiration', nullable: false })
+  @ApiProperty({
+    description: 'Bonus trait Sim gets after completing aspiration',
+    nullable: false,
+  })
   bonus: string;
 }
 
@@ -84,27 +98,27 @@ export class OutputCareerList4Dto {
   @ApiProperty({ description: 'Career key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Career icon', nullable: false })
-  icon: string;
+  iconPath: string;
 }
 export class OutputCareer4Dto {
   @ApiProperty({ description: 'Career key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Career icon', nullable: false })
-  icon: string;
+  iconPath: string;
 }
 
 export class OutputCollectionItemList4Dto {
   @ApiProperty({ description: 'Collection item key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Collection item icon', nullable: false })
-  icon: string;
+  iconPath: string;
 }
 
 export class OutputCollectionItem4Dto {
   @ApiProperty({ description: 'Collection item key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Collection item icon', nullable: false })
-  icon: string;
+  iconPath: string;
   @ApiProperty({ description: 'Collection key', nullable: false })
   collectionKey: string;
 }
@@ -118,7 +132,12 @@ export class OutputCollectionList4Dto {
 export class OutputCollection4Dto {
   @ApiProperty({ description: 'Collection key', nullable: false })
   key: string;
-  @ApiProperty({ description: 'Amount of items', nullable: false, isArray: true, type: OutputCollectionItemList4Dto })
+  @ApiProperty({
+    description: 'Amount of items',
+    nullable: false,
+    isArray: true,
+    type: OutputCollectionItemList4Dto,
+  })
   collectionItems: OutputCollectionItemList4Dto[];
 }
 
@@ -126,22 +145,26 @@ export class OutputDeaths4Dto {
   @ApiProperty({ description: 'Death key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Pack key', nullable: false })
-  packKey: string;
+  part: string;
 }
 
 export class OutputFears4Dto {
   @ApiProperty({ description: 'Fear key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Fear icon', nullable: false })
-  icon: string;
+  iconPath: string;
 }
 
 export class OutputSkillList4Dto {
   @ApiProperty({ description: 'Skill key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Skill icon', nullable: false })
-  icon: string;
-  @ApiProperty({ description: 'Age since which skill available', nullable: false, enum: Age })
+  iconPath: string;
+  @ApiProperty({
+    description: 'Age since which skill available',
+    nullable: false,
+    enum: Age,
+  })
   age: Age;
   @ApiProperty({ description: 'Amount of skill steps', nullable: false })
   steps: number;
@@ -150,8 +173,12 @@ export class OutputSkill4Dto {
   @ApiProperty({ description: 'Skill key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Skill icon', nullable: false })
-  icon: string;
-  @ApiProperty({ description: 'Age since which skill available', nullable: false, enum: Age })
+  iconPath: string;
+  @ApiProperty({
+    description: 'Age since which skill available',
+    nullable: false,
+    enum: Age,
+  })
   age: Age;
   @ApiProperty({ description: 'Amount of skill steps', nullable: false })
   steps: number;
@@ -161,8 +188,12 @@ export class OutputTraitList4Dto {
   @ApiProperty({ description: 'Trait key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Trait icon', nullable: false })
-  icon: string;
-  @ApiProperty({ description: 'Trait group key', nullable: false, enum: TraitGroup })
+  iconPath: string;
+  @ApiProperty({
+    description: 'Trait group key',
+    nullable: false,
+    enum: TraitGroup,
+  })
   group: TraitGroup;
 }
 
@@ -170,7 +201,11 @@ export class OutputTrait4Dto {
   @ApiProperty({ description: 'Trait key', nullable: false })
   key: string;
   @ApiProperty({ description: 'Trait icon', nullable: false })
-  icon: string;
-  @ApiProperty({ description: 'Trait group key', nullable: false, enum: TraitGroup })
+  iconPath: string;
+  @ApiProperty({
+    description: 'Trait group key',
+    nullable: false,
+    enum: TraitGroup,
+  })
   group: TraitGroup;
 }

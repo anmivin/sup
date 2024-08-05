@@ -5,6 +5,7 @@ import {
   Column,
   Model,
   Table,
+  DataType,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 
@@ -21,6 +22,6 @@ export class Trait4Model extends Model<Trait4Model> {
   @Column
   declare group: TraitGroup;
 
-  @Column
+  @Column(DataType.ENUM({ values: ['sims_1', 'sims_2', 'sims_3', 'sims_4'] }))
   declare part: string;
 }

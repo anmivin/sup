@@ -9,7 +9,7 @@ import { useStore } from 'zustand';
 
 import GoogleAuth from '@entities/GoogleAuth';
 
-import { SignFormVariants } from '@constants/sharedTypes';
+import { SIGN_FORM_VARIANTS } from '@type/enums';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
@@ -23,7 +23,7 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
   const { signFormType, setSignFormType } = useStore(ProfileStore);
 
   const isSignUp = useMemo(() => {
-    return signFormType === SignFormVariants.SignUp;
+    return signFormType === SIGN_FORM_VARIANTS.SignUp;
   }, [signFormType]);
 
   const {
@@ -34,14 +34,13 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
   const { loginWithGoogle, login } = ProfileStore();
 
   const onSubmit = handleSubmit(async (data: SignFormValuesProps) => {
-    const createUSerData = {
+    const createUserData = {
       name: data.name,
       password: data.password,
       email: data.email,
     };
-    /*  const user = await createUser(createUSerData);
-    console.log(user);
-    logIn(user.data.id); */
+
+    const user = login(createUserData);
   });
 
   const errorHandler = useCallback(() => {
@@ -69,7 +68,7 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
           <Typography>{isSignUp ? t(`data.pages.signup`) : t(`data.pages.login`)}</Typography>
         </Button>
         <Typography>{isSignUp ? 'Уже есть акк?' : 'Нет акка пока что'}</Typography>
-        <Button onClick={() => setSignFormType(isSignUp ? SignFormVariants.SignIn : SignFormVariants.SignUp)}>
+        <Button onClick={() => setSignFormType(isSignUp ? SIGN_FORM_VARIANTS.SignIn : SIGN_FORM_VARIANTS.SignUp)}>
           {isSignUp ? t(`data.pages.login`) : t(`data.pages.signup`)}
         </Button>
 

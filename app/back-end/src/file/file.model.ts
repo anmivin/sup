@@ -1,19 +1,12 @@
-import {
-  AutoIncrement,
-  BelongsToMany,
-  Column,
-  HasOne,
-  Model,
-  PrimaryKey,
-  Table,
-} from 'sequelize-typescript';
+import { Column, Model, PrimaryKey, Table } from 'sequelize-typescript';
 
-export interface FileModelCreate extends Omit<FileModel, keyof Model> {}
+export interface FileModelCreate extends Omit<FileModel, keyof Model> {
+  id: string;
+}
 
 @Table({ tableName: 'files', underscored: true, timestamps: false })
 export class FileModel extends Model<FileModel, FileModelCreate> {
   @PrimaryKey
-  @AutoIncrement
   @Column
   declare id: string;
 

@@ -1,6 +1,6 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
+import { QueryInterface, DataTypes } from 'sequelize';
 module.exports = {
-  async up(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async up(queryInterface: QueryInterface) {
     await queryInterface.createTable('files', {
       id: {
         allowNull: false,
@@ -105,16 +105,10 @@ module.exports = {
       part: {
         type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
       },
-      x_pos: {
-        type: DataTypes.INTEGER,
-      },
-      y_pos: {
-        type: DataTypes.INTEGER,
-      },
     });
   },
 
-  async down(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async down(queryInterface: QueryInterface) {
     await queryInterface.dropTable('sims');
     await queryInterface.dropTable('trees');
     await queryInterface.dropTable('users');

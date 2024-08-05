@@ -5,16 +5,18 @@ export class InputSimDto {
   userId: string;
   @ApiProperty({ description: 'Sim name', nullable: false })
   name: string;
-  @ApiProperty({ description: 'Sim image', nullable: false })
-  image: string;
+  @ApiProperty({ description: 'Sim image', nullable: true })
+  imageId: string;
+  @ApiProperty({ description: 'Sim in tree', nullable: false })
+  isInTree: string;
   @ApiProperty({ description: 'Tree id', nullable: false })
   treeId: string;
   @ApiProperty({ description: 'Game part', nullable: false })
   part: string;
-  @ApiProperty({ description: 'Sim birth year', nullable: true })
-  birthYear?: number;
-  @ApiProperty({ description: 'Sim death year', nullable: true })
-  deathYear?: number;
+  @ApiProperty({ description: 'X pos', nullable: false })
+  xPos: number;
+  @ApiProperty({ description: 'Y pos', nullable: false })
+  yPos: number;
   @ApiProperty({ description: 'First parent id', nullable: true })
   parentFirstId?: string;
   @ApiProperty({ description: 'Second parent id', nullable: true })
@@ -35,7 +37,7 @@ export class OutputSimListDto {
 export class SimsTreeStructure {
   id: string;
   name: string;
-  image: string;
+  imageId: string | null;
   children: SimsTreeStructureBasic[];
   parents: SimsTreeStructureBasic[];
   partners: SimsTreeStructureBasic[];
@@ -44,7 +46,7 @@ export class SimsTreeStructure {
 export class SimsTreeStructureBasic {
   id: string;
   name: string;
-  image: string;
+  imageId: string | null;
   children: {
     id: string;
     name: string;
@@ -63,8 +65,8 @@ export class InputTreeDto {
   userId: string;
   @ApiProperty({ description: 'Tree name', nullable: false })
   name: string;
-  @ApiProperty({ description: 'Tree image', nullable: false })
-  image: string;
+  @ApiProperty({ description: 'Tree image', nullable: true })
+  imageId: string;
 }
 
 export declare enum Position {
@@ -94,8 +96,8 @@ class NodeDataDto {
   id: string;
   @ApiProperty({ description: 'Sim name', nullable: false })
   name: string;
-  @ApiProperty({ description: 'Sim image', nullable: false })
-  image: string;
+  @ApiProperty({ description: 'Sim image', nullable: true })
+  imageId: string | null;
   @ApiProperty({ description: 'Fixed node Y position', nullable: false })
   fixedY: number;
 }

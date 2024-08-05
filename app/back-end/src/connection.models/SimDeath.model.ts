@@ -1,6 +1,13 @@
 import { Death4Model } from '@back/handbook/models/models.4/deaths.model';
-import { SimsModel } from '@back/tree/models/Sim.model';
-import { PrimaryKey, Column, Model, Table, ForeignKey, BelongsTo } from 'sequelize-typescript';
+import { SimsModel } from '@back/dynasty/models/Sim.model';
+import {
+  PrimaryKey,
+  Column,
+  Model,
+  Table,
+  ForeignKey,
+  BelongsTo,
+} from 'sequelize-typescript';
 
 @Table({ tableName: 'sim_death_4', underscored: true, timestamps: false })
 export class SimDeathModel extends Model<SimDeathModel> {

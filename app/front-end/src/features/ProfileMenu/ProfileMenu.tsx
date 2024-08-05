@@ -5,8 +5,9 @@ import { MenuList } from '@mui/material';
 
 import { ButtonContainer, Divider, StyledButton, StyledPoper } from '@features/Header/Header.styled';
 
-import { LANGUAGES } from '@constants/enums';
 import routes from '@constants/routes';
+
+import { LANGUAGE } from '@type/enums';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
@@ -57,10 +58,10 @@ const ProfileMenu = ({ onOpenLoginForm }: ProfileMenuProps) => {
             sx={{ '.MuiOutlinedInput-input': { padding: 1 } }}
             value={i18n.language}
             onChange={(e) => {
-              i18n.changeLanguage(e.target.value as LANGUAGES);
+              i18n.changeLanguage(e.target.value as LANGUAGE);
             }}
           >
-            {Object.entries(LANGUAGES).map(([key, value]) => (
+            {Object.entries(LANGUAGE).map(([key, value]) => (
               <DefaultMenuItem key={key} value={key}>
                 {value}
               </DefaultMenuItem>

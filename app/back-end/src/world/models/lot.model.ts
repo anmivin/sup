@@ -7,7 +7,6 @@ import {
   Table,
   ForeignKey,
   BelongsTo,
-  HasOne,
 } from 'sequelize-typescript';
 
 @Table({ tableName: 'lots', underscored: true, timestamps: false })
