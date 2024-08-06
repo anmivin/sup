@@ -4,9 +4,9 @@ import { InjectModel } from '@nestjs/sequelize';
 import { v4 } from 'uuid';
 
 import { PUBLIC_BUCKET_NAMES } from '@minio/minio.dto';
-import { TreeModel } from '@tree/models/Tree.model';
+import { TreeModel } from '@back/dynasty/models/Tree.model';
 import { UserModel } from '@user/models/users.model';
-import { SimsModel } from '@tree/models/Sim.model';
+import { SimsModel } from '@back/dynasty/models/Sim.model';
 import { MinioService } from '@minio/minio.service';
 import { FileModel } from './file.model';
 import { SaveFileDto, EditFileDto, DeleteFileDto } from '@minio/minio.dto';

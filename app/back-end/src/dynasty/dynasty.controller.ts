@@ -3,8 +3,8 @@ import {
   InputTreeDto,
   OutputSimListDto,
   OutputTreeDto,
-} from '@back/tree/tree.dto';
-import { TreeService } from '@back/tree/tree.service';
+} from '@back/dynasty/dynasty.dto';
+import { DynastyService } from '@back/dynasty/dynasty.service';
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import {
@@ -15,23 +15,10 @@ import {
   ApiBody,
 } from '@nestjs/swagger';
 
-@ApiTags('Tree Module')
-@Controller('tree')
-export class TreeController {
-  constructor(private treeService: TreeService) {}
-  @Get('/:id')
-  @ApiOperation({ summary: 'Get sims for user' })
-  @ApiParam({ name: 'id', required: true, description: 'User id' })
-  @ApiResponse({
-    status: SuccessStatus.OK,
-    description: 'Success',
-    type: [OutputSimListDto],
-  })
-  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
-  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getSimsForUser(@Param('id') id: string): Promise<OutputSimListDto[]> {
-    return await this.treeService.getSimsForUser(+id);
-  }
+@ApiTags('Dynasty Module')
+@Controller('dynasty')
+export class DynastyController {
+  constructor(private dynastyService: DynastyService) {}
 
   @Get('/tree/:id')
   @ApiOperation({ summary: 'Get sims for tree' })
@@ -44,7 +31,21 @@ export class TreeController {
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async getTreeStructure(@Param('id') id: string): Promise<OutputTreeDto> {
-    return await this.treeService.getTreeStructure(+id);
+    return await this.dynastyService.getTreeStructure(+id);
+  }
+
+  @Get('/user/:id')
+  @ApiOperation({ summary: 'Get sims for user' })
+  @ApiParam({ name: 'id', required: true, description: 'User id' })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: [OutputSimListDto],
+  })
+  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
+  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
+  async getSimsForUser(@Param('id') id: string): Promise<OutputSimListDto[]> {
+    return await this.dynastyService.getSimsForUser(+id);
   }
 
   @Get('/sim/:id')
@@ -58,17 +59,17 @@ export class TreeController {
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async getSim(@Param('id') id: string): Promise<any> {
-    return await this.treeService.getSim(id);
+    return await this.dynastyService.getSim(id);
   }
 
-  @Post()
+  @Post('/sim')
   @ApiOperation({ summary: 'Create sim' })
   @ApiBody({ type: InputSimDto })
   @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async createSim(@Body() createSimDto: InputSimDto) {
-    return await this.treeService.createSim(createSimDto);
+    return await this.dynastyService.createSim(createSimDto);
   }
 
   @Post('/tree')
@@ -78,6 +79,6 @@ export class TreeController {
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async createTree(@Body() createTreeDto: InputTreeDto) {
-    return await this.treeService.createTree(createTreeDto);
+    return await this.dynastyService.createTree(createTreeDto);
   }
 }

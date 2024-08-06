@@ -1,5 +1,5 @@
 import { Aspiration4Model } from '@back/handbook/models/models.4/aspirations.model';
-import { SimsModel } from '@back/tree/models/Sim.model';
+import { SimsModel } from '@back/dynasty/models/Sim.model';
 import {
   PrimaryKey,
   Column,

@@ -4,24 +4,24 @@ import { SimCollectionModel } from '@back/connection.models/SimCollection.model'
 import { SimPositionModel } from '@back/connection.models/SimPosition.model';
 import { SimSkillModel } from '@back/connection.models/SimSkill.model';
 import { SimTraitModel } from '@back/connection.models/SimTrait.model';
-import { ParentChildModel } from '@back/tree/models/ParentChild.model';
-import { PartnerPartnerModel } from '@back/tree/models/PartnerPartner.model';
-import { SimsModel } from '@back/tree/models/Sim.model';
-import { OutputSimListDto } from '@back/tree/tree.dto';
-import { TreeModel } from '@back/tree/models/Tree.model';
+import { ParentChildModel } from '@back/dynasty/models/ParentChild.model';
+import { PartnerPartnerModel } from '@back/dynasty/models/PartnerPartner.model';
+import { SimsModel } from '@back/dynasty/models/Sim.model';
+import { OutputSimListDto } from '@back/dynasty/dynasty.dto';
+import { TreeModel } from '@back/dynasty/models/Tree.model';
 import {
   OutputTreeDto,
   InputSimDto,
   InputTreeDto,
   SimsTreeStructure,
   SimsTreeStructureBasic,
-} from '@back/tree/tree.dto';
+} from '@back/dynasty/dynasty.dto';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import { cloneDeep, remove, groupBy } from 'lodash';
 
 @Injectable()
-export class TreeService {
+export class DynastyService {
   constructor(
     @InjectModel(SimsModel) private simsModel: typeof SimsModel,
     @InjectModel(TreeModel) private treeModel: typeof TreeModel,

@@ -34,14 +34,13 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
   const { loginWithGoogle, login } = ProfileStore();
 
   const onSubmit = handleSubmit(async (data: SignFormValuesProps) => {
-    const createUSerData = {
+    const createUserData = {
       name: data.name,
       password: data.password,
       email: data.email,
     };
-    /*  const user = await createUser(createUSerData);
-    console.log(user);
-    logIn(user.data.id); */
+
+    const user = login(createUserData);
   });
 
   const errorHandler = useCallback(() => {

@@ -9,7 +9,7 @@ import { ApiOperation, ApiTags, ApiParam, ApiResponse } from '@nestjs/swagger';
 export class WorldController {
   constructor(private worldService: WorldService) {}
   @Get('/:part')
-  @ApiOperation({ summary: 'Get sims for user' })
+  @ApiOperation({ summary: 'Get worlds by part' })
   @ApiParam({ name: 'part', required: true, description: 'Part' })
   @ApiResponse({
     status: SuccessStatus.OK,
@@ -18,12 +18,12 @@ export class WorldController {
   })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getSimsForUser(@Param('part') part: string): Promise<OutputWorldDto[]> {
+  async getWorld(@Param('part') part: string): Promise<OutputWorldDto[]> {
     return await this.worldService.getWorlds(part);
   }
 
   @Get('/map/:worldKey')
-  @ApiOperation({ summary: 'Get sims for tree' })
+  @ApiOperation({ summary: 'Get world map' })
   @ApiParam({ name: 'worldKey', required: true, description: 'Tree id' })
   @ApiResponse({
     status: SuccessStatus.OK,
@@ -32,7 +32,7 @@ export class WorldController {
   })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getTreeStructure(
+  async getWorldMap(
     @Param('worldKey') worldKey: string,
   ): Promise<OutputWorldMapDto> {
     return await this.worldService.getWorldMap(worldKey);

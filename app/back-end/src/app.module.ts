@@ -16,11 +16,11 @@ import { Death4Model } from '@back/handbook/models/models.4/deaths.model';
 import { Skill4Model } from '@back/handbook/models/models.4/skills.model';
 import { Trait4Model } from '@back/handbook/models/models.4/traits.model';
 import { TokenModule } from '@back/token/token.module';
-import { ParentChildModel } from '@back/tree/models/ParentChild.model';
-import { PartnerPartnerModel } from '@back/tree/models/PartnerPartner.model';
-import { SimsModel } from '@back/tree/models/Sim.model';
-import { TreeModel } from '@back/tree/models/Tree.model';
-import { TreeModule } from '@back/tree/tree.module';
+import { ParentChildModel } from '@back/dynasty/models/ParentChild.model';
+import { PartnerPartnerModel } from '@back/dynasty/models/PartnerPartner.model';
+import { SimsModel } from '@back/dynasty/models/Sim.model';
+import { TreeModel } from '@back/dynasty/models/Tree.model';
+import { DynastyModule } from '@back/dynasty/dynasty.module';
 import { AvatarModel } from '@back/users/models/avatars.model';
 import { PackModel } from '@back/users/models/packs.model';
 import { UserModel } from '@back/users/models/users.model';
@@ -101,7 +101,7 @@ import * as path from 'path';
       }),
     }),
     HandbookModule,
-    TreeModule,
+    DynastyModule,
     UsersModule,
     WorldModule,
     TokenModule,

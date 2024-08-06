@@ -4,9 +4,9 @@ import { Module } from '@nestjs/common';
 import { FileService } from './file.service';
 import { FileController } from './file.controller';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { TreeModel } from '@tree/models/Tree.model';
+import { TreeModel } from '@back/dynasty/models/Tree.model';
 import { UserModel } from '@user/models/users.model';
-import { SimsModel } from '@tree/models/Sim.model';
+import { SimsModel } from '@back/dynasty/models/Sim.model';
 @Module({
   imports: [
     SequelizeModule.forFeature([FileModel, TreeModel, UserModel, SimsModel]),

@@ -1,5 +1,5 @@
 import { Trait4Model } from '@back/handbook/models/models.4/traits.model';
-import { SimsModel } from '@back/tree/models/Sim.model';
+import { SimsModel } from '@back/dynasty/models/Sim.model';
 import {
   PrimaryKey,
   Column,
