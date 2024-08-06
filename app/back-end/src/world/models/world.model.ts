@@ -7,6 +7,7 @@ import {
   Model,
   Table,
   HasMany,
+  BelongsTo,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 
@@ -23,13 +24,22 @@ export class WorldModel extends Model<WorldModel> {
   @ForeignKey(() => FileModel)
   declare iconId: string;
 
+  @BelongsTo(() => FileModel)
+  declare icon: FileModel | null;
+
   @Column
   @ForeignKey(() => FileModel)
   declare filledMapId: string;
 
+  @BelongsTo(() => FileModel)
+  declare filledMap: FileModel | null;
+
   @Column
   @ForeignKey(() => FileModel)
   declare emptyMapId: string;
+
+  @BelongsTo(() => FileModel)
+  declare emptyMap: FileModel | null;
 
   @HasMany(() => NeighborhoodModel)
   declare neighborhoods: NeighborhoodModel[];

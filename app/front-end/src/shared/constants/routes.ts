@@ -4,6 +4,7 @@ import Challenges from '@pages/challenges';
 import Tracker from '@pages/tracker';
 import Trees from '@pages/trees';
 import Worlds from '@pages/worlds';
+import Tree from '@pages/worldsmap/[key]';
 
 import { components } from '../api/TranslationsApi';
 
@@ -20,6 +21,7 @@ const menuRoutes: RoutesProps[] = [
   /* { link: '/challenges/randomizer', key: 'randomizer', group: 'challenges', Component }, */
   { link: '/worlds', key: 'worlds', Component: Worlds },
   { link: '/tracker', key: 'tracker', Component: Tracker },
+  { link: '/tree/:key', key: 'trees', Component: Tree },
 ];
 
 const profileRoutes: RoutesProps[] = [

@@ -20,6 +20,7 @@ export interface ProfileDataSliceProps {
   userId: string | null;
   token: string | null;
 
+  createUser: (payload: components['schemas']['InputUserDto']) => void;
   login: (payload: components['schemas']['UserCredentials']) => void;
   loginWithGoogle: (token: string) => void;
   logout: () => void;

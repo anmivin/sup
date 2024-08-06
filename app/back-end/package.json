@@ -23,10 +23,11 @@
     "sequelize-ts": "env-cmd ts-node -T -r tsconfig-paths/register ../../node_modules/sequelize-cli/lib/sequelize",
     "migration:run": "npx sequelize-cli db:migrate",
     "migration:add": "env-cmd npm run sequelize-ts migration:generate -- --name new",
-    "migration:undo": "env-cmd npm run sequelize-ts db:migrate:undo",
+    "migration:undo": "npx sequelize-cli db:migrate:undo",
     "seed:run": "env-cmd npm run sequelize-ts db:seed:all",
     "seed:add": "env-cmd npm run sequelize-ts seed:generate -- --name new",
-    "seed:undo": "env-cmd npm run sequelize-ts db:seed:undo"
+    "seed:undo": "env-cmd npm run sequelize-ts db:seed:undo",
+    "move-files": "env-cmd ts-node src/scripts.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",

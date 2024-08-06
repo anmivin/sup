@@ -6,6 +6,7 @@ import {
   Model,
   Table,
   DataType,
+  BelongsTo,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 
@@ -18,6 +19,9 @@ export class Aspiration4Model extends Model<Aspiration4Model> {
   @Column
   @ForeignKey(() => FileModel)
   declare iconId: string;
+
+  @BelongsTo(() => FileModel)
+  declare icon: FileModel | null;
 
   @Column
   declare steps: number;

@@ -24,6 +24,9 @@ export class NeighborhoodModel extends Model<NeighborhoodModel> {
   @ForeignKey(() => FileModel)
   declare iconId: string;
 
+  @BelongsTo(() => FileModel)
+  declare icon: FileModel | null;
+
   @Column
   declare iconColor: string;
 

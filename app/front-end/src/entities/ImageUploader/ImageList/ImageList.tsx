@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
-
-import { Box, Button, CircularProgress } from '@mui/material';
+import { Button, CircularProgress } from '@mui/material';
 
 import { CloseIcon } from '@assets/icons';
 
@@ -9,20 +7,17 @@ import { ImageContainer, ImageListContainer, ImagePreview } from './ImageList.st
 import { ImageListProps } from './ImageList.types';
 
 const ImageList = ({ imageList, onImageRemove, onImageClick }: ImageListProps) => {
-  useEffect(() => {
-    console.log('imageList', imageList);
-  }, [imageList]);
   return (
     <>
       {!!imageList.length && (
         <ImageListContainer>
           {imageList.map((item) => (
             <ImageContainer key={item.key} onClick={() => onImageClick?.(item)}>
-              <ImagePreview $img={URL.createObjectURL(item.file)} $uploading={item.uploadProgress !== undefined} />
-              {item.uploadProgress !== undefined ? (
+              <ImagePreview $img={URL.createObjectURL(item.file)} /* $uploading={item.uploadProgress !== 100}  */ />
+              {item.uploadProgress !== 100 ? (
                 <CircularProgress
                   variant={item.uploadProgress === 0 ? 'indeterminate' : 'determinate'}
-                  value={item.uploadProgress * 100}
+                  value={item.uploadProgress}
                   size={60}
                   color="secondary"
                   sx={{ position: 'absolute' }}

@@ -29,4 +29,7 @@ export class BuildingModel extends Model<BuildingModel> {
   @Column
   @ForeignKey(() => FileModel)
   declare imageId: string;
+
+  @BelongsTo(() => FileModel)
+  declare image: FileModel | null;
 }

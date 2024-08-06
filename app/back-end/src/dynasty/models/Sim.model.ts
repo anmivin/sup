@@ -55,6 +55,9 @@ export class SimsModel extends Model<SimsModel, SimsModelCreate> {
   @ForeignKey(() => FileModel)
   declare imageId: string | null;
 
+  @BelongsTo(() => FileModel)
+  declare image: FileModel | null;
+
   @Column
   declare isInTree: boolean;
 

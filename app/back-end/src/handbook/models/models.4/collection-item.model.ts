@@ -19,6 +19,9 @@ export class CollectionItem4Model extends Model<CollectionItem4Model> {
   @ForeignKey(() => FileModel)
   declare iconId: string;
 
+  @BelongsTo(() => FileModel)
+  declare icon: FileModel | null;
+
   @ForeignKey(() => Collection4Model)
   @Column
   declare collectionKey: string;

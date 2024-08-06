@@ -61,44 +61,53 @@ export interface paths {
     /** Get trait by key */
     get: operations["HandbookController_getTraitById"];
   };
-  "/tree/{id}": {
-    /** Get sims for user */
-    get: operations["TreeController_getSimsForUser"];
+  "/dynasty/{id}": {
+    /** Get trees for user */
+    get: operations["DynastyController_getTreeForUser"];
   };
-  "/tree/tree/{id}": {
+  "/dynasty/tree/{id}": {
     /** Get sims for tree */
-    get: operations["TreeController_getTreeStructure"];
+    get: operations["DynastyController_getTreeStructure"];
   };
-  "/tree/sim/{id}": {
+  "/dynasty/user/{id}": {
+    /** Get sims for user */
+    get: operations["DynastyController_getSimsForUser"];
+  };
+  "/dynasty/sim/{id}": {
     /** Get sim by id */
-    get: operations["TreeController_getSim"];
+    get: operations["DynastyController_getSim"];
   };
-  "/tree": {
+  "/dynasty/sim": {
     /** Create sim */
-    post: operations["TreeController_createSim"];
+    post: operations["DynastyController_createSim"];
   };
-  "/tree/tree": {
+  "/dynasty/tree": {
     /** Create tree */
-    post: operations["TreeController_createTree"];
+    post: operations["DynastyController_createTree"];
   };
   "/users": {
     /** Create User */
     post: operations["UsersController_createUser"];
   };
   "/worlds/{part}": {
-    /** Get sims for user */
-    get: operations["WorldController_getSimsForUser"];
+    /** Get worlds by part */
+    get: operations["WorldController_getWorld"];
   };
   "/worlds/map/{worldKey}": {
-    /** Get sims for tree */
-    get: operations["WorldController_getTreeStructure"];
+    /** Get world map */
+    get: operations["WorldController_getWorldMap"];
   };
   "/auth/login": {
     /** Log In */
     post: operations["AuthController_login"];
   };
   "/auth/google-login": {
-    get: operations["AuthController_loginGoogle"];
+    /** Google Log In */
+    post: operations["AuthController_loginGoogle"];
+  };
+  "/file": {
+    /** Save debug file */
+    post: operations["FileController_saveDebugFile"];
   };
   "/file/save": {
     /** Save file */
@@ -242,11 +251,13 @@ export interface components {
        */
       group: "trait_group_001_emotional" | "trait_group_002_hobby" | "trait_group_003_lifestyle" | "trait_group_004_social" | "trait_group_005_toddler" | "trait_group_006_infant" | "trait_group_007_bonus" | "trait_group_008_aspirationreward" | "Satisfaction reward" | "trait_group_010_careerreward" | "trait_group_011_foodmastery" | "trait_group_012_inherited" | "trait_group_013_charactervalue";
     };
-    OutputSimListDto: {
-      /** @description Sim id */
+    OutputTreeListDto: {
+      /** @description Tree id */
       id: string;
-      /** @description Sim name */
+      /** @description Tree name */
       name: string;
+      /** @description Tree image */
+      image: string | null;
     };
     EdgesDto: {
       /** @description Edge id */
@@ -297,6 +308,12 @@ export interface components {
       edges: components["schemas"]["EdgesDto"][];
       /** @description Nodes */
       nodes: components["schemas"]["NodesDto"][];
+    };
+    OutputSimListDto: {
+      /** @description Sim id */
+      id: string;
+      /** @description Sim name */
+      name: string;
     };
     InputSimDto: {
       /** @description User id */
@@ -369,13 +386,9 @@ export interface components {
       /** @description User password */
       password: string;
     };
-    UserGoogleCredentials: {
-      /** @description User name */
-      name: string;
-      /** @description User password */
-      email: string;
-      /** @description User password */
-      avatar: Record<string, unknown> | null;
+    Debug: {
+      /** @description File */
+      file: Record<string, never>;
     };
     SaveFileDto: Record<string, never>;
     EditFileDto: Record<string, never>;
@@ -702,8 +715,8 @@ export interface operations {
       };
     };
   };
-  /** Get sims for user */
-  TreeController_getSimsForUser: {
+  /** Get trees for user */
+  DynastyController_getTreeForUser: {
     parameters: {
       path: {
         /** @description User id */
@@ -714,7 +727,7 @@ export interface operations {
       /** @description Success */
       200: {
         content: {
-          "application/json": components["schemas"]["OutputSimListDto"][];
+          "application/json": components["schemas"]["OutputTreeListDto"][];
         };
       };
       /** @description Bad Request */
@@ -728,7 +741,7 @@ export interface operations {
     };
   };
   /** Get sims for tree */
-  TreeController_getTreeStructure: {
+  DynastyController_getTreeStructure: {
     parameters: {
       path: {
         /** @description Tree id */
@@ -752,8 +765,33 @@ export interface operations {
       };
     };
   };
+  /** Get sims for user */
+  DynastyController_getSimsForUser: {
+    parameters: {
+      path: {
+        /** @description User id */
+        id: string;
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["OutputSimListDto"][];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
   /** Get sim by id */
-  TreeController_getSim: {
+  DynastyController_getSim: {
     parameters: {
       path: {
         /** @description Sim id */
@@ -778,7 +816,7 @@ export interface operations {
     };
   };
   /** Create sim */
-  TreeController_createSim: {
+  DynastyController_createSim: {
     requestBody: {
       content: {
         "application/json": components["schemas"]["InputSimDto"];
@@ -800,7 +838,7 @@ export interface operations {
     };
   };
   /** Create tree */
-  TreeController_createTree: {
+  DynastyController_createTree: {
     requestBody: {
       content: {
         "application/json": components["schemas"]["InputTreeDto"];
@@ -843,8 +881,8 @@ export interface operations {
       };
     };
   };
-  /** Get sims for user */
-  WorldController_getSimsForUser: {
+  /** Get worlds by part */
+  WorldController_getWorld: {
     parameters: {
       path: {
         /** @description Part */
@@ -868,8 +906,8 @@ export interface operations {
       };
     };
   };
-  /** Get sims for tree */
-  WorldController_getTreeStructure: {
+  /** Get world map */
+  WorldController_getWorldMap: {
     parameters: {
       path: {
         /** @description Tree id */
@@ -915,14 +953,46 @@ export interface operations {
       };
     };
   };
+  /** Google Log In */
   AuthController_loginGoogle: {
     requestBody: {
       content: {
-        "application/json": components["schemas"]["UserGoogleCredentials"];
+        "application/json": components["schemas"]["UserCredentials"];
       };
     };
     responses: {
+      /** @description Success */
       200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Save debug file */
+  FileController_saveDebugFile: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["Debug"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
         content: never;
       };
     };

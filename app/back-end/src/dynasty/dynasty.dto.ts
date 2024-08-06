@@ -27,6 +27,14 @@ export class InputSimDto {
   partnersIds: string[];
 }
 
+export class OutputTreeListDto {
+  @ApiProperty({ description: 'Tree id', nullable: false })
+  id: string;
+  @ApiProperty({ description: 'Tree name', nullable: false })
+  name: string;
+  @ApiProperty({ description: 'Tree image', nullable: true })
+  image?: string;
+}
 export class OutputSimListDto {
   @ApiProperty({ description: 'Sim id', nullable: false })
   id: string;

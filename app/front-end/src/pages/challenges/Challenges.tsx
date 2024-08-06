@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { Box } from '@mui/material';
+import { AxiosProgressEvent } from 'axios';
 import { uniqueId } from 'lodash';
 
 import DrawLayout from '@widgets/DrawLayout';
@@ -14,33 +16,69 @@ import { ImageItem } from '@entities/ImageUploader/ImageUploader.types';
 import RandomSkill from '@components/Randomizer/RandomSkill';
 import RandomTrait from '@components/Randomizer/RandomTrait'; */
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
+import { TreeStore } from '@stores/Tree/Tree.store';
 
 import Rating from '@ui/Rating';
 import DefaultSpinner from '@ui/Spinner/Spinner';
 
 import * as icons from '@assets/icons';
 
-HandbookStore.getState().getAspirations();
+/* HandbookStore.getState().getAspirations();
 HandbookStore.getState().getSkills();
-HandbookStore.getState().getTraits();
+HandbookStore.getState().getTraits(); */
 
 const Challenges = () => {
   const { t } = useTranslation(['achievements']);
+  const { saveImageDebug } = TreeStore();
   const [files, setFiles] = useState<ImageItem[]>([]);
   const [open, setOpen] = useState(false);
   const [img, setImg] = useState<string | null>(null);
   const onAdd = useCallback((files: File[]) => {
     setFiles((prev) => [...prev, ...files.map((val) => ({ file: val, key: uniqueId(), uploadProgress: 0.7 }))]);
   }, []);
-
+  const onUploadProgress = (progressEvent: AxiosProgressEvent) => {
+    const { loaded, total } = progressEvent;
+    if (!total) return;
+    setFiles((prev) => {
+      const newFiles = [...prev];
+      const progress = Math.floor((loaded / total) * 100);
+      console.log(progress);
+      newFiles[newFiles.length - 1].uploadProgress = progress;
+      return newFiles;
+    });
+    if (loaded == total) {
+      setFiles((prev) => {
+        const newFiles = [...prev];
+        newFiles[newFiles.length - 1].uploadProgress = 100;
+        return newFiles;
+      });
+    }
+  };
+  const onFileUpload = useCallback(async (file: File) => {
+    setFiles((prev) => [...prev, { file: file, uploadProgress: 0, key: uniqueId() }]);
+    const config = {
+      onUploadProgress,
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    };
+    try {
+      let fd = new FormData();
+      fd.append('file', file);
+      saveImageDebug(fd, config);
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
   return (
     <>
       {/*       <DrawLayout /> */}
       <ImageUpload
         value={img}
         onImageAdd={(files) => {
-          setFiles((prev) => [...prev, ...files.map((val) => ({ file: val, key: uniqueId(), uploadProgress: 0.7 }))]);
-          setOpen(true);
+          onFileUpload(files[0]);
+          /* 
+          setOpen(true); */
         }}
       />
       <ImageDrop onFilesAdd={onAdd} />
@@ -125,6 +163,7 @@ const Challenges = () => {
       <icons.HeartBrokenIcon />
       <icons.RingIcon />
       <icons.RingsCrossedIcon />
+      <icons.PlusIcon />
 
       {/*       <RandomAspiration aspirations={aspirations} />
       <RandomSkill />

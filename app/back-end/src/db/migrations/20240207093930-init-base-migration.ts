@@ -10,7 +10,7 @@ module.exports = {
       path: {
         type: DataTypes.STRING,
       },
-      pathTn: {
+      path_tn: {
         type: DataTypes.STRING,
       },
       name: {

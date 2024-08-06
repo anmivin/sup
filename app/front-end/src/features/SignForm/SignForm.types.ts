@@ -20,6 +20,6 @@ export const SignFormValuesSchema: ZodType<SignFormValuesProps> = z.object({
   email: z.string().optional(),
   password: z
     .string()
-    .min(6, 'Password must be at least 6 characters')
+    .min(5, 'Password must be at least 5 characters')
     .max(40, 'Password must not exceed 40 characters'),
 });

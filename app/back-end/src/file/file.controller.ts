@@ -1,13 +1,35 @@
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
-import { Controller, Post, Body } from '@nestjs/common';
+import {
+  Controller,
+  Post,
+  Body,
+  UploadedFile,
+  UseInterceptors,
+} from '@nestjs/common';
 import { ApiOperation, ApiTags, ApiResponse, ApiBody } from '@nestjs/swagger';
-
-import { SaveFileDto, EditFileDto, DeleteFileDto } from '@minio/minio.dto';
+import { FileInterceptor } from '@nestjs/platform-express';
+import {
+  Debug,
+  SaveFileDto,
+  EditFileDto,
+  DeleteFileDto,
+} from '@minio/minio.dto';
 import { FileService } from './file.service';
 @ApiTags('File Controller')
 @Controller('file')
 export class FileController {
   constructor(private fileService: FileService) {}
+
+  @Post('')
+  @UseInterceptors(FileInterceptor('file'))
+  @ApiOperation({ summary: 'Save debug file' })
+  @ApiBody({ type: Debug })
+  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
+  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
+  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
+  async saveDebugFile(@UploadedFile() file: Express.Multer.File) {
+    return this.fileService.saveDebugFile({ file: file });
+  }
 
   @Post('/save')
   @ApiOperation({ summary: 'Save file' })
