@@ -1,6 +1,7 @@
 import { StateCreator } from 'zustand';
 
 import { CommonStore } from '@stores/Common/Common.store';
+import { ProfileStore } from '@stores/Profile/Profile.store';
 
 import { TreeDataSliceProps } from './Tree.types';
 
@@ -11,31 +12,54 @@ import {
   editImageRequest,
   fetchSimsForTree,
   fetchSimsForUser,
+  fetchTreesForUser,
+  saveImageDebugRequest,
   saveImageRequest,
 } from './Tree.api';
 
-const { setErrorCommonAlertOpen, setSuccessCommonAlertOpen } = CommonStore();
+/* const { setErrorCommonAlertOpen, setSuccessCommonAlertOpen } = CommonStore(); */
 
 export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => ({
   defaultSims: null,
   simsInTree: null,
   trees: null,
+  treesPending: false,
+
+  getTreesForUser: async () => {
+    set({ treesPending: true });
+    const userId = ProfileStore.getState().userId;
+    if (!userId) return;
+    try {
+      const trees = await fetchTreesForUser(userId);
+      set({ trees });
+      set({ treesPending: false });
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+      set({ treesPending: false });
+    }
+  },
 
   getSimsForTree: async (payload) => {
+    const userId = ProfileStore.getState().userId;
+
     try {
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
   getSimsForUser: async (payload) => {
     try {
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
   getSim: async (payload) => {
     try {
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
@@ -43,7 +67,9 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
   createTree: async (payload) => {
     try {
       const res = await createTreeRequest(payload);
+      console.log(res);
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
@@ -51,12 +77,14 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
   editTree: async (payload) => {
     try {
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
   removeTree: async (payload) => {
     try {
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
@@ -65,18 +93,21 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
     try {
       const res = await createSimRequest(payload);
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
   editSim: async (payload) => {
     try {
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
   removeSim: async (payload) => {
     try {
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
@@ -84,12 +115,14 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
   addPartner: async () => {
     try {
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
   removePartner: async () => {
     try {
     } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
     }
   },
@@ -97,33 +130,33 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
   addChild: async () => {
     try {
     } catch (e) {
-      setErrorCommonAlertOpen(true);
+      /*setErrorCommonAlertOpen(true); */
     }
   },
   removeChild: async () => {
     try {
     } catch (e) {
-      setErrorCommonAlertOpen(true);
+      /*setErrorCommonAlertOpen(true); */
     }
   },
 
   addParent: async () => {
     try {
     } catch (e) {
-      setErrorCommonAlertOpen(true);
+      /*setErrorCommonAlertOpen(true); */
     }
   },
   removeParent: async () => {
     try {
     } catch (e) {
-      setErrorCommonAlertOpen(true);
+      /*setErrorCommonAlertOpen(true); */
     }
   },
 
   getDefaultSims: async () => {
     try {
     } catch (e) {
-      setErrorCommonAlertOpen(true);
+      /*setErrorCommonAlertOpen(true); */
     }
   },
 
@@ -131,14 +164,14 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
     try {
       await saveImageRequest(payload);
     } catch (e) {
-      setErrorCommonAlertOpen(true);
+      /*setErrorCommonAlertOpen(true); */
     }
   },
   editImage: async (payload) => {
     try {
       await editImageRequest(payload);
     } catch (e) {
-      setErrorCommonAlertOpen(true);
+      /*setErrorCommonAlertOpen(true); */
     }
   },
 
@@ -146,7 +179,16 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
     try {
       await deleteImageRequest(payload);
     } catch (e) {
-      setErrorCommonAlertOpen(true);
+      /*setErrorCommonAlertOpen(true); */
+    }
+  },
+
+  saveImageDebug: async (payload, config) => {
+    try {
+      await saveImageDebugRequest(payload, config);
+    } catch (e) {
+      console.log('e', e);
+      /*setErrorCommonAlertOpen(true); */
     }
   },
 });

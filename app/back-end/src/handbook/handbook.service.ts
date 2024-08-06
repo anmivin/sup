@@ -46,6 +46,7 @@ export class HandbookService {
     const icon = await this.fileModel.findOne({
       where: { id: item.iconId },
     });
+
     return { ...item, icon: icon?.path };
   }
 
@@ -79,17 +80,14 @@ export class HandbookService {
   }
 
   async getAspirationByKey(key: string): Promise<OutputAspiration4Dto> {
-    const aspiration = await this.aspirationModel.findByPk(key, {
-      include: [{ model: this.fileModel }],
-    });
+    const aspiration = await this.aspirationModel.findByPk(key);
     if (!aspiration) throw new Error('Не найдено');
     return await this.addIcon(aspiration);
   }
 
   async getAllCareers(): Promise<OutputCareerList4Dto[]> {
     const careers = await this.careerModel.findAll({
-      attributes: ['key', 'icon'],
-      include: [{ model: this.fileModel }],
+      attributes: ['key', 'iconId'],
     });
     const careersWithIcons = await Promise.all(
       careers.map(async (item) => await this.addIcon(item)),
@@ -106,7 +104,6 @@ export class HandbookService {
   async getAllCollections(): Promise<OutputCollectionList4Dto[]> {
     return await this.collectionModel.findAll({
       attributes: ['key', 'count'],
-      include: [{ model: this.fileModel }],
     });
   }
 
@@ -116,8 +113,7 @@ export class HandbookService {
       attributes: ['key'],
       include: {
         model: this.collectionItemModel,
-        attributes: ['key', 'icon'],
-        include: [{ model: this.fileModel }],
+        attributes: ['key', 'iconId'],
       },
     });
     if (!collection) throw new Error('Не найдено');
@@ -143,10 +139,13 @@ export class HandbookService {
   }
 
   async getAllSkills(): Promise<OutputSkillList4Dto[]> {
-    const skills = await this.skillModel.findAll({
-      attributes: ['key', 'icon', 'age', 'steps'],
-      include: [{ model: this.fileModel }],
-    });
+    const skills = (await this.skillModel.findAll()).map((item) => ({
+      key: item.key,
+      iconId: item.iconId,
+      age: item.age,
+      steps: item.steps,
+    }));
+    console.log(skills);
     const skillsWithIcons = await Promise.all(
       skills.map(async (item) => await this.addIcon(item)),
     );
@@ -162,7 +161,6 @@ export class HandbookService {
   async getAllTraits(): Promise<OutputTraitList4Dto[]> {
     const traits = await this.traitModel.findAll({
       attributes: ['key', 'iconId', 'group'],
-      include: [{ model: this.fileModel }],
     });
     const traitsWithIcons = await Promise.all(
       traits.map(async (item) => await this.addIcon(item)),

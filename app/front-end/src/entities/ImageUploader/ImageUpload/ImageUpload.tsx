@@ -12,7 +12,7 @@ const ImageUpload = ({ onImageAdd, value }: ImageUploadProps) => {
   const handleInputChange = useCallback<ChangeEventHandler<HTMLInputElement>>((event) => {
     if (event.target.files) {
       const file = event.target.files[0];
-      /*       setImg(file); */
+      setImg(file);
       onImageAdd([file]);
     }
   }, []);

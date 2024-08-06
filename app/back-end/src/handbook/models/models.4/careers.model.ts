@@ -5,6 +5,7 @@ import {
   Model,
   Table,
   DataType,
+  BelongsTo,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 
@@ -17,6 +18,9 @@ export class Career4Model extends Model<Career4Model> {
   @Column
   @ForeignKey(() => FileModel)
   declare iconId: string;
+
+  @BelongsTo(() => FileModel)
+  declare icon: FileModel | null;
 
   @Column(DataType.ARRAY(DataType.STRING))
   declare age: string[];

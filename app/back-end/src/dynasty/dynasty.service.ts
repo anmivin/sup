@@ -15,10 +15,13 @@ import {
   InputTreeDto,
   SimsTreeStructure,
   SimsTreeStructureBasic,
+  OutputTreeListDto,
 } from '@back/dynasty/dynasty.dto';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import { cloneDeep, remove, groupBy } from 'lodash';
+import { FileModel } from '@back/file/file.model';
+import { v4 } from 'uuid';
 
 @Injectable()
 export class DynastyService {
@@ -38,7 +41,26 @@ export class DynastyService {
     @InjectModel(SimTraitModel) private simTraitModel: typeof SimTraitModel,
     @InjectModel(SimPositionModel)
     private simPositionModel: typeof SimPositionModel,
+    @InjectModel(FileModel) private fileModel: typeof FileModel,
   ) {}
+  async getTreeForUser(id: string): Promise<OutputTreeListDto[]> {
+    const trees = await this.treeModel.findAll({
+      where: { userId: id },
+    });
+    const treesWithIcons = await Promise.all(
+      trees.map(async (tree) => {
+        const icon = tree.imageId
+          ? await this.fileModel.findOne({
+              where: { id: tree.imageId },
+            })
+          : null;
+        return { id: tree.id, name: tree.name, image: icon?.path };
+      }),
+    );
+
+    return treesWithIcons;
+  }
+
   async getSimsForUser(id: number): Promise<OutputSimListDto[]> {
     return (
       await this.simsModel.findAll({
@@ -106,7 +128,8 @@ export class DynastyService {
   }
 
   async createTree(createTreeDto: InputTreeDto) {
-    await this.treeModel.create(createTreeDto);
+    const tree = await this.treeModel.create({ ...createTreeDto, id: v4() });
+    return tree;
   }
   async getSimsForStructure(id: number): Promise<SimsTreeStructure[]> {
     const sims = await this.simsModel.findAll({

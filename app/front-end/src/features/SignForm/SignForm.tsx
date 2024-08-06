@@ -31,16 +31,18 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
     control,
     formState: { errors },
   } = useForm<SignFormValuesProps>({ resolver: zodResolver(SignFormValuesSchema) });
-  const { loginWithGoogle, login } = ProfileStore();
+  const { loginWithGoogle, login, createUser } = ProfileStore();
 
   const onSubmit = handleSubmit(async (data: SignFormValuesProps) => {
+    console.log(data);
     const createUserData = {
       name: data.name,
       password: data.password,
       email: data.email,
+      avatar: null,
     };
-
-    const user = login(createUserData);
+    console.log(createUserData);
+    const user = createUser(createUserData);
   });
 
   const errorHandler = useCallback(() => {

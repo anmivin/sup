@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from 'react';
 
-import { Box } from '@mui/material';
+import { Box, Link } from '@mui/material';
 
 import { WorldStore } from '@stores/World/World.store';
 
@@ -15,16 +15,15 @@ const Worlds = () => {
   return (
     <>
       {worlds.map((world) => (
-        <img
-          src={`/sims4/towns/${world.icon}`}
-          alt="Picture of the author"
-          width="200"
-          height="200"
-          onClick={() => getWorldMap(world.key)}
-        />
-        /*         <Link href={{ pathname: 'worlds/[key]', query: { key: world.key } }} key={world.key}>
-          
-        </Link> */
+        <Link href={`tree/${world.key}`} key={world.key}>
+          <img
+            src={`/sims4/towns/${world.icon}`}
+            alt="Picture of the author"
+            width="200"
+            height="200"
+            onClick={() => getWorldMap(world.key)}
+          />
+        </Link>
       ))}
 
       {selectedWorld && (

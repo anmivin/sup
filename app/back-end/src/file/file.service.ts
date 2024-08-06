@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/sequelize';
 
 import { v4 } from 'uuid';
 
-import { PUBLIC_BUCKET_NAMES } from '@minio/minio.dto';
+import { Debug, PUBLIC_BUCKET_NAMES } from '@minio/minio.dto';
 import { TreeModel } from '@back/dynasty/models/Tree.model';
 import { UserModel } from '@user/models/users.model';
 import { SimsModel } from '@back/dynasty/models/Sim.model';
@@ -13,8 +13,9 @@ import { SaveFileDto, EditFileDto, DeleteFileDto } from '@minio/minio.dto';
 
 @Injectable()
 export class FileService {
-  private minioService: MinioService;
   constructor(
+    private minioService: MinioService,
+
     @InjectModel(FileModel) private fileModel: typeof FileModel,
     @InjectModel(SimsModel) private simsModel: typeof SimsModel,
     @InjectModel(TreeModel) private treeModel: typeof TreeModel,
@@ -47,6 +48,24 @@ export class FileService {
         await entity.update({ imageId: fileId });
       }
     }
+  }
+
+  async saveDebugFile(props: Debug) {
+    console.log('==================');
+    console.log(props);
+
+    const filePath = await this.minioService.saveFile(
+      PUBLIC_BUCKET_NAMES.Debug,
+      props.file,
+    );
+    const fileId = v4();
+    console.log('-----------------', filePath);
+    await this.fileModel.create({
+      id: fileId,
+      path: filePath,
+      pathTn: '',
+      name: `DEBUG_${props.file.originalname}`,
+    });
   }
 
   async saveFile(props: SaveFileDto) {

@@ -9,7 +9,7 @@ import {
   BelongsTo,
 } from 'sequelize-typescript';
 
-@Table({ tableName: 'sim_death_4', underscored: true, timestamps: false })
+@Table({ tableName: 'sim_death', underscored: true, timestamps: false })
 export class SimDeathModel extends Model<SimDeathModel> {
   @PrimaryKey
   @Column

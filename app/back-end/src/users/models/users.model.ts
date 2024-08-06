@@ -5,6 +5,7 @@ import {
   Column,
   Model,
   Table,
+  BelongsTo,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 export interface UserModelCreate extends Omit<UserModel, keyof Model> {
@@ -32,4 +33,7 @@ export class UserModel extends Model<UserModel, UserModelCreate> {
   @Column(DataType.STRING)
   @ForeignKey(() => FileModel)
   declare imageId: string | null;
+
+  @BelongsTo(() => FileModel)
+  declare image: FileModel | null;
 }

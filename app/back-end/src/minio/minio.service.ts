@@ -8,6 +8,8 @@ import { FileTypes } from './minio.dto';
 
 import { FileTable } from '@back/file/file.dto';
 
+const MINIO_URL = process.env.MINIO_URL ?? 'http://127.0.0.1:9000';
+
 @Injectable()
 export class MinioService {
   private minioClient: Minio.Client;
@@ -21,6 +23,9 @@ export class MinioService {
     });
   }
 
+  async dosmth() {
+    return 'working';
+  }
   async createBucket(bucket: string) {
     const existed = await this.minioClient.bucketExists(bucket);
     if (!existed) await this.minioClient.makeBucket(bucket);
@@ -43,7 +48,8 @@ export class MinioService {
         if (error) throw error;
       },
     );
-    const url = await this.getFileUrl(bucket, fileName);
+    const url = `${MINIO_URL}/${bucket}/${fileName}`;
+
     return url;
   }
 

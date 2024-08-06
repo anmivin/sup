@@ -3,6 +3,7 @@ import {
   InputTreeDto,
   OutputSimListDto,
   OutputTreeDto,
+  OutputTreeListDto,
 } from '@back/dynasty/dynasty.dto';
 import { DynastyService } from '@back/dynasty/dynasty.service';
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
@@ -19,6 +20,20 @@ import {
 @Controller('dynasty')
 export class DynastyController {
   constructor(private dynastyService: DynastyService) {}
+
+  @Get('/:id')
+  @ApiOperation({ summary: 'Get trees for user' })
+  @ApiParam({ name: 'id', required: true, description: 'User id' })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: [OutputTreeListDto],
+  })
+  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
+  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
+  async getTreeForUser(@Param('id') id: string): Promise<OutputTreeListDto[]> {
+    return await this.dynastyService.getTreeForUser(id);
+  }
 
   @Get('/tree/:id')
   @ApiOperation({ summary: 'Get sims for tree' })

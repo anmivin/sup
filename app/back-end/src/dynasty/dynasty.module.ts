@@ -12,7 +12,7 @@ import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { DynastyController } from '@dynasty/dynasty.controller';
 import { DynastyService } from '@back/dynasty/dynasty.service';
-
+import { FileModel } from '@back/file/file.model';
 @Module({
   imports: [
     SequelizeModule.forFeature([
@@ -26,6 +26,7 @@ import { DynastyService } from '@back/dynasty/dynasty.service';
       SimPositionModel,
       SimSkillModel,
       SimTraitModel,
+      FileModel,
     ]),
   ],
   providers: [DynastyService],

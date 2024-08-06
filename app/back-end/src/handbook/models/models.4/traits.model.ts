@@ -6,10 +6,11 @@ import {
   Model,
   Table,
   DataType,
+  BelongsTo,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 
-@Table({ tableName: 'traits_4', underscored: true, timestamps: false })
+@Table({ tableName: 'traits', underscored: true, timestamps: false })
 export class Trait4Model extends Model<Trait4Model> {
   @PrimaryKey
   @Column
@@ -18,6 +19,9 @@ export class Trait4Model extends Model<Trait4Model> {
   @Column
   @ForeignKey(() => FileModel)
   declare iconId: string;
+
+  @BelongsTo(() => FileModel)
+  declare icon: FileModel | null;
 
   @Column
   declare group: TraitGroup;

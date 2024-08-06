@@ -5,6 +5,7 @@ import {
   Model,
   Table,
   DataType,
+  BelongsTo,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 @Table({ tableName: 'achievements', underscored: true, timestamps: false })
@@ -16,6 +17,9 @@ export class Achievement4Model extends Model<Achievement4Model> {
   @Column
   @ForeignKey(() => FileModel)
   declare iconId: string;
+
+  @BelongsTo(() => FileModel)
+  declare icon: FileModel | null;
 
   @Column
   declare points: number;

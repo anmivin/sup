@@ -4,6 +4,7 @@ import {
   Column,
   Model,
   Table,
+  BelongsTo,
 } from 'sequelize-typescript';
 import { FileModel } from '@back/file/file.model';
 @Table({ tableName: 'lifestyles', underscored: true, timestamps: false })
@@ -15,4 +16,7 @@ export class Lifestyle4Model extends Model<Lifestyle4Model> {
   @Column
   @ForeignKey(() => FileModel)
   declare iconId: string;
+
+  @BelongsTo(() => FileModel)
+  declare icon: FileModel | null;
 }
