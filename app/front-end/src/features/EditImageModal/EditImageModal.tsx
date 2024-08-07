@@ -7,6 +7,7 @@ import DefaultModal from '@ui/Modal';
 import { EditImageModalProps } from './EditImageModal.types';
 
 const EditImageModal = ({ setImg, onClose, open, image }: EditImageModalProps) => {
+  if (!image) return;
   return (
     <DefaultModal header="sdsadad" open={open} onClose={onClose}>
       <>

@@ -243,6 +243,54 @@ module.exports = {
         type: DataTypes.INTEGER,
       },
     });
+    await queryInterface.createTable('file_tree', {
+      id: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+      },
+      file_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
+      },
+      tree_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'trees',
+          key: 'id',
+        },
+      },
+      is_current: {
+        type: DataTypes.BOOLEAN,
+      },
+    });
+    await queryInterface.createTable('file_sim', {
+      id: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+      },
+      file_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
+      },
+      sim_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'sims',
+          key: 'id',
+        },
+      },
+      is_current: {
+        type: DataTypes.BOOLEAN,
+      },
+    });
   },
 
   async down(queryInterface: QueryInterface) {

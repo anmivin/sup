@@ -22,10 +22,28 @@ const minioClient = new Minio.Client({
   accessKey: MINIO_ACCESS,
   secretKey: MINIO_SECRET,
 });
+const policy = (bucketName: string) => {
+  return {
+    Version: '2012-10-17',
+    Statement: [
+      {
+        Effect: 'Allow',
+        Principal: {
+          AWS: ['*'],
+        },
+        Action: ['s3:GetObject'],
+        Resource: [`arn:aws:s3:::${bucketName}/*`],
+      },
+    ],
+  };
+};
 
 const existsBucket = async (bucketName: string) => {
   const hasBucketName = await minioClient.bucketExists(bucketName);
   if (!hasBucketName) await minioClient.makeBucket(bucketName);
+  const bucketPolicy = JSON.stringify(policy(bucketName));
+  console.log(bucketPolicy);
+  await minioClient.setBucketPolicy(bucketName, bucketPolicy);
 };
 
 /* const deleteFilesFromDisk = (files: FoundFile[]) => {

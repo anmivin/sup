@@ -1,14 +1,17 @@
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button, TextField } from '@mui/material';
+import { AxiosProgressEvent } from 'axios';
+import { useStore } from 'zustand';
 
 import { ImageDrop, ImageList, ImageUpload } from '@entities/ImageUploader';
 import { ImageItem } from '@entities/ImageUploader/ImageUploader.types';
 
 import { DRAWER_VARIANTS } from '@type/enums';
+import { PUBLIC_BUCKET_NAMES } from '@type/enums';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';
 import { TreeStore } from '@stores/Tree/Tree.store';
@@ -20,10 +23,16 @@ import { CreateTreeDrawerProps, CreateTreeForm, TreeDrawerSchema } from './TreeD
 
 const TreeDrawer = ({ onCloseModal, type }: CreateTreeDrawerProps) => {
   const { t } = useTranslation();
-  const { createTree } = TreeStore();
+  const { createTree, currentTree, saveImage, saveImageDebug } = useStore(TreeStore);
   const { userId } = ProfileStore();
+  const [uploadProgress, setUploadProgress] = useState(0);
+  const [img, setImg] = useState<string | null>(null);
+  const defaultValues = useMemo(() => {
+    return currentTree ? { name: currentTree.name } : { name: undefined };
+  }, [currentTree]);
   const formMethods = useForm<CreateTreeForm>({
     resolver: zodResolver(TreeDrawerSchema),
+    defaultValues: defaultValues,
   });
 
   const {
@@ -31,18 +40,16 @@ const TreeDrawer = ({ onCloseModal, type }: CreateTreeDrawerProps) => {
     formState: { errors },
     control,
     watch,
+    setValue,
   } = formMethods;
 
-  useEffect(() => {
-    console.log(errors);
-  }, [errors]);
   const onSubmit = useCallback(async (formdata: CreateTreeForm) => {
-    console.log('asdad');
     if (!userId) return;
+    console.log(formdata);
     const data = {
       userId: userId,
       name: formdata.name,
-      imageId: null,
+      imageId: formdata.imageId ?? null,
     };
 
     try {
@@ -52,14 +59,52 @@ const TreeDrawer = ({ onCloseModal, type }: CreateTreeDrawerProps) => {
     }
   }, []);
 
+  const onUploadProgress = useCallback((progressEvent: AxiosProgressEvent) => {
+    const { loaded, total } = progressEvent;
+    if (!total) return;
+    const progress = Math.floor((loaded / total) * 100);
+    setUploadProgress(progress);
+
+    if (loaded == total) {
+      setUploadProgress(100);
+    }
+  }, []);
+  const onFileUpload = useCallback(async (file: File) => {
+    const config = {
+      onUploadProgress,
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    };
+    try {
+      let fd = new FormData();
+      fd.append('file', file);
+
+      const image = await saveImage(fd, PUBLIC_BUCKET_NAMES.TreeImage, config);
+      if (image) {
+        setValue('imageId', image.id);
+        setImg(image.url);
+      }
+    } catch (e) {
+      console.log('drawer', e);
+    }
+  }, []);
+
   return (
     <DefaultDrawer
       onClose={onCloseModal}
-      label={`${t(type === DRAWER_VARIANTS.Create ? 'data.utility.create' : 'data.utility.edit')} древо`}
+      label={`${t(type === DRAWER_VARIANTS.Create ? 'data.utility.create' : 'data.utility.edit')} ${t('data.misc.tree')}`}
     >
-      <Controller control={control} name="name" render={({ field }) => <TextField {...field} label="Имя" />} />
+      <Box display="flex" gap={2}>
+        <ImageUpload
+          onImageAdd={(files) => {
+            onFileUpload(files[0]);
+          }}
+          value={img}
+        />
+        <Controller control={control} name="name" render={({ field }) => <TextField {...field} label="Имя" />} />
+      </Box>
 
-      <DefaultTextField name="image" label="Картинка" />
       <Box>
         <Button onClick={handleSubmit(onSubmit)}>{t('data.utility.save')}</Button>
       </Box>

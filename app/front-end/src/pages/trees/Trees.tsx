@@ -3,10 +3,12 @@ import { useStore } from 'zustand';
 
 import TreeDrawer from '@features/TreeDrawer';
 
+import { DRAWER_VARIANTS } from '@type/enums';
+
 import { CommonStore } from '@stores/Common/Common.store';
 import { TreeStore } from '@stores/Tree/Tree.store';
 
-import { PlusIcon } from '@assets/icons';
+import { CameraOffIcon, PlusIcon } from '@assets/icons';
 
 const StyledBox = styled(Box)`
   display: flex;
@@ -20,12 +22,22 @@ const StyledBox = styled(Box)`
   border-radius: 16px;
   background-color: ${({ theme }) => theme.color.transparentDark100};
   border: ${({ theme }) => `6px solid ${theme.color.primaryDark}`};
-  &:hover {
-    background: ${({ theme }) => theme.color.transparentDark300};
-  }
 `;
 
-const StyledImageBox = styled(Box)`
+const StyledImageBox = styled(Box)<{ $image: string }>`
+  height: 160px;
+  width: 100%;
+  border-radius: 16px;
+  border: ${({ theme }) => `1px solid ${theme.color.primaryDark}`};
+  background-image: ${({ $image }) => `url(${$image})`};
+  background-position: center center;
+  background-size: cover;
+`;
+
+const NoImageBox = styled(Box)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 160px;
   width: 100%;
   border-radius: 16px;
@@ -34,21 +46,45 @@ const StyledImageBox = styled(Box)`
 
 TreeStore.getState().getTreesForUser();
 const Trees = () => {
-  const { trees, treesPending } = TreeStore();
-  const { isTreeDrawerOpen, setIsTreeDrawerOpen, treeDrawerType } = useStore(CommonStore);
+  const { trees, treesPending, setCurrentTree } = TreeStore();
+  const { isTreeDrawerOpen, setIsTreeDrawerOpen, treeDrawerType, setTreeDrawerType } = useStore(CommonStore);
   if (treesPending) return <>Loading</>;
 
   return (
     <Box display="flex" gap={2} flexWrap="wrap">
       {trees?.map((tree) => (
-        <Link href={`tree/${tree.id}`} key={tree.id} sx={{ textDecoration: 'none', cursor: 'pointer' }}>
-          <StyledBox>
-            <StyledImageBox />
-            <Typography variant="body2">{tree.name}</Typography>
-          </StyledBox>
-        </Link>
+        <StyledBox>
+          {tree.image ? (
+            <StyledImageBox $image={tree.image} />
+          ) : (
+            <NoImageBox>
+              <CameraOffIcon width={60} height={60} />
+            </NoImageBox>
+          )}
+
+          <Typography variant="body2">{tree.name}</Typography>
+          <Button
+            onClick={() => {
+              setCurrentTree(tree);
+              setTreeDrawerType(DRAWER_VARIANTS.Edit);
+              setIsTreeDrawerOpen(true);
+            }}
+          >
+            редактировать
+          </Button>
+          <Link href={`tree/${tree.id}`} key={tree.id} sx={{ textDecoration: 'none', cursor: 'pointer' }}>
+            Открыть
+          </Link>
+        </StyledBox>
       ))}
-      <Button onClick={() => setIsTreeDrawerOpen(true)}>
+      <Button
+        sx={{ padding: 0 }}
+        onClick={() => {
+          setCurrentTree(null);
+          setTreeDrawerType(DRAWER_VARIANTS.Create);
+          setIsTreeDrawerOpen(true);
+        }}
+      >
         <StyledBox>
           <PlusIcon width={60} height={60} />
         </StyledBox>

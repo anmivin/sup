@@ -117,12 +117,8 @@ module.exports = {
           key: 'key',
         },
       },
-      image_id: {
-        type: DataTypes.STRING,
-        references: {
-          model: 'files',
-          key: 'id',
-        },
+      layout: {
+        type: DataTypes.JSON,
       },
     });
   },

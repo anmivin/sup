@@ -43,7 +43,8 @@ export class DynastyService {
     private simPositionModel: typeof SimPositionModel,
     @InjectModel(FileModel) private fileModel: typeof FileModel,
   ) {}
-  async getTreeForUser(id: string): Promise<OutputTreeListDto[]> {
+
+  async getTreesForUser(id: string): Promise<OutputTreeListDto[]> {
     const trees = await this.treeModel.findAll({
       where: { userId: id },
     });
@@ -54,7 +55,7 @@ export class DynastyService {
               where: { id: tree.imageId },
             })
           : null;
-        return { id: tree.id, name: tree.name, image: icon?.path };
+        return { id: tree.id, name: tree.name, image: icon?.path ?? null };
       }),
     );
 
@@ -62,12 +63,22 @@ export class DynastyService {
   }
 
   async getSimsForUser(id: number): Promise<OutputSimListDto[]> {
-    return (
-      await this.simsModel.findAll({
-        where: { userId: id },
-      })
-    ).map(({ id, name }) => ({ id: id, name: name }));
+    const sims = await this.simsModel.findAll({
+      where: { userId: id },
+    });
+    const simsWithIcons = await Promise.all(
+      sims.map(async (sim) => {
+        const icon = sim.imageId
+          ? await this.fileModel.findOne({
+              where: { id: sim.imageId },
+            })
+          : null;
+        return { id: sim.id, name: sim.name, image: icon?.path ?? null };
+      }),
+    );
+    return simsWithIcons;
   }
+
   async getSimsForTree(id: number): Promise<SimsModel[]> {
     return await this.simsModel.findAll({
       where: { treeId: id },
@@ -80,17 +91,15 @@ export class DynastyService {
     });
   }
 
-  async getTreesForUser(id: number): Promise<TreeModel[]> {
-    return await this.treeModel.findAll({ where: { userId: id } });
-  }
+  async createSim(props: InputSimDto) {
+    const simId = v4();
 
-  async createSim(createSimDto: InputSimDto) {
-    const partners = createSimDto.partnersIds;
+    const partners = props.partnersIds;
     const parents: string[] = [];
-    if (createSimDto.parentFirstId) parents.push(createSimDto.parentFirstId);
-    if (createSimDto.parentSecondId) parents.push(createSimDto.parentSecondId);
-    const children = createSimDto.childIds;
-    const createdSim = await this.simsModel.create(createSimDto);
+    if (props.parentFirstId) parents.push(props.parentFirstId);
+    if (props.parentSecondId) parents.push(props.parentSecondId);
+    const children = props.childIds;
+    const createdSim = await this.simsModel.create({ id: simId, ...props });
     if (partners && partners.length) {
       await Promise.all(
         partners.map(async (partner) => {
@@ -125,12 +134,16 @@ export class DynastyService {
         }),
       );
     }
+    return simId;
   }
 
-  async createTree(createTreeDto: InputTreeDto) {
-    const tree = await this.treeModel.create({ ...createTreeDto, id: v4() });
+  async createTree(props: InputTreeDto) {
+    const treeId = v4();
+
+    const tree = await this.treeModel.create({ ...props, id: treeId });
     return tree;
   }
+
   async getSimsForStructure(id: number): Promise<SimsTreeStructure[]> {
     const sims = await this.simsModel.findAll({
       where: { treeId: id },

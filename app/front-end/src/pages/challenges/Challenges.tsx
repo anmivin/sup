@@ -5,6 +5,8 @@ import { Box } from '@mui/material';
 import { AxiosProgressEvent } from 'axios';
 import { uniqueId } from 'lodash';
 
+import DrawLayout from '@widgets/DrawLayout';
+
 import EditImageModal from '@features/EditImageModal';
 
 import { ImageDrop, ImageList, ImageUpload } from '@entities/ImageUploader';
@@ -84,6 +86,7 @@ const Challenges = () => {
   }, []);
   return (
     <>
+      <DrawLayout sizes={{ x: 20, y: 30 }} />
       <ImageUpload
         value={img}
         onImageAdd={(files) => {

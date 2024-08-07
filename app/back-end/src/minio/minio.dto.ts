@@ -8,7 +8,7 @@ export enum READONLY_BUCKET_NAMES {
 }
 
 export enum PUBLIC_BUCKET_NAMES {
-  Avatars = 'avatars',
+  UserImage = 'userImage',
   SimImage = 'simImage',
   TreeImage = 'treeImage',
   Debug = 'debug',
@@ -21,22 +21,30 @@ export class Debug {
   file: Express.Multer.File;
 }
 export class SaveFileDto {
-  type: PUBLIC_BUCKET_NAMES;
-  entityId: string;
+  @ApiProperty({ description: 'Type', nullable: false })
+  type: string;
+  @ApiProperty({ description: 'File', nullable: false })
   file: Express.Multer.File;
 }
 
 export class EditFileDto {
+  @ApiProperty({ description: 'File', nullable: false })
   bucket: string;
+  @ApiProperty({ description: 'File', nullable: false })
   fileName: string;
+  @ApiProperty({ description: 'File', nullable: false })
   file: Express.Multer.File;
+  @ApiProperty({ description: 'File', nullable: false })
   type: PUBLIC_BUCKET_NAMES;
-  entityId: string;
 }
 
 export class DeleteFileDto {
+  @ApiProperty({ description: 'File', nullable: false })
   bucket: string;
+  @ApiProperty({ description: 'File', nullable: false })
   fileName: string;
+  @ApiProperty({ description: 'File', nullable: false })
   type: FileTypes;
+  @ApiProperty({ description: 'File', nullable: false })
   entityId: string;
 }

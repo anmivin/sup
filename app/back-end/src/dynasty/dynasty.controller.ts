@@ -32,7 +32,7 @@ export class DynastyController {
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async getTreeForUser(@Param('id') id: string): Promise<OutputTreeListDto[]> {
-    return await this.dynastyService.getTreeForUser(id);
+    return await this.dynastyService.getTreesForUser(id);
   }
 
   @Get('/tree/:id')

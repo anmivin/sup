@@ -160,10 +160,12 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
     }
   },
 
-  saveImage: async (payload) => {
+  saveImage: async (payload, type, config) => {
     try {
-      await saveImageRequest(payload);
+      const file = await saveImageRequest(payload, type, config);
+      return file;
     } catch (e) {
+      console.log('store', e);
       /*setErrorCommonAlertOpen(true); */
     }
   },
@@ -185,6 +187,8 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
 
   saveImageDebug: async (payload, config) => {
     try {
+      console.log('payload', payload);
+      console.log('config', config);
       await saveImageDebugRequest(payload, config);
     } catch (e) {
       console.log('e', e);

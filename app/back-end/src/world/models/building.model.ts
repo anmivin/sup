@@ -5,10 +5,11 @@ import {
   Table,
   ForeignKey,
   BelongsTo,
+  DataType,
 } from 'sequelize-typescript';
 import { UserModel } from '@back/users/models/users.model';
 import { LotModel } from './lot.model';
-import { FileModel } from '@back/file/file.model';
+
 @Table({ tableName: 'buildings', underscored: true, timestamps: false })
 export class BuildingModel extends Model<BuildingModel> {
   @PrimaryKey
@@ -26,10 +27,6 @@ export class BuildingModel extends Model<BuildingModel> {
   @BelongsTo(() => LotModel)
   declare lot: LotModel;
 
-  @Column
-  @ForeignKey(() => FileModel)
-  declare imageId: string;
-
-  @BelongsTo(() => FileModel)
-  declare image: FileModel | null;
+  @Column(DataType.JSON)
+  declare layout: object | null;
 }

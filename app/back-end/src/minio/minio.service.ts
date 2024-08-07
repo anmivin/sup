@@ -4,11 +4,24 @@ import { v4 } from 'uuid';
 import { Injectable } from '@nestjs/common';
 
 import { ConfigService } from '@nestjs/config';
-import { FileTypes } from './minio.dto';
-
-import { FileTable } from '@back/file/file.dto';
 
 const MINIO_URL = process.env.MINIO_URL ?? 'http://127.0.0.1:9000';
+
+const policy = (bucketName: string) => {
+  return {
+    Version: '2012-10-17',
+    Statement: [
+      {
+        Effect: 'Allow',
+        Principal: {
+          AWS: ['*'],
+        },
+        Action: ['s3:GetObject'],
+        Resource: [`arn:aws:s3:::${bucketName}/*`],
+      },
+    ],
+  };
+};
 
 @Injectable()
 export class MinioService {
@@ -27,18 +40,19 @@ export class MinioService {
     return 'working';
   }
   async createBucket(bucket: string) {
+    console.log('createBucket', bucket);
     const existed = await this.minioClient.bucketExists(bucket);
+    console.log('existed', existed);
     if (!existed) await this.minioClient.makeBucket(bucket);
+    const bucketPolicy = JSON.stringify(policy(bucket));
+    console.log(bucketPolicy);
+    await this.minioClient.setBucketPolicy(bucket, bucketPolicy);
     return `Bucket ${bucket} ${existed ? 'already exist' : 'created'}`;
   }
 
-  async getFileUrl(bucket: FileTypes, fileName: string) {
-    return await this.minioClient.presignedUrl('GET', bucket, fileName);
-  }
-
-  async saveFile(bucket: FileTypes, file: Express.Multer.File) {
+  async saveFile(bucket: string, file: Express.Multer.File) {
     const fileName = `${v4()}_${file.originalname}`;
-    await this.createBucket(FileTable[bucket]);
+    await this.createBucket(bucket);
     await this.minioClient.putObject(
       bucket,
       fileName,

@@ -128,10 +128,25 @@ export enum SIGN_FORM_VARIANTS {
   SignUp = 'signUp',
   SignIn = 'signIn',
 }
+
 export enum PARTNERSHIP {
   divorced = 'divorced',
   engaged = 'engaged',
   exes = 'exes',
   married = 'married',
   partners = 'partners',
+}
+
+export enum READONLY_BUCKET_NAMES {
+  Icons = 'icons',
+  Translation = 'translation',
+  DataBase = 'dataBase',
+  WorldImage = 'worldImage',
+}
+
+export enum PUBLIC_BUCKET_NAMES {
+  Avatars = 'avatars',
+  SimImage = 'simimage',
+  TreeImage = 'treeimage',
+  Debug = 'debug',
 }

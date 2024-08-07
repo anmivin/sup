@@ -1,5 +1,13 @@
 import { ApiProperty } from '@nestjs/swagger';
 
+export class InputTreeDto {
+  @ApiProperty({ description: 'User id', nullable: false })
+  userId: string;
+  @ApiProperty({ description: 'Tree name', nullable: false })
+  name: string;
+  @ApiProperty({ description: 'Tree image', nullable: true })
+  imageId: string;
+}
 export class InputSimDto {
   @ApiProperty({ description: 'User id', nullable: false })
   userId: string;
@@ -8,7 +16,7 @@ export class InputSimDto {
   @ApiProperty({ description: 'Sim image', nullable: true })
   imageId: string;
   @ApiProperty({ description: 'Sim in tree', nullable: false })
-  isInTree: string;
+  isInTree: boolean;
   @ApiProperty({ description: 'Tree id', nullable: false })
   treeId: string;
   @ApiProperty({ description: 'Game part', nullable: false })
@@ -33,13 +41,15 @@ export class OutputTreeListDto {
   @ApiProperty({ description: 'Tree name', nullable: false })
   name: string;
   @ApiProperty({ description: 'Tree image', nullable: true })
-  image?: string;
+  image: string | null;
 }
 export class OutputSimListDto {
   @ApiProperty({ description: 'Sim id', nullable: false })
   id: string;
   @ApiProperty({ description: 'Sim name', nullable: false })
   name: string;
+  @ApiProperty({ description: 'Sim image', nullable: true })
+  image: string | null;
 }
 
 export class SimsTreeStructure {
@@ -67,14 +77,6 @@ export class SimsTreeStructureBasic {
     id: string;
     name: string;
   }[];
-}
-export class InputTreeDto {
-  @ApiProperty({ description: 'User id', nullable: false })
-  userId: string;
-  @ApiProperty({ description: 'Tree name', nullable: false })
-  name: string;
-  @ApiProperty({ description: 'Tree image', nullable: true })
-  imageId: string;
 }
 
 export declare enum Position {

@@ -2,7 +2,10 @@ import { AxiosRequestConfig } from 'axios';
 
 import { components } from '@api/Api';
 
-export interface TreeStateSliceProps {}
+export interface TreeStateSliceProps {
+  currentTree: components['schemas']['OutputTreeListDto'] | null;
+  setCurrentTree: (payload: components['schemas']['OutputTreeListDto'] | null) => void;
+}
 
 export interface TreeDataSliceProps {
   defaultSims: [] | null;
@@ -34,7 +37,11 @@ export interface TreeDataSliceProps {
 
   getDefaultSims: () => void;
 
-  saveImage: (payload: components['schemas']['SaveFileDto']) => void;
+  saveImage: (
+    payload: components['schemas']['Debug'],
+    type: string,
+    config?: AxiosRequestConfig,
+  ) => Promise<components['schemas']['FileResponseDTO'] | undefined>;
   editImage: (payload: components['schemas']['EditFileDto']) => void;
   deleteImage: (payload: components['schemas']['DeleteFileDto']) => void;
 

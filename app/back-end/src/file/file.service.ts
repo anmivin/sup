@@ -22,42 +22,11 @@ export class FileService {
     @InjectModel(UserModel) private userModel: typeof UserModel,
   ) {}
 
-  async editEntitie(bucket: PUBLIC_BUCKET_NAMES, entityId: string, fileId) {
-    switch (bucket) {
-      case PUBLIC_BUCKET_NAMES.Avatars: {
-        const entity = await this.userModel.findOne({
-          where: { id: entityId },
-        });
-        if (!entity) throw new Error('Не найдено');
-        await entity.update({ imageId: fileId });
-      }
-
-      case PUBLIC_BUCKET_NAMES.SimImage: {
-        const entity = await this.simsModel.findOne({
-          where: { id: entityId },
-        });
-        if (!entity) throw new Error('Не найдено');
-        await entity.update({ imageId: fileId });
-      }
-
-      case PUBLIC_BUCKET_NAMES.TreeImage: {
-        const entity = await this.treeModel.findOne({
-          where: { id: entityId },
-        });
-        if (!entity) throw new Error('Не найдено');
-        await entity.update({ imageId: fileId });
-      }
-    }
-  }
-
   async saveDebugFile(props: Debug) {
     console.log('==================');
     console.log(props);
 
-    const filePath = await this.minioService.saveFile(
-      PUBLIC_BUCKET_NAMES.Debug,
-      props.file,
-    );
+    const filePath = await this.minioService.saveFile('debug', props.file);
     const fileId = v4();
     console.log('-----------------', filePath);
     await this.fileModel.create({
@@ -69,21 +38,24 @@ export class FileService {
   }
 
   async saveFile(props: SaveFileDto) {
+    console.log('--------------------', props);
     const filePath = await this.minioService.saveFile(props.type, props.file);
+    console.log('--------------------', filePath);
     const fileId = v4();
-    await this.editEntitie(props.type, props.entityId, fileId);
-    await this.fileModel.create({
+
+    const file = await this.fileModel.create({
       id: fileId,
       path: filePath,
       pathTn: '',
       name: props.file.originalname,
     });
+    return { id: file.id, url: filePath };
   }
 
   async editFile(props: EditFileDto) {
     const filePath = await this.minioService.saveFile(props.type, props.file);
     const fileId = v4();
-    await this.editEntitie(props.type, props.entityId, fileId);
+
     await this.fileModel.create({
       id: fileId,
       path: filePath,
@@ -95,7 +67,7 @@ export class FileService {
   async deleteFile(props: DeleteFileDto) {
     let fileId: string | null = null;
     switch (props.type) {
-      case PUBLIC_BUCKET_NAMES.Avatars: {
+      case PUBLIC_BUCKET_NAMES.UserImage: {
         const entity = await this.userModel.findOne({
           where: { id: props.entityId },
         });

@@ -30,14 +30,15 @@ export interface SimsModelCreate
     | 'children'
     | 'partnerFirst'
     | 'partnerSecond'
-    | 'isInTree'
     | 'aspirations'
     | 'careers'
     | 'collections'
     | 'skills'
     | 'traits'
     | 'position'
-  > {}
+  > {
+  id: string;
+}
 @Table({ tableName: 'sims', underscored: true, timestamps: false })
 export class SimsModel extends Model<SimsModel, SimsModelCreate> {
   @PrimaryKey

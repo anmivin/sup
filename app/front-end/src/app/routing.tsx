@@ -9,7 +9,7 @@ const Routing = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {routes.menuRoutes.map(({ link, Component }) => (
+        {routes.allRoutes.map(({ link, Component }) => (
           <Route
             key={link}
             path={link}

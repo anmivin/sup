@@ -1,11 +1,7 @@
-<<<<<<<< HEAD:app/front-end/src/features/DrawLayout/DrawLayout.tsx
-import { MutableRefObject, useCallback, useEffect, useRef, useState } from 'react';
-========
 import { MutableRefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react';
->>>>>>>> 6fe9ee03105a4d858c02c9f635d105fadfb9ae92:app/front-end/src/widgets/DrawLayout/DrawLayout.tsx
 import { Layer, Line, Rect, Stage } from 'react-konva';
 
-import { Box } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import { useTheme } from '@mui/material';
 import Konva from 'konva';
 import { uniqueId } from 'lodash';
@@ -15,11 +11,8 @@ import { MODE } from '@entities/DrawLayoutMenu/DrawLayoutMenu.types';
 
 import { PositionProps } from '@type/interfaces';
 
-<<<<<<<< HEAD:app/front-end/src/features/DrawLayout/DrawLayout.tsx
-========
 import { DrawLayoutProps } from './DrawLayout.types';
 
->>>>>>>> 6fe9ee03105a4d858c02c9f635d105fadfb9ae92:app/front-end/src/widgets/DrawLayout/DrawLayout.tsx
 const squareSize = 30;
 
 const DrawLayout = ({ sizes }: DrawLayoutProps) => {
@@ -174,8 +167,17 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
   useEffect(() => {
     stageRef.current.container().style.cursor = getMode(mode);
   }, [mode]);
+
+  const saveStage = useCallback(() => {
+    const layer = layerRef.current;
+    const currline = layer.getChildren();
+    console.log(currline.map((item) => item.attrs));
+    console.log(layerRef.current.toJSON());
+  }, []);
+
   return (
     <Box display="flex" gap={4}>
+      <Button onClick={saveStage}>кнопка</Button>
       <Stage ref={stageRef} width={1000} height={800}>
         <Layer ref={gridRef}>
           {calcLines.map((line, index) => (

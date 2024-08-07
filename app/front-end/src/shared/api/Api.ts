@@ -109,7 +109,7 @@ export interface paths {
     /** Save debug file */
     post: operations["FileController_saveDebugFile"];
   };
-  "/file/save": {
+  "/file/save/{type}": {
     /** Save file */
     post: operations["FileController_saveFile"];
   };
@@ -257,7 +257,7 @@ export interface components {
       /** @description Tree name */
       name: string;
       /** @description Tree image */
-      image: string | null;
+      image: Record<string, unknown> | null;
     };
     EdgesDto: {
       /** @description Edge id */
@@ -314,6 +314,8 @@ export interface components {
       id: string;
       /** @description Sim name */
       name: string;
+      /** @description Sim image */
+      image: Record<string, unknown> | null;
     };
     InputSimDto: {
       /** @description User id */
@@ -323,7 +325,7 @@ export interface components {
       /** @description Sim image */
       imageId: string | null;
       /** @description Sim in tree */
-      isInTree: string;
+      isInTree: boolean;
       /** @description Tree id */
       treeId: string;
       /** @description Game part */
@@ -390,9 +392,32 @@ export interface components {
       /** @description File */
       file: Record<string, never>;
     };
-    SaveFileDto: Record<string, never>;
-    EditFileDto: Record<string, never>;
-    DeleteFileDto: Record<string, never>;
+    FileResponseDTO: {
+      /** @description File id */
+      id: string;
+      /** @description File url */
+      url: string;
+    };
+    EditFileDto: {
+      /** @description File */
+      bucket: string;
+      /** @description File */
+      fileName: string;
+      /** @description File */
+      file: Record<string, never>;
+      /** @description File */
+      type: string;
+    };
+    DeleteFileDto: {
+      /** @description File */
+      bucket: string;
+      /** @description File */
+      fileName: string;
+      /** @description File */
+      type: string;
+      /** @description File */
+      entityId: string;
+    };
   };
   responses: never;
   parameters: never;
@@ -999,15 +1024,23 @@ export interface operations {
   };
   /** Save file */
   FileController_saveFile: {
+    parameters: {
+      path: {
+        /** @description File type */
+        type: string;
+      };
+    };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["SaveFileDto"];
+        "application/json": components["schemas"]["Debug"];
       };
     };
     responses: {
       /** @description Success */
       200: {
-        content: never;
+        content: {
+          "application/json": components["schemas"]["FileResponseDTO"];
+        };
       };
       /** @description Bad Request */
       400: {
