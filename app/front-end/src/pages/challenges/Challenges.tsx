@@ -1,11 +1,9 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Box } from '@mui/material';
 import { AxiosProgressEvent } from 'axios';
 import { uniqueId } from 'lodash';
-
-import DrawLayout from '@widgets/DrawLayout';
 
 import EditImageModal from '@features/EditImageModal';
 
@@ -36,28 +34,42 @@ const Challenges = () => {
   const onAdd = useCallback((files: File[]) => {
     setFiles((prev) => [...prev, ...files.map((val) => ({ file: val, key: uniqueId(), uploadProgress: 0.7 }))]);
   }, []);
-  const onUploadProgress = (progressEvent: AxiosProgressEvent) => {
-    const { loaded, total } = progressEvent;
-    if (!total) return;
-    setFiles((prev) => {
-      const newFiles = [...prev];
+  const onUploadProgress = useCallback(
+    (fileKey: string) => (progressEvent: AxiosProgressEvent) => {
+      const { loaded, total } = progressEvent;
+      if (!total) return;
       const progress = Math.floor((loaded / total) * 100);
-      console.log(progress);
-      newFiles[newFiles.length - 1].uploadProgress = progress;
-      return newFiles;
-    });
-    if (loaded == total) {
-      setFiles((prev) => {
-        const newFiles = [...prev];
-        newFiles[newFiles.length - 1].uploadProgress = 100;
-        return newFiles;
-      });
-    }
-  };
+      setFiles((prev) =>
+        prev.map((item) =>
+          item.key === fileKey
+            ? {
+                ...item,
+                uploadProgress: progress,
+              }
+            : item,
+        ),
+      );
+
+      if (loaded == total) {
+        setFiles((prev) =>
+          prev.map((item) =>
+            item.key === fileKey
+              ? {
+                  ...item,
+                  uploadProgress: 100,
+                }
+              : item,
+          ),
+        );
+      }
+    },
+    [],
+  );
   const onFileUpload = useCallback(async (file: File) => {
-    setFiles((prev) => [...prev, { file: file, uploadProgress: 0, key: uniqueId() }]);
+    const fileKey = uniqueId();
+    setFiles((prev) => [...prev, { file: file, uploadProgress: 0, key: fileKey }]);
     const config = {
-      onUploadProgress,
+      onUploadProgress: onUploadProgress(fileKey),
       headers: {
         'Content-Type': 'multipart/form-data',
       },
@@ -72,13 +84,10 @@ const Challenges = () => {
   }, []);
   return (
     <>
-      {/*       <DrawLayout /> */}
       <ImageUpload
         value={img}
         onImageAdd={(files) => {
           onFileUpload(files[0]);
-          /* 
-          setOpen(true); */
         }}
       />
       <ImageDrop onFilesAdd={onAdd} />

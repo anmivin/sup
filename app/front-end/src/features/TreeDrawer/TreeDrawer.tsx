@@ -5,6 +5,9 @@ import { useTranslation } from 'react-i18next';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button, TextField } from '@mui/material';
 
+import { ImageDrop, ImageList, ImageUpload } from '@entities/ImageUploader';
+import { ImageItem } from '@entities/ImageUploader/ImageUploader.types';
+
 import { DRAWER_VARIANTS } from '@type/enums';
 
 import { ProfileStore } from '@stores/Profile/Profile.store';

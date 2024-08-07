@@ -4,25 +4,32 @@ import { useTranslation } from 'react-i18next';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button } from '@mui/material';
+import { AxiosProgressEvent } from 'axios';
+import { uniqueId } from 'lodash';
+import { useStore } from 'zustand';
 
 import FormAutocomplete from '@entities/FormComponents/FormAutocomplete';
 import FormCheckbox from '@entities/FormComponents/FormCheckbox';
 import FormTextField from '@entities/FormComponents/FormTextField';
-import { ImageUpload } from '@entities/ImageUploader';
+import { ImageDrop, ImageList, ImageUpload } from '@entities/ImageUploader';
+import { ImageItem } from '@entities/ImageUploader/ImageUploader.types';
 
 import { DRAWER_VARIANTS, GAME_PART, SEX } from '@type/enums';
 
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
 import { ProfileStore } from '@stores/Profile/Profile.store';
+import { TreeStore } from '@stores/Tree/Tree.store';
 
 import DefaultDrawer from '@ui/Drawer';
 import DefaultRating from '@ui/Rating';
 import DefaultTabs from '@ui/Tabs';
 
-import { SIMS_DRAWER_TABS } from './CreateSimDrawer.types';
-import { CreateSimDrawerProps, CreateSimForm, SimDrawerSchema } from './CreateSimDrawer.types';
+import { SIMS_DRAWER_TABS } from './SimDrawer.types';
+import { CreateSimDrawerProps, CreateSimForm, SimDrawerSchema } from './SimDrawer.types';
 
-const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimDrawerProps) => {
+const SimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimDrawerProps) => {
+  const { saveImageDebug } = useStore(TreeStore);
+  const [files, setFiles] = useState<ImageItem[]>([]);
   const [selectedTab, setSelectedTab] = useState(0);
   const { t } = useTranslation(['translation', 'aspirations', 'skills', 'traits', 'misc', 'tree']);
   const { aspirations, skills, traits } = HandbookStore();
@@ -102,6 +109,55 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
 
   const getLabel = useCallback((key: string, optionType: 'aspirations' | 'traits' | 'skills') => {
     return t(`data.${key}.name`, { ns: optionType });
+  }, []);
+
+  const onUploadProgress = useCallback(
+    (fileKey: string) => (progressEvent: AxiosProgressEvent) => {
+      const { loaded, total } = progressEvent;
+      if (!total) return;
+      const progress = Math.floor((loaded / total) * 100);
+      setFiles((prev) =>
+        prev.map((item) =>
+          item.key === fileKey
+            ? {
+                ...item,
+                uploadProgress: progress,
+              }
+            : item,
+        ),
+      );
+
+      if (loaded == total) {
+        setFiles((prev) =>
+          prev.map((item) =>
+            item.key === fileKey
+              ? {
+                  ...item,
+                  uploadProgress: 100,
+                }
+              : item,
+          ),
+        );
+      }
+    },
+    [],
+  );
+  const onFileUpload = useCallback(async (file: File) => {
+    const fileKey = uniqueId();
+    setFiles((prev) => [...prev, { file: file, uploadProgress: 0, key: fileKey }]);
+    const config = {
+      onUploadProgress: onUploadProgress(fileKey),
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    };
+    try {
+      let fd = new FormData();
+      fd.append('file', file);
+      saveImageDebug(fd, config);
+    } catch (e) {
+      console.log(e);
+    }
   }, []);
 
   return (
@@ -215,4 +271,4 @@ const CreateSimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: Crea
     </DefaultDrawer>
   );
 };
-export default CreateSimDrawer;
+export default SimDrawer;

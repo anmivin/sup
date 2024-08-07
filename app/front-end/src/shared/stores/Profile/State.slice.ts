@@ -18,14 +18,4 @@ export const ProfileStateSlice: StateCreator<ProfileStateSliceProps, [], []> = (
     set({ isDarkTheme });
     localStorage.setItem('theme', JSON.stringify(isDarkTheme()));
   },
-
-  isSignFormOpen: false,
-  setIsSignFormOpen: (isSignFormOpen) => {
-    set({ isSignFormOpen });
-  },
-
-  signFormType: SIGN_FORM_VARIANTS.SignIn,
-  setSignFormType: (signFormType) => {
-    set({ signFormType });
-  },
 });

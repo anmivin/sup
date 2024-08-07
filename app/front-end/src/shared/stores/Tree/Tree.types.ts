@@ -2,24 +2,7 @@ import { AxiosRequestConfig } from 'axios';
 
 import { components } from '@api/Api';
 
-import { DRAWER_VARIANTS } from '@type/enums';
-
-export interface TreeStateSliceProps {
-  isTreeDrawerOpen: boolean;
-  setIsTreeDrawerOpen: (val: boolean) => void;
-
-  treeDrawerType: DRAWER_VARIANTS;
-  setTreeDrawerType: (val: DRAWER_VARIANTS) => void;
-
-  isSimDrawerOpen: boolean;
-  setIsSimDrawerOpen: (val: boolean) => void;
-
-  simDrawerType: DRAWER_VARIANTS;
-  setSimDrawerType: (val: DRAWER_VARIANTS) => void;
-
-  isCropModalOpen: boolean;
-  setIsCropModalOpen: (val: boolean) => void;
-}
+export interface TreeStateSliceProps {}
 
 export interface TreeDataSliceProps {
   defaultSims: [] | null;

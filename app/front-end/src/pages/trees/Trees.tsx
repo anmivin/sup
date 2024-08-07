@@ -1,18 +1,12 @@
-import { useCallback, useEffect, useState } from 'react';
-
 import { Box, Button, Link, Typography, styled } from '@mui/material';
+import { useStore } from 'zustand';
 
-import TreeComponent from '@widgets/Tree';
-
-/* 
-import Button from '@ui/Button'; */
-import CreateSimDrawer from '@features/CreateSimDrawer';
 import TreeDrawer from '@features/TreeDrawer';
 
-import { HandbookStore } from '@stores/Handbook/Handbook.store';
+import { CommonStore } from '@stores/Common/Common.store';
 import { TreeStore } from '@stores/Tree/Tree.store';
 
-import { ImagePlusIcon, PlusIcon } from '@assets/icons';
+import { PlusIcon } from '@assets/icons';
 
 const StyledBox = styled(Box)`
   display: flex;
@@ -38,15 +32,10 @@ const StyledImageBox = styled(Box)`
   border: ${({ theme }) => `1px solid ${theme.color.primaryDark}`};
 `;
 
-/* HandbookStore.getState().getAspirations();
-HandbookStore.getState().getSkills();
-HandbookStore.getState().getTraits(); */
 TreeStore.getState().getTreesForUser();
 const Trees = () => {
-  const [showTreeDrawer, setShowTreeDrawer] = useState(false);
-  const [showSimDrawer, setShowSimDrawer] = useState(false);
-  const { simDrawerType, treeDrawerType, trees, treesPending } = TreeStore();
-
+  const { trees, treesPending } = TreeStore();
+  const { isTreeDrawerOpen, setIsTreeDrawerOpen, treeDrawerType } = useStore(CommonStore);
   if (treesPending) return <>Loading</>;
 
   return (
@@ -59,20 +48,13 @@ const Trees = () => {
           </StyledBox>
         </Link>
       ))}
-      <Button onClick={() => setShowTreeDrawer(true)}>
+      <Button onClick={() => setIsTreeDrawerOpen(true)}>
         <StyledBox>
           <PlusIcon width={60} height={60} />
         </StyledBox>
       </Button>
 
-      {showSimDrawer && (
-        <CreateSimDrawer
-          simsInTree={/* simsInTree ?? */ []}
-          type={simDrawerType}
-          onCloseModal={() => setShowSimDrawer(false)}
-        />
-      )}
-      {showTreeDrawer && <TreeDrawer type={treeDrawerType} onCloseModal={() => setShowTreeDrawer(false)} />}
+      {isTreeDrawerOpen && <TreeDrawer type={treeDrawerType} onCloseModal={() => setIsTreeDrawerOpen(false)} />}
     </Box>
   );
 };

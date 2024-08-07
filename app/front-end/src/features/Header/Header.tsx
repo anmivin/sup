@@ -1,13 +1,13 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Box, Switch } from '@mui/material';
+import { useStore } from 'zustand';
 
 import ProfileMenu from '@features/ProfileMenu';
-import SignForm from '@features/SignForm';
 
 import routes from '@constants/routes';
 
+import { CommonStore } from '@stores/Common/Common.store';
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
 import { MoonIcon, SunIcon } from '@assets/icons';
@@ -17,9 +17,7 @@ import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton, S
 const Header = () => {
   const { t } = useTranslation();
   const { isDarkTheme, setIsDarkTheme } = ProfileStore();
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const { setIsSignModalOpen } = useStore(CommonStore);
   return (
     <HeaderContainer>
       <Box display="flex" flexDirection="row" justifyContent="flex-end" gap={2} alignItems="center">
@@ -42,9 +40,7 @@ const Header = () => {
           </StyledButton>
         ))}
 
-        <ProfileMenu onOpenLoginForm={() => setIsModalOpen(true)} />
-
-        <SignForm open={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        <ProfileMenu onOpenLoginForm={() => setIsSignModalOpen(true)} />
       </MainSection>
     </HeaderContainer>
   );
