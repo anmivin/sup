@@ -1,5 +1,5 @@
 import { Achievement4Model } from '@back/handbook/models/models.4/achievements.model';
-import { UserModel } from '@back/users/models/users.model';
+import { UserModel } from '@back/user/models/users.model';
 import {
   PrimaryKey,
   Column,

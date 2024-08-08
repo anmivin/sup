@@ -9,6 +9,8 @@ export const WorldStore = create<WorldStoreProps>((set) => ({
   loadingWorlds: false,
   selectedWorld: null,
   loadingSelectedWorld: false,
+  building: null,
+  loadingBuilding: false,
   getWorlds: async (payload) => {
     set({ loadingWorlds: true });
     try {
@@ -27,6 +29,14 @@ export const WorldStore = create<WorldStoreProps>((set) => ({
     } catch (e) {
     } finally {
       set({ loadingSelectedWorld: false });
+    }
+  },
+  getBuilding: async (payload) => {
+    set({ loadingBuilding: true });
+    try {
+    } catch (e) {
+    } finally {
+      set({ loadingBuilding: false });
     }
   },
 }));

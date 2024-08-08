@@ -7,7 +7,7 @@ import {
   BelongsTo,
   DataType,
 } from 'sequelize-typescript';
-import { UserModel } from '@back/users/models/users.model';
+import { UserModel } from '@back/user/models/users.model';
 import { LotModel } from './lot.model';
 
 @Table({ tableName: 'buildings', underscored: true, timestamps: false })

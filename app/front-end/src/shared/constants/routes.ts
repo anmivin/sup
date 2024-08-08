@@ -1,6 +1,10 @@
 import { ReactElement } from 'react';
 
+import Building from '@pages/building';
 import Challenges from '@pages/challenges';
+import Profile from '@pages/profile';
+import Randomizer from '@pages/randomizer';
+import Settings from '@pages/settings';
 import Tracker from '@pages/tracker';
 import Tree from '@pages/tree';
 import Trees from '@pages/trees';
@@ -24,13 +28,15 @@ const menuRoutes: RoutesProps[] = [
 ];
 
 const noMenuRoutes: RoutesProps[] = [
-  { link: '/tree/:key', key: 'trees', Component: Tree },
-  { link: '/world/:key', key: 'worlds', Component: World },
+  { link: '/tree/:key', key: 'tree', Component: Tree },
+  { link: '/world/:key', key: 'world', Component: World },
+  { link: '/challenges/randomizer', key: 'randomizer', Component: Randomizer },
+  { link: '/building/:key', key: 'building', Component: Building },
 ];
 
 const profileRoutes: RoutesProps[] = [
-  { link: '/profile/mypage', key: 'profile', Component: Challenges },
-  { link: '/profile/settings', key: 'settings', Component: Challenges },
+  { link: '/profile/mypage', key: 'profile', Component: Profile },
+  { link: '/profile/settings', key: 'settings', Component: Settings },
 ];
 
 export default {

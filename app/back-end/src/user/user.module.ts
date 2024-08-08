@@ -1,8 +1,8 @@
-import { AvatarModel } from '@back/users/models/avatars.model';
-import { PackModel } from '@back/users/models/packs.model';
-import { UserModel } from '@back/users/models/users.model';
+import { AvatarModel } from '@back/user/models/avatars.model';
+import { PackModel } from '@back/user/models/packs.model';
+import { UserModel } from '@back/user/models/users.model';
 import { UsersController } from '@back/users/users.controller';
-import { UsersService } from '@back/users/users.service';
+import { UsersService } from '@back/user/users.service';
 import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 

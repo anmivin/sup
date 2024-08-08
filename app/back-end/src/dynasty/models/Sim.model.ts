@@ -6,7 +6,7 @@ import { SimTraitModel } from '@back/connection.models/SimTrait.model';
 import { ParentChildModel } from '@back/dynasty/models/ParentChild.model';
 import { PartnerPartnerModel } from '@back/dynasty/models/PartnerPartner.model';
 import { TreeModel } from '@back/dynasty/models/Tree.model';
-import { UserModel } from '@back/users/models/users.model';
+import { UserModel } from '@back/user/models/users.model';
 import { SimPositionModel } from '@back/connection.models/SimPosition.model';
 import {
   PrimaryKey,

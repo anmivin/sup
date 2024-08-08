@@ -35,7 +35,7 @@ export class HandbookController {
     return await this.handbookService.getAllAchievements();
   }
 
-  @Get('/achievements/:key')
+  @Get('/achievement/:key')
   @ApiOperation({ summary: 'Get achievement by key' })
   @ApiParam({ name: 'key', required: true, description: 'Achievement key' })
   @ApiResponse({
@@ -93,7 +93,7 @@ export class HandbookController {
     return await this.handbookService.getAllCareers();
   }
 
-  @Get('/careers/:key')
+  @Get('/career/:key')
   @ApiOperation({ summary: 'Get career by key' })
   @ApiParam({ name: 'key', required: true, description: 'Career key' })
   @ApiResponse({
@@ -120,7 +120,7 @@ export class HandbookController {
     return await this.handbookService.getAllCollections();
   }
 
-  @Get('/collections/:key')
+  @Get('/collection/:key')
   @ApiOperation({ summary: 'Get collection id' })
   @ApiParam({ name: 'key', required: true, description: 'Collection id' })
   @ApiResponse({

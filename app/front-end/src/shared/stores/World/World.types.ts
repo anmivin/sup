@@ -5,6 +5,9 @@ export interface WorldStoreProps {
   loadingWorlds: boolean;
   selectedWorld: components['schemas']['OutputWorldMapDto'] | null;
   loadingSelectedWorld: boolean;
+  building: any;
+  loadingBuilding: boolean;
   getWorlds: (payload: string) => void;
   getWorldMap: (payload: string) => void;
+  getBuilding: (payload: string) => void;
 }

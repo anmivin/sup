@@ -1,7 +1,7 @@
-import { AvatarModel } from '@back/users/models/avatars.model';
-import { PackModel } from '@back/users/models/packs.model';
-import { UserModel } from '@back/users/models/users.model';
-import { InputUserDto, EditUserDto } from '@back/users/user.dto';
+import { AvatarModel } from '@back/user/models/avatars.model';
+import { PackModel } from '@back/user/models/packs.model';
+import { UserModel } from '@back/user/models/users.model';
+import { InputUserDto, EditUserDto } from '@back/user/user.dto';
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import bcrypt from 'bcryptjs';

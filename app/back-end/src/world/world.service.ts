@@ -4,7 +4,7 @@ import { WorldModel } from '@back/world/models/world.model';
 import { OutputWorldDto, OutputWorldMapDto } from '@back/world/world.dto';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-
+import { BuildingModel } from './models/building.model';
 @Injectable()
 export class WorldService {
   constructor(
@@ -12,6 +12,7 @@ export class WorldService {
     @InjectModel(NeighborhoodModel)
     private neighbourhoodModel: typeof NeighborhoodModel,
     @InjectModel(LotModel) private lotModel: typeof LotModel,
+    @InjectModel(BuildingModel) private buildingModel: typeof BuildingModel,
   ) {}
 
   async getWorlds(part: string): Promise<OutputWorldDto[]> {
@@ -47,5 +48,9 @@ export class WorldService {
 
   async getLotInfo(lotId: number) {
     return await this.lotModel.findOne({ where: { id: lotId } });
+  }
+
+  async getBuildingInfo(lotId: string) {
+    return await this.buildingModel.findOne({ where: { lotId } });
   }
 }

@@ -1,6 +1,6 @@
 import { UserCredentials, UserGoogleCredentials } from '@back/auth/auth.dto';
 import { TokenService } from '@back/token/token.service';
-import { UsersService } from '@back/users/users.service';
+import { UsersService } from '@back/user/users.service';
 import {
   Injectable,
   NotFoundException,
