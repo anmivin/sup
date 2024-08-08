@@ -1,19 +1,19 @@
 import { ReactNode, useMemo } from 'react';
 
-import HelpSection from '@widgets/HelpSection/HelpSection';
-import classNames from 'classnames';
 import { useStore } from 'zustand';
 
-import Header from '@entities/Header/Header';
-import SignForm from '@entities/SignForm';
+import EditImageModal from '@features/EditImageModal';
+import Header from '@features/Header';
+import SignForm from '@features/SignForm';
 
-import { ProfileStore } from '@stores/Profile/Profile.store';
+import HelpSection from '@entities/HelpSection/HelpSection';
+
+import { CommonStore } from '@stores/Common/Common.store';
 
 import { ContentBox } from './Layout.styled';
 
 const Layout = ({ children }: { children: ReactNode }) => {
-  const { isSignFormOpen, setIsSignFormOpen } = useStore(ProfileStore);
-
+  const { isSignModalOpen, setIsSignModalOpen, isImageModalOpen, setIsImageModalOpen } = useStore(CommonStore);
   const isError = useMemo(() => {
     return false;
   }, []);
@@ -21,9 +21,10 @@ const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       {!isError && <Header />}
-      <ContentBox className={classNames({ isError: isError })}>{children}</ContentBox>
+      <ContentBox $noHeader={isError}>{children}</ContentBox>
       <HelpSection />
-      <SignForm open={isSignFormOpen} onClose={() => setIsSignFormOpen(false)} />
+      <EditImageModal open={isImageModalOpen} onClose={() => setIsImageModalOpen(false)} />
+      <SignForm open={isSignModalOpen} onClose={() => setIsSignModalOpen(false)} />
     </>
   );
 };

@@ -1,83 +1,198 @@
 import { StateCreator } from 'zustand';
 
+import { CommonStore } from '@stores/Common/Common.store';
+import { ProfileStore } from '@stores/Profile/Profile.store';
+
 import { TreeDataSliceProps } from './Tree.types';
 
-import { createSimRequest, createTreeRequest, fetchSimsForTree, fetchSimsForUser } from './Tree.api';
+import {
+  createSimRequest,
+  createTreeRequest,
+  deleteImageRequest,
+  editImageRequest,
+  fetchSimsForTree,
+  fetchSimsForUser,
+  fetchTreesForUser,
+  saveImageDebugRequest,
+  saveImageRequest,
+} from './Tree.api';
+
+/* const { setErrorCommonAlertOpen, setSuccessCommonAlertOpen } = CommonStore(); */
 
 export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => ({
   defaultSims: null,
   simsInTree: null,
   trees: null,
+  treesPending: false,
+
+  getTreesForUser: async () => {
+    set({ treesPending: true });
+    const userId = ProfileStore.getState().userId;
+    if (!userId) return;
+    try {
+      const trees = await fetchTreesForUser(userId);
+      set({ trees });
+      set({ treesPending: false });
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+      set({ treesPending: false });
+    }
+  },
 
   getSimsForTree: async (payload) => {
+    const userId = ProfileStore.getState().userId;
+
     try {
-    } catch (e) {}
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
   getSimsForUser: async (payload) => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
   getSim: async (payload) => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
 
   createTree: async (payload) => {
     try {
-    } catch (e) {}
+      const res = await createTreeRequest(payload);
+      console.log(res);
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
 
   editTree: async (payload) => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
   removeTree: async (payload) => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
 
   createSim: async (payload) => {
     try {
-    } catch (e) {}
+      const res = await createSimRequest(payload);
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
   editSim: async (payload) => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
   removeSim: async (payload) => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
 
   addPartner: async () => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
   removePartner: async () => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
+    }
   },
 
   addChild: async () => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      /*setErrorCommonAlertOpen(true); */
+    }
   },
   removeChild: async () => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      /*setErrorCommonAlertOpen(true); */
+    }
   },
 
   addParent: async () => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      /*setErrorCommonAlertOpen(true); */
+    }
   },
   removeParent: async () => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      /*setErrorCommonAlertOpen(true); */
+    }
   },
 
   getDefaultSims: async () => {
     try {
-    } catch (e) {}
+    } catch (e) {
+      /*setErrorCommonAlertOpen(true); */
+    }
+  },
+
+  saveImage: async (payload, type, config) => {
+    try {
+      const file = await saveImageRequest(payload, type, config);
+      return file;
+    } catch (e) {
+      console.log('store', e);
+      /*setErrorCommonAlertOpen(true); */
+    }
+  },
+  editImage: async (payload) => {
+    try {
+      await editImageRequest(payload);
+    } catch (e) {
+      /*setErrorCommonAlertOpen(true); */
+    }
+  },
+
+  deleteImage: async (payload) => {
+    try {
+      await deleteImageRequest(payload);
+    } catch (e) {
+      /*setErrorCommonAlertOpen(true); */
+    }
+  },
+
+  saveImageDebug: async (payload, config) => {
+    try {
+      console.log('payload', payload);
+      console.log('config', config);
+      await saveImageDebugRequest(payload, config);
+    } catch (e) {
+      console.log('e', e);
+      /*setErrorCommonAlertOpen(true); */
+    }
   },
 });

@@ -1,5 +1,4 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
-
+import { QueryInterface, DataTypes } from 'sequelize';
 const defaultAtrributes = {
   id: {
     allowNull: false,
@@ -42,7 +41,7 @@ const atrributesWithDescription = {
 };
 
 module.exports = {
-  async up(queryInterface: QueryInterface, _sequelize: Sequelize) {
+  async up(queryInterface: QueryInterface) {
     await queryInterface.createTable('base', defaultAtrributes);
     await queryInterface.createTable('tree', defaultAtrributes);
     await queryInterface.createTable('other', atrributesWithPart);
@@ -103,7 +102,7 @@ module.exports = {
     });
   },
 
-  async down(queryInterface: QueryInterface, _sequelize: Sequelize) {
+  async down(queryInterface: QueryInterface) {
     await queryInterface.dropTable('lots');
     await queryInterface.dropTable('neighbourhoods');
     await queryInterface.dropTable('towns');

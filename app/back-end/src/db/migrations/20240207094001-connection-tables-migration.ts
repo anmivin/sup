@@ -1,31 +1,7 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
+import { QueryInterface, DataTypes } from 'sequelize';
 
 module.exports = {
-  async up(queryInterface: QueryInterface, sequelize: Sequelize) {
-    await queryInterface.createTable('user_pack', {
-      id: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        primaryKey: true,
-      },
-      user_id: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        references: {
-          model: 'users',
-          key: 'id',
-        },
-      },
-      pack_key: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        references: {
-          model: 'packs',
-          key: 'key',
-        },
-      },
-    });
-
+  async up(queryInterface: QueryInterface) {
     await queryInterface.createTable('user_achievement', {
       id: {
         allowNull: false,
@@ -44,7 +20,7 @@ module.exports = {
         allowNull: false,
         type: DataTypes.STRING,
         references: {
-          model: 'achievements_4',
+          model: 'achievements',
           key: 'key',
         },
       },
@@ -106,7 +82,7 @@ module.exports = {
       },
     });
 
-    await queryInterface.createTable('sim_aspiration_4', {
+    await queryInterface.createTable('sim_aspiration', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -122,7 +98,7 @@ module.exports = {
       aspiration_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'aspirations_4',
+          model: 'aspirations',
           key: 'key',
         },
       },
@@ -131,7 +107,7 @@ module.exports = {
       },
     });
 
-    await queryInterface.createTable('sim_trait_4', {
+    await queryInterface.createTable('sim_trait', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -147,13 +123,13 @@ module.exports = {
       trait_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'traits_4',
+          model: 'traits',
           key: 'key',
         },
       },
     });
 
-    await queryInterface.createTable('sim_career_4', {
+    await queryInterface.createTable('sim_career', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -169,7 +145,7 @@ module.exports = {
       career_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'careers_4',
+          model: 'careers',
           key: 'key',
         },
       },
@@ -180,7 +156,8 @@ module.exports = {
         type: DataTypes.INTEGER,
       },
     });
-    await queryInterface.createTable('sim_collection_4', {
+
+    await queryInterface.createTable('sim_collection', {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
@@ -196,12 +173,12 @@ module.exports = {
       collection_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'collections_4',
+          model: 'collections',
           key: 'key',
         },
       },
     });
-    await queryInterface.createTable('sim_skill_4', {
+    await queryInterface.createTable('sim_skill', {
       id: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -217,7 +194,7 @@ module.exports = {
       skill_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'skills_4',
+          model: 'skills',
           key: 'key',
         },
       },
@@ -225,7 +202,7 @@ module.exports = {
         type: DataTypes.INTEGER,
       },
     });
-    await queryInterface.createTable('sim_death_4', {
+    await queryInterface.createTable('sim_death', {
       id: {
         allowNull: false,
         type: DataTypes.INTEGER,
@@ -241,7 +218,7 @@ module.exports = {
       deaths_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'deaths_4',
+          model: 'deaths',
           key: 'key',
         },
       },
@@ -259,24 +236,73 @@ module.exports = {
           key: 'id',
         },
       },
-      x_pos: {
+      x_Pos: {
         type: DataTypes.INTEGER,
       },
-      y_pos: {
+      y_Pos: {
         type: DataTypes.INTEGER,
+      },
+    });
+    await queryInterface.createTable('file_tree', {
+      id: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+      },
+      file_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
+      },
+      tree_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'trees',
+          key: 'id',
+        },
+      },
+      is_current: {
+        type: DataTypes.BOOLEAN,
+      },
+    });
+    await queryInterface.createTable('file_sim', {
+      id: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+      },
+      file_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
+      },
+      sim_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'sims',
+          key: 'id',
+        },
+      },
+      is_current: {
+        type: DataTypes.BOOLEAN,
       },
     });
   },
 
-  async down(queryInterface: QueryInterface, sequelize: Sequelize) {
-    await queryInterface.dropTable('sim_skill_4');
-    await queryInterface.dropTable('sim_collection_4');
-    await queryInterface.dropTable('sim_career_4');
-    await queryInterface.dropTable('sim_trait_4');
-    await queryInterface.dropTable('sim_aspiration_4');
+  async down(queryInterface: QueryInterface) {
+    await queryInterface.dropTable('sim_position');
+    await queryInterface.dropTable('sim_death');
+    await queryInterface.dropTable('sim_skill');
+    await queryInterface.dropTable('sim_collection');
+    await queryInterface.dropTable('sim_career');
+    await queryInterface.dropTable('sim_trait');
+    await queryInterface.dropTable('sim_aspiration');
     await queryInterface.dropTable('partner_partner');
     await queryInterface.dropTable('parent_child');
     await queryInterface.dropTable('user_achievement');
-    await queryInterface.dropTable('user_pack');
   },
 };

@@ -1,28 +1,21 @@
 import { StateCreator } from 'zustand';
 
-import { GameParts } from '@constants/enums';
-import { SignFormVariants } from '@constants/sharedTypes';
+import { GAME_PART, SIGN_FORM_VARIANTS } from '@type/enums';
 
 import { ProfileStateSliceProps } from './Profile.types';
 
 export const ProfileStateSlice: StateCreator<ProfileStateSliceProps, [], []> = (set) => ({
-  gamePart: GameParts.Four,
+  gamePart: GAME_PART.Four,
   setGamePart: (gamePart) => {
     set({ gamePart });
   },
 
-  isDarkTheme: false,
+  isDarkTheme: () => {
+    const storage = localStorage.getItem('theme');
+    return storage ? JSON.parse(storage) : false;
+  },
   setIsDarkTheme: (isDarkTheme) => {
     set({ isDarkTheme });
-  },
-
-  isSignFormOpen: false,
-  setIsSignFormOpen: (isSignFormOpen) => {
-    set({ isSignFormOpen });
-  },
-
-  signFormType: SignFormVariants.SignIn,
-  setSignFormType: (signFormType) => {
-    set({ signFormType });
+    localStorage.setItem('theme', JSON.stringify(isDarkTheme()));
   },
 });

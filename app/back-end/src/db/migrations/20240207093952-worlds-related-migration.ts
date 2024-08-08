@@ -1,7 +1,7 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
+import { QueryInterface, DataTypes } from 'sequelize';
 
 module.exports = {
-  async up(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async up(queryInterface: QueryInterface) {
     await queryInterface.createTable('worlds', {
       key: {
         allowNull: false,
@@ -11,14 +11,26 @@ module.exports = {
       part: {
         type: DataTypes.STRING,
       },
-      icon: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
-      filled_map: {
+      filled_map_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
-      empty_map: {
+      empty_map_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
     });
     await queryInterface.createTable('neighborhoods', {
@@ -30,7 +42,14 @@ module.exports = {
       part: {
         type: DataTypes.STRING,
       },
-      icon: {
+      icon_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
+      },
+      icon_color: {
         type: DataTypes.STRING,
       },
       world_key: {
@@ -50,19 +69,16 @@ module.exports = {
       part: {
         type: DataTypes.STRING,
       },
-      filled_image: {
-        type: DataTypes.STRING,
-      },
-      empty_image: {
-        type: DataTypes.STRING,
-      },
-      price_filled: {
+      price: {
         type: DataTypes.INTEGER,
       },
-      price_empty: {
+      height: {
         type: DataTypes.INTEGER,
       },
-      size: {
+      width: {
+        type: DataTypes.INTEGER,
+      },
+      svg_path: {
         type: DataTypes.STRING,
       },
       world_key: {
@@ -80,48 +96,35 @@ module.exports = {
         },
       },
     });
-    await queryInterface.createTable('coordinates', {
+
+    await queryInterface.createTable('buildings', {
       id: {
         allowNull: false,
-        type: DataTypes.STRING,
         primaryKey: true,
+        type: DataTypes.STRING,
       },
-      lot_key: {
+      user_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'users',
+          key: 'id',
+        },
+      },
+      lot_id: {
         type: DataTypes.STRING,
         references: {
           model: 'lots',
           key: 'key',
         },
       },
-      top_left_x: {
-        type: DataTypes.INTEGER,
-      },
-      top_left_y: {
-        type: DataTypes.INTEGER,
-      },
-      top_right_x: {
-        type: DataTypes.INTEGER,
-      },
-      top_right_y: {
-        type: DataTypes.INTEGER,
-      },
-      bottom_right_x: {
-        type: DataTypes.INTEGER,
-      },
-      bottom_right_y: {
-        type: DataTypes.INTEGER,
-      },
-      bottom_left_x: {
-        type: DataTypes.INTEGER,
-      },
-      bottom_left_y: {
-        type: DataTypes.INTEGER,
+      layout: {
+        type: DataTypes.JSON,
       },
     });
   },
 
-  async down(queryInterface: QueryInterface, sequelize: Sequelize) {
-    await queryInterface.dropTable('coordinates');
+  async down(queryInterface: QueryInterface) {
+    await queryInterface.dropTable('buildings');
     await queryInterface.dropTable('lots');
     await queryInterface.dropTable('neighborhoods');
     await queryInterface.dropTable('worlds');

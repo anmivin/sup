@@ -1,28 +1,39 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
+import { QueryInterface, DataTypes } from 'sequelize';
 
 module.exports = {
-  async up(queryInterface: QueryInterface, sequelize: Sequelize) {
-    await queryInterface.createTable('achievements_4', {
+  async up(queryInterface: QueryInterface) {
+    await queryInterface.createTable('achievements', {
       key: {
         allowNull: false,
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       points: {
         type: DataTypes.INTEGER,
       },
+      part: {
+        type: DataTypes.ENUM('sims_3', 'sims_4'),
+      },
     });
-    await queryInterface.createTable('aspirations_4', {
+    await queryInterface.createTable('aspirations', {
       key: {
         allowNull: false,
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       steps: {
         type: DataTypes.INTEGER,
@@ -33,15 +44,22 @@ module.exports = {
       bonus: {
         type: DataTypes.STRING,
       },
+      part: {
+        type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
+      },
     });
-    await queryInterface.createTable('careers_4', {
+    await queryInterface.createTable('careers', {
       key: {
         allowNull: false,
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       age: {
         type: DataTypes.ARRAY(DataTypes.STRING),
@@ -49,16 +67,12 @@ module.exports = {
       roots: {
         type: DataTypes.INTEGER,
       },
-      pack_key: {
-        type: DataTypes.STRING,
-        references: {
-          model: 'packs',
-          key: 'key',
-        },
+      part: {
+        type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
       },
     });
 
-    await queryInterface.createTable('collections_4', {
+    await queryInterface.createTable('collections', {
       key: {
         allowNull: false,
         type: DataTypes.STRING,
@@ -67,27 +81,27 @@ module.exports = {
       count: {
         type: DataTypes.INTEGER,
       },
+      part: {
+        type: DataTypes.ENUM('sims_2', 'sims_3', 'sims_4'),
+      },
     });
-    await queryInterface.createTable('collection_items_4', {
+    await queryInterface.createTable('collection_items', {
       key: {
         allowNull: false,
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       collection_key: {
         type: DataTypes.STRING,
         references: {
-          model: 'collections_4',
-          key: 'key',
-        },
-      },
-      pack_key: {
-        type: DataTypes.STRING,
-        references: {
-          model: 'packs',
+          model: 'collections',
           key: 'key',
         },
       },
@@ -96,51 +110,44 @@ module.exports = {
       },
     });
 
-    await queryInterface.createTable('deaths_4', {
+    await queryInterface.createTable('deaths', {
       key: {
         allowNull: false,
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      pack_key: {
+      part: {
+        type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
+      },
+    });
+
+    await queryInterface.createTable('lifestyles', {
+      key: {
+        allowNull: false,
+        type: DataTypes.STRING,
+        primaryKey: true,
+      },
+      icon_id: {
         type: DataTypes.STRING,
         references: {
-          model: 'packs',
-          key: 'key',
+          model: 'files',
+          key: 'id',
         },
       },
     });
 
-    await queryInterface.createTable('fears_4', {
+    await queryInterface.createTable('skills', {
       key: {
         allowNull: false,
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon: {
+      icon_id: {
         type: DataTypes.STRING,
-      },
-    });
-
-    await queryInterface.createTable('lifestyles_4', {
-      key: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        primaryKey: true,
-      },
-      icon: {
-        type: DataTypes.STRING,
-      },
-    });
-
-    await queryInterface.createTable('skills_4', {
-      key: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        primaryKey: true,
-      },
-      icon: {
-        type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       age: {
         type: DataTypes.STRING,
@@ -148,34 +155,42 @@ module.exports = {
       steps: {
         type: DataTypes.INTEGER,
       },
+      part: {
+        type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
+      },
     });
 
-    await queryInterface.createTable('traits_4', {
+    await queryInterface.createTable('traits', {
       key: {
         allowNull: false,
         type: DataTypes.STRING,
         primaryKey: true,
       },
-      icon: {
+      icon_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       group: {
         type: DataTypes.STRING,
       },
+      part: {
+        type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
+      },
     });
   },
 
-  async down(queryInterface: QueryInterface, sequelize: Sequelize) {
-    await queryInterface.dropTable('deaths_4');
-    await queryInterface.dropTable('skills_4');
-    await queryInterface.dropTable('lifestyles_4');
-    await queryInterface.dropTable('fears_4');
-    await queryInterface.dropTable('collection_items_4');
-    await queryInterface.dropTable('aspirations_4');
-    await queryInterface.dropTable('traits_4');
-    await queryInterface.dropTable('collections_4');
-    await queryInterface.dropTable('careers_4');
-    await queryInterface.dropTable('aspirations_4');
-    await queryInterface.dropTable('achievements_4');
+  async down(queryInterface: QueryInterface) {
+    await queryInterface.dropTable('traits');
+    await queryInterface.dropTable('skills');
+    await queryInterface.dropTable('lifestyles');
+    await queryInterface.dropTable('deaths');
+    await queryInterface.dropTable('collection_items');
+    await queryInterface.dropTable('collections');
+    await queryInterface.dropTable('careers');
+    await queryInterface.dropTable('aspirations');
+    await queryInterface.dropTable('achievements');
   },
 };

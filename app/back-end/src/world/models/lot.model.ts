@@ -1,7 +1,13 @@
-import { CoordinatesModel } from './coordinates.model';
 import { NeighborhoodModel } from './neighbourhood.model';
 import { WorldModel } from './world.model';
-import { PrimaryKey, Column, Model, Table, ForeignKey, BelongsTo, HasOne } from 'sequelize-typescript';
+import {
+  PrimaryKey,
+  Column,
+  Model,
+  Table,
+  ForeignKey,
+  BelongsTo,
+} from 'sequelize-typescript';
 
 @Table({ tableName: 'lots', underscored: true, timestamps: false })
 export class LotModel extends Model<LotModel> {
@@ -13,19 +19,16 @@ export class LotModel extends Model<LotModel> {
   declare part: string;
 
   @Column
-  declare filledImage: string;
+  declare price: number;
 
   @Column
-  declare emptyImage: string;
+  declare height: number;
 
   @Column
-  declare priceFilled: number;
+  declare width: number;
 
   @Column
-  declare priceEmpty: number;
-
-  @Column
-  declare size: string;
+  declare svgPath: string;
 
   @Column
   @ForeignKey(() => WorldModel)
@@ -40,7 +43,4 @@ export class LotModel extends Model<LotModel> {
 
   @BelongsTo(() => NeighborhoodModel)
   declare neighborhood: NeighborhoodModel;
-
-  @HasOne(() => CoordinatesModel)
-  declare coordinates?: CoordinatesModel;
 }

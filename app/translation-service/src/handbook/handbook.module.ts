@@ -2,7 +2,10 @@ import { Module } from '@nestjs/common';
 
 import { SequelizeModule } from '@nestjs/sequelize';
 
-import { AspirationGroupsTranslationModel, TraitGroupsTranslationModel } from '../models/withPart.model';
+import {
+  AspirationGroupsTranslationModel,
+  TraitGroupsTranslationModel,
+} from '../models/withPart.model';
 import {
   AchievementsTranslationModel,
   AspirationsTranslationModel,

@@ -1,7 +1,22 @@
-import { QueryInterface, Sequelize, DataTypes } from 'sequelize';
-
+import { QueryInterface, DataTypes } from 'sequelize';
 module.exports = {
-  async up(queryInterface: QueryInterface, sequelize: Sequelize) {
+  async up(queryInterface: QueryInterface) {
+    await queryInterface.createTable('files', {
+      id: {
+        allowNull: false,
+        primaryKey: true,
+        type: DataTypes.STRING,
+      },
+      path: {
+        type: DataTypes.STRING,
+      },
+      path_tn: {
+        type: DataTypes.STRING,
+      },
+      name: {
+        type: DataTypes.STRING,
+      },
+    });
     await queryInterface.createTable('users', {
       id: {
         allowNull: false,
@@ -20,20 +35,15 @@ module.exports = {
       type: {
         type: DataTypes.ENUM('local', 'google'),
       },
-    });
-    await queryInterface.createTable('avatars', {
-      id: {
-        allowNull: false,
-        primaryKey: true,
+      image_id: {
         type: DataTypes.STRING,
-      },
-      image: {
-        type: DataTypes.STRING,
-      },
-      thumbnale: {
-        type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
     });
+
     await queryInterface.createTable('trees', {
       id: {
         allowNull: false,
@@ -50,8 +60,12 @@ module.exports = {
       name: {
         type: DataTypes.STRING,
       },
-      image: {
+      image_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
     });
 
@@ -71,8 +85,12 @@ module.exports = {
       name: {
         type: DataTypes.STRING,
       },
-      image: {
+      image_id: {
         type: DataTypes.STRING,
+        references: {
+          model: 'files',
+          key: 'id',
+        },
       },
       is_in_tree: {
         type: DataTypes.BOOLEAN,
@@ -85,32 +103,15 @@ module.exports = {
         },
       },
       part: {
-        type: DataTypes.STRING,
-      },
-    });
-    await queryInterface.createTable('packs', {
-      key: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        primaryKey: true,
-      },
-      icon: {
-        type: DataTypes.STRING,
-      },
-      part: {
         type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
-      },
-      type: {
-        type: DataTypes.STRING,
       },
     });
   },
 
-  async down(queryInterface: QueryInterface, sequelize: Sequelize) {
-    await queryInterface.dropTable('packs');
+  async down(queryInterface: QueryInterface) {
     await queryInterface.dropTable('sims');
     await queryInterface.dropTable('trees');
-    await queryInterface.dropTable('avatars');
     await queryInterface.dropTable('users');
+    await queryInterface.dropTable('files');
   },
 };

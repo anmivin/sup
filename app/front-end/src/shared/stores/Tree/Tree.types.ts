@@ -1,29 +1,22 @@
+import { AxiosRequestConfig } from 'axios';
+
 import { components } from '@api/Api';
 
-import { DrawerVariants } from '@constants/sharedTypes';
-
 export interface TreeStateSliceProps {
-  isTreeDrawerOpen: boolean;
-  setIsTreeDrawerOpen: (val: boolean) => void;
-
-  treeDrawerType: DrawerVariants;
-  setTreeDrawerType: (val: DrawerVariants) => void;
-
-  isSimDrawerOpen: boolean;
-  setIsSimDrawerOpen: (val: boolean) => void;
-
-  simDrawerType: DrawerVariants;
-  setSimDrawerType: (val: DrawerVariants) => void;
+  currentTree: components['schemas']['OutputTreeListDto'] | null;
+  setCurrentTree: (payload: components['schemas']['OutputTreeListDto'] | null) => void;
 }
 
 export interface TreeDataSliceProps {
   defaultSims: [] | null;
   simsInTree: [] | null;
-  trees: [] | null;
+  trees: components['schemas']['OutputTreeListDto'][] | null;
+  treesPending: boolean;
 
   getSimsForTree: (payload: number) => void;
   getSimsForUser: (payload: number) => void;
   getSim: (payload: string) => void;
+  getTreesForUser: () => void;
 
   createTree: (payload: components['schemas']['InputTreeDto']) => void;
   editTree: (payload: components['schemas']['InputTreeDto']) => void;
@@ -43,4 +36,14 @@ export interface TreeDataSliceProps {
   removeParent: () => void;
 
   getDefaultSims: () => void;
+
+  saveImage: (
+    payload: components['schemas']['Debug'],
+    type: string,
+    config?: AxiosRequestConfig,
+  ) => Promise<components['schemas']['FileResponseDTO'] | undefined>;
+  editImage: (payload: components['schemas']['EditFileDto']) => void;
+  deleteImage: (payload: components['schemas']['DeleteFileDto']) => void;
+
+  saveImageDebug: (payload: components['schemas']['Debug'], config?: AxiosRequestConfig) => void;
 }

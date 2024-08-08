@@ -1,4 +1,4 @@
-import { components } from '@front/consts/Api';
+import { components } from '@api/Api';
 
 export const randomSet = (arrayLength: number, count: number) => {
   const rand: string[] = [];
@@ -12,7 +12,7 @@ export const randomSet = (arrayLength: number, count: number) => {
 };
 
 export const getRandomAspiration = (
-  aspirations: components['schemas']['OutputAspirations4Dto'][],
+  aspirations: components['schemas']['OutputAspirationList4Dto'][],
   count: number,
   age: 'child' | 'teen' | 'adult',
 ) => {
@@ -32,7 +32,7 @@ export const getRandomAspiration = (
 };
 
 export const getRandomCareer = (
-  careers: components['schemas']['OutputCareers4Dto'][],
+  careers: components['schemas']['OutputCareerList4Dto'][],
   count: number,
   withRoot: boolean,
   age: 'teen' | 'adult',
@@ -49,10 +49,13 @@ export const getRandomCareer = (
   });
 };
 
-export const getRandomCollection = (collections: components['schemas']['OutputCollections4Dto'][], count: number) => {};
+export const getRandomCollection = (
+  collections: components['schemas']['OutputCollectionList4Dto'][],
+  count: number,
+) => {};
 
 export const getRandomSkill = (
-  skills: components['schemas']['OutputSkills4Dto'][],
+  skills: components['schemas']['OutputSkillList4Dto'][],
   count: number,
   age: 'toddler' | 'child' | 'adult',
 ) => {
@@ -69,14 +72,14 @@ export const getRandomSkill = (
       }
     }
   });
-  const rand: components['schemas']['OutputSkills4Dto'][] = [];
+  const rand: components['schemas']['OutputSkillList4Dto'][] = [];
   const set = randomSet(filtredByAgeSkills.length, count);
   set.forEach((num) => rand.push(filtredByAgeSkills[num]));
   return rand;
 };
 
 export const getRandomTrait = (
-  traits: components['schemas']['OutputTraits4Dto'][],
+  traits: components['schemas']['OutputTraitList4Dto'][],
   count: number,
   age: 'infant' | 'toddler' | 'adult',
 ) => {
@@ -98,7 +101,7 @@ export const getRandomTrait = (
       }
     }
   });
-  const rand: components['schemas']['OutputTraits4Dto'][] = [];
+  const rand: components['schemas']['OutputTraitList4Dto'][] = [];
   const set = randomSet(filtredByAgeAspirations.length, count);
   set.forEach((num) => rand.push(filtredByAgeAspirations[num]));
 };

@@ -1,14 +1,27 @@
 import { AspirationGroup } from '@back/handbook/handbook.dto';
-import { PrimaryKey, Column, Model, Table } from 'sequelize-typescript';
+import {
+  PrimaryKey,
+  ForeignKey,
+  Column,
+  Model,
+  Table,
+  DataType,
+  BelongsTo,
+} from 'sequelize-typescript';
+import { FileModel } from '@back/file/file.model';
 
-@Table({ tableName: 'aspirations_4', underscored: true, timestamps: false })
+@Table({ tableName: 'aspirations', underscored: true, timestamps: false })
 export class Aspiration4Model extends Model<Aspiration4Model> {
   @PrimaryKey
   @Column
   declare key: string;
 
   @Column
-  declare icon: string;
+  @ForeignKey(() => FileModel)
+  declare iconId: string;
+
+  @BelongsTo(() => FileModel)
+  declare icon: FileModel | null;
 
   @Column
   declare steps: number;
@@ -18,4 +31,7 @@ export class Aspiration4Model extends Model<Aspiration4Model> {
 
   @Column
   declare bonus: string;
+
+  @Column(DataType.ENUM({ values: ['sims_1', 'sims_2', 'sims_3', 'sims_4'] }))
+  declare part: string;
 }

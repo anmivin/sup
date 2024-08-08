@@ -18,36 +18,58 @@ export class HandbookController {
   @Get('/achievements/:lang')
   @ApiOperation({ summary: 'Get all achievements' })
   @ApiParam({ name: 'lang', required: true, description: 'Language' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success', type: AchievementsDto })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: AchievementsDto,
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getAchievements(@Param('lang') lang: 'ru' | 'en'): Promise<AchievementsDto> {
+  async getAchievements(
+    @Param('lang') lang: 'ru' | 'en',
+  ): Promise<AchievementsDto> {
     return await this.handbookService.getAchievements(lang);
   }
 
   @Get('/aspiration-groups/:lang')
   @ApiOperation({ summary: 'Get all achievements' })
   @ApiParam({ name: 'lang', required: true, description: 'Language' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success', type: AspirationGroupsDto })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: AspirationGroupsDto,
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getAspirationGroups(@Param('lang') lang: 'ru' | 'en'): Promise<AspirationGroupsDto> {
+  async getAspirationGroups(
+    @Param('lang') lang: 'ru' | 'en',
+  ): Promise<AspirationGroupsDto> {
     return await this.handbookService.getAspirationGroups(lang);
   }
 
   @Get('/aspirations/:lang')
   @ApiOperation({ summary: 'Get all achievements' })
   @ApiParam({ name: 'lang', required: true, description: 'Language' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success', type: AspirationsDto })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: AspirationsDto,
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getAspirations(@Param('lang') lang: 'ru' | 'en'): Promise<AspirationsDto> {
+  async getAspirations(
+    @Param('lang') lang: 'ru' | 'en',
+  ): Promise<AspirationsDto> {
     return await this.handbookService.getAspirations(lang);
   }
   @Get('/skills/:lang')
   @ApiOperation({ summary: 'Get all achievements' })
   @ApiParam({ name: 'lang', required: true, description: 'Language' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success', type: SkillsDto })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: SkillsDto,
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async getSkills(@Param('lang') lang: 'ru' | 'en'): Promise<SkillsDto> {
@@ -57,17 +79,27 @@ export class HandbookController {
   @Get('/trait-groups/:lang')
   @ApiOperation({ summary: 'Get all achievements' })
   @ApiParam({ name: 'lang', required: true, description: 'Language' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success', type: TraitGroupsDto })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: TraitGroupsDto,
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getTraitGroups(@Param('lang') lang: 'ru' | 'en'): Promise<TraitGroupsDto> {
+  async getTraitGroups(
+    @Param('lang') lang: 'ru' | 'en',
+  ): Promise<TraitGroupsDto> {
     return await this.handbookService.getTraitGroups(lang);
   }
 
   @Get('/traits/:lang')
   @ApiOperation({ summary: 'Get all achievements' })
   @ApiParam({ name: 'lang', required: true, description: 'Language' })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success', type: TraitsDto })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: TraitsDto,
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async getTraits(@Param('lang') lang: 'ru' | 'en'): Promise<TraitsDto> {

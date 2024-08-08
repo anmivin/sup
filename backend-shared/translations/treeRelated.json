@@ -1,0 +1,27 @@
+[
+  { "key": "tree_maininfo", "ru_name": "Основные данные", "en_name": "Main info" },
+  { "key": "tree_qualities", "ru_name": "Качества", "en_name": "Qualities" },
+
+  { "key": "tree_name", "ru_name": "Имя", "en_name": "Name" },
+  { "key": "tree_image", "ru_name": "Фото", "en_name": "Image" },
+  { "key": "tree_sex", "ru_name": "Пол", "en_name": "Sex" },
+  { "key": "tree_part", "ru_name": "Часть", "en_name": "Part" },
+  { "key": "tree_dead", "ru_name": "Мертв", "en_name": "Dead" },
+  { "key": "tree_deathCause", "ru_name": "Причина смерти", "en_name": "Death cause" },
+  { "key": "tree_age", "ru_name": "Возраст", "en_name": "Age" },
+  { "key": "tree_lifeState", "ru_name": "Форма жизни", "en_name": "Life state" },
+
+  { "key": "tree_parents", "ru_name": "Родители", "en_name": "Parents" },
+  { "key": "tree_children", "ru_name": "Дети", "en_name": "Children" },
+  { "key": "tree_impregnationType", "ru_name": "Вариант зачатия", "en_name": "Impregnation type" },
+  { "key": "tree_partners", "ru_name": "Партнеры", "en_name": "Partners" },
+  { "key": "tree_relationType", "ru_name": "Тип отношений", "en_name": "Relation type" },
+
+  { "key": "tree_collections", "ru_name": "Коллекции", "en_name": "Collections" },
+  { "key": "tree_achievements", "ru_name": "Достижения", "en_name": "Achievements" },
+  { "key": "tree_skills", "ru_name": "Навыки", "en_name": "Skills" },
+  { "key": "tree_aspirations", "ru_name": "Жизненные цели", "en_name": "Aspirations" },
+  { "key": "tree_traits", "ru_name": "Черты характера", "en_name": "Traits" },
+  { "key": "tree_lifeStyles", "ru_name": "Стиль жизни", "en_name": "Life style" },
+  { "key": "tree_milestones", "ru_name": "Рубежи", "en_name": "Milestones" }
+]

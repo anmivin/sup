@@ -1,4 +1,10 @@
-import { PrimaryKey, DataType, Column, Model, Table } from 'sequelize-typescript';
+import {
+  PrimaryKey,
+  DataType,
+  Column,
+  Model,
+  Table,
+} from 'sequelize-typescript';
 
 @Table({ tableName: 'packs', underscored: true, timestamps: false })
 export class PackModel extends Model<PackModel> {

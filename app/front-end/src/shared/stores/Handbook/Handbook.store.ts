@@ -4,15 +4,14 @@ import { HandbookStoreProps } from './Handbook.types';
 
 import { fetchAspirations, fetchSkills, fetchTraits } from './Handbook.api';
 
-export const TreeStore = create<HandbookStoreProps>((set) => ({
+export const HandbookStore = create<HandbookStoreProps>((set) => ({
   aspirations: null,
   skills: null,
   traits: null,
+  deaths: null,
   getAspirations: async () => {
     try {
-      console.log('???');
       const res = await fetchAspirations();
-      console.log(res);
       set({ aspirations: res });
     } catch (e) {}
   },
@@ -26,6 +25,10 @@ export const TreeStore = create<HandbookStoreProps>((set) => ({
     try {
       const res = await fetchTraits();
       set({ traits: res });
+    } catch (e) {}
+  },
+  getDeaths: async () => {
+    try {
     } catch (e) {}
   },
 }));

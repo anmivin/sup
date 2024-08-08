@@ -1,9 +1,7 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import { Box, Step, StepContent, StepLabel, Stepper, Typography } from '@mui/material';
-
-import { StyledBox } from '@components/DefaultBox';
-import DefaultButton from '@components/DefaultButton/DefaultButton';
+import { Box, Button, Step, StepContent, StepLabel, Stepper, Typography } from '@mui/material';
 
 import { CircleBox, StyledPaper } from './Stepper.styled';
 
@@ -23,6 +21,7 @@ const StepperComponent = ({
   closeName = 'close',
 }: StepperProps) => {
   const [activeStep, setActiveStep] = useState(currentStep);
+  const { t } = useTranslation();
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
@@ -35,19 +34,19 @@ const StepperComponent = ({
     setActiveStep(0);
   };
   return (
-    <StyledBox flexDirection="column" width="500px">
+    <Box flexDirection="column" width="500px">
       <Box display="flex">
         {icon && <img src={`/sims4/aspirations/${icon}`} alt="Picture of the author" width="50" height="50" />}
         <Typography>{title}</Typography>
       </Box>
 
       <Box display="flex" gap={2}>
-        <DefaultButton decor="underscored" onClick={() => setActiveStep(0)} disabled={activeStep !== -1}>
+        <Button onClick={() => setActiveStep(0)} disabled={activeStep !== -1}>
           {openName}
-        </DefaultButton>
-        <DefaultButton decor="underscored" onClick={() => setActiveStep(-1)} disabled={activeStep === -1}>
+        </Button>
+        <Button onClick={() => setActiveStep(-1)} disabled={activeStep === -1}>
           {closeName}
-        </DefaultButton>
+        </Button>
       </Box>
       {activeStep !== -1 && (
         <>
@@ -68,12 +67,12 @@ const StepperComponent = ({
                   ))}
 
                   <Box display="flex" gap={2}>
-                    <DefaultButton decor="underscored" onClick={handleNext}>
-                      {index === steps.length - 1 ? 'Завершить' : 'Продолжить'}
-                    </DefaultButton>
-                    <DefaultButton decor="underscored" disabled={index === 0} onClick={handleBack}>
-                      Назад
-                    </DefaultButton>
+                    <Button onClick={handleNext}>
+                      {t(index === steps.length - 1 ? 'data.utility.complete' : 'data.utility.continue')}
+                    </Button>
+                    <Button disabled={index === 0} onClick={handleBack}>
+                      {t('data.utility.back')}
+                    </Button>
                   </Box>
                 </StepContent>
               </Step>
@@ -83,15 +82,15 @@ const StepperComponent = ({
             {activeStep === steps.length && (
               <StyledPaper>
                 <Typography>{endMessage}</Typography>
-                <DefaultButton onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-                  Сбросить
-                </DefaultButton>
+                <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
+                  {t('data.utility.reset')}
+                </Button>
               </StyledPaper>
             )}
           </Box>
         </>
       )}
-    </StyledBox>
+    </Box>
   );
 };
 export default StepperComponent;

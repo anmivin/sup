@@ -1,26 +1,20 @@
 import { components } from '@api/Api';
 
-import { GameParts } from '@constants/enums';
-import { SignFormVariants } from '@constants/sharedTypes';
+import { GAME_PART } from '@type/enums';
 
 export interface ProfileStateSliceProps {
-  gamePart: GameParts;
-  setGamePart: (val: GameParts) => void;
+  gamePart: GAME_PART;
+  setGamePart: (val: GAME_PART) => void;
 
-  isDarkTheme: boolean;
-  setIsDarkTheme: (val: boolean) => void;
-
-  isSignFormOpen: boolean;
-  setIsSignFormOpen: (val: boolean) => void;
-
-  signFormType: SignFormVariants;
-  setSignFormType: (val: SignFormVariants) => void;
+  isDarkTheme: () => boolean;
+  setIsDarkTheme: (val: () => boolean) => void;
 }
 
 export interface ProfileDataSliceProps {
   userId: string | null;
   token: string | null;
 
+  createUser: (payload: components['schemas']['InputUserDto']) => void;
   login: (payload: components['schemas']['UserCredentials']) => void;
   loginWithGoogle: (token: string) => void;
   logout: () => void;

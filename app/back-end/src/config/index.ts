@@ -11,4 +11,9 @@ export const NEST_CONFIG = () => ({
   db_database: process.env.DB_DATABASE,
   google_clientid: process.env.GOOGLE_CLIENT_ID,
   google_secret: process.env.GOOGLE_SECRET,
+  minio_endpoint: process.env.MINIO_ENDPOINT,
+  minio_port: process.env.MINIO_PORT,
+  minio_useSSL: false,
+  minio_access: process.env.MINIO_ACCESS,
+  minio_secret: process.env.MINIO_SECRET,
 });

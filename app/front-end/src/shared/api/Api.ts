@@ -45,14 +45,6 @@ export interface paths {
     /** Get death by key */
     get: operations["HandbookController_getDeathById"];
   };
-  "/handbook/fears": {
-    /** Get all fears */
-    get: operations["HandbookController_getAllFears"];
-  };
-  "/handbook/fears/{key}": {
-    /** Get fear by key */
-    get: operations["HandbookController_getFearById"];
-  };
   "/handbook/skills": {
     /** Get all skills */
     get: operations["HandbookController_getAllSkills"];
@@ -69,47 +61,65 @@ export interface paths {
     /** Get trait by key */
     get: operations["HandbookController_getTraitById"];
   };
-  "/tree/{id}": {
-    /** Get sims for user */
-    get: operations["TreeController_getSimsForUser"];
+  "/dynasty/{id}": {
+    /** Get trees for user */
+    get: operations["DynastyController_getTreeForUser"];
   };
-  "/tree/tree/{id}": {
+  "/dynasty/tree/{id}": {
     /** Get sims for tree */
-    get: operations["TreeController_getTreeStructure"];
+    get: operations["DynastyController_getTreeStructure"];
   };
-  "/tree/sim/{id}": {
+  "/dynasty/user/{id}": {
+    /** Get sims for user */
+    get: operations["DynastyController_getSimsForUser"];
+  };
+  "/dynasty/sim/{id}": {
     /** Get sim by id */
-    get: operations["TreeController_getSim"];
+    get: operations["DynastyController_getSim"];
   };
-  "/tree": {
+  "/dynasty/sim": {
     /** Create sim */
-    post: operations["TreeController_createSim"];
+    post: operations["DynastyController_createSim"];
   };
-  "/tree/tree": {
+  "/dynasty/tree": {
     /** Create tree */
-    post: operations["TreeController_createTree"];
+    post: operations["DynastyController_createTree"];
   };
   "/users": {
     /** Create User */
     post: operations["UsersController_createUser"];
   };
   "/worlds/{part}": {
-    /** Get sims for user */
-    get: operations["WorldController_getSimsForUser"];
+    /** Get worlds by part */
+    get: operations["WorldController_getWorld"];
   };
   "/worlds/map/{worldKey}": {
-    /** Get sims for tree */
-    get: operations["WorldController_getTreeStructure"];
+    /** Get world map */
+    get: operations["WorldController_getWorldMap"];
   };
   "/auth/login": {
     /** Log In */
     post: operations["AuthController_login"];
   };
-  "/auth/google": {
-    get: operations["AuthController_googleAuth"];
+  "/auth/google-login": {
+    /** Google Log In */
+    post: operations["AuthController_loginGoogle"];
   };
-  "/auth/google/callback": {
-    get: operations["AuthController_googleAuthRedirect"];
+  "/file": {
+    /** Save debug file */
+    post: operations["FileController_saveDebugFile"];
+  };
+  "/file/save/{type}": {
+    /** Save file */
+    post: operations["FileController_saveFile"];
+  };
+  "/file/edit": {
+    /** Edit file */
+    post: operations["FileController_editFile"];
+  };
+  "/file/delete": {
+    /** Delete file */
+    post: operations["FileController_deleteFile"];
   };
 }
 
@@ -121,13 +131,13 @@ export interface components {
       /** @description Achievement key */
       key: string;
       /** @description Achievement icon */
-      icon: string;
+      iconPath: string;
     };
     OutputAchievement4Dto: {
       /** @description Achievement key */
       key: string;
       /** @description Achievement icon */
-      icon: string;
+      iconPath: string;
       /** @description Points you get for achievement */
       points: number;
     };
@@ -135,7 +145,7 @@ export interface components {
       /** @description Aspiration key */
       key: string;
       /** @description Aspiration icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Aspiration group key
        * @enum {string}
@@ -146,7 +156,7 @@ export interface components {
       /** @description Aspiration key */
       key: string;
       /** @description Aspiration icon */
-      icon: string;
+      iconPath: string;
       /** @description Aspiration steps count */
       steps: number;
       /**
@@ -161,13 +171,13 @@ export interface components {
       /** @description Career key */
       key: string;
       /** @description Career icon */
-      icon: string;
+      iconPath: string;
     };
     OutputCareer4Dto: {
       /** @description Career key */
       key: string;
       /** @description Career icon */
-      icon: string;
+      iconPath: string;
     };
     OutputCollectionList4Dto: {
       /** @description Collection key */
@@ -179,7 +189,7 @@ export interface components {
       /** @description Collection item key */
       key: string;
       /** @description Collection item icon */
-      icon: string;
+      iconPath: string;
     };
     OutputCollection4Dto: {
       /** @description Collection key */
@@ -191,19 +201,13 @@ export interface components {
       /** @description Death key */
       key: string;
       /** @description Pack key */
-      packKey: string;
-    };
-    OutputFears4Dto: {
-      /** @description Fear key */
-      key: string;
-      /** @description Fear icon */
-      icon: string;
+      part: string;
     };
     OutputSkillList4Dto: {
       /** @description Skill key */
       key: string;
       /** @description Skill icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Age since which skill available
        * @enum {string}
@@ -216,7 +220,7 @@ export interface components {
       /** @description Skill key */
       key: string;
       /** @description Skill icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Age since which skill available
        * @enum {string}
@@ -229,7 +233,7 @@ export interface components {
       /** @description Trait key */
       key: string;
       /** @description Trait icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Trait group key
        * @enum {string}
@@ -240,12 +244,20 @@ export interface components {
       /** @description Trait key */
       key: string;
       /** @description Trait icon */
-      icon: string;
+      iconPath: string;
       /**
        * @description Trait group key
        * @enum {string}
        */
       group: "trait_group_001_emotional" | "trait_group_002_hobby" | "trait_group_003_lifestyle" | "trait_group_004_social" | "trait_group_005_toddler" | "trait_group_006_infant" | "trait_group_007_bonus" | "trait_group_008_aspirationreward" | "Satisfaction reward" | "trait_group_010_careerreward" | "trait_group_011_foodmastery" | "trait_group_012_inherited" | "trait_group_013_charactervalue";
+    };
+    OutputTreeListDto: {
+      /** @description Tree id */
+      id: string;
+      /** @description Tree name */
+      name: string;
+      /** @description Tree image */
+      image: Record<string, unknown> | null;
     };
     EdgesDto: {
       /** @description Edge id */
@@ -273,7 +285,7 @@ export interface components {
       /** @description Sim name */
       name: string;
       /** @description Sim image */
-      image: string;
+      imageId: Record<string, unknown> | null;
       /** @description Fixed node Y position */
       fixedY: number;
     };
@@ -297,21 +309,31 @@ export interface components {
       /** @description Nodes */
       nodes: components["schemas"]["NodesDto"][];
     };
+    OutputSimListDto: {
+      /** @description Sim id */
+      id: string;
+      /** @description Sim name */
+      name: string;
+      /** @description Sim image */
+      image: Record<string, unknown> | null;
+    };
     InputSimDto: {
       /** @description User id */
       userId: string;
       /** @description Sim name */
       name: string;
       /** @description Sim image */
-      image: string;
+      imageId: string | null;
+      /** @description Sim in tree */
+      isInTree: boolean;
       /** @description Tree id */
       treeId: string;
       /** @description Game part */
       part: string;
-      /** @description Sim birth year */
-      birthYear: number | null;
-      /** @description Sim death year */
-      deathYear: number | null;
+      /** @description X pos */
+      xPos: number;
+      /** @description Y pos */
+      yPos: number;
       /** @description First parent id */
       parentFirstId: string | null;
       /** @description Second parent id */
@@ -327,7 +349,7 @@ export interface components {
       /** @description Tree name */
       name: string;
       /** @description Tree image */
-      image: string;
+      imageId: string | null;
     };
     InputUserDto: {
       /** @description User name */
@@ -345,12 +367,10 @@ export interface components {
     };
     OutputLotDto: {
       key: string;
-      filledImage: string;
-      emptyImage: string;
-      priceFilled: number;
-      priceEmpty: number;
-      size: string;
-      coordinates: string;
+      price: number;
+      width: number;
+      height: number;
+      svgPath: string;
     };
     OutputNeighbourhoodDto: {
       key: string;
@@ -367,6 +387,36 @@ export interface components {
       name: string;
       /** @description User password */
       password: string;
+    };
+    Debug: {
+      /** @description File */
+      file: Record<string, never>;
+    };
+    FileResponseDTO: {
+      /** @description File id */
+      id: string;
+      /** @description File url */
+      url: string;
+    };
+    EditFileDto: {
+      /** @description File */
+      bucket: string;
+      /** @description File */
+      fileName: string;
+      /** @description File */
+      file: Record<string, never>;
+      /** @description File */
+      type: string;
+    };
+    DeleteFileDto: {
+      /** @description File */
+      bucket: string;
+      /** @description File */
+      fileName: string;
+      /** @description File */
+      type: string;
+      /** @description File */
+      entityId: string;
     };
   };
   responses: never;
@@ -602,50 +652,6 @@ export interface operations {
       };
     };
   };
-  /** Get all fears */
-  HandbookController_getAllFears: {
-    responses: {
-      /** @description Success */
-      200: {
-        content: {
-          "application/json": components["schemas"]["OutputFears4Dto"][];
-        };
-      };
-      /** @description Bad Request */
-      400: {
-        content: never;
-      };
-      /** @description Not found */
-      404: {
-        content: never;
-      };
-    };
-  };
-  /** Get fear by key */
-  HandbookController_getFearById: {
-    parameters: {
-      path: {
-        /** @description Fear key */
-        key: string;
-      };
-    };
-    responses: {
-      /** @description Success */
-      200: {
-        content: {
-          "application/json": components["schemas"]["OutputFears4Dto"];
-        };
-      };
-      /** @description Bad Request */
-      400: {
-        content: never;
-      };
-      /** @description Not found */
-      404: {
-        content: never;
-      };
-    };
-  };
   /** Get all skills */
   HandbookController_getAllSkills: {
     responses: {
@@ -734,8 +740,8 @@ export interface operations {
       };
     };
   };
-  /** Get sims for user */
-  TreeController_getSimsForUser: {
+  /** Get trees for user */
+  DynastyController_getTreeForUser: {
     parameters: {
       path: {
         /** @description User id */
@@ -745,7 +751,9 @@ export interface operations {
     responses: {
       /** @description Success */
       200: {
-        content: never;
+        content: {
+          "application/json": components["schemas"]["OutputTreeListDto"][];
+        };
       };
       /** @description Bad Request */
       400: {
@@ -758,7 +766,7 @@ export interface operations {
     };
   };
   /** Get sims for tree */
-  TreeController_getTreeStructure: {
+  DynastyController_getTreeStructure: {
     parameters: {
       path: {
         /** @description Tree id */
@@ -782,8 +790,33 @@ export interface operations {
       };
     };
   };
+  /** Get sims for user */
+  DynastyController_getSimsForUser: {
+    parameters: {
+      path: {
+        /** @description User id */
+        id: string;
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["OutputSimListDto"][];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
   /** Get sim by id */
-  TreeController_getSim: {
+  DynastyController_getSim: {
     parameters: {
       path: {
         /** @description Sim id */
@@ -808,7 +841,7 @@ export interface operations {
     };
   };
   /** Create sim */
-  TreeController_createSim: {
+  DynastyController_createSim: {
     requestBody: {
       content: {
         "application/json": components["schemas"]["InputSimDto"];
@@ -830,7 +863,7 @@ export interface operations {
     };
   };
   /** Create tree */
-  TreeController_createTree: {
+  DynastyController_createTree: {
     requestBody: {
       content: {
         "application/json": components["schemas"]["InputTreeDto"];
@@ -873,8 +906,8 @@ export interface operations {
       };
     };
   };
-  /** Get sims for user */
-  WorldController_getSimsForUser: {
+  /** Get worlds by part */
+  WorldController_getWorld: {
     parameters: {
       path: {
         /** @description Part */
@@ -898,8 +931,8 @@ export interface operations {
       };
     };
   };
-  /** Get sims for tree */
-  WorldController_getTreeStructure: {
+  /** Get world map */
+  WorldController_getWorldMap: {
     parameters: {
       path: {
         /** @description Tree id */
@@ -945,16 +978,120 @@ export interface operations {
       };
     };
   };
-  AuthController_googleAuth: {
+  /** Google Log In */
+  AuthController_loginGoogle: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["UserCredentials"];
+      };
+    };
     responses: {
+      /** @description Success */
       200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
         content: never;
       };
     };
   };
-  AuthController_googleAuthRedirect: {
+  /** Save debug file */
+  FileController_saveDebugFile: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["Debug"];
+      };
+    };
     responses: {
+      /** @description Success */
       200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Save file */
+  FileController_saveFile: {
+    parameters: {
+      path: {
+        /** @description File type */
+        type: string;
+      };
+    };
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["Debug"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["FileResponseDTO"];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Edit file */
+  FileController_editFile: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["EditFileDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Delete file */
+  FileController_deleteFile: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["DeleteFileDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
         content: never;
       };
     };

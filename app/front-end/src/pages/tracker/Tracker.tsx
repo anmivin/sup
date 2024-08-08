@@ -1,6 +1,16 @@
 /* import { Layer, Rect, Stage, Text } from 'react-konva'; */
-import { RatingFilledIcon, RatingIcon, TreeIcon } from '@components/Icons';
-import Spinner from '@components/Spinner';
+import { Box, styled } from '@mui/material';
+
+import WorldImage from '@entities/WorldImage';
+
+import { RatingFilledIcon, RatingIcon, TreeIcon } from '../../shared/assets/icons';
+import Spinner from '../../shared/ui/Spinner';
+import DownTown from './Downtown.webp';
+import fifth from './oasis/fifth.png';
+import first from './oasis/first.png';
+import fourth from './oasis/fourth.png';
+import second from './oasis/second.png';
+import third from './oasis/third.png';
 
 /* import Konva from 'konva'; */
 
@@ -25,10 +35,35 @@ const Tracker = () => {
 
   return (
     <>
-      <Spinner />
+      <WorldImage image={{ first, second, third, fourth, fifth }} />
+      <WorldImage image={DownTown} />
+      {/*   <Box
+        style={{
+          display: 'grid',
+          placeItems: 'center',
+          gridTemplateAreas: 'inner-div',
+          backgroundColor: 'red',
+          width: '512px',
+          height: '512px',
+          clipPath: 'circle(190px at 256px 256px)',
+        }}
+      >
+        <StyledBox img={fifth} />
+        <StyledBox img={fourth} speed={14} />
+        <StyledBox img={third} speed={12} />
+        <StyledBox img={second} speed={10} />
+        <StyledBox img={first} speed={8} />
+      </Box> */}
+
+      {/*  <img src={first} />
+      <img src={second} />
+      <img src={third} />
+      <img src={fourth} />
+      <img src={fives} /> */}
+      {/*       <Spinner />
       <RatingFilledIcon />
       <RatingIcon />
-      <TreeIcon />
+      <TreeIcon /> */}
       {/*  <Stage width={window.innerWidth} height={window.innerHeight}>
         <Layer>
           {calc(10, 10).map((rec, index) => (

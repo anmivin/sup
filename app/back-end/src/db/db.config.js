@@ -1,10 +1,12 @@
+require('ts-node/register');
+
 const DB_CONFIG = {
-  username: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE,
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  dialect: process.env.DB_DIALECT,
+  username: 'postgres',
+  password: '1234',
+  database: 'sup',
+  host: 'localhost',
+  port: '5432',
+  dialect: 'postgres',
   migrationStorageTableName: '_migrations_',
   define: {
     schema: 'public',

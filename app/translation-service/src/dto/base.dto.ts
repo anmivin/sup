@@ -53,16 +53,31 @@ export class UtilityBasicTranslationDto {
   @ApiProperty()
   delete: string;
   @ApiProperty()
-  noOption: string;
+  nooption: string;
 }
 
-export class SettingsBasicTranslationDto {
+export class FormsBasicTranslationDto {
   @ApiProperty()
   username: string;
   @ApiProperty()
   password: string;
   @ApiProperty()
   email: string;
+  @ApiProperty()
+  browse: string;
+  @ApiProperty()
+  drag: string;
+}
+
+export class MiscBasicTranslationDto {
+  @ApiProperty()
+  sim: string;
+  @ApiProperty()
+  tree: string;
+  @ApiProperty()
+  male: string;
+  @ApiProperty()
+  female: string;
 }
 
 export class BasicTranslationNoLangDto {
@@ -71,7 +86,9 @@ export class BasicTranslationNoLangDto {
   @ApiProperty()
   utility: UtilityBasicTranslationDto;
   @ApiProperty()
-  settings: SettingsBasicTranslationDto;
+  forms: FormsBasicTranslationDto;
+  @ApiProperty()
+  misc: MiscBasicTranslationDto;
 }
 
 @ApiExtraModels(BasicTranslationNoLangDto)

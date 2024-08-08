@@ -7,4 +7,6 @@ export interface HandbookStoreProps {
   getSkills: () => void;
   traits: components['schemas']['OutputTraitList4Dto'][] | null;
   getTraits: () => void;
+  deaths: null;
+  getDeaths: () => void;
 }
