@@ -121,6 +121,17 @@ module.exports = {
       },
     });
 
+    await queryInterface.createTable('educations', {
+      key: {
+        allowNull: false,
+        type: DataTypes.STRING,
+        primaryKey: true,
+      },
+      part: {
+        type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
+      },
+    });
+
     await queryInterface.createTable('lifestyles', {
       key: {
         allowNull: false,
@@ -186,6 +197,7 @@ module.exports = {
     await queryInterface.dropTable('traits');
     await queryInterface.dropTable('skills');
     await queryInterface.dropTable('lifestyles');
+    await queryInterface.dropTable('educations');
     await queryInterface.dropTable('deaths');
     await queryInterface.dropTable('collection_items');
     await queryInterface.dropTable('collections');

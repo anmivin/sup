@@ -14,7 +14,7 @@ import FormTextField from '@entities/FormComponents/FormTextField';
 import { ImageDrop, ImageList, ImageUpload } from '@entities/ImageUploader';
 import { ImageItem } from '@entities/ImageUploader/ImageUploader.types';
 
-import { DRAWER_VARIANTS, GAME_PART, SEX } from '@type/enums';
+import { DRAWER_VARIANTS, GAME_PART, PUBLIC_BUCKET_NAMES, SEX } from '@type/enums';
 
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
 import { ProfileStore } from '@stores/Profile/Profile.store';
@@ -28,7 +28,7 @@ import { SIMS_DRAWER_TABS } from './SimDrawer.types';
 import { CreateSimDrawerProps, CreateSimForm, SimDrawerSchema } from './SimDrawer.types';
 
 const SimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimDrawerProps) => {
-  const { saveImageDebug } = useStore(TreeStore);
+  const { saveImage } = useStore(TreeStore);
   const [files, setFiles] = useState<ImageItem[]>([]);
   const [selectedTab, setSelectedTab] = useState(0);
   const { t } = useTranslation(['translation', 'aspirations', 'skills', 'traits', 'misc', 'tree']);
@@ -154,7 +154,7 @@ const SimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimD
     try {
       let fd = new FormData();
       fd.append('file', file);
-      saveImageDebug(fd, config);
+      saveImage(fd, config);
     } catch (e) {
       console.log(e);
     }
@@ -169,7 +169,7 @@ const SimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimD
       {selectedTab === 0 && (
         <>
           <Box display="flex" gap={2}>
-            <ImageUpload onImageAdd={() => {}} value={null} />
+            <ImageUpload onImageAdd={saveImage} value={null} type={PUBLIC_BUCKET_NAMES.SimImage} />
             <Box display="flex" flexDirection="column" gap={2} flexGrow={1}>
               <FormTextField name="name" label={t('data.name', { ns: 'tree' })} />
               <FormAutocomplete
@@ -264,6 +264,7 @@ const SimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimD
           <Button onClick={() => skillAppend({ localName: undefined, level: 0 })}>добавить</Button>
         </>
       )}
+      {selectedTab === 2 && <></>}
 
       <Box>
         <Button onClick={handleSubmit(onSubmit)}>{t('data.utility.save')}</Button>

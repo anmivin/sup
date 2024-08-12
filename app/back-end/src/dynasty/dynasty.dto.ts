@@ -33,6 +33,17 @@ export class InputSimDto {
   childIds: string[];
   @ApiProperty({ description: 'Partners ids', nullable: false })
   partnersIds: string[];
+
+  @ApiProperty({ description: 'Partners ids', nullable: false })
+  traitsIds: string[];
+  @ApiProperty({ description: 'Partners ids', nullable: false })
+  skills: { key: string; step: number }[];
+  @ApiProperty({ description: 'Partners ids', nullable: false })
+  aspirations: { key: string; step: number }[];
+  @ApiProperty({ description: 'Partners ids', nullable: false })
+  careers: { key: string; step: number }[];
+  @ApiProperty({ description: 'Partners ids', nullable: false })
+  educationsIds: string[];
 }
 
 export class OutputTreeListDto {

@@ -91,59 +91,6 @@ export class DynastyService {
     });
   }
 
-  async createSim(props: InputSimDto) {
-    const simId = v4();
-
-    const partners = props.partnersIds;
-    const parents: string[] = [];
-    if (props.parentFirstId) parents.push(props.parentFirstId);
-    if (props.parentSecondId) parents.push(props.parentSecondId);
-    const children = props.childIds;
-    const createdSim = await this.simsModel.create({ id: simId, ...props });
-    if (partners && partners.length) {
-      await Promise.all(
-        partners.map(async (partner) => {
-          await this.partnersModel.create({
-            partnerFirstId: createdSim.id,
-            partnerSecondId: partner,
-            isEx: false,
-            type: 'default',
-          });
-        }),
-      );
-    }
-    if (parents && parents.length) {
-      await Promise.all(
-        parents.map(async (parent) => {
-          await this.childrenModel.create({
-            parentId: parent,
-            childId: createdSim.id,
-            type: 'default',
-          });
-        }),
-      );
-    }
-    if (children && children.length) {
-      await Promise.all(
-        children.map(async (child) => {
-          await this.childrenModel.create({
-            parentId: createdSim.id,
-            childId: child,
-            type: 'default',
-          });
-        }),
-      );
-    }
-    return simId;
-  }
-
-  async createTree(props: InputTreeDto) {
-    const treeId = v4();
-
-    const tree = await this.treeModel.create({ ...props, id: treeId });
-    return tree;
-  }
-
   async getSimsForStructure(id: number): Promise<SimsTreeStructure[]> {
     const sims = await this.simsModel.findAll({
       where: { treeId: id },
@@ -513,5 +460,69 @@ export class DynastyService {
       ],
     });
     if (!sim) throw new Error();
+    return sim;
+  }
+
+  async createSim(props: InputSimDto) {
+    const simId = v4();
+
+    const partners = props.partnersIds;
+    const parents: string[] = [];
+    if (props.parentFirstId) parents.push(props.parentFirstId);
+    if (props.parentSecondId) parents.push(props.parentSecondId);
+    const children = props.childIds;
+    const createdSim = await this.simsModel.create({ id: simId, ...props });
+    if (partners && partners.length) {
+      await Promise.all(
+        partners.map(async (partner) => {
+          await this.partnersModel.create({
+            partnerFirstId: createdSim.id,
+            partnerSecondId: partner,
+            isEx: false,
+            type: 'default',
+          });
+        }),
+      );
+    }
+    if (parents && parents.length) {
+      await Promise.all(
+        parents.map(async (parent) => {
+          await this.childrenModel.create({
+            parentId: parent,
+            childId: createdSim.id,
+            type: 'default',
+          });
+        }),
+      );
+    }
+    if (children && children.length) {
+      await Promise.all(
+        children.map(async (child) => {
+          await this.childrenModel.create({
+            parentId: createdSim.id,
+            childId: child,
+            type: 'default',
+          });
+        }),
+      );
+    }
+    return simId;
+  }
+
+  async createTree(props: InputTreeDto) {
+    const treeId = v4();
+
+    const tree = await this.treeModel.create({ ...props, id: treeId });
+    return tree;
+  }
+
+  async editSim(props: InputSimDto, simId: string) {
+    const sim = await this.getSim(simId);
+    await sim.update(props);
+  }
+
+  async editTree(props: InputSimDto, simId: string) {
+    const sim = await this.getSim(simId);
+    await sim.update(props);
   }
 }

@@ -216,4 +216,18 @@ export class HandbookController {
   async getTraitById(@Param('key') key: string): Promise<OutputTrait4Dto> {
     return await this.handbookService.getTraitByKey(key);
   }
+
+  @Get('/init')
+  @ApiOperation({ summary: 'Get trait by key' })
+  @ApiParam({ name: 'key', required: true, description: 'Trait key' })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: OutputTrait4Dto,
+  })
+  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
+  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
+  async getInitValues(): Promise<OutputTrait4Dto> {
+    return await this.handbookService.getInitValues();
+  }
 }

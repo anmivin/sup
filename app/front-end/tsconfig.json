@@ -32,7 +32,7 @@
       "@components/*": ["./src/shared/components/*"],
       "@constants/*": ["./src/shared/constants/*"],
       "@type/*": ["./src/shared/types/*"],
-      "@libs/*": ["./src/shared/libs/*"],
+      "@helpers/*": ["./src/shared/helpers/*"],
       "@stores/*": ["./src/shared/stores/*"],
       "@theme/*": ["./src/shared/theme/*"],
       "@ui/*": ["./src/shared/ui/*"],
