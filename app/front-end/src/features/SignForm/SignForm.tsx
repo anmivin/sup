@@ -11,6 +11,7 @@ import GoogleAuth from '@entities/GoogleAuth';
 
 import { SIGN_FORM_VARIANTS } from '@type/enums';
 
+import { CommonStore } from '@stores/Common/Common.store';
 import { ProfileStore } from '@stores/Profile/Profile.store';
 
 import DefaultModal from '@ui/Modal';
@@ -20,7 +21,7 @@ import { SignFormProps, SignFormValuesProps, SignFormValuesSchema } from './Sign
 const SignForm = ({ onClose, open }: SignFormProps) => {
   const { t } = useTranslation();
   const { isDarkTheme } = ProfileStore();
-  const { signFormType, setSignFormType } = useStore(ProfileStore);
+  const { signFormType, setSignFormType } = useStore(CommonStore);
 
   const isSignUp = useMemo(() => {
     return signFormType === SIGN_FORM_VARIANTS.SignUp;
@@ -42,7 +43,8 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
       avatar: null,
     };
     console.log(createUserData);
-    const user = createUser(createUserData);
+    isSignUp ? login(createUserData) : createUser(createUserData);
+    const user = login(createUserData);
   });
 
   const errorHandler = useCallback(() => {

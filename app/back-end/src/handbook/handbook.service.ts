@@ -145,7 +145,6 @@ export class HandbookService {
       age: item.age,
       steps: item.steps,
     }));
-    console.log(skills);
     const skillsWithIcons = await Promise.all(
       skills.map(async (item) => await this.addIcon(item)),
     );
@@ -172,5 +171,13 @@ export class HandbookService {
     const trait = await this.traitModel.findByPk(key);
     if (!trait) throw new Error('Не найдено');
     return await this.addIcon(trait);
+  }
+
+  async getInitValues() {
+    const aspirations = await this.getAllAspirations();
+    const careers = await this.getAllCareers();
+    const deaths = await this.getAllDeaths();
+    const skills = await this.getAllSkills();
+    const traits = await this.getAllTraits();
   }
 }

@@ -1,5 +1,5 @@
 import { InputUserDto } from '@back/user/user.dto';
-import { UsersService } from '@back/user/users.service';
+import { UsersService } from '@back/user/user.service';
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
 import { Controller, Post, Body } from '@nestjs/common';
 import { ApiOperation, ApiTags, ApiResponse, ApiBody } from '@nestjs/swagger';

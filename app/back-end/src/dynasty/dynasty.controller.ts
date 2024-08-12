@@ -6,8 +6,9 @@ import {
   OutputTreeListDto,
 } from '@back/dynasty/dynasty.dto';
 import { DynastyService } from '@back/dynasty/dynasty.service';
+import { AuthGuard } from '@back/guards/auth.guard';
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import {
   ApiOperation,
   ApiTags,
@@ -17,6 +18,7 @@ import {
 } from '@nestjs/swagger';
 
 @ApiTags('Dynasty Module')
+@UseGuards(AuthGuard)
 @Controller('dynasty')
 export class DynastyController {
   constructor(private dynastyService: DynastyService) {}
@@ -97,14 +99,15 @@ export class DynastyController {
     return await this.dynastyService.createTree(createTreeDto);
   }
 
-  @Post('/sim/edit')
-  @ApiOperation({ summary: 'Create sim' })
+  @Post('/sim/edit/:id')
+  @ApiOperation({ summary: 'Edit sim' })
+  @ApiParam({ name: 'id', required: true, description: 'Sim id' })
   @ApiBody({ type: InputSimDto })
   @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async editSim(@Body() createSimDto: InputSimDto) {
-    return await this.dynastyService.createSim(createSimDto);
+  async editSim(@Body() editSimDto: InputSimDto, @Param('id') id: string) {
+    return await this.dynastyService.editSim(editSimDto, id);
   }
 
   @Post('/tree/edit')

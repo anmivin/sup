@@ -35,10 +35,12 @@ export interface CreateSimForm {
   parentFirst?: { id: string; name: string };
   parentSecond?: { id: string; name: string };
   partners: { id?: string; name?: string; type?: PARTNERSHIP }[];
-  aspirations: { localName?: string; completed: boolean }[];
+  aspirations: { localName: string; completed: boolean }[];
   traits: string[];
-  skills: { localName?: string; level: number }[];
-  /*   careers: {careerId: number, level: string}[];*/
+  skills: { localName: string; level: number }[];
+  careers: { localName: string; level: number }[];
+  educations: string[];
+  photos: string[];
 }
 
 export const SimDrawerSchema: ZodType<CreateSimForm> = z.object({
@@ -54,19 +56,25 @@ export const SimDrawerSchema: ZodType<CreateSimForm> = z.object({
   aspirations: z.array(z.object({ localName: z.string(), completed: z.boolean() })),
   traits: z.array(z.string()),
   skills: z.array(z.object({ localName: z.string(), level: z.number() })),
+  careers: z.array(z.object({ localName: z.string(), level: z.number() })),
+  educations: z.array(z.string()),
+  photos: z.array(z.string()),
 });
 
 export enum SIMS_DRAWER_TABS_VARIATIONS {
   MainInfo = 'maininfo',
   Qualities = 'qualities',
+  Photos = 'photos',
 }
 
 export enum SIMS_DRAWER_TABS_NAMES {
   MainInfo = 'Основные данные',
   Qualities = 'Качества',
+  Photos = 'Фото',
 }
 
 export const SIMS_DRAWER_TABS: { value: SIMS_DRAWER_TABS_VARIATIONS; label: string }[] = [
   { value: SIMS_DRAWER_TABS_VARIATIONS.MainInfo, label: SIMS_DRAWER_TABS_NAMES.MainInfo },
   { value: SIMS_DRAWER_TABS_VARIATIONS.Qualities, label: SIMS_DRAWER_TABS_NAMES.Qualities },
+  { value: SIMS_DRAWER_TABS_VARIATIONS.Photos, label: SIMS_DRAWER_TABS_NAMES.Photos },
 ];

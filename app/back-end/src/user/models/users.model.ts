@@ -30,6 +30,9 @@ export class UserModel extends Model<UserModel, UserModelCreate> {
   @Column(DataType.ENUM({ values: ['local', 'google'] }))
   declare type: string;
 
+  @Column(DataType.ENUM({ values: ['simple', 'payed'] }))
+  declare role: string;
+
   @Column(DataType.STRING)
   @ForeignKey(() => FileModel)
   declare imageId: string | null;

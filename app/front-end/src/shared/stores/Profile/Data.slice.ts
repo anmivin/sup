@@ -1,13 +1,14 @@
-/* import { decode } from 'jsonwebtoken'; */
+import { decode } from 'jsonwebtoken';
 import { StateCreator } from 'zustand';
 
-import { ProfileDataSliceProps, googleToken } from './Profile.types';
+import { AccessTokenPayload, ProfileDataSliceProps, googleToken } from './Profile.types';
 
 import { createUser, logInRequest, logInWithGoogleRequest } from './Profile.api';
 
 export const ProfileDataSlice: StateCreator<ProfileDataSliceProps, [], []> = (set) => ({
-  userId: 'f170dfbb-ac55-4a92-afc1-d0b6a11620d8',
+  userId: null,
   token: null,
+  role: null,
   createUser: async (payload) => {
     try {
       const userId = await createUser(payload);
@@ -16,16 +17,17 @@ export const ProfileDataSlice: StateCreator<ProfileDataSliceProps, [], []> = (se
   },
   login: async (payload) => {
     try {
-      const userId = await logInRequest(payload);
-      set({ userId });
+      const token = await logInRequest(payload);
+      const decoded = decode(token) as AccessTokenPayload;
+      set({ userId: decoded.userId });
     } catch (e) {}
   },
   loginWithGoogle: async (payload) => {
-    /*     const decoded = decode(payload) as googleToken;
-    const userCreds = { email: decoded.email, avatar: decoded.picture ?? null, name: decoded.name }; */
+    const decoded = decode(payload) as googleToken;
+    const userCreds = { email: decoded.email, avatar: decoded.picture ?? null, name: decoded.name };
     try {
-      /*       const userId = await logInWithGoogleRequest(userCreds);
-      set({ userId }); */
+      const userId = await logInWithGoogleRequest(userCreds);
+      set({ userId });
     } catch (e) {}
   },
   logout: () => {

@@ -209,3 +209,11 @@ export class OutputTrait4Dto {
   })
   group: TraitGroup;
 }
+
+export class OutputInitDto {
+  aspirations: Omit<OutputAspirationList4Dto, 'iconPath'>[];
+  careers: Omit<OutputCareerList4Dto, 'iconPath'>[];
+  deaths: OutputDeaths4Dto[];
+  skills: Omit<OutputSkillList4Dto, 'iconPath'>[];
+  traits: Omit<OutputTraitList4Dto, 'iconPath'>[];
+}

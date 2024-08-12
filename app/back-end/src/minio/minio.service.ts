@@ -5,8 +5,6 @@ import { Injectable } from '@nestjs/common';
 
 import { ConfigService } from '@nestjs/config';
 
-const MINIO_URL = process.env.MINIO_URL ?? 'http://127.0.0.1:9000';
-
 const policy = (bucketName: string) => {
   return {
     Version: '2012-10-17',
@@ -62,7 +60,8 @@ export class MinioService {
         if (error) throw error;
       },
     );
-    const url = `${MINIO_URL}/${bucket}/${fileName}`;
+    const minioPath = this.configService.get('minio_url');
+    const url = `${minioPath}/${bucket}/${fileName}`;
 
     return url;
   }

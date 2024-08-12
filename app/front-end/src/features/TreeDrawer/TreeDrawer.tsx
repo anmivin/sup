@@ -21,6 +21,8 @@ import DefaultTextField from '@ui/Textfield';
 
 import { CreateTreeDrawerProps, CreateTreeForm, TreeDrawerSchema } from './TreeDrawer.types';
 
+import { uploadFileConfig } from '../../shared/helpers/files';
+
 const TreeDrawer = ({ onCloseModal, type }: CreateTreeDrawerProps) => {
   const { t } = useTranslation();
   const { createTree, currentTree, saveImage, saveImageDebug } = useStore(TreeStore);
@@ -59,28 +61,12 @@ const TreeDrawer = ({ onCloseModal, type }: CreateTreeDrawerProps) => {
     }
   }, []);
 
-  const onUploadProgress = useCallback((progressEvent: AxiosProgressEvent) => {
-    const { loaded, total } = progressEvent;
-    if (!total) return;
-    const progress = Math.floor((loaded / total) * 100);
-    setUploadProgress(progress);
-
-    if (loaded == total) {
-      setUploadProgress(100);
-    }
-  }, []);
   const onFileUpload = useCallback(async (file: File) => {
-    const config = {
-      onUploadProgress,
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
-    };
     try {
       let fd = new FormData();
       fd.append('file', file);
 
-      const image = await saveImage(fd, PUBLIC_BUCKET_NAMES.TreeImage, config);
+      const image = await saveImage(fd, PUBLIC_BUCKET_NAMES.TreeImage, uploadFileConfig(setUploadProgress));
       if (image) {
         setValue('imageId', image.id);
         setImg(image.url);
