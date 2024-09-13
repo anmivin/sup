@@ -53,4 +53,6 @@ export class WorldService {
   async getBuildingInfo(lotId: string) {
     return await this.buildingModel.findOne({ where: { lotId } });
   }
+
+  async editBuilding(buildingId: string) {}
 }

@@ -13,6 +13,7 @@ export interface ProfileStateSliceProps {
 export interface ProfileDataSliceProps {
   userId: string | null;
   token: string | null;
+  role: string | null;
 
   createUser: (payload: components['schemas']['InputUserDto']) => void;
   login: (payload: components['schemas']['UserCredentials']) => void;
@@ -24,4 +25,9 @@ export interface googleToken {
   email: string;
   name: string;
   picture?: string;
+}
+
+export interface AccessTokenPayload {
+  userId: string;
+  role: string;
 }

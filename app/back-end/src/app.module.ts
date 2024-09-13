@@ -35,6 +35,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { MinioModule } from './minio/minio.module';
 import { FileModel } from '@file/file.model';
+import { JwtModule } from '@nestjs/jwt';
 import { SimPositionModel } from './connection.models/SimPosition.model';
 /* import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
 import * as path from 'path';
@@ -54,6 +55,13 @@ import * as path from 'path';
       ],
       typesOutputPath: path.join(__dirname, '/generated/i18n.generated.ts'),
     }), */
+    //.env
+    JwtModule.registerAsync({
+      imports: [ConfigModule],
+      useFactory: async (config) => ({ secret: config.get('jwt_secret') }),
+      global: true,
+      inject: [ConfigService],
+    }),
     ConfigModule.forRoot({
       isGlobal: true,
       load: [NEST_CONFIG],

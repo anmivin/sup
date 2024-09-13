@@ -1,6 +1,8 @@
 import { UserCredentials, UserGoogleCredentials } from '@back/auth/auth.dto';
+import { InputUserDto } from '@back/user/user.dto';
+import { UsersService } from '@back/user/user.service';
+
 import { TokenService } from '@back/token/token.service';
-import { UsersService } from '@back/user/users.service';
 import {
   Injectable,
   NotFoundException,
@@ -17,17 +19,30 @@ export class AuthService {
 
   async login(userCredentials: UserCredentials) {
     const existingUser = await this.userService.findUser(userCredentials.name);
-    if (!existingUser.password) throw new NotFoundException('');
+    if (!existingUser || !existingUser?.password)
+      throw new NotFoundException('');
     if (!bcrypt.compareSync(userCredentials.password, existingUser.password))
       throw new UnauthorizedException('Неверный пароль');
 
-    const token = await this.tokenService.generateAccessToken({
+    const token = await this.tokenService.generateTokens({
       id: existingUser.id,
-      name: existingUser.name,
+      role: existingUser.role,
     });
     return {
-      id: existingUser.id,
-      access_token: token,
+      access_token: token.accessToken,
+      refresh_token: token.refreshToken,
+    };
+  }
+
+  async signup(userCredentials: InputUserDto) {
+    const user = await this.userService.createUser(userCredentials);
+    const token = await this.tokenService.generateTokens({
+      id: user.id,
+      role: user.role,
+    });
+    return {
+      access_token: token.accessToken,
+      refresh_token: token.refreshToken,
     };
   }
 
@@ -44,23 +59,28 @@ export class AuthService {
         },
         'google',
       );
-      const token = await this.tokenService.generateAccessToken({
+      const token = await this.tokenService.generateTokens({
         id: user.id,
-        name: user.name,
+        role: 'simple',
       });
       return {
-        id: user.id,
-        access_token: token,
+        access_token: token.accessToken,
+        refresh_token: token.refreshToken,
       };
     } else {
-      const token = await this.tokenService.generateAccessToken({
+      const token = await this.tokenService.generateTokens({
         id: existingUser.id,
-        name: existingUser.name,
+        role: existingUser.role,
       });
       return {
-        id: existingUser.id,
-        access_token: token,
+        access_token: token.accessToken,
+        refresh_token: token.refreshToken,
       };
     }
+  }
+
+  async refreshToken(token: string) {
+    const tokens = await this.tokenService.refreshToken(token);
+    return tokens.accessToken;
   }
 }

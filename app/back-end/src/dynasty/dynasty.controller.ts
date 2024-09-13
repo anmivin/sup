@@ -6,8 +6,9 @@ import {
   OutputTreeListDto,
 } from '@back/dynasty/dynasty.dto';
 import { DynastyService } from '@back/dynasty/dynasty.service';
+import { AuthGuard } from '@back/guards/auth.guard';
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import {
   ApiOperation,
   ApiTags,
@@ -17,6 +18,7 @@ import {
 } from '@nestjs/swagger';
 
 @ApiTags('Dynasty Module')
+@UseGuards(AuthGuard)
 @Controller('dynasty')
 export class DynastyController {
   constructor(private dynastyService: DynastyService) {}
