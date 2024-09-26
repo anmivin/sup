@@ -42,7 +42,7 @@ export class DeleteFileDto {
   @ApiProperty({ description: 'File', nullable: false })
   bucket: string;
   @ApiProperty({ description: 'File', nullable: false })
-  fileName: string;
+  file: Express.Multer.File;
   @ApiProperty({ description: 'File', nullable: false })
   type: FileTypes;
   @ApiProperty({ description: 'File', nullable: false })

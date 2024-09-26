@@ -1,8 +1,18 @@
-import { OutputWorldDto, OutputWorldMapDto } from '@back/world/world.dto';
+import {
+  OutputWorldDto,
+  OutputWorldMapDto,
+  InputBuildingDto,
+} from '@back/world/world.dto';
 import { WorldService } from '@back/world/world.service';
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
-import { Controller, Post, Get, Param } from '@nestjs/common';
-import { ApiOperation, ApiTags, ApiParam, ApiResponse } from '@nestjs/swagger';
+import { Controller, Post, Get, Param, Body } from '@nestjs/common';
+import {
+  ApiOperation,
+  ApiTags,
+  ApiParam,
+  ApiResponse,
+  ApiBody,
+} from '@nestjs/swagger';
 
 @ApiTags('World Module')
 @Controller('world')
@@ -46,12 +56,15 @@ export class WorldController {
   })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getBuildingInfo(@Param('key') key: string): Promise<OutputWorldMapDto> {
+  async getBuildingInfo(
+    @Param('key') key: string,
+  ) /* : Promise<OutputWorldMapDto> */ {
     return await this.worldService.getBuildingInfo(key);
   }
 
   @Post('/building/:key')
   @ApiOperation({ summary: 'Get world map' })
+  @ApiBody({ type: InputBuildingDto })
   @ApiParam({ name: 'key', required: true, description: 'Tree id' })
   @ApiResponse({
     status: SuccessStatus.OK,
@@ -60,7 +73,10 @@ export class WorldController {
   })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async editBuilding(@Param('key') key: string): Promise<OutputWorldMapDto> {
-    return await this.worldService.editBuilding(key);
+  async editBuilding(
+    @Param('key') key: string,
+    @Body() editBuildingProps: InputBuildingDto,
+  ) /* : Promise<OutputWorldMapDto> */ {
+    return await this.worldService.editBuilding(key, editBuildingProps);
   }
 }

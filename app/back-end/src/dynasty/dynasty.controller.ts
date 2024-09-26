@@ -18,7 +18,7 @@ import {
 } from '@nestjs/swagger';
 
 @ApiTags('Dynasty Module')
-@UseGuards(AuthGuard)
+/* @UseGuards(AuthGuard) */
 @Controller('dynasty')
 export class DynastyController {
   constructor(private dynastyService: DynastyService) {}

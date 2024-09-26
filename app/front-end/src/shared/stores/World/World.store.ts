@@ -2,7 +2,7 @@ import { create } from 'zustand';
 
 import { WorldStoreProps } from './World.types';
 
-import { fetchWorldMap, fetchWorlds } from './World.api';
+import { fetchWorldMap, fetchWorlds, getBulding, saveBulding } from './World.api';
 
 export const WorldStore = create<WorldStoreProps>((set) => ({
   worlds: null,
@@ -14,6 +14,7 @@ export const WorldStore = create<WorldStoreProps>((set) => ({
   getWorlds: async (payload) => {
     set({ loadingWorlds: true });
     try {
+      console.log(payload);
       const worlds = await fetchWorlds(payload);
       set({ worlds });
     } catch (e) {
@@ -31,12 +32,24 @@ export const WorldStore = create<WorldStoreProps>((set) => ({
       set({ loadingSelectedWorld: false });
     }
   },
-  getBuilding: async (payload) => {
+  getBuilding: async (key) => {
     set({ loadingBuilding: true });
     try {
+      const ad = await getBulding(key);
+      return ad;
     } catch (e) {
     } finally {
       set({ loadingBuilding: false });
+    }
+  },
+  editBuilding: async (payload, key) => {
+    try {
+      console.log('sad');
+      const j = await saveBulding(payload, key);
+      console.log(j);
+      return j;
+    } catch (e) {
+      /*     console.log(e); */
     }
   },
 }));

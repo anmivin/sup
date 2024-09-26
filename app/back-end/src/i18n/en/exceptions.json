@@ -1,0 +1,28 @@
+{
+  "notfound": {
+    "masculine": "not found",
+    "feminine": "not found",
+    "neuter": "not found",
+    "plural": "not found"
+  },
+  "invalid": {
+    "masculine": "invalid",
+    "feminine": "invalid",
+    "neuter": "invalid",
+    "plural": "invalid"
+  },
+  "conflict": {
+    "single": "already exists",
+    "plural": "already exist"
+  },
+
+  "password": "password",
+  "user": "user",
+  "username": "username",
+  "email": "email",
+  "and": "and",
+  "or": "or",
+  "sim": "sim",
+
+  "skill": "skill"
+}

@@ -17,12 +17,13 @@ import {
   SimsTreeStructureBasic,
   OutputTreeListDto,
 } from '@back/dynasty/dynasty.dto';
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import { cloneDeep, remove, groupBy } from 'lodash';
 import { FileModel } from '@back/file/file.model';
 import { v4 } from 'uuid';
-
+import { I18nContext, I18nService } from 'nestjs-i18n';
+import { omit } from 'lodash';
 @Injectable()
 export class DynastyService {
   constructor(
@@ -42,6 +43,7 @@ export class DynastyService {
     @InjectModel(SimPositionModel)
     private simPositionModel: typeof SimPositionModel,
     @InjectModel(FileModel) private fileModel: typeof FileModel,
+    private readonly i18n: I18nService,
   ) {}
 
   async getTreesForUser(id: string): Promise<OutputTreeListDto[]> {
@@ -459,7 +461,10 @@ export class DynastyService {
         { model: this.simTraitModel },
       ],
     });
-    if (!sim) throw new Error();
+    if (!sim)
+      throw new NotFoundException(
+        `${(this.i18n.t('exceptions.sim'), { lang: I18nContext.current()?.lang })} ${(this.i18n.t('exceptions.notfound.masculine'), { lang: I18nContext.current()?.lang })}`,
+      );
     return sim;
   }
 
@@ -518,11 +523,33 @@ export class DynastyService {
 
   async editSim(props: InputSimDto, simId: string) {
     const sim = await this.getSim(simId);
-    await sim.update(props);
+    const updateProps = omit(props, [
+      'parentFirstId',
+      'parentSecondId',
+      'childIds',
+      'partnersIds',
+      'traitsIds',
+      'skills',
+      'aspirations',
+      'careers',
+      'educationsIds',
+    ]);
+    await sim.update(updateProps);
   }
 
   async editTree(props: InputSimDto, simId: string) {
     const sim = await this.getSim(simId);
-    await sim.update(props);
+    const updateProps = omit(props, [
+      'parentFirstId',
+      'parentSecondId',
+      'childIds',
+      'partnersIds',
+      'traitsIds',
+      'skills',
+      'aspirations',
+      'careers',
+      'educationsIds',
+    ]);
+    await sim.update(updateProps);
   }
 }

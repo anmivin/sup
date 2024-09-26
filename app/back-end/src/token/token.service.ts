@@ -6,13 +6,14 @@ import { InjectModel } from '@nestjs/sequelize';
 import { TokenModel } from '@back/token/token.model';
 import { v4 } from 'uuid';
 import { Op } from 'sequelize';
-
+import { I18nContext, I18nService } from 'nestjs-i18n';
 @Injectable()
 export class TokenService {
   constructor(
     private jwtService: JwtService,
     private configService: ConfigService,
     @InjectModel(TokenModel) private tokenModel: typeof TokenModel,
+    private readonly i18n: I18nService,
   ) {}
 
   async generateAccessToken(creds: InputTokenDto) {

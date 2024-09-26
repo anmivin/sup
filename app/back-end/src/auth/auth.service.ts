@@ -1,7 +1,7 @@
 import { UserCredentials, UserGoogleCredentials } from '@back/auth/auth.dto';
 import { InputUserDto } from '@back/user/user.dto';
 import { UsersService } from '@back/user/user.service';
-
+import { I18nContext, I18nService } from 'nestjs-i18n';
 import { TokenService } from '@back/token/token.service';
 import {
   Injectable,
@@ -15,14 +15,19 @@ export class AuthService {
   constructor(
     private userService: UsersService,
     private tokenService: TokenService,
+    private readonly i18n: I18nService,
   ) {}
 
   async login(userCredentials: UserCredentials) {
     const existingUser = await this.userService.findUser(userCredentials.name);
     if (!existingUser || !existingUser?.password)
-      throw new NotFoundException('');
+      throw new NotFoundException(
+        `${this.i18n.t('exceptions.user', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.notfound.masculine', { lang: I18nContext.current()?.lang })}`,
+      );
     if (!bcrypt.compareSync(userCredentials.password, existingUser.password))
-      throw new UnauthorizedException('Неверный пароль');
+      throw new UnauthorizedException(
+        `${this.i18n.t('exceptions.invalid.masculine', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.username', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.and')}/${this.i18n.t('exceptions.or', { lang: I18nContext.current()?.lang })} ${(this.i18n.t('exceptions.password'), { lang: I18nContext.current()?.lang })}`,
+      );
 
     const token = await this.tokenService.generateTokens({
       id: existingUser.id,

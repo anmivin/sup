@@ -227,7 +227,7 @@ export class HandbookController {
   })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async getInitValues(): Promise<OutputTrait4Dto> {
+  async getInitValues() /* : Promise<OutputTrait4Dto>  */ {
     return await this.handbookService.getInitValues();
   }
 }

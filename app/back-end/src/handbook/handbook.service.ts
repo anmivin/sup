@@ -13,6 +13,7 @@ import {
   OutputTrait4Dto,
   OutputTraitList4Dto,
 } from '@back/handbook/handbook.dto';
+import { I18nContext, I18nService } from 'nestjs-i18n';
 import { Achievement4Model } from '@back/handbook/models/models.4/achievements.model';
 import { Aspiration4Model } from '@back/handbook/models/models.4/aspirations.model';
 import { Career4Model } from '@back/handbook/models/models.4/careers.model';
@@ -21,7 +22,7 @@ import { Collection4Model } from '@back/handbook/models/models.4/collections.mod
 import { Death4Model } from '@back/handbook/models/models.4/deaths.model';
 import { Skill4Model } from '@back/handbook/models/models.4/skills.model';
 import { Trait4Model } from '@back/handbook/models/models.4/traits.model';
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import { FileModel } from '@file/file.model';
 @Injectable()
@@ -40,6 +41,7 @@ export class HandbookService {
     @InjectModel(Skill4Model) private skillModel: typeof Skill4Model,
     @InjectModel(Trait4Model) private traitModel: typeof Trait4Model,
     @InjectModel(FileModel) private fileModel: typeof FileModel,
+    private readonly i18n: I18nService,
   ) {}
 
   async addIcon(item: any) {
@@ -153,7 +155,10 @@ export class HandbookService {
 
   async getSkillByKey(key: string): Promise<OutputSkill4Dto> {
     const skill = await this.skillModel.findByPk(key);
-    if (!skill) throw new Error('Не найдено');
+    if (!skill)
+      throw new NotFoundException(
+        `${this.i18n.t('exceptions.skill', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.notfound.masculine', { lang: I18nContext.current()?.lang })}`,
+      );
     return await this.addIcon(skill);
   }
 
@@ -179,5 +184,6 @@ export class HandbookService {
     const deaths = await this.getAllDeaths();
     const skills = await this.getAllSkills();
     const traits = await this.getAllTraits();
+    return { aspirations, careers, deaths, skills, traits };
   }
 }
