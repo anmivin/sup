@@ -22,7 +22,7 @@ import { Collection4Model } from '@back/handbook/models/models.4/collections.mod
 import { Death4Model } from '@back/handbook/models/models.4/deaths.model';
 import { Skill4Model } from '@back/handbook/models/models.4/skills.model';
 import { Trait4Model } from '@back/handbook/models/models.4/traits.model';
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import { FileModel } from '@file/file.model';
 @Injectable()
@@ -155,7 +155,10 @@ export class HandbookService {
 
   async getSkillByKey(key: string): Promise<OutputSkill4Dto> {
     const skill = await this.skillModel.findByPk(key);
-    if (!skill) throw new Error('Не найдено');
+    if (!skill)
+      throw new NotFoundException(
+        `${this.i18n.t('exceptions.skill', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.notfound.masculine', { lang: I18nContext.current()?.lang })}`,
+      );
     return await this.addIcon(skill);
   }
 
@@ -181,5 +184,6 @@ export class HandbookService {
     const deaths = await this.getAllDeaths();
     const skills = await this.getAllSkills();
     const traits = await this.getAllTraits();
+    return { aspirations, careers, deaths, skills, traits };
   }
 }

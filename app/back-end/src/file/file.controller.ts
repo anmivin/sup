@@ -15,7 +15,7 @@ import {
   ApiBody,
 } from '@nestjs/swagger';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { Debug, EditFileDto, DeleteFileDto } from '@minio/minio.dto';
+import { Debug, EditFileDto, DeleteFileDto, FileTypes } from '@minio/minio.dto';
 import { FileService } from './file.service';
 import { FileResponseDTO } from './file.dto';
 @ApiTags('File Controller')
@@ -54,11 +54,13 @@ export class FileController {
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async deleteFile(
     @UploadedFile() file: Express.Multer.File,
-    @Param('type') type: string,
+    @Param('type') type: FileTypes,
   ) {
     return this.fileService.deleteFile({
       file: file,
       type: type,
+      bucket: '',
+      entityId: '',
     });
   }
 }

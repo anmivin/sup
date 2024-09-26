@@ -5,17 +5,21 @@ import { Box, Button } from '@mui/material';
 import { useTheme } from '@mui/material';
 import Konva from 'konva';
 import { uniqueId } from 'lodash';
+import { useStore } from 'zustand';
 
 import DrawLayoutMenu from '@entities/DrawLayoutMenu';
 import { MODE } from '@entities/DrawLayoutMenu/DrawLayoutMenu.types';
 
 import { PositionProps } from '@type/interfaces';
 
+import { WorldStore } from '@stores/World/World.store';
+
 import { DrawLayoutProps } from './DrawLayout.types';
 
 const squareSize = 30;
 
 const DrawLayout = ({ sizes }: DrawLayoutProps) => {
+  const { editBuilding, getBuilding } = useStore(WorldStore);
   const theme = useTheme();
   const [initPos, setInitPos] = useState<PositionProps | null>(null);
   const [mode, setMode] = useState<MODE>(MODE.default);
@@ -168,17 +172,25 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
     stageRef.current.container().style.cursor = getMode(mode);
   }, [mode]);
 
-  const saveStage = useCallback(() => {
+  const saveStage = useCallback(async () => {
     const layer = layerRef.current;
     const currline = layer.getChildren();
-    console.log(currline.map((item) => item.attrs));
-    console.log(layerRef.current.toJSON());
+    const gh = layerRef.current.toJSON();
+    const asd = currline.map((item) => item.attrs);
+    console.log(gh);
+    /*   console.log(asd); */
+    const sa = await getBuilding('tututu');
+    console.log(sa.layout);
+    stageRef.current.add(Konva.Node.create(sa.layout), 'container');
+
+    /* await editBuilding({ userId: '520e27ef-8b4f-4ba8-a374-3fcacdfd350a', lotId: 'lot_023', layout: gh }, 'tututu'); */
   }, []);
 
   return (
     <Box display="flex" gap={4}>
       <Button onClick={saveStage}>кнопка</Button>
-      <Stage ref={stageRef} width={1000} height={800}>
+
+      <Stage ref={stageRef} id="container" width={1000} height={800}>
         <Layer ref={gridRef}>
           {calcLines.map((line, index) => (
             <Line key={index} points={line.points} stroke={line.stroke} strokeWidth={1} />

@@ -10,4 +10,5 @@ export interface WorldStoreProps {
   getWorlds: (payload: string) => void;
   getWorldMap: (payload: string) => void;
   getBuilding: (payload: string) => void;
+  editBuilding: (payload: components['schemas']['InputBuildingDto'], key: string) => Promise<string>;
 }

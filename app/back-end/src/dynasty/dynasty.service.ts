@@ -23,6 +23,7 @@ import { cloneDeep, remove, groupBy } from 'lodash';
 import { FileModel } from '@back/file/file.model';
 import { v4 } from 'uuid';
 import { I18nContext, I18nService } from 'nestjs-i18n';
+import { omit } from 'lodash';
 @Injectable()
 export class DynastyService {
   constructor(
@@ -462,8 +463,7 @@ export class DynastyService {
     });
     if (!sim)
       throw new NotFoundException(
-        `${this.i18n.t('exceptions.sim')} ${this.i18n.t('exceptions.notfound.masculine')}`,
-        { lang: I18nContext.current().lang },
+        `${(this.i18n.t('exceptions.sim'), { lang: I18nContext.current()?.lang })} ${(this.i18n.t('exceptions.notfound.masculine'), { lang: I18nContext.current()?.lang })}`,
       );
     return sim;
   }
@@ -523,11 +523,33 @@ export class DynastyService {
 
   async editSim(props: InputSimDto, simId: string) {
     const sim = await this.getSim(simId);
-    await sim.update(props);
+    const updateProps = omit(props, [
+      'parentFirstId',
+      'parentSecondId',
+      'childIds',
+      'partnersIds',
+      'traitsIds',
+      'skills',
+      'aspirations',
+      'careers',
+      'educationsIds',
+    ]);
+    await sim.update(updateProps);
   }
 
   async editTree(props: InputSimDto, simId: string) {
     const sim = await this.getSim(simId);
-    await sim.update(props);
+    const updateProps = omit(props, [
+      'parentFirstId',
+      'parentSecondId',
+      'childIds',
+      'partnersIds',
+      'traitsIds',
+      'skills',
+      'aspirations',
+      'careers',
+      'educationsIds',
+    ]);
+    await sim.update(updateProps);
   }
 }

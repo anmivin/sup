@@ -53,7 +53,7 @@ import * as path from 'path';
         { use: QueryResolver, options: ['lang'] },
         AcceptLanguageResolver,
       ],
-      typesOutputPath: path.join(__dirname, '/generated/i18n.generated.ts'),
+      /*       typesOutputPath: path.join(__dirname, '/generated/i18n.generated.ts'), */
     }),
     //.env
     JwtModule.registerAsync({

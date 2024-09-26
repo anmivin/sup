@@ -31,7 +31,9 @@ export class FileService {
   }
 
   async deleteFile(props: DeleteFileDto) {
-    const file = await this.fileModel.findOne({ where: { id: fileId } });
+    const file = await this.fileModel.findOne({
+      where: { id: props.file.path },
+    });
     if (!file) throw new Error('Not found');
     await this.minioService.deleteFile(props.type, file.name);
     await file.destroy();

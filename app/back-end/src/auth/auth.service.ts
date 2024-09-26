@@ -22,12 +22,11 @@ export class AuthService {
     const existingUser = await this.userService.findUser(userCredentials.name);
     if (!existingUser || !existingUser?.password)
       throw new NotFoundException(
-        `${this.i18n.t('exceptions.user', { lang: I18nContext.current().lang })} ${this.i18n.t('exceptions.notfound.masculine', { lang: I18nContext.current().lang })}`,
+        `${this.i18n.t('exceptions.user', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.notfound.masculine', { lang: I18nContext.current()?.lang })}`,
       );
     if (!bcrypt.compareSync(userCredentials.password, existingUser.password))
       throw new UnauthorizedException(
-        `${this.i18n.t('exceptions.invalid.masculine', { lang: I18nContext.current().lang })} ${this.i18n.t('exceptions.username', { lang: I18nContext.current().lang })} ${this.i18n.t('exceptions.and')}/${this.i18n.t('exceptions.or', { lang: I18nContext.current().lang })} ${this.i18n.t('exceptions.password')}`,
-        { lang: I18nContext.current().lang },
+        `${this.i18n.t('exceptions.invalid.masculine', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.username', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.and')}/${this.i18n.t('exceptions.or', { lang: I18nContext.current()?.lang })} ${(this.i18n.t('exceptions.password'), { lang: I18nContext.current()?.lang })}`,
       );
 
     const token = await this.tokenService.generateTokens({

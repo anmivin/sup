@@ -9,7 +9,7 @@
       {
         "include": "i18n/**/*",
         "watchAssets": true,
-        "outDir": "./dist/app/back-end"
+        "outDir": "./dist/app/back-end/src"
       }
     ]
   }

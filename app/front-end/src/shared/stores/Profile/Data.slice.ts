@@ -1,4 +1,4 @@
-import { decode } from 'jsonwebtoken';
+/* import { decode } from 'jsonwebtoken'; */
 import { StateCreator } from 'zustand';
 
 import { AccessTokenPayload, ProfileDataSliceProps, googleToken } from './Profile.types';
@@ -18,16 +18,18 @@ export const ProfileDataSlice: StateCreator<ProfileDataSliceProps, [], []> = (se
   login: async (payload) => {
     try {
       const token = await logInRequest(payload);
-      const decoded = decode(token) as AccessTokenPayload;
-      set({ userId: decoded.userId });
+      if (token) {
+        /*   const decoded = decode(token) as AccessTokenPayload;
+        set({ userId: decoded.userId }); */
+      }
     } catch (e) {}
   },
   loginWithGoogle: async (payload) => {
-    const decoded = decode(payload) as googleToken;
-    const userCreds = { email: decoded.email, avatar: decoded.picture ?? null, name: decoded.name };
+    /*  const decoded = decode(payload) as googleToken; */
+    /*    const userCreds = { email: decoded.email, avatar: decoded.picture ?? null, name: decoded.name }; */
     try {
-      const userId = await logInWithGoogleRequest(userCreds);
-      set({ userId });
+      /*       const userId = await logInWithGoogleRequest(userCreds);
+      set({ userId }); */
     } catch (e) {}
   },
   logout: () => {
