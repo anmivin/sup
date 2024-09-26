@@ -26,7 +26,7 @@ export class WorldService {
       include: [{ model: this.lotModel }, { model: this.neighbourhoodModel }],
     });
 
-    if (!world) throw new Error();
+    if (!world) new Error();
     const result = {
       filledMap: world.filledMapId,
       emptyMap: world.emptyMapId,

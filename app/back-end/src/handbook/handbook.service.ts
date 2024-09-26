@@ -13,6 +13,7 @@ import {
   OutputTrait4Dto,
   OutputTraitList4Dto,
 } from '@back/handbook/handbook.dto';
+import { I18nContext, I18nService } from 'nestjs-i18n';
 import { Achievement4Model } from '@back/handbook/models/models.4/achievements.model';
 import { Aspiration4Model } from '@back/handbook/models/models.4/aspirations.model';
 import { Career4Model } from '@back/handbook/models/models.4/careers.model';
@@ -40,6 +41,7 @@ export class HandbookService {
     @InjectModel(Skill4Model) private skillModel: typeof Skill4Model,
     @InjectModel(Trait4Model) private traitModel: typeof Trait4Model,
     @InjectModel(FileModel) private fileModel: typeof FileModel,
+    private readonly i18n: I18nService,
   ) {}
 
   async addIcon(item: any) {

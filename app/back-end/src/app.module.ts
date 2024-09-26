@@ -37,13 +37,13 @@ import { MinioModule } from './minio/minio.module';
 import { FileModel } from '@file/file.model';
 import { JwtModule } from '@nestjs/jwt';
 import { SimPositionModel } from './connection.models/SimPosition.model';
-/* import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
+import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
 import * as path from 'path';
- */
+
 //из енва значения поставить
 @Module({
   imports: [
-    /* I18nModule.forRoot({
+    I18nModule.forRoot({
       fallbackLanguage: 'ru',
       loaderOptions: {
         path: path.join(__dirname, '/i18n/'),
@@ -54,7 +54,7 @@ import * as path from 'path';
         AcceptLanguageResolver,
       ],
       typesOutputPath: path.join(__dirname, '/generated/i18n.generated.ts'),
-    }), */
+    }),
     //.env
     JwtModule.registerAsync({
       imports: [ConfigModule],
