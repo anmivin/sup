@@ -5,7 +5,7 @@ import {
 } from '@back/world/world.dto';
 import { WorldService } from '@back/world/world.service';
 import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
-import { Controller, Post, Get, Param, Body } from '@nestjs/common';
+import { Controller, Post, UseGuards, Get, Param, Body } from '@nestjs/common';
 import {
   ApiOperation,
   ApiTags,
@@ -13,8 +13,10 @@ import {
   ApiResponse,
   ApiBody,
 } from '@nestjs/swagger';
+import { AuthGuard } from '@back/guards/auth.guard';
 
 @ApiTags('World Module')
+@UseGuards(AuthGuard)
 @Controller('world')
 export class WorldController {
   constructor(private worldService: WorldService) {}

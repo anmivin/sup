@@ -37,7 +37,7 @@ export class TokenService {
     const refreshToken = await this.generateRefreshToken();
     await this.saveRefreshToken(refreshToken, creds.id);
 
-    return { accessToken, refreshToken };
+    return { accessToken };
   }
 
   async refreshToken(token: string) {

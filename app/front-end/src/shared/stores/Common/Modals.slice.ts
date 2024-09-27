@@ -25,6 +25,11 @@ export const ModalsSlice: StateCreator<ModalsProps, [], []> = (set) => ({
     set({ isSimDrawerOpen: payload });
   },
 
+  isBuildingModalOpen: false,
+  setIsBuildingModalOpen: (payload) => {
+    set({ isBuildingModalOpen: payload });
+  },
+
   signFormType: SIGN_FORM_VARIANTS.SignIn,
   setSignFormType: (signFormType) => {
     set({ signFormType });

@@ -18,9 +18,9 @@ export enum Abilities {
   TRACKER = 'TRACKER',
   TREES = 'TREES',
   WORLDS = 'WORLDS',
-
-  SAVE_SIM = 'SAVE_SIM',
-  SAVE_TREE = 'SAVE_TREE',
+  SIM = 'SIM',
+  TREE = 'TREE',
+  BUILDING = 'BUILDING',
 }
 
 export enum CrudAbility {
@@ -30,21 +30,52 @@ export enum CrudAbility {
   DELETE = 'DELETE',
 }
 
-type EmployeeNameType = { employeeName: string | null };
-type Subjects = Abilities | EmployeeNameType;
-
-export const ability = new PureAbility<AbilityTuple<CrudAbility, Subjects> | CrudAbility, MatchConditions>();
-type AppAbilityType = PureAbility<AbilityTuple<CrudAbility, Subjects>, MatchConditions>;
+export const ability = new PureAbility<AbilityTuple<CrudAbility, Abilities> | CrudAbility, MatchConditions>();
+type AppAbilityType = PureAbility<AbilityTuple<CrudAbility, Abilities>, MatchConditions>;
 const conditionsMatcher = (matchConditions: MatchConditions) => matchConditions;
 
 export const AppAbility = Ability as AbilityClass<AppAbilityType>;
 
 export function createAbility({ userInfo }: { userInfo: any | null }): AppAbilityType {
   const { can, build } = new AbilityBuilder(AppAbility);
+
   if (!userInfo) {
     can(CrudAbility.READ, Abilities.LOGIN);
+    can(CrudAbility.READ, Abilities.CHALLANGES);
+    can(CrudAbility.READ, Abilities.WORLDS);
   } else {
     if (userInfo.roles === USER_ROLES.simpleUser) {
+      can(CrudAbility.READ, Abilities.LOGOUT);
+
+      can(CrudAbility.READ, Abilities.PROFILE);
+      can(CrudAbility.UPDATE, Abilities.PROFILE);
+
+      can(CrudAbility.READ, Abilities.SETTINGS);
+      can(CrudAbility.UPDATE, Abilities.SETTINGS);
+
+      can(CrudAbility.READ, Abilities.TRACKER);
+      can(CrudAbility.UPDATE, Abilities.TRACKER);
+
+      can(CrudAbility.READ, Abilities.TREES);
+
+      can(CrudAbility.READ, Abilities.CHALLANGES);
+
+      can(CrudAbility.READ, Abilities.WORLDS);
+
+      can(CrudAbility.CREATE, Abilities.BUILDING);
+      can(CrudAbility.READ, Abilities.BUILDING);
+      can(CrudAbility.UPDATE, Abilities.BUILDING);
+      can(CrudAbility.DELETE, Abilities.BUILDING);
+
+      can(CrudAbility.CREATE, Abilities.TREE);
+      can(CrudAbility.READ, Abilities.TREE);
+      can(CrudAbility.UPDATE, Abilities.TREE);
+      can(CrudAbility.DELETE, Abilities.TREE);
+
+      can(CrudAbility.CREATE, Abilities.SIM);
+      can(CrudAbility.READ, Abilities.SIM);
+      can(CrudAbility.UPDATE, Abilities.SIM);
+      can(CrudAbility.DELETE, Abilities.SIM);
     }
   }
 

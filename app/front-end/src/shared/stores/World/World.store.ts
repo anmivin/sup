@@ -9,7 +9,7 @@ export const WorldStore = create<WorldStoreProps>((set) => ({
   loadingWorlds: false,
   selectedWorld: null,
   loadingSelectedWorld: false,
-  building: null,
+  selectedBuilding: null,
   loadingBuilding: false,
   getWorlds: async (payload) => {
     set({ loadingWorlds: true });
@@ -35,8 +35,8 @@ export const WorldStore = create<WorldStoreProps>((set) => ({
   getBuilding: async (key) => {
     set({ loadingBuilding: true });
     try {
-      const ad = await getBulding(key);
-      return ad;
+      const selectedBuilding = await getBulding(key);
+      set({ selectedBuilding });
     } catch (e) {
     } finally {
       set({ loadingBuilding: false });
@@ -44,12 +44,7 @@ export const WorldStore = create<WorldStoreProps>((set) => ({
   },
   editBuilding: async (payload, key) => {
     try {
-      console.log('sad');
-      const j = await saveBulding(payload, key);
-      console.log(j);
-      return j;
-    } catch (e) {
-      /*     console.log(e); */
-    }
+      await saveBulding(payload, key);
+    } catch (e) {}
   },
 }));

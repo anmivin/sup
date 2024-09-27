@@ -1,5 +1,7 @@
 import { Truthy } from 'lodash';
 
+import { PositionProps } from '@type/interfaces';
+
 export const isWithin = (posArray: number[], boxPosArray: number[]) => {
   return (
     posArray[0] > boxPosArray[0] - 100 &&
@@ -24,4 +26,11 @@ export const getEnumValues = <T>(enumeration: Record<string | number, T>) => {
   return objectKeys(enumeration)
     .filter((value) => isNaN(Number(value)))
     .map((key) => enumeration[key]);
+};
+
+export const getRoundedPosition = (position: PositionProps, interval: number) => {
+  return {
+    x: Math.round(position.x / interval) * interval,
+    y: Math.round(position.y / interval) * interval,
+  };
 };

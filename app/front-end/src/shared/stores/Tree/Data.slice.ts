@@ -13,11 +13,8 @@ import {
   fetchSimsForTree,
   fetchSimsForUser,
   fetchTreesForUser,
-  saveImageDebugRequest,
   saveImageRequest,
 } from './Tree.api';
-
-/* const { setErrorCommonAlertOpen, setSuccessCommonAlertOpen } = CommonStore(); */
 
 export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => ({
   defaultSims: null,
@@ -32,10 +29,10 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
     try {
       const trees = await fetchTreesForUser(userId);
       set({ trees });
-      set({ treesPending: false });
     } catch (e) {
       const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
       setErrorCommonAlertOpen(true);
+    } finally {
       set({ treesPending: false });
     }
   },
@@ -130,33 +127,38 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
   addChild: async () => {
     try {
     } catch (e) {
-      /*setErrorCommonAlertOpen(true); */
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
     }
   },
   removeChild: async () => {
     try {
     } catch (e) {
-      /*setErrorCommonAlertOpen(true); */
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
     }
   },
 
   addParent: async () => {
     try {
     } catch (e) {
-      /*setErrorCommonAlertOpen(true); */
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
     }
   },
   removeParent: async () => {
     try {
     } catch (e) {
-      /*setErrorCommonAlertOpen(true); */
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
     }
   },
 
   getDefaultSims: async () => {
     try {
     } catch (e) {
-      /*setErrorCommonAlertOpen(true); */
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
     }
   },
 
@@ -166,14 +168,16 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
       return file;
     } catch (e) {
       console.log('store', e);
-      /*setErrorCommonAlertOpen(true); */
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
     }
   },
   editImage: async (payload) => {
     try {
       await editImageRequest(payload);
     } catch (e) {
-      /*setErrorCommonAlertOpen(true); */
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
     }
   },
 
@@ -181,18 +185,8 @@ export const TreeDataSlice: StateCreator<TreeDataSliceProps, [], []> = (set) => 
     try {
       await deleteImageRequest(payload);
     } catch (e) {
-      /*setErrorCommonAlertOpen(true); */
-    }
-  },
-
-  saveImageDebug: async (payload, config) => {
-    try {
-      console.log('payload', payload);
-      console.log('config', config);
-      await saveImageDebugRequest(payload, config);
-    } catch (e) {
-      console.log('e', e);
-      /*setErrorCommonAlertOpen(true); */
+      const setErrorCommonAlertOpen = CommonStore.getState().setErrorCommonAlertOpen;
+      setErrorCommonAlertOpen(true);
     }
   },
 });

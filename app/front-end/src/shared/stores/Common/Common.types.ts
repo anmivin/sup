@@ -19,6 +19,9 @@ export interface ModalsProps {
   isSignModalOpen: boolean;
   setIsSignModalOpen: (payload: boolean) => void;
 
+  isBuildingModalOpen: boolean;
+  setIsBuildingModalOpen: (payload: boolean) => void;
+
   isTreeDrawerOpen: boolean;
   setIsTreeDrawerOpen: (payload: boolean) => void;
 

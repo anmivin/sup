@@ -1,25 +1,20 @@
 import { MutableRefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Layer, Line, Rect, Stage } from 'react-konva';
 
-import { Box, Button } from '@mui/material';
+import { getRoundedPosition } from '@helpers/functions';
+import { Box } from '@mui/material';
 import { useTheme } from '@mui/material';
 import Konva from 'konva';
-import { uniqueId } from 'lodash';
-import { useStore } from 'zustand';
 
-import DrawLayoutMenu from '@entities/DrawLayoutMenu';
 import { MODE } from '@entities/DrawLayoutMenu/DrawLayoutMenu.types';
 
 import { PositionProps } from '@type/interfaces';
-
-import { WorldStore } from '@stores/World/World.store';
 
 import { DrawLayoutProps } from './DrawLayout.types';
 
 const squareSize = 30;
 
 const DrawLayout = ({ sizes }: DrawLayoutProps) => {
-  const { editBuilding, getBuilding } = useStore(WorldStore);
   const theme = useTheme();
   const [initPos, setInitPos] = useState<PositionProps | null>(null);
   const [mode, setMode] = useState<MODE>(MODE.default);
@@ -27,8 +22,6 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
   const layerRef = useRef() as MutableRefObject<Konva.Layer>;
   const gridRef = useRef() as MutableRefObject<Konva.Layer>;
   const [currentRect, setCurrentRect] = useState<string | null>(null);
-  const [walls, setWalls] = useState<Konva.Line[]>([]);
-  const [objects, setObjects] = useState<Konva.Rect[]>([]);
 
   const calcLines = useMemo(() => {
     const arr = [];
@@ -48,13 +41,6 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
 
     return arr;
   }, [sizes]);
-
-  const getRoundedPosition = (position: PositionProps, interval: number) => {
-    return {
-      x: Math.round(position.x / interval) * interval,
-      y: Math.round(position.y / interval) * interval,
-    };
-  };
 
   const handleMouseDown = useCallback(
     (e: Konva.KonvaEventObject<MouseEvent>) => {
@@ -113,48 +99,6 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
     setInitPos(null);
   }, [mode]);
 
-  const onNodeClick = useCallback(
-    (newItem: Konva.Rect, transformer: Konva.Transformer) => {
-      if (mode === MODE.erase) {
-        newItem.destroy();
-        transformer.destroy();
-      } else setCurrentRect(newItem.id());
-    },
-    [mode],
-  );
-
-  const handleAddRect = (sizes: { x: number; y: number }) => {
-    const layer = layerRef.current;
-
-    const newItem = new Konva.Rect({
-      width: squareSize * sizes.x,
-      height: squareSize * sizes.y,
-      draggable: true,
-      stroke: theme.color.blue900,
-      fill: theme.color.blue500,
-      id: uniqueId(),
-    });
-
-    const transformer = new Konva.Transformer({
-      nodes: [newItem],
-      rotationSnaps: [0, 45, 90, 135, 180, 225, 270, 315, 360],
-      rotationSnapTolerance: 22.5,
-      resizeEnabled: false,
-      rotateAnchorOffset: 2,
-      borderEnabled: false,
-    });
-
-    newItem.on('dragmove', () => {
-      const position = getRoundedPosition({ x: newItem.x(), y: newItem.y() }, squareSize);
-      newItem.x(position.x);
-      newItem.y(position.y);
-    });
-
-    newItem.on('click', () => onNodeClick(newItem, transformer));
-
-    layer.add(newItem);
-    layer.add(transformer);
-  };
   const getMode = (mode: MODE) => {
     switch (mode) {
       case MODE.draw: {
@@ -172,24 +116,8 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
     stageRef.current.container().style.cursor = getMode(mode);
   }, [mode]);
 
-  const saveStage = useCallback(async () => {
-    const layer = layerRef.current;
-    const currline = layer.getChildren();
-    const gh = layerRef.current.toJSON();
-    const asd = currline.map((item) => item.attrs);
-    console.log(gh);
-    /*   console.log(asd); */
-    const sa = await getBuilding('tututu');
-    console.log(sa.layout);
-    stageRef.current.add(Konva.Node.create(sa.layout), 'container');
-
-    /* await editBuilding({ userId: '520e27ef-8b4f-4ba8-a374-3fcacdfd350a', lotId: 'lot_023', layout: gh }, 'tututu'); */
-  }, []);
-
   return (
     <Box display="flex" gap={4}>
-      <Button onClick={saveStage}>кнопка</Button>
-
       <Stage ref={stageRef} id="container" width={1000} height={800}>
         <Layer ref={gridRef}>
           {calcLines.map((line, index) => (
@@ -220,14 +148,6 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
           />
         </>
       )}
-
-      <DrawLayoutMenu
-        onAdd={handleAddRect}
-        onChangeMode={(mode) => {
-          setMode(mode);
-          layerRef.current.batchDraw();
-        }}
-      />
     </Box>
   );
 };

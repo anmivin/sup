@@ -13,7 +13,11 @@ export class AuthController {
   @Post('/login')
   @ApiOperation({ summary: 'Log In' })
   @ApiBody({ type: UserCredentials })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: { token: string },
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async login(
@@ -26,7 +30,7 @@ export class AuthController {
   }
 
   @Post('/signup')
-  @ApiOperation({ summary: 'Log In' })
+  @ApiOperation({ summary: 'Sign Up' })
   @ApiBody({ type: InputUserDto })
   @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })

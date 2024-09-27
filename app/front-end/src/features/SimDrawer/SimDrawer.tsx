@@ -111,55 +111,6 @@ const SimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimD
     return t(`data.${key}.name`, { ns: optionType });
   }, []);
 
-  const onUploadProgress = useCallback(
-    (fileKey: string) => (progressEvent: AxiosProgressEvent) => {
-      const { loaded, total } = progressEvent;
-      if (!total) return;
-      const progress = Math.floor((loaded / total) * 100);
-      setFiles((prev) =>
-        prev.map((item) =>
-          item.key === fileKey
-            ? {
-                ...item,
-                uploadProgress: progress,
-              }
-            : item,
-        ),
-      );
-
-      if (loaded == total) {
-        setFiles((prev) =>
-          prev.map((item) =>
-            item.key === fileKey
-              ? {
-                  ...item,
-                  uploadProgress: 100,
-                }
-              : item,
-          ),
-        );
-      }
-    },
-    [],
-  );
-  const onFileUpload = useCallback(async (file: File) => {
-    const fileKey = uniqueId();
-    setFiles((prev) => [...prev, { file: file, uploadProgress: 0, key: fileKey }]);
-    const config = {
-      onUploadProgress: onUploadProgress(fileKey),
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
-    };
-    try {
-      let fd = new FormData();
-      fd.append('file', file);
-      saveImage(fd, config);
-    } catch (e) {
-      console.log(e);
-    }
-  }, []);
-
   return (
     <DefaultDrawer
       onClose={onCloseModal}

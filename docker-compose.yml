@@ -1,0 +1,83 @@
+version: "1.0"
+
+services:
+  backend:
+    container_name: backend
+    stdin_open: true
+    build:
+      context: ./app/back-end
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/hackerssite
+    volumes:
+      - .:/home/node/app
+    working_dir: /home/node/app
+    command: npm run dev
+    depends_on:
+      - db
+
+    restart: always
+    networks:
+      - inner
+
+  db:
+    image: postgres:latest
+    container_name: db
+    stdin_open: true
+    hostname: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_DB: sup
+    volumes:
+      - postgres:/var/lib/postgres/data
+    networks:
+      - inner
+
+  client:
+    container_name: frontend
+    stdin_open: true
+    build:
+      context: ./app/front-end
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/hackerssite
+    volumes:
+      - .:/home/node/app
+    working_dir: /home/node/app
+    command: npm run dev
+    depends_on:
+      - db
+
+    restart: always
+    networks:
+      - inner
+
+  translations:
+    image: postgres:latest
+    container_name: translations
+    stdin_open: true
+    hostname: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_DB: translations
+    volumes:
+      - postgres:/var/lib/postgres/translations
+    networks:
+      - inner
+
+volumes:
+  postgres:
+networks:
+  inner:
