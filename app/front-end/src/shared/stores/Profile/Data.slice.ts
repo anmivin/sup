@@ -6,7 +6,7 @@ import { AccessTokenPayload, ProfileDataSliceProps, googleToken } from './Profil
 import { createUser, logInRequest, logInWithGoogleRequest } from './Profile.api';
 
 export const ProfileDataSlice: StateCreator<ProfileDataSliceProps, [], []> = (set) => ({
-  userId: null,
+  user: null,
   token: null,
   role: null,
   createUser: async (payload) => {
@@ -20,7 +20,7 @@ export const ProfileDataSlice: StateCreator<ProfileDataSliceProps, [], []> = (se
       const token = await logInRequest(payload);
       if (token) {
         /*   const decoded = decode(token) as AccessTokenPayload;
-        set({ userId: decoded.userId }); */
+        set({ user: {id: decoded.userId, role: decoded.role} }); */
       }
     } catch (e) {}
   },

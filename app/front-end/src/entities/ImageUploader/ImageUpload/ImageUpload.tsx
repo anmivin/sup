@@ -20,7 +20,6 @@ const ImageUpload = ({ onImageAdd, value, type }: ImageUploadProps) => {
 
       const image = await onImageAdd(fd, type, uploadFileConfig(setUploadProgress));
       if (image) {
-        setValue('imageId', image.id);
         setImg(image.url);
       }
     } catch (e) {
@@ -38,6 +37,7 @@ const ImageUpload = ({ onImageAdd, value, type }: ImageUploadProps) => {
 
   return (
     <>
+      <CircularProgress value={uploadProgress} />
       {value ? (
         <ExistImageContainer $img={value /*  ? value : URL.createObjectURL(img!) */}>
           <Circle />

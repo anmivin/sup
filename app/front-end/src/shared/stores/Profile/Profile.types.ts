@@ -2,6 +2,11 @@ import { components } from '@api/Api';
 
 import { GAME_PART } from '@type/enums';
 
+export interface AccessTokenPayload {
+  userId: string;
+  role: string;
+}
+
 export interface ProfileStateSliceProps {
   gamePart: GAME_PART;
   setGamePart: (val: GAME_PART) => void;
@@ -11,7 +16,7 @@ export interface ProfileStateSliceProps {
 }
 
 export interface ProfileDataSliceProps {
-  userId: string | null;
+  user: AccessTokenPayload | null;
   token: string | null;
   role: string | null;
 
@@ -25,9 +30,4 @@ export interface googleToken {
   email: string;
   name: string;
   picture?: string;
-}
-
-export interface AccessTokenPayload {
-  userId: string;
-  role: string;
 }
