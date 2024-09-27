@@ -514,6 +514,16 @@ export class DynastyService {
     return simId;
   }
 
+  async getTree(treeId) {
+    const tree = await this.treeModel.findOne({
+      where: { id: treeId },
+    });
+    if (!tree)
+      throw new NotFoundException(
+        `${(this.i18n.t('exceptions.tree'), { lang: I18nContext.current()?.lang })} ${(this.i18n.t('exceptions.notfound.neuter'), { lang: I18nContext.current()?.lang })}`,
+      );
+    return tree;
+  }
   async createTree(props: InputTreeDto) {
     const treeId = v4();
 
@@ -537,19 +547,9 @@ export class DynastyService {
     await sim.update(updateProps);
   }
 
-  async editTree(props: InputSimDto, simId: string) {
-    const sim = await this.getSim(simId);
-    const updateProps = omit(props, [
-      'parentFirstId',
-      'parentSecondId',
-      'childIds',
-      'partnersIds',
-      'traitsIds',
-      'skills',
-      'aspirations',
-      'careers',
-      'educationsIds',
-    ]);
-    await sim.update(updateProps);
+  async editTree(props: InputTreeDto, treeId: string) {
+    const tree = await this.getTree(treeId);
+
+    await tree.update(props);
   }
 }

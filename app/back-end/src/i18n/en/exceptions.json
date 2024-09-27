@@ -15,6 +15,7 @@
     "single": "already exists",
     "plural": "already exist"
   },
+  "unauthorized": "unauthorized",
 
   "password": "password",
   "user": "user",
@@ -24,5 +25,7 @@
   "or": "or",
   "sim": "sim",
 
-  "skill": "skill"
+  "skill": "skill",
+  "trait": "trait",
+  "aspiration": "aspiration"
 }

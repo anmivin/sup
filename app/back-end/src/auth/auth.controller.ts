@@ -13,7 +13,11 @@ export class AuthController {
   @Post('/login')
   @ApiOperation({ summary: 'Log In' })
   @ApiBody({ type: UserCredentials })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
+  @ApiResponse({
+    status: SuccessStatus.OK,
+    description: 'Success',
+    type: { token: string },
+  })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
   async login(
@@ -21,12 +25,12 @@ export class AuthController {
     @Res({ passthrough: true }) response: Response,
   ): Promise<string> {
     const data = await this.authService.login(loginUserDto);
-    response.cookie('refresh', data.refresh_token, { httpOnly: true });
-    return data.access_token;
+    response.cookie('access', data.access_token, { httpOnly: true });
+    return data.id;
   }
 
   @Post('/signup')
-  @ApiOperation({ summary: 'Log In' })
+  @ApiOperation({ summary: 'Sign Up' })
   @ApiBody({ type: InputUserDto })
   @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
@@ -36,8 +40,8 @@ export class AuthController {
     @Res({ passthrough: true }) response: Response,
   ): Promise<string> {
     const data = await this.authService.signup(loginUserDto);
-    response.cookie('refresh', data.refresh_token, { httpOnly: true });
-    return data.access_token;
+    response.cookie('access', data.access_token, { httpOnly: true });
+    return data.id;
   }
 
   @Post('/google-login')
@@ -51,18 +55,7 @@ export class AuthController {
     @Res({ passthrough: true }) response: Response,
   ): Promise<string> {
     const data = await this.authService.loginGoogle(loginUserDto);
-    response.cookie('refresh', data.refresh_token, { httpOnly: true });
-    return data.access_token;
-  }
-
-  @Post('/token')
-  @ApiOperation({ summary: 'Refresh' })
-  @ApiBody({ type: UserCredentials })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
-  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
-  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async refreshToken(@Body() token: string): Promise<string> {
-    const data = await this.authService.refreshToken(token);
-    return data;
+    response.cookie('access', data.access_token, { httpOnly: true });
+    return data.id;
   }
 }

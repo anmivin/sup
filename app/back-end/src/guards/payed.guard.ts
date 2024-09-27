@@ -19,7 +19,10 @@ export class PayedGuard implements CanActivate {
   ): boolean | Promise<boolean> | Observable<boolean> {
     const request: Request = context.switchToHttp().getRequest();
     const token = this.extractToken(request);
-    if (!token) throw new UnauthorizedException('as');
+    if (!token)
+      throw new UnauthorizedException(
+        `${this.i18n.t('exceptions.unauthorized', { lang: I18nContext.current()?.lang })} `,
+      );
     try {
       const payload = this.jwtService.verify(token);
       if (payload.role === 'payed') return true;
@@ -27,7 +30,7 @@ export class PayedGuard implements CanActivate {
     } catch (e) {
       console.error(e);
     }
-    return true;
+    return false;
   }
 
   private extractToken(request: Request): string | undefined {

@@ -1,4 +1,4 @@
-import { existsSync } from 'fs';
+import { existsSync, unlink } from 'fs';
 import * as Minio from 'minio';
 import path from 'path';
 
@@ -38,41 +38,37 @@ const policy = (bucketName: string) => {
   };
 };
 
-const existsBucket = async (bucketName: string) => {
-  const hasBucketName = await minioClient.bucketExists(bucketName);
-  if (!hasBucketName) await minioClient.makeBucket(bucketName);
+const creteBucket = async (bucketName: string) => {
+  const existedBucket = await minioClient.bucketExists(bucketName);
+  if (!existedBucket) await minioClient.makeBucket(bucketName);
   const bucketPolicy = JSON.stringify(policy(bucketName));
-  console.log(bucketPolicy);
   await minioClient.setBucketPolicy(bucketName, bucketPolicy);
 };
 
-/* const deleteFilesFromDisk = (files: FoundFile[]) => {
+const deleteFiles = (files: { name: string; path: string }[]) => {
   files.map((file) => {
-    unlink(path.resolve(UPLOADS_PATH, file.path), (error) => {
-      if (error) {
-        console.error('Ошибка при удалении файла:', error);
+    unlink(path.resolve(UPLOADS_PATH, file.path), (err) => {
+      if (err) {
+        console.error(err);
       }
     });
   });
-}; */
+};
 
-const moveFromLocalStorageToS3 = async () => {
+const moveFileToMinio = async () => {
   try {
-    const notFoundFiles: string[] = [];
+    const notFoundFiles: { name: string; type: string }[] = [];
     const foundFiles: { name: string; path: string }[] = [];
     const achievementIcons = achievements.map((item) => item.icon);
+    await creteBucket('icons');
     await Promise.all(
       achievementIcons.map(async (item) => {
         const filePath = path.resolve(UPLOADS_PATH, 'achievements/', item);
 
         if (!existsSync(filePath)) {
-          notFoundFiles.push(item);
-
-          console.warn(`Файл не найден: ${filePath}`);
+          notFoundFiles.push({ name: item, type: 'achievements' });
           return;
         }
-
-        await existsBucket('icons');
 
         await minioClient.fPutObject('icons', `achievements_${item}`, filePath);
 
@@ -89,13 +85,9 @@ const moveFromLocalStorageToS3 = async () => {
         const filePath = path.resolve(UPLOADS_PATH, 'aspirations/', item);
 
         if (!existsSync(filePath)) {
-          notFoundFiles.push(item);
-
-          console.warn(`Файл не найден: ${filePath}`);
+          notFoundFiles.push({ name: item, type: 'aspirations' });
           return;
         }
-
-        await existsBucket('icons');
 
         await minioClient.fPutObject('icons', `aspirations_${item}`, filePath);
 
@@ -112,13 +104,9 @@ const moveFromLocalStorageToS3 = async () => {
         const filePath = path.resolve(UPLOADS_PATH, 'skills/', item);
 
         if (!existsSync(filePath)) {
-          notFoundFiles.push(item);
-
-          console.warn(`Файл не найден: ${filePath}`);
+          notFoundFiles.push({ name: item, type: 'skills' });
           return;
         }
-
-        await existsBucket('icons');
 
         await minioClient.fPutObject('icons', `skills_${item}`, filePath);
 
@@ -135,13 +123,9 @@ const moveFromLocalStorageToS3 = async () => {
         const filePath = path.resolve(UPLOADS_PATH, 'traits/', item);
 
         if (!existsSync(filePath)) {
-          notFoundFiles.push(item);
-
-          console.warn(`Файл не найден: ${filePath}`);
+          notFoundFiles.push({ name: item, type: 'traits' });
           return;
         }
-
-        await existsBucket('icons');
 
         await minioClient.fPutObject('icons', `traits_${item}`, filePath);
 
@@ -158,13 +142,9 @@ const moveFromLocalStorageToS3 = async () => {
         const filePath = path.resolve(UPLOADS_PATH, 'careers/', item);
 
         if (!existsSync(filePath)) {
-          notFoundFiles.push(item);
-
-          console.warn(`Файл не найден: ${filePath}`);
+          notFoundFiles.push({ name: item, type: 'careers' });
           return;
         }
-
-        await existsBucket('icons');
 
         await minioClient.fPutObject('icons', `careers_${item}`, filePath);
 
@@ -174,33 +154,18 @@ const moveFromLocalStorageToS3 = async () => {
         });
       }),
     );
-    console.info(
-      '-------------------------------------------------------------------------',
-    );
-    console.info(
-      `Удалось перенести в объектное хранилище ${foundFiles.length} файлов`,
-    );
-    console.info(
-      '-------------------------------------------------------------------------',
-    );
-    console.info(
-      `НЕ удалось перенести в объектное хранилище ${notFoundFiles.length} файлов`,
-    );
-    console.info(
-      '-------------------------------------------------------------------------',
-    );
-
-    /* deleteFilesFromDisk(foundFiles); */
+    console.warn(notFoundFiles.map((file) => `${file.name}-${file.type}\n`));
+    /* deleteFiles(foundFiles); */
   } catch (error) {
     throw error;
   }
 };
 
-moveFromLocalStorageToS3()
+moveFileToMinio()
   .then(() => {
     process.exit(0);
   })
   .catch((err) => {
-    console.error('Ошибка при переносе файлов. Причина:', err.original);
+    console.error(err);
     process.exit(1);
   });

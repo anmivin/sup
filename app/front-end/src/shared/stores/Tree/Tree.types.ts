@@ -44,6 +44,4 @@ export interface TreeDataSliceProps {
   ) => Promise<components['schemas']['FileResponseDTO'] | undefined>;
   editImage: (payload: components['schemas']['EditFileDto']) => void;
   deleteImage: (payload: components['schemas']['DeleteFileDto']) => void;
-
-  saveImageDebug: (payload: components['schemas']['Debug'], config?: AxiosRequestConfig) => void;
 }

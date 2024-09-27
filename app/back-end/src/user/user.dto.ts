@@ -4,7 +4,7 @@ export class InputUserDto {
   @ApiProperty({ description: 'User name', nullable: false })
   name: string;
   @ApiProperty({ description: 'User password', nullable: true })
-  password: string;
+  password?: string;
   @ApiProperty({ description: 'User email', nullable: true })
   email: string | null;
   @ApiProperty({ description: 'User avatar', nullable: true })
@@ -18,6 +18,8 @@ export class EditUserDto {
   name: string;
   @ApiProperty({ description: 'User email', nullable: true })
   email: string | null;
+  @ApiProperty({ description: 'User avatar', nullable: true })
+  avatar?: string | null;
 }
 
 export class UserCredentials {

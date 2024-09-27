@@ -37,18 +37,12 @@ export class MinioService {
     });
   }
 
-  async dosmth() {
-    return 'working';
-  }
   async createBucket(bucket: string) {
-    console.log('createBucket', bucket);
-    const existed = await this.minioClient.bucketExists(bucket);
-    console.log('existed', existed);
-    if (!existed) await this.minioClient.makeBucket(bucket);
+    const existedBucket = await this.minioClient.bucketExists(bucket);
+    if (!existedBucket) await this.minioClient.makeBucket(bucket);
     const bucketPolicy = JSON.stringify(policy(bucket));
-    console.log(bucketPolicy);
     await this.minioClient.setBucketPolicy(bucket, bucketPolicy);
-    return `Bucket ${bucket} ${existed ? 'already exist' : 'created'}`;
+    return `Bucket ${bucket} ${existedBucket ? 'already exist' : 'created'}`;
   }
 
   async saveFile(bucket: string, file: Express.Multer.File) {
@@ -60,7 +54,7 @@ export class MinioService {
       file.buffer,
       file.size,
       (error) => {
-        if (error) throw error;
+        if (error) throw new Error('');
       },
     );
     const minioPath = this.configService.get('minio_url');

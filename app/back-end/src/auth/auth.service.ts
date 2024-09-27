@@ -3,6 +3,8 @@ import { InputUserDto } from '@back/user/user.dto';
 import { UsersService } from '@back/user/user.service';
 import { I18nContext, I18nService } from 'nestjs-i18n';
 import { TokenService } from '@back/token/token.service';
+
+import { InjectModel } from '@nestjs/sequelize';
 import {
   Injectable,
   NotFoundException,
@@ -35,7 +37,7 @@ export class AuthService {
     });
     return {
       access_token: token.accessToken,
-      refresh_token: token.refreshToken,
+      id: existingUser.id,
     };
   }
 
@@ -47,7 +49,7 @@ export class AuthService {
     });
     return {
       access_token: token.accessToken,
-      refresh_token: token.refreshToken,
+      id: user.id,
     };
   }
 
@@ -60,7 +62,7 @@ export class AuthService {
         {
           name: userCredentials.name,
           email: userCredentials.email,
-          password: null,
+          password: undefined,
         },
         'google',
       );
@@ -70,7 +72,7 @@ export class AuthService {
       });
       return {
         access_token: token.accessToken,
-        refresh_token: token.refreshToken,
+        id: user.id,
       };
     } else {
       const token = await this.tokenService.generateTokens({
@@ -79,7 +81,7 @@ export class AuthService {
       });
       return {
         access_token: token.accessToken,
-        refresh_token: token.refreshToken,
+        id: existingUser.id,
       };
     }
   }

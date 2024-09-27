@@ -37,7 +37,7 @@ export class TokenService {
     const refreshToken = await this.generateRefreshToken();
     await this.saveRefreshToken(refreshToken, creds.id);
 
-    return { accessToken, refreshToken };
+    return { accessToken };
   }
 
   async refreshToken(token: string) {
@@ -50,7 +50,10 @@ export class TokenService {
 
     const info = this.jwtService.verify(token);
 
-    if (!existingToken) throw new UnauthorizedException('');
+    if (!existingToken)
+      throw new UnauthorizedException(
+        `${this.i18n.t('exceptions.unauthorized', { lang: I18nContext.current()?.lang })}`,
+      );
     await existingToken.destroy();
 
     return await this.generateTokens({ id: info.id, role: info.role });

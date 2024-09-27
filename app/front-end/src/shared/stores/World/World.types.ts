@@ -5,10 +5,10 @@ export interface WorldStoreProps {
   loadingWorlds: boolean;
   selectedWorld: components['schemas']['OutputWorldMapDto'] | null;
   loadingSelectedWorld: boolean;
-  building: any;
+  selectedBuilding: any;
   loadingBuilding: boolean;
   getWorlds: (payload: string) => void;
   getWorldMap: (payload: string) => void;
   getBuilding: (payload: string) => void;
-  editBuilding: (payload: components['schemas']['InputBuildingDto'], key: string) => Promise<string>;
+  editBuilding: (payload: components['schemas']['InputBuildingDto'], key: string) => void;
 }
