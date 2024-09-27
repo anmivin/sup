@@ -43,7 +43,12 @@ export class InputBuildingDto {
   @ApiProperty()
   userId: string;
   @ApiProperty()
-  lotId: string;
+  layout: JSON;
+}
+
+export class OutputBuildingDto {
+  @ApiProperty()
+  declare key: string;
   @ApiProperty()
   layout: JSON;
 }

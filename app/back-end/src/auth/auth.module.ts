@@ -9,6 +9,7 @@ import { Module } from '@nestjs/common';
 import { PassportModule } from '@nestjs/passport';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { TokenModel } from '@back/token/token.model';
+
 @Module({
   imports: [
     SequelizeModule.forFeature([UserModel, PackModel, AvatarModel, TokenModel]),

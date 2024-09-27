@@ -18,8 +18,8 @@ async function bootstrap() {
       origin: true,
     }),
   );
-
-  /*   app.useGlobalGuards(new JwtAuthGuard()); */
+  /* 
+  app.useGlobalGuards(new JwtAuthGuard()); */
   const config = new DocumentBuilder()
     .setTitle('sup Swagger')
     .setDescription('sup API description')

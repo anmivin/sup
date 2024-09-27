@@ -1,22 +1,20 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 
 import { Box } from '@mui/material';
-
-import Loader from '@entities/Loader';
 
 import { WorldStore } from '@stores/World/World.store';
 
 import { StyledSvgPath } from './WorldMap.styled';
 
+import { Abilities, CrudAbility } from '../../shared/ability/Ability';
+
 const WorldMap = () => {
-  const { selectedWorld, loadingSelectedWorld } = WorldStore();
+  const { selectedWorld } = WorldStore();
   const [imgRef, setImgRef] = useState<HTMLDivElement | null>(null);
   const [selectedLot, setSelectedLot] = useState<string | null>(null);
 
   const path = useMemo(() => {
-    return selectedWorld?.lots
-      .filter(({ coordinates }) => coordinates.length)
-      .map((lot) => ({ path: lot.coordinates, key: lot.key }));
+    return selectedWorld?.lots.filter(({ svgPath }) => !!svgPath).map((lot) => ({ path: lot.svgPath, key: lot.key }));
   }, [selectedWorld]);
 
   const currentSizes = useMemo(() => {
@@ -26,12 +24,6 @@ const WorldMap = () => {
     };
   }, [imgRef]);
 
-  useEffect(() => {
-    console.log(imgRef?.clientHeight);
-    console.log(imgRef?.offsetHeight);
-  }, [imgRef]);
-
-  if (loadingSelectedWorld) return <Loader />;
   return (
     <>
       {!selectedWorld ? (
@@ -42,23 +34,25 @@ const WorldMap = () => {
             position: 'relative',
           }}
         >
-          <svg
-            width={currentSizes.currentWidth}
-            height={currentSizes.currentHeight}
-            viewBox={`0 0 ${1920} ${1080}`}
-            style={{ position: 'absolute' }}
-          >
-            {path?.map((p, index) => (
-              <StyledSvgPath
-                key={index}
-                d={p.path}
-                $selected={selectedLot === p.key}
-                onMouseOver={() => setSelectedLot(p.key)}
-                onMouseLeave={() => setSelectedLot(null)}
-                onClick={() => {}}
-              />
-            ))}
-          </svg>
+          <Can do={CrudAbility.READ} on={Abilities.BUILDING}>
+            <svg
+              width={currentSizes.currentWidth}
+              height={currentSizes.currentHeight}
+              viewBox={`0 0 ${1920} ${1080}`}
+              style={{ position: 'absolute' }}
+            >
+              {path?.map((p, index) => (
+                <StyledSvgPath
+                  key={index}
+                  d={p.path}
+                  $selected={selectedLot === p.key}
+                  onMouseOver={() => setSelectedLot(p.key)}
+                  onMouseLeave={() => setSelectedLot(null)}
+                  onClick={() => {}}
+                />
+              ))}
+            </svg>
+          </Can>
 
           <img
             ref={setImgRef}
