@@ -11,7 +11,7 @@ import { ImageUploadProps } from './ImageUpload.types';
 
 const ImageUpload = ({ onImageAdd, value, type }: ImageUploadProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
-  const [img, setImg] = useState<File | null>(null);
+  const [img, setImg] = useState<string | null>(value);
   const [uploadProgress, setUploadProgress] = useState(0);
   const onFileUpload = useCallback(async (file: File) => {
     try {
@@ -30,7 +30,6 @@ const ImageUpload = ({ onImageAdd, value, type }: ImageUploadProps) => {
   const handleInputChange = useCallback<ChangeEventHandler<HTMLInputElement>>((event) => {
     if (event.target.files) {
       const file = event.target.files[0];
-      setImg(file);
       onFileUpload(file);
     }
   }, []);
@@ -38,8 +37,8 @@ const ImageUpload = ({ onImageAdd, value, type }: ImageUploadProps) => {
   return (
     <>
       <CircularProgress value={uploadProgress} />
-      {value ? (
-        <ExistImageContainer $img={value /*  ? value : URL.createObjectURL(img!) */}>
+      {img ? (
+        <ExistImageContainer $img={img}>
           <Circle />
         </ExistImageContainer>
       ) : (

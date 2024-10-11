@@ -73,12 +73,6 @@ const Challenges = () => {
   return (
     <>
       <DrawLayout sizes={{ x: 20, y: 30 }} />
-      <ImageUpload
-        value={img}
-        onImageAdd={(files) => {
-          onFileUpload(files[0]);
-        }}
-      />
       <ImageDrop onFilesAdd={onAdd} />
       <ImageList imageList={files} /* onImageRemove={() => {}} */ onImageClick={() => setOpen(true)} />
       {!!files.length && (

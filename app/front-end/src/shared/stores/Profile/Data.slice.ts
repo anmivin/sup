@@ -6,9 +6,10 @@ import { AccessTokenPayload, ProfileDataSliceProps, googleToken } from './Profil
 import { createUser, logInRequest, logInWithGoogleRequest } from './Profile.api';
 
 export const ProfileDataSlice: StateCreator<ProfileDataSliceProps, [], []> = (set) => ({
-  user: null,
-  token: null,
+  userId: null,
   role: null,
+  token: null,
+
   createUser: async (payload) => {
     try {
       const userId = await createUser(payload);
@@ -20,7 +21,7 @@ export const ProfileDataSlice: StateCreator<ProfileDataSliceProps, [], []> = (se
       const token = await logInRequest(payload);
       if (token) {
         /*   const decoded = decode(token) as AccessTokenPayload;
-        set({ user: {id: decoded.userId, role: decoded.role} }); */
+        set({ userId: decoded.userId, role: decoded.role }); */
       }
     } catch (e) {}
   },
@@ -28,11 +29,11 @@ export const ProfileDataSlice: StateCreator<ProfileDataSliceProps, [], []> = (se
     /*  const decoded = decode(payload) as googleToken; */
     /*    const userCreds = { email: decoded.email, avatar: decoded.picture ?? null, name: decoded.name }; */
     try {
-      /*       const userId = await logInWithGoogleRequest(userCreds);
-      set({ userId }); */
+      /*       const token = await logInWithGoogleRequest(userCreds);
+              set({ userId: decoded.userId, role: decoded.role }); */
     } catch (e) {}
   },
   logout: () => {
-    set({ userId: null });
+    set({ userId: null, role: null });
   },
 });

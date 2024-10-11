@@ -1,0 +1,67 @@
+version: "3"
+
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./app/back-end
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3001:3001"
+    depends_on:
+      - backend-db
+
+  backend-db:
+    container_name: backend-db
+    image: postgres:latest
+    hostname: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_DB: sup
+    volumes:
+      - backend-db:/var/lib/postgres/data
+
+  translations:
+    container_name: translations
+    build:
+      context: ./app/translation-service
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3002:3002"
+    depends_on:
+      - translations-db
+
+  translations-db:
+    container_name: translations-db
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_DB: translations
+    volumes:
+      - translations-db:/var/lib/postgres/data
+
+  client:
+    container_name: frontend
+    build:
+      context: ./app/front-end
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - translations
+      - backend
+
+volumes:
+  backend-db:
+  translations-db:
