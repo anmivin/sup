@@ -4,7 +4,6 @@ export const StyledBox = styled(Box)`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: ${({ theme }) => theme.color.secondaryMain};
   padding: ${({ theme }) => theme.spacing(2)};
   border-radius: ${({ theme }) => theme.radius.lg};

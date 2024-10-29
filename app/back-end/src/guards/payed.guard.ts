@@ -34,6 +34,6 @@ export class PayedGuard implements CanActivate {
   }
 
   private extractToken(request: Request): string | undefined {
-    return request.headers.authorization?.split(' ')[1];
+    return request.cookies['access'];
   }
 }

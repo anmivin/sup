@@ -15,11 +15,13 @@ import { WorldStore } from '@stores/World/World.store';
 
 import DefaultModal from '@ui/Modal';
 
+import { Abilities, Can, CrudAbility } from '../../shared/ability/Ability';
+
 const squareSize = 30;
 
 const LayoutModal = () => {
-  const { editBuilding, getBuilding } = useStore(WorldStore);
-  const stageRef = useRef() as MutableRefObject<Konva.Stage>;
+  const { editBuilding } = useStore(WorldStore);
+
   const layerRef = useRef() as MutableRefObject<Konva.Layer>;
 
   const theme = useTheme();
@@ -71,23 +73,20 @@ const LayoutModal = () => {
   };
 
   const saveStage = useCallback(async () => {
-    const layer = layerRef.current;
-    const currline = layer.getChildren();
-    const gh = layerRef.current.toJSON();
-    const asd = currline.map((item) => item.attrs);
-    console.log(gh);
-    /*   console.log(asd); */
-    const sa = await getBuilding('tututu');
-    console.log(sa.layout);
-    stageRef.current.add(Konva.Node.create(sa.layout), 'container');
-
-    /* await editBuilding({ userId: '520e27ef-8b4f-4ba8-a374-3fcacdfd350a', lotId: 'lot_023', layout: gh }, 'tututu'); */
+    const layout = layerRef.current.toJSON();
+    await editBuilding({ userId: '520e27ef-8b4f-4ba8-a374-3fcacdfd350a', layout: layout }, 'tututu');
   }, []);
 
   return (
-    <DefaultModal header="sdsadad" open={true} onClose={() => {}}>
+    <DefaultModal header="Билдинг" open={true} onClose={() => {}}>
       <>
-        <DrawLayout sizes={{ x: 20, y: 20 }} />
+        <DrawLayout
+          sizes={{ x: 20, y: 20 }}
+          layerRef={layerRef}
+          mode={mode}
+          currentRect={currentRect}
+          setCurrentRect={setCurrentRect}
+        />
         <DrawLayoutMenu
           onAdd={handleAddRect}
           onChangeMode={(mode) => {
@@ -95,7 +94,9 @@ const LayoutModal = () => {
             layerRef.current.batchDraw();
           }}
         />
-        <Button onClick={saveStage}>кнопка</Button>
+        <Can do={CrudAbility.UPDATE} on={Abilities.BUILDING}>
+          <Button onClick={saveStage}>кнопка</Button>
+        </Can>
       </>
     </DefaultModal>
   );

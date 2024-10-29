@@ -150,3 +150,9 @@ export enum PUBLIC_BUCKET_NAMES {
   TreeImage = 'treeimage',
   Debug = 'debug',
 }
+
+export enum USER_ROLES {
+  loggedOut = 'loggedOut',
+  simpleUser = 'simple',
+  uberUser = 'uberUser',
+}

@@ -11,6 +11,7 @@ import { Trait4Model } from '@back/handbook/models/models.4/traits.model';
 import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { FileModel } from '@file/file.model';
+import { TokenModule } from '@back/token/token.module';
 @Module({
   imports: [
     SequelizeModule.forFeature([
@@ -24,6 +25,7 @@ import { FileModel } from '@file/file.model';
       Trait4Model,
       FileModel,
     ]),
+    TokenModule,
   ],
   providers: [HandbookService],
   controllers: [HandbookController],

@@ -63,5 +63,4 @@ RUN npm run migration:run
 
 EXPOSE 3001
 
-CMD [ "node", "dist/app/back-end/src/main.js" ]
-CMD ['npm', 'run', 'start']
+CMD ["npm", "run", "start"]

@@ -3,11 +3,7 @@ import { createContext } from 'react';
 import { Ability, AbilityBuilder, AbilityClass, AbilityTuple, MatchConditions, PureAbility } from '@casl/ability';
 import { createContextualCan } from '@casl/react';
 
-enum USER_ROLES {
-  loggedOut = 'loggedOut',
-  simpleUser = 'simpleUser',
-  uberUser = 'uberUser',
-}
+import { USER_ROLES } from '@type/enums';
 
 export enum Abilities {
   CHALLANGES = 'CHALLANGES',
@@ -20,7 +16,10 @@ export enum Abilities {
   WORLDS = 'WORLDS',
   SIM = 'SIM',
   TREE = 'TREE',
+  WORLD = 'WORLD',
   BUILDING = 'BUILDING',
+  RANDOMIZER = 'RANDOMIZER',
+  HELP = 'HELP',
 }
 
 export enum CrudAbility {
@@ -36,15 +35,15 @@ const conditionsMatcher = (matchConditions: MatchConditions) => matchConditions;
 
 export const AppAbility = Ability as AbilityClass<AppAbilityType>;
 
-export function createAbility({ userInfo }: { userInfo: any | null }): AppAbilityType {
+export function createAbility(role: USER_ROLES | null): AppAbilityType {
   const { can, build } = new AbilityBuilder(AppAbility);
 
-  if (!userInfo) {
+  if (!role) {
     can(CrudAbility.READ, Abilities.LOGIN);
     can(CrudAbility.READ, Abilities.CHALLANGES);
     can(CrudAbility.READ, Abilities.WORLDS);
   } else {
-    if (userInfo.roles === USER_ROLES.simpleUser) {
+    if ([USER_ROLES.simpleUser, USER_ROLES.uberUser].includes(role)) {
       can(CrudAbility.READ, Abilities.LOGOUT);
 
       can(CrudAbility.READ, Abilities.PROFILE);
@@ -60,7 +59,10 @@ export function createAbility({ userInfo }: { userInfo: any | null }): AppAbilit
 
       can(CrudAbility.READ, Abilities.CHALLANGES);
 
+      can(CrudAbility.READ, Abilities.RANDOMIZER);
+
       can(CrudAbility.READ, Abilities.WORLDS);
+      can(CrudAbility.READ, Abilities.WORLD);
 
       can(CrudAbility.CREATE, Abilities.BUILDING);
       can(CrudAbility.READ, Abilities.BUILDING);
@@ -77,6 +79,10 @@ export function createAbility({ userInfo }: { userInfo: any | null }): AppAbilit
       can(CrudAbility.UPDATE, Abilities.SIM);
       can(CrudAbility.DELETE, Abilities.SIM);
     }
+
+    if (role === USER_ROLES.uberUser) {
+      can(CrudAbility.READ, Abilities.HELP);
+    }
   }
 
   return build({
@@ -84,5 +90,5 @@ export function createAbility({ userInfo }: { userInfo: any | null }): AppAbilit
   });
 }
 
-export const AbilityContext = createContext<AppAbilityType>(createAbility({ userInfo: null }));
+export const AbilityContext = createContext<AppAbilityType>(createAbility(null));
 export const Can = createContextualCan(AbilityContext.Consumer);

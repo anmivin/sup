@@ -3,8 +3,7 @@ import { InputUserDto } from '@back/user/user.dto';
 import { UsersService } from '@back/user/user.service';
 import { I18nContext, I18nService } from 'nestjs-i18n';
 import { TokenService } from '@back/token/token.service';
-
-import { InjectModel } from '@nestjs/sequelize';
+import { JwtService } from '@nestjs/jwt';
 import {
   Injectable,
   NotFoundException,
@@ -18,8 +17,22 @@ export class AuthService {
     private userService: UsersService,
     private tokenService: TokenService,
     private readonly i18n: I18nService,
+    private jwtService: JwtService,
   ) {}
 
+  async me(token?: string) {
+    if (!token)
+      throw new UnauthorizedException(
+        `${this.i18n.t('exceptions.unauthorized', { lang: I18nContext.current()?.lang })}`,
+      );
+    try {
+      const payload = await this.jwtService.verify(token);
+      const userData = await this.userService.findUserById(payload.id);
+      return userData;
+    } catch (e) {
+      console.error(e);
+    }
+  }
   async login(userCredentials: UserCredentials) {
     const existingUser = await this.userService.findUser(userCredentials.name);
     if (!existingUser || !existingUser?.password)
@@ -37,7 +50,7 @@ export class AuthService {
     });
     return {
       access_token: token.accessToken,
-      id: existingUser.id,
+      refresh_token: token.refreshToken,
     };
   }
 
@@ -49,7 +62,7 @@ export class AuthService {
     });
     return {
       access_token: token.accessToken,
-      id: user.id,
+      refresh_token: token.refreshToken,
     };
   }
 
@@ -73,6 +86,7 @@ export class AuthService {
       return {
         access_token: token.accessToken,
         id: user.id,
+        refresh_token: token.refreshToken,
       };
     } else {
       const token = await this.tokenService.generateTokens({
@@ -81,13 +95,13 @@ export class AuthService {
       });
       return {
         access_token: token.accessToken,
-        id: existingUser.id,
+        refresh_token: token.refreshToken,
       };
     }
   }
 
   async refreshToken(token: string) {
     const tokens = await this.tokenService.refreshToken(token);
-    return tokens.accessToken;
+    return { ...tokens };
   }
 }

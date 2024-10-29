@@ -2,7 +2,7 @@ import { AvatarModel } from '@back/user/models/avatars.model';
 import { PackModel } from '@back/user/models/packs.model';
 import { UserModel } from '@back/user/models/users.model';
 import { InputUserDto, EditUserDto } from '@back/user/user.dto';
-import { Injectable ,NotFoundException} from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import bcrypt from 'bcryptjs';
 import { Op } from 'sequelize';
@@ -29,6 +29,15 @@ export class UsersService {
 
   async findUserByEmail(email: string) {
     return await this.userModel.findOne({ where: { email } });
+  }
+
+  async findUserById(id: string) {
+    const existingUser = await this.userModel.findOne({ where: { id } });
+    if (!existingUser)
+      throw new NotFoundException(
+        `${this.i18n.t('exceptions.user', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.notfound.masculine', { lang: I18nContext.current()?.lang })}`,
+      );
+    return existingUser;
   }
 
   async throwIfDublecate(editUserDto: EditUserDto) {
@@ -68,12 +77,10 @@ export class UsersService {
     return newUser;
   }
 
-  async editUser(
-    
-    editUserDto: EditUserDto,
-
-  ) {
-    const existingUser = await this.userModel.findOne({ where: { editUserDto.id } });
+  async editUser(editUserDto: EditUserDto) {
+    const existingUser = await this.userModel.findOne({
+      where: { id: editUserDto.id },
+    });
     if (!existingUser)
       throw new NotFoundException(
         `${this.i18n.t('exceptions.user', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.notfound.masculine', { lang: I18nContext.current()?.lang })}`,

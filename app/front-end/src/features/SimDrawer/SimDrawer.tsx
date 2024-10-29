@@ -4,14 +4,12 @@ import { useTranslation } from 'react-i18next';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Box, Button } from '@mui/material';
-import { AxiosProgressEvent } from 'axios';
-import { uniqueId } from 'lodash';
 import { useStore } from 'zustand';
 
 import FormAutocomplete from '@entities/FormComponents/FormAutocomplete';
 import FormCheckbox from '@entities/FormComponents/FormCheckbox';
 import FormTextField from '@entities/FormComponents/FormTextField';
-import { ImageDrop, ImageList, ImageUpload } from '@entities/ImageUploader';
+import { ImageUpload } from '@entities/ImageUploader';
 import { ImageItem } from '@entities/ImageUploader/ImageUploader.types';
 
 import { DRAWER_VARIANTS, GAME_PART, PUBLIC_BUCKET_NAMES, SEX } from '@type/enums';
@@ -47,7 +45,6 @@ const SimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimD
     getValues,
   } = formMethods;
 
-  const formVals = watch();
   const {
     fields: aspirationFields,
     append: aspirationAppend,
@@ -80,7 +77,7 @@ const SimDrawer = ({ onCloseModal, simsInTree, defaultValues, type }: CreateSimD
       skills: {} as JSON,
     };
     try {
-      /* await createSim(data); */
+      /*    await createSim(data); */
     } catch (err) {
       console.log(err);
     }

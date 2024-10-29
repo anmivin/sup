@@ -6,7 +6,7 @@ import { WorldModel } from '@back/world/models/world.model';
 import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { BuildingModel } from './models/building.model';
-
+import { TokenModule } from '@back/token/token.module';
 @Module({
   imports: [
     SequelizeModule.forFeature([
@@ -15,6 +15,7 @@ import { BuildingModel } from './models/building.model';
       NeighborhoodModel,
       WorldModel,
     ]),
+    TokenModule,
   ],
   providers: [WorldService],
   controllers: [WorldController],

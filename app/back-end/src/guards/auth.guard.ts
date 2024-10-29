@@ -27,6 +27,7 @@ export class AuthGuard implements CanActivate {
       );
     try {
       const payload = this.jwtService.verify(token);
+      console.log(payload);
     } catch (e) {
       console.error(e);
     }
@@ -35,7 +36,6 @@ export class AuthGuard implements CanActivate {
 
   private extractToken(request: Request): string | undefined {
     const cookie = request.cookies;
-    console.log(cookie);
-    return request.headers.authorization?.split(' ')[1];
+    return cookie['access'];
   }
 }

@@ -23,7 +23,7 @@ const ImageUpload = ({ onImageAdd, value, type }: ImageUploadProps) => {
         setImg(image.url);
       }
     } catch (e) {
-      console.log('drawer', e);
+      console.log(e);
     }
   }, []);
 

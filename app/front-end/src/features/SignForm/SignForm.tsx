@@ -30,22 +30,21 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
   const {
     handleSubmit,
     control,
+    getValues,
     formState: { errors },
   } = useForm<SignFormValuesProps>({ resolver: zodResolver(SignFormValuesSchema) });
   const { loginWithGoogle, login, createUser } = ProfileStore();
 
-  const onSubmit = handleSubmit(async (data: SignFormValuesProps) => {
-    console.log(data);
+  const onSubmit = useCallback(async () => {
+    const data = getValues();
     const createUserData = {
       name: data.name,
       password: data.password,
       email: data.email,
       avatar: null,
     };
-    console.log(createUserData);
-    isSignUp ? login(createUserData) : createUser(createUserData);
-    const user = login(createUserData);
-  });
+    isSignUp ? createUser(createUserData) : login(createUserData);
+  }, [isSignUp]);
 
   const errorHandler = useCallback(() => {
     console.log('Login Failed');
@@ -68,7 +67,7 @@ const SignForm = ({ onClose, open }: SignFormProps) => {
         <Tooltip title="можете не заполнять, но тогда не сможете восстановить пароль, коли его забудете">
           <Controller control={control} name="email" render={({ field }) => <TextField {...field} label="email" />} />
         </Tooltip>
-        <Button onClick={onSubmit}>
+        <Button onClick={() => onSubmit()}>
           <Typography>{isSignUp ? t(`data.pages.signup`) : t(`data.pages.login`)}</Typography>
         </Button>
         <Typography>{isSignUp ? 'Уже есть акк?' : 'Нет акка пока что'}</Typography>
