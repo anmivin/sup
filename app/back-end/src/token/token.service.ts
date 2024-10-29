@@ -12,8 +12,8 @@ export class TokenService {
   constructor(
     private jwtService: JwtService,
     private configService: ConfigService,
-    @InjectModel(TokenModel) private tokenModel: typeof TokenModel,
     private readonly i18n: I18nService,
+    @InjectModel(TokenModel) private tokenModel: typeof TokenModel,
   ) {}
 
   async generateAccessToken(creds: InputTokenDto) {
@@ -27,6 +27,13 @@ export class TokenService {
   }
 
   async saveRefreshToken(token: string, userId: string) {
+    const existingToken = await this.tokenModel.findOne({
+      where: {
+        token,
+        expires: { [Op.gte]: new Date() },
+      },
+    });
+    if (existingToken) existingToken.destroy();
     const expires = new Date();
     expires.setDate(expires.getDate() + 3);
     await this.tokenModel.create({ token, userId, expires: expires });
@@ -37,7 +44,7 @@ export class TokenService {
     const refreshToken = await this.generateRefreshToken();
     await this.saveRefreshToken(refreshToken, creds.id);
 
-    return { accessToken };
+    return { accessToken, refreshToken };
   }
 
   async refreshToken(token: string) {
@@ -54,8 +61,8 @@ export class TokenService {
       throw new UnauthorizedException(
         `${this.i18n.t('exceptions.unauthorized', { lang: I18nContext.current()?.lang })}`,
       );
-    await existingToken.destroy();
 
-    return await this.generateTokens({ id: info.id, role: info.role });
+    const tokens = await this.generateTokens({ id: info.id, role: info.role });
+    return { tokens, id: info.id };
   }
 }

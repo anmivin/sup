@@ -13,6 +13,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
 import { DynastyController } from '@dynasty/dynasty.controller';
 import { DynastyService } from '@back/dynasty/dynasty.service';
 import { FileModel } from '@back/file/file.model';
+import { TokenModule } from '@back/token/token.module';
 @Module({
   imports: [
     SequelizeModule.forFeature([
@@ -28,6 +29,7 @@ import { FileModel } from '@back/file/file.model';
       SimTraitModel,
       FileModel,
     ]),
+    TokenModule,
   ],
   providers: [DynastyService],
   controllers: [DynastyController],

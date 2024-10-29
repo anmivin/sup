@@ -14,59 +14,58 @@ import { DrawLayoutProps } from './DrawLayout.types';
 
 const squareSize = 30;
 
-const DrawLayout = ({ sizes }: DrawLayoutProps) => {
+const DrawLayout = ({ sizes, layerRef, mode, currentRect, setCurrentRect }: DrawLayoutProps) => {
+  const [initialPosition, setInitialPosistion] = useState<PositionProps | null>(null);
   const theme = useTheme();
-  const [initPos, setInitPos] = useState<PositionProps | null>(null);
-  const [mode, setMode] = useState<MODE>(MODE.default);
-  const stageRef = useRef() as MutableRefObject<Konva.Stage>;
-  const layerRef = useRef() as MutableRefObject<Konva.Layer>;
-  const gridRef = useRef() as MutableRefObject<Konva.Layer>;
-  const [currentRect, setCurrentRect] = useState<string | null>(null);
 
-  const calcLines = useMemo(() => {
-    const arr = [];
+  const stageRef = useRef() as MutableRefObject<Konva.Stage>;
+
+  const gridRef = useRef() as MutableRefObject<Konva.Layer>;
+
+  const calculateLines = useMemo(() => {
+    const linesArray = [];
 
     for (let w = 0; w <= sizes.x; w++) {
       for (let h = 0; h <= sizes.y; h++) {
-        arr.push({
+        linesArray.push({
           points: [squareSize * w, 0, squareSize * w, squareSize * sizes.y],
           stroke: theme.color.mono100,
         });
-        arr.push({
+        linesArray.push({
           points: [0, squareSize * h, squareSize * sizes.x, squareSize * h],
           stroke: theme.color.mono100,
         });
       }
     }
 
-    return arr;
+    return linesArray;
   }, [sizes]);
 
   const handleMouseDown = useCallback(
     (e: Konva.KonvaEventObject<MouseEvent>) => {
       if (mode !== MODE.draw) return;
       const position = getRoundedPosition({ x: e.evt.layerX, y: e.evt.layerY }, squareSize);
-      setInitPos(position);
+      setInitialPosistion(position);
     },
     [mode],
   );
 
   const getDrawingLine = () => {
     const layer = layerRef.current;
-    const currline = layer.getChildren();
-    return currline.find((item) => item.id() === 'drawing') as Konva.Line | undefined;
+    const currentLines = layer.getChildren();
+    return currentLines.find((item) => item.id() === 'drawing') as Konva.Line | undefined;
   };
 
   const getItemById = (id: string) => {
     const layer = layerRef.current;
-    const currline = layer.getChildren();
-    return currline.find((item) => item.id() === id) as Konva.Rect | undefined;
+    const currentLines = layer.getChildren();
+    return currentLines.find((item) => item.id() === id) as Konva.Rect | undefined;
   };
 
   const handleMouseMove = useCallback(
     (e: Konva.KonvaEventObject<MouseEvent>) => {
       const layer = layerRef.current;
-      if (!initPos || mode !== MODE.draw) {
+      if (!initialPosition || mode !== MODE.draw) {
         return;
       }
 
@@ -78,7 +77,7 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
           id: 'drawing',
           stroke: theme.color.mono900,
           listening: false,
-          points: [initPos.x, initPos.y, position.x, position.y],
+          points: [initialPosition.x, initialPosition.y, position.x, position.y],
         });
         layer.add(line);
       } else {
@@ -89,14 +88,14 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
         layer.batchDraw();
       }
     },
-    [mode, initPos],
+    [mode, initialPosition],
   );
 
   const handleMouseUp = useCallback(() => {
     const existing = getDrawingLine();
     if (!existing || mode !== MODE.draw) return;
     existing.id(`${Date.now()}`);
-    setInitPos(null);
+    setInitialPosistion(null);
   }, [mode]);
 
   const getMode = (mode: MODE) => {
@@ -120,7 +119,7 @@ const DrawLayout = ({ sizes }: DrawLayoutProps) => {
     <Box display="flex" gap={4}>
       <Stage ref={stageRef} id="container" width={1000} height={800}>
         <Layer ref={gridRef}>
-          {calcLines.map((line, index) => (
+          {calculateLines.map((line, index) => (
             <Line key={index} points={line.points} stroke={line.stroke} strokeWidth={1} />
           ))}
         </Layer>

@@ -10,7 +10,6 @@ export interface AccessTokenPayload {
 export interface ProfileStateSliceProps {
   gamePart: GAME_PART;
   setGamePart: (val: GAME_PART) => void;
-
   isDarkTheme: () => boolean;
   setIsDarkTheme: (val: () => boolean) => void;
 }
@@ -22,6 +21,7 @@ export interface ProfileDataSliceProps {
   login: (payload: components['schemas']['UserCredentials']) => void;
   loginWithGoogle: (token: string) => void;
   logout: () => void;
+  me: () => void;
 }
 
 export interface googleToken {

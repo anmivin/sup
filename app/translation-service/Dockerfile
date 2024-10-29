@@ -35,5 +35,4 @@ RUN npm run migration:run
 
 EXPOSE 3002
 
-CMD [ "node", "dist/app/translation-service/src/main.js" ]
-CMD ['npm', 'run', 'start']
+CMD ["npm", "run", "start"]

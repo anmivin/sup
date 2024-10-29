@@ -5,7 +5,7 @@ import { createContextualCan } from '@casl/react';
 
 enum USER_ROLES {
   loggedOut = 'loggedOut',
-  simpleUser = 'simpleUser',
+  simpleUser = 'simple',
   uberUser = 'uberUser',
 }
 
@@ -20,7 +20,10 @@ export enum Abilities {
   WORLDS = 'WORLDS',
   SIM = 'SIM',
   TREE = 'TREE',
+  WORLD = 'WORLD',
   BUILDING = 'BUILDING',
+  RANDOMIZER = 'RANDOMIZER',
+  HELP = 'HELP',
 }
 
 export enum CrudAbility {
@@ -44,7 +47,7 @@ export function createAbility({ userInfo }: { userInfo: any | null }): AppAbilit
     can(CrudAbility.READ, Abilities.CHALLANGES);
     can(CrudAbility.READ, Abilities.WORLDS);
   } else {
-    if (userInfo.roles === USER_ROLES.simpleUser) {
+    if (userInfo === USER_ROLES.simpleUser) {
       can(CrudAbility.READ, Abilities.LOGOUT);
 
       can(CrudAbility.READ, Abilities.PROFILE);
@@ -60,7 +63,10 @@ export function createAbility({ userInfo }: { userInfo: any | null }): AppAbilit
 
       can(CrudAbility.READ, Abilities.CHALLANGES);
 
+      can(CrudAbility.READ, Abilities.RANDOMIZER);
+
       can(CrudAbility.READ, Abilities.WORLDS);
+      can(CrudAbility.READ, Abilities.WORLD);
 
       can(CrudAbility.CREATE, Abilities.BUILDING);
       can(CrudAbility.READ, Abilities.BUILDING);
@@ -76,6 +82,9 @@ export function createAbility({ userInfo }: { userInfo: any | null }): AppAbilit
       can(CrudAbility.READ, Abilities.SIM);
       can(CrudAbility.UPDATE, Abilities.SIM);
       can(CrudAbility.DELETE, Abilities.SIM);
+      if (userInfo === USER_ROLES.uberUser) {
+        can(CrudAbility.READ, Abilities.HELP);
+      }
     }
   }
 

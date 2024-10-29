@@ -28,3 +28,12 @@ export class UserCredentials {
   @ApiProperty({ description: 'User password', nullable: false })
   password: string;
 }
+
+export class TokenDto {
+  type: string;
+}
+
+export class UserDto {
+  id: string;
+  role: string;
+}

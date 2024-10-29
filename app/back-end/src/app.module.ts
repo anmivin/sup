@@ -66,6 +66,7 @@ import * as path from 'path';
       isGlobal: true,
       load: [NEST_CONFIG],
     }),
+
     SequelizeModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],

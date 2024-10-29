@@ -110,11 +110,11 @@ export interface paths {
     post: operations["UsersController_createUser"];
   };
   "/user/edit": {
-    /** Create User */
+    /** Edit User */
     post: operations["UsersController_editUser"];
   };
   "/user/delete": {
-    /** Create User */
+    /** Delete User */
     post: operations["UsersController_deleteUser"];
   };
   "/world/{part}": {
@@ -131,20 +131,24 @@ export interface paths {
     /** Get world map */
     post: operations["WorldController_editBuilding"];
   };
+  "/auth/me": {
+    /** Get user info */
+    get: operations["AuthController_me"];
+  };
   "/auth/login": {
     /** Log In */
     post: operations["AuthController_login"];
   };
   "/auth/signup": {
-    /** Log In */
+    /** Sign Up */
     post: operations["AuthController_signup"];
   };
   "/auth/google-login": {
     /** Google Log In */
     post: operations["AuthController_loginGoogle"];
   };
-  "/auth/token": {
-    /** Refresh */
+  "/auth/refresh": {
+    /** Refresh Tokens */
     post: operations["AuthController_refreshToken"];
   };
   "/file/save/{type}": {
@@ -399,7 +403,7 @@ export interface components {
       /** @description User name */
       name: string;
       /** @description User password */
-      password: Record<string, unknown> | null;
+      password: string | null;
       /** @description User email */
       email: Record<string, unknown> | null;
       /** @description User avatar */
@@ -428,15 +432,16 @@ export interface components {
     };
     InputBuildingDto: {
       userId: string;
-      lotId: string;
       layout: Record<string, never>;
     };
+    UserDto: Record<string, never>;
     UserCredentials: {
       /** @description User name */
       name: string;
       /** @description User password */
       password: string;
     };
+    TokenDto: Record<string, never>;
     Debug: {
       /** @description File */
       file: Record<string, never>;
@@ -1064,7 +1069,7 @@ export interface operations {
       };
     };
   };
-  /** Create User */
+  /** Edit User */
   UsersController_editUser: {
     requestBody: {
       content: {
@@ -1086,7 +1091,7 @@ export interface operations {
       };
     };
   };
-  /** Create User */
+  /** Delete User */
   UsersController_deleteUser: {
     requestBody: {
       content: {
@@ -1213,17 +1218,14 @@ export interface operations {
       };
     };
   };
-  /** Log In */
-  AuthController_login: {
-    requestBody: {
-      content: {
-        "application/json": components["schemas"]["UserCredentials"];
-      };
-    };
+  /** Get user info */
+  AuthController_me: {
     responses: {
       /** @description Success */
       200: {
-        content: never;
+        content: {
+          "application/json": components["schemas"]["UserDto"];
+        };
       };
       /** @description Bad Request */
       400: {
@@ -1236,6 +1238,30 @@ export interface operations {
     };
   };
   /** Log In */
+  AuthController_login: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["UserCredentials"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["TokenDto"];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Sign Up */
   AuthController_signup: {
     requestBody: {
       content: {
@@ -1279,13 +1305,8 @@ export interface operations {
       };
     };
   };
-  /** Refresh */
+  /** Refresh Tokens */
   AuthController_refreshToken: {
-    requestBody: {
-      content: {
-        "application/json": components["schemas"]["UserCredentials"];
-      };
-    };
     responses: {
       /** @description Success */
       200: {

@@ -1,17 +1,20 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { useParams } from 'react-router';
 
-import { Box } from '@mui/material';
+import { Box, Button } from '@mui/material';
+import { useStore } from 'zustand';
 
 import { WorldStore } from '@stores/World/World.store';
 
 import { StyledSvgPath } from './WorldMap.styled';
 
-import { Abilities, CrudAbility } from '../../shared/ability/Ability';
+import { Abilities, Can, CrudAbility } from '../../shared/ability/Ability';
 
 const WorldMap = () => {
-  const { selectedWorld } = WorldStore();
+  const { selectedWorld, getWorldMap } = useStore(WorldStore);
   const [imgRef, setImgRef] = useState<HTMLDivElement | null>(null);
   const [selectedLot, setSelectedLot] = useState<string | null>(null);
+  const { key } = useParams<{ key: string }>();
 
   const path = useMemo(() => {
     return selectedWorld?.lots.filter(({ svgPath }) => !!svgPath).map((lot) => ({ path: lot.svgPath, key: lot.key }));
@@ -27,7 +30,13 @@ const WorldMap = () => {
   return (
     <>
       {!selectedWorld ? (
-        <>sdfs</>
+        <Button
+          onClick={() => {
+            key && getWorldMap(key);
+          }}
+        >
+          загрузить
+        </Button>
       ) : (
         <Box
           sx={{
