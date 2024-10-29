@@ -1,9 +1,8 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 
 import { v4 } from 'uuid';
 
-import { Debug, PUBLIC_BUCKET_NAMES } from '@minio/minio.dto';
 import { I18nContext, I18nService } from 'nestjs-i18n';
 import { MinioService } from '@minio/minio.service';
 import { FileModel } from './file.model';
@@ -34,7 +33,10 @@ export class FileService {
     const file = await this.fileModel.findOne({
       where: { id: props.file.path },
     });
-    if (!file) throw new Error('Not found');
+    if (!file)
+      throw new NotFoundException(
+        `${this.i18n.t('exceptions.file', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.notfound.masculine', { lang: I18nContext.current()?.lang })}`,
+      );
     await this.minioService.deleteFile(props.type, file.name);
     await file.destroy();
   }

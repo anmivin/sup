@@ -2,12 +2,13 @@ import { AvatarModel } from '@back/user/models/avatars.model';
 import { PackModel } from '@back/user/models/packs.model';
 import { UserModel } from '@back/user/models/users.model';
 import { InputUserDto, EditUserDto } from '@back/user/user.dto';
-import { Injectable } from '@nestjs/common';
+import { Injectable ,NotFoundException} from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import bcrypt from 'bcryptjs';
 import { Op } from 'sequelize';
 import { v4 } from 'uuid';
 import { I18nContext, I18nService } from 'nestjs-i18n';
+
 @Injectable()
 export class UsersService {
   constructor(
@@ -78,7 +79,7 @@ export class UsersService {
         `${this.i18n.t('exceptions.user', { lang: I18nContext.current()?.lang })} ${this.i18n.t('exceptions.notfound.masculine', { lang: I18nContext.current()?.lang })}`,
       );
 
-    const updated = await existingUser.update(createUserDto);
+    const updated = await existingUser.update(editUserDto);
 
     return updated;
   }

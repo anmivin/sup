@@ -37,6 +37,7 @@ export class AuthService {
     });
     return {
       access_token: token.accessToken,
+      id: existingUser.id,
     };
   }
 
@@ -48,6 +49,7 @@ export class AuthService {
     });
     return {
       access_token: token.accessToken,
+      id: user.id,
     };
   }
 
@@ -60,7 +62,7 @@ export class AuthService {
         {
           name: userCredentials.name,
           email: userCredentials.email,
-          password: null,
+          password: undefined,
         },
         'google',
       );
@@ -70,6 +72,7 @@ export class AuthService {
       });
       return {
         access_token: token.accessToken,
+        id: user.id,
       };
     } else {
       const token = await this.tokenService.generateTokens({
@@ -78,6 +81,7 @@ export class AuthService {
       });
       return {
         access_token: token.accessToken,
+        id: existingUser.id,
       };
     }
   }

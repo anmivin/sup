@@ -11,7 +11,6 @@ export enum PUBLIC_BUCKET_NAMES {
   UserImage = 'userImage',
   SimImage = 'simImage',
   TreeImage = 'treeImage',
-  Debug = 'debug',
 }
 
 export type FileTypes = READONLY_BUCKET_NAMES | PUBLIC_BUCKET_NAMES;

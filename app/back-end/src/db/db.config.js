@@ -18,6 +18,5 @@ const DB_CONFIG = {
 
 module.exports = {
   development: DB_CONFIG,
-  test: DB_CONFIG,
   production: DB_CONFIG,
 };
