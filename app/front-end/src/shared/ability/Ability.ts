@@ -78,6 +78,9 @@ export function createAbility(role: USER_ROLES | null): AppAbilityType {
       can(CrudAbility.READ, Abilities.SIM);
       can(CrudAbility.UPDATE, Abilities.SIM);
       can(CrudAbility.DELETE, Abilities.SIM);
+      if (userInfo === USER_ROLES.uberUser) {
+        can(CrudAbility.READ, Abilities.HELP);
+      }
     }
 
     if (role === USER_ROLES.uberUser) {
