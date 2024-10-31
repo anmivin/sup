@@ -4,6 +4,8 @@ import { Group, Image, Layer, Line, Rect, Stage, Transformer } from 'react-konva
 import Konva from 'konva';
 import useImage from 'use-image';
 
+import ImageFiltersMenu from '@entities/ImageFiltersMenu/ImageFiltersMenu';
+
 import { CropImageProps } from './CropImage.types';
 
 const initSize = 300;
@@ -12,6 +14,21 @@ const initPos = { x: 50, y: 50 };
 const CropImage = ({ url, onCrop }: CropImageProps) => {
   const [selected, setSelected] = useState(false);
   const [image] = useImage(url);
+  const [filtersState, setFiltersState] = useState<{
+    hue: number | null;
+    saturation: number | null;
+    lightness: number | null;
+    invert: boolean | null;
+    sepia: boolean | null;
+    grayscale: boolean | null;
+  }>({
+    hue: null,
+    saturation: null,
+    lightness: null,
+    invert: null,
+    sepia: null,
+    grayscale: null,
+  });
 
   const cropRef = useRef() as MutableRefObject<Konva.Group>;
   const rectRef = useRef() as MutableRefObject<Konva.Rect>;
@@ -71,26 +88,21 @@ const CropImage = ({ url, onCrop }: CropImageProps) => {
     return arr;
   }, []);
 
-  const setFilters = () => {
+  useEffect(() => {
     const node = imageRef.current;
     node.cache();
-    node.filters([Konva.Filters.RGB]);
-    node.blue(120);
-    node.green(200);
-    node.red(200);
-    node.filters([Konva.Filters.Blur]);
-    node.blurRadius(10);
-    node.filters([Konva.Filters.Brighten]);
-    node.brightness(0.1);
-    node.filters([Konva.Filters.Contrast]);
-    node.contrast(20);
-    node.filters([Konva.Filters.Grayscale]);
-    node.filters([Konva.Filters.HSL]);
-    node.luminance(0.8);
-    node.filters([Konva.Filters.Invert]);
-    node.filters([Konva.Filters.Sepia]);
-    node.filters([]);
-  };
+    let newFilters = [];
+    if (filtersState.lightness || filtersState.hue || filtersState.saturation) newFilters.push(Konva.Filters.HSL);
+    if (filtersState.grayscale) newFilters = [Konva.Filters.Grayscale];
+    if (filtersState.invert) newFilters = [Konva.Filters.Invert];
+    if (filtersState.sepia) newFilters = [Konva.Filters.Sepia];
+    node.filters(newFilters);
+
+    filtersState.lightness && node.luminance(filtersState.lightness / 100);
+    filtersState.hue && node.hue(filtersState.hue);
+    filtersState.saturation && node.saturation(filtersState.saturation);
+  }, [filtersState]);
+
   return (
     <>
       <Stage width={600} height={600}>
@@ -134,6 +146,7 @@ const CropImage = ({ url, onCrop }: CropImageProps) => {
         </Layer>
       </Stage>
       <button onClick={handleCrop}>crop</button>
+      <ImageFiltersMenu setFilters={setFiltersState} />
     </>
   );
 };

@@ -15,7 +15,7 @@ export enum PUBLIC_BUCKET_NAMES {
 
 export type FileTypes = READONLY_BUCKET_NAMES | PUBLIC_BUCKET_NAMES;
 
-export class Debug {
+export class File {
   @ApiProperty({ description: 'File', nullable: false })
   file: Express.Multer.File;
 }

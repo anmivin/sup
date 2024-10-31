@@ -4,7 +4,7 @@ import { v4 } from 'uuid';
 import { Injectable } from '@nestjs/common';
 
 import { ConfigService } from '@nestjs/config';
-import { I18nContext, I18nService } from 'nestjs-i18n';
+
 const policy = (bucketName: string) => {
   return {
     Version: '2012-10-17',
@@ -24,10 +24,7 @@ const policy = (bucketName: string) => {
 @Injectable()
 export class MinioService {
   private minioClient: Minio.Client;
-  constructor(
-    private configService: ConfigService,
-    private readonly i18n: I18nService,
-  ) {
+  constructor(private configService: ConfigService) {
     this.minioClient = new Minio.Client({
       endPoint: this.configService.get('minio_endpoint') ?? '',
       port: Number(this.configService.get('minio_port')),

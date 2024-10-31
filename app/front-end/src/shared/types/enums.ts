@@ -154,5 +154,5 @@ export enum PUBLIC_BUCKET_NAMES {
 export enum USER_ROLES {
   loggedOut = 'loggedOut',
   simpleUser = 'simple',
-  uberUser = 'uberUser',
+  uberUser = 'payed',
 }

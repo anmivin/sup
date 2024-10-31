@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-import { Ability, AbilityBuilder, AbilityClass, AbilityTuple, MatchConditions, PureAbility } from '@casl/ability';
+import { Ability, AbilityBuilder } from '@casl/ability';
 import { createContextualCan } from '@casl/react';
 
 import { USER_ROLES } from '@type/enums';
@@ -29,14 +29,8 @@ export enum CrudAbility {
   DELETE = 'DELETE',
 }
 
-export const ability = new PureAbility<AbilityTuple<CrudAbility, Abilities> | CrudAbility, MatchConditions>();
-type AppAbilityType = PureAbility<AbilityTuple<CrudAbility, Abilities>, MatchConditions>;
-const conditionsMatcher = (matchConditions: MatchConditions) => matchConditions;
-
-export const AppAbility = Ability as AbilityClass<AppAbilityType>;
-
-export function createAbility(role: USER_ROLES | null): AppAbilityType {
-  const { can, build } = new AbilityBuilder(AppAbility);
+export const defineAbilities = (role: USER_ROLES | null) => {
+  const { can, build } = new AbilityBuilder(Ability);
 
   if (!role) {
     can(CrudAbility.READ, Abilities.LOGIN);
@@ -78,9 +72,6 @@ export function createAbility(role: USER_ROLES | null): AppAbilityType {
       can(CrudAbility.READ, Abilities.SIM);
       can(CrudAbility.UPDATE, Abilities.SIM);
       can(CrudAbility.DELETE, Abilities.SIM);
-      if (userInfo === USER_ROLES.uberUser) {
-        can(CrudAbility.READ, Abilities.HELP);
-      }
     }
 
     if (role === USER_ROLES.uberUser) {
@@ -88,10 +79,8 @@ export function createAbility(role: USER_ROLES | null): AppAbilityType {
     }
   }
 
-  return build({
-    conditionsMatcher,
-  });
-}
+  return build();
+};
 
-export const AbilityContext = createContext<AppAbilityType>(createAbility(null));
+export const AbilityContext = createContext(defineAbilities(null));
 export const Can = createContextualCan(AbilityContext.Consumer);

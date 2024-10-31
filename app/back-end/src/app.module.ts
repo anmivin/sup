@@ -40,7 +40,6 @@ import { SimPositionModel } from './connection.models/SimPosition.model';
 import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
 import * as path from 'path';
 
-//из енва значения поставить
 @Module({
   imports: [
     I18nModule.forRoot({
@@ -53,7 +52,6 @@ import * as path from 'path';
         { use: QueryResolver, options: ['lang'] },
         AcceptLanguageResolver,
       ],
-      /*       typesOutputPath: path.join(__dirname, '/generated/i18n.generated.ts'), */
     }),
     //.env
     JwtModule.registerAsync({

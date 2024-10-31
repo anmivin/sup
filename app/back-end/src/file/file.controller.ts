@@ -2,7 +2,7 @@ import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
 import {
   Controller,
   Post,
-  Body,
+
   UploadedFile,
   UseInterceptors,
   Param,
@@ -15,7 +15,7 @@ import {
   ApiBody,
 } from '@nestjs/swagger';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { Debug, EditFileDto, DeleteFileDto, FileTypes } from '@minio/minio.dto';
+import { File, DeleteFileDto, FileTypes } from '@minio/minio.dto';
 import { FileService } from './file.service';
 import { FileResponseDTO } from './file.dto';
 @ApiTags('File Controller')
@@ -26,7 +26,7 @@ export class FileController {
   @Post('/save/:type')
   @UseInterceptors(FileInterceptor('file'))
   @ApiOperation({ summary: 'Save file' })
-  @ApiBody({ type: Debug })
+  @ApiBody({ type: File })
   @ApiParam({ name: 'type', required: true, description: 'File type' })
   @ApiResponse({
     status: SuccessStatus.OK,

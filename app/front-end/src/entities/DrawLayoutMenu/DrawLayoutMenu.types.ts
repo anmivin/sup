@@ -8,6 +8,7 @@ export enum MODE {
 export interface DrawLayoutMenuProps {
   onAdd: (props: PositionProps) => void;
   onChangeMode: (mode: MODE) => void;
+  currentMode: MODE;
 }
 
 export const objectSizes: PositionProps[] = [

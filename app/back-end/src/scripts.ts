@@ -1,4 +1,4 @@
-import { existsSync, unlink } from 'fs';
+import { existsSync } from 'fs';
 import * as Minio from 'minio';
 import path from 'path';
 
@@ -22,6 +22,7 @@ const minioClient = new Minio.Client({
   accessKey: MINIO_ACCESS,
   secretKey: MINIO_SECRET,
 });
+
 const policy = (bucketName: string) => {
   return {
     Version: '2012-10-17',
@@ -45,37 +46,18 @@ const creteBucket = async (bucketName: string) => {
   await minioClient.setBucketPolicy(bucketName, bucketPolicy);
 };
 
-const deleteFiles = (files: { name: string; path: string }[]) => {
-  files.map((file) => {
-    unlink(path.resolve(UPLOADS_PATH, file.path), (err) => {
-      if (err) {
-        console.error(err);
-      }
-    });
-  });
-};
-
 const moveFileToMinio = async () => {
   try {
-    const notFoundFiles: { name: string; type: string }[] = [];
-    const foundFiles: { name: string; path: string }[] = [];
-    const achievementIcons = achievements.map((item) => item.icon);
     await creteBucket('icons');
+    const achievementIcons = achievements.map((item) => item.icon);
+
     await Promise.all(
       achievementIcons.map(async (item) => {
         const filePath = path.resolve(UPLOADS_PATH, 'achievements/', item);
 
-        if (!existsSync(filePath)) {
-          notFoundFiles.push({ name: item, type: 'achievements' });
-          return;
-        }
+        if (!existsSync(filePath)) return;
 
         await minioClient.fPutObject('icons', `achievements_${item}`, filePath);
-
-        foundFiles.push({
-          name: item,
-          path: filePath,
-        });
       }),
     );
 
@@ -84,17 +66,9 @@ const moveFileToMinio = async () => {
       aspirationsIcons.map(async (item) => {
         const filePath = path.resolve(UPLOADS_PATH, 'aspirations/', item);
 
-        if (!existsSync(filePath)) {
-          notFoundFiles.push({ name: item, type: 'aspirations' });
-          return;
-        }
+        if (!existsSync(filePath)) return;
 
         await minioClient.fPutObject('icons', `aspirations_${item}`, filePath);
-
-        foundFiles.push({
-          name: item,
-          path: filePath,
-        });
       }),
     );
 
@@ -103,17 +77,9 @@ const moveFileToMinio = async () => {
       skillsIcons.map(async (item) => {
         const filePath = path.resolve(UPLOADS_PATH, 'skills/', item);
 
-        if (!existsSync(filePath)) {
-          notFoundFiles.push({ name: item, type: 'skills' });
-          return;
-        }
+        if (!existsSync(filePath)) return;
 
         await minioClient.fPutObject('icons', `skills_${item}`, filePath);
-
-        foundFiles.push({
-          name: item,
-          path: filePath,
-        });
       }),
     );
 
@@ -122,17 +88,9 @@ const moveFileToMinio = async () => {
       traitsIcons.map(async (item) => {
         const filePath = path.resolve(UPLOADS_PATH, 'traits/', item);
 
-        if (!existsSync(filePath)) {
-          notFoundFiles.push({ name: item, type: 'traits' });
-          return;
-        }
+        if (!existsSync(filePath)) return;
 
         await minioClient.fPutObject('icons', `traits_${item}`, filePath);
-
-        foundFiles.push({
-          name: item,
-          path: filePath,
-        });
       }),
     );
 
@@ -141,21 +99,11 @@ const moveFileToMinio = async () => {
       careersIcons.map(async (item) => {
         const filePath = path.resolve(UPLOADS_PATH, 'careers/', item);
 
-        if (!existsSync(filePath)) {
-          notFoundFiles.push({ name: item, type: 'careers' });
-          return;
-        }
+        if (!existsSync(filePath)) return;
 
         await minioClient.fPutObject('icons', `careers_${item}`, filePath);
-
-        foundFiles.push({
-          name: item,
-          path: filePath,
-        });
       }),
     );
-    console.warn(notFoundFiles.map((file) => `${file.name}-${file.type}\n`));
-    /* deleteFiles(foundFiles); */
   } catch (error) {
     throw error;
   }

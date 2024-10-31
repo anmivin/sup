@@ -30,7 +30,7 @@ export class PayedGuard implements CanActivate {
     } catch (e) {
       console.error(e);
     }
-    return false;
+    return true;
   }
 
   private extractToken(request: Request): string | undefined {

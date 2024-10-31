@@ -29,48 +29,52 @@ const LayoutModal = () => {
   const [mode, setMode] = useState<MODE>(MODE.default);
   const [currentRect, setCurrentRect] = useState<string | null>(null);
 
-  const handleAddRect = (sizes: { x: number; y: number }) => {
-    const onNodeClick = useCallback(
-      (newItem: Konva.Rect, transformer: Konva.Transformer) => {
-        if (mode === MODE.erase) {
-          newItem.destroy();
-          transformer.destroy();
-        } else setCurrentRect(newItem.id());
-      },
-      [mode],
-    );
+  const onNodeClick = useCallback(
+    (newItem: Konva.Rect, transformer: Konva.Transformer) => {
+      if (mode === MODE.erase) {
+        newItem.destroy();
+        transformer.destroy();
+      } else setCurrentRect(newItem.id());
+    },
+    [mode],
+  );
 
-    const layer = layerRef.current;
+  const handleAddRect = useCallback(
+    (sizes: { x: number; y: number }) => {
+      const layer = layerRef.current;
 
-    const newItem = new Konva.Rect({
-      width: squareSize * sizes.x,
-      height: squareSize * sizes.y,
-      draggable: true,
-      stroke: theme.color.blue900,
-      fill: theme.color.blue500,
-      id: uniqueId(),
-    });
+      const newItem = new Konva.Rect({
+        width: squareSize * sizes.x,
+        height: squareSize * sizes.y,
+        draggable: true,
+        stroke: theme.color.blue900,
+        fill: theme.color.blue500,
+        id: uniqueId(),
+      });
 
-    const transformer = new Konva.Transformer({
-      nodes: [newItem],
-      rotationSnaps: [0, 45, 90, 135, 180, 225, 270, 315, 360],
-      rotationSnapTolerance: 22.5,
-      resizeEnabled: false,
-      rotateAnchorOffset: 2,
-      borderEnabled: false,
-    });
+      const transformer = new Konva.Transformer({
+        nodes: [newItem],
+        rotationSnaps: [0, 45, 90, 135, 180, 225, 270, 315, 360],
+        rotationSnapTolerance: 22.5,
+        resizeEnabled: false,
+        rotateAnchorOffset: 2,
+        borderEnabled: false,
+      });
 
-    newItem.on('dragmove', () => {
-      const position = getRoundedPosition({ x: newItem.x(), y: newItem.y() }, squareSize);
-      newItem.x(position.x);
-      newItem.y(position.y);
-    });
+      newItem.on('dragmove', () => {
+        const position = getRoundedPosition({ x: newItem.x(), y: newItem.y() }, squareSize);
+        newItem.x(position.x);
+        newItem.y(position.y);
+      });
 
-    newItem.on('click', () => onNodeClick(newItem, transformer));
+      newItem.on('click', () => onNodeClick(newItem, transformer));
 
-    layer.add(newItem);
-    layer.add(transformer);
-  };
+      layer.add(newItem);
+      layer.add(transformer);
+      console.log(newItem);
+    },
+    [mode],
+  );
 
   const saveStage = useCallback(async () => {
     const layout = layerRef.current.toJSON();
@@ -88,6 +92,7 @@ const LayoutModal = () => {
           setCurrentRect={setCurrentRect}
         />
         <DrawLayoutMenu
+          currentMode={mode}
           onAdd={handleAddRect}
           onChangeMode={(mode) => {
             setMode(mode);

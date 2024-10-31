@@ -31,6 +31,7 @@ export class AuthService {
       return userData;
     } catch (e) {
       console.error(e);
+      throw new Error('bad');
     }
   }
   async login(userCredentials: UserCredentials) {

@@ -12,13 +12,14 @@ const Challenges = () => {
   const [open, setOpen] = useState(false);
   const [img, setImg] = useState<string | null>(null);
   const onAdd = useCallback((files: File[]) => {
-    setFiles((prev) => [...prev, ...files.map((val) => ({ file: val, key: uniqueId(), uploadProgress: 0.7 }))]);
+    setFiles((prev) => [...prev, ...files.map((val) => ({ file: val, key: uniqueId(), uploadProgress: 0.9 }))]);
   }, []);
 
   return (
     <>
       <ImageDrop onFilesAdd={onAdd} />
       <ImageList imageList={files} /* onImageRemove={() => {}} */ onImageClick={() => setOpen(true)} />
+      {img && <img src={img} />}
       {!!files.length && (
         <EditImageModal setImg={setImg} open={open} onClose={() => setOpen(false)} image={files[0].file} />
       )}

@@ -8,12 +8,10 @@ import { Observable } from 'rxjs';
 import { JwtService } from '@nestjs/jwt';
 import { Request } from 'express';
 import { I18nContext, I18nService } from 'nestjs-i18n';
-import { TokenService } from '@back/token/token.service';
 @Injectable()
 export class AuthGuard implements CanActivate {
   constructor(
     private jwtService: JwtService,
-    private tokenService: TokenService,
     private readonly i18n: I18nService,
   ) {}
   canActivate(
@@ -26,8 +24,7 @@ export class AuthGuard implements CanActivate {
         `${this.i18n.t('exceptions.unauthorized', { lang: I18nContext.current()?.lang })}`,
       );
     try {
-      const payload = this.jwtService.verify(token);
-      console.log(payload);
+      this.jwtService.verify(token);
     } catch (e) {
       console.error(e);
     }

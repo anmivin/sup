@@ -10,11 +10,12 @@ export const StyledBox = styled(Box)`
   gap: ${({ theme }) => theme.spacing(2)};
 `;
 
-export const StyledButton = styled(Button)`
+export const StyledButton = styled(Button)<{ $active: boolean }>`
   border-radius: ${({ theme }) => theme.radius.lg};
   padding: ${({ theme }) => theme.spacing(0)};
   height: 40px;
   width: 40px;
-  background-color: ${({ theme }) => theme.color.transparentDark100};
+  background-color: ${({ theme, $active }) =>
+    $active ? theme.color.transparentDark300 : theme.color.transparentDark100};
   min-width: 0;
 `;
