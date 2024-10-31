@@ -1,14 +1,9 @@
-import { useCallback, useEffect, useState } from 'react';
-
 import { Button } from '@mui/material';
 import { useStore } from 'zustand';
 
 import TreeComponent from '@widgets/Tree';
 
-/* 
-import Button from '@ui/Button'; */
 import SimDrawer from '@features/SimDrawer';
-import TreeDrawer from '@features/TreeDrawer';
 
 import { CommonStore } from '@stores/Common/Common.store';
 import { HandbookStore } from '@stores/Handbook/Handbook.store';
@@ -17,9 +12,7 @@ HandbookStore.getState().getAspirations();
 HandbookStore.getState().getSkills();
 HandbookStore.getState().getTraits();
 const Tree = () => {
-  const [showTreeDrawer, setShowTreeDrawer] = useState(false);
-  const [showSimDrawer, setShowSimDrawer] = useState(false);
-  const { simDrawerType, treeDrawerType } = useStore(CommonStore);
+  const { simDrawerType, isSimDrawerOpen, setIsSimDrawerOpen } = useStore(CommonStore);
 
   const initNode = {
     id: 'init-node',
@@ -32,8 +25,7 @@ const Tree = () => {
 
   return (
     <>
-      <Button onClick={async () => setShowSimDrawer(true)}>СОЗДАТЬ</Button>
-      <Button onClick={async () => setShowTreeDrawer(true)}>СОЗДАТЬ ДЕРЕВО</Button>
+      <Button onClick={() => setIsSimDrawerOpen(true)}>СОЗДАТЬ</Button>
       {/*  {sims && ( */}
       <TreeComponent
         initialEdges={
@@ -53,15 +45,13 @@ const Tree = () => {
         }) */
         }
       />
-      {/*       )} */}
-      {showSimDrawer && (
-        <CreateSimDrawer
+      {isSimDrawerOpen && (
+        <SimDrawer
           simsInTree={/* simsInTree ?? */ []}
           type={simDrawerType}
-          onCloseModal={() => setShowSimDrawer(false)}
+          onCloseModal={() => setIsSimDrawerOpen(false)}
         />
       )}
-      {showTreeDrawer && <TreeDrawer type={treeDrawerType} onCloseModal={() => setShowTreeDrawer(false)} />}
     </>
   );
 };

@@ -1,10 +1,14 @@
 import { LotModel } from '@back/world/models/lot.model';
 import { NeighborhoodModel } from '@back/world/models/neighbourhood.model';
 import { WorldModel } from '@back/world/models/world.model';
-import { OutputWorldDto, OutputWorldMapDto } from '@back/world/world.dto';
-import { Injectable } from '@nestjs/common';
+import {
+  OutputWorldDto,
+  OutputWorldMapDto,
+  InputBuildingDto,
+} from '@back/world/world.dto';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-
+import { BuildingModel } from './models/building.model';
 @Injectable()
 export class WorldService {
   constructor(
@@ -12,6 +16,7 @@ export class WorldService {
     @InjectModel(NeighborhoodModel)
     private neighbourhoodModel: typeof NeighborhoodModel,
     @InjectModel(LotModel) private lotModel: typeof LotModel,
+    @InjectModel(BuildingModel) private buildingModel: typeof BuildingModel,
   ) {}
 
   async getWorlds(part: string): Promise<OutputWorldDto[]> {
@@ -47,5 +52,47 @@ export class WorldService {
 
   async getLotInfo(lotId: number) {
     return await this.lotModel.findOne({ where: { id: lotId } });
+  }
+
+  async getBuildingInfo(key: string) {
+    const found = await this.buildingModel.findOne({ where: { id: key } });
+    if (!found) throw new NotFoundException('');
+    return found;
+  }
+
+  async createBuilding(
+    buildingId: string,
+    userId: string,
+    lotId: string,
+    layout: JSON,
+  ) {
+    const building = await this.buildingModel.create({
+      id: buildingId,
+      userId,
+      lotId,
+      layout,
+    });
+    if (!building) throw new NotFoundException('');
+  }
+
+  async editBuilding(buildingId: string, props: InputBuildingDto) {
+    const building = await this.buildingModel.findOne({
+      where: { id: buildingId },
+    });
+    if (!building) throw new NotFoundException('');
+    const b = await building.update({
+      id: buildingId,
+      ...props,
+    });
+    return b.id;
+  }
+
+  async getBuilding(buildingId: string) {
+    const building = await this.buildingModel.findOne({
+      where: { id: buildingId },
+    });
+    if (!building) throw new NotFoundException('');
+
+    return building;
   }
 }

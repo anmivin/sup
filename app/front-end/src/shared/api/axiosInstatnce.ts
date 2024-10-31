@@ -7,12 +7,3 @@ export const axiosInstatnce = axios.create({
   baseURL: baseUrl,
   withCredentials: true,
 });
-
-/* axiosInstatnce.interceptors.request.use((value) => {
-  const { token } = ProfileStore();
-  if (value.headers && token) {
-    value.headers.Access = `Bearer ${token}`;
-  }
-  return value;
-});
- */

@@ -5,8 +5,6 @@ import { Injectable } from '@nestjs/common';
 
 import { ConfigService } from '@nestjs/config';
 
-const MINIO_URL = process.env.MINIO_URL ?? 'http://127.0.0.1:9000';
-
 const policy = (bucketName: string) => {
   return {
     Version: '2012-10-17',
@@ -36,18 +34,12 @@ export class MinioService {
     });
   }
 
-  async dosmth() {
-    return 'working';
-  }
   async createBucket(bucket: string) {
-    console.log('createBucket', bucket);
-    const existed = await this.minioClient.bucketExists(bucket);
-    console.log('existed', existed);
-    if (!existed) await this.minioClient.makeBucket(bucket);
+    const existedBucket = await this.minioClient.bucketExists(bucket);
+    if (!existedBucket) await this.minioClient.makeBucket(bucket);
     const bucketPolicy = JSON.stringify(policy(bucket));
-    console.log(bucketPolicy);
     await this.minioClient.setBucketPolicy(bucket, bucketPolicy);
-    return `Bucket ${bucket} ${existed ? 'already exist' : 'created'}`;
+    return `Bucket ${bucket} ${existedBucket ? 'already exist' : 'created'}`;
   }
 
   async saveFile(bucket: string, file: Express.Multer.File) {
@@ -59,10 +51,11 @@ export class MinioService {
       file.buffer,
       file.size,
       (error) => {
-        if (error) throw error;
+        if (error) throw new Error('');
       },
     );
-    const url = `${MINIO_URL}/${bucket}/${fileName}`;
+    const minioPath = this.configService.get('minio_url');
+    const url = `${minioPath}/${bucket}/${fileName}`;
 
     return url;
   }

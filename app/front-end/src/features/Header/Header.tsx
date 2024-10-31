@@ -14,9 +14,11 @@ import { MoonIcon, SunIcon } from '@assets/icons';
 
 import { ButtonContainer, Divider, HeaderContainer, MainSection, StyledButton, StyledLink } from './Header.styled';
 
+import { Can, CrudAbility } from '../../shared/ability/Ability';
+
 const Header = () => {
   const { t } = useTranslation();
-  const { isDarkTheme, setIsDarkTheme } = ProfileStore();
+  const { isDarkTheme, setIsDarkTheme } = useStore(ProfileStore);
   const { setIsSignModalOpen } = useStore(CommonStore);
   return (
     <HeaderContainer>
@@ -30,14 +32,16 @@ const Header = () => {
       </Box>
       <MainSection>
         {routes.menuRoutes.map((route) => (
-          <StyledButton key={route.key}>
-            <ButtonContainer>
-              <Divider />
-              <StyledLink style={{ textDecoration: 'none' }} href={route.link}>
-                {t(`data.pages.${route.key}`)}
-              </StyledLink>
-            </ButtonContainer>
-          </StyledButton>
+          <Can do={CrudAbility.READ} on={route.can}>
+            <StyledButton key={route.key}>
+              <ButtonContainer>
+                <Divider />
+                <StyledLink style={{ textDecoration: 'none' }} href={route.link}>
+                  {t(`data.pages.${route.key}`)}
+                </StyledLink>
+              </ButtonContainer>
+            </StyledButton>
+          </Can>
         ))}
 
         <ProfileMenu onOpenLoginForm={() => setIsSignModalOpen(true)} />

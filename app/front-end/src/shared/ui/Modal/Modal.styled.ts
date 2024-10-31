@@ -10,10 +10,12 @@ export const StyledModal = styled(Modal)`
 `;
 
 export const ModalContent = styled(Box)`
+  display: flex;
+  flex-direction: row;
   border-radius: 12px;
   width: fit-content;
   padding: ${({ theme }) => theme.spacing(4)};
-  max-width: 650px;
+  /* max-width: 650px; */
   background: ${({ theme }) => theme.color.primaryMain};
 `;
 

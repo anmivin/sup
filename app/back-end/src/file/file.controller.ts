@@ -2,7 +2,7 @@ import { ErrorStatus, SuccessStatus } from '@backend-shared/statuses';
 import {
   Controller,
   Post,
-  Body,
+
   UploadedFile,
   UseInterceptors,
   Param,
@@ -15,7 +15,7 @@ import {
   ApiBody,
 } from '@nestjs/swagger';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { Debug, EditFileDto, DeleteFileDto } from '@minio/minio.dto';
+import { File, DeleteFileDto, FileTypes } from '@minio/minio.dto';
 import { FileService } from './file.service';
 import { FileResponseDTO } from './file.dto';
 @ApiTags('File Controller')
@@ -23,21 +23,10 @@ import { FileResponseDTO } from './file.dto';
 export class FileController {
   constructor(private fileService: FileService) {}
 
-  @Post('')
-  @UseInterceptors(FileInterceptor('file'))
-  @ApiOperation({ summary: 'Save debug file' })
-  @ApiBody({ type: Debug })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
-  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
-  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async saveDebugFile(@UploadedFile() file: Express.Multer.File) {
-    return this.fileService.saveDebugFile({ file: file });
-  }
-
   @Post('/save/:type')
   @UseInterceptors(FileInterceptor('file'))
   @ApiOperation({ summary: 'Save file' })
-  @ApiBody({ type: Debug })
+  @ApiBody({ type: File })
   @ApiParam({ name: 'type', required: true, description: 'File type' })
   @ApiResponse({
     status: SuccessStatus.OK,
@@ -56,23 +45,22 @@ export class FileController {
     });
   }
 
-  @Post('/edit')
-  @ApiOperation({ summary: 'Edit file' })
-  @ApiBody({ type: EditFileDto })
-  @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
-  @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
-  @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async editFile(@Body() props: EditFileDto) {
-    return this.fileService.editFile(props);
-  }
-
   @Post('/delete')
+  @UseInterceptors(FileInterceptor('file'))
   @ApiOperation({ summary: 'Delete file' })
   @ApiBody({ type: DeleteFileDto })
   @ApiResponse({ status: SuccessStatus.OK, description: 'Success' })
   @ApiResponse({ status: ErrorStatus.BAD_REQUEST, description: 'Bad Request' })
   @ApiResponse({ status: ErrorStatus.NOT_FOUND, description: 'Not found' })
-  async deleteFile(@Body() props: DeleteFileDto) {
-    return this.fileService.deleteFile(props);
+  async deleteFile(
+    @UploadedFile() file: Express.Multer.File,
+    @Param('type') type: FileTypes,
+  ) {
+    return this.fileService.deleteFile({
+      file: file,
+      type: type,
+      bucket: '',
+      entityId: '',
+    });
   }
 }

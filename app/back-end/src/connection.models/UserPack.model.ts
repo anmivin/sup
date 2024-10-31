@@ -1,6 +1,13 @@
-import { PackModel } from '@back/users/models/packs.model';
-import { UserModel } from '@back/users/models/users.model';
-import { PrimaryKey, Column, Model, Table, ForeignKey, BelongsTo } from 'sequelize-typescript';
+import { PackModel } from '@back/user/models/packs.model';
+import { UserModel } from '@back/user/models/users.model';
+import {
+  PrimaryKey,
+  Column,
+  Model,
+  Table,
+  ForeignKey,
+  BelongsTo,
+} from 'sequelize-typescript';
 
 @Table({ tableName: 'user_pack', underscored: true, timestamps: false })
 export class UserPackModel extends Model<UserPackModel> {

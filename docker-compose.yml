@@ -1,0 +1,108 @@
+version: "3"
+
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./app/back-end
+      dockerfile: Dockerfile
+      args:
+        API_HOST: ${API_HOST}
+        PORT: ${DB_PORT}
+        ROUTES_PREFIX: ${ROUTES_PREFIX}
+        DB_USERNAME: ${DB_USERNAME}
+        DB_PASSWORD: ${DB_PASSWORD}
+        DB_DATABASE: ${DB_DATABASE}
+        DB_HOST: ${DB_HOST}
+        DB_PORT: ${DB_PORT}
+        DB_DIALECT: ${DB_DIALECT}
+        SALT: ${SALT}
+        JWT_SECRET: ${JWT_SECRET}
+        JWT_EXPIRED: ${JWT_EXPIRED}
+        GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+        GOOGLE_SECRET: ${GOOGLE_SECRET}
+        GOOGLE_CALLBACK_URL: ${GOOGLE_CALLBACK_URL}
+        MINIO_ENDPOINT: ${MINIO_ENDPOINT}
+        MINIO_PORT: ${MINIO_PORT}
+        MINIO_ACCESS: ${MINIO_ACCESS}
+        MINIO_SECRET: ${MINIO_SECRET}
+        MINIO_URL: ${MINIO_URL}
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - "3001:3001"
+    depends_on:
+      - backend-db
+
+  backend-db:
+    container_name: backend-db
+    image: postgres:latest
+    hostname: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_DB: sup
+    volumes:
+      - backend-db:/var/lib/postgres/data
+
+  translations:
+    container_name: translations
+    build:
+      context: ./app/translation-service
+      dockerfile: Dockerfile
+      args:
+        API_HOST: ${API_HOST}
+        PORT: ${TRANSLATION_PORT}
+        ROUTES_PREFIX: ${ROUTES_PREFIX}
+        DB_USERNAME: ${DB_USERNAME}
+        DB_PASSWORD: ${DB_PASSWORD}
+        DB_DATABASE: ${TRANSLATION_DATABASE}
+        DB_HOST: ${DB_HOST}
+        DB_PORT: ${DB_PORT}
+        DB_DIALECT: ${DB_DIALECT}
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - "3002:3002"
+    depends_on:
+      - translations-db
+
+  translations-db:
+    container_name: translations-db
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_DB: translations
+    volumes:
+      - translations-db:/var/lib/postgres/data
+
+  client:
+    container_name: frontend
+    build:
+      context: ./app/front-end
+      dockerfile: Dockerfile
+      args:
+        VITE_BASE_URL: ${VITE_BASE_URL}
+        VITE_TRANSLATIONS_URL: ${VITE_TRANSLATIONS_URL}
+        VITE_GOOGLE_CLIENT_ID: ${VITE_GOOGLE_CLIENT_ID}
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - translations
+      - backend
+
+volumes:
+  backend-db:
+  translations-db:

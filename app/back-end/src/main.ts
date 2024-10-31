@@ -4,21 +4,20 @@ import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 
-/* import * as cookieParser from 'cookie-parser'; */
+import cookieParser from 'cookie-parser';
 import cors from 'cors';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const configService = app.get(ConfigService);
   const port = configService.get('port');
+  app.use(cookieParser());
   app.use(
     cors({
       credentials: true,
       origin: true,
     }),
   );
-  /*   app.use(cookieParser.default()); */
-  /*   app.useGlobalGuards(new JwtAuthGuard()); */
   const config = new DocumentBuilder()
     .setTitle('sup Swagger')
     .setDescription('sup API description')

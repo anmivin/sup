@@ -21,10 +21,10 @@ import { PartnerPartnerModel } from '@back/dynasty/models/PartnerPartner.model';
 import { SimsModel } from '@back/dynasty/models/Sim.model';
 import { TreeModel } from '@back/dynasty/models/Tree.model';
 import { DynastyModule } from '@back/dynasty/dynasty.module';
-import { AvatarModel } from '@back/users/models/avatars.model';
-import { PackModel } from '@back/users/models/packs.model';
-import { UserModel } from '@back/users/models/users.model';
-import { UsersModule } from '@back/users/users.module';
+import { AvatarModel } from '@back/user/models/avatars.model';
+import { PackModel } from '@back/user/models/packs.model';
+import { UserModel } from '@back/user/models/users.model';
+import { UsersModule } from '@back/user/user.module';
 import { FileModule } from './file/file.module';
 import { LotModel } from '@back/world/models/lot.model';
 import { NeighborhoodModel } from '@back/world/models/neighbourhood.model';
@@ -35,14 +35,14 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { MinioModule } from './minio/minio.module';
 import { FileModel } from '@file/file.model';
+import { JwtModule } from '@nestjs/jwt';
 import { SimPositionModel } from './connection.models/SimPosition.model';
-/* import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
+import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
 import * as path from 'path';
- */
-//из енва значения поставить
+
 @Module({
   imports: [
-    /* I18nModule.forRoot({
+    I18nModule.forRoot({
       fallbackLanguage: 'ru',
       loaderOptions: {
         path: path.join(__dirname, '/i18n/'),
@@ -52,12 +52,19 @@ import * as path from 'path';
         { use: QueryResolver, options: ['lang'] },
         AcceptLanguageResolver,
       ],
-      typesOutputPath: path.join(__dirname, '/generated/i18n.generated.ts'),
-    }), */
+    }),
+    //.env
+    JwtModule.registerAsync({
+      imports: [ConfigModule],
+      useFactory: async (config) => ({ secret: config.get('jwt_secret') }),
+      global: true,
+      inject: [ConfigService],
+    }),
     ConfigModule.forRoot({
       isGlobal: true,
       load: [NEST_CONFIG],
     }),
+
     SequelizeModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],

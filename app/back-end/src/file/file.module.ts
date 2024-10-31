@@ -4,13 +4,9 @@ import { Module } from '@nestjs/common';
 import { FileService } from './file.service';
 import { FileController } from './file.controller';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { TreeModel } from '@back/dynasty/models/Tree.model';
-import { UserModel } from '@user/models/users.model';
-import { SimsModel } from '@back/dynasty/models/Sim.model';
+import { TokenModule } from '@back/token/token.module';
 @Module({
-  imports: [
-    SequelizeModule.forFeature([FileModel, TreeModel, UserModel, SimsModel]),
-  ],
+  imports: [SequelizeModule.forFeature([FileModel]), TokenModule],
   providers: [MinioService, FileService],
   controllers: [FileController],
 })

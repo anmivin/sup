@@ -38,3 +38,17 @@ export class OutputWorldMapDto {
   @ApiProperty({ isArray: true, type: OutputLotDto })
   lots: OutputLotDto[];
 }
+
+export class InputBuildingDto {
+  @ApiProperty()
+  userId: string;
+  @ApiProperty()
+  layout: JSON;
+}
+
+export class OutputBuildingDto {
+  @ApiProperty()
+  declare key: string;
+  @ApiProperty()
+  layout: JSON;
+}

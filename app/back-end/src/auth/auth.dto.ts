@@ -12,6 +12,6 @@ export class UserGoogleCredentials {
   name: string;
   @ApiProperty({ description: 'User password', nullable: false })
   email: string;
-  @ApiProperty({ description: 'User password', nullable: true })
+  @ApiProperty({ description: 'User avatar', nullable: true })
   avatar: string | null;
 }

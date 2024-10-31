@@ -33,12 +33,33 @@ module.exports = {
         type: DataTypes.STRING,
       },
       type: {
-        type: DataTypes.ENUM('local', 'google'),
+        type: DataTypes.STRING,
+      },
+      role: {
+        type: DataTypes.STRING,
       },
       image_id: {
         type: DataTypes.STRING,
         references: {
           model: 'files',
+          key: 'id',
+        },
+      },
+    });
+
+    await queryInterface.createTable('tokens', {
+      token: {
+        allowNull: false,
+        primaryKey: true,
+        type: DataTypes.STRING,
+      },
+      expires: {
+        type: DataTypes.DATE,
+      },
+      user_id: {
+        type: DataTypes.STRING,
+        references: {
+          model: 'users',
           key: 'id',
         },
       },
@@ -103,7 +124,7 @@ module.exports = {
         },
       },
       part: {
-        type: DataTypes.ENUM('sims_1', 'sims_2', 'sims_3', 'sims_4'),
+        type: DataTypes.STRING,
       },
     });
   },

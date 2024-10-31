@@ -1,13 +1,9 @@
 import { createContext } from 'react';
 
-import { Ability, AbilityBuilder, AbilityClass, AbilityTuple, MatchConditions, PureAbility } from '@casl/ability';
+import { Ability, AbilityBuilder } from '@casl/ability';
 import { createContextualCan } from '@casl/react';
 
-enum USER_ROLES {
-  loggedOut = 'loggedOut',
-  simpleUser = 'simpleUser',
-  uberUser = 'uberUser',
-}
+import { USER_ROLES } from '@type/enums';
 
 export enum Abilities {
   CHALLANGES = 'CHALLANGES',
@@ -18,9 +14,12 @@ export enum Abilities {
   TRACKER = 'TRACKER',
   TREES = 'TREES',
   WORLDS = 'WORLDS',
-
-  SAVE_SIM = 'SAVE_SIM',
-  SAVE_TREE = 'SAVE_TREE',
+  SIM = 'SIM',
+  TREE = 'TREE',
+  WORLD = 'WORLD',
+  BUILDING = 'BUILDING',
+  RANDOMIZER = 'RANDOMIZER',
+  HELP = 'HELP',
 }
 
 export enum CrudAbility {
@@ -30,28 +29,58 @@ export enum CrudAbility {
   DELETE = 'DELETE',
 }
 
-type EmployeeNameType = { employeeName: string | null };
-type Subjects = Abilities | EmployeeNameType;
+export const defineAbilities = (role: USER_ROLES | null) => {
+  const { can, build } = new AbilityBuilder(Ability);
 
-export const ability = new PureAbility<AbilityTuple<CrudAbility, Subjects> | CrudAbility, MatchConditions>();
-type AppAbilityType = PureAbility<AbilityTuple<CrudAbility, Subjects>, MatchConditions>;
-const conditionsMatcher = (matchConditions: MatchConditions) => matchConditions;
-
-export const AppAbility = Ability as AbilityClass<AppAbilityType>;
-
-export function createAbility({ userInfo }: { userInfo: any | null }): AppAbilityType {
-  const { can, build } = new AbilityBuilder(AppAbility);
-  if (!userInfo) {
+  if (!role) {
     can(CrudAbility.READ, Abilities.LOGIN);
+    can(CrudAbility.READ, Abilities.CHALLANGES);
+    can(CrudAbility.READ, Abilities.WORLDS);
   } else {
-    if (userInfo.roles === USER_ROLES.simpleUser) {
+    if ([USER_ROLES.simpleUser, USER_ROLES.uberUser].includes(role)) {
+      can(CrudAbility.READ, Abilities.LOGOUT);
+
+      can(CrudAbility.READ, Abilities.PROFILE);
+      can(CrudAbility.UPDATE, Abilities.PROFILE);
+
+      can(CrudAbility.READ, Abilities.SETTINGS);
+      can(CrudAbility.UPDATE, Abilities.SETTINGS);
+
+      can(CrudAbility.READ, Abilities.TRACKER);
+      can(CrudAbility.UPDATE, Abilities.TRACKER);
+
+      can(CrudAbility.READ, Abilities.TREES);
+
+      can(CrudAbility.READ, Abilities.CHALLANGES);
+
+      can(CrudAbility.READ, Abilities.RANDOMIZER);
+
+      can(CrudAbility.READ, Abilities.WORLDS);
+      can(CrudAbility.READ, Abilities.WORLD);
+
+      can(CrudAbility.CREATE, Abilities.BUILDING);
+      can(CrudAbility.READ, Abilities.BUILDING);
+      can(CrudAbility.UPDATE, Abilities.BUILDING);
+      can(CrudAbility.DELETE, Abilities.BUILDING);
+
+      can(CrudAbility.CREATE, Abilities.TREE);
+      can(CrudAbility.READ, Abilities.TREE);
+      can(CrudAbility.UPDATE, Abilities.TREE);
+      can(CrudAbility.DELETE, Abilities.TREE);
+
+      can(CrudAbility.CREATE, Abilities.SIM);
+      can(CrudAbility.READ, Abilities.SIM);
+      can(CrudAbility.UPDATE, Abilities.SIM);
+      can(CrudAbility.DELETE, Abilities.SIM);
+    }
+
+    if (role === USER_ROLES.uberUser) {
+      can(CrudAbility.READ, Abilities.HELP);
     }
   }
 
-  return build({
-    conditionsMatcher,
-  });
-}
+  return build();
+};
 
-export const AbilityContext = createContext<AppAbilityType>(createAbility({ userInfo: null }));
+export const AbilityContext = createContext(defineAbilities(null));
 export const Can = createContextualCan(AbilityContext.Consumer);

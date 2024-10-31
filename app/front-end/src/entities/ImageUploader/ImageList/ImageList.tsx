@@ -13,7 +13,7 @@ const ImageList = ({ imageList, onImageRemove, onImageClick }: ImageListProps) =
         <ImageListContainer>
           {imageList.map((item) => (
             <ImageContainer key={item.key} onClick={() => onImageClick?.(item)}>
-              <ImagePreview $img={URL.createObjectURL(item.file)} /* $uploading={item.uploadProgress !== 100}  */ />
+              <ImagePreview $img={URL.createObjectURL(item.file)} $uploading={item.uploadProgress !== 100} />
               {item.uploadProgress !== 100 ? (
                 <CircularProgress
                   variant={item.uploadProgress === 0 ? 'indeterminate' : 'determinate'}

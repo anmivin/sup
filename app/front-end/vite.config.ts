@@ -20,7 +20,7 @@ export default defineConfig({
       '@components': `${path.resolve(__dirname, './src/shared/components/')}`,
       '@constants': `${path.resolve(__dirname, './src/shared/constants/')}`,
       '@type': `${path.resolve(__dirname, './src/shared/types/')}`,
-      '@libs': `${path.resolve(__dirname, './src/shared/libs/')}`,
+      '@helpers': `${path.resolve(__dirname, './src/shared/helpers/')}`,
       '@stores': `${path.resolve(__dirname, './src/shared/stores/')}`,
       '@theme': `${path.resolve(__dirname, './src/shared/theme/')}`,
       '@ui': `${path.resolve(__dirname, './src/shared/ui/')}`,

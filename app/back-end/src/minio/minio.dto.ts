@@ -11,12 +11,11 @@ export enum PUBLIC_BUCKET_NAMES {
   UserImage = 'userImage',
   SimImage = 'simImage',
   TreeImage = 'treeImage',
-  Debug = 'debug',
 }
 
 export type FileTypes = READONLY_BUCKET_NAMES | PUBLIC_BUCKET_NAMES;
 
-export class Debug {
+export class File {
   @ApiProperty({ description: 'File', nullable: false })
   file: Express.Multer.File;
 }
@@ -42,7 +41,7 @@ export class DeleteFileDto {
   @ApiProperty({ description: 'File', nullable: false })
   bucket: string;
   @ApiProperty({ description: 'File', nullable: false })
-  fileName: string;
+  file: Express.Multer.File;
   @ApiProperty({ description: 'File', nullable: false })
   type: FileTypes;
   @ApiProperty({ description: 'File', nullable: false })

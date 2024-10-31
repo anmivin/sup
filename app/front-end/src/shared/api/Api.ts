@@ -9,7 +9,7 @@ export interface paths {
     /** Get all achievements */
     get: operations["HandbookController_getAllAchievements"];
   };
-  "/handbook/achievements/{key}": {
+  "/handbook/achievement/{key}": {
     /** Get achievement by key */
     get: operations["HandbookController_getAchievementById"];
   };
@@ -25,7 +25,7 @@ export interface paths {
     /** Get all careers */
     get: operations["HandbookController_getAllCareers"];
   };
-  "/handbook/careers/{key}": {
+  "/handbook/career/{key}": {
     /** Get career by key */
     get: operations["HandbookController_getCareerById"];
   };
@@ -33,7 +33,7 @@ export interface paths {
     /** Get all collections */
     get: operations["HandbookController_getAllCollections"];
   };
-  "/handbook/collections/{key}": {
+  "/handbook/collection/{key}": {
     /** Get collection id */
     get: operations["HandbookController_getCollectionByKey"];
   };
@@ -61,15 +61,19 @@ export interface paths {
     /** Get trait by key */
     get: operations["HandbookController_getTraitById"];
   };
-  "/dynasty/{id}": {
-    /** Get trees for user */
-    get: operations["DynastyController_getTreeForUser"];
+  "/handbook/init": {
+    /** Get trait by key */
+    get: operations["HandbookController_getInitValues"];
   };
-  "/dynasty/tree/{id}": {
+  "/dynasty/tree-list/{id}": {
+    /** Get trees for user */
+    get: operations["DynastyController_getTreesForUser"];
+  };
+  "/dynasty/tree-structure/{id}": {
     /** Get sims for tree */
     get: operations["DynastyController_getTreeStructure"];
   };
-  "/dynasty/user/{id}": {
+  "/dynasty/user-sims/{id}": {
     /** Get sims for user */
     get: operations["DynastyController_getSimsForUser"];
   };
@@ -77,45 +81,79 @@ export interface paths {
     /** Get sim by id */
     get: operations["DynastyController_getSim"];
   };
-  "/dynasty/sim": {
+  "/dynasty/sim/create": {
     /** Create sim */
     post: operations["DynastyController_createSim"];
   };
-  "/dynasty/tree": {
+  "/dynasty/tree/create": {
     /** Create tree */
     post: operations["DynastyController_createTree"];
   };
-  "/users": {
+  "/dynasty/sim/edit/{id}": {
+    /** Edit sim */
+    post: operations["DynastyController_editSim"];
+  };
+  "/dynasty/tree/edit": {
+    /** Create tree */
+    post: operations["DynastyController_editTree"];
+  };
+  "/dynasty/sim/delete": {
+    /** Create sim */
+    post: operations["DynastyController_deleteSim"];
+  };
+  "/dynasty/tree/delete": {
+    /** Create tree */
+    post: operations["DynastyController_deleteTree"];
+  };
+  "/user/create": {
     /** Create User */
     post: operations["UsersController_createUser"];
   };
-  "/worlds/{part}": {
+  "/user/edit": {
+    /** Edit User */
+    post: operations["UsersController_editUser"];
+  };
+  "/user/delete": {
+    /** Delete User */
+    post: operations["UsersController_deleteUser"];
+  };
+  "/world/{part}": {
     /** Get worlds by part */
     get: operations["WorldController_getWorld"];
   };
-  "/worlds/map/{worldKey}": {
+  "/world/map/{key}": {
     /** Get world map */
     get: operations["WorldController_getWorldMap"];
+  };
+  "/world/building/{key}": {
+    /** Get world map */
+    get: operations["WorldController_getBuildingInfo"];
+    /** Get world map */
+    post: operations["WorldController_editBuilding"];
+  };
+  "/auth/me": {
+    /** Get user info */
+    get: operations["AuthController_me"];
   };
   "/auth/login": {
     /** Log In */
     post: operations["AuthController_login"];
   };
+  "/auth/signup": {
+    /** Sign Up */
+    post: operations["AuthController_signup"];
+  };
   "/auth/google-login": {
     /** Google Log In */
     post: operations["AuthController_loginGoogle"];
   };
-  "/file": {
-    /** Save debug file */
-    post: operations["FileController_saveDebugFile"];
+  "/auth/refresh": {
+    /** Refresh Tokens */
+    post: operations["AuthController_refreshToken"];
   };
   "/file/save/{type}": {
     /** Save file */
     post: operations["FileController_saveFile"];
-  };
-  "/file/edit": {
-    /** Edit file */
-    post: operations["FileController_editFile"];
   };
   "/file/delete": {
     /** Delete file */
@@ -342,6 +380,16 @@ export interface components {
       childIds: string[];
       /** @description Partners ids */
       partnersIds: string[];
+      /** @description Partners ids */
+      traitsIds: string[];
+      /** @description Partners ids */
+      skills: string[];
+      /** @description Partners ids */
+      aspirations: string[];
+      /** @description Partners ids */
+      careers: string[];
+      /** @description Partners ids */
+      educationsIds: string[];
     };
     InputTreeDto: {
       /** @description User id */
@@ -355,7 +403,7 @@ export interface components {
       /** @description User name */
       name: string;
       /** @description User password */
-      password: Record<string, unknown> | null;
+      password: string | null;
       /** @description User email */
       email: Record<string, unknown> | null;
       /** @description User avatar */
@@ -382,12 +430,18 @@ export interface components {
       neighbourhoods: components["schemas"]["OutputNeighbourhoodDto"][];
       lots: components["schemas"]["OutputLotDto"][];
     };
+    InputBuildingDto: {
+      userId: string;
+      layout: Record<string, never>;
+    };
+    UserDto: Record<string, never>;
     UserCredentials: {
       /** @description User name */
       name: string;
       /** @description User password */
       password: string;
     };
+    TokenDto: Record<string, never>;
     Debug: {
       /** @description File */
       file: Record<string, never>;
@@ -398,21 +452,11 @@ export interface components {
       /** @description File url */
       url: string;
     };
-    EditFileDto: {
-      /** @description File */
-      bucket: string;
-      /** @description File */
-      fileName: string;
-      /** @description File */
-      file: Record<string, never>;
-      /** @description File */
-      type: string;
-    };
     DeleteFileDto: {
       /** @description File */
       bucket: string;
       /** @description File */
-      fileName: string;
+      file: Record<string, never>;
       /** @description File */
       type: string;
       /** @description File */
@@ -740,8 +784,33 @@ export interface operations {
       };
     };
   };
+  /** Get trait by key */
+  HandbookController_getInitValues: {
+    parameters: {
+      path: {
+        /** @description Trait key */
+        key: unknown;
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["OutputTrait4Dto"];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
   /** Get trees for user */
-  DynastyController_getTreeForUser: {
+  DynastyController_getTreesForUser: {
     parameters: {
       path: {
         /** @description User id */
@@ -884,8 +953,146 @@ export interface operations {
       };
     };
   };
+  /** Edit sim */
+  DynastyController_editSim: {
+    parameters: {
+      path: {
+        /** @description Sim id */
+        id: string;
+      };
+    };
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["InputSimDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Create tree */
+  DynastyController_editTree: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["InputTreeDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Create sim */
+  DynastyController_deleteSim: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["InputSimDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Create tree */
+  DynastyController_deleteTree: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["InputTreeDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
   /** Create User */
   UsersController_createUser: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["InputUserDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Edit User */
+  UsersController_editUser: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["InputUserDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: never;
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Delete User */
+  UsersController_deleteUser: {
     requestBody: {
       content: {
         "application/json": components["schemas"]["InputUserDto"];
@@ -936,7 +1143,7 @@ export interface operations {
     parameters: {
       path: {
         /** @description Tree id */
-        worldKey: string;
+        key: string;
       };
     };
     responses: {
@@ -956,11 +1163,109 @@ export interface operations {
       };
     };
   };
+  /** Get world map */
+  WorldController_getBuildingInfo: {
+    parameters: {
+      path: {
+        /** @description Tree id */
+        key: string;
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["OutputWorldMapDto"];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Get world map */
+  WorldController_editBuilding: {
+    parameters: {
+      path: {
+        /** @description Tree id */
+        key: string;
+      };
+    };
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["InputBuildingDto"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["OutputWorldMapDto"];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Get user info */
+  AuthController_me: {
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["UserDto"];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
   /** Log In */
   AuthController_login: {
     requestBody: {
       content: {
         "application/json": components["schemas"]["UserCredentials"];
+      };
+    };
+    responses: {
+      /** @description Success */
+      200: {
+        content: {
+          "application/json": components["schemas"]["TokenDto"];
+        };
+      };
+      /** @description Bad Request */
+      400: {
+        content: never;
+      };
+      /** @description Not found */
+      404: {
+        content: never;
+      };
+    };
+  };
+  /** Sign Up */
+  AuthController_signup: {
+    requestBody: {
+      content: {
+        "application/json": components["schemas"]["InputUserDto"];
       };
     };
     responses: {
@@ -1000,13 +1305,8 @@ export interface operations {
       };
     };
   };
-  /** Save debug file */
-  FileController_saveDebugFile: {
-    requestBody: {
-      content: {
-        "application/json": components["schemas"]["Debug"];
-      };
-    };
+  /** Refresh Tokens */
+  AuthController_refreshToken: {
     responses: {
       /** @description Success */
       200: {
@@ -1052,30 +1352,13 @@ export interface operations {
       };
     };
   };
-  /** Edit file */
-  FileController_editFile: {
-    requestBody: {
-      content: {
-        "application/json": components["schemas"]["EditFileDto"];
-      };
-    };
-    responses: {
-      /** @description Success */
-      200: {
-        content: never;
-      };
-      /** @description Bad Request */
-      400: {
-        content: never;
-      };
-      /** @description Not found */
-      404: {
-        content: never;
-      };
-    };
-  };
   /** Delete file */
   FileController_deleteFile: {
+    parameters: {
+      path: {
+        type: string;
+      };
+    };
     requestBody: {
       content: {
         "application/json": components["schemas"]["DeleteFileDto"];

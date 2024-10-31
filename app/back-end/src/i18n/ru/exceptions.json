@@ -5,7 +5,7 @@
     "neuter": "не найдено",
     "plural": "не найдены"
   },
-  "wrong": {
+  "invalid": {
     "masculine": "неверный",
     "feminine": "неверная",
     "neuter": "неверное",
@@ -15,9 +15,17 @@
     "single": "уже существует",
     "plural": "уже существуют"
   },
+  "unauthorized": "unauthorized",
 
   "password": "пароль",
   "user": "пользователь",
   "username": "юзернейм",
-  "email": "емейл"
+  "email": "емейл",
+  "and": "и",
+  "or": "или",
+  "sim": "сим",
+
+  "skill": "навык",
+  "trait": "черта",
+  "aspiration": "жизненная цель"
 }

@@ -1,6 +1,6 @@
 import { StateCreator } from 'zustand';
 
-import { GAME_PART, SIGN_FORM_VARIANTS } from '@type/enums';
+import { GAME_PART } from '@type/enums';
 
 import { ProfileStateSliceProps } from './Profile.types';
 
