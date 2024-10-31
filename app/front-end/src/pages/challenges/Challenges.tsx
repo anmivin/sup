@@ -6,6 +6,7 @@ import EditImageModal from '@features/EditImageModal';
 
 import { ImageDrop, ImageList } from '@entities/ImageUploader';
 import { ImageItem } from '@entities/ImageUploader/ImageUploader.types';
+import Loader from '@entities/Loader';
 
 const Challenges = () => {
   const [files, setFiles] = useState<ImageItem[]>([]);
@@ -17,6 +18,7 @@ const Challenges = () => {
 
   return (
     <>
+      <Loader />
       <ImageDrop onFilesAdd={onAdd} />
       <ImageList imageList={files} /* onImageRemove={() => {}} */ onImageClick={() => setOpen(true)} />
       {img && <img src={img} />}
