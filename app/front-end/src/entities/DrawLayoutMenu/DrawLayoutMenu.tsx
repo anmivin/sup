@@ -4,6 +4,7 @@ import { StyledBox, StyledButton } from './DrawLayoutMenu.styled';
 
 import { DrawLayoutMenuProps, MODE, objectSizes } from './DrawLayoutMenu.types';
 
+//@TODO: сделать красиво
 const DrawLayoutMenu = ({ onAdd, onChangeMode, currentMode }: DrawLayoutMenuProps) => {
   return (
     <StyledBox>

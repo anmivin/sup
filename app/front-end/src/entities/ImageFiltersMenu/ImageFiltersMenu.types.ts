@@ -19,6 +19,7 @@ export const filtersConstants = {
   lightness: { min: 0, max: 100 },
 };
 
+//@TODO: пресеты
 const presets = [
   {
     hue: { min: 0, max: 360 },

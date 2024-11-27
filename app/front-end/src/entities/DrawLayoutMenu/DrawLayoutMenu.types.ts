@@ -11,6 +11,7 @@ export interface DrawLayoutMenuProps {
   currentMode: MODE;
 }
 
+//@TODO: с бека варианты
 export const objectSizes: PositionProps[] = [
   {
     x: 1,

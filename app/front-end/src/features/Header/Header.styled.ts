@@ -1,4 +1,6 @@
-import { Box, Button, Link, Popper, styled } from '@mui/material';
+import { Link } from 'react-router-dom';
+
+import { Box, Button, Popper, styled } from '@mui/material';
 
 export const HeaderContainer = styled(Box)`
   position: fixed;
@@ -9,7 +11,7 @@ export const HeaderContainer = styled(Box)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme }) => theme.color.secondaryMain};
+  background-color: ${({ theme }) => theme.color.secondaryMain};s
   padding: 0 8px;
 `;
 
@@ -77,6 +79,8 @@ export const StyledButton = styled(Button)`
 `;
 
 export const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: ${({ theme }) => theme.color.textDark};
+  && {
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.textDark};
+  }
 `;

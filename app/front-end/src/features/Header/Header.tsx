@@ -33,14 +33,14 @@ const Header = () => {
       <MainSection>
         {routes.menuRoutes.map((route) => (
           <Can do={CrudAbility.READ} on={route.can}>
-            <StyledButton key={route.key}>
-              <ButtonContainer>
-                <Divider />
-                <StyledLink style={{ textDecoration: 'none' }} href={route.link}>
+            <StyledLink to={route.link}>
+              <StyledButton key={route.key}>
+                <ButtonContainer>
+                  <Divider />
                   {t(`data.pages.${route.key}`)}
-                </StyledLink>
-              </ButtonContainer>
-            </StyledButton>
+                </ButtonContainer>
+              </StyledButton>
+            </StyledLink>
           </Can>
         ))}
 

@@ -14,6 +14,8 @@ import { DrawLayoutProps } from './DrawLayout.types';
 
 const squareSize = 30;
 
+//@TODO: удаление линий
+//@TODO: вынестив хук рисование
 const DrawLayout = ({ sizes, layerRef, mode, currentRect, setCurrentRect }: DrawLayoutProps) => {
   const [initialPosition, setInitialPosistion] = useState<PositionProps | null>(null);
   const theme = useTheme();

@@ -18,14 +18,10 @@ import { Abilities, Can, CrudAbility } from '../../shared/ability/Ability';
 ProfileStore.getState().me();
 const Layout = ({ children }: { children: ReactNode }) => {
   const { isSignModalOpen, setIsSignModalOpen, isImageModalOpen, setIsImageModalOpen } = useStore(CommonStore);
-  const isError = useMemo(() => {
-    return false;
-  }, []);
-
   return (
     <>
-      {!isError && <Header />}
-      <ContentBox $noHeader={isError}>{children}</ContentBox>
+      <Header />
+      <ContentBox>{children}</ContentBox>
       <Can do={CrudAbility.READ} on={Abilities.HELP}>
         <HelpSection />
       </Can>

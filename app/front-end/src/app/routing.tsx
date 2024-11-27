@@ -5,6 +5,7 @@ import Layout from '@widgets/Layout/Layout';
 
 import routes from '@constants/routes';
 
+//@TODO: добавить обработку недоступных страниц
 const Routing = () => {
   return (
     <BrowserRouter>
